@@ -1,0 +1,53 @@
+{
+  "season": "2022-23",
+  "status": "stats_only_unverified",
+  "enabled_in_game": false,
+  "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_2023.csv",
+  "source_sha256": "33bd3f9813429d2f3a57e4453196e734b5ddcc99c7e1be09c4a616cfd1ea628d",
+  "regular_season_games_observed": 1230,
+  "eligible_records": 305,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligibility_precision": "Unrounded box-score minutes per team stint",
+  "records_by_team": {
+    "ATL": 8,
+    "BKN": 9,
+    "BOS": 9,
+    "CHA": 13,
+    "CHI": 9,
+    "CLE": 11,
+    "DAL": 9,
+    "DEN": 10,
+    "DET": 12,
+    "GSW": 10,
+    "HOU": 9,
+    "IND": 11,
+    "LAC": 11,
+    "LAL": 11,
+    "MEM": 12,
+    "MIA": 10,
+    "MIL": 12,
+    "MIN": 10,
+    "NOP": 10,
+    "NYK": 9,
+    "OKC": 12,
+    "ORL": 12,
+    "PHI": 8,
+    "PHX": 10,
+    "POR": 9,
+    "SAC": 8,
+    "SAS": 13,
+    "TOR": 7,
+    "UTA": 10,
+    "WAS": 11
+  },
+  "pending": [
+    "Final team-stint jersey numbers",
+    "Accolades and champions",
+    "Independent source verification",
+    "Distribution analysis",
+    "Game activation"
+  ]
+}
