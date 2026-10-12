@@ -26,13 +26,15 @@ for stream_name in ("stdout", "stderr"):
     if stream and hasattr(stream, "reconfigure"):
         stream.reconfigure(errors="replace")
 
-from nba_roulette.data import load_records
+from nba_roulette.data import load_records, load_goat_pools
 from nba_roulette.playtest import PlaytestBatchLogger
 from nba_roulette.web import BrowserGame
 
 
 STATIC = ROOT / "web" / "static"
 RECORDS = load_records(data_dir=ROOT / "data" / "game")
+GOAT_POOLS = load_goat_pools(data_dir=ROOT / "data" / "goat")
+DEV_JACKPOTS = False
 
 
 def default_log_directory() -> Path:
@@ -51,8 +53,8 @@ def default_log_directory() -> Path:
 
 PLAYTEST_LOGGER = PlaytestBatchLogger(
     default_log_directory(),
-    "playtest_batch_04_v0_4_external_alpha",
-    "Playtest Batch 4 - v0.4 External Alpha",
+    "playtest_batch_05_v0_6_goat_spins",
+    "Playtest Batch 5 - v0.6 GOAT Spins",
     target=100,
 )
 SESSIONS: dict[str, BrowserGame] = {}
@@ -90,7 +92,7 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/new":
                 result = game.state()
             elif path == "/api/spin":
-                result = game.spin(payload.get("keeps", []))
+                result = game.spin(payload.get("keeps", []), payload.get("force_pool"))
             elif path == "/api/score":
                 result = game.score(str(payload.get("category", "")))
             else:
@@ -107,7 +109,8 @@ class Handler(BaseHTTPRequestHandler):
         created = new or key not in SESSIONS
         if created:
             key = secrets.token_urlsafe(18)
-            SESSIONS[key] = BrowserGame(RECORDS, logger=PLAYTEST_LOGGER)
+            SESSIONS[key] = BrowserGame(RECORDS, logger=None if DEV_JACKPOTS else PLAYTEST_LOGGER,
+                                       goat_pools=GOAT_POOLS, dev_jackpots=DEV_JACKPOTS)
         return SESSIONS[key], f"nba_session={key}; Path=/; SameSite=Lax" if created else None
 
     def _body(self) -> dict:
@@ -136,9 +139,11 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
+    global DEV_JACKPOTS
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=0 if FROZEN else 8000)
+    parser.add_argument("--dev-jackpots", action="store_true", help="Local-only jackpot previews; disables playtest logging")
     parser.add_argument(
         "--open-browser",
         action=argparse.BooleanOptionalAction,
@@ -146,6 +151,9 @@ def main() -> None:
         help="Open Hoopreel in the default browser after startup",
     )
     args = parser.parse_args()
+    if args.dev_jackpots and (FROZEN or args.host not in ("127.0.0.1", "localhost", "::1")):
+        parser.error("Jackpot previews require an unfrozen local loopback server")
+    DEV_JACKPOTS = args.dev_jackpots
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     port = server.server_address[1]
     url = f"http://{args.host}:{port}"

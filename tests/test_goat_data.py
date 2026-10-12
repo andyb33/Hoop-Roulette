@@ -45,7 +45,7 @@ class GoatDataTests(unittest.TestCase):
     def test_verified_manifest_matches_evidence(self):
         manifest = json.loads((ROOT / 'data/goat/manifest.json').read_text())
         self.assertTrue(manifest['award']['winner_coverage_complete'])
-        self.assertFalse(manifest['enabled_in_game'])
+        self.assertTrue(manifest['enabled_in_game'])
         rows = json.loads((ROOT / 'data/goat/award_jackpot.json').read_text())
         self.assertEqual(manifest['award']['historical_coverage_complete'],
                          all(r['verification_status'] == 'official_verified' for r in rows))

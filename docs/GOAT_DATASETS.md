@@ -1,6 +1,6 @@
 # GOAT dataset coverage
 
-Updated 2026-10-12. These datasets are not enabled in the alpha yet.
+Updated 2026-10-12. These datasets are enabled in the v0.6 browser alpha.
 
 ## Award Jackpot
 
@@ -36,8 +36,8 @@ different numbers would block verification rather than selecting one arbitrarily
 Real NBA player IDs are resolved using name and career dates, avoiding same-name
 collisions. Pre-1973 defensive API zeros become null/not_recorded; unavailable
 awards and actual non-selections retain separate availability reasons.
-The datasets are ready for GOAT-spin implementation; the feature is still disabled
-in the existing alpha. The 38 earlier archived award records are winner metadata
+The datasets power the v0.6 GOAT-spin implementation. Older v0.5 builds do not
+contain the feature. The 38 earlier archived award records are winner metadata
 only and were not included in this 161-entry full-field audit.
 
 ## Reproduce

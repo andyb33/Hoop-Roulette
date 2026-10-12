@@ -1,7 +1,7 @@
 # GDD v1.5 — Historical Seasons & GOAT Spins
 
-Design accepted 2026-10-12. Specification for the next implementation; the
-published v0.5 alpha continues to run v1.4 until this feature is implemented.
+Design accepted and implemented 2026-10-12 in the v0.6 browser alpha.
+Older v0.5 desktop builds retain the v1.4 rules.
 
 ## Historical normal pool
 
@@ -28,12 +28,12 @@ slots. Attempts with kept slots have no jackpot check. Each attempt consumes
 one of the usual three spins. A jackpot may be scored immediately. All Keep
 controls are disabled on a jackpot result. Rerolling releases the entire result
 and performs a fresh check; consecutive GOAT spins are possible. Normal-result
-rerolls continue to use the v1.4 difference filter. Whether consecutive jackpot
-draws may repeat the exact entry is unresolved; do not silently apply normal
-reroll filtering to the jackpot pool.
+rerolls continue to use the v1.4 difference filter. Consecutive jackpot draws
+may repeat the exact entry: each draw is independent. Do not apply the normal
+reroll difference filter to a jackpot draw.
 
-Initial data draw proposal: uniform among distinct entries within each jackpot
-pool, rather than normal Season → Team → Player weighting. Validate in simulation.
+Data draws are uniform among distinct entries within each jackpot pool,
+rather than normal Season → Team → Player weighting.
 
 ## Award Jackpot
 
@@ -44,8 +44,8 @@ coverage must be explicit. The winner catalogue now covers all 53 seasons:
 149 unique player-seasons representing 53 MVP, 55 ROTY (including ties), and
 44 DPOY awards. Three MVP/DPOY double winners are merged. Statistics, jerseys
 and other accolades for all 149 entries and the 12 prehistoric entries are now
-verified against official NBA sources. GOAT-spin engine/UI implementation is
-still required before enabling the feature. A separate archive preserves all 187 winning player-seasons since
+verified against official NBA sources. GOAT spins are implemented in v0.6.
+A separate archive preserves all 187 winning player-seasons since
 each award's inception; its 38 pre-1973 entries are excluded from this pool.
 
 Award Jackpot has exactly one entry per real player per season, independent of

@@ -9,6 +9,18 @@ const REEL_DECOYS = {
   team: ["ATL", "BOS", "BKN", "CHI", "DAL", "DEN", "GSW", "LAL", "MIA", "MIL", "NYK", "OKC", "PHX", "SAS"],
   player: ["J. Brunson", "S. Gilgeous-Alexander", "N. Jokić", "A. Edwards", "J. Tatum", "L. Dončić", "G. Antetokounmpo", "S. Curry"],
 };
+const GOAT_DECOYS = {
+  award: {
+    season: ["1973–74", "1987–88", "1993–94", "2007–08", "2015–16", "2025–26"],
+    team: ["MIL", "CHI", "HOU", "LAL", "GSW", "SAS", "OKC"],
+    player: ["M. Jordan", "K. Abdul-Jabbar", "H. Olajuwon", "S. Curry", "V. Wembanyama"],
+  },
+  prehistoric: {
+    season: ["1956–57", "1958–59", "1961–62", "1964–65", "1969–70", "1971–72"],
+    team: ["PHW", "BOS", "CIN", "LAL", "MIL", "STL", "SFW", "NYK"],
+    player: ["W. Chamberlain", "B. Russell", "O. Robertson", "J. West", "E. Baylor"],
+  },
+};
 
 const CATEGORY_CODES = {
   all_nba_third: "NBA 3", all_nba_second: "NBA 2", all_nba_first: "NBA 1",
@@ -39,7 +51,7 @@ function categoryRow(category) {
   );
   const detail = category.used && category.selection
     ? `${category.selection.player} · ${category.selection.season} ${category.selection.team}`
-    : category.preview !== null ? "Available for this player" : "Spin to preview";
+    : category.unavailable ? "N/A this season · sacrifice for 0" : category.preview !== null ? "Available for this player" : "Spin to preview";
   const valueLabel = category.formula || (category.fixed_value ? `${category.fixed_value} pts` : "");
   const code = CATEGORY_CODES[category.id];
   const badge = code ? `<i class="category-code" aria-hidden="true">${code}</i>` : "";
@@ -47,7 +59,7 @@ function categoryRow(category) {
   const classes = [category.used && "used", qualifies && "qualified", elite && "elite", selected && "selected", scoredHighlight && "scored-highlight"].filter(Boolean).join(" ");
   return `<button class="category ${classes}" data-category="${category.id}" ${category.used || category.preview === null ? "disabled" : ""}>
     ${badge}<span class="category-copy"><strong>${category.label} <em>${valueLabel}</em></strong><small>${detail}</small></span>
-    <b>${score ?? "—"}</b>${status}
+    <b>${!category.used && category.unavailable ? "N/A" : score ?? "—"}</b>${status}
   </button>`;
 }
 
@@ -67,6 +79,13 @@ function render(game, { preserveReels = false } = {}) {
   $("#bonus-progress").style.width = `${Math.min(100, (game.upper_total / game.upper_target) * 100)}%`;
 
   const player = game.player;
+  if (!game.keeps_allowed) state.keeps.clear();
+  const jackpot = player && player.pool !== "normal";
+  $(".game-panel").dataset.jackpot = jackpot ? player.pool : "";
+  $("#jackpot-banner").classList.toggle("hidden", !jackpot);
+  if (jackpot) jackpotBanner(player.pool, false);
+  $("#dev-jackpots").classList.toggle("hidden", !game.dev_jackpots);
+  $$("[data-force]").forEach(button => { button.disabled = state.busy || game.complete || (player && !game.rerolls_left); });
   if (!preserveReels) {
     $("#season-value").textContent = player?.season || "—";
     $("#team-value").textContent = player?.team || "—";
@@ -77,14 +96,17 @@ function render(game, { preserveReels = false } = {}) {
   if (player) {
     $("#player-context").textContent = `${player.season}  ·  ${player.team}`;
     $("#player-name").textContent = player.name;
-    $("#jersey").textContent = `#${player.jersey}`;
+    $("#jersey").textContent = `#${player.jersey_display}`;
     $("#jersey").style.setProperty("--team-primary", player.team_colors.primary);
     $("#jersey").style.setProperty("--team-secondary", player.team_colors.secondary);
     $("#stats").innerHTML = Object.entries(player.stats)
-      .map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
+      .map(([label, value]) => `<div class="${value === null ? "stat-unavailable" : ""}"><strong>${value ?? "N/A"}</strong><span>${label}</span></div>`).join("");
     $("#awards").innerHTML = player.awards.length
       ? player.awards.map(award => `<div class="award-badge"><span>${award.label.split(" ").map(word => word[0]).join("").slice(0, 3)}</span><strong>${award.label}</strong></div>`).join("")
       : `<p class="no-awards">No qualifying accolades</p>`;
+    $("#historical-note").classList.toggle("hidden", !player.unavailable_awards.length);
+    $("#historical-note").textContent = player.unavailable_awards.length
+      ? `${player.unavailable_awards.join(" · ")}: actual awards not introduced. First/Second-Team selections still count toward lower categories. N/A stats can be sacrificed for 0.` : "";
   }
 
   const grouped = game.categories.reduce((groups, item) => {
@@ -98,17 +120,17 @@ function render(game, { preserveReels = false } = {}) {
 
   $$(".slot").forEach(button => {
     const keepName = button.dataset.keep;
-    button.disabled = !player || game.rerolls_left === 0 || state.busy;
+    button.disabled = !player || !game.keeps_allowed || game.rerolls_left === 0 || state.busy;
     button.classList.toggle("kept", state.keeps.has(keepName));
     button.setAttribute("aria-pressed", state.keeps.has(keepName) ? "true" : "false");
-    button.querySelector(".keep-text").textContent = state.keeps.has(keepName) ? `${keepName} kept` : `Keep ${keepName}`;
+    button.querySelector(".keep-text").textContent = jackpot ? "Keeps unavailable" : state.keeps.has(keepName) ? `${keepName} kept` : `Keep ${keepName}`;
   });
 
   const allKept = state.keeps.size === 3;
   const spinButton = $("#spin");
   spinButton.disabled = state.busy || game.complete || (player && (game.rerolls_left === 0 || allKept));
   spinButton.querySelector(".spin-copy").textContent = player
-    ? (game.rerolls_left ? "Spin open reels" : "Choose a score")
+    ? (game.rerolls_left ? (jackpot ? "Spin again · release jackpot" : "Spin open reels") : "Choose a score")
     : "Spin the roulette";
   $("#spin-count").textContent = player
     ? (game.rerolls_left ? `${game.rerolls_left} reroll${game.rerolls_left === 1 ? "" : "s"} remaining` : "No spins remaining")
@@ -120,7 +142,7 @@ function render(game, { preserveReels = false } = {}) {
     ? `${selectedCategory.label} · ${selectedCategory.preview} points`
     : "Choose a scorecard category";
   $("#confirm-score").disabled = !selectedCategory || state.busy;
-  $("#confirm-score").textContent = selectedCategory ? `Score ${selectedCategory.preview} points` : "Confirm score";
+  $("#confirm-score").textContent = selectedCategory ? (selectedCategory.unavailable ? "Sacrifice for 0" : `Score ${selectedCategory.preview} points`) : "Confirm score";
 
   if (game.complete) {
     $("#final-score").textContent = game.total_score;
@@ -128,14 +150,14 @@ function render(game, { preserveReels = false } = {}) {
   }
 }
 
-function cycleReel(name, finalValue, duration) {
+function cycleReel(name, finalValue, duration, pool = "normal") {
   const value = $(`#${name}-value`);
   const slot = value.closest(".slot");
   if (state.keeps.has(name) || reducedMotion.matches) {
     value.textContent = finalValue;
     return Promise.resolve();
   }
-  const choices = REEL_DECOYS[name];
+  const choices = GOAT_DECOYS[pool]?.[name] || REEL_DECOYS[name];
   slot.classList.add("spinning");
   let index = Math.floor(Math.random() * choices.length);
   const timer = window.setInterval(() => {
@@ -157,21 +179,50 @@ function cycleReel(name, finalValue, duration) {
 async function animateReels(game) {
   const player = game.player;
   if (!player) return;
+  const jackpot = player.pool !== "normal";
+  $("#jackpot-banner").classList.add("hidden");
+  $(".game-panel").dataset.jackpot = jackpot ? player.pool : "";
+  $(".game-panel").classList.remove("jackpot-hit");
+  if (jackpot) {
+    state.keeps.clear();
+    jackpotBanner(player.pool, true);
+    $("#jackpot-banner").classList.remove("hidden");
+  }
   $("#player-card").classList.add("is-waiting");
   await Promise.all([
-    cycleReel("season", player.season, 700),
-    cycleReel("team", player.team, 1080),
-    cycleReel("player", player.name, 1540),
+    cycleReel("season", player.season, jackpot ? 1100 : 700, player.pool),
+    cycleReel("team", player.team, jackpot ? 1500 : 1080, player.pool),
+    cycleReel("player", player.name, jackpot ? 2000 : 1540, player.pool),
   ]);
   $("#player-card").classList.remove("is-waiting");
+  if (jackpot) {
+    jackpotBanner(player.pool, false);
+    if (!reducedMotion.matches) {
+      $(".game-panel").classList.add("jackpot-hit");
+      $("#jackpot-particles").replaceChildren(...Array.from({ length: 16 }, (_, i) => {
+        const particle = document.createElement("i");
+        particle.style.setProperty("--x", `${(i / 15) * 100}%`);
+        particle.style.setProperty("--delay", `${(i % 4) * 70}ms`);
+        return particle;
+      }));
+      window.setTimeout(() => { $(".game-panel").classList.remove("jackpot-hit"); $("#jackpot-particles").replaceChildren(); }, 1800);
+    }
+  }
 }
 
-async function spin() {
+function jackpotBanner(pool, anticipating) {
+  $("#jackpot-icon").textContent = pool === "award" ? "🏆" : "🦕";
+  $("#jackpot-title").textContent = anticipating ? "A legend is incoming…" : pool === "award" ? "Award Jackpot" : "Prehistoric Jackpot";
+  $("#jackpot-note").textContent = anticipating ? "Watch the reels land" : "Score this result or spin again · no Keeps";
+}
+
+async function spin(forcePool = null) {
   if (state.busy) return;
   setBusy(true);
   state.selectedCategory = null;
   try {
-    const game = await request("/api/spin", { keeps: [...state.keeps] });
+    if (forcePool) state.keeps.clear();
+    const game = await request("/api/spin", { keeps: [...state.keeps], ...(forcePool ? { force_pool: forcePool } : {}) });
     $("#message").textContent = "";
     await animateReels(game);
     setBusy(false);
@@ -206,6 +257,7 @@ async function score(category) {
 }
 
 async function newGame() {
+  if (state.busy) return;
   setBusy(true);
   try {
     const game = await request("/api/new", {});
@@ -223,6 +275,8 @@ async function newGame() {
 function setBusy(value) {
   state.busy = value;
   document.body.classList.toggle("busy", value);
+  $("#new-game").disabled = value;
+  $("#play-again").disabled = value;
 }
 
 $$(".slot").forEach(button => button.addEventListener("click", () => {
@@ -231,7 +285,8 @@ $$(".slot").forEach(button => button.addEventListener("click", () => {
   state.keeps.has(keep) ? state.keeps.delete(keep) : state.keeps.add(keep);
   render(state.game);
 }));
-$("#spin").addEventListener("click", spin);
+$("#spin").addEventListener("click", () => spin());
+$$("[data-force]").forEach(button => button.addEventListener("click", () => spin(button.dataset.force)));
 $("#confirm-score").addEventListener("click", () => score(state.selectedCategory));
 $("#new-game").addEventListener("click", newGame);
 $("#play-again").addEventListener("click", newGame);

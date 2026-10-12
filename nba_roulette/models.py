@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 
 
@@ -23,15 +23,18 @@ class PlayerTeamSeason:
     ppg: float
     rpg: float
     apg: float
-    spg: float
-    bpg: float
+    spg: float | None
+    bpg: float | None
     jersey: int
     all_nba: int | None
     all_defense: int | None
     champion: bool
     mvp: bool
-    dpoy: bool
+    dpoy: bool | None
     roy: bool
+    pool: str = "normal"
+    availability: dict[str, str] = field(default_factory=dict, compare=False, hash=False)
+    jersey_display: str | None = None
 
     @classmethod
     def from_dict(cls, row: dict) -> "PlayerTeamSeason":
@@ -45,17 +48,29 @@ class PlayerTeamSeason:
             ppg=float(row["ppg"]),
             rpg=float(row["rpg"]),
             apg=float(row["apg"]),
-            spg=float(row["spg"]),
-            bpg=float(row["bpg"]),
+            spg=float(row["spg"]) if row["spg"] is not None else None,
+            bpg=float(row["bpg"]) if row["bpg"] is not None else None,
             jersey=int(row["jersey"]),
             all_nba=int(row["all_nba"]) if row.get("all_nba") is not None else None,
             all_defense=int(row["all_defense"]) if row.get("all_defense") is not None else None,
             champion=bool(row["champion"]),
             mvp=bool(row["mvp"]),
-            dpoy=bool(row["dpoy"]),
+            dpoy=bool(row["dpoy"]) if row["dpoy"] is not None else None,
             roy=bool(row["roy"]),
+            pool=row.get("pool", "normal"),
+            availability=dict(row.get("availability", {})),
+            jersey_display=row.get("jersey_display"),
         )
 
     @property
     def major_award(self) -> bool:
-        return self.mvp or self.dpoy or self.roy
+        return bool(self.mvp or self.dpoy or self.roy)
+
+    @property
+    def game_player_id(self) -> str:
+        return f"{self.pool}:{self.player_id}"
+
+    @property
+    def entry_id(self) -> str:
+        value = f"{self.game_player_id}:{self.season}"
+        return value if self.pool == "award" else f"{value}:{self.team}"

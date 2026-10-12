@@ -44,8 +44,8 @@ def category_score(record: PlayerTeamSeason, category: Category) -> int:
         Category.POINTS: lambda: round_half_up(record.ppg * 2),
         Category.REBOUNDS: lambda: round_half_up(record.rpg * 3),
         Category.ASSISTS: lambda: round_half_up(record.apg * 3),
-        Category.STEALS: lambda: round_half_up(record.spg * 10),
-        Category.BLOCKS: lambda: round_half_up(record.bpg * 10),
+        Category.STEALS: lambda: round_half_up(record.spg * 10) if record.spg is not None else 0,
+        Category.BLOCKS: lambda: round_half_up(record.bpg * 10) if record.bpg is not None else 0,
         Category.GAMES_PLAYED: lambda: record.gp,
         Category.ALL_NBA_THIRD: lambda: 20 if record.all_nba in (1, 2, 3) else 0,
         Category.ALL_NBA_SECOND: lambda: 30 if record.all_nba in (1, 2) else 0,
@@ -57,6 +57,18 @@ def category_score(record: PlayerTeamSeason, category: Category) -> int:
         Category.JERSEY: lambda: record.jersey,
     }
     return scorers[category]()
+
+
+def category_available(record: PlayerTeamSeason, category: Category) -> bool:
+    if category == Category.STEALS:
+        return record.spg is not None
+    if category == Category.BLOCKS:
+        return record.bpg is not None
+    if category in (Category.ALL_DEFENSE_FIRST, Category.ALL_DEFENSE_SECOND):
+        return record.availability.get("all_defense") != "award_not_introduced"
+    if category == Category.ALL_NBA_THIRD:
+        return record.all_nba in (1, 2, 3) or record.availability.get("all_nba_third") != "award_not_introduced"
+    return True
 
 
 def score_preview(record: PlayerTeamSeason) -> dict[Category, int]:

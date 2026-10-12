@@ -37,6 +37,11 @@
         </div>
       </div>
 
+      <div id="jackpot-banner" class="jackpot-banner hidden" role="status" aria-live="polite">
+        <span id="jackpot-icon" aria-hidden="true"></span>
+        <div><small>GOAT SPIN</small><h2 id="jackpot-title"></h2><p id="jackpot-note"></p></div>
+        <div id="jackpot-particles" aria-hidden="true"></div>
+      </div>
       <div class="roulette" aria-label="Season, team, and player roulette">
         <button class="slot" data-keep="season" disabled>
           <span class="slot-header"><span class="slot-label">Season</span><span class="lock-glyph" aria-hidden="true"></span></span>
@@ -57,6 +62,11 @@
 
       <button id="spin" class="spin-button"><span class="spin-icon" aria-hidden="true">↻</span><span class="spin-copy">Spin</span><small id="spin-count">3 spins available</small></button>
       <p id="message" class="message" role="status"></p>
+      <div id="dev-jackpots" class="dev-jackpots hidden">
+        <span>Development preview · games are not logged</span>
+        <button data-force="award" class="secondary">Preview gold jackpot</button>
+        <button data-force="prehistoric" class="secondary">Preview prehistoric jackpot</button>
+      </div>
 
       <article id="player-card" class="player-card hidden">
         <div class="player-heading">
@@ -68,6 +78,7 @@
         </div>
         <div id="stats" class="stats"></div>
         <div id="awards" class="awards" aria-label="Qualifying accolades"></div>
+        <p id="historical-note" class="historical-note hidden"></p>
       </article>
     </section>
 

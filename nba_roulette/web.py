@@ -12,7 +12,7 @@ from .game import GameState, MAX_SPINS_PER_TURN
 from .models import Lock, PlayerTeamSeason
 from .playtest import PlaytestBatchLogger
 from .roulette import RouletteEngine
-from .scoring import Category, UPPER_BONUS_THRESHOLD, UPPER_CATEGORIES
+from .scoring import Category, UPPER_BONUS_THRESHOLD, UPPER_CATEGORIES, category_available
 
 
 CATEGORY_LABELS = {
@@ -79,6 +79,8 @@ class BrowserGame:
     records: tuple[PlayerTeamSeason, ...]
     seed: int | None = None
     logger: PlaytestBatchLogger | None = None
+    goat_pools: dict[str, tuple[PlayerTeamSeason, ...]] = field(default_factory=dict)
+    dev_jackpots: bool = False
     game: GameState = field(init=False)
     game_id: str = field(init=False)
     started_at: str = field(init=False)
@@ -86,22 +88,24 @@ class BrowserGame:
     saved_batch_game: int | None = field(init=False, default=None)
 
     def __post_init__(self) -> None:
-        self.game = GameState(RouletteEngine(self.records, random.Random(self.seed)))
+        self.game = GameState(RouletteEngine(self.records, random.Random(self.seed)), self.goat_pools)
         self.game_id = uuid.uuid4().hex
         self.started_at = datetime.now(timezone.utc).isoformat()
 
-    def spin(self, keeps: list[str] | None = None) -> dict:
+    def spin(self, keeps: list[str] | None = None, force_pool: str | None = None) -> dict:
+        if force_pool is not None and not self.dev_jackpots:
+            raise ValueError("Jackpot previews are available only in development mode")
         if self.game.is_complete:
             raise ValueError("The game is complete")
         if self.game.turn is None:
-            self.game.start_turn()
+            self.game.start_turn(force_pool)
             selected_keeps: list[str] = []
         else:
             try:
                 locks = tuple(Lock(value) for value in (keeps or []))
             except ValueError as error:
                 raise ValueError("Unknown Keep selection") from error
-            self.game.reroll(locks)
+            self.game.reroll(locks, force_pool)
             selected_keeps = [lock.value for lock in locks]
         turn = self.game.turn
         self.events.append({
@@ -110,6 +114,7 @@ class BrowserGame:
             "spin": turn.spins_used,
             "keeps": selected_keeps,
             "result": self._record_identity(turn.current),
+            "development_forced": force_pool is not None,
         })
         return self.state()
 
@@ -131,7 +136,7 @@ class BrowserGame:
             "spins_used": spins_used,
             "result": self._record_identity(current),
         })
-        if self.game.is_complete and self.logger and self.saved_batch_game is None:
+        if self.game.is_complete and self.logger and not self.dev_jackpots and self.saved_batch_game is None:
             self.saved_batch_game = self.logger.save(self._playtest_record())
         return self.state()
 
@@ -159,6 +164,9 @@ class BrowserGame:
             "upper_target": UPPER_BONUS_THRESHOLD,
             "bonus": self.game.bonus,
             "playtest": self._playtest_status(),
+            "dev_jackpots": self.dev_jackpots,
+            "goat_enabled": bool(self.goat_pools),
+            "keeps_allowed": bool(turn and turn.current.pool == "normal"),
             "spins_used": turn.spins_used if turn else 0,
             "spins_total": MAX_SPINS_PER_TURN,
             "rerolls_left": MAX_SPINS_PER_TURN - turn.spins_used if turn else 0,
@@ -172,6 +180,7 @@ class BrowserGame:
                     "score": scored.get(category.value, {}).get("score"),
                     "preview": preview.get(category),
                     "selection": scored.get(category.value),
+                    "unavailable": bool(turn and not category_available(turn.current, category)),
                     **CATEGORY_META[category],
                 }
                 for category in Category
@@ -179,7 +188,7 @@ class BrowserGame:
         }
 
     def _playtest_status(self) -> dict | None:
-        if not self.logger:
+        if not self.logger or self.dev_jackpots:
             return None
         completed = self.logger.completed_count()
         return {
@@ -193,7 +202,7 @@ class BrowserGame:
 
     def _playtest_record(self) -> dict:
         spin_events = [event for event in self.events if event["event"] == "spin"]
-        player_ids = [event["result"]["player_id"] for event in spin_events]
+        player_ids = [event["result"]["game_player_id"] for event in spin_events]
         accolade_categories = {
             Category.ALL_NBA_THIRD, Category.ALL_NBA_SECOND, Category.ALL_NBA_FIRST,
             Category.CHAMPION, Category.ALL_DEFENSE_SECOND,
@@ -224,6 +233,7 @@ class BrowserGame:
             "repeated_player_appearances": len(player_ids) - len(set(player_ids)),
             "categories": categories,
             "events": self.events,
+            "goat_spins": sum(event["result"]["pool"] != "normal" for event in spin_events),
         }
 
     @staticmethod
@@ -233,6 +243,9 @@ class BrowserGame:
             "team": record.team,
             "player_id": record.player_id,
             "player": record.player,
+            "pool": record.pool,
+            "game_player_id": record.game_player_id,
+            "entry_id": record.entry_id,
         }
 
     @staticmethod
@@ -267,6 +280,12 @@ class BrowserGame:
             "player_id": record.player_id,
             "name": record.player,
             "jersey": record.jersey,
+            "jersey_display": record.jersey_display or str(record.jersey),
+            "pool": record.pool,
+            "unavailable_awards": [
+                label for key, label in (("dpoy", "DPOY"), ("all_defense", "All-Defense"), ("all_nba_third", "All-NBA Third"))
+                if record.availability.get(key) == "award_not_introduced"
+            ],
             "team_colors": {"primary": primary, "secondary": secondary},
             "stats": {
                 "PPG": record.ppg,

@@ -103,7 +103,7 @@ def build():
         assert len({r['entry_id'] for r in rows}) == len(rows)
         (ROOT / f'data/goat/{pool}_jackpot.json').write_text(
             json.dumps(rows, ensure_ascii=False, indent=2) + '\n')
-    manifest = {'schema_version': 1, 'enabled_in_game': False,
+    manifest = {'schema_version': 1, 'enabled_in_game': all(r['verification_status'] == 'official_verified' for r in awards + prehistoric),
                 'jackpot_probability': {'numerator': 1, 'denominator': 1296},
                 'pool_weights': {'award': 1, 'prehistoric': 1},
                 'award': {'count': len(awards), 'covered_seasons': seasons,

@@ -30,3 +30,17 @@ def load_records(
     if len(keys) != len(records):
         raise ValueError("Duplicate season/team/player records found")
     return tuple(records)
+
+
+def load_goat_pools(data_dir: Path | None = None) -> dict[str, tuple[PlayerTeamSeason, ...]]:
+    directory = data_dir or ROOT / "data" / "goat"
+    pools = {}
+    for name in ("award", "prehistoric"):
+        rows = json.loads((directory / f"{name}_jackpot.json").read_text(encoding="utf-8"))
+        if not rows or any(row.get("verification_status") != "official_verified" or row.get("pool") != name for row in rows):
+            raise ValueError(f"GOAT pool {name} must contain only verified entries")
+        records = tuple(PlayerTeamSeason.from_dict(row) for row in rows)
+        if len({r.entry_id for r in records}) != len(records):
+            raise ValueError(f"Duplicate GOAT entries in {name}")
+        pools[name] = records
+    return pools

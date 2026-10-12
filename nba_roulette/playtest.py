@@ -46,11 +46,11 @@ class PlaytestBatchLogger:
         fields = (
             "batch_game", "game_id", "completed_at", "final_score", "upper_score",
             "bonus", "zero_accolades", "spins_seen", "rerolls_used", "keep_uses",
-            "unique_players_seen", "repeated_player_appearances",
+            "unique_players_seen", "repeated_player_appearances", "goat_spins",
         )
         write_header = not self.csv_path.exists()
         with self.csv_path.open("a", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=fields)
             if write_header:
                 writer.writeheader()
-            writer.writerow({field: payload[field] for field in fields})
+            writer.writerow({field: payload.get(field, 0) for field in fields})
