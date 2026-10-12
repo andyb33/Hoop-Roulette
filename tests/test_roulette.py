@@ -33,6 +33,10 @@ def pool() -> tuple[PlayerTeamSeason, ...]:
     )
 
 
+def draft_pool() -> tuple[PlayerTeamSeason, ...]:
+    return pool() + tuple(make_record("S2", "B", player_id) for player_id in range(10, 20))
+
+
 class RouletteTests(unittest.TestCase):
     def setUp(self) -> None:
         self.records = pool()

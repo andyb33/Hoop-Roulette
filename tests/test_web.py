@@ -4,7 +4,7 @@ from dataclasses import replace
 from nba_roulette.scoring import Category
 from nba_roulette.web import BrowserGame
 
-from .test_roulette import make_record, pool
+from .test_roulette import make_record, draft_pool as pool
 
 
 class BrowserGameTests(unittest.TestCase):

@@ -10,7 +10,7 @@ from nba_roulette.simulation import (
     GreedyPolicy, RandomPolicy, StrategicPolicy, simulate_game, summarize_games,
 )
 
-from .test_roulette import pool
+from .test_roulette import draft_pool as pool
 
 
 class SimulationTests(unittest.TestCase):

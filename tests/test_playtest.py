@@ -10,7 +10,7 @@ from nba_roulette.playtest import PlaytestBatchLogger
 from nba_roulette.scoring import Category
 from nba_roulette.web import BrowserGame
 
-from .test_roulette import pool
+from .test_roulette import draft_pool as pool
 
 
 class PlaytestLoggingTests(unittest.TestCase):

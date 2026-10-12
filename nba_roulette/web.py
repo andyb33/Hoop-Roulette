@@ -218,6 +218,8 @@ class BrowserGame:
         }
         return {
             "game_id": self.game_id,
+            "rules_version": "1.6",
+            "unique_scored_players": True,
             "started_at": self.started_at,
             "completed_at": datetime.now(timezone.utc).isoformat(),
             "final_score": self.game.total_score,

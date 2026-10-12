@@ -29,6 +29,7 @@ class GameState:
         self.scorecard: dict[Category, int] = {}
         self.turn: TurnState | None = None
         self.scored_records: dict[Category, PlayerTeamSeason] = {}
+        self.drafted_player_ids: set[int] = set()
 
     @property
     def turns_completed(self) -> int:
@@ -83,7 +84,14 @@ class GameState:
         if not locks and self.goat_pools:
             if force_pool is not None or self.roulette.rng.randrange(1296) == 0:
                 name = force_pool or self.roulette.rng.choice(("award", "prehistoric"))
-                return self.roulette.rng.choice(self.goat_pools[name])
+                eligible = tuple(row for row in self.goat_pools[name]
+                                 if row.player_id not in self.drafted_player_ids)
+                if eligible:
+                    return self.roulette.rng.choice(eligible)
+                if force_pool is not None:
+                    raise ValueError("No undrafted players remain in this GOAT pool")
+        if not any(row.player_id not in self.drafted_player_ids for row in self.roulette.records):
+            raise RuntimeError("No undrafted players remain in the normal pool")
         # A GOAT reroll returns to the normal pool without keeping GOAT identities.
         return self.roulette.spin(current if current and current.pool == "normal" else None, locks)
 
@@ -101,5 +109,11 @@ class GameState:
         value = category_score(self.turn.current, category)
         self.scorecard[category] = value
         self.scored_records[category] = self.turn.current
+        self.drafted_player_ids.add(self.turn.current.player_id)
+        remaining = tuple(row for row in self.roulette.records
+                          if row.player_id not in self.drafted_player_ids)
+        if remaining:
+            # Rebuild valid hierarchies and lock caches, preserving the RNG stream.
+            self.roulette = RouletteEngine(remaining, self.roulette.rng)
         self.turn = None
         return value

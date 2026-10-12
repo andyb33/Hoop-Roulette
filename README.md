@@ -11,14 +11,18 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.6.1 includes GOAT spins:** a gold Award Jackpot (149 verified historical entries)
+**v0.7 adds unique draft picks:** scoring a player (even for zero) removes every
+season, team, and jackpot version of that real player for the rest of the game.
+Passed players remain eligible; starting a new game resets the draft.
+
+**Includes GOAT spins:** a gold Award Jackpot (149 verified historical entries)
 and purple/blue Prehistoric Jackpot (15 curated entries, including three new
 assist-oriented seasons). Eligible spins have a
 combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows and Mac v0.6.1 builds are produced by
+Development games are not logged. Windows and Mac v0.7 builds are produced by
 the GitHub Actions workflows; [tester instructions](docs/EXTERNAL_ALPHA_V0_6_1.md).
 
 The 2023–24, 2024–25, and 2025–26 datasets are complete:
