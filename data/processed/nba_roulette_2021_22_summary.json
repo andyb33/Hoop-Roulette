@@ -1,0 +1,76 @@
+{
+  "season": "2021-22",
+  "completed_at": "2026-10-12T09:41:33.319398+00:00",
+  "passed": true,
+  "entries": 317,
+  "jerseys_verified": 317,
+  "unresolved": [],
+  "staged_sha256": "fd12b4abdfc127035c181631270391f399c5987a6c53d4e3c2de25d812e30f50",
+  "game_sha256": "0f5e96b62cdbffbe5db54e54b4e747433c4745d0db83fc64d4aaf759b1fd3323",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2021-22&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "marcus-smart": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "nikola-jokic": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "scottie-barnes": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0042100406.json",
+  "champion_team": "GSW",
+  "champion_records": 12,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BKN": 11,
+    "BOS": 9,
+    "CHA": 9,
+    "CHI": 10,
+    "CLE": 10,
+    "DAL": 9,
+    "DEN": 11,
+    "DET": 12,
+    "GSW": 12,
+    "HOU": 10,
+    "IND": 14,
+    "LAC": 11,
+    "LAL": 11,
+    "MEM": 11,
+    "MIA": 10,
+    "MIL": 9,
+    "MIN": 10,
+    "NOP": 11,
+    "NYK": 10,
+    "OKC": 14,
+    "ORL": 11,
+    "PHI": 10,
+    "PHX": 9,
+    "POR": 11,
+    "SAC": 13,
+    "SAS": 11,
+    "TOR": 8,
+    "UTA": 9,
+    "WAS": 11
+  }
+}

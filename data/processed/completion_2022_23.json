@@ -1,0 +1,5715 @@
+{
+  "season": "2022-23",
+  "completed_at": "2026-10-12T09:41:32.851737+00:00",
+  "passed": true,
+  "entries": 305,
+  "jerseys_verified": 305,
+  "unresolved": [],
+  "staged_sha256": "43e7fca4a6ad0511c418df7ea5763b232aec81a6283b97cf9003ef206af121e5",
+  "game_sha256": "1afc970cca5c3cc2a3cde99d5be13401455c87c36b545173e1050d235f2a2968",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2022-23&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "jaren-jackson-jr": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "joel-embiid": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "paolo-banchero": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "official_all_nba": {
+    "giannis-antetokounmpo": 1,
+    "jayson-tatum": 1,
+    "joel-embiid": 1,
+    "shai-gilgeous-alexander": 1,
+    "luka-doncic": 1,
+    "jimmy-butler": 2,
+    "jaylen-brown": 2,
+    "nikola-jokic": 2,
+    "donovan-mitchell": 2,
+    "stephen-curry": 2,
+    "julius-randle": 3,
+    "lebron-james": 3,
+    "domantas-sabonis": 3,
+    "deaaron-fox": 3,
+    "damian-lillard": 3
+  },
+  "official_all_defense": {
+    "alex-caruso": 1,
+    "jrue-holiday": 1,
+    "jaren-jackson-jr": 1,
+    "brook-lopez": 1,
+    "evan-mobley": 1,
+    "bam-adebayo": 2,
+    "og-anunoby": 2,
+    "dillon-brooks": 2,
+    "draymond-green": 2,
+    "derrick-white": 2
+  },
+  "official_award_winners": {
+    "jaren-jackson-jr": {
+      "season": "2022-23",
+      "player_key": "jaren-jackson-jr",
+      "player": "Jaren Jackson Jr.",
+      "award_team": "Memphis Grizzlies",
+      "mvp": false,
+      "roy": false,
+      "dpoy": true,
+      "award_sources": {
+        "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+      },
+      "source_names": [
+        "Jaren Jackson Jr."
+      ]
+    },
+    "joel-embiid": {
+      "season": "2022-23",
+      "player_key": "joel-embiid",
+      "player": "Joel Embiid",
+      "award_team": "Philadelphia 76ers",
+      "mvp": true,
+      "roy": false,
+      "dpoy": false,
+      "award_sources": {
+        "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+      },
+      "source_names": [
+        "Joel Embiid"
+      ]
+    },
+    "paolo-banchero": {
+      "season": "2022-23",
+      "player_key": "paolo-banchero",
+      "player": "Paolo Banchero",
+      "award_team": "Orlando Magic",
+      "mvp": false,
+      "roy": true,
+      "dpoy": false,
+      "award_sources": {
+        "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+      },
+      "source_names": [
+        "Paolo Banchero"
+      ]
+    }
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0042200405.json",
+  "champion_roster": [
+    {
+      "personId": 1629008,
+      "firstName": "Michael",
+      "familyName": "Porter Jr.",
+      "jerseyNum": "1",
+      "played": "1"
+    },
+    {
+      "personId": 203932,
+      "firstName": "Aaron",
+      "familyName": "Gordon",
+      "jerseyNum": "50",
+      "played": "1"
+    },
+    {
+      "personId": 203999,
+      "firstName": "Nikola",
+      "familyName": "Jokic",
+      "jerseyNum": "15",
+      "played": "1"
+    },
+    {
+      "personId": 203484,
+      "firstName": "Kentavious",
+      "familyName": "Caldwell-Pope",
+      "jerseyNum": "5",
+      "played": "1"
+    },
+    {
+      "personId": 1627750,
+      "firstName": "Jamal",
+      "familyName": "Murray",
+      "jerseyNum": "27",
+      "played": "1"
+    },
+    {
+      "personId": 201145,
+      "firstName": "Jeff",
+      "familyName": "Green",
+      "jerseyNum": "32",
+      "played": "1"
+    },
+    {
+      "personId": 1628971,
+      "firstName": "Bruce",
+      "familyName": "Brown",
+      "jerseyNum": "11",
+      "played": "1"
+    },
+    {
+      "personId": 1631128,
+      "firstName": "Christian",
+      "familyName": "Braun",
+      "jerseyNum": "0",
+      "played": "1"
+    },
+    {
+      "personId": 201599,
+      "firstName": "DeAndre",
+      "familyName": "Jordan",
+      "jerseyNum": "6",
+      "played": "1"
+    },
+    {
+      "personId": 1628418,
+      "firstName": "Thomas",
+      "familyName": "Bryant",
+      "jerseyNum": "13",
+      "played": "0"
+    },
+    {
+      "personId": 1628427,
+      "firstName": "Vlatko",
+      "familyName": "Cancar",
+      "jerseyNum": "31",
+      "played": "0"
+    },
+    {
+      "personId": 202704,
+      "firstName": "Reggie",
+      "familyName": "Jackson",
+      "jerseyNum": "7",
+      "played": "0"
+    },
+    {
+      "personId": 1630192,
+      "firstName": "Zeke",
+      "familyName": "Nnaji",
+      "jerseyNum": "22",
+      "played": "0"
+    },
+    {
+      "personId": 202397,
+      "firstName": "Ish",
+      "familyName": "Smith",
+      "jerseyNum": "14",
+      "played": "0"
+    },
+    {
+      "personId": 1631212,
+      "firstName": "Peyton",
+      "familyName": "Watson",
+      "jerseyNum": "8",
+      "played": "0"
+    }
+  ],
+  "champion_team": "DEN",
+  "champion_records": 9,
+  "jersey_evidence": [
+    {
+      "player_id": 1631100,
+      "player": "AJ Griffin",
+      "team": "ATL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201216",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1631100,
+        "firstName": "AJ",
+        "familyName": "Griffin",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "15b664b75e45be356206273771d60b048e5c1839387f931affaf2bb127ea61d5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201216.json"
+    },
+    {
+      "player_id": 203992,
+      "player": "Bogdan Bogdanović",
+      "team": "ATL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201205",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 203992,
+        "firstName": "Bogdan",
+        "familyName": "Bogdanovic",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "4a7d01172278cdb48746eb12dd7ceaaa07a35f7979712132b770251e7e601f6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201205.json"
+    },
+    {
+      "player_id": 203991,
+      "player": "Clint Capela",
+      "team": "ATL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201205",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 203991,
+        "firstName": "Clint",
+        "familyName": "Capela",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "4a7d01172278cdb48746eb12dd7ceaaa07a35f7979712132b770251e7e601f6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201205.json"
+    },
+    {
+      "player_id": 1629631,
+      "player": "De'Andre Hunter",
+      "team": "ATL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201216",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629631,
+        "firstName": "De'Andre",
+        "familyName": "Hunter",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "15b664b75e45be356206273771d60b048e5c1839387f931affaf2bb127ea61d5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201216.json"
+    },
+    {
+      "player_id": 1627749,
+      "player": "Dejounte Murray",
+      "team": "ATL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201205",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1627749,
+        "firstName": "Dejounte",
+        "familyName": "Murray",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "4a7d01172278cdb48746eb12dd7ceaaa07a35f7979712132b770251e7e601f6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201205.json"
+    },
+    {
+      "player_id": 1628381,
+      "player": "John Collins",
+      "team": "ATL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201205",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1628381,
+        "firstName": "John",
+        "familyName": "Collins",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "4a7d01172278cdb48746eb12dd7ceaaa07a35f7979712132b770251e7e601f6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201205.json"
+    },
+    {
+      "player_id": 1630168,
+      "player": "Onyeka Okongwu",
+      "team": "ATL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201216",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 1630168,
+        "firstName": "Onyeka",
+        "familyName": "Okongwu",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "15b664b75e45be356206273771d60b048e5c1839387f931affaf2bb127ea61d5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201216.json"
+    },
+    {
+      "player_id": 1629027,
+      "player": "Trae Young",
+      "team": "ATL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201205",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1629027,
+        "firstName": "Trae",
+        "familyName": "Young",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "4a7d01172278cdb48746eb12dd7ceaaa07a35f7979712132b770251e7e601f6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201205.json"
+    },
+    {
+      "player_id": 1627732,
+      "player": "Ben Simmons",
+      "team": "BKN",
+      "last_game_date": "2023-02-15",
+      "game_id": "0022200878",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1627732,
+        "firstName": "Ben",
+        "familyName": "Simmons",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "3aab468617a6374e54ca860baedf1dd90792998bbaa81505a9f3ca404a9e0982",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200878.json"
+    },
+    {
+      "player_id": 1630560,
+      "player": "Cam Thomas",
+      "team": "BKN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201217",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1630560,
+        "firstName": "Cam",
+        "familyName": "Thomas",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "b1919eb8eefd3c57ca7793792390aeada80f8dd616ddf52328c1a262bb9191eb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201217.json"
+    },
+    {
+      "player_id": 203925,
+      "player": "Joe Harris",
+      "team": "BKN",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201207",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 203925,
+        "firstName": "Joe",
+        "familyName": "Harris",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "971c90f87299fd54ba53b09cf6bc29af887c58da3c020d4b5f7aa57d947d53be",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201207.json"
+    },
+    {
+      "player_id": 201142,
+      "player": "Kevin Durant",
+      "team": "BKN",
+      "last_game_date": "2023-01-08",
+      "game_id": "0022200599",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 201142,
+        "firstName": "Kevin",
+        "familyName": "Durant",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "6a4651fd394dd17ed5bae847c226a574e0aa6457cfd2631c67cd8f2749f36610",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200599.json"
+    },
+    {
+      "player_id": 202681,
+      "player": "Kyrie Irving",
+      "team": "BKN",
+      "last_game_date": "2023-02-01",
+      "game_id": "0022200772",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 202681,
+        "firstName": "Kyrie",
+        "familyName": "Irving",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "08c8ae627e93a106ff446e56ccbdc0c786c7fe5d42b51dfe288a3a9f92168d84",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200772.json"
+    },
+    {
+      "player_id": 1629651,
+      "player": "Nic Claxton",
+      "team": "BKN",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201207",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1629651,
+        "firstName": "Nic",
+        "familyName": "Claxton",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "971c90f87299fd54ba53b09cf6bc29af887c58da3c020d4b5f7aa57d947d53be",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201207.json"
+    },
+    {
+      "player_id": 1626220,
+      "player": "Royce O'Neale",
+      "team": "BKN",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201207",
+      "jersey": 0,
+      "jersey_display": "00",
+      "official_box_score_player": {
+        "personId": 1626220,
+        "firstName": "Royce",
+        "familyName": "O'Neale",
+        "jerseyNum": "00",
+        "played": "1"
+      },
+      "box_score_sha256": "971c90f87299fd54ba53b09cf6bc29af887c58da3c020d4b5f7aa57d947d53be",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201207.json"
+    },
+    {
+      "player_id": 203552,
+      "player": "Seth Curry",
+      "team": "BKN",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201207",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 203552,
+        "firstName": "Seth",
+        "familyName": "Curry",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "971c90f87299fd54ba53b09cf6bc29af887c58da3c020d4b5f7aa57d947d53be",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201207.json"
+    },
+    {
+      "player_id": 1629139,
+      "player": "Yuta Watanabe",
+      "team": "BKN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201217",
+      "jersey": 18,
+      "jersey_display": "18",
+      "official_box_score_player": {
+        "personId": 1629139,
+        "firstName": "Yuta",
+        "familyName": "Watanabe",
+        "jerseyNum": "18",
+        "played": "1"
+      },
+      "box_score_sha256": "b1919eb8eefd3c57ca7793792390aeada80f8dd616ddf52328c1a262bb9191eb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201217.json"
+    },
+    {
+      "player_id": 201143,
+      "player": "Al Horford",
+      "team": "BOS",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201206",
+      "jersey": 42,
+      "jersey_display": "42",
+      "official_box_score_player": {
+        "personId": 201143,
+        "firstName": "Al",
+        "familyName": "Horford",
+        "jerseyNum": "42",
+        "played": "1"
+      },
+      "box_score_sha256": "ddf236e5e71c34c6390ce4b307a7eabc49ad57b0abe8849815c4a2672ad2ddf2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201206.json"
+    },
+    {
+      "player_id": 1628401,
+      "player": "Derrick White",
+      "team": "BOS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201216",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1628401,
+        "firstName": "Derrick",
+        "familyName": "White",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "15b664b75e45be356206273771d60b048e5c1839387f931affaf2bb127ea61d5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201216.json"
+    },
+    {
+      "player_id": 1629684,
+      "player": "Grant Williams",
+      "team": "BOS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201216",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629684,
+        "firstName": "Grant",
+        "familyName": "Williams",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "15b664b75e45be356206273771d60b048e5c1839387f931affaf2bb127ea61d5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201216.json"
+    },
+    {
+      "player_id": 1627759,
+      "player": "Jaylen Brown",
+      "team": "BOS",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201192",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1627759,
+        "firstName": "Jaylen",
+        "familyName": "Brown",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "09c78f2a2c3dfbec03875876bf456ead69f184df20a2686971088b888ad3c1cf",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201192.json"
+    },
+    {
+      "player_id": 1628369,
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201206",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628369,
+        "firstName": "Jayson",
+        "familyName": "Tatum",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "ddf236e5e71c34c6390ce4b307a7eabc49ad57b0abe8849815c4a2672ad2ddf2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201206.json"
+    },
+    {
+      "player_id": 1627763,
+      "player": "Malcolm Brogdon",
+      "team": "BOS",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201192",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1627763,
+        "firstName": "Malcolm",
+        "familyName": "Brogdon",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "09c78f2a2c3dfbec03875876bf456ead69f184df20a2686971088b888ad3c1cf",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201192.json"
+    },
+    {
+      "player_id": 203935,
+      "player": "Marcus Smart",
+      "team": "BOS",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201181",
+      "jersey": 36,
+      "jersey_display": "36",
+      "official_box_score_player": {
+        "personId": 203935,
+        "firstName": "Marcus",
+        "familyName": "Smart",
+        "jerseyNum": "36",
+        "played": "1"
+      },
+      "box_score_sha256": "9f221b02398cae43c367113a0fa09af6fa80605f38f8a2bda8e14e68f028e23d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201181.json"
+    },
+    {
+      "player_id": 1629057,
+      "player": "Robert Williams III",
+      "team": "BOS",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201206",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 1629057,
+        "firstName": "Robert",
+        "familyName": "Williams III",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "ddf236e5e71c34c6390ce4b307a7eabc49ad57b0abe8849815c4a2672ad2ddf2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201206.json"
+    },
+    {
+      "player_id": 1630573,
+      "player": "Sam Hauser",
+      "team": "BOS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201216",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 1630573,
+        "firstName": "Sam",
+        "familyName": "Hauser",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "15b664b75e45be356206273771d60b048e5c1839387f931affaf2bb127ea61d5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201216.json"
+    },
+    {
+      "player_id": 1631121,
+      "player": "Bryce McGowens",
+      "team": "CHA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1631121,
+        "firstName": "Bryce",
+        "familyName": "McGowens",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1628372,
+      "player": "Dennis Smith Jr.",
+      "team": "CHA",
+      "last_game_date": "2023-03-26",
+      "game_id": "0022201113",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1628372,
+        "firstName": "Dennis",
+        "familyName": "Smith Jr.",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "efb87c2ce64ea1686656a72d09a1ad9c4f52efd1ba23b7804f7a7b2c72c77793",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201113.json"
+    },
+    {
+      "player_id": 202330,
+      "player": "Gordon Hayward",
+      "team": "CHA",
+      "last_game_date": "2023-03-26",
+      "game_id": "0022201113",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 202330,
+        "firstName": "Gordon",
+        "familyName": "Hayward",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "efb87c2ce64ea1686656a72d09a1ad9c4f52efd1ba23b7804f7a7b2c72c77793",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201113.json"
+    },
+    {
+      "player_id": 1629667,
+      "player": "Jalen McDaniels",
+      "team": "CHA",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200823",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1629667,
+        "firstName": "Jalen",
+        "familyName": "McDaniels",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "9c3d997f189684fc9bd75293af88d263dee9690c9fc66ab92b21a325ec3a8afc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200823.json"
+    },
+    {
+      "player_id": 1630547,
+      "player": "James Bouknight",
+      "team": "CHA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1630547,
+        "firstName": "James",
+        "familyName": "Bouknight",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1626162,
+      "player": "Kelly Oubre Jr.",
+      "team": "CHA",
+      "last_game_date": "2023-03-23",
+      "game_id": "0022201095",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1626162,
+        "firstName": "Kelly",
+        "familyName": "Oubre Jr.",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "e27ce27f1e6b780ac085ad94250ec6ad1ef40d78f9eecedbfeeca8bba3fc23b0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201095.json"
+    },
+    {
+      "player_id": 1630163,
+      "player": "LaMelo Ball",
+      "team": "CHA",
+      "last_game_date": "2023-02-27",
+      "game_id": "0022200919",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1630163,
+        "firstName": "LaMelo",
+        "familyName": "Ball",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "1270b7cbf7f18e1d0fb41400473b34a999c1b5d7ad2b8af28c7e1cac5bfcfcbb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200919.json"
+    },
+    {
+      "player_id": 1631109,
+      "player": "Mark Williams",
+      "team": "CHA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1631109,
+        "firstName": "Mark",
+        "familyName": "Williams",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 203486,
+      "player": "Mason Plumlee",
+      "team": "CHA",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200823",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 203486,
+        "firstName": "Mason",
+        "familyName": "Plumlee",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "9c3d997f189684fc9bd75293af88d263dee9690c9fc66ab92b21a325ec3a8afc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200823.json"
+    },
+    {
+      "player_id": 1630208,
+      "player": "Nick Richards",
+      "team": "CHA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1630208,
+        "firstName": "Nick",
+        "familyName": "Richards",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1629023,
+      "player": "P.J. Washington",
+      "team": "CHA",
+      "last_game_date": "2023-03-31",
+      "game_id": "0022201148",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1629023,
+        "firstName": "P.J.",
+        "familyName": "Washington",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "f0a61b28cca0e451ce910c28dcbbce787c71b817b032216505656dfb159e1cac",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201148.json"
+    },
+    {
+      "player_id": 1626179,
+      "player": "Terry Rozier",
+      "team": "CHA",
+      "last_game_date": "2023-03-23",
+      "game_id": "0022201095",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1626179,
+        "firstName": "Terry",
+        "familyName": "Rozier",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "e27ce27f1e6b780ac085ad94250ec6ad1ef40d78f9eecedbfeeca8bba3fc23b0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201095.json"
+    },
+    {
+      "player_id": 1630177,
+      "player": "Theo Maledon",
+      "team": "CHA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1630177,
+        "firstName": "Theo",
+        "familyName": "Maledon",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1627936,
+      "player": "Alex Caruso",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1627936,
+        "firstName": "Alex",
+        "familyName": "Caruso",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1630245,
+      "player": "Ayo Dosunmu",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1630245,
+        "firstName": "Ayo",
+        "familyName": "Dosunmu",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1629632,
+      "player": "Coby White",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1629632,
+        "firstName": "Coby",
+        "familyName": "White",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 201942,
+      "player": "DeMar DeRozan",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 201942,
+        "firstName": "DeMar",
+        "familyName": "DeRozan",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 201609,
+      "player": "Goran Dragic",
+      "team": "CHI",
+      "last_game_date": "2023-02-13",
+      "game_id": "0022200863",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 201609,
+        "firstName": "Goran",
+        "familyName": "Dragic",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "1e499df989981d2df6712f59157af8c358d286d21ca9088fd641491718c5fc6a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200863.json"
+    },
+    {
+      "player_id": 1629750,
+      "player": "Javonte Green",
+      "team": "CHI",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201210",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1629750,
+        "firstName": "Javonte",
+        "familyName": "Green",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "d5e8e09235f6c19f48f84a2f78167cff4bc3c3a45ddd392b98fb7b8893efc38d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201210.json"
+    },
+    {
+      "player_id": 202696,
+      "player": "Nikola Vučević",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 202696,
+        "firstName": "Nikola",
+        "familyName": "Vucevic",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1630172,
+      "player": "Patrick Williams",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 1630172,
+        "firstName": "Patrick",
+        "familyName": "Williams",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 203897,
+      "player": "Zach LaVine",
+      "team": "CHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 203897,
+        "firstName": "Zach",
+        "familyName": "LaVine",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1627747,
+      "player": "Caris LeVert",
+      "team": "CLE",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201178",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1627747,
+        "firstName": "Caris",
+        "familyName": "LeVert",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "67e57e7c14fd960dab28d74b9ab41b4a7aff9aaba20b6d3253876488a24f41e2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201178.json"
+    },
+    {
+      "player_id": 1626224,
+      "player": "Cedi Osman",
+      "team": "CLE",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 16,
+      "jersey_display": "16",
+      "official_box_score_player": {
+        "personId": 1626224,
+        "firstName": "Cedi",
+        "familyName": "Osman",
+        "jerseyNum": "16",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1629636,
+      "player": "Darius Garland",
+      "team": "CLE",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201178",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1629636,
+        "firstName": "Darius",
+        "familyName": "Garland",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "67e57e7c14fd960dab28d74b9ab41b4a7aff9aaba20b6d3253876488a24f41e2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201178.json"
+    },
+    {
+      "player_id": 1629731,
+      "player": "Dean Wade",
+      "team": "CLE",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 32,
+      "jersey_display": "32",
+      "official_box_score_player": {
+        "personId": 1629731,
+        "firstName": "Dean",
+        "familyName": "Wade",
+        "jerseyNum": "32",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1628378,
+      "player": "Donovan Mitchell",
+      "team": "CLE",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201178",
+      "jersey": 45,
+      "jersey_display": "45",
+      "official_box_score_player": {
+        "personId": 1628378,
+        "firstName": "Donovan",
+        "familyName": "Mitchell",
+        "jerseyNum": "45",
+        "played": "1"
+      },
+      "box_score_sha256": "67e57e7c14fd960dab28d74b9ab41b4a7aff9aaba20b6d3253876488a24f41e2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201178.json"
+    },
+    {
+      "player_id": 1630596,
+      "player": "Evan Mobley",
+      "team": "CLE",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1630596,
+        "firstName": "Evan",
+        "familyName": "Mobley",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1630171,
+      "player": "Isaac Okoro",
+      "team": "CLE",
+      "last_game_date": "2023-03-26",
+      "game_id": "0022201117",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1630171,
+        "firstName": "Isaac",
+        "familyName": "Okoro",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "92de5955512ed2e6bc2d510c5c3035f1e15150a8b9516fb743a21cde567996ee",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201117.json"
+    },
+    {
+      "player_id": 1628386,
+      "player": "Jarrett Allen",
+      "team": "CLE",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 1628386,
+        "firstName": "Jarrett",
+        "familyName": "Allen",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 201567,
+      "player": "Kevin Love",
+      "team": "CLE",
+      "last_game_date": "2023-01-24",
+      "game_id": "0022200715",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 201567,
+        "firstName": "Kevin",
+        "familyName": "Love",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "a0339e9e9255df899a8a1c19b25ac8de6b27ceafc329afa187f5ab33615b9230",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200715.json"
+    },
+    {
+      "player_id": 1630205,
+      "player": "Lamar Stevens",
+      "team": "CLE",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630205,
+        "firstName": "Lamar",
+        "familyName": "Stevens",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 201937,
+      "player": "Ricky Rubio",
+      "team": "CLE",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201218",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 201937,
+        "firstName": "Ricky",
+        "familyName": "Rubio",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "53726c64553fa7e80b3a2139aacb384215cb7c1aa5c12515ebfc0a7ad994725d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201218.json"
+    },
+    {
+      "player_id": 1626174,
+      "player": "Christian Wood",
+      "team": "DAL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201195",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1626174,
+        "firstName": "Christian",
+        "familyName": "Wood",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "206e2ad61e9647cf0f85427d0d5721910bd1567ef2c9908a637e0bfd11a32ed7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201195.json"
+    },
+    {
+      "player_id": 1627827,
+      "player": "Dorian Finney-Smith",
+      "team": "DAL",
+      "last_game_date": "2023-02-04",
+      "game_id": "0022200800",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1627827,
+        "firstName": "Dorian",
+        "familyName": "Finney-Smith",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "d6f238ad8c4c748d60293ba6b36c7c7618181f200c89200c3a1a166ead619088",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200800.json"
+    },
+    {
+      "player_id": 203939,
+      "player": "Dwight Powell",
+      "team": "DAL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201210",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 203939,
+        "firstName": "Dwight",
+        "familyName": "Powell",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "d5e8e09235f6c19f48f84a2f78167cff4bc3c3a45ddd392b98fb7b8893efc38d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201210.json"
+    },
+    {
+      "player_id": 1630182,
+      "player": "Josh Green",
+      "team": "DAL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201195",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630182,
+        "firstName": "Josh",
+        "familyName": "Green",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "206e2ad61e9647cf0f85427d0d5721910bd1567ef2c9908a637e0bfd11a32ed7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201195.json"
+    },
+    {
+      "player_id": 1629029,
+      "player": "Luka Dončić",
+      "team": "DAL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201210",
+      "jersey": 77,
+      "jersey_display": "77",
+      "official_box_score_player": {
+        "personId": 1629029,
+        "firstName": "Luka",
+        "familyName": "Doncic",
+        "jerseyNum": "77",
+        "played": "1"
+      },
+      "box_score_sha256": "d5e8e09235f6c19f48f84a2f78167cff4bc3c3a45ddd392b98fb7b8893efc38d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201210.json"
+    },
+    {
+      "player_id": 1628467,
+      "player": "Maxi Kleber",
+      "team": "DAL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201195",
+      "jersey": 42,
+      "jersey_display": "42",
+      "official_box_score_player": {
+        "personId": 1628467,
+        "firstName": "Maxi",
+        "familyName": "Kleber",
+        "jerseyNum": "42",
+        "played": "1"
+      },
+      "box_score_sha256": "206e2ad61e9647cf0f85427d0d5721910bd1567ef2c9908a637e0bfd11a32ed7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201195.json"
+    },
+    {
+      "player_id": 203493,
+      "player": "Reggie Bullock Jr.",
+      "team": "DAL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201210",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 203493,
+        "firstName": "Reggie",
+        "familyName": "Bullock",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "d5e8e09235f6c19f48f84a2f78167cff4bc3c3a45ddd392b98fb7b8893efc38d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201210.json"
+    },
+    {
+      "player_id": 203915,
+      "player": "Spencer Dinwiddie",
+      "team": "DAL",
+      "last_game_date": "2023-02-04",
+      "game_id": "0022200800",
+      "jersey": 26,
+      "jersey_display": "26",
+      "official_box_score_player": {
+        "personId": 203915,
+        "firstName": "Spencer",
+        "familyName": "Dinwiddie",
+        "jerseyNum": "26",
+        "played": "1"
+      },
+      "box_score_sha256": "d6f238ad8c4c748d60293ba6b36c7c7618181f200c89200c3a1a166ead619088",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200800.json"
+    },
+    {
+      "player_id": 203501,
+      "player": "Tim Hardaway Jr.",
+      "team": "DAL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201195",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 203501,
+        "firstName": "Tim",
+        "familyName": "Hardaway Jr.",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "206e2ad61e9647cf0f85427d0d5721910bd1567ef2c9908a637e0bfd11a32ed7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201195.json"
+    },
+    {
+      "player_id": 203932,
+      "player": "Aaron Gordon",
+      "team": "DEN",
+      "last_game_date": "2023-04-08",
+      "game_id": "0022201213",
+      "jersey": 50,
+      "jersey_display": "50",
+      "official_box_score_player": {
+        "personId": 203932,
+        "firstName": "Aaron",
+        "familyName": "Gordon",
+        "jerseyNum": "50",
+        "played": "1"
+      },
+      "box_score_sha256": "3298002208279d331fb384d2e9ed99bd900624c87518f28877ecc3c2d8c06d5c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201213.json"
+    },
+    {
+      "player_id": 1630538,
+      "player": "Bones Hyland",
+      "team": "DEN",
+      "last_game_date": "2023-01-31",
+      "game_id": "0022200768",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1630538,
+        "firstName": "Bones",
+        "familyName": "Hyland",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "89cadb2799806dd2662dfe65f216752a4cdbeb1244576211663452caaf9c75cd",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200768.json"
+    },
+    {
+      "player_id": 1628971,
+      "player": "Bruce Brown",
+      "team": "DEN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1628971,
+        "firstName": "Bruce",
+        "familyName": "Brown",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1631128,
+      "player": "Christian Braun",
+      "team": "DEN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1631128,
+        "firstName": "Christian",
+        "familyName": "Braun",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 201599,
+      "player": "DeAndre Jordan",
+      "team": "DEN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 201599,
+        "firstName": "DeAndre",
+        "familyName": "Jordan",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1627750,
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "last_game_date": "2023-04-08",
+      "game_id": "0022201213",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 1627750,
+        "firstName": "Jamal",
+        "familyName": "Murray",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "3298002208279d331fb384d2e9ed99bd900624c87518f28877ecc3c2d8c06d5c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201213.json"
+    },
+    {
+      "player_id": 201145,
+      "player": "Jeff Green",
+      "team": "DEN",
+      "last_game_date": "2023-04-08",
+      "game_id": "0022201213",
+      "jersey": 32,
+      "jersey_display": "32",
+      "official_box_score_player": {
+        "personId": 201145,
+        "firstName": "Jeff",
+        "familyName": "Green",
+        "jerseyNum": "32",
+        "played": "1"
+      },
+      "box_score_sha256": "3298002208279d331fb384d2e9ed99bd900624c87518f28877ecc3c2d8c06d5c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201213.json"
+    },
+    {
+      "player_id": 203484,
+      "player": "Kentavious Caldwell-Pope",
+      "team": "DEN",
+      "last_game_date": "2023-04-08",
+      "game_id": "0022201213",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 203484,
+        "firstName": "Kentavious",
+        "familyName": "Caldwell-Pope",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "3298002208279d331fb384d2e9ed99bd900624c87518f28877ecc3c2d8c06d5c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201213.json"
+    },
+    {
+      "player_id": 1629008,
+      "player": "Michael Porter Jr.",
+      "team": "DEN",
+      "last_game_date": "2023-04-08",
+      "game_id": "0022201213",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1629008,
+        "firstName": "Michael",
+        "familyName": "Porter Jr.",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "3298002208279d331fb384d2e9ed99bd900624c87518f28877ecc3c2d8c06d5c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201213.json"
+    },
+    {
+      "player_id": 203999,
+      "player": "Nikola Jokić",
+      "team": "DEN",
+      "last_game_date": "2023-04-08",
+      "game_id": "0022201213",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 203999,
+        "firstName": "Nikola",
+        "familyName": "Jokic",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "3298002208279d331fb384d2e9ed99bd900624c87518f28877ecc3c2d8c06d5c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201213.json"
+    },
+    {
+      "player_id": 202692,
+      "player": "Alec Burks",
+      "team": "DET",
+      "last_game_date": "2023-03-06",
+      "game_id": "0022200977",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 202692,
+        "firstName": "Alec",
+        "familyName": "Burks",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "3a1399a6aa051e5ab4efee1b4a27f73e06fb1f0271b64b250ddb8a2177ac7a81",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200977.json"
+    },
+    {
+      "player_id": 202711,
+      "player": "Bojan Bogdanović",
+      "team": "DET",
+      "last_game_date": "2023-03-01",
+      "game_id": "0022200934",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 202711,
+        "firstName": "Bojan",
+        "familyName": "Bogdanovic",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "4dca9bab10f0592af9fadf868f2dcf37bbc9628e04592afadc9f9ab3d6886b21",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200934.json"
+    },
+    {
+      "player_id": 202709,
+      "player": "Cory Joseph",
+      "team": "DET",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 18,
+      "jersey_display": "18",
+      "official_box_score_player": {
+        "personId": 202709,
+        "firstName": "Cory",
+        "familyName": "Joseph",
+        "jerseyNum": "18",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1628977,
+      "player": "Hamidou Diallo",
+      "team": "DET",
+      "last_game_date": "2023-03-06",
+      "game_id": "0022200977",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1628977,
+        "firstName": "Hamidou",
+        "familyName": "Diallo",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "3a1399a6aa051e5ab4efee1b4a27f73e06fb1f0271b64b250ddb8a2177ac7a81",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200977.json"
+    },
+    {
+      "player_id": 1630587,
+      "player": "Isaiah Livers",
+      "team": "DET",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201177",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1630587,
+        "firstName": "Isaiah",
+        "familyName": "Livers",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "08099eea5b7a9eec137278958be936b7183c722a9ebe514574fa78dd345175ae",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201177.json"
+    },
+    {
+      "player_id": 1630191,
+      "player": "Isaiah Stewart",
+      "team": "DET",
+      "last_game_date": "2023-02-25",
+      "game_id": "0022200903",
+      "jersey": 28,
+      "jersey_display": "28",
+      "official_box_score_player": {
+        "personId": 1630191,
+        "firstName": "Isaiah",
+        "familyName": "Stewart",
+        "jerseyNum": "28",
+        "played": "1"
+      },
+      "box_score_sha256": "d978d41104c9cbb2d009b122c3742530595d05416a7f754bdee4b9aae7d2d389",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200903.json"
+    },
+    {
+      "player_id": 1631093,
+      "player": "Jaden Ivey",
+      "team": "DET",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1631093,
+        "firstName": "Jaden",
+        "familyName": "Ivey",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1631105,
+      "player": "Jalen Duren",
+      "team": "DET",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1631105,
+        "firstName": "Jalen",
+        "familyName": "Duren",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1630165,
+      "player": "Killian Hayes",
+      "team": "DET",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1630165,
+        "firstName": "Killian",
+        "familyName": "Hayes",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 1628963,
+      "player": "Marvin Bagley III",
+      "team": "DET",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201223",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1628963,
+        "firstName": "Marvin",
+        "familyName": "Bagley III",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "b181d1b0bf97ad1e3a826e932ebf5acf7531781da615fca1126b6979b95db707",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201223.json"
+    },
+    {
+      "player_id": 203585,
+      "player": "Rodney McGruder",
+      "team": "DET",
+      "last_game_date": "2023-03-21",
+      "game_id": "0022201078",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 203585,
+        "firstName": "Rodney",
+        "familyName": "McGruder",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "97f4e14b830145b300d4896d91c1840dac194981dd3fb74d47354441d2c0a98e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201078.json"
+    },
+    {
+      "player_id": 1630180,
+      "player": "Saddiq Bey",
+      "team": "DET",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200822",
+      "jersey": 41,
+      "jersey_display": "41",
+      "official_box_score_player": {
+        "personId": 1630180,
+        "firstName": "Saddiq",
+        "familyName": "Bey",
+        "jerseyNum": "41",
+        "played": "1"
+      },
+      "box_score_sha256": "8979fc81c1fe4a0770a756d8ab380ccbcf61c10fa052224d0e2b6268ef87cb1f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200822.json"
+    },
+    {
+      "player_id": 203952,
+      "player": "Andrew Wiggins",
+      "team": "GSW",
+      "last_game_date": "2023-02-13",
+      "game_id": "0022200866",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 203952,
+        "firstName": "Andrew",
+        "familyName": "Wiggins",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "fb44ef4fc36f5569837734f03757ff4b3c8ad92002aba88c32a7f64aa356013f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200866.json"
+    },
+    {
+      "player_id": 1630237,
+      "player": "Anthony Lamb",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 40,
+      "jersey_display": "40",
+      "official_box_score_player": {
+        "personId": 1630237,
+        "firstName": "Anthony",
+        "familyName": "Lamb",
+        "jerseyNum": "40",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1628978,
+      "player": "Donte DiVincenzo",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628978,
+        "firstName": "Donte",
+        "familyName": "DiVincenzo",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 203110,
+      "player": "Draymond Green",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 203110,
+        "firstName": "Draymond",
+        "familyName": "Green",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1630228,
+      "player": "Jonathan Kuminga",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 0,
+      "jersey_display": "00",
+      "official_box_score_player": {
+        "personId": 1630228,
+        "firstName": "Jonathan",
+        "familyName": "Kuminga",
+        "jerseyNum": "00",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1629673,
+      "player": "Jordan Poole",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1629673,
+        "firstName": "Jordan",
+        "familyName": "Poole",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1626172,
+      "player": "Kevon Looney",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1626172,
+        "firstName": "Kevon",
+        "familyName": "Looney",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 202691,
+      "player": "Klay Thompson",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 202691,
+        "firstName": "Klay",
+        "familyName": "Thompson",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 201939,
+      "player": "Stephen Curry",
+      "team": "GSW",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 201939,
+        "firstName": "Stephen",
+        "familyName": "Curry",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1629660,
+      "player": "Ty Jerome",
+      "team": "GSW",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201187",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1629660,
+        "firstName": "Ty",
+        "familyName": "Jerome",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "e1544b7903bf1461b3d8032142e8ce980d9c263eed6358000bc58dd29d9db31c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201187.json"
+    },
+    {
+      "player_id": 1630578,
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 28,
+      "jersey_display": "28",
+      "official_box_score_player": {
+        "personId": 1630578,
+        "firstName": "Alperen",
+        "familyName": "Sengun",
+        "jerseyNum": "28",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 1630227,
+      "player": "Daishen Nix",
+      "team": "HOU",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1630227,
+        "firstName": "Daishen",
+        "familyName": "Nix",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 201569,
+      "player": "Eric Gordon",
+      "team": "HOU",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200827",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 201569,
+        "firstName": "Eric",
+        "familyName": "Gordon",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "bd26646682ca4439d70376cb0f415c078c4bc6946b07661f1e7f58c2668621c3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200827.json"
+    },
+    {
+      "player_id": 1631095,
+      "player": "Jabari Smith Jr.",
+      "team": "HOU",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1631095,
+        "firstName": "Jabari",
+        "familyName": "Smith Jr.",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 1630256,
+      "player": "Jae'Sean Tate",
+      "team": "HOU",
+      "last_game_date": "2023-03-19",
+      "game_id": "0022201067",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630256,
+        "firstName": "Jae'Sean",
+        "familyName": "Tate",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "eb893ed88a6254fe7db8c110fea8d8b591213c90da0acb96ca5b4b31fae92ba6",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201067.json"
+    },
+    {
+      "player_id": 1630224,
+      "player": "Jalen Green",
+      "team": "HOU",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1630224,
+        "firstName": "Jalen",
+        "familyName": "Green",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 1630231,
+      "player": "KJ Martin",
+      "team": "HOU",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1630231,
+        "firstName": "Kenyon",
+        "familyName": "Martin Jr.",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 1629645,
+      "player": "Kevin Porter Jr.",
+      "team": "HOU",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201202",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1629645,
+        "firstName": "Kevin",
+        "familyName": "Porter Jr.",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "b0bcbe51791ce0f72bc8d1fc7cb9dfa68535460fa743a2ed9ecb4e38d665f8ad",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201202.json"
+    },
+    {
+      "player_id": 1631106,
+      "player": "Tari Eason",
+      "team": "HOU",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 1631106,
+        "firstName": "Tari",
+        "familyName": "Eason",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 1630174,
+      "player": "Aaron Nesmith",
+      "team": "IND",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1630174,
+        "firstName": "Aaron",
+        "familyName": "Nesmith",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1629614,
+      "player": "Andrew Nembhard",
+      "team": "IND",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1629614,
+        "firstName": "Andrew",
+        "familyName": "Nembhard",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1631097,
+      "player": "Bennedict Mathurin",
+      "team": "IND",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 0,
+      "jersey_display": "00",
+      "official_box_score_player": {
+        "personId": 1631097,
+        "firstName": "Bennedict",
+        "familyName": "Mathurin",
+        "jerseyNum": "00",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1627741,
+      "player": "Buddy Hield",
+      "team": "IND",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1627741,
+        "firstName": "Buddy",
+        "familyName": "Hield",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1630537,
+      "player": "Chris Duarte",
+      "team": "IND",
+      "last_game_date": "2023-03-25",
+      "game_id": "0022201107",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1630537,
+        "firstName": "Chris",
+        "familyName": "Duarte",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "33bd8640f155848a643ece15b9fb1396b3e5f8c041bde124a9fbf1d3bfbdee01",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201107.json"
+    },
+    {
+      "player_id": 1630543,
+      "player": "Isaiah Jackson",
+      "team": "IND",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1630543,
+        "firstName": "Isaiah",
+        "familyName": "Jackson",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1630188,
+      "player": "Jalen Smith",
+      "team": "IND",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201190",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1630188,
+        "firstName": "Jalen",
+        "familyName": "Smith",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "f4bb831b592abd19da1daf23346d403fc225f26555b256156d578272923ff0c6",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201190.json"
+    },
+    {
+      "player_id": 1626167,
+      "player": "Myles Turner",
+      "team": "IND",
+      "last_game_date": "2023-03-24",
+      "game_id": "0022201097",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1626167,
+        "firstName": "Myles",
+        "familyName": "Turner",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "92083639601b9c78c76fc1cbd6e5c7a3e8cecb54775da02810f310d921d5cf1e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201097.json"
+    },
+    {
+      "player_id": 1629052,
+      "player": "Oshae Brissett",
+      "team": "IND",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629052,
+        "firstName": "Oshae",
+        "familyName": "Brissett",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 204456,
+      "player": "T.J. McConnell",
+      "team": "IND",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201190",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 204456,
+        "firstName": "T.J.",
+        "familyName": "McConnell",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "f4bb831b592abd19da1daf23346d403fc225f26555b256156d578272923ff0c6",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201190.json"
+    },
+    {
+      "player_id": 1630169,
+      "player": "Tyrese Haliburton",
+      "team": "IND",
+      "last_game_date": "2023-03-25",
+      "game_id": "0022201107",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1630169,
+        "firstName": "Tyrese",
+        "familyName": "Haliburton",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "33bd8640f155848a643ece15b9fb1396b3e5f8c041bde124a9fbf1d3bfbdee01",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201107.json"
+    },
+    {
+      "player_id": 1627826,
+      "player": "Ivica Zubac",
+      "team": "LAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 40,
+      "jersey_display": "40",
+      "official_box_score_player": {
+        "personId": 1627826,
+        "firstName": "Ivica",
+        "familyName": "Zubac",
+        "jerseyNum": "40",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 202322,
+      "player": "John Wall",
+      "team": "LAC",
+      "last_game_date": "2023-01-13",
+      "game_id": "0022200639",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 202322,
+        "firstName": "John",
+        "familyName": "Wall",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "48517c9165fa5891293812b159b04b767b83472ffc940cc56f1cdbb599803df1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200639.json"
+    },
+    {
+      "player_id": 202695,
+      "player": "Kawhi Leonard",
+      "team": "LAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 202695,
+        "firstName": "Kawhi",
+        "familyName": "Leonard",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1628379,
+      "player": "Luke Kennard",
+      "team": "LAC",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200829",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628379,
+        "firstName": "Luke",
+        "familyName": "Kennard",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "0842cf9ea0fc9dbec390253e2981d183339b46328228741a7634e79d2eb94ba3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200829.json"
+    },
+    {
+      "player_id": 202694,
+      "player": "Marcus Morris Sr.",
+      "team": "LAC",
+      "last_game_date": "2023-03-25",
+      "game_id": "0022201112",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 202694,
+        "firstName": "Marcus",
+        "familyName": "Morris Sr.",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "0386a06574f1f5f60adf2ec219f98e2e0c7f3b6952479307776fa0482bb1153c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201112.json"
+    },
+    {
+      "player_id": 201587,
+      "player": "Nicolas Batum",
+      "team": "LAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 201587,
+        "firstName": "Nicolas",
+        "familyName": "Batum",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1626181,
+      "player": "Norman Powell",
+      "team": "LAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1626181,
+        "firstName": "Norman",
+        "familyName": "Powell",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 202331,
+      "player": "Paul George",
+      "team": "LAC",
+      "last_game_date": "2023-03-21",
+      "game_id": "0022201082",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 202331,
+        "firstName": "Paul",
+        "familyName": "George",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "f0354907ce0f52a4f716d09d2670b38ca0801e3a5b958afb17d664efa38c879d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201082.json"
+    },
+    {
+      "player_id": 202704,
+      "player": "Reggie Jackson",
+      "team": "LAC",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200829",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 202704,
+        "firstName": "Reggie",
+        "familyName": "Jackson",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "0842cf9ea0fc9dbec390253e2981d183339b46328228741a7634e79d2eb94ba3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200829.json"
+    },
+    {
+      "player_id": 203496,
+      "player": "Robert Covington",
+      "team": "LAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 203496,
+        "firstName": "Robert",
+        "familyName": "Covington",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1629611,
+      "player": "Terance Mann",
+      "team": "LAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1629611,
+        "firstName": "Terance",
+        "familyName": "Mann",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 203076,
+      "player": "Anthony Davis",
+      "team": "LAL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203076,
+        "firstName": "Anthony",
+        "familyName": "Davis",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 1630559,
+      "player": "Austin Reaves",
+      "team": "LAL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1630559,
+        "firstName": "Austin",
+        "familyName": "Reaves",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 203471,
+      "player": "Dennis Schröder",
+      "team": "LAL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201196",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 203471,
+        "firstName": "Dennis",
+        "familyName": "Schroder",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "afc552a1b08911f597f5d2c403adb178a00cda4db5a025f76e6105dab091a1ee",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201196.json"
+    },
+    {
+      "player_id": 2544,
+      "player": "LeBron James",
+      "team": "LAL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 2544,
+        "firstName": "LeBron",
+        "familyName": "James",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 1629022,
+      "player": "Lonnie Walker IV",
+      "team": "LAL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201212",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1629022,
+        "firstName": "Lonnie",
+        "familyName": "Walker IV",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "d7d3ae9500f62eebde049e86a461ddd8ba89dea43aca3b005b854d1c2c2c6fa0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201212.json"
+    },
+    {
+      "player_id": 201976,
+      "player": "Patrick Beverley",
+      "team": "LAL",
+      "last_game_date": "2023-02-07",
+      "game_id": "0022200821",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 201976,
+        "firstName": "Patrick",
+        "familyName": "Beverley",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "927d34c4950db1b7ddfe8099aff108bc9f8552cae19a221e29d4efe886fa5ca2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200821.json"
+    },
+    {
+      "player_id": 1629060,
+      "player": "Rui Hachimura",
+      "team": "LAL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 28,
+      "jersey_display": "28",
+      "official_box_score_player": {
+        "personId": 1629060,
+        "firstName": "Rui",
+        "familyName": "Hachimura",
+        "jerseyNum": "28",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 201566,
+      "player": "Russell Westbrook",
+      "team": "LAL",
+      "last_game_date": "2023-02-07",
+      "game_id": "0022200821",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 201566,
+        "firstName": "Russell",
+        "familyName": "Westbrook",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "927d34c4950db1b7ddfe8099aff108bc9f8552cae19a221e29d4efe886fa5ca2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200821.json"
+    },
+    {
+      "player_id": 1628418,
+      "player": "Thomas Bryant",
+      "team": "LAL",
+      "last_game_date": "2023-02-07",
+      "game_id": "0022200821",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 1628418,
+        "firstName": "Thomas",
+        "familyName": "Bryant",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "927d34c4950db1b7ddfe8099aff108bc9f8552cae19a221e29d4efe886fa5ca2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200821.json"
+    },
+    {
+      "player_id": 1628972,
+      "player": "Troy Brown Jr.",
+      "team": "LAL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1628972,
+        "firstName": "Troy",
+        "familyName": "Brown Jr.",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 1629117,
+      "player": "Wenyen Gabriel",
+      "team": "LAL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1629117,
+        "firstName": "Wenyen",
+        "familyName": "Gabriel",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 1629634,
+      "player": "Brandon Clarke",
+      "team": "MEM",
+      "last_game_date": "2023-03-03",
+      "game_id": "0022200952",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1629634,
+        "firstName": "Brandon",
+        "familyName": "Clarke",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "a42c81c3a73fff5fe722905956cdb0aa2a241b0a224c1bff6d7c2c8b9529c4f8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200952.json"
+    },
+    {
+      "player_id": 1631223,
+      "player": "David Roddy",
+      "team": "MEM",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201226",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 1631223,
+        "firstName": "David",
+        "familyName": "Roddy",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "7339d0f2022e59f4a821cce5a880b1787e556565dff0fed478856c3c6bd70a71",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201226.json"
+    },
+    {
+      "player_id": 1630217,
+      "player": "Desmond Bane",
+      "team": "MEM",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201208",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1630217,
+        "firstName": "Desmond",
+        "familyName": "Bane",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "f612971a3714cc13d09439ef328294ace0de5cb9d33959901d3935c536354c8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201208.json"
+    },
+    {
+      "player_id": 1628415,
+      "player": "Dillon Brooks",
+      "team": "MEM",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201208",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1628415,
+        "firstName": "Dillon",
+        "familyName": "Brooks",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "f612971a3714cc13d09439ef328294ace0de5cb9d33959901d3935c536354c8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201208.json"
+    },
+    {
+      "player_id": 1629630,
+      "player": "Ja Morant",
+      "team": "MEM",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201208",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629630,
+        "firstName": "Ja",
+        "familyName": "Morant",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "f612971a3714cc13d09439ef328294ace0de5cb9d33959901d3935c536354c8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201208.json"
+    },
+    {
+      "player_id": 1628991,
+      "player": "Jaren Jackson Jr.",
+      "team": "MEM",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201208",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1628991,
+        "firstName": "Jaren",
+        "familyName": "Jackson Jr.",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "f612971a3714cc13d09439ef328294ace0de5cb9d33959901d3935c536354c8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201208.json"
+    },
+    {
+      "player_id": 1629723,
+      "player": "John Konchar",
+      "team": "MEM",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201226",
+      "jersey": 46,
+      "jersey_display": "46",
+      "official_box_score_player": {
+        "personId": 1629723,
+        "firstName": "John",
+        "familyName": "Konchar",
+        "jerseyNum": "46",
+        "played": "1"
+      },
+      "box_score_sha256": "7339d0f2022e59f4a821cce5a880b1787e556565dff0fed478856c3c6bd70a71",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201226.json"
+    },
+    {
+      "player_id": 1630583,
+      "player": "Santi Aldama",
+      "team": "MEM",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201194",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1630583,
+        "firstName": "Santi",
+        "familyName": "Aldama",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "69c18401a22f9fd611dfabb6311abf7b10a83d9261b042977a710c37ce4cd8c7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201194.json"
+    },
+    {
+      "player_id": 203500,
+      "player": "Steven Adams",
+      "team": "MEM",
+      "last_game_date": "2023-01-22",
+      "game_id": "0022200703",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 203500,
+        "firstName": "Steven",
+        "familyName": "Adams",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "11c4d7267ca43e2c152d4eaaceba4d354469ec6f14e5357dcb28d74e8bf7f1e4",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200703.json"
+    },
+    {
+      "player_id": 1626145,
+      "player": "Tyus Jones",
+      "team": "MEM",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201208",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 1626145,
+        "firstName": "Tyus",
+        "familyName": "Jones",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "f612971a3714cc13d09439ef328294ace0de5cb9d33959901d3935c536354c8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201208.json"
+    },
+    {
+      "player_id": 1630214,
+      "player": "Xavier Tillman",
+      "team": "MEM",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201208",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1630214,
+        "firstName": "Xavier",
+        "familyName": "Tillman",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "f612971a3714cc13d09439ef328294ace0de5cb9d33959901d3935c536354c8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201208.json"
+    },
+    {
+      "player_id": 1630533,
+      "player": "Ziaire Williams",
+      "team": "MEM",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201226",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630533,
+        "firstName": "Ziaire",
+        "familyName": "Williams",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "7339d0f2022e59f4a821cce5a880b1787e556565dff0fed478856c3c6bd70a71",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201226.json"
+    },
+    {
+      "player_id": 1628389,
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1628389,
+        "firstName": "Bam",
+        "familyName": "Adebayo",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1628997,
+      "player": "Caleb Martin",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 16,
+      "jersey_display": "16",
+      "official_box_score_player": {
+        "personId": 1628997,
+        "firstName": "Caleb",
+        "familyName": "Martin",
+        "jerseyNum": "16",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1629130,
+      "player": "Duncan Robinson",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 1629130,
+        "firstName": "Duncan",
+        "familyName": "Robinson",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1629216,
+      "player": "Gabe Vincent",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1629216,
+        "firstName": "Gabe",
+        "familyName": "Vincent",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1629312,
+      "player": "Haywood Highsmith",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1629312,
+        "firstName": "Haywood",
+        "familyName": "Highsmith",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 202710,
+      "player": "Jimmy Butler III",
+      "team": "MIA",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201198",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 202710,
+        "firstName": "Jimmy",
+        "familyName": "Butler",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "abbf20a3655b330a5b86f9a14e1bd5b92a62da9b99de4dbe69eb5b06bf36d709",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201198.json"
+    },
+    {
+      "player_id": 200768,
+      "player": "Kyle Lowry",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 200768,
+        "firstName": "Kyle",
+        "familyName": "Lowry",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1629622,
+      "player": "Max Strus",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 1629622,
+        "firstName": "Max",
+        "familyName": "Strus",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1629639,
+      "player": "Tyler Herro",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1629639,
+        "firstName": "Tyler",
+        "familyName": "Herro",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 203506,
+      "player": "Victor Oladipo",
+      "team": "MIA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 203506,
+        "firstName": "Victor",
+        "familyName": "Oladipo",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1626171,
+      "player": "Bobby Portis",
+      "team": "MIL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1626171,
+        "firstName": "Bobby",
+        "familyName": "Portis",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 201572,
+      "player": "Brook Lopez",
+      "team": "MIL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201193",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 201572,
+        "firstName": "Brook",
+        "familyName": "Lopez",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "59a1fcc0fe34ff4cf86345989ccef97a8930c05a6979e86ecf56fb9a3cf28abf",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201193.json"
+    },
+    {
+      "player_id": 201588,
+      "player": "George Hill",
+      "team": "MIL",
+      "last_game_date": "2023-02-02",
+      "game_id": "0022200784",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 201588,
+        "firstName": "George",
+        "familyName": "Hill",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "a5b125a7683294aa7ff63e8893a2fffea841208fee128d38b5d7af80adc0d8a8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200784.json"
+    },
+    {
+      "player_id": 203507,
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201179",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 203507,
+        "firstName": "Giannis",
+        "familyName": "Antetokounmpo",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "3abbec93ca8e23f744aea58c17e495d0cb9d5ad926f176ad1b8d7ec392189d84",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201179.json"
+    },
+    {
+      "player_id": 1628960,
+      "player": "Grayson Allen",
+      "team": "MIL",
+      "last_game_date": "2023-04-02",
+      "game_id": "0022201174",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1628960,
+        "firstName": "Grayson",
+        "familyName": "Allen",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "9c9f1db1f43cf25c9fd17af31becf26bb22977e1f105bb0d0c5c1f8d474742c2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201174.json"
+    },
+    {
+      "player_id": 1628975,
+      "player": "Jevon Carter",
+      "team": "MIL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628975,
+        "firstName": "Jevon",
+        "familyName": "Carter",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 204060,
+      "player": "Joe Ingles",
+      "team": "MIL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 204060,
+        "firstName": "Joe",
+        "familyName": "Ingles",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 1629670,
+      "player": "Jordan Nwora",
+      "team": "MIL",
+      "last_game_date": "2023-01-31",
+      "game_id": "0022200767",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1629670,
+        "firstName": "Jordan",
+        "familyName": "Nwora",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "89c98cfb8d2a009ac9321edd886d43bac5b3cc7d497d0da76d862b6c4db257a0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200767.json"
+    },
+    {
+      "player_id": 201950,
+      "player": "Jrue Holiday",
+      "team": "MIL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201193",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 201950,
+        "firstName": "Jrue",
+        "familyName": "Holiday",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "59a1fcc0fe34ff4cf86345989ccef97a8930c05a6979e86ecf56fb9a3cf28abf",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201193.json"
+    },
+    {
+      "player_id": 203114,
+      "player": "Khris Middleton",
+      "team": "MIL",
+      "last_game_date": "2023-04-05",
+      "game_id": "0022201193",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 203114,
+        "firstName": "Khris",
+        "familyName": "Middleton",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "59a1fcc0fe34ff4cf86345989ccef97a8930c05a6979e86ecf56fb9a3cf28abf",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201193.json"
+    },
+    {
+      "player_id": 1626192,
+      "player": "Pat Connaughton",
+      "team": "MIL",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201179",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1626192,
+        "firstName": "Pat",
+        "familyName": "Connaughton",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "3abbec93ca8e23f744aea58c17e495d0cb9d5ad926f176ad1b8d7ec392189d84",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201179.json"
+    },
+    {
+      "player_id": 202083,
+      "player": "Wesley Matthews",
+      "team": "MIL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 202083,
+        "firstName": "Wesley",
+        "familyName": "Matthews",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 1630162,
+      "player": "Anthony Edwards",
+      "team": "MIN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1630162,
+        "firstName": "Anthony",
+        "familyName": "Edwards",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 203085,
+      "player": "Austin Rivers",
+      "team": "MIN",
+      "last_game_date": "2023-03-20",
+      "game_id": "0022201073",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 203085,
+        "firstName": "Austin",
+        "familyName": "Rivers",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "6ca35b151cb8c7e980b07cc09745f781b02856f34c5fb04b73f76c093190f21a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201073.json"
+    },
+    {
+      "player_id": 1626156,
+      "player": "D'Angelo Russell",
+      "team": "MIN",
+      "last_game_date": "2023-02-07",
+      "game_id": "0022200820",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1626156,
+        "firstName": "D'Angelo",
+        "familyName": "Russell",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "f674c36754a986c4ce5ac5da65d1a305ec0be79aa20cf88420a2e019e8063894",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200820.json"
+    },
+    {
+      "player_id": 1630183,
+      "player": "Jaden McDaniels",
+      "team": "MIN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1630183,
+        "firstName": "Jaden",
+        "familyName": "McDaniels",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1629669,
+      "player": "Jaylen Nowell",
+      "team": "MIN",
+      "last_game_date": "2023-03-27",
+      "game_id": "0022201128",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1629669,
+        "firstName": "Jaylen",
+        "familyName": "Nowell",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "77fbef5a5a82036a810c480514396f5fba66d60809d4e8b84ea60036d366cd28",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201128.json"
+    },
+    {
+      "player_id": 1629162,
+      "player": "Jordan McLaughlin",
+      "team": "MIN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1629162,
+        "firstName": "Jordan",
+        "familyName": "McLaughlin",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 203937,
+      "player": "Kyle Anderson",
+      "team": "MIN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 203937,
+        "firstName": "Kyle",
+        "familyName": "Anderson",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1629675,
+      "player": "Naz Reid",
+      "team": "MIN",
+      "last_game_date": "2023-03-29",
+      "game_id": "0022201144",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1629675,
+        "firstName": "Naz",
+        "familyName": "Reid",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "0c30f4a78e1a87830ed007a1b195328534938edcbae24a9c98e2bde2d865500e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201144.json"
+    },
+    {
+      "player_id": 203497,
+      "player": "Rudy Gobert",
+      "team": "MIN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 203497,
+        "firstName": "Rudy",
+        "familyName": "Gobert",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1627752,
+      "player": "Taurean Prince",
+      "team": "MIN",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1627752,
+        "firstName": "Taurean",
+        "familyName": "Prince",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1627742,
+      "player": "Brandon Ingram",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1627742,
+        "firstName": "Brandon",
+        "familyName": "Ingram",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 203468,
+      "player": "CJ McCollum",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203468,
+        "firstName": "CJ",
+        "familyName": "McCollum",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1628984,
+      "player": "Devonte' Graham",
+      "team": "NOP",
+      "last_game_date": "2023-02-05",
+      "game_id": "0022200807",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1628984,
+        "firstName": "Devonte'",
+        "familyName": "Graham",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "43c5df31839510cf07193e9f28aeb3d33952ba8c772d3801737ffef4e41705ac",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200807.json"
+    },
+    {
+      "player_id": 1630700,
+      "player": "Dyson Daniels",
+      "team": "NOP",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201209",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1630700,
+        "firstName": "Dyson",
+        "familyName": "Daniels",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "a873245c266768d0b9cd0565ac9d6a88cd96d5ae1cdd05d768a24ee57d69d16f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201209.json"
+    },
+    {
+      "player_id": 1630529,
+      "player": "Herbert Jones",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1630529,
+        "firstName": "Herbert",
+        "familyName": "Jones",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 202685,
+      "player": "Jonas Valančiūnas",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 202685,
+        "firstName": "Jonas",
+        "familyName": "Valanciunas",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1630631,
+      "player": "Jose Alvarado",
+      "team": "NOP",
+      "last_game_date": "2023-02-27",
+      "game_id": "0022200922",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1630631,
+        "firstName": "Jose",
+        "familyName": "Alvarado",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "dfb7380f03a92f1e8c22dfffde43fee01ca1fd5c7fe7382f01cf304decc4c234",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200922.json"
+    },
+    {
+      "player_id": 1626204,
+      "player": "Larry Nance Jr.",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1626204,
+        "firstName": "Larry",
+        "familyName": "Nance Jr.",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1630230,
+      "player": "Naji Marshall",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630230,
+        "firstName": "Naji",
+        "familyName": "Marshall",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1630530,
+      "player": "Trey Murphy III",
+      "team": "NOP",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201225",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1630530,
+        "firstName": "Trey",
+        "familyName": "Murphy III",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "cfb93e8fded8aadb73ca98cce253878e25e9bd6c0a22ff2083853397197fcb39",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201225.json"
+    },
+    {
+      "player_id": 1630193,
+      "player": "Immanuel Quickley",
+      "team": "NYK",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1630193,
+        "firstName": "Immanuel",
+        "familyName": "Quickley",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1628392,
+      "player": "Isaiah Hartenstein",
+      "team": "NYK",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 1628392,
+        "firstName": "Isaiah",
+        "familyName": "Hartenstein",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1628973,
+      "player": "Jalen Brunson",
+      "team": "NYK",
+      "last_game_date": "2023-04-02",
+      "game_id": "0022201168",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1628973,
+        "firstName": "Jalen",
+        "familyName": "Brunson",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "f36b15b0541564cf5c420310cb823180db7b98782ad095668b85e4a390ebc92e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201168.json"
+    },
+    {
+      "player_id": 1630579,
+      "player": "Jericho Sims",
+      "team": "NYK",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201209",
+      "jersey": 45,
+      "jersey_display": "45",
+      "official_box_score_player": {
+        "personId": 1630579,
+        "firstName": "Jericho",
+        "familyName": "Sims",
+        "jerseyNum": "45",
+        "played": "1"
+      },
+      "box_score_sha256": "a873245c266768d0b9cd0565ac9d6a88cd96d5ae1cdd05d768a24ee57d69d16f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201209.json"
+    },
+    {
+      "player_id": 203944,
+      "player": "Julius Randle",
+      "team": "NYK",
+      "last_game_date": "2023-03-29",
+      "game_id": "0022201138",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 203944,
+        "firstName": "Julius",
+        "familyName": "Randle",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "4edcf4331c1ec3b9c8b31c80446017821bdd4071f92dff89b53da805666e94bf",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201138.json"
+    },
+    {
+      "player_id": 1629011,
+      "player": "Mitchell Robinson",
+      "team": "NYK",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1629011,
+        "firstName": "Mitchell",
+        "familyName": "Robinson",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1630167,
+      "player": "Obi Toppin",
+      "team": "NYK",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1630167,
+        "firstName": "Obi",
+        "familyName": "Toppin",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1629656,
+      "player": "Quentin Grimes",
+      "team": "NYK",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1629656,
+        "firstName": "Quentin",
+        "familyName": "Grimes",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1629628,
+      "player": "RJ Barrett",
+      "team": "NYK",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201220",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1629628,
+        "firstName": "RJ",
+        "familyName": "Barrett",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "afb417644bb89d7d482f6eb851aef1c86f59110d8e74a207aa320f727f2560b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201220.json"
+    },
+    {
+      "player_id": 1630598,
+      "player": "Aaron Wiggins",
+      "team": "OKC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201226",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 1630598,
+        "firstName": "Aaron",
+        "familyName": "Wiggins",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "7339d0f2022e59f4a821cce5a880b1787e556565dff0fed478856c3c6bd70a71",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201226.json"
+    },
+    {
+      "player_id": 1630197,
+      "player": "Aleksej Pokusevski",
+      "team": "OKC",
+      "last_game_date": "2023-03-31",
+      "game_id": "0022201149",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 1630197,
+        "firstName": "Aleksej",
+        "familyName": "Pokusevski",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "a4ed2eb8ca8cc53cfeac0a0215189c249a84924333ee45222a1feb7063a972d7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201149.json"
+    },
+    {
+      "player_id": 1629647,
+      "player": "Darius Bazley",
+      "team": "OKC",
+      "last_game_date": "2023-02-06",
+      "game_id": "0022200814",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 1629647,
+        "firstName": "Darius",
+        "familyName": "Bazley",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "705b5fd90b4c5d5e65cc97c4ca48200930d1c0c7fac3e1815b4810df234cf3c7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200814.json"
+    },
+    {
+      "player_id": 1630198,
+      "player": "Isaiah Joe",
+      "team": "OKC",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201200",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1630198,
+        "firstName": "Isaiah",
+        "familyName": "Joe",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "9f4aa050ce4b0686e8255f7fc755ea867195516a501a68449182a158920bbddc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201200.json"
+    },
+    {
+      "player_id": 1631114,
+      "player": "Jalen Williams",
+      "team": "OKC",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201200",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1631114,
+        "firstName": "Jalen",
+        "familyName": "Williams",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "9f4aa050ce4b0686e8255f7fc755ea867195516a501a68449182a158920bbddc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201200.json"
+    },
+    {
+      "player_id": 1631119,
+      "player": "Jaylin Williams",
+      "team": "OKC",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201200",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1631119,
+        "firstName": "Jaylin",
+        "familyName": "Williams",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "9f4aa050ce4b0686e8255f7fc755ea867195516a501a68449182a158920bbddc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201200.json"
+    },
+    {
+      "player_id": 1630526,
+      "player": "Jeremiah Robinson-Earl",
+      "team": "OKC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201226",
+      "jersey": 50,
+      "jersey_display": "50",
+      "official_box_score_player": {
+        "personId": 1630526,
+        "firstName": "Jeremiah",
+        "familyName": "Robinson-Earl",
+        "jerseyNum": "50",
+        "played": "1"
+      },
+      "box_score_sha256": "7339d0f2022e59f4a821cce5a880b1787e556565dff0fed478856c3c6bd70a71",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201226.json"
+    },
+    {
+      "player_id": 1630581,
+      "player": "Josh Giddey",
+      "team": "OKC",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201200",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1630581,
+        "firstName": "Josh",
+        "familyName": "Giddey",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "9f4aa050ce4b0686e8255f7fc755ea867195516a501a68449182a158920bbddc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201200.json"
+    },
+    {
+      "player_id": 1629026,
+      "player": "Kenrich Williams",
+      "team": "OKC",
+      "last_game_date": "2023-02-28",
+      "game_id": "0022200928",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 1629026,
+        "firstName": "Kenrich",
+        "familyName": "Williams",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "426252dc4a89f66f32e25a1825ad268be18d0cc118674352299c40dc63bd90a1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200928.json"
+    },
+    {
+      "player_id": 1629652,
+      "player": "Luguentz Dort",
+      "team": "OKC",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201200",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1629652,
+        "firstName": "Luguentz",
+        "familyName": "Dort",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "9f4aa050ce4b0686e8255f7fc755ea867195516a501a68449182a158920bbddc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201200.json"
+    },
+    {
+      "player_id": 1628983,
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201200",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1628983,
+        "firstName": "Shai",
+        "familyName": "Gilgeous-Alexander",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "9f4aa050ce4b0686e8255f7fc755ea867195516a501a68449182a158920bbddc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201200.json"
+    },
+    {
+      "player_id": 1630544,
+      "player": "Tre Mann",
+      "team": "OKC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201226",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1630544,
+        "firstName": "Tre",
+        "familyName": "Mann",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "7339d0f2022e59f4a821cce5a880b1787e556565dff0fed478856c3c6bd70a71",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201226.json"
+    },
+    {
+      "player_id": 1629626,
+      "player": "Bol Bol",
+      "team": "ORL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1629626,
+        "firstName": "Bol",
+        "familyName": "Bol",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1631216,
+      "player": "Caleb Houstan",
+      "team": "ORL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1631216,
+        "firstName": "Caleb",
+        "familyName": "Houstan",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1630175,
+      "player": "Cole Anthony",
+      "team": "ORL",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201207",
+      "jersey": 50,
+      "jersey_display": "50",
+      "official_box_score_player": {
+        "personId": 1630175,
+        "firstName": "Cole",
+        "familyName": "Anthony",
+        "jerseyNum": "50",
+        "played": "1"
+      },
+      "box_score_sha256": "971c90f87299fd54ba53b09cf6bc29af887c58da3c020d4b5f7aa57d947d53be",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201207.json"
+    },
+    {
+      "player_id": 1630532,
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1630532,
+        "firstName": "Franz",
+        "familyName": "Wagner",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 203914,
+      "player": "Gary Harris",
+      "team": "ORL",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201178",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 203914,
+        "firstName": "Gary",
+        "familyName": "Harris",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "67e57e7c14fd960dab28d74b9ab41b4a7aff9aaba20b6d3253876488a24f41e2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201178.json"
+    },
+    {
+      "player_id": 1630591,
+      "player": "Jalen Suggs",
+      "team": "ORL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1630591,
+        "firstName": "Jalen",
+        "familyName": "Suggs",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1628365,
+      "player": "Markelle Fultz",
+      "team": "ORL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1628365,
+        "firstName": "Markelle",
+        "familyName": "Fultz",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1628964,
+      "player": "Mo Bamba",
+      "team": "ORL",
+      "last_game_date": "2023-02-03",
+      "game_id": "0022200790",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1628964,
+        "firstName": "Mo",
+        "familyName": "Bamba",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "cda8dea336ddd2ed4561189d0d430d75d00050ac364cc8dcd410df0c31057986",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200790.json"
+    },
+    {
+      "player_id": 1629021,
+      "player": "Moritz Wagner",
+      "team": "ORL",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201197",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 1629021,
+        "firstName": "Moritz",
+        "familyName": "Wagner",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "1bfe56d8fd63adefc527bea98c7cb2b147bbe80fdd0261b2962b7aeef2bd195c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201197.json"
+    },
+    {
+      "player_id": 1631094,
+      "player": "Paolo Banchero",
+      "team": "ORL",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201178",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1631094,
+        "firstName": "Paolo",
+        "familyName": "Banchero",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "67e57e7c14fd960dab28d74b9ab41b4a7aff9aaba20b6d3253876488a24f41e2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201178.json"
+    },
+    {
+      "player_id": 203082,
+      "player": "Terrence Ross",
+      "team": "ORL",
+      "last_game_date": "2023-01-21",
+      "game_id": "0022200693",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 203082,
+        "firstName": "Terrence",
+        "familyName": "Ross",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "62dc5c4a8fb05d3e7366cb9864e43a2e78e6c2c207d5d186834b7982926ce4b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200693.json"
+    },
+    {
+      "player_id": 1628976,
+      "player": "Wendell Carter Jr.",
+      "team": "ORL",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201219",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 1628976,
+        "firstName": "Wendell",
+        "familyName": "Carter Jr.",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "64cf8cc1583e159c009fda782b1d9cb52953fde9336b0e4d9c11d46a3d8bbae1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201219.json"
+    },
+    {
+      "player_id": 1629001,
+      "player": "De'Anthony Melton",
+      "team": "PHI",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201198",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1629001,
+        "firstName": "De'Anthony",
+        "familyName": "Melton",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "abbf20a3655b330a5b86f9a14e1bd5b92a62da9b99de4dbe69eb5b06bf36d709",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201198.json"
+    },
+    {
+      "player_id": 1627777,
+      "player": "Georges Niang",
+      "team": "PHI",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201205",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1627777,
+        "firstName": "Georges",
+        "familyName": "Niang",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "4a7d01172278cdb48746eb12dd7ceaaa07a35f7979712132b770251e7e601f6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201205.json"
+    },
+    {
+      "player_id": 201935,
+      "player": "James Harden",
+      "team": "PHI",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201198",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 201935,
+        "firstName": "James",
+        "familyName": "Harden",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "abbf20a3655b330a5b86f9a14e1bd5b92a62da9b99de4dbe69eb5b06bf36d709",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201198.json"
+    },
+    {
+      "player_id": 203954,
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201198",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 203954,
+        "firstName": "Joel",
+        "familyName": "Embiid",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "abbf20a3655b330a5b86f9a14e1bd5b92a62da9b99de4dbe69eb5b06bf36d709",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201198.json"
+    },
+    {
+      "player_id": 200782,
+      "player": "P.J. Tucker",
+      "team": "PHI",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201198",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 200782,
+        "firstName": "P.J.",
+        "familyName": "Tucker",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "abbf20a3655b330a5b86f9a14e1bd5b92a62da9b99de4dbe69eb5b06bf36d709",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201198.json"
+    },
+    {
+      "player_id": 1629003,
+      "player": "Shake Milton",
+      "team": "PHI",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201217",
+      "jersey": 18,
+      "jersey_display": "18",
+      "official_box_score_player": {
+        "personId": 1629003,
+        "firstName": "Shake",
+        "familyName": "Milton",
+        "jerseyNum": "18",
+        "played": "1"
+      },
+      "box_score_sha256": "b1919eb8eefd3c57ca7793792390aeada80f8dd616ddf52328c1a262bb9191eb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201217.json"
+    },
+    {
+      "player_id": 202699,
+      "player": "Tobias Harris",
+      "team": "PHI",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201198",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 202699,
+        "firstName": "Tobias",
+        "familyName": "Harris",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "abbf20a3655b330a5b86f9a14e1bd5b92a62da9b99de4dbe69eb5b06bf36d709",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201198.json"
+    },
+    {
+      "player_id": 1630178,
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201181",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1630178,
+        "firstName": "Tyrese",
+        "familyName": "Maxey",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "9f221b02398cae43c367113a0fa09af6fa80605f38f8a2bda8e14e68f028e23d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201181.json"
+    },
+    {
+      "player_id": 1626166,
+      "player": "Cameron Payne",
+      "team": "PHX",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201212",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1626166,
+        "firstName": "Cameron",
+        "familyName": "Payne",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "d7d3ae9500f62eebde049e86a461ddd8ba89dea43aca3b005b854d1c2c2c6fa0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201212.json"
+    },
+    {
+      "player_id": 101108,
+      "player": "Chris Paul",
+      "team": "PHX",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201201",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 101108,
+        "firstName": "Chris",
+        "familyName": "Paul",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "8ea7502a1fa81aab40584376a13f45de60eb0926db5782720811e122e105fa37",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201201.json"
+    },
+    {
+      "player_id": 1627814,
+      "player": "Damion Lee",
+      "team": "PHX",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1627814,
+        "firstName": "Damion",
+        "familyName": "Lee",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1629028,
+      "player": "Deandre Ayton",
+      "team": "PHX",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201201",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1629028,
+        "firstName": "Deandre",
+        "familyName": "Ayton",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "8ea7502a1fa81aab40584376a13f45de60eb0926db5782720811e122e105fa37",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201201.json"
+    },
+    {
+      "player_id": 1626164,
+      "player": "Devin Booker",
+      "team": "PHX",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201201",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1626164,
+        "firstName": "Devin",
+        "familyName": "Booker",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "8ea7502a1fa81aab40584376a13f45de60eb0926db5782720811e122e105fa37",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201201.json"
+    },
+    {
+      "player_id": 1630688,
+      "player": "Ish Wainright",
+      "team": "PHX",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1630688,
+        "firstName": "Ish",
+        "familyName": "Wainright",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1629006,
+      "player": "Josh Okogie",
+      "team": "PHX",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1629006,
+        "firstName": "Josh",
+        "familyName": "Okogie",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1629013,
+      "player": "Landry Shamet",
+      "team": "PHX",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1629013,
+        "firstName": "Landry",
+        "familyName": "Shamet",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1628969,
+      "player": "Mikal Bridges",
+      "team": "PHX",
+      "last_game_date": "2023-02-07",
+      "game_id": "0022200817",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1628969,
+        "firstName": "Mikal",
+        "familyName": "Bridges",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "79dfaa9cc9feba6160af18165284e296cac61288c78202d5935309ef418e319c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200817.json"
+    },
+    {
+      "player_id": 1628470,
+      "player": "Torrey Craig",
+      "team": "PHX",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201229",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628470,
+        "firstName": "Torrey",
+        "familyName": "Craig",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "69d25130f5e3a28359005f476140bd63dd9359ec61a9cfdde7a44fc6f433575e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201229.json"
+    },
+    {
+      "player_id": 1629014,
+      "player": "Anfernee Simons",
+      "team": "POR",
+      "last_game_date": "2023-03-19",
+      "game_id": "0022201069",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1629014,
+        "firstName": "Anfernee",
+        "familyName": "Simons",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "64c9d760f421d2269b00aacdb97dffbc95d7b60cadd0ce56e9cc32770495f2ac",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201069.json"
+    },
+    {
+      "player_id": 203081,
+      "player": "Damian Lillard",
+      "team": "POR",
+      "last_game_date": "2023-03-22",
+      "game_id": "0022201091",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 203081,
+        "firstName": "Damian",
+        "familyName": "Lillard",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "83ea012b5546cc8b0269ab5a52a0e61a95fd85d3d6e98e00213bea5ebb9ec578",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201091.json"
+    },
+    {
+      "player_id": 1629234,
+      "player": "Drew Eubanks",
+      "team": "POR",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201199",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1629234,
+        "firstName": "Drew",
+        "familyName": "Eubanks",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "71ef1bb3beb870997361dd107bfb6b152b99c505d36a150338257e0b06a6e4c8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201199.json"
+    },
+    {
+      "player_id": 203924,
+      "player": "Jerami Grant",
+      "team": "POR",
+      "last_game_date": "2023-03-12",
+      "game_id": "0022201017",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 203924,
+        "firstName": "Jerami",
+        "familyName": "Grant",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "eab63c2736d8ab77c8af879bc62bf8b58d423c7dd0aa66dae5068215d800c714",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201017.json"
+    },
+    {
+      "player_id": 1628404,
+      "player": "Josh Hart",
+      "team": "POR",
+      "last_game_date": "2023-02-06",
+      "game_id": "0022200815",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1628404,
+        "firstName": "Josh",
+        "familyName": "Hart",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "f21a83c0519353a4edbc7bc9e8494f21324593603be187a1a5895a1eac6a0a8e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200815.json"
+    },
+    {
+      "player_id": 203994,
+      "player": "Jusuf Nurkić",
+      "team": "POR",
+      "last_game_date": "2023-03-22",
+      "game_id": "0022201091",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 203994,
+        "firstName": "Jusuf",
+        "familyName": "Nurkic",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "83ea012b5546cc8b0269ab5a52a0e61a95fd85d3d6e98e00213bea5ebb9ec578",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201091.json"
+    },
+    {
+      "player_id": 1629642,
+      "player": "Nassir Little",
+      "team": "POR",
+      "last_game_date": "2023-03-31",
+      "game_id": "0022201159",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1629642,
+        "firstName": "Nassir",
+        "familyName": "Little",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "2a85af8a05e225f940f00363aa67140e137b99df88ae3a8cbe47569dc77c892c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201159.json"
+    },
+    {
+      "player_id": 1631101,
+      "player": "Shaedon Sharpe",
+      "team": "POR",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 1631101,
+        "firstName": "Shaedon",
+        "familyName": "Sharpe",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1630570,
+      "player": "Trendon Watford",
+      "team": "POR",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201230",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1630570,
+        "firstName": "Trendon",
+        "familyName": "Watford",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "eef60b48f1c34d49cadccab382978a713f69ef7b35cbca39a26d8a7e3f8ef757",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201230.json"
+    },
+    {
+      "player_id": 1630558,
+      "player": "Davion Mitchell",
+      "team": "SAC",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201211",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1630558,
+        "firstName": "Davion",
+        "familyName": "Mitchell",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "16eeadbd831821d7d55ec619b092f6e69058b298684c38ddad8772d443ed5691",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201211.json"
+    },
+    {
+      "player_id": 1628368,
+      "player": "De'Aaron Fox",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628368,
+        "firstName": "De'Aaron",
+        "familyName": "Fox",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1627734,
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1627734,
+        "firstName": "Domantas",
+        "familyName": "Sabonis",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 203084,
+      "player": "Harrison Barnes",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 40,
+      "jersey_display": "40",
+      "official_box_score_player": {
+        "personId": 203084,
+        "firstName": "Harrison",
+        "familyName": "Barnes",
+        "jerseyNum": "40",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1631099,
+      "player": "Keegan Murray",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1631099,
+        "firstName": "Keegan",
+        "familyName": "Murray",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1628989,
+      "player": "Kevin Huerter",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1628989,
+        "firstName": "Kevin",
+        "familyName": "Huerter",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1628370,
+      "player": "Malik Monk",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628370,
+        "firstName": "Malik",
+        "familyName": "Monk",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1626168,
+      "player": "Trey Lyles",
+      "team": "SAC",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201227",
+      "jersey": 41,
+      "jersey_display": "41",
+      "official_box_score_player": {
+        "personId": 1626168,
+        "firstName": "Trey",
+        "familyName": "Lyles",
+        "jerseyNum": "41",
+        "played": "1"
+      },
+      "box_score_sha256": "8b1b3d7eb3d4af30ddc8a745b7886bc85adee87f760db8aa82bd9d1773b11cb1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201227.json"
+    },
+    {
+      "player_id": 1631104,
+      "player": "Blake Wesley",
+      "team": "SAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201224",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1631104,
+        "firstName": "Blake",
+        "familyName": "Wesley",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "d7a9a2148aa4267f59cccc5355c785a0e1001ede98f34966a70a6b2584d5d2b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201224.json"
+    },
+    {
+      "player_id": 1630170,
+      "player": "Devin Vassell",
+      "team": "SAS",
+      "last_game_date": "2023-03-26",
+      "game_id": "0022201116",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1630170,
+        "firstName": "Devin",
+        "familyName": "Vassell",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "1dfbe1e55b74e45c089996705dce3e611e8c0982ea131c767d6dd1d8464659f8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201116.json"
+    },
+    {
+      "player_id": 203926,
+      "player": "Doug McDermott",
+      "team": "SAS",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201188",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 203926,
+        "firstName": "Doug",
+        "familyName": "McDermott",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "3c6ca8eb5af31c7aebb82b39ab4bf71e54c7720e23a2d21fa8e65deea475868a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201188.json"
+    },
+    {
+      "player_id": 1627751,
+      "player": "Jakob Poeltl",
+      "team": "SAS",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200826",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1627751,
+        "firstName": "Jakob",
+        "familyName": "Poeltl",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "d99661dc6376569792da085e4799a809c8e0fe93323f79dcdade9ed328d476f8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200826.json"
+    },
+    {
+      "player_id": 1631110,
+      "player": "Jeremy Sochan",
+      "team": "SAS",
+      "last_game_date": "2023-03-22",
+      "game_id": "0022201089",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1631110,
+        "firstName": "Jeremy",
+        "familyName": "Sochan",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "8fd67de6f049dc7611d14b2003465ae7f08b3cb6e10e107c4203ebf107d5ddcb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201089.json"
+    },
+    {
+      "player_id": 1626196,
+      "player": "Josh Richardson",
+      "team": "SAS",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200826",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1626196,
+        "firstName": "Josh",
+        "familyName": "Richardson",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "d99661dc6376569792da085e4799a809c8e0fe93323f79dcdade9ed328d476f8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200826.json"
+    },
+    {
+      "player_id": 1628966,
+      "player": "Keita Bates-Diop",
+      "team": "SAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201224",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 1628966,
+        "firstName": "Keita",
+        "familyName": "Bates-Diop",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "d7a9a2148aa4267f59cccc5355c785a0e1001ede98f34966a70a6b2584d5d2b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201224.json"
+    },
+    {
+      "player_id": 1629640,
+      "player": "Keldon Johnson",
+      "team": "SAS",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201199",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1629640,
+        "firstName": "Keldon",
+        "familyName": "Johnson",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "71ef1bb3beb870997361dd107bfb6b152b99c505d36a150338257e0b06a6e4c8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201199.json"
+    },
+    {
+      "player_id": 1631103,
+      "player": "Malaki Branham",
+      "team": "SAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201224",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1631103,
+        "firstName": "Malaki",
+        "familyName": "Branham",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "d7a9a2148aa4267f59cccc5355c785a0e1001ede98f34966a70a6b2584d5d2b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201224.json"
+    },
+    {
+      "player_id": 1629641,
+      "player": "Romeo Langford",
+      "team": "SAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201224",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1629641,
+        "firstName": "Romeo",
+        "familyName": "Langford",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "d7a9a2148aa4267f59cccc5355c785a0e1001ede98f34966a70a6b2584d5d2b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201224.json"
+    },
+    {
+      "player_id": 1626169,
+      "player": "Stanley Johnson",
+      "team": "SAS",
+      "last_game_date": "2023-02-11",
+      "game_id": "0022200850",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 1626169,
+        "firstName": "Stanley",
+        "familyName": "Johnson",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "fea4d73a29a47d78ed55200a15d3a09843b945b215df39f359e614864a3c80b5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200850.json"
+    },
+    {
+      "player_id": 1630200,
+      "player": "Tre Jones",
+      "team": "SAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201224",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1630200,
+        "firstName": "Tre",
+        "familyName": "Jones",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "d7a9a2148aa4267f59cccc5355c785a0e1001ede98f34966a70a6b2584d5d2b8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201224.json"
+    },
+    {
+      "player_id": 1628380,
+      "player": "Zach Collins",
+      "team": "SAS",
+      "last_game_date": "2023-04-06",
+      "game_id": "0022201199",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1628380,
+        "firstName": "Zach",
+        "familyName": "Collins",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "71ef1bb3beb870997361dd107bfb6b152b99c505d36a150338257e0b06a6e4c8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201199.json"
+    },
+    {
+      "player_id": 1628449,
+      "player": "Chris Boucher",
+      "team": "TOR",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1628449,
+        "firstName": "Chris",
+        "familyName": "Boucher",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 1627832,
+      "player": "Fred VanVleet",
+      "team": "TOR",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201206",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1627832,
+        "firstName": "Fred",
+        "familyName": "VanVleet",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "ddf236e5e71c34c6390ce4b307a7eabc49ad57b0abe8849815c4a2672ad2ddf2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201206.json"
+    },
+    {
+      "player_id": 1629018,
+      "player": "Gary Trent Jr.",
+      "team": "TOR",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1629018,
+        "firstName": "Gary",
+        "familyName": "Trent Jr.",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 1628384,
+      "player": "OG Anunoby",
+      "team": "TOR",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201206",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1628384,
+        "firstName": "O.G.",
+        "familyName": "Anunoby",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "ddf236e5e71c34c6390ce4b307a7eabc49ad57b0abe8849815c4a2672ad2ddf2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201206.json"
+    },
+    {
+      "player_id": 1627783,
+      "player": "Pascal Siakam",
+      "team": "TOR",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201206",
+      "jersey": 43,
+      "jersey_display": "43",
+      "official_box_score_player": {
+        "personId": 1627783,
+        "firstName": "Pascal",
+        "familyName": "Siakam",
+        "jerseyNum": "43",
+        "played": "1"
+      },
+      "box_score_sha256": "ddf236e5e71c34c6390ce4b307a7eabc49ad57b0abe8849815c4a2672ad2ddf2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201206.json"
+    },
+    {
+      "player_id": 1630173,
+      "player": "Precious Achiuwa",
+      "team": "TOR",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1630173,
+        "firstName": "Precious",
+        "familyName": "Achiuwa",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 1630567,
+      "player": "Scottie Barnes",
+      "team": "TOR",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201221",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1630567,
+        "firstName": "Scottie",
+        "familyName": "Barnes",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "848e4ca741863333718a0ec5ece6edf6828ca0fd60521e1f4a7f804cad448923",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201221.json"
+    },
+    {
+      "player_id": 1629012,
+      "player": "Collin Sexton",
+      "team": "UTA",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201186",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1629012,
+        "firstName": "Collin",
+        "familyName": "Sexton",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "69d8ecaa3ebca3e80860fdc03c3095e794424cbfaa98d9e18ceeba83839ee687",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201186.json"
+    },
+    {
+      "player_id": 1629020,
+      "player": "Jarred Vanderbilt",
+      "team": "UTA",
+      "last_game_date": "2023-02-03",
+      "game_id": "0022200792",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1629020,
+        "firstName": "Jarred",
+        "familyName": "Vanderbilt",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "d8fce5f5177919870d60b8f805bc6dd030049e7780a865d26bb6c9b8aafd78ae",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200792.json"
+    },
+    {
+      "player_id": 203903,
+      "player": "Jordan Clarkson",
+      "team": "UTA",
+      "last_game_date": "2023-03-05",
+      "game_id": "0022200968",
+      "jersey": 0,
+      "jersey_display": "00",
+      "official_box_score_player": {
+        "personId": 203903,
+        "firstName": "Jordan",
+        "familyName": "Clarkson",
+        "jerseyNum": "00",
+        "played": "1"
+      },
+      "box_score_sha256": "40f80d214e19f181213c2c2a5b86aba0a783f9c0a7aa02857537c20bb6fcd101",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200968.json"
+    },
+    {
+      "player_id": 203482,
+      "player": "Kelly Olynyk",
+      "team": "UTA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 41,
+      "jersey_display": "41",
+      "official_box_score_player": {
+        "personId": 203482,
+        "firstName": "Kelly",
+        "familyName": "Olynyk",
+        "jerseyNum": "41",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 1628374,
+      "player": "Lauri Markkanen",
+      "team": "UTA",
+      "last_game_date": "2023-04-02",
+      "game_id": "0022201164",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1628374,
+        "firstName": "Lauri",
+        "familyName": "Markkanen",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "94631d4fdf44d37b695c3246dfcf9f0b39ebd514a479184592b0b2af6c0edada",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201164.json"
+    },
+    {
+      "player_id": 1627736,
+      "player": "Malik Beasley",
+      "team": "UTA",
+      "last_game_date": "2023-02-06",
+      "game_id": "0022200813",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1627736,
+        "firstName": "Malik",
+        "familyName": "Beasley",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "5a350c5fa3d3ece2488244eca89355b42d44cf3fe0db5f11af9edfb513bbb582",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200813.json"
+    },
+    {
+      "player_id": 201144,
+      "player": "Mike Conley",
+      "team": "UTA",
+      "last_game_date": "2023-02-06",
+      "game_id": "0022200813",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 201144,
+        "firstName": "Mike",
+        "familyName": "Conley",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "5a350c5fa3d3ece2488244eca89355b42d44cf3fe0db5f11af9edfb513bbb582",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200813.json"
+    },
+    {
+      "player_id": 1630534,
+      "player": "Ochai Agbaji",
+      "team": "UTA",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201228",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 1630534,
+        "firstName": "Ochai",
+        "familyName": "Agbaji",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "deeb8a0e485cf7d291fb848136067ab4e606eb77285f7e2deeefbfd91ada4469",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201228.json"
+    },
+    {
+      "player_id": 1629659,
+      "player": "Talen Horton-Tucker",
+      "team": "UTA",
+      "last_game_date": "2023-04-04",
+      "game_id": "0022201186",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1629659,
+        "firstName": "Talen",
+        "familyName": "Horton-Tucker",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "69d8ecaa3ebca3e80860fdc03c3095e794424cbfaa98d9e18ceeba83839ee687",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201186.json"
+    },
+    {
+      "player_id": 1631117,
+      "player": "Walker Kessler",
+      "team": "UTA",
+      "last_game_date": "2023-04-02",
+      "game_id": "0022201164",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1631117,
+        "firstName": "Walker",
+        "familyName": "Kessler",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "94631d4fdf44d37b695c3246dfcf9f0b39ebd514a479184592b0b2af6c0edada",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201164.json"
+    },
+    {
+      "player_id": 203078,
+      "player": "Bradley Beal",
+      "team": "WAS",
+      "last_game_date": "2023-03-21",
+      "game_id": "0022201077",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203078,
+        "firstName": "Bradley",
+        "familyName": "Beal",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "175eeb71340768734af879a9370eed10ffce909dd2e425e559a79198818b0443",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201077.json"
+    },
+    {
+      "player_id": 1630557,
+      "player": "Corey Kispert",
+      "team": "WAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1630557,
+        "firstName": "Corey",
+        "familyName": "Kispert",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 1629655,
+      "player": "Daniel Gafford",
+      "team": "WAS",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201204",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 1629655,
+        "firstName": "Daniel",
+        "familyName": "Gafford",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "23e454a498de4c7da7332be9c4da652a6fd5bba88ea99f2b4ef103d27fe6eb50",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201204.json"
+    },
+    {
+      "player_id": 1626153,
+      "player": "Delon Wright",
+      "team": "WAS",
+      "last_game_date": "2023-04-07",
+      "game_id": "0022201204",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 1626153,
+        "firstName": "Delon",
+        "familyName": "Wright",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "23e454a498de4c7da7332be9c4da652a6fd5bba88ea99f2b4ef103d27fe6eb50",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201204.json"
+    },
+    {
+      "player_id": 1630166,
+      "player": "Deni Avdija",
+      "team": "WAS",
+      "last_game_date": "2023-04-02",
+      "game_id": "0022201168",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1630166,
+        "firstName": "Deni",
+        "familyName": "Avdija",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "f36b15b0541564cf5c420310cb823180db7b98782ad095668b85e4a390ebc92e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201168.json"
+    },
+    {
+      "player_id": 1630692,
+      "player": "Jordan Goodwin",
+      "team": "WAS",
+      "last_game_date": "2023-04-09",
+      "game_id": "0022201222",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1630692,
+        "firstName": "Jordan",
+        "familyName": "Goodwin",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "f32dc8da7de260960b517fbc26cd0391ca72643a28a9f0b90554603aa4559f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201222.json"
+    },
+    {
+      "player_id": 204001,
+      "player": "Kristaps Porziņģis",
+      "team": "WAS",
+      "last_game_date": "2023-03-28",
+      "game_id": "0022201130",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 204001,
+        "firstName": "Kristaps",
+        "familyName": "Porzingis",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "e66921c8beccf96931342a7852d893e26b268a8785acecc05e79505b4fdc3e82",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201130.json"
+    },
+    {
+      "player_id": 1628398,
+      "player": "Kyle Kuzma",
+      "team": "WAS",
+      "last_game_date": "2023-03-18",
+      "game_id": "0022201059",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1628398,
+        "firstName": "Kyle",
+        "familyName": "Kuzma",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "f364d1692df00208625c0fcc3f78c93217ad33e83f24de089e2e7176a778fec6",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201059.json"
+    },
+    {
+      "player_id": 1628420,
+      "player": "Monté Morris",
+      "team": "WAS",
+      "last_game_date": "2023-03-31",
+      "game_id": "0022201151",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1628420,
+        "firstName": "Monte",
+        "familyName": "Morris",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "3f271f27b0d49bf03520f4c3c9eeff962b18252f6c7533ad5fdfb9f03963c78b",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022201151.json"
+    },
+    {
+      "player_id": 1629060,
+      "player": "Rui Hachimura",
+      "team": "WAS",
+      "last_game_date": "2023-01-21",
+      "game_id": "0022200693",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1629060,
+        "firstName": "Rui",
+        "familyName": "Hachimura",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "62dc5c4a8fb05d3e7366cb9864e43a2e78e6c2c207d5d186834b7982926ce4b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200693.json"
+    },
+    {
+      "player_id": 203115,
+      "player": "Will Barton",
+      "team": "WAS",
+      "last_game_date": "2023-02-08",
+      "game_id": "0022200823",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 203115,
+        "firstName": "Will",
+        "familyName": "Barton",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "9c3d997f189684fc9bd75293af88d263dee9690c9fc66ab92b21a325ec3a8afc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022200823.json"
+    }
+  ]
+}

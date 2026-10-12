@@ -94,3 +94,10 @@ python scripts/analyze_distributions.py
 The command writes a Markdown report, JSON summary, CSV tables, and charts under
 `docs/` and `analysis/`. It reports both record-weighted distributions and the
 game's equal Season → Team → Player roulette weighting.
+
+## v0.9 historical completion
+
+Normal play now includes 2021–22 through 2025–26 (1,565 entries). The two new
+seasons retain independently verified stats and final-appearance jersey audits.
+See [the completion report](HISTORICAL_COMPLETION_2021_2023.md) for provenance,
+championship roster membership, and reproduction commands.

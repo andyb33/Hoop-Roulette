@@ -11,7 +11,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.8 tightens normal eligibility to 30 team GP / 15 team MPG.** The Upper
+**v0.9 expands the normal pool to 2021–22 through 2025–26.**
+Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
 **Unique draft picks:** scoring a player (even for zero) removes every
@@ -25,18 +26,22 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows and Mac v0.8 builds are produced by
-the GitHub Actions workflows; [tester instructions](docs/EXTERNAL_ALPHA_V0_8.md).
+Development games are not logged. Windows and Mac v0.9 builds are produced by
+the GitHub Actions workflows; [tester instructions](docs/EXTERNAL_ALPHA_V0_9.md).
 
-The 2023–24, 2024–25, and 2025–26 datasets are complete:
+The five datasets from 2021–22 through 2025–26 are complete:
 
-- 943 eligible player-team records across the three seasons and all 30 NBA teams;
+- 1,565 eligible player-team records across the five seasons and all 30 NBA teams;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
 - All-NBA, All-Defensive, champion, MVP, DPOY, and ROTY fields;
 - verified jersey evidence retained for all surviving records;
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
+
+The new historical seasons retain their independent stats audits and official
+final-appearance jersey evidence. See [completion report](docs/HISTORICAL_COMPLETION_2021_2023.md).
+Existing balance reports describe the earlier pool and have not been rerun.
 
 ## Repository structure
 

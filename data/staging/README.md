@@ -5,7 +5,7 @@
 | 2022–23 | 305 | 2,135 | Passed with documented source precision/revision differences |
 | 2021–22 | 317 | 2,219 | Passed with documented minute precision and cutoff differences |
 
-These are stats-only staging datasets. Jerseys, accolades, championship joins and game activation remain pending. The playable pool stays 2023–24 through 2025–26.
+Both seasons have now been completed and promoted into the v0.9 playable pool. The stats-only snapshots and independent verification reports remain here as preserved evidence. Final-appearance jerseys, accolades, and title-roster championship membership are audited under `data/processed/completion_*.json`. The playable pool covers 2021–22 through 2025–26; distribution analysis is still pending.
 
 ## Mandatory order
 
@@ -40,3 +40,10 @@ Raw source downloads live under ignored data/raw; committed manifests and verifi
 ## Next season
 
 2020–21 collection attempted but the environment blocked the release-assets.githubusercontent.com source download. No data for it was enabled or approved. Resume once an accessible complete source is obtained, then verify its shortened schedule before advancing to 2019–20. Other 2010–11 through 2020–21 seasons remain pending.
+
+## Complete the verified seasons
+
+python scripts/complete_historical_seasons.py --season 2022-23
+python scripts/complete_historical_seasons.py --season 2021-22
+
+This requires the preceding independent stats check to pass and match the staged checksum. It reads official NBA game dates, selects the final played game for each player-team stint, checks the official final box-score jersey, and joins official honors. Championship credit requires membership in the title-clinching game roster as well as the championship team stint.
