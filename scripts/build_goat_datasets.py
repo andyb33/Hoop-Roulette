@@ -1,31 +1,68 @@
 #!/usr/bin/env python3
 """Export distinct GOAT pools; never modify or enable the live normal pool."""
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def player_key(name):
+    name = name.replace('Lew Alcindor', 'Kareem Abdul-Jabbar').replace('Ron Artest', 'Metta World Peace')
+    name = name.replace('’', '').replace("'", '').replace('.', '')
+    name = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode()
+    return re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
+
+
 def identity(row, pool):
     row = dict(row)
     row['pool'] = pool
-    row['game_player_id'] = f"{pool}:{row['player_id']}"
-    row['entry_id'] = f"{row['game_player_id']}:{row['season']}:{row['team']}"
+    row['game_player_id'] = f"{pool}:{row.get('player_key', row['player_id'])}"
+    row['entry_id'] = f"{row['game_player_id']}:{row['season']}"
+    if pool != 'award':
+        row['entry_id'] += f":{row['team']}"
     return row
 
 
 def build():
-    awards = []
-    seasons = []
+    canonical = {}
     for path in sorted((ROOT / 'data/game').glob('players_20*.json')):
         rows = json.loads(path.read_text())
-        seasons.append(rows[0]['season'])
         for row in rows:
             if any(row[k] for k in ('mvp', 'dpoy', 'roy')):
-                entry = identity(row, 'award')
-                entry['canonical_record'] = f"{row['player_id']}:{row['season']}:{row['team']}"
-                entry['source'] = str(path.relative_to(ROOT))
-                awards.append(entry)
+                key = (row['season'], player_key(row['player']))
+                if key in canonical:
+                    raise ValueError(f'Award winner has multiple team stints; select the award team explicitly: {key}')
+                canonical[key] = dict(row, source=str(path.relative_to(ROOT)))
+    history = json.loads((ROOT / 'data/goat/award_winners_history.json').read_text())
+    stats = {(r['season'], r['player_key']): r for r in
+             json.loads((ROOT / 'data/goat/award_historical_stats.json').read_text())}
+    awards = []
+    for winner in history:
+        if int(winner['season'][:4]) < 1973:
+            continue
+        key = (winner['season'], winner['player_key'])
+        row = {'player_id': 'historical:' + winner['player_key'], 'team': None,
+               **{k: None for k in ('gp', 'mpg', 'ppg', 'rpg', 'apg', 'spg', 'bpg',
+                                    'jersey', 'all_nba', 'all_defense', 'champion')}}
+        row.update(stats.get(key, {}))
+        row.update(canonical.get(key, {}))
+        row.update(winner)
+        row['availability'] = {k: 'pending_verification' for k in
+                               ('gp', 'mpg', 'ppg', 'rpg', 'apg', 'spg', 'bpg', 'jersey',
+                                'all_nba', 'all_defense', 'champion') if row[k] is None}
+        row['verification_status'] = 'canonical_verified' if key in canonical else 'winner_verified_enrichment_pending'
+        if key in canonical:
+            for field in ('all_nba', 'all_defense'):
+                if row[field] is None:
+                    row['availability'][field] = 'not_selected'
+        if row['dpoy'] is None:
+            row['availability']['dpoy'] = 'award_not_introduced'
+        if int(row['season'][:4]) < 1988:
+            row['availability']['all_nba_third'] = 'award_not_introduced'
+        awards.append(identity(row, 'award'))
+    seasons = sorted({r['season'] for r in awards})
     prehistoric = [identity(r, 'prehistoric') for r in
                    json.loads((ROOT / 'data/goat/prehistoric_candidates.json').read_text())]
     assert len({r['player_id'] for r in prehistoric}) == len(prehistoric)
@@ -39,7 +76,12 @@ def build():
                 'jackpot_probability': {'numerator': 1, 'denominator': 1296},
                 'pool_weights': {'award': 1, 'prehistoric': 1},
                 'award': {'count': len(awards), 'covered_seasons': seasons,
-                          'target_start': '1973-74', 'historical_coverage_complete': False},
+                          'target_start': '1973-74', 'winner_coverage_complete': True,
+                          'historical_coverage_complete': False,
+                          'archive_entries': len(history),
+                          'stat_records_complete': sum(all(r[k] is not None for k in
+                              ('gp', 'mpg', 'ppg', 'rpg', 'apg', 'spg', 'bpg')) for r in awards),
+                          'game_ready_records': sum(r['verification_status'] == 'canonical_verified' for r in awards)},
                 'prehistoric': {'count': len(prehistoric),
                                'status': 'draft: historical jerseys and accolades require audit'}}
     (ROOT / 'data/goat/manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

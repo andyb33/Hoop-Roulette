@@ -40,13 +40,19 @@ pool, rather than normal Season → Team → Player weighting. Validate in simul
 Include actual NBA MVP, DPOY, or ROTY winning player-seasons from 1973–74 onward.
 A player winning multiple qualifying awards in a season has one entry with
 multiple flags. Major Award still scores 50, not 50 per award. Historical
-coverage must be explicit; the initial export contains the three existing
-verified seasons, not a completed 53-season pool. Historical winners are the
-next collection step before the feature is enabled.
+coverage must be explicit. The winner catalogue now covers all 53 seasons:
+149 unique player-seasons representing 53 MVP, 55 ROTY (including ties), and
+44 DPOY awards. Three MVP/DPOY double winners are merged. Full historical
+statistics, jerseys and other accolades still need verification before enabling
+the feature. A separate archive preserves all 187 winning player-seasons since
+each award's inception; its 38 pre-1973 entries are excluded from this pool.
 
-For a traded winner, keep distinct eligible team stints and team-specific stats;
-award flags refer to the player-season. Normal eligibility thresholds do not
-automatically exclude award winners; traded-stint admission needs verification.
+Award Jackpot has exactly one entry per real player per season, independent of
+how many qualifying awards or team stints they had. Use the team named in the
+official award history and that team's stint statistics, not combined totals.
+Other stints remain normal-pool records. If award sources disagree about the
+team, flag the entry for review rather than creating duplicates. Normal-pool
+GP/MPG thresholds do not exclude an actual winner from this special pool.
 
 ## Prehistoric Jackpot
 

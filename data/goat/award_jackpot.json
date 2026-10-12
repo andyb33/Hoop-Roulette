@@ -1,8 +1,5624 @@
 [
   {
-    "season": "2023-24",
-    "player_id": 203999,
+    "player_id": "historical:ernie-digregorio",
+    "team": "BUF",
+    "gp": 81,
+    "mpg": 35.9,
+    "ppg": 15.2,
+    "rpg": 2.7,
+    "apg": 8.2,
+    "spg": 0.7,
+    "bpg": 0.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1973-74",
+    "player_key": "ernie-digregorio",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ernie DiGregorio",
+    "award_team": "Buffalo Braves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ernie DiGregorio"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ernie-digregorio",
+    "entry_id": "award:ernie-digregorio:1973-74"
+  },
+  {
+    "player_id": "historical:kareem-abdul-jabbar",
+    "team": "MIL",
+    "gp": 81,
+    "mpg": 43.8,
+    "ppg": 27.0,
+    "rpg": 14.5,
+    "apg": 4.8,
+    "spg": 1.4,
+    "bpg": 3.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1973-74",
+    "player_key": "kareem-abdul-jabbar",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kareem-abdul-jabbar",
+    "entry_id": "award:kareem-abdul-jabbar:1973-74"
+  },
+  {
+    "player_id": "historical:bob-mcadoo",
+    "team": "BUF",
+    "gp": 82,
+    "mpg": 43.2,
+    "ppg": 34.5,
+    "rpg": 14.1,
+    "apg": 2.2,
+    "spg": 1.1,
+    "bpg": 2.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1974-75",
+    "player_key": "bob-mcadoo",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Bob McAdoo",
+    "award_team": "Buffalo Braves",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bob McAdoo"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:bob-mcadoo",
+    "entry_id": "award:bob-mcadoo:1974-75"
+  },
+  {
+    "player_id": "historical:jamaal-wilkes",
+    "team": "GSW",
+    "gp": 82,
+    "mpg": 30.7,
+    "ppg": 14.2,
+    "rpg": 8.2,
+    "apg": 2.2,
+    "spg": 1.3,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1974-75",
+    "player_key": "jamaal-wilkes",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Jamaal Wilkes",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Jamaal Wilkes"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:jamaal-wilkes",
+    "entry_id": "award:jamaal-wilkes:1974-75"
+  },
+  {
+    "player_id": "historical:alvan-adams",
+    "team": "PHO",
+    "gp": 80,
+    "mpg": 33.2,
+    "ppg": 19.0,
+    "rpg": 9.1,
+    "apg": 5.6,
+    "spg": 1.5,
+    "bpg": 1.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1975-76",
+    "player_key": "alvan-adams",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Alvan Adams",
+    "award_team": "Phoenix Suns",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Alvan Adams"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:alvan-adams",
+    "entry_id": "award:alvan-adams:1975-76"
+  },
+  {
+    "player_id": "historical:kareem-abdul-jabbar",
+    "team": "LAL",
+    "gp": 82,
+    "mpg": 41.2,
+    "ppg": 27.7,
+    "rpg": 16.9,
+    "apg": 5.0,
+    "spg": 1.5,
+    "bpg": 4.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1975-76",
+    "player_key": "kareem-abdul-jabbar",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kareem-abdul-jabbar",
+    "entry_id": "award:kareem-abdul-jabbar:1975-76"
+  },
+  {
+    "player_id": "historical:adrian-dantley",
+    "team": "BUF",
+    "gp": 77,
+    "mpg": 36.6,
+    "ppg": 20.3,
+    "rpg": 7.6,
+    "apg": 1.9,
+    "spg": 1.2,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1976-77",
+    "player_key": "adrian-dantley",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Adrian Dantley",
+    "award_team": "Buffalo Braves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Adrian Dantley"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:adrian-dantley",
+    "entry_id": "award:adrian-dantley:1976-77"
+  },
+  {
+    "player_id": "historical:kareem-abdul-jabbar",
+    "team": "LAL",
+    "gp": 82,
+    "mpg": 36.8,
+    "ppg": 26.2,
+    "rpg": 13.3,
+    "apg": 3.9,
+    "spg": 1.2,
+    "bpg": 3.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1976-77",
+    "player_key": "kareem-abdul-jabbar",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kareem-abdul-jabbar",
+    "entry_id": "award:kareem-abdul-jabbar:1976-77"
+  },
+  {
+    "player_id": "historical:bill-walton",
+    "team": "POR",
+    "gp": 58,
+    "mpg": 33.3,
+    "ppg": 18.9,
+    "rpg": 13.2,
+    "apg": 5.0,
+    "spg": 1.0,
+    "bpg": 2.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1977-78",
+    "player_key": "bill-walton",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Bill Walton",
+    "award_team": "Portland Trail Blazers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Walton"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:bill-walton",
+    "entry_id": "award:bill-walton:1977-78"
+  },
+  {
+    "player_id": "historical:walter-davis",
+    "team": "PHO",
+    "gp": 81,
+    "mpg": 32.0,
+    "ppg": 24.2,
+    "rpg": 6.0,
+    "apg": 3.4,
+    "spg": 1.4,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1977-78",
+    "player_key": "walter-davis",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Walter Davis",
+    "award_team": "Phoenix Suns",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Walter Davis"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:walter-davis",
+    "entry_id": "award:walter-davis:1977-78"
+  },
+  {
+    "player_id": "historical:moses-malone",
+    "team": "HOU",
+    "gp": 82,
+    "mpg": 41.3,
+    "ppg": 24.8,
+    "rpg": 17.6,
+    "apg": 1.8,
+    "spg": 1.0,
+    "bpg": 1.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1978-79",
+    "player_key": "moses-malone",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Moses Malone",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Moses Malone"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:moses-malone",
+    "entry_id": "award:moses-malone:1978-79"
+  },
+  {
+    "player_id": "historical:phil-ford",
+    "team": "KCK",
+    "gp": 79,
+    "mpg": 34.5,
+    "ppg": 15.9,
+    "rpg": 2.3,
+    "apg": 8.6,
+    "spg": 2.2,
+    "bpg": 0.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1978-79",
+    "player_key": "phil-ford",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Phil Ford",
+    "award_team": "Kansas City Kings",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Phil Ford"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:phil-ford",
+    "entry_id": "award:phil-ford:1978-79"
+  },
+  {
+    "player_id": "historical:kareem-abdul-jabbar",
+    "team": "LAL",
+    "gp": 82,
+    "mpg": 38.3,
+    "ppg": 24.8,
+    "rpg": 10.8,
+    "apg": 4.5,
+    "spg": 1.0,
+    "bpg": 3.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1979-80",
+    "player_key": "kareem-abdul-jabbar",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kareem-abdul-jabbar",
+    "entry_id": "award:kareem-abdul-jabbar:1979-80"
+  },
+  {
+    "player_id": "historical:larry-bird",
+    "team": "BOS",
+    "gp": 82,
+    "mpg": 36.0,
+    "ppg": 21.3,
+    "rpg": 10.4,
+    "apg": 4.5,
+    "spg": 1.7,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1979-80",
+    "player_key": "larry-bird",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:larry-bird",
+    "entry_id": "award:larry-bird:1979-80"
+  },
+  {
+    "player_id": "historical:darrell-griffith",
+    "team": "UTA",
+    "gp": 81,
+    "mpg": 35.4,
+    "ppg": 20.6,
+    "rpg": 3.6,
+    "apg": 2.4,
+    "spg": 1.3,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1980-81",
+    "player_key": "darrell-griffith",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Darrell Griffith",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Darrell Griffith"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:darrell-griffith",
+    "entry_id": "award:darrell-griffith:1980-81"
+  },
+  {
+    "player_id": "historical:julius-erving",
+    "team": "PHI",
+    "gp": 82,
+    "mpg": 35.0,
+    "ppg": 24.6,
+    "rpg": 8.0,
+    "apg": 4.4,
+    "spg": 2.1,
+    "bpg": 1.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1980-81",
+    "player_key": "julius-erving",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Julius Erving",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Julius Erving"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:julius-erving",
+    "entry_id": "award:julius-erving:1980-81"
+  },
+  {
+    "player_id": "historical:buck-williams",
+    "team": "NJN",
+    "gp": 82,
+    "mpg": 34.5,
+    "ppg": 15.5,
+    "rpg": 12.3,
+    "apg": 1.3,
+    "spg": 1.0,
+    "bpg": 1.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1981-82",
+    "player_key": "buck-williams",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Buck Williams",
+    "award_team": "New Jersey Nets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Buck Williams"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:buck-williams",
+    "entry_id": "award:buck-williams:1981-82"
+  },
+  {
+    "player_id": "historical:moses-malone",
+    "team": "HOU",
+    "gp": 81,
+    "mpg": 42.0,
+    "ppg": 31.1,
+    "rpg": 14.7,
+    "apg": 1.8,
+    "spg": 0.9,
+    "bpg": 1.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1981-82",
+    "player_key": "moses-malone",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Moses Malone",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Moses Malone"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:moses-malone",
+    "entry_id": "award:moses-malone:1981-82"
+  },
+  {
+    "player_id": "historical:moses-malone",
+    "team": "PHI",
+    "gp": 78,
+    "mpg": 37.5,
+    "ppg": 24.5,
+    "rpg": 15.3,
+    "apg": 1.3,
+    "spg": 1.1,
+    "bpg": 2.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1982-83",
+    "player_key": "moses-malone",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Moses Malone",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Moses Malone"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:moses-malone",
+    "entry_id": "award:moses-malone:1982-83"
+  },
+  {
+    "player_id": "historical:sidney-moncrief",
+    "team": "MIL",
+    "gp": 76,
+    "mpg": 35.7,
+    "ppg": 22.5,
+    "rpg": 5.8,
+    "apg": 3.9,
+    "spg": 1.5,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1982-83",
+    "player_key": "sidney-moncrief",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Sidney Moncrief",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Sidney Moncrief"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:sidney-moncrief",
+    "entry_id": "award:sidney-moncrief:1982-83"
+  },
+  {
+    "player_id": "historical:terry-cummings",
+    "team": "SDC",
+    "gp": 70,
+    "mpg": 36.2,
+    "ppg": 23.7,
+    "rpg": 10.6,
+    "apg": 2.5,
+    "spg": 1.8,
+    "bpg": 0.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1982-83",
+    "player_key": "terry-cummings",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Terry Cummings",
+    "award_team": "San Diego Clippers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Terry Cummings"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:terry-cummings",
+    "entry_id": "award:terry-cummings:1982-83"
+  },
+  {
+    "player_id": "historical:larry-bird",
+    "team": "BOS",
+    "gp": 79,
+    "mpg": 38.3,
+    "ppg": 24.2,
+    "rpg": 10.1,
+    "apg": 6.6,
+    "spg": 1.8,
+    "bpg": 0.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1983-84",
+    "player_key": "larry-bird",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:larry-bird",
+    "entry_id": "award:larry-bird:1983-84"
+  },
+  {
+    "player_id": "historical:ralph-sampson",
+    "team": "HOU",
+    "gp": 82,
+    "mpg": 32.8,
+    "ppg": 21.0,
+    "rpg": 11.1,
+    "apg": 2.0,
+    "spg": 0.9,
+    "bpg": 2.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1983-84",
+    "player_key": "ralph-sampson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ralph Sampson",
+    "award_team": "Houston Rockets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ralph Sampson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ralph-sampson",
+    "entry_id": "award:ralph-sampson:1983-84"
+  },
+  {
+    "player_id": "historical:sidney-moncrief",
+    "team": "MIL",
+    "gp": 79,
+    "mpg": 38.9,
+    "ppg": 20.9,
+    "rpg": 6.7,
+    "apg": 4.5,
+    "spg": 1.4,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1983-84",
+    "player_key": "sidney-moncrief",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Sidney Moncrief",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Sidney Moncrief"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:sidney-moncrief",
+    "entry_id": "award:sidney-moncrief:1983-84"
+  },
+  {
+    "player_id": "historical:larry-bird",
+    "team": "BOS",
+    "gp": 80,
+    "mpg": 39.5,
+    "ppg": 28.7,
+    "rpg": 10.5,
+    "apg": 6.6,
+    "spg": 1.6,
+    "bpg": 1.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1984-85",
+    "player_key": "larry-bird",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:larry-bird",
+    "entry_id": "award:larry-bird:1984-85"
+  },
+  {
+    "player_id": "historical:mark-eaton",
+    "team": "UTA",
+    "gp": 82,
+    "mpg": 34.3,
+    "ppg": 9.7,
+    "rpg": 11.3,
+    "apg": 1.5,
+    "spg": 0.4,
+    "bpg": 5.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1984-85",
+    "player_key": "mark-eaton",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Mark Eaton",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Mark Eaton"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:mark-eaton",
+    "entry_id": "award:mark-eaton:1984-85"
+  },
+  {
+    "player_id": "historical:michael-jordan",
+    "team": "CHI",
+    "gp": 82,
+    "mpg": 38.3,
+    "ppg": 28.2,
+    "rpg": 6.5,
+    "apg": 5.9,
+    "spg": 2.4,
+    "bpg": 0.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1984-85",
+    "player_key": "michael-jordan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-jordan",
+    "entry_id": "award:michael-jordan:1984-85"
+  },
+  {
+    "player_id": "historical:alvin-robertson",
+    "team": "SAS",
+    "gp": 82,
+    "mpg": 35.1,
+    "ppg": 17.0,
+    "rpg": 6.3,
+    "apg": 5.5,
+    "spg": 3.7,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1985-86",
+    "player_key": "alvin-robertson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Alvin Robertson",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Alvin Robertson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:alvin-robertson",
+    "entry_id": "award:alvin-robertson:1985-86"
+  },
+  {
+    "player_id": "historical:larry-bird",
+    "team": "BOS",
+    "gp": 82,
+    "mpg": 38.0,
+    "ppg": 25.8,
+    "rpg": 9.8,
+    "apg": 6.8,
+    "spg": 2.0,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1985-86",
+    "player_key": "larry-bird",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:larry-bird",
+    "entry_id": "award:larry-bird:1985-86"
+  },
+  {
+    "player_id": "historical:patrick-ewing",
+    "team": "NYK",
+    "gp": 50,
+    "mpg": 35.4,
+    "ppg": 20.0,
+    "rpg": 9.0,
+    "apg": 2.0,
+    "spg": 1.1,
+    "bpg": 2.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1985-86",
+    "player_key": "patrick-ewing",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Patrick Ewing",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Patrick Ewing"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:patrick-ewing",
+    "entry_id": "award:patrick-ewing:1985-86"
+  },
+  {
+    "player_id": "historical:chuck-person",
+    "team": "IND",
+    "gp": 82,
+    "mpg": 36.0,
+    "ppg": 18.8,
+    "rpg": 8.3,
+    "apg": 3.6,
+    "spg": 1.1,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1986-87",
+    "player_key": "chuck-person",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Chuck Person",
+    "award_team": "Indiana Pacers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Chuck Person"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:chuck-person",
+    "entry_id": "award:chuck-person:1986-87"
+  },
+  {
+    "player_id": "historical:magic-johnson",
+    "team": "LAL",
+    "gp": 80,
+    "mpg": 36.3,
+    "ppg": 23.9,
+    "rpg": 6.3,
+    "apg": 12.2,
+    "spg": 1.7,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1986-87",
+    "player_key": "magic-johnson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Magic Johnson",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Magic Johnson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:magic-johnson",
+    "entry_id": "award:magic-johnson:1986-87"
+  },
+  {
+    "player_id": "historical:michael-cooper",
+    "team": "LAL",
+    "gp": 82,
+    "mpg": 27.5,
+    "ppg": 10.5,
+    "rpg": 3.1,
+    "apg": 4.5,
+    "spg": 1.0,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1986-87",
+    "player_key": "michael-cooper",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Cooper",
+    "award_team": "Los Angeles Lakers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Cooper"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-cooper",
+    "entry_id": "award:michael-cooper:1986-87"
+  },
+  {
+    "player_id": "historical:mark-jackson",
+    "team": "NYK",
+    "gp": 82,
+    "mpg": 39.6,
+    "ppg": 13.6,
+    "rpg": 4.8,
+    "apg": 10.6,
+    "spg": 2.5,
+    "bpg": 0.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1987-88",
+    "player_key": "mark-jackson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Mark Jackson",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Mark Jackson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:mark-jackson",
+    "entry_id": "award:mark-jackson:1987-88"
+  },
+  {
+    "player_id": "historical:michael-jordan",
+    "team": "CHI",
+    "gp": 82,
+    "mpg": 40.4,
+    "ppg": 35.0,
+    "rpg": 5.5,
+    "apg": 5.9,
+    "spg": 3.2,
+    "bpg": 1.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1987-88",
+    "player_key": "michael-jordan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification",
+      "all_nba_third": "award_not_introduced"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-jordan",
+    "entry_id": "award:michael-jordan:1987-88"
+  },
+  {
+    "player_id": "historical:magic-johnson",
+    "team": "LAL",
+    "gp": 77,
+    "mpg": 37.5,
+    "ppg": 22.5,
+    "rpg": 7.9,
+    "apg": 12.8,
+    "spg": 1.8,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1988-89",
+    "player_key": "magic-johnson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Magic Johnson",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Magic Johnson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:magic-johnson",
+    "entry_id": "award:magic-johnson:1988-89"
+  },
+  {
+    "player_id": "historical:mark-eaton",
+    "team": "UTA",
+    "gp": 82,
+    "mpg": 35.5,
+    "ppg": 6.2,
+    "rpg": 10.3,
+    "apg": 1.0,
+    "spg": 0.5,
+    "bpg": 3.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1988-89",
+    "player_key": "mark-eaton",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Mark Eaton",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Mark Eaton"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:mark-eaton",
+    "entry_id": "award:mark-eaton:1988-89"
+  },
+  {
+    "player_id": "historical:mitch-richmond",
+    "team": "GSW",
+    "gp": 79,
+    "mpg": 34.4,
+    "ppg": 22.0,
+    "rpg": 5.9,
+    "apg": 4.2,
+    "spg": 1.0,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1988-89",
+    "player_key": "mitch-richmond",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Mitch Richmond",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Mitch Richmond"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:mitch-richmond",
+    "entry_id": "award:mitch-richmond:1988-89"
+  },
+  {
+    "player_id": "historical:david-robinson",
+    "team": "SAS",
+    "gp": 82,
+    "mpg": 36.6,
+    "ppg": 24.3,
+    "rpg": 12.0,
+    "apg": 2.0,
+    "spg": 1.7,
+    "bpg": 3.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1989-90",
+    "player_key": "david-robinson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "David Robinson",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "David Robinson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:david-robinson",
+    "entry_id": "award:david-robinson:1989-90"
+  },
+  {
+    "player_id": "historical:dennis-rodman",
+    "team": "DET",
+    "gp": 82,
+    "mpg": 29.0,
+    "ppg": 8.8,
+    "rpg": 9.7,
+    "apg": 0.9,
+    "spg": 0.6,
+    "bpg": 0.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1989-90",
+    "player_key": "dennis-rodman",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dennis Rodman",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dennis Rodman"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dennis-rodman",
+    "entry_id": "award:dennis-rodman:1989-90"
+  },
+  {
+    "player_id": "historical:magic-johnson",
+    "team": "LAL",
+    "gp": 79,
+    "mpg": 37.2,
+    "ppg": 22.3,
+    "rpg": 6.6,
+    "apg": 11.5,
+    "spg": 1.7,
+    "bpg": 0.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1989-90",
+    "player_key": "magic-johnson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Magic Johnson",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Magic Johnson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:magic-johnson",
+    "entry_id": "award:magic-johnson:1989-90"
+  },
+  {
+    "player_id": "historical:dennis-rodman",
+    "team": "DET",
+    "gp": 82,
+    "mpg": 33.5,
+    "ppg": 8.2,
+    "rpg": 12.5,
+    "apg": 1.0,
+    "spg": 0.8,
+    "bpg": 0.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1990-91",
+    "player_key": "dennis-rodman",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dennis Rodman",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dennis Rodman"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dennis-rodman",
+    "entry_id": "award:dennis-rodman:1990-91"
+  },
+  {
+    "player_id": "historical:derrick-coleman",
+    "team": "NJN",
+    "gp": 74,
+    "mpg": 35.2,
+    "ppg": 18.4,
+    "rpg": 10.3,
+    "apg": 2.2,
+    "spg": 1.0,
+    "bpg": 1.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1990-91",
+    "player_key": "derrick-coleman",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Derrick Coleman",
+    "award_team": "New Jersey Nets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Derrick Coleman"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:derrick-coleman",
+    "entry_id": "award:derrick-coleman:1990-91"
+  },
+  {
+    "player_id": "historical:michael-jordan",
+    "team": "CHI",
+    "gp": 82,
+    "mpg": 37.0,
+    "ppg": 31.5,
+    "rpg": 6.0,
+    "apg": 5.5,
+    "spg": 2.7,
+    "bpg": 1.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1990-91",
+    "player_key": "michael-jordan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-jordan",
+    "entry_id": "award:michael-jordan:1990-91"
+  },
+  {
+    "player_id": "historical:david-robinson",
+    "team": "SAS",
+    "gp": 68,
+    "mpg": 37.7,
+    "ppg": 23.2,
+    "rpg": 12.2,
+    "apg": 2.7,
+    "spg": 2.3,
+    "bpg": 4.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1991-92",
+    "player_key": "david-robinson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "David Robinson",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "David Robinson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:david-robinson",
+    "entry_id": "award:david-robinson:1991-92"
+  },
+  {
+    "player_id": "historical:larry-johnson",
+    "team": "CHH",
+    "gp": 82,
+    "mpg": 37.2,
+    "ppg": 19.2,
+    "rpg": 11.0,
+    "apg": 3.6,
+    "spg": 1.0,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1991-92",
+    "player_key": "larry-johnson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Larry Johnson",
+    "award_team": "Charlotte Hornets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Larry Johnson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:larry-johnson",
+    "entry_id": "award:larry-johnson:1991-92"
+  },
+  {
+    "player_id": "historical:michael-jordan",
+    "team": "CHI",
+    "gp": 80,
+    "mpg": 38.8,
+    "ppg": 30.1,
+    "rpg": 6.4,
+    "apg": 6.1,
+    "spg": 2.3,
+    "bpg": 0.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1991-92",
+    "player_key": "michael-jordan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-jordan",
+    "entry_id": "award:michael-jordan:1991-92"
+  },
+  {
+    "player_id": "historical:charles-barkley",
+    "team": "PHO",
+    "gp": 76,
+    "mpg": 37.6,
+    "ppg": 25.6,
+    "rpg": 12.2,
+    "apg": 5.1,
+    "spg": 1.6,
+    "bpg": 1.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1992-93",
+    "player_key": "charles-barkley",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Charles Barkley",
+    "award_team": "Phoenix Suns",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Charles Barkley"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:charles-barkley",
+    "entry_id": "award:charles-barkley:1992-93"
+  },
+  {
+    "player_id": "historical:hakeem-olajuwon",
+    "team": "HOU",
+    "gp": 82,
+    "mpg": 39.5,
+    "ppg": 26.1,
+    "rpg": 13.0,
+    "apg": 3.5,
+    "spg": 1.8,
+    "bpg": 4.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1992-93",
+    "player_key": "hakeem-olajuwon",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Hakeem Olajuwon",
+    "award_team": "Houston Rockets",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Hakeem Olajuwon"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:hakeem-olajuwon",
+    "entry_id": "award:hakeem-olajuwon:1992-93"
+  },
+  {
+    "player_id": "historical:shaquille-oneal",
+    "team": "ORL",
+    "gp": 81,
+    "mpg": 37.9,
+    "ppg": 23.4,
+    "rpg": 13.9,
+    "apg": 1.9,
+    "spg": 0.7,
+    "bpg": 3.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1992-93",
+    "player_key": "shaquille-oneal",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Shaquille O’Neal",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Shaquille O’Neal"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:shaquille-oneal",
+    "entry_id": "award:shaquille-oneal:1992-93"
+  },
+  {
+    "player_id": "historical:chris-webber",
+    "team": "GSW",
+    "gp": 76,
+    "mpg": 32.1,
+    "ppg": 17.5,
+    "rpg": 9.1,
+    "apg": 3.6,
+    "spg": 1.2,
+    "bpg": 2.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1993-94",
+    "player_key": "chris-webber",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Chris Webber",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Chris Webber"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:chris-webber",
+    "entry_id": "award:chris-webber:1993-94"
+  },
+  {
+    "player_id": "historical:hakeem-olajuwon",
+    "team": "HOU",
+    "gp": 80,
+    "mpg": 41.0,
+    "ppg": 27.3,
+    "rpg": 11.9,
+    "apg": 3.6,
+    "spg": 1.6,
+    "bpg": 3.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1993-94",
+    "player_key": "hakeem-olajuwon",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Hakeem Olajuwon",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Hakeem Olajuwon"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:hakeem-olajuwon",
+    "entry_id": "award:hakeem-olajuwon:1993-94"
+  },
+  {
+    "player_id": "historical:david-robinson",
+    "team": "SAS",
+    "gp": 81,
+    "mpg": 38.0,
+    "ppg": 27.6,
+    "rpg": 10.8,
+    "apg": 2.9,
+    "spg": 1.7,
+    "bpg": 3.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1994-95",
+    "player_key": "david-robinson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "David Robinson",
+    "award_team": "San Antonio Spurs",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "David Robinson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:david-robinson",
+    "entry_id": "award:david-robinson:1994-95"
+  },
+  {
+    "player_id": "historical:dikembe-mutombo",
+    "team": "DEN",
+    "gp": 82,
+    "mpg": 37.8,
+    "ppg": 11.5,
+    "rpg": 12.5,
+    "apg": 1.4,
+    "spg": 0.5,
+    "bpg": 3.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1994-95",
+    "player_key": "dikembe-mutombo",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dikembe Mutombo",
+    "award_team": "Denver Nuggets",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dikembe-mutombo",
+    "entry_id": "award:dikembe-mutombo:1994-95"
+  },
+  {
+    "player_id": "historical:grant-hill",
+    "team": "DET",
+    "gp": 70,
+    "mpg": 38.3,
+    "ppg": 19.9,
+    "rpg": 6.4,
+    "apg": 5.0,
+    "spg": 1.8,
+    "bpg": 0.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1994-95",
+    "player_key": "grant-hill",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Grant Hill",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Grant Hill"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:grant-hill",
+    "entry_id": "award:grant-hill:1994-95"
+  },
+  {
+    "player_id": "historical:jason-kidd",
+    "team": "DAL",
+    "gp": 79,
+    "mpg": 33.8,
+    "ppg": 11.7,
+    "rpg": 5.4,
+    "apg": 7.7,
+    "spg": 1.9,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1994-95",
+    "player_key": "jason-kidd",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Jason Kidd",
+    "award_team": "Dallas Mavericks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Jason Kidd"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:jason-kidd",
+    "entry_id": "award:jason-kidd:1994-95"
+  },
+  {
+    "player_id": "historical:damon-stoudamire",
+    "team": "TOR",
+    "gp": 70,
+    "mpg": 40.9,
+    "ppg": 19.0,
+    "rpg": 4.0,
+    "apg": 9.3,
+    "spg": 1.4,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1995-96",
+    "player_key": "damon-stoudamire",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Damon Stoudamire",
+    "award_team": "Toronto Raptors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Damon Stoudamire"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:damon-stoudamire",
+    "entry_id": "award:damon-stoudamire:1995-96"
+  },
+  {
+    "player_id": "historical:gary-payton",
+    "team": "SEA",
+    "gp": 81,
+    "mpg": 39.0,
+    "ppg": 19.3,
+    "rpg": 4.2,
+    "apg": 7.5,
+    "spg": 2.9,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1995-96",
+    "player_key": "gary-payton",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Gary Payton",
+    "award_team": "Seattle SuperSonics",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Gary Payton"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:gary-payton",
+    "entry_id": "award:gary-payton:1995-96"
+  },
+  {
+    "player_id": "historical:michael-jordan",
+    "team": "CHI",
+    "gp": 82,
+    "mpg": 37.7,
+    "ppg": 30.4,
+    "rpg": 6.6,
+    "apg": 4.3,
+    "spg": 2.2,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1995-96",
+    "player_key": "michael-jordan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-jordan",
+    "entry_id": "award:michael-jordan:1995-96"
+  },
+  {
+    "player_id": "historical:allen-iverson",
+    "team": "PHI",
+    "gp": 76,
+    "mpg": 40.1,
+    "ppg": 23.5,
+    "rpg": 4.1,
+    "apg": 7.5,
+    "spg": 2.1,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1996-97",
+    "player_key": "allen-iverson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Allen Iverson",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Allen Iverson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:allen-iverson",
+    "entry_id": "award:allen-iverson:1996-97"
+  },
+  {
+    "player_id": "historical:dikembe-mutombo",
+    "team": "ATL",
+    "gp": 80,
+    "mpg": 37.2,
+    "ppg": 13.3,
+    "rpg": 11.6,
+    "apg": 1.4,
+    "spg": 0.6,
+    "bpg": 3.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1996-97",
+    "player_key": "dikembe-mutombo",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dikembe Mutombo",
+    "award_team": "Atlanta Hawks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dikembe-mutombo",
+    "entry_id": "award:dikembe-mutombo:1996-97"
+  },
+  {
+    "player_id": "historical:karl-malone",
+    "team": "UTA",
+    "gp": 82,
+    "mpg": 36.6,
+    "ppg": 27.4,
+    "rpg": 9.9,
+    "apg": 4.5,
+    "spg": 1.4,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1996-97",
+    "player_key": "karl-malone",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Karl Malone",
+    "award_team": "Utah Jazz",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Karl Malone"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:karl-malone",
+    "entry_id": "award:karl-malone:1996-97"
+  },
+  {
+    "player_id": "historical:dikembe-mutombo",
+    "team": "ATL",
+    "gp": 82,
+    "mpg": 35.6,
+    "ppg": 13.4,
+    "rpg": 11.4,
+    "apg": 1.0,
+    "spg": 0.4,
+    "bpg": 3.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1997-98",
+    "player_key": "dikembe-mutombo",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dikembe Mutombo",
+    "award_team": "Atlanta Hawks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dikembe-mutombo",
+    "entry_id": "award:dikembe-mutombo:1997-98"
+  },
+  {
+    "player_id": "historical:michael-jordan",
+    "team": "CHI",
+    "gp": 82,
+    "mpg": 38.8,
+    "ppg": 28.7,
+    "rpg": 5.8,
+    "apg": 3.5,
+    "spg": 1.7,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1997-98",
+    "player_key": "michael-jordan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-jordan",
+    "entry_id": "award:michael-jordan:1997-98"
+  },
+  {
+    "player_id": "historical:tim-duncan",
+    "team": "SAS",
+    "gp": 82,
+    "mpg": 39.1,
+    "ppg": 21.1,
+    "rpg": 11.9,
+    "apg": 2.7,
+    "spg": 0.7,
+    "bpg": 2.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1997-98",
+    "player_key": "tim-duncan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Tim Duncan",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Tim Duncan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:tim-duncan",
+    "entry_id": "award:tim-duncan:1997-98"
+  },
+  {
+    "player_id": "historical:alonzo-mourning",
+    "team": "MIA",
+    "gp": 46,
+    "mpg": 38.1,
+    "ppg": 20.1,
+    "rpg": 11.0,
+    "apg": 1.6,
+    "spg": 0.7,
+    "bpg": 3.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1998-99",
+    "player_key": "alonzo-mourning",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Alonzo Mourning",
+    "award_team": "Miami Heat",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Alonzo Mourning"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:alonzo-mourning",
+    "entry_id": "award:alonzo-mourning:1998-99"
+  },
+  {
+    "player_id": "historical:karl-malone",
+    "team": "UTA",
+    "gp": 49,
+    "mpg": 37.4,
+    "ppg": 23.8,
+    "rpg": 9.4,
+    "apg": 4.1,
+    "spg": 1.3,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1998-99",
+    "player_key": "karl-malone",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Karl Malone",
+    "award_team": "Utah Jazz",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Karl Malone"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:karl-malone",
+    "entry_id": "award:karl-malone:1998-99"
+  },
+  {
+    "player_id": "historical:vince-carter",
+    "team": "TOR",
+    "gp": 50,
+    "mpg": 35.2,
+    "ppg": 18.3,
+    "rpg": 5.7,
+    "apg": 3.0,
+    "spg": 1.1,
+    "bpg": 1.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1998-99",
+    "player_key": "vince-carter",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Vince Carter",
+    "award_team": "Toronto Raptors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Vince Carter"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:vince-carter",
+    "entry_id": "award:vince-carter:1998-99"
+  },
+  {
+    "player_id": "historical:alonzo-mourning",
+    "team": "MIA",
+    "gp": 79,
+    "mpg": 34.8,
+    "ppg": 21.7,
+    "rpg": 9.5,
+    "apg": 1.6,
+    "spg": 0.5,
+    "bpg": 3.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1999-00",
+    "player_key": "alonzo-mourning",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Alonzo Mourning",
+    "award_team": "Miami Heat",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Alonzo Mourning"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:alonzo-mourning",
+    "entry_id": "award:alonzo-mourning:1999-00"
+  },
+  {
+    "player_id": "historical:elton-brand",
+    "team": "CHI",
+    "gp": 81,
+    "mpg": 37.0,
+    "ppg": 20.1,
+    "rpg": 10.0,
+    "apg": 1.9,
+    "spg": 0.8,
+    "bpg": 1.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1999-00",
+    "player_key": "elton-brand",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Elton Brand",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Elton Brand"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:elton-brand",
+    "entry_id": "award:elton-brand:1999-00"
+  },
+  {
+    "player_id": "historical:shaquille-oneal",
+    "team": "LAL",
+    "gp": 79,
+    "mpg": 40.0,
+    "ppg": 29.7,
+    "rpg": 13.6,
+    "apg": 3.8,
+    "spg": 0.5,
+    "bpg": 3.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1999-00",
+    "player_key": "shaquille-oneal",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Shaquille O’Neal",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Shaquille O’Neal"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:shaquille-oneal",
+    "entry_id": "award:shaquille-oneal:1999-00"
+  },
+  {
+    "player_id": "historical:steve-francis",
+    "team": "HOU",
+    "gp": 77,
+    "mpg": 36.1,
+    "ppg": 18.0,
+    "rpg": 5.3,
+    "apg": 6.6,
+    "spg": 1.5,
+    "bpg": 0.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "1999-00",
+    "player_key": "steve-francis",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Steve Francis",
+    "award_team": "Houston Rockets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Steve Francis"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:steve-francis",
+    "entry_id": "award:steve-francis:1999-00"
+  },
+  {
+    "player_id": "historical:allen-iverson",
+    "team": "PHI",
+    "gp": 71,
+    "mpg": 42.0,
+    "ppg": 31.1,
+    "rpg": 3.8,
+    "apg": 4.6,
+    "spg": 2.5,
+    "bpg": 0.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2000-01",
+    "player_key": "allen-iverson",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Allen Iverson",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Allen Iverson"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:allen-iverson",
+    "entry_id": "award:allen-iverson:2000-01"
+  },
+  {
+    "player_id": "historical:dikembe-mutombo",
+    "team": "PHI",
+    "gp": 26,
+    "mpg": 33.7,
+    "ppg": 11.7,
+    "rpg": 12.4,
+    "apg": 0.8,
+    "spg": 0.3,
+    "bpg": 2.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2000-01",
+    "player_key": "dikembe-mutombo",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dikembe Mutombo",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dikembe-mutombo",
+    "entry_id": "award:dikembe-mutombo:2000-01"
+  },
+  {
+    "player_id": "historical:mike-miller",
+    "team": "ORL",
+    "gp": 82,
+    "mpg": 29.1,
+    "ppg": 11.9,
+    "rpg": 4.0,
+    "apg": 1.7,
+    "spg": 0.6,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2000-01",
+    "player_key": "mike-miller",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Mike Miller",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Mike Miller"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:mike-miller",
+    "entry_id": "award:mike-miller:2000-01"
+  },
+  {
+    "player_id": "historical:ben-wallace",
+    "team": "DET",
+    "gp": 80,
+    "mpg": 36.5,
+    "ppg": 7.6,
+    "rpg": 13.0,
+    "apg": 1.4,
+    "spg": 1.7,
+    "bpg": 3.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2001-02",
+    "player_key": "ben-wallace",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ben-wallace",
+    "entry_id": "award:ben-wallace:2001-02"
+  },
+  {
+    "player_id": "historical:pau-gasol",
+    "team": "MEM",
+    "gp": 82,
+    "mpg": 36.7,
+    "ppg": 17.6,
+    "rpg": 8.9,
+    "apg": 2.7,
+    "spg": 0.5,
+    "bpg": 2.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2001-02",
+    "player_key": "pau-gasol",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Pau Gasol",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Pau Gasol"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:pau-gasol",
+    "entry_id": "award:pau-gasol:2001-02"
+  },
+  {
+    "player_id": "historical:tim-duncan",
+    "team": "SAS",
+    "gp": 82,
+    "mpg": 40.6,
+    "ppg": 25.5,
+    "rpg": 12.7,
+    "apg": 3.7,
+    "spg": 0.7,
+    "bpg": 2.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2001-02",
+    "player_key": "tim-duncan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Tim Duncan",
+    "award_team": "San Antonio Spurs",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Tim Duncan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:tim-duncan",
+    "entry_id": "award:tim-duncan:2001-02"
+  },
+  {
+    "player_id": "historical:amare-stoudemire",
+    "team": "PHO",
+    "gp": 82,
+    "mpg": 31.3,
+    "ppg": 13.5,
+    "rpg": 8.8,
+    "apg": 1.0,
+    "spg": 0.8,
+    "bpg": 1.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2002-03",
+    "player_key": "amare-stoudemire",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Amar’e Stoudemire",
+    "award_team": "Phoenix Suns",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Amar’e Stoudemire"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:amare-stoudemire",
+    "entry_id": "award:amare-stoudemire:2002-03"
+  },
+  {
+    "player_id": "historical:ben-wallace",
+    "team": "DET",
+    "gp": 73,
+    "mpg": 39.4,
+    "ppg": 6.9,
+    "rpg": 15.4,
+    "apg": 1.6,
+    "spg": 1.4,
+    "bpg": 3.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2002-03",
+    "player_key": "ben-wallace",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ben-wallace",
+    "entry_id": "award:ben-wallace:2002-03"
+  },
+  {
+    "player_id": "historical:tim-duncan",
+    "team": "SAS",
+    "gp": 81,
+    "mpg": 39.3,
+    "ppg": 23.3,
+    "rpg": 12.9,
+    "apg": 3.9,
+    "spg": 0.7,
+    "bpg": 2.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2002-03",
+    "player_key": "tim-duncan",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Tim Duncan",
+    "award_team": "San Antonio Spurs",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Tim Duncan"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:tim-duncan",
+    "entry_id": "award:tim-duncan:2002-03"
+  },
+  {
+    "player_id": "historical:kevin-garnett",
+    "team": "MIN",
+    "gp": 82,
+    "mpg": 39.4,
+    "ppg": 24.2,
+    "rpg": 13.9,
+    "apg": 5.0,
+    "spg": 1.5,
+    "bpg": 2.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2003-04",
+    "player_key": "kevin-garnett",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kevin Garnett",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kevin Garnett"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kevin-garnett",
+    "entry_id": "award:kevin-garnett:2003-04"
+  },
+  {
+    "player_id": "historical:lebron-james",
+    "team": "CLE",
+    "gp": 79,
+    "mpg": 39.5,
+    "ppg": 20.9,
+    "rpg": 5.5,
+    "apg": 5.9,
+    "spg": 1.6,
+    "bpg": 0.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2003-04",
+    "player_key": "lebron-james",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "LeBron James",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:lebron-james",
+    "entry_id": "award:lebron-james:2003-04"
+  },
+  {
+    "player_id": "historical:metta-world-peace",
+    "team": "IND",
+    "gp": 73,
+    "mpg": 37.2,
+    "ppg": 18.3,
+    "rpg": 5.3,
+    "apg": 3.7,
+    "spg": 2.1,
+    "bpg": 0.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2003-04",
+    "player_key": "metta-world-peace",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ron Artest",
+    "award_team": "Indiana Pacers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ron Artest"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:metta-world-peace",
+    "entry_id": "award:metta-world-peace:2003-04"
+  },
+  {
+    "player_id": "historical:ben-wallace",
+    "team": "DET",
+    "gp": 74,
+    "mpg": 36.1,
+    "ppg": 9.7,
+    "rpg": 12.2,
+    "apg": 1.7,
+    "spg": 1.4,
+    "bpg": 2.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2004-05",
+    "player_key": "ben-wallace",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ben-wallace",
+    "entry_id": "award:ben-wallace:2004-05"
+  },
+  {
+    "player_id": "historical:emeka-okafor",
+    "team": "CHA",
+    "gp": 73,
+    "mpg": 35.6,
+    "ppg": 15.1,
+    "rpg": 10.9,
+    "apg": 0.9,
+    "spg": 0.8,
+    "bpg": 1.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2004-05",
+    "player_key": "emeka-okafor",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Emeka Okafor",
+    "award_team": "Charlotte Bobcats",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Emeka Okafor"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:emeka-okafor",
+    "entry_id": "award:emeka-okafor:2004-05"
+  },
+  {
+    "player_id": "historical:steve-nash",
+    "team": "PHO",
+    "gp": 75,
+    "mpg": 34.3,
+    "ppg": 15.5,
+    "rpg": 3.3,
+    "apg": 11.5,
+    "spg": 1.0,
+    "bpg": 0.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2004-05",
+    "player_key": "steve-nash",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Steve Nash",
+    "award_team": "Phoenix Suns",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Steve Nash"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:steve-nash",
+    "entry_id": "award:steve-nash:2004-05"
+  },
+  {
+    "player_id": "historical:ben-wallace",
+    "team": "DET",
+    "gp": 82,
+    "mpg": 35.2,
+    "ppg": 7.3,
+    "rpg": 11.3,
+    "apg": 1.9,
+    "spg": 1.8,
+    "bpg": 2.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2005-06",
+    "player_key": "ben-wallace",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ben-wallace",
+    "entry_id": "award:ben-wallace:2005-06"
+  },
+  {
+    "player_id": "historical:chris-paul",
+    "team": "NOK",
+    "gp": 78,
+    "mpg": 36.0,
+    "ppg": 16.1,
+    "rpg": 5.1,
+    "apg": 7.8,
+    "spg": 2.2,
+    "bpg": 0.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2005-06",
+    "player_key": "chris-paul",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Chris Paul",
+    "award_team": "New Orleans/Oklahoma City Hornets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Chris Paul"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:chris-paul",
+    "entry_id": "award:chris-paul:2005-06"
+  },
+  {
+    "player_id": "historical:steve-nash",
+    "team": "PHO",
+    "gp": 79,
+    "mpg": 35.4,
+    "ppg": 18.8,
+    "rpg": 4.2,
+    "apg": 10.5,
+    "spg": 0.8,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2005-06",
+    "player_key": "steve-nash",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Steve Nash",
+    "award_team": "Phoenix Suns",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Steve Nash"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:steve-nash",
+    "entry_id": "award:steve-nash:2005-06"
+  },
+  {
+    "player_id": "historical:brandon-roy",
+    "team": "POR",
+    "gp": 57,
+    "mpg": 35.4,
+    "ppg": 16.8,
+    "rpg": 4.4,
+    "apg": 4.0,
+    "spg": 1.2,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2006-07",
+    "player_key": "brandon-roy",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Brandon Roy",
+    "award_team": "Portland Trail Blazers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Brandon Roy"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:brandon-roy",
+    "entry_id": "award:brandon-roy:2006-07"
+  },
+  {
+    "player_id": "historical:dirk-nowitzki",
+    "team": "DAL",
+    "gp": 78,
+    "mpg": 36.2,
+    "ppg": 24.6,
+    "rpg": 8.9,
+    "apg": 3.4,
+    "spg": 0.7,
+    "bpg": 0.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2006-07",
+    "player_key": "dirk-nowitzki",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dirk Nowitzki",
+    "award_team": "Dallas Mavericks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Dirk Nowitzki"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dirk-nowitzki",
+    "entry_id": "award:dirk-nowitzki:2006-07"
+  },
+  {
+    "player_id": "historical:marcus-camby",
+    "team": "DEN",
+    "gp": 70,
+    "mpg": 33.8,
+    "ppg": 11.2,
+    "rpg": 11.7,
+    "apg": 3.2,
+    "spg": 1.2,
+    "bpg": 3.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2006-07",
+    "player_key": "marcus-camby",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Marcus Camby",
+    "award_team": "Denver Nuggets",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Marcus Camby"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:marcus-camby",
+    "entry_id": "award:marcus-camby:2006-07"
+  },
+  {
+    "player_id": "historical:kevin-durant",
+    "team": "SEA",
+    "gp": 80,
+    "mpg": 34.6,
+    "ppg": 20.3,
+    "rpg": 4.4,
+    "apg": 2.4,
+    "spg": 1.0,
+    "bpg": 0.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2007-08",
+    "player_key": "kevin-durant",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kevin Durant",
+    "award_team": "Seattle SuperSonics",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Kevin Durant"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kevin-durant",
+    "entry_id": "award:kevin-durant:2007-08"
+  },
+  {
+    "player_id": "historical:kevin-garnett",
+    "team": "BOS",
+    "gp": 71,
+    "mpg": 32.8,
+    "ppg": 18.8,
+    "rpg": 9.2,
+    "apg": 3.4,
+    "spg": 1.4,
+    "bpg": 1.3,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2007-08",
+    "player_key": "kevin-garnett",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kevin Garnett",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Kevin Garnett"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kevin-garnett",
+    "entry_id": "award:kevin-garnett:2007-08"
+  },
+  {
+    "player_id": "historical:kobe-bryant",
+    "team": "LAL",
+    "gp": 82,
+    "mpg": 38.9,
+    "ppg": 28.3,
+    "rpg": 6.3,
+    "apg": 5.4,
+    "spg": 1.8,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2007-08",
+    "player_key": "kobe-bryant",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kobe Bryant",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kobe Bryant"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kobe-bryant",
+    "entry_id": "award:kobe-bryant:2007-08"
+  },
+  {
+    "player_id": "historical:derrick-rose",
+    "team": "CHI",
+    "gp": 81,
+    "mpg": 37.0,
+    "ppg": 16.8,
+    "rpg": 3.9,
+    "apg": 6.3,
+    "spg": 0.8,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2008-09",
+    "player_key": "derrick-rose",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Derrick Rose",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Derrick Rose"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:derrick-rose",
+    "entry_id": "award:derrick-rose:2008-09"
+  },
+  {
+    "player_id": "historical:dwight-howard",
+    "team": "ORL",
+    "gp": 79,
+    "mpg": 35.7,
+    "ppg": 20.6,
+    "rpg": 13.8,
+    "apg": 1.4,
+    "spg": 1.0,
+    "bpg": 2.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2008-09",
+    "player_key": "dwight-howard",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dwight Howard",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dwight Howard"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dwight-howard",
+    "entry_id": "award:dwight-howard:2008-09"
+  },
+  {
+    "player_id": "historical:lebron-james",
+    "team": "CLE",
+    "gp": 81,
+    "mpg": 37.7,
+    "ppg": 28.4,
+    "rpg": 7.6,
+    "apg": 7.2,
+    "spg": 1.7,
+    "bpg": 1.1,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2008-09",
+    "player_key": "lebron-james",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "LeBron James",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:lebron-james",
+    "entry_id": "award:lebron-james:2008-09"
+  },
+  {
+    "player_id": "historical:dwight-howard",
+    "team": "ORL",
+    "gp": 82,
+    "mpg": 34.7,
+    "ppg": 18.3,
+    "rpg": 13.2,
+    "apg": 1.8,
+    "spg": 0.9,
+    "bpg": 2.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2009-10",
+    "player_key": "dwight-howard",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dwight Howard",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dwight Howard"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dwight-howard",
+    "entry_id": "award:dwight-howard:2009-10"
+  },
+  {
+    "player_id": "historical:lebron-james",
+    "team": "CLE",
+    "gp": 76,
+    "mpg": 39.0,
+    "ppg": 29.7,
+    "rpg": 7.3,
+    "apg": 8.6,
+    "spg": 1.6,
+    "bpg": 1.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2009-10",
+    "player_key": "lebron-james",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "LeBron James",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:lebron-james",
+    "entry_id": "award:lebron-james:2009-10"
+  },
+  {
+    "player_id": "historical:tyreke-evans",
+    "team": "SAC",
+    "gp": 72,
+    "mpg": 37.2,
+    "ppg": 20.1,
+    "rpg": 5.3,
+    "apg": 5.8,
+    "spg": 1.5,
+    "bpg": 0.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2009-10",
+    "player_key": "tyreke-evans",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Tyreke Evans",
+    "award_team": "Sacramento Kings",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Tyreke Evans"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:tyreke-evans",
+    "entry_id": "award:tyreke-evans:2009-10"
+  },
+  {
+    "player_id": "historical:blake-griffin",
+    "team": "LAC",
+    "gp": 82,
+    "mpg": 38.0,
+    "ppg": 22.5,
+    "rpg": 12.1,
+    "apg": 3.8,
+    "spg": 0.8,
+    "bpg": 0.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2010-11",
+    "player_key": "blake-griffin",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Blake Griffin",
+    "award_team": "LA Clippers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Blake Griffin"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:blake-griffin",
+    "entry_id": "award:blake-griffin:2010-11"
+  },
+  {
+    "player_id": "historical:derrick-rose",
+    "team": "CHI",
+    "gp": 81,
+    "mpg": 37.4,
+    "ppg": 25.0,
+    "rpg": 4.1,
+    "apg": 7.7,
+    "spg": 1.0,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2010-11",
+    "player_key": "derrick-rose",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Derrick Rose",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Derrick Rose"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:derrick-rose",
+    "entry_id": "award:derrick-rose:2010-11"
+  },
+  {
+    "player_id": "historical:dwight-howard",
+    "team": "ORL",
+    "gp": 78,
+    "mpg": 37.6,
+    "ppg": 22.9,
+    "rpg": 14.1,
+    "apg": 1.4,
+    "spg": 1.4,
+    "bpg": 2.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2010-11",
+    "player_key": "dwight-howard",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Dwight Howard",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dwight Howard"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:dwight-howard",
+    "entry_id": "award:dwight-howard:2010-11"
+  },
+  {
+    "player_id": "historical:kyrie-irving",
+    "team": "CLE",
+    "gp": 51,
+    "mpg": 30.5,
+    "ppg": 18.5,
+    "rpg": 3.7,
+    "apg": 5.4,
+    "spg": 1.1,
+    "bpg": 0.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2011-12",
+    "player_key": "kyrie-irving",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kyrie Irving",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Kyrie Irving"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kyrie-irving",
+    "entry_id": "award:kyrie-irving:2011-12"
+  },
+  {
+    "player_id": "historical:lebron-james",
+    "team": "MIA",
+    "gp": 62,
+    "mpg": 37.5,
+    "ppg": 27.1,
+    "rpg": 7.9,
+    "apg": 6.2,
+    "spg": 1.9,
+    "bpg": 0.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2011-12",
+    "player_key": "lebron-james",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "LeBron James",
+    "award_team": "Miami Heat",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:lebron-james",
+    "entry_id": "award:lebron-james:2011-12"
+  },
+  {
+    "player_id": "historical:tyson-chandler",
+    "team": "NYK",
+    "gp": 62,
+    "mpg": 33.2,
+    "ppg": 11.3,
+    "rpg": 9.9,
+    "apg": 0.9,
+    "spg": 0.9,
+    "bpg": 1.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2011-12",
+    "player_key": "tyson-chandler",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Tyson Chandler",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Tyson Chandler"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:tyson-chandler",
+    "entry_id": "award:tyson-chandler:2011-12"
+  },
+  {
+    "player_id": "historical:damian-lillard",
+    "team": "POR",
+    "gp": 82,
+    "mpg": 38.6,
+    "ppg": 19.0,
+    "rpg": 3.1,
+    "apg": 6.5,
+    "spg": 0.9,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2012-13",
+    "player_key": "damian-lillard",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Damian Lillard",
+    "award_team": "Portland Trail Blazers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Damian Lillard"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:damian-lillard",
+    "entry_id": "award:damian-lillard:2012-13"
+  },
+  {
+    "player_id": "historical:lebron-james",
+    "team": "MIA",
+    "gp": 76,
+    "mpg": 37.9,
+    "ppg": 26.8,
+    "rpg": 8.0,
+    "apg": 7.3,
+    "spg": 1.7,
+    "bpg": 0.9,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2012-13",
+    "player_key": "lebron-james",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "LeBron James",
+    "award_team": "Miami Heat",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:lebron-james",
+    "entry_id": "award:lebron-james:2012-13"
+  },
+  {
+    "player_id": "historical:marc-gasol",
+    "team": "MEM",
+    "gp": 80,
+    "mpg": 35.0,
+    "ppg": 14.1,
+    "rpg": 7.8,
+    "apg": 4.0,
+    "spg": 1.0,
+    "bpg": 1.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2012-13",
+    "player_key": "marc-gasol",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Marc Gasol",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Marc Gasol"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:marc-gasol",
+    "entry_id": "award:marc-gasol:2012-13"
+  },
+  {
+    "player_id": "historical:joakim-noah",
+    "team": "CHI",
+    "gp": 80,
+    "mpg": 35.3,
+    "ppg": 12.6,
+    "rpg": 11.3,
+    "apg": 5.4,
+    "spg": 1.2,
+    "bpg": 1.5,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2013-14",
+    "player_key": "joakim-noah",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Joakim Noah",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Joakim Noah"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:joakim-noah",
+    "entry_id": "award:joakim-noah:2013-14"
+  },
+  {
+    "player_id": "historical:kevin-durant",
+    "team": "OKC",
+    "gp": 81,
+    "mpg": 38.5,
+    "ppg": 32.0,
+    "rpg": 7.4,
+    "apg": 5.5,
+    "spg": 1.3,
+    "bpg": 0.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2013-14",
+    "player_key": "kevin-durant",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kevin Durant",
+    "award_team": "Oklahoma City Thunder",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kevin Durant"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kevin-durant",
+    "entry_id": "award:kevin-durant:2013-14"
+  },
+  {
+    "player_id": "historical:michael-carter-williams",
+    "team": "PHI",
+    "gp": 70,
+    "mpg": 34.5,
+    "ppg": 16.7,
+    "rpg": 6.2,
+    "apg": 6.3,
+    "spg": 1.9,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2013-14",
+    "player_key": "michael-carter-williams",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Michael Carter-Williams",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Carter-Williams"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:michael-carter-williams",
+    "entry_id": "award:michael-carter-williams:2013-14"
+  },
+  {
+    "player_id": "historical:andrew-wiggins",
+    "team": "MIN",
+    "gp": 82,
+    "mpg": 36.2,
+    "ppg": 16.9,
+    "rpg": 4.6,
+    "apg": 2.1,
+    "spg": 1.0,
+    "bpg": 0.6,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2014-15",
+    "player_key": "andrew-wiggins",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Andrew Wiggins",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Andrew Wiggins"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:andrew-wiggins",
+    "entry_id": "award:andrew-wiggins:2014-15"
+  },
+  {
+    "player_id": "historical:kawhi-leonard",
+    "team": "SAS",
+    "gp": 64,
+    "mpg": 31.8,
+    "ppg": 16.5,
+    "rpg": 7.2,
+    "apg": 2.5,
+    "spg": 2.3,
+    "bpg": 0.8,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2014-15",
+    "player_key": "kawhi-leonard",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kawhi Leonard",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Kawhi Leonard"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kawhi-leonard",
+    "entry_id": "award:kawhi-leonard:2014-15"
+  },
+  {
+    "player_id": "historical:stephen-curry",
+    "team": "GSW",
+    "gp": 80,
+    "mpg": 32.7,
+    "ppg": 23.8,
+    "rpg": 4.3,
+    "apg": 7.7,
+    "spg": 2.0,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2014-15",
+    "player_key": "stephen-curry",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Stephen Curry",
+    "award_team": "Golden State Warriors",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Stephen Curry"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:stephen-curry",
+    "entry_id": "award:stephen-curry:2014-15"
+  },
+  {
+    "player_id": "historical:karl-anthony-towns",
+    "team": "MIN",
+    "gp": 82,
+    "mpg": 32.0,
+    "ppg": 18.3,
+    "rpg": 10.5,
+    "apg": 2.0,
+    "spg": 0.7,
+    "bpg": 1.7,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2015-16",
+    "player_key": "karl-anthony-towns",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Karl-Anthony Towns",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Karl-Anthony Towns"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:karl-anthony-towns",
+    "entry_id": "award:karl-anthony-towns:2015-16"
+  },
+  {
+    "player_id": "historical:kawhi-leonard",
+    "team": "SAS",
+    "gp": 72,
+    "mpg": 33.1,
+    "ppg": 21.2,
+    "rpg": 6.8,
+    "apg": 2.6,
+    "spg": 1.8,
+    "bpg": 1.0,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2015-16",
+    "player_key": "kawhi-leonard",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Kawhi Leonard",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Kawhi Leonard"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:kawhi-leonard",
+    "entry_id": "award:kawhi-leonard:2015-16"
+  },
+  {
+    "player_id": "historical:stephen-curry",
+    "team": "GSW",
+    "gp": 79,
+    "mpg": 34.2,
+    "ppg": 30.1,
+    "rpg": 5.4,
+    "apg": 6.7,
+    "spg": 2.1,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2015-16",
+    "player_key": "stephen-curry",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Stephen Curry",
+    "award_team": "Golden State Warriors",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Stephen Curry"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:stephen-curry",
+    "entry_id": "award:stephen-curry:2015-16"
+  },
+  {
+    "player_id": "historical:draymond-green",
+    "team": "GSW",
+    "gp": 76,
+    "mpg": 32.5,
+    "ppg": 10.2,
+    "rpg": 7.9,
+    "apg": 7.0,
+    "spg": 2.0,
+    "bpg": 1.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2016-17",
+    "player_key": "draymond-green",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Draymond Green",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Draymond Green"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:draymond-green",
+    "entry_id": "award:draymond-green:2016-17"
+  },
+  {
+    "player_id": "historical:malcolm-brogdon",
+    "team": "MIL",
+    "gp": 75,
+    "mpg": 26.4,
+    "ppg": 10.2,
+    "rpg": 2.8,
+    "apg": 4.2,
+    "spg": 1.1,
+    "bpg": 0.2,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2016-17",
+    "player_key": "malcolm-brogdon",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Malcolm Brogdon",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Malcolm Brogdon"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:malcolm-brogdon",
+    "entry_id": "award:malcolm-brogdon:2016-17"
+  },
+  {
+    "player_id": "historical:russell-westbrook",
+    "team": "OKC",
+    "gp": 81,
+    "mpg": 34.6,
+    "ppg": 31.6,
+    "rpg": 10.7,
+    "apg": 10.4,
+    "spg": 1.6,
+    "bpg": 0.4,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2016-17",
+    "player_key": "russell-westbrook",
+    "source": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
+    "player": "Russell Westbrook",
+    "award_team": "Oklahoma City Thunder",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Russell Westbrook"
+    ],
+    "availability": {
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:russell-westbrook",
+    "entry_id": "award:russell-westbrook:2016-17"
+  },
+  {
+    "player_id": "historical:ben-simmons",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2017-18",
+    "player_key": "ben-simmons",
+    "player": "Ben Simmons",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Simmons"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ben-simmons",
+    "entry_id": "award:ben-simmons:2017-18"
+  },
+  {
+    "player_id": "historical:james-harden",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2017-18",
+    "player_key": "james-harden",
+    "player": "James Harden",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "James Harden"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:james-harden",
+    "entry_id": "award:james-harden:2017-18"
+  },
+  {
+    "player_id": "historical:rudy-gobert",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2017-18",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:rudy-gobert",
+    "entry_id": "award:rudy-gobert:2017-18"
+  },
+  {
+    "player_id": "historical:giannis-antetokounmpo",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2018-19",
+    "player_key": "giannis-antetokounmpo",
+    "player": "Giannis Antetokounmpo",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Giannis Antetokounmpo"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:giannis-antetokounmpo",
+    "entry_id": "award:giannis-antetokounmpo:2018-19"
+  },
+  {
+    "player_id": "historical:luka-doncic",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2018-19",
+    "player_key": "luka-doncic",
+    "player": "Luka Doncic",
+    "award_team": "Dallas Mavericks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Luka Doncic"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:luka-doncic",
+    "entry_id": "award:luka-doncic:2018-19"
+  },
+  {
+    "player_id": "historical:rudy-gobert",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2018-19",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:rudy-gobert",
+    "entry_id": "award:rudy-gobert:2018-19"
+  },
+  {
+    "player_id": "historical:giannis-antetokounmpo",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2019-20",
+    "player_key": "giannis-antetokounmpo",
+    "player": "Giannis Antetokounmpo",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Giannis Antetokounmpo"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:giannis-antetokounmpo",
+    "entry_id": "award:giannis-antetokounmpo:2019-20"
+  },
+  {
+    "player_id": "historical:ja-morant",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2019-20",
+    "player_key": "ja-morant",
+    "player": "Ja Morant",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ja Morant"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:ja-morant",
+    "entry_id": "award:ja-morant:2019-20"
+  },
+  {
+    "player_id": "historical:lamelo-ball",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2020-21",
+    "player_key": "lamelo-ball",
+    "player": "LaMelo Ball",
+    "award_team": "Charlotte Hornets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "LaMelo Ball"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:lamelo-ball",
+    "entry_id": "award:lamelo-ball:2020-21"
+  },
+  {
+    "player_id": "historical:nikola-jokic",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2020-21",
+    "player_key": "nikola-jokic",
     "player": "Nikola Jokić",
+    "award_team": "Denver Nuggets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Nikola Jokić"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:nikola-jokic",
+    "entry_id": "award:nikola-jokic:2020-21"
+  },
+  {
+    "player_id": "historical:rudy-gobert",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2020-21",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:rudy-gobert",
+    "entry_id": "award:rudy-gobert:2020-21"
+  },
+  {
+    "player_id": "historical:marcus-smart",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2021-22",
+    "player_key": "marcus-smart",
+    "player": "Marcus Smart",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Marcus Smart"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:marcus-smart",
+    "entry_id": "award:marcus-smart:2021-22"
+  },
+  {
+    "player_id": "historical:nikola-jokic",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2021-22",
+    "player_key": "nikola-jokic",
+    "player": "Nikola Jokić",
+    "award_team": "Denver Nuggets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Nikola Jokić"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:nikola-jokic",
+    "entry_id": "award:nikola-jokic:2021-22"
+  },
+  {
+    "player_id": "historical:scottie-barnes",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2021-22",
+    "player_key": "scottie-barnes",
+    "player": "Scottie Barnes",
+    "award_team": "Toronto Raptors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Scottie Barnes"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:scottie-barnes",
+    "entry_id": "award:scottie-barnes:2021-22"
+  },
+  {
+    "player_id": "historical:jaren-jackson-jr",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2022-23",
+    "player_key": "jaren-jackson-jr",
+    "player": "Jaren Jackson Jr.",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Jaren Jackson Jr."
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:jaren-jackson-jr",
+    "entry_id": "award:jaren-jackson-jr:2022-23"
+  },
+  {
+    "player_id": "historical:joel-embiid",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2022-23",
+    "player_key": "joel-embiid",
+    "player": "Joel Embiid",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Joel Embiid"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:joel-embiid",
+    "entry_id": "award:joel-embiid:2022-23"
+  },
+  {
+    "player_id": "historical:paolo-banchero",
+    "team": null,
+    "gp": null,
+    "mpg": null,
+    "ppg": null,
+    "rpg": null,
+    "apg": null,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": null,
+    "season": "2022-23",
+    "player_key": "paolo-banchero",
+    "player": "Paolo Banchero",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Paolo Banchero"
+    ],
+    "availability": {
+      "gp": "pending_verification",
+      "mpg": "pending_verification",
+      "ppg": "pending_verification",
+      "rpg": "pending_verification",
+      "apg": "pending_verification",
+      "spg": "pending_verification",
+      "bpg": "pending_verification",
+      "jersey": "pending_verification",
+      "all_nba": "pending_verification",
+      "all_defense": "pending_verification",
+      "champion": "pending_verification"
+    },
+    "verification_status": "winner_verified_enrichment_pending",
+    "pool": "award",
+    "game_player_id": "award:paolo-banchero",
+    "entry_id": "award:paolo-banchero:2022-23"
+  },
+  {
+    "player_id": 203999,
     "team": "DEN",
     "gp": 79,
     "mpg": 34.6,
@@ -15,19 +5631,30 @@
     "all_nba": 1,
     "all_defense": null,
     "champion": false,
+    "season": "2023-24",
+    "player": "Nikola Jokić",
     "mvp": true,
     "dpoy": false,
     "roy": false,
+    "source": "data/game/players_2023_24.json",
+    "player_key": "nikola-jokic",
+    "award_team": "Denver Nuggets",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Nikola Jokić"
+    ],
+    "availability": {
+      "all_defense": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:203999",
-    "entry_id": "award:203999:2023-24:DEN",
-    "canonical_record": "203999:2023-24:DEN",
-    "source": "data/game/players_2023_24.json"
+    "game_player_id": "award:nikola-jokic",
+    "entry_id": "award:nikola-jokic:2023-24"
   },
   {
-    "season": "2023-24",
     "player_id": 203497,
-    "player": "Rudy Gobert",
     "team": "MIN",
     "gp": 76,
     "mpg": 34.1,
@@ -40,19 +5667,30 @@
     "all_nba": null,
     "all_defense": 1,
     "champion": false,
+    "season": "2023-24",
+    "player": "Rudy Gobert",
     "mvp": false,
     "dpoy": true,
     "roy": false,
+    "source": "data/game/players_2023_24.json",
+    "player_key": "rudy-gobert",
+    "award_team": "Minnesota Timberwolves",
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ],
+    "availability": {
+      "all_nba": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:203497",
-    "entry_id": "award:203497:2023-24:MIN",
-    "canonical_record": "203497:2023-24:MIN",
-    "source": "data/game/players_2023_24.json"
+    "game_player_id": "award:rudy-gobert",
+    "entry_id": "award:rudy-gobert:2023-24"
   },
   {
-    "season": "2023-24",
     "player_id": 1641705,
-    "player": "Victor Wembanyama",
     "team": "SAS",
     "gp": 71,
     "mpg": 29.7,
@@ -65,19 +5703,30 @@
     "all_nba": null,
     "all_defense": 1,
     "champion": false,
+    "season": "2023-24",
+    "player": "Victor Wembanyama",
     "mvp": false,
     "dpoy": false,
     "roy": true,
+    "source": "data/game/players_2023_24.json",
+    "player_key": "victor-wembanyama",
+    "award_team": "San Antonio Spurs",
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Victor Wembanyama"
+    ],
+    "availability": {
+      "all_nba": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1641705",
-    "entry_id": "award:1641705:2023-24:SAS",
-    "canonical_record": "1641705:2023-24:SAS",
-    "source": "data/game/players_2023_24.json"
+    "game_player_id": "award:victor-wembanyama",
+    "entry_id": "award:victor-wembanyama:2023-24"
   },
   {
-    "season": "2024-25",
     "player_id": 1630596,
-    "player": "Evan Mobley",
     "team": "CLE",
     "gp": 71,
     "mpg": 30.5,
@@ -90,19 +5739,28 @@
     "all_nba": 2,
     "all_defense": 1,
     "champion": false,
+    "season": "2024-25",
+    "player": "Evan Mobley",
     "mvp": false,
     "dpoy": true,
     "roy": false,
+    "source": "data/game/players_2024_25.json",
+    "player_key": "evan-mobley",
+    "award_team": "Cleveland Cavaliers",
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Evan Mobley"
+    ],
+    "availability": {},
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1630596",
-    "entry_id": "award:1630596:2024-25:CLE",
-    "canonical_record": "1630596:2024-25:CLE",
-    "source": "data/game/players_2024_25.json"
+    "game_player_id": "award:evan-mobley",
+    "entry_id": "award:evan-mobley:2024-25"
   },
   {
-    "season": "2024-25",
     "player_id": 1628983,
-    "player": "Shai Gilgeous-Alexander",
     "team": "OKC",
     "gp": 76,
     "mpg": 34.2,
@@ -115,19 +5773,30 @@
     "all_nba": 1,
     "all_defense": null,
     "champion": true,
+    "season": "2024-25",
+    "player": "Shai Gilgeous-Alexander",
     "mvp": true,
     "dpoy": false,
     "roy": false,
+    "source": "data/game/players_2024_25.json",
+    "player_key": "shai-gilgeous-alexander",
+    "award_team": "Oklahoma City Thunder",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Shai Gilgeous-Alexander"
+    ],
+    "availability": {
+      "all_defense": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1628983",
-    "entry_id": "award:1628983:2024-25:OKC",
-    "canonical_record": "1628983:2024-25:OKC",
-    "source": "data/game/players_2024_25.json"
+    "game_player_id": "award:shai-gilgeous-alexander",
+    "entry_id": "award:shai-gilgeous-alexander:2024-25"
   },
   {
-    "season": "2024-25",
     "player_id": 1642264,
-    "player": "Stephon Castle",
     "team": "SAS",
     "gp": 81,
     "mpg": 26.7,
@@ -140,19 +5809,31 @@
     "all_nba": null,
     "all_defense": null,
     "champion": false,
+    "season": "2024-25",
+    "player": "Stephon Castle",
     "mvp": false,
     "dpoy": false,
     "roy": true,
+    "source": "data/game/players_2024_25.json",
+    "player_key": "stephon-castle",
+    "award_team": "San Antonio Spurs",
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Stephon Castle"
+    ],
+    "availability": {
+      "all_nba": "not_selected",
+      "all_defense": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1642264",
-    "entry_id": "award:1642264:2024-25:SAS",
-    "canonical_record": "1642264:2024-25:SAS",
-    "source": "data/game/players_2024_25.json"
+    "game_player_id": "award:stephon-castle",
+    "entry_id": "award:stephon-castle:2024-25"
   },
   {
-    "season": "2025-26",
     "player_id": 1642843,
-    "player": "Cooper Flagg",
     "team": "DAL",
     "gp": 70,
     "mpg": 33.5,
@@ -165,19 +5846,31 @@
     "all_nba": null,
     "all_defense": null,
     "champion": false,
+    "season": "2025-26",
+    "player": "Cooper Flagg",
     "mvp": false,
     "dpoy": false,
     "roy": true,
+    "source": "data/game/players_2025_26.json",
+    "player_key": "cooper-flagg",
+    "award_team": "Dallas Mavericks",
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Cooper Flagg"
+    ],
+    "availability": {
+      "all_nba": "not_selected",
+      "all_defense": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1642843",
-    "entry_id": "award:1642843:2025-26:DAL",
-    "canonical_record": "1642843:2025-26:DAL",
-    "source": "data/game/players_2025_26.json"
+    "game_player_id": "award:cooper-flagg",
+    "entry_id": "award:cooper-flagg:2025-26"
   },
   {
-    "season": "2025-26",
     "player_id": 1628983,
-    "player": "Shai Gilgeous-Alexander",
     "team": "OKC",
     "gp": 68,
     "mpg": 33.2,
@@ -190,19 +5883,30 @@
     "all_nba": 1,
     "all_defense": null,
     "champion": false,
+    "season": "2025-26",
+    "player": "Shai Gilgeous-Alexander",
     "mvp": true,
     "dpoy": false,
     "roy": false,
+    "source": "data/game/players_2025_26.json",
+    "player_key": "shai-gilgeous-alexander",
+    "award_team": "Oklahoma City Thunder",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Shai Gilgeous-Alexander"
+    ],
+    "availability": {
+      "all_defense": "not_selected"
+    },
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1628983",
-    "entry_id": "award:1628983:2025-26:OKC",
-    "canonical_record": "1628983:2025-26:OKC",
-    "source": "data/game/players_2025_26.json"
+    "game_player_id": "award:shai-gilgeous-alexander",
+    "entry_id": "award:shai-gilgeous-alexander:2025-26"
   },
   {
-    "season": "2025-26",
     "player_id": 1641705,
-    "player": "Victor Wembanyama",
     "team": "SAS",
     "gp": 64,
     "mpg": 29.2,
@@ -215,13 +5919,24 @@
     "all_nba": 1,
     "all_defense": 1,
     "champion": false,
+    "season": "2025-26",
+    "player": "Victor Wembanyama",
     "mvp": false,
     "dpoy": true,
     "roy": false,
+    "source": "data/game/players_2025_26.json",
+    "player_key": "victor-wembanyama",
+    "award_team": "San Antonio Spurs",
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Victor Wembanyama"
+    ],
+    "availability": {},
+    "verification_status": "canonical_verified",
     "pool": "award",
-    "game_player_id": "award:1641705",
-    "entry_id": "award:1641705:2025-26:SAS",
-    "canonical_record": "1641705:2025-26:SAS",
-    "source": "data/game/players_2025_26.json"
+    "game_player_id": "award:victor-wembanyama",
+    "entry_id": "award:victor-wembanyama:2025-26"
   }
 ]

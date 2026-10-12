@@ -1,0 +1,2812 @@
+[
+  {
+    "season": "1952-53",
+    "player_key": "don-meineke",
+    "player": "Don Meineke",
+    "award_team": "Fort Wayne Pistons",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Don Meineke"
+    ]
+  },
+  {
+    "season": "1953-54",
+    "player_key": "ray-felix",
+    "player": "Ray Felix",
+    "award_team": "Baltimore Bullets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ray Felix"
+    ]
+  },
+  {
+    "season": "1954-55",
+    "player_key": "bob-pettit",
+    "player": "Bob Pettit",
+    "award_team": "Milwaukee Hawks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Bob Pettit"
+    ]
+  },
+  {
+    "season": "1955-56",
+    "player_key": "bob-pettit",
+    "player": "Bob Pettit",
+    "award_team": "St. Louis Hawks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bob Pettit"
+    ]
+  },
+  {
+    "season": "1955-56",
+    "player_key": "maurice-stokes",
+    "player": "Maurice Stokes",
+    "award_team": "Rochester Royals",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Maurice Stokes"
+    ]
+  },
+  {
+    "season": "1956-57",
+    "player_key": "bob-cousy",
+    "player": "Bob Cousy",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bob Cousy"
+    ]
+  },
+  {
+    "season": "1956-57",
+    "player_key": "tom-heinsohn",
+    "player": "Tom Heinsohn",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Tom Heinsohn"
+    ]
+  },
+  {
+    "season": "1957-58",
+    "player_key": "bill-russell",
+    "player": "Bill Russell",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Russell"
+    ]
+  },
+  {
+    "season": "1957-58",
+    "player_key": "wood-sauldsberry",
+    "player": "Wood Sauldsberry",
+    "award_team": "Philadelphia Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Wood Sauldsberry"
+    ]
+  },
+  {
+    "season": "1958-59",
+    "player_key": "bob-pettit",
+    "player": "Bob Pettit",
+    "award_team": "St. Louis Hawks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bob Pettit"
+    ]
+  },
+  {
+    "season": "1958-59",
+    "player_key": "elgin-baylor",
+    "player": "Elgin Baylor",
+    "award_team": "Minneapolis Lakers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Elgin Baylor"
+    ]
+  },
+  {
+    "season": "1959-60",
+    "player_key": "wilt-chamberlain",
+    "player": "Wilt Chamberlain",
+    "award_team": "Philadelphia Warriors",
+    "mvp": true,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Wilt Chamberlain"
+    ]
+  },
+  {
+    "season": "1960-61",
+    "player_key": "bill-russell",
+    "player": "Bill Russell",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Russell"
+    ]
+  },
+  {
+    "season": "1960-61",
+    "player_key": "oscar-robertson",
+    "player": "Oscar Robertson",
+    "award_team": "Cincinnati Royals",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Oscar Robertson"
+    ]
+  },
+  {
+    "season": "1961-62",
+    "player_key": "bill-russell",
+    "player": "Bill Russell",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Russell"
+    ]
+  },
+  {
+    "season": "1961-62",
+    "player_key": "walt-bellamy",
+    "player": "Walt Bellamy",
+    "award_team": "Chicago Packers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Walt Bellamy"
+    ]
+  },
+  {
+    "season": "1962-63",
+    "player_key": "bill-russell",
+    "player": "Bill Russell",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Russell"
+    ]
+  },
+  {
+    "season": "1962-63",
+    "player_key": "terry-dischinger",
+    "player": "Terry Dischinger",
+    "award_team": "Chicago Zephyrs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Terry Dischinger"
+    ]
+  },
+  {
+    "season": "1963-64",
+    "player_key": "jerry-lucas",
+    "player": "Jerry Lucas",
+    "award_team": "Cincinnati Royals",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Jerry Lucas"
+    ]
+  },
+  {
+    "season": "1963-64",
+    "player_key": "oscar-robertson",
+    "player": "Oscar Robertson",
+    "award_team": "Cincinnati Royals",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Oscar Robertson"
+    ]
+  },
+  {
+    "season": "1964-65",
+    "player_key": "bill-russell",
+    "player": "Bill Russell",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Russell"
+    ]
+  },
+  {
+    "season": "1964-65",
+    "player_key": "willis-reed",
+    "player": "Willis Reed",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Willis Reed"
+    ]
+  },
+  {
+    "season": "1965-66",
+    "player_key": "rick-barry",
+    "player": "Rick Barry",
+    "award_team": "San Francisco Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Rick Barry"
+    ]
+  },
+  {
+    "season": "1965-66",
+    "player_key": "wilt-chamberlain",
+    "player": "Wilt Chamberlain",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Wilt Chamberlain"
+    ]
+  },
+  {
+    "season": "1966-67",
+    "player_key": "dave-bing",
+    "player": "Dave Bing",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Dave Bing"
+    ]
+  },
+  {
+    "season": "1966-67",
+    "player_key": "wilt-chamberlain",
+    "player": "Wilt Chamberlain",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Wilt Chamberlain"
+    ]
+  },
+  {
+    "season": "1967-68",
+    "player_key": "earl-monroe",
+    "player": "Earl Monroe",
+    "award_team": "Baltimore Bullets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Earl Monroe"
+    ]
+  },
+  {
+    "season": "1967-68",
+    "player_key": "wilt-chamberlain",
+    "player": "Wilt Chamberlain",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Wilt Chamberlain"
+    ]
+  },
+  {
+    "season": "1968-69",
+    "player_key": "wes-unseld",
+    "player": "Wes Unseld",
+    "award_team": "Baltimore Bullets",
+    "mvp": true,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Wes Unseld"
+    ]
+  },
+  {
+    "season": "1969-70",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Lew Alcindor"
+    ]
+  },
+  {
+    "season": "1969-70",
+    "player_key": "willis-reed",
+    "player": "Willis Reed",
+    "award_team": "New York Knicks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Willis Reed"
+    ]
+  },
+  {
+    "season": "1970-71",
+    "player_key": "dave-cowens",
+    "player": "Dave Cowens",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Dave Cowens"
+    ]
+  },
+  {
+    "season": "1970-71",
+    "player_key": "geoff-petrie",
+    "player": "Geoff Petrie",
+    "award_team": "Portland Trail Blazers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Geoff Petrie"
+    ]
+  },
+  {
+    "season": "1970-71",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ]
+  },
+  {
+    "season": "1971-72",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ]
+  },
+  {
+    "season": "1971-72",
+    "player_key": "sidney-wicks",
+    "player": "Sidney Wicks",
+    "award_team": "Portland Trail Blazers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Sidney Wicks"
+    ]
+  },
+  {
+    "season": "1972-73",
+    "player_key": "bob-mcadoo",
+    "player": "Bob McAdoo",
+    "award_team": "Buffalo Braves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Bob McAdoo"
+    ]
+  },
+  {
+    "season": "1972-73",
+    "player_key": "dave-cowens",
+    "player": "Dave Cowens",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Dave Cowens"
+    ]
+  },
+  {
+    "season": "1973-74",
+    "player_key": "ernie-digregorio",
+    "player": "Ernie DiGregorio",
+    "award_team": "Buffalo Braves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ernie DiGregorio"
+    ]
+  },
+  {
+    "season": "1973-74",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ]
+  },
+  {
+    "season": "1974-75",
+    "player_key": "bob-mcadoo",
+    "player": "Bob McAdoo",
+    "award_team": "Buffalo Braves",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bob McAdoo"
+    ]
+  },
+  {
+    "season": "1974-75",
+    "player_key": "jamaal-wilkes",
+    "player": "Jamaal Wilkes",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Jamaal Wilkes"
+    ]
+  },
+  {
+    "season": "1975-76",
+    "player_key": "alvan-adams",
+    "player": "Alvan Adams",
+    "award_team": "Phoenix Suns",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Alvan Adams"
+    ]
+  },
+  {
+    "season": "1975-76",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ]
+  },
+  {
+    "season": "1976-77",
+    "player_key": "adrian-dantley",
+    "player": "Adrian Dantley",
+    "award_team": "Buffalo Braves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Adrian Dantley"
+    ]
+  },
+  {
+    "season": "1976-77",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ]
+  },
+  {
+    "season": "1977-78",
+    "player_key": "bill-walton",
+    "player": "Bill Walton",
+    "award_team": "Portland Trail Blazers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Bill Walton"
+    ]
+  },
+  {
+    "season": "1977-78",
+    "player_key": "walter-davis",
+    "player": "Walter Davis",
+    "award_team": "Phoenix Suns",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Walter Davis"
+    ]
+  },
+  {
+    "season": "1978-79",
+    "player_key": "moses-malone",
+    "player": "Moses Malone",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Moses Malone"
+    ]
+  },
+  {
+    "season": "1978-79",
+    "player_key": "phil-ford",
+    "player": "Phil Ford",
+    "award_team": "Kansas City Kings",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Phil Ford"
+    ]
+  },
+  {
+    "season": "1979-80",
+    "player_key": "kareem-abdul-jabbar",
+    "player": "Kareem Abdul-Jabbar",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kareem Abdul-Jabbar"
+    ]
+  },
+  {
+    "season": "1979-80",
+    "player_key": "larry-bird",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ]
+  },
+  {
+    "season": "1980-81",
+    "player_key": "darrell-griffith",
+    "player": "Darrell Griffith",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Darrell Griffith"
+    ]
+  },
+  {
+    "season": "1980-81",
+    "player_key": "julius-erving",
+    "player": "Julius Erving",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Julius Erving"
+    ]
+  },
+  {
+    "season": "1981-82",
+    "player_key": "buck-williams",
+    "player": "Buck Williams",
+    "award_team": "New Jersey Nets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": null,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Buck Williams"
+    ]
+  },
+  {
+    "season": "1981-82",
+    "player_key": "moses-malone",
+    "player": "Moses Malone",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": null,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Moses Malone"
+    ]
+  },
+  {
+    "season": "1982-83",
+    "player_key": "moses-malone",
+    "player": "Moses Malone",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Moses Malone"
+    ]
+  },
+  {
+    "season": "1982-83",
+    "player_key": "sidney-moncrief",
+    "player": "Sidney Moncrief",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Sidney Moncrief"
+    ]
+  },
+  {
+    "season": "1982-83",
+    "player_key": "terry-cummings",
+    "player": "Terry Cummings",
+    "award_team": "San Diego Clippers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Terry Cummings"
+    ]
+  },
+  {
+    "season": "1983-84",
+    "player_key": "larry-bird",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ]
+  },
+  {
+    "season": "1983-84",
+    "player_key": "ralph-sampson",
+    "player": "Ralph Sampson",
+    "award_team": "Houston Rockets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ralph Sampson"
+    ]
+  },
+  {
+    "season": "1983-84",
+    "player_key": "sidney-moncrief",
+    "player": "Sidney Moncrief",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Sidney Moncrief"
+    ]
+  },
+  {
+    "season": "1984-85",
+    "player_key": "larry-bird",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ]
+  },
+  {
+    "season": "1984-85",
+    "player_key": "mark-eaton",
+    "player": "Mark Eaton",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Mark Eaton"
+    ]
+  },
+  {
+    "season": "1984-85",
+    "player_key": "michael-jordan",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ]
+  },
+  {
+    "season": "1985-86",
+    "player_key": "alvin-robertson",
+    "player": "Alvin Robertson",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Alvin Robertson"
+    ]
+  },
+  {
+    "season": "1985-86",
+    "player_key": "larry-bird",
+    "player": "Larry Bird",
+    "award_team": "Boston Celtics",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Larry Bird"
+    ]
+  },
+  {
+    "season": "1985-86",
+    "player_key": "patrick-ewing",
+    "player": "Patrick Ewing",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Patrick Ewing"
+    ]
+  },
+  {
+    "season": "1986-87",
+    "player_key": "chuck-person",
+    "player": "Chuck Person",
+    "award_team": "Indiana Pacers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Chuck Person"
+    ]
+  },
+  {
+    "season": "1986-87",
+    "player_key": "magic-johnson",
+    "player": "Magic Johnson",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Magic Johnson"
+    ]
+  },
+  {
+    "season": "1986-87",
+    "player_key": "michael-cooper",
+    "player": "Michael Cooper",
+    "award_team": "Los Angeles Lakers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Cooper"
+    ]
+  },
+  {
+    "season": "1987-88",
+    "player_key": "mark-jackson",
+    "player": "Mark Jackson",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Mark Jackson"
+    ]
+  },
+  {
+    "season": "1987-88",
+    "player_key": "michael-jordan",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ]
+  },
+  {
+    "season": "1988-89",
+    "player_key": "magic-johnson",
+    "player": "Magic Johnson",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Magic Johnson"
+    ]
+  },
+  {
+    "season": "1988-89",
+    "player_key": "mark-eaton",
+    "player": "Mark Eaton",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Mark Eaton"
+    ]
+  },
+  {
+    "season": "1988-89",
+    "player_key": "mitch-richmond",
+    "player": "Mitch Richmond",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Mitch Richmond"
+    ]
+  },
+  {
+    "season": "1989-90",
+    "player_key": "david-robinson",
+    "player": "David Robinson",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "David Robinson"
+    ]
+  },
+  {
+    "season": "1989-90",
+    "player_key": "dennis-rodman",
+    "player": "Dennis Rodman",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dennis Rodman"
+    ]
+  },
+  {
+    "season": "1989-90",
+    "player_key": "magic-johnson",
+    "player": "Magic Johnson",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Magic Johnson"
+    ]
+  },
+  {
+    "season": "1990-91",
+    "player_key": "dennis-rodman",
+    "player": "Dennis Rodman",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dennis Rodman"
+    ]
+  },
+  {
+    "season": "1990-91",
+    "player_key": "derrick-coleman",
+    "player": "Derrick Coleman",
+    "award_team": "New Jersey Nets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Derrick Coleman"
+    ]
+  },
+  {
+    "season": "1990-91",
+    "player_key": "michael-jordan",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ]
+  },
+  {
+    "season": "1991-92",
+    "player_key": "david-robinson",
+    "player": "David Robinson",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "David Robinson"
+    ]
+  },
+  {
+    "season": "1991-92",
+    "player_key": "larry-johnson",
+    "player": "Larry Johnson",
+    "award_team": "Charlotte Hornets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Larry Johnson"
+    ]
+  },
+  {
+    "season": "1991-92",
+    "player_key": "michael-jordan",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ]
+  },
+  {
+    "season": "1992-93",
+    "player_key": "charles-barkley",
+    "player": "Charles Barkley",
+    "award_team": "Phoenix Suns",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Charles Barkley"
+    ]
+  },
+  {
+    "season": "1992-93",
+    "player_key": "hakeem-olajuwon",
+    "player": "Hakeem Olajuwon",
+    "award_team": "Houston Rockets",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Hakeem Olajuwon"
+    ]
+  },
+  {
+    "season": "1992-93",
+    "player_key": "shaquille-oneal",
+    "player": "Shaquille O’Neal",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Shaquille O’Neal"
+    ]
+  },
+  {
+    "season": "1993-94",
+    "player_key": "chris-webber",
+    "player": "Chris Webber",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Chris Webber"
+    ]
+  },
+  {
+    "season": "1993-94",
+    "player_key": "hakeem-olajuwon",
+    "player": "Hakeem Olajuwon",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Hakeem Olajuwon"
+    ]
+  },
+  {
+    "season": "1994-95",
+    "player_key": "david-robinson",
+    "player": "David Robinson",
+    "award_team": "San Antonio Spurs",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "David Robinson"
+    ]
+  },
+  {
+    "season": "1994-95",
+    "player_key": "dikembe-mutombo",
+    "player": "Dikembe Mutombo",
+    "award_team": "Denver Nuggets",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ]
+  },
+  {
+    "season": "1994-95",
+    "player_key": "grant-hill",
+    "player": "Grant Hill",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Grant Hill"
+    ]
+  },
+  {
+    "season": "1994-95",
+    "player_key": "jason-kidd",
+    "player": "Jason Kidd",
+    "award_team": "Dallas Mavericks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Jason Kidd"
+    ]
+  },
+  {
+    "season": "1995-96",
+    "player_key": "damon-stoudamire",
+    "player": "Damon Stoudamire",
+    "award_team": "Toronto Raptors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Damon Stoudamire"
+    ]
+  },
+  {
+    "season": "1995-96",
+    "player_key": "gary-payton",
+    "player": "Gary Payton",
+    "award_team": "Seattle SuperSonics",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Gary Payton"
+    ]
+  },
+  {
+    "season": "1995-96",
+    "player_key": "michael-jordan",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ]
+  },
+  {
+    "season": "1996-97",
+    "player_key": "allen-iverson",
+    "player": "Allen Iverson",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Allen Iverson"
+    ]
+  },
+  {
+    "season": "1996-97",
+    "player_key": "dikembe-mutombo",
+    "player": "Dikembe Mutombo",
+    "award_team": "Atlanta Hawks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ]
+  },
+  {
+    "season": "1996-97",
+    "player_key": "karl-malone",
+    "player": "Karl Malone",
+    "award_team": "Utah Jazz",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Karl Malone"
+    ]
+  },
+  {
+    "season": "1997-98",
+    "player_key": "dikembe-mutombo",
+    "player": "Dikembe Mutombo",
+    "award_team": "Atlanta Hawks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ]
+  },
+  {
+    "season": "1997-98",
+    "player_key": "michael-jordan",
+    "player": "Michael Jordan",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Michael Jordan"
+    ]
+  },
+  {
+    "season": "1997-98",
+    "player_key": "tim-duncan",
+    "player": "Tim Duncan",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Tim Duncan"
+    ]
+  },
+  {
+    "season": "1998-99",
+    "player_key": "alonzo-mourning",
+    "player": "Alonzo Mourning",
+    "award_team": "Miami Heat",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Alonzo Mourning"
+    ]
+  },
+  {
+    "season": "1998-99",
+    "player_key": "karl-malone",
+    "player": "Karl Malone",
+    "award_team": "Utah Jazz",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Karl Malone"
+    ]
+  },
+  {
+    "season": "1998-99",
+    "player_key": "vince-carter",
+    "player": "Vince Carter",
+    "award_team": "Toronto Raptors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Vince Carter"
+    ]
+  },
+  {
+    "season": "1999-00",
+    "player_key": "alonzo-mourning",
+    "player": "Alonzo Mourning",
+    "award_team": "Miami Heat",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Alonzo Mourning"
+    ]
+  },
+  {
+    "season": "1999-00",
+    "player_key": "elton-brand",
+    "player": "Elton Brand",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Elton Brand"
+    ]
+  },
+  {
+    "season": "1999-00",
+    "player_key": "shaquille-oneal",
+    "player": "Shaquille O’Neal",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Shaquille O’Neal"
+    ]
+  },
+  {
+    "season": "1999-00",
+    "player_key": "steve-francis",
+    "player": "Steve Francis",
+    "award_team": "Houston Rockets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Steve Francis"
+    ]
+  },
+  {
+    "season": "2000-01",
+    "player_key": "allen-iverson",
+    "player": "Allen Iverson",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Allen Iverson"
+    ]
+  },
+  {
+    "season": "2000-01",
+    "player_key": "dikembe-mutombo",
+    "player": "Dikembe Mutombo",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dikembe Mutombo"
+    ]
+  },
+  {
+    "season": "2000-01",
+    "player_key": "mike-miller",
+    "player": "Mike Miller",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Mike Miller"
+    ]
+  },
+  {
+    "season": "2001-02",
+    "player_key": "ben-wallace",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ]
+  },
+  {
+    "season": "2001-02",
+    "player_key": "pau-gasol",
+    "player": "Pau Gasol",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Pau Gasol"
+    ]
+  },
+  {
+    "season": "2001-02",
+    "player_key": "tim-duncan",
+    "player": "Tim Duncan",
+    "award_team": "San Antonio Spurs",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Tim Duncan"
+    ]
+  },
+  {
+    "season": "2002-03",
+    "player_key": "amare-stoudemire",
+    "player": "Amar’e Stoudemire",
+    "award_team": "Phoenix Suns",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Amar’e Stoudemire"
+    ]
+  },
+  {
+    "season": "2002-03",
+    "player_key": "ben-wallace",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ]
+  },
+  {
+    "season": "2002-03",
+    "player_key": "tim-duncan",
+    "player": "Tim Duncan",
+    "award_team": "San Antonio Spurs",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Tim Duncan"
+    ]
+  },
+  {
+    "season": "2003-04",
+    "player_key": "kevin-garnett",
+    "player": "Kevin Garnett",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kevin Garnett"
+    ]
+  },
+  {
+    "season": "2003-04",
+    "player_key": "lebron-james",
+    "player": "LeBron James",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ]
+  },
+  {
+    "season": "2003-04",
+    "player_key": "metta-world-peace",
+    "player": "Ron Artest",
+    "award_team": "Indiana Pacers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ron Artest"
+    ]
+  },
+  {
+    "season": "2004-05",
+    "player_key": "ben-wallace",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ]
+  },
+  {
+    "season": "2004-05",
+    "player_key": "emeka-okafor",
+    "player": "Emeka Okafor",
+    "award_team": "Charlotte Bobcats",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Emeka Okafor"
+    ]
+  },
+  {
+    "season": "2004-05",
+    "player_key": "steve-nash",
+    "player": "Steve Nash",
+    "award_team": "Phoenix Suns",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Steve Nash"
+    ]
+  },
+  {
+    "season": "2005-06",
+    "player_key": "ben-wallace",
+    "player": "Ben Wallace",
+    "award_team": "Detroit Pistons",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Wallace"
+    ]
+  },
+  {
+    "season": "2005-06",
+    "player_key": "chris-paul",
+    "player": "Chris Paul",
+    "award_team": "New Orleans/Oklahoma City Hornets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Chris Paul"
+    ]
+  },
+  {
+    "season": "2005-06",
+    "player_key": "steve-nash",
+    "player": "Steve Nash",
+    "award_team": "Phoenix Suns",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Steve Nash"
+    ]
+  },
+  {
+    "season": "2006-07",
+    "player_key": "brandon-roy",
+    "player": "Brandon Roy",
+    "award_team": "Portland Trail Blazers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Brandon Roy"
+    ]
+  },
+  {
+    "season": "2006-07",
+    "player_key": "dirk-nowitzki",
+    "player": "Dirk Nowitzki",
+    "award_team": "Dallas Mavericks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Dirk Nowitzki"
+    ]
+  },
+  {
+    "season": "2006-07",
+    "player_key": "marcus-camby",
+    "player": "Marcus Camby",
+    "award_team": "Denver Nuggets",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Marcus Camby"
+    ]
+  },
+  {
+    "season": "2007-08",
+    "player_key": "kevin-durant",
+    "player": "Kevin Durant",
+    "award_team": "Seattle SuperSonics",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Kevin Durant"
+    ]
+  },
+  {
+    "season": "2007-08",
+    "player_key": "kevin-garnett",
+    "player": "Kevin Garnett",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Kevin Garnett"
+    ]
+  },
+  {
+    "season": "2007-08",
+    "player_key": "kobe-bryant",
+    "player": "Kobe Bryant",
+    "award_team": "Los Angeles Lakers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kobe Bryant"
+    ]
+  },
+  {
+    "season": "2008-09",
+    "player_key": "derrick-rose",
+    "player": "Derrick Rose",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Derrick Rose"
+    ]
+  },
+  {
+    "season": "2008-09",
+    "player_key": "dwight-howard",
+    "player": "Dwight Howard",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dwight Howard"
+    ]
+  },
+  {
+    "season": "2008-09",
+    "player_key": "lebron-james",
+    "player": "LeBron James",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ]
+  },
+  {
+    "season": "2009-10",
+    "player_key": "dwight-howard",
+    "player": "Dwight Howard",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dwight Howard"
+    ]
+  },
+  {
+    "season": "2009-10",
+    "player_key": "lebron-james",
+    "player": "LeBron James",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ]
+  },
+  {
+    "season": "2009-10",
+    "player_key": "tyreke-evans",
+    "player": "Tyreke Evans",
+    "award_team": "Sacramento Kings",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Tyreke Evans"
+    ]
+  },
+  {
+    "season": "2010-11",
+    "player_key": "blake-griffin",
+    "player": "Blake Griffin",
+    "award_team": "LA Clippers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Blake Griffin"
+    ]
+  },
+  {
+    "season": "2010-11",
+    "player_key": "derrick-rose",
+    "player": "Derrick Rose",
+    "award_team": "Chicago Bulls",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Derrick Rose"
+    ]
+  },
+  {
+    "season": "2010-11",
+    "player_key": "dwight-howard",
+    "player": "Dwight Howard",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Dwight Howard"
+    ]
+  },
+  {
+    "season": "2011-12",
+    "player_key": "kyrie-irving",
+    "player": "Kyrie Irving",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Kyrie Irving"
+    ]
+  },
+  {
+    "season": "2011-12",
+    "player_key": "lebron-james",
+    "player": "LeBron James",
+    "award_team": "Miami Heat",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ]
+  },
+  {
+    "season": "2011-12",
+    "player_key": "tyson-chandler",
+    "player": "Tyson Chandler",
+    "award_team": "New York Knicks",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Tyson Chandler"
+    ]
+  },
+  {
+    "season": "2012-13",
+    "player_key": "damian-lillard",
+    "player": "Damian Lillard",
+    "award_team": "Portland Trail Blazers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Damian Lillard"
+    ]
+  },
+  {
+    "season": "2012-13",
+    "player_key": "lebron-james",
+    "player": "LeBron James",
+    "award_team": "Miami Heat",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "LeBron James"
+    ]
+  },
+  {
+    "season": "2012-13",
+    "player_key": "marc-gasol",
+    "player": "Marc Gasol",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Marc Gasol"
+    ]
+  },
+  {
+    "season": "2013-14",
+    "player_key": "joakim-noah",
+    "player": "Joakim Noah",
+    "award_team": "Chicago Bulls",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Joakim Noah"
+    ]
+  },
+  {
+    "season": "2013-14",
+    "player_key": "kevin-durant",
+    "player": "Kevin Durant",
+    "award_team": "Oklahoma City Thunder",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Kevin Durant"
+    ]
+  },
+  {
+    "season": "2013-14",
+    "player_key": "michael-carter-williams",
+    "player": "Michael Carter-Williams",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Michael Carter-Williams"
+    ]
+  },
+  {
+    "season": "2014-15",
+    "player_key": "andrew-wiggins",
+    "player": "Andrew Wiggins",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Andrew Wiggins"
+    ]
+  },
+  {
+    "season": "2014-15",
+    "player_key": "kawhi-leonard",
+    "player": "Kawhi Leonard",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Kawhi Leonard"
+    ]
+  },
+  {
+    "season": "2014-15",
+    "player_key": "stephen-curry",
+    "player": "Stephen Curry",
+    "award_team": "Golden State Warriors",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Stephen Curry"
+    ]
+  },
+  {
+    "season": "2015-16",
+    "player_key": "karl-anthony-towns",
+    "player": "Karl-Anthony Towns",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Karl-Anthony Towns"
+    ]
+  },
+  {
+    "season": "2015-16",
+    "player_key": "kawhi-leonard",
+    "player": "Kawhi Leonard",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Kawhi Leonard"
+    ]
+  },
+  {
+    "season": "2015-16",
+    "player_key": "stephen-curry",
+    "player": "Stephen Curry",
+    "award_team": "Golden State Warriors",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Stephen Curry"
+    ]
+  },
+  {
+    "season": "2016-17",
+    "player_key": "draymond-green",
+    "player": "Draymond Green",
+    "award_team": "Golden State Warriors",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Draymond Green"
+    ]
+  },
+  {
+    "season": "2016-17",
+    "player_key": "malcolm-brogdon",
+    "player": "Malcolm Brogdon",
+    "award_team": "Milwaukee Bucks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Malcolm Brogdon"
+    ]
+  },
+  {
+    "season": "2016-17",
+    "player_key": "russell-westbrook",
+    "player": "Russell Westbrook",
+    "award_team": "Oklahoma City Thunder",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Russell Westbrook"
+    ]
+  },
+  {
+    "season": "2017-18",
+    "player_key": "ben-simmons",
+    "player": "Ben Simmons",
+    "award_team": "Philadelphia 76ers",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ben Simmons"
+    ]
+  },
+  {
+    "season": "2017-18",
+    "player_key": "james-harden",
+    "player": "James Harden",
+    "award_team": "Houston Rockets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "James Harden"
+    ]
+  },
+  {
+    "season": "2017-18",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ]
+  },
+  {
+    "season": "2018-19",
+    "player_key": "giannis-antetokounmpo",
+    "player": "Giannis Antetokounmpo",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Giannis Antetokounmpo"
+    ]
+  },
+  {
+    "season": "2018-19",
+    "player_key": "luka-doncic",
+    "player": "Luka Doncic",
+    "award_team": "Dallas Mavericks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Luka Doncic"
+    ]
+  },
+  {
+    "season": "2018-19",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ]
+  },
+  {
+    "season": "2019-20",
+    "player_key": "giannis-antetokounmpo",
+    "player": "Giannis Antetokounmpo",
+    "award_team": "Milwaukee Bucks",
+    "mvp": true,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Giannis Antetokounmpo"
+    ]
+  },
+  {
+    "season": "2019-20",
+    "player_key": "ja-morant",
+    "player": "Ja Morant",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Ja Morant"
+    ]
+  },
+  {
+    "season": "2020-21",
+    "player_key": "lamelo-ball",
+    "player": "LaMelo Ball",
+    "award_team": "Charlotte Hornets",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "LaMelo Ball"
+    ]
+  },
+  {
+    "season": "2020-21",
+    "player_key": "nikola-jokic",
+    "player": "Nikola Jokić",
+    "award_team": "Denver Nuggets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Nikola Jokić"
+    ]
+  },
+  {
+    "season": "2020-21",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Utah Jazz",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ]
+  },
+  {
+    "season": "2021-22",
+    "player_key": "marcus-smart",
+    "player": "Marcus Smart",
+    "award_team": "Boston Celtics",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Marcus Smart"
+    ]
+  },
+  {
+    "season": "2021-22",
+    "player_key": "nikola-jokic",
+    "player": "Nikola Jokić",
+    "award_team": "Denver Nuggets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Nikola Jokić"
+    ]
+  },
+  {
+    "season": "2021-22",
+    "player_key": "scottie-barnes",
+    "player": "Scottie Barnes",
+    "award_team": "Toronto Raptors",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Scottie Barnes"
+    ]
+  },
+  {
+    "season": "2022-23",
+    "player_key": "jaren-jackson-jr",
+    "player": "Jaren Jackson Jr.",
+    "award_team": "Memphis Grizzlies",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Jaren Jackson Jr."
+    ]
+  },
+  {
+    "season": "2022-23",
+    "player_key": "joel-embiid",
+    "player": "Joel Embiid",
+    "award_team": "Philadelphia 76ers",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Joel Embiid"
+    ]
+  },
+  {
+    "season": "2022-23",
+    "player_key": "paolo-banchero",
+    "player": "Paolo Banchero",
+    "award_team": "Orlando Magic",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Paolo Banchero"
+    ]
+  },
+  {
+    "season": "2023-24",
+    "player_key": "nikola-jokic",
+    "player": "Nikola Jokić",
+    "award_team": "Denver Nuggets",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Nikola Jokić"
+    ]
+  },
+  {
+    "season": "2023-24",
+    "player_key": "rudy-gobert",
+    "player": "Rudy Gobert",
+    "award_team": "Minnesota Timberwolves",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Rudy Gobert"
+    ]
+  },
+  {
+    "season": "2023-24",
+    "player_key": "victor-wembanyama",
+    "player": "Victor Wembanyama",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Victor Wembanyama"
+    ]
+  },
+  {
+    "season": "2024-25",
+    "player_key": "evan-mobley",
+    "player": "Evan Mobley",
+    "award_team": "Cleveland Cavaliers",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Evan Mobley"
+    ]
+  },
+  {
+    "season": "2024-25",
+    "player_key": "shai-gilgeous-alexander",
+    "player": "Shai Gilgeous-Alexander",
+    "award_team": "Oklahoma City Thunder",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Shai Gilgeous-Alexander"
+    ]
+  },
+  {
+    "season": "2024-25",
+    "player_key": "stephon-castle",
+    "player": "Stephon Castle",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Stephon Castle"
+    ]
+  },
+  {
+    "season": "2025-26",
+    "player_key": "cooper-flagg",
+    "player": "Cooper Flagg",
+    "award_team": "Dallas Mavericks",
+    "mvp": false,
+    "roy": true,
+    "dpoy": false,
+    "award_sources": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "source_names": [
+      "Cooper Flagg"
+    ]
+  },
+  {
+    "season": "2025-26",
+    "player_key": "shai-gilgeous-alexander",
+    "player": "Shai Gilgeous-Alexander",
+    "award_team": "Oklahoma City Thunder",
+    "mvp": true,
+    "roy": false,
+    "dpoy": false,
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "source_names": [
+      "Shai Gilgeous-Alexander"
+    ]
+  },
+  {
+    "season": "2025-26",
+    "player_key": "victor-wembanyama",
+    "player": "Victor Wembanyama",
+    "award_team": "San Antonio Spurs",
+    "mvp": false,
+    "roy": false,
+    "dpoy": true,
+    "award_sources": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "source_names": [
+      "Victor Wembanyama"
+    ]
+  }
+]
