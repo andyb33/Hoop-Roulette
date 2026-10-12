@@ -1,7 +1,7 @@
 [
   {
     "season": "1961-62",
-    "player_id": "historical:wilt-chamberlain",
+    "player_id": 76375,
     "player": "Wilt Chamberlain",
     "team": "PHW",
     "gp": 80,
@@ -21,23 +21,29 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1962_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=76375&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612744&Season=1961-62&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "wilt-chamberlain",
+    "team_id": 1610612744,
+    "jersey_display": "13",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:wilt-chamberlain",
-    "entry_id": "prehistoric:historical:wilt-chamberlain:1961-62:PHW"
+    "game_player_id": "prehistoric:76375",
+    "entry_id": "prehistoric:76375:1961-62:PHW"
   },
   {
     "season": "1964-65",
-    "player_id": "historical:bill-russell",
+    "player_id": 78049,
     "player": "Bill Russell",
     "team": "BOS",
     "gp": 78,
@@ -57,23 +63,31 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1965_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=78049&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612738&Season=1964-65&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
+    },
+    "player_key": "bill-russell",
+    "team_id": 1610612738,
+    "jersey_display": "6",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
     },
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:bill-russell",
-    "entry_id": "prehistoric:historical:bill-russell:1964-65:BOS"
+    "game_player_id": "prehistoric:78049",
+    "entry_id": "prehistoric:78049:1964-65:BOS"
   },
   {
     "season": "1961-62",
-    "player_id": "historical:oscar-robertson",
+    "player_id": 600015,
     "player": "Oscar Robertson",
     "team": "CIN",
     "gp": 79,
@@ -93,23 +107,29 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1962_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=600015&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612758&Season=1961-62&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "oscar-robertson",
+    "team_id": 1610612758,
+    "jersey_display": "14",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:oscar-robertson",
-    "entry_id": "prehistoric:historical:oscar-robertson:1961-62:CIN"
+    "game_player_id": "prehistoric:600015",
+    "entry_id": "prehistoric:600015:1961-62:CIN"
   },
   {
     "season": "1969-70",
-    "player_id": "historical:jerry-west",
+    "player_id": 78497,
     "player": "Jerry West",
     "team": "LAL",
     "gp": 74,
@@ -130,22 +150,27 @@
       "spg": "not_recorded",
       "bpg": "not_recorded",
       "dpoy": "award_not_introduced",
-      "all_defense": "available",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1970_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=78497&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612747&Season=1969-70&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "jerry-west",
+    "team_id": 1610612747,
+    "jersey_display": "44",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:jerry-west",
-    "entry_id": "prehistoric:historical:jerry-west:1969-70:LAL"
+    "game_player_id": "prehistoric:78497",
+    "entry_id": "prehistoric:78497:1969-70:LAL"
   },
   {
     "season": "1971-72",
-    "player_id": "historical:kareem-abdul-jabbar",
+    "player_id": 76003,
     "player": "Kareem Abdul-Jabbar",
     "team": "MIL",
     "gp": 81,
@@ -165,23 +190,31 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
+      "all_defense": "not_selected",
       "dpoy": "award_not_introduced",
-      "all_defense": "available",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1972_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=76003&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612749&Season=1971-72&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
+    },
+    "player_key": "kareem-abdul-jabbar",
+    "team_id": 1610612749,
+    "jersey_display": "33",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
     },
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:kareem-abdul-jabbar",
-    "entry_id": "prehistoric:historical:kareem-abdul-jabbar:1971-72:MIL"
+    "game_player_id": "prehistoric:76003",
+    "entry_id": "prehistoric:76003:1971-72:MIL"
   },
   {
     "season": "1961-62",
-    "player_id": "historical:elgin-baylor",
+    "player_id": 76127,
     "player": "Elgin Baylor",
     "team": "LAL",
     "gp": 48,
@@ -201,23 +234,29 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1962_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=76127&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612747&Season=1961-62&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "elgin-baylor",
+    "team_id": 1610612747,
+    "jersey_display": "22",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:elgin-baylor",
-    "entry_id": "prehistoric:historical:elgin-baylor:1961-62:LAL"
+    "game_player_id": "prehistoric:76127",
+    "entry_id": "prehistoric:76127:1961-62:LAL"
   },
   {
     "season": "1958-59",
-    "player_id": "historical:bob-pettit",
+    "player_id": 77847,
     "player": "Bob Pettit",
     "team": "STL",
     "gp": 72,
@@ -237,23 +276,31 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1959_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=77847&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612737&Season=1958-59&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
+    },
+    "player_key": "bob-pettit",
+    "team_id": 1610612737,
+    "jersey_display": "9",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
     },
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:bob-pettit",
-    "entry_id": "prehistoric:historical:bob-pettit:1958-59:STL"
+    "game_player_id": "prehistoric:77847",
+    "entry_id": "prehistoric:77847:1958-59:STL"
   },
   {
     "season": "1966-67",
-    "player_id": "historical:rick-barry",
+    "player_id": 600013,
     "player": "Rick Barry",
     "team": "SFW",
     "gp": 78,
@@ -273,23 +320,29 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1967_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=600013&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612744&Season=1966-67&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "rick-barry",
+    "team_id": 1610612744,
+    "jersey_display": "24",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:rick-barry",
-    "entry_id": "prehistoric:historical:rick-barry:1966-67:SFW"
+    "game_player_id": "prehistoric:600013",
+    "entry_id": "prehistoric:600013:1966-67:SFW"
   },
   {
     "season": "1970-71",
-    "player_id": "historical:john-havlicek",
+    "player_id": 76970,
     "player": "John Havlicek",
     "team": "BOS",
     "gp": 81,
@@ -310,22 +363,27 @@
       "spg": "not_recorded",
       "bpg": "not_recorded",
       "dpoy": "award_not_introduced",
-      "all_defense": "available",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1971_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=76970&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612738&Season=1970-71&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "john-havlicek",
+    "team_id": 1610612738,
+    "jersey_display": "17",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:john-havlicek",
-    "entry_id": "prehistoric:historical:john-havlicek:1970-71:BOS"
+    "game_player_id": "prehistoric:76970",
+    "entry_id": "prehistoric:76970:1970-71:BOS"
   },
   {
     "season": "1969-70",
-    "player_id": "historical:walt-frazier",
+    "player_id": 76750,
     "player": "Walt Frazier",
     "team": "NYK",
     "gp": 77,
@@ -346,22 +404,27 @@
       "spg": "not_recorded",
       "bpg": "not_recorded",
       "dpoy": "award_not_introduced",
-      "all_defense": "available",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1970_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=76750&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612752&Season=1969-70&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "walt-frazier",
+    "team_id": 1610612752,
+    "jersey_display": "10",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:walt-frazier",
-    "entry_id": "prehistoric:historical:walt-frazier:1969-70:NYK"
+    "game_player_id": "prehistoric:76750",
+    "entry_id": "prehistoric:76750:1969-70:NYK"
   },
   {
     "season": "1967-68",
-    "player_id": "historical:nate-thurmond",
+    "player_id": 600001,
     "player": "Nate Thurmond",
     "team": "SFW",
     "gp": 51,
@@ -381,23 +444,30 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
+      "all_nba": "not_selected",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1968_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=600001&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612744&Season=1967-68&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
     },
+    "player_key": "nate-thurmond",
+    "team_id": 1610612744,
+    "jersey_display": "42",
+    "award_sources": {},
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:nate-thurmond",
-    "entry_id": "prehistoric:historical:nate-thurmond:1967-68:SFW"
+    "game_player_id": "prehistoric:600001",
+    "entry_id": "prehistoric:600001:1967-68:SFW"
   },
   {
     "season": "1956-57",
-    "player_id": "historical:bob-cousy",
+    "player_id": 600003,
     "player": "Bob Cousy",
     "team": "BOS",
     "gp": 64,
@@ -417,18 +487,26 @@
     "availability": {
       "spg": "not_recorded",
       "bpg": "not_recorded",
-      "dpoy": "award_not_introduced",
       "all_defense": "award_not_introduced",
+      "dpoy": "award_not_introduced",
       "all_nba_third": "award_not_introduced"
     },
-    "verification_status": "draft_jersey_and_accolade_audit_pending",
+    "verification_status": "official_verified",
     "sources": {
-      "totals": "https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv",
-      "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1957_per_game.html",
-      "awards": "https://www.nba.com/news/history-all-nba-teams"
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=600003&PerMode=PerGame&LeagueID=00",
+      "jersey": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612738&Season=1956-57&LeagueID=00",
+      "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+      "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+      "champion": "https://www.nba.com/news/history-nba-champions"
+    },
+    "player_key": "bob-cousy",
+    "team_id": 1610612738,
+    "jersey_display": "14",
+    "award_sources": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
     },
     "pool": "prehistoric",
-    "game_player_id": "prehistoric:historical:bob-cousy",
-    "entry_id": "prehistoric:historical:bob-cousy:1956-57:BOS"
+    "game_player_id": "prehistoric:600003",
+    "entry_id": "prehistoric:600003:1956-57:BOS"
   }
 ]

@@ -23,25 +23,31 @@ Jackpot or the curated Prehistoric Jackpot.
 
 ## Verification status
 
-Winner coverage is complete; playable data enrichment is not. 132 entries have
-all seven requested statistical fields populated, using historical totals or
-the existing three canonical season datasets. Historical source imports are
-not equivalent to a completed independent data audit. Only the 9 canonical
-recent entries currently have the previous complete game-data verification.
+All **149 award entries and 12 prehistoric entries** were checked against
+official NBA regular-season career statistics, historical team-season rosters,
+All-NBA/All-Defense lists and championship history. There are no unresolved
+fields in the two selected pools. The 17 missing statistical entries and all
+historical jersey/accolade fields are now filled. Raw selected source rows and
+URLs are preserved in `official_verification.json`; findings are preserved in
+`verification_report.json` and [the audit report](GOAT_VERIFICATION.md).
 
-The remaining 17 statistical entries, historical jerseys, All-NBA/All-Defense,
-and championship status require collection/verification. Unknown fields use
-null and `pending_verification`; they must not be displayed as historical N/A
-or silently scored as zero. Historically unavailable awards use separate
-availability rules. `manifest.json` explicitly separates winner coverage,
-stat coverage and game readiness.
+The NBA roster is the evidence for the team-season jersey number. Multiple
+different numbers would block verification rather than selecting one arbitrarily.
+Real NBA player IDs are resolved using name and career dates, avoiding same-name
+collisions. Pre-1973 defensive API zeros become null/not_recorded; unavailable
+awards and actual non-selections retain separate availability reasons.
+The datasets are ready for GOAT-spin implementation; the feature is still disabled
+in the existing alpha. The 38 earlier archived award records are winner metadata
+only and were not included in this 161-entry full-field audit.
 
 ## Reproduce
 
 1. `python scripts/collect_award_winners.py` refreshes official NBA winners.
-2. `python scripts/build_goat_datasets.py` joins the committed historical
-   stat extracts and current canonical records, then exports both pools.
-3. `python -m unittest discover -q` checks coverage, co-winners, aliases,
+2. `python scripts/verify_goat_datasets.py` refreshes official evidence for both
+   selected pools. Downloads are cached locally; selected source rows are committed.
+3. `python scripts/build_goat_datasets.py` applies the official evidence and
+   exports both pools without needing live downloads.
+4. `python -m unittest discover -q` checks coverage, co-winners, aliases,
    merged awards and existing engine regressions.
 
 Saved HTML can be supplied to the collector with `--cache-dir`; it expects
@@ -57,5 +63,5 @@ https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv.
 
 ## Prehistoric Jackpot
 
-12 curated entries, one season per player, remain separate. Their jersey and
-accolade audit is pending. See GDD v1.5 for selections and nullable scoring.
+12 curated entries, one season per player, remain separate and are verified.
+See GDD v1.5 for selections and nullable scoring.

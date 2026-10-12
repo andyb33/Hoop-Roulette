@@ -68,13 +68,14 @@
     ],
     "target_start": "1973-74",
     "winner_coverage_complete": true,
-    "historical_coverage_complete": false,
+    "historical_coverage_complete": true,
     "archive_entries": 187,
-    "stat_records_complete": 132,
-    "game_ready_records": 9
+    "stat_records_complete": 149,
+    "game_ready_records": 149
   },
   "prehistoric": {
     "count": 12,
-    "status": "draft: historical jerseys and accolades require audit"
+    "verified_records": 12,
+    "status": "official_verified"
   }
 }
