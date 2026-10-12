@@ -43,7 +43,7 @@ multiple flags. Major Award still scores 50, not 50 per award. Historical
 coverage must be explicit. The winner catalogue now covers all 53 seasons:
 149 unique player-seasons representing 53 MVP, 55 ROTY (including ties), and
 44 DPOY awards. Three MVP/DPOY double winners are merged. Statistics, jerseys
-and other accolades for all 149 entries and the 12 prehistoric entries are now
+and other accolades for all 149 entries and the 15 prehistoric entries are now
 verified against official NBA sources. GOAT spins are implemented in v0.6.
 A separate archive preserves all 187 winning player-seasons since
 each award's inception; its 38 pre-1973 entries are excluded from this pool.
@@ -61,6 +61,8 @@ NBA seasons before 1973–74. Exactly one curated season per real player. Initia
 selection: Wilt 1961–62, Russell 1964–65, Robertson 1961–62, West 1969–70,
 Kareem 1971–72, Baylor 1961–62, Pettit 1958–59, Barry 1966–67,
 Havlicek 1970–71, Frazier 1969–70, Thurmond 1967–68, Cousy 1956–57.
+v0.6.1 adds Rodgers 1966–67, Archibald 1972–73 and Wilkens 1971–72,
+bringing the pool to 15. Existing selected seasons remain unchanged.
 Use regular-season team stats, the final team-stint jersey, and actual accolades.
 Do not estimate defensive statistics from anecdotes.
 

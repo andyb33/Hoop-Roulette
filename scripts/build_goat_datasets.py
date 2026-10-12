@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def player_key(name):
-    name = name.replace('Lew Alcindor', 'Kareem Abdul-Jabbar').replace('Ron Artest', 'Metta World Peace')
+    name = name.replace('Lew Alcindor', 'Kareem Abdul-Jabbar').replace('Ron Artest', 'Metta World Peace').replace('Tiny Archibald', 'Nate Archibald')
     name = name.replace('’', '').replace("'", '').replace('.', '')
     name = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode()
     return re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')

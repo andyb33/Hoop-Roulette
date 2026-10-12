@@ -394,5 +394,98 @@
       "stats_crosscheck": "https://www.basketball-reference.com/leagues/NBA_1957_per_game.html",
       "awards": "https://www.nba.com/news/history-all-nba-teams"
     }
+  },
+  {
+    "season": "1966-67",
+    "player_id": 78003,
+    "player": "Guy Rodgers",
+    "team": "CHI",
+    "gp": 81,
+    "mpg": 37.8,
+    "ppg": 18.0,
+    "rpg": 4.3,
+    "apg": 11.2,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": false,
+    "mvp": false,
+    "dpoy": null,
+    "roy": false,
+    "availability": {
+      "spg": "not_recorded",
+      "bpg": "not_recorded",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced",
+      "all_defense": "award_not_introduced"
+    },
+    "verification_status": "pending_verification",
+    "sources": {
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=78003&PerMode=PerGame&LeagueID=00"
+    }
+  },
+  {
+    "season": "1972-73",
+    "player_id": 76054,
+    "player": "Nate Archibald",
+    "team": "KCK",
+    "gp": 80,
+    "mpg": 46.0,
+    "ppg": 34.0,
+    "rpg": 2.8,
+    "apg": 11.4,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": false,
+    "mvp": false,
+    "dpoy": null,
+    "roy": false,
+    "availability": {
+      "spg": "not_recorded",
+      "bpg": "not_recorded",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced",
+      "all_defense": "pending_verification"
+    },
+    "verification_status": "pending_verification",
+    "sources": {
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=76054&PerMode=PerGame&LeagueID=00"
+    }
+  },
+  {
+    "season": "1971-72",
+    "player_id": 78530,
+    "player": "Lenny Wilkens",
+    "team": "SEA",
+    "gp": 80,
+    "mpg": 37.4,
+    "ppg": 18.0,
+    "rpg": 4.2,
+    "apg": 9.6,
+    "spg": null,
+    "bpg": null,
+    "jersey": null,
+    "all_nba": null,
+    "all_defense": null,
+    "champion": false,
+    "mvp": false,
+    "dpoy": null,
+    "roy": false,
+    "availability": {
+      "spg": "not_recorded",
+      "bpg": "not_recorded",
+      "dpoy": "award_not_introduced",
+      "all_nba_third": "award_not_introduced",
+      "all_defense": "pending_verification"
+    },
+    "verification_status": "pending_verification",
+    "sources": {
+      "stats": "https://stats.nba.com/stats/playercareerstats?PlayerID=78530&PerMode=PerGame&LeagueID=00"
+    }
   }
 ]

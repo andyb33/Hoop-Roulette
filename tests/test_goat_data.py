@@ -19,6 +19,7 @@ class GoatDataTests(unittest.TestCase):
     def test_aliases_and_accents(self):
         self.assertEqual(player_key('Lew Alcindor'), player_key('Kareem Abdul-Jabbar'))
         self.assertEqual(player_key('Luka Dončić'), player_key('Luka Doncic'))
+        self.assertEqual(player_key('Tiny Archibald'), player_key('Nate Archibald'))
         self.assertEqual(player_key('Shaquille O’Neal'), player_key("Shaquille O'Neal"))
 
     def test_same_name_players_are_disambiguated_by_career_years(self):
@@ -54,8 +55,10 @@ class GoatDataTests(unittest.TestCase):
         awards = json.loads((ROOT / 'data/goat/award_jackpot.json').read_text())
         prehistoric = json.loads((ROOT / 'data/goat/prehistoric_jackpot.json').read_text())
         report = json.loads((ROOT / 'data/goat/verification_report.json').read_text())
-        self.assertEqual(report['requested'], 161)
-        self.assertEqual(report['verified'], 161)
+        self.assertEqual(len(prehistoric), 15)
+        self.assertEqual(len({r['player_id'] for r in prehistoric}), 15)
+        self.assertEqual(report['requested'], 164)
+        self.assertEqual(report['verified'], 164)
         self.assertEqual(report['failures'], [])
         for r in awards + prehistoric:
             self.assertEqual(r['verification_status'], 'official_verified')
@@ -86,6 +89,10 @@ class GoatDataTests(unittest.TestCase):
         johnson = next(r for r in awards if r['player_key'] == 'larry-johnson')
         self.assertEqual(ewing['player_id'], 121)
         self.assertEqual(johnson['player_id'], 913)
+        archibald = next(r for r in prehistoric if r['player_key'] == 'nate-archibald')
+        self.assertEqual((archibald['season'], archibald['apg'], archibald['all_nba']), ('1972-73', 11.4, 1))
+        self.assertEqual({r['player_key'] for r in prehistoric} & {'guy-rodgers', 'lenny-wilkens'},
+                         {'guy-rodgers', 'lenny-wilkens'})
 
     def test_honors_parser_keeps_actual_tiers(self):
         fixture = '<article>' + ''.join(

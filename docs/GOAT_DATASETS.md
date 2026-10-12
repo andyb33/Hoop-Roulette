@@ -1,6 +1,6 @@
 # GOAT dataset coverage
 
-Updated 2026-10-12. These datasets are enabled in the v0.6 browser alpha.
+Updated 2026-10-12. These datasets are enabled in the v0.6.1 browser alpha.
 
 ## Award Jackpot
 
@@ -23,7 +23,7 @@ Jackpot or the curated Prehistoric Jackpot.
 
 ## Verification status
 
-All **149 award entries and 12 prehistoric entries** were checked against
+All **149 award entries and 15 prehistoric entries** were checked against
 official NBA regular-season career statistics, historical team-season rosters,
 All-NBA/All-Defense lists and championship history. There are no unresolved
 fields in the two selected pools. The 17 missing statistical entries and all
@@ -36,9 +36,10 @@ different numbers would block verification rather than selecting one arbitrarily
 Real NBA player IDs are resolved using name and career dates, avoiding same-name
 collisions. Pre-1973 defensive API zeros become null/not_recorded; unavailable
 awards and actual non-selections retain separate availability reasons.
-The datasets power the v0.6 GOAT-spin implementation. Older v0.5 builds do not
+The datasets power the v0.6.1 GOAT-spin implementation. Older v0.5 builds do not
 contain the feature. The 38 earlier archived award records are winner metadata
-only and were not included in this 161-entry full-field audit.
+only and were not included in this 164-entry full-field audit. The original
+161-entry audit is preserved in `verification_report_v0_6_initial.json`.
 
 ## Reproduce
 
@@ -63,5 +64,8 @@ https://github.com/peasant98/TheNBACSV/blob/master/nbaNew.csv.
 
 ## Prehistoric Jackpot
 
-12 curated entries, one season per player, remain separate and are verified.
+15 curated entries, one season per player, remain separate and are verified.
+v0.6.1 adds Guy Rodgers 1966–67, Nate Archibald 1972–73, and Lenny Wilkens
+1971–72 to improve assist and availability options. See
+[the roster revision](PREHISTORIC_ASSIST_EXPANSION.md).
 See GDD v1.5 for selections and nullable scoring.
