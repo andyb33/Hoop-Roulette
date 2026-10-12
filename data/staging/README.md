@@ -8,4 +8,4 @@ Source: SportsDataverse mirror of NBA player box scores; original download is ca
 
 Reproduce: python scripts/collect_historical_stats.py --season 2022-23
 
-Next: final stint jerseys, season accolades/champion joins, independent verification, and distribution analysis. Other 2010–11 through 2021–22 seasons are not yet collected.
+Next: final stint jerseys, season accolades/champion joins, independent verification, and distribution analysis. 2021–22 is also collected: 317 eligible records, 30 teams, 1,230 observed regular-season games. Other 2010–11 through 2020–21 seasons are not yet collected.
