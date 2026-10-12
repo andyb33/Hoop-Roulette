@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "enabled_in_game": false,
+  "jackpot_probability": {
+    "numerator": 1,
+    "denominator": 1296
+  },
+  "pool_weights": {
+    "award": 1,
+    "prehistoric": 1
+  },
+  "award": {
+    "count": 9,
+    "covered_seasons": [
+      "2023-24",
+      "2024-25",
+      "2025-26"
+    ],
+    "target_start": "1973-74",
+    "historical_coverage_complete": false
+  },
+  "prehistoric": {
+    "count": 12,
+    "status": "draft: historical jerseys and accolades require audit"
+  }
+}
