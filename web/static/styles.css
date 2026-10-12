@@ -207,6 +207,22 @@ h1 span { color: var(--paper); font-weight: 400; }
 @keyframes reel-jitter { 0% { transform: translateY(-7px); } 50% { transform: translateY(8px); } 100% { transform: translateY(-7px); } }
 @keyframes reel-land { 0% { transform: translateY(-5px); } 50% { transform: translateY(3px); border-color: var(--orange); } 100% { transform: translateY(0); } }
 
+.draft-rule {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-left: 2px solid var(--gold);
+  border-radius: 3px;
+  background: #f5c95b08;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.draft-rule-mark { flex: 0 0 auto; color: var(--gold); font-weight: 800; }
+.draft-rule strong { color: #c3cedd; font-weight: 650; }
+
 .spin-button, .confirm-button, .secondary {
   border: 0;
   border-radius: 5px;
