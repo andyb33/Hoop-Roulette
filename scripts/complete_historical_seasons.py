@@ -25,13 +25,13 @@ def fetch(url):
     CACHE.mkdir(parents=True, exist_ok=True)
     path = CACHE / (hashlib.sha256(url.encode()).hexdigest() + '.json')
     if path.exists():
-        return json.loads(path.read_text())
+        return json.loads(path.read_text(encoding='utf-8'))
     error = None
     for attempt in range(3):
         try:
             with urlopen(Request(url, headers=HEADERS), timeout=30) as response:
                 data = json.load(response)
-            path.write_text(json.dumps(data, ensure_ascii=False))
+            path.write_text(json.dumps(data, ensure_ascii=False),encoding='utf-8')
             return data
         except Exception as exc:
             error = exc
@@ -40,10 +40,10 @@ def fetch(url):
 def complete(season, workers=6):
     slug = season.replace('-', '_')
     staged = ROOT / f'data/staging/stats_{slug}.json'
-    report = json.loads((ROOT / f'data/staging/stats_{slug}_verification.json').read_text())
+    report = json.loads((ROOT / f'data/staging/stats_{slug}_verification.json').read_text(encoding='utf-8'))
     assert report['passed'] and report['staged_sha256'] == hashlib.sha256(staged.read_bytes()).hexdigest()
-    rows = json.loads(staged.read_text())
-    manifest = json.loads((ROOT / f'data/staging/stats_{slug}_manifest.json').read_text())
+    rows = json.loads(staged.read_text(encoding='utf-8'))
+    manifest = json.loads((ROOT / f'data/staging/stats_{slug}_manifest.json').read_text(encoding='utf-8'))
     raw = ROOT / f'data/raw/{season}/player_boxscores_{int(season[:4])+1}.csv'
     if not raw.exists():
         raw.parent.mkdir(parents=True, exist_ok=True)
@@ -78,10 +78,10 @@ def complete(season, workers=6):
         if not path.exists():
             with urlopen(Request(source_url, headers=HEADERS), timeout=30) as response:
                 path.write_bytes(response.read())
-    nba = parse_honors((CACHE/'all_nba.html').read_text())[season]
-    defense = parse_honors((CACHE/'all_defense.html').read_text())[season]
-    champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text())[season]]
-    awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text()) if r['season']==season}
+    nba = parse_honors((CACHE/'all_nba.html').read_text(encoding='utf-8'))[season]
+    defense = parse_honors((CACHE/'all_defense.html').read_text(encoding='utf-8'))[season]
+    champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
+    awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
     finals_id = {'2022-23': '0042200405', '2021-22': '0042100406'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
@@ -120,7 +120,7 @@ def complete(season, workers=6):
     # Champion is attached to the specific team stint; another team's stint cannot inherit it.
     assert all(r['champion']==(r['team']==champion and r['player_id'] in champion_players) for r in rows)
     output=ROOT/f'data/game/players_{slug}.json'
-    output.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
+    output.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     processed=ROOT/'data/processed'
     with (processed/f'nba_roulette_{slug}.csv').open('w',newline='',encoding='utf-8-sig') as handle:
         writer=csv.DictWriter(handle,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
@@ -132,18 +132,18 @@ def complete(season, workers=6):
            'honors_name_aliases':HONORS_NAME_ALIASES, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
            'all_nba_records':sum(r['all_nba'] is not None for r in rows),'all_defense_records':sum(r['all_defense'] is not None for r in rows),
            'champion_roster_source':finals_url, 'champion_roster':[{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')} for p in champion_sides[0]['players']], 'champion_team':champion,'champion_records':sum(r['champion'] for r in rows),'jersey_evidence':evidence}
-    (processed/f'completion_{slug}.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
+    (processed/f'completion_{slug}.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     summary = {key: value for key, value in audit.items() if key not in ('jersey_evidence', 'champion_roster', 'official_all_nba', 'official_all_defense', 'official_award_winners')}
     summary['eligibility'] = manifest['eligibility']
     summary['eligible_records_by_team'] = manifest['records_by_team']
-    (processed/f'nba_roulette_{slug}_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
+    (processed/f'nba_roulette_{slug}_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     with (processed/f'jersey_verification_{slug}.csv').open('w',newline='',encoding='utf-8-sig') as handle:
         fields = ['team','player_id','player','last_game_date','game_id','verified_final_jersey','status','source']
         writer=csv.DictWriter(handle,fieldnames=fields);writer.writeheader()
         for entry in evidence:
             writer.writerow({**{key:entry[key] for key in ('team','player_id','player','last_game_date','game_id','source')}, 'verified_final_jersey':entry['jersey'],'status':'VERIFIED'})
     manifest.update(status='complete_promoted',enabled_in_game=True,pending=['Distribution analysis'])
-    (ROOT/f'data/staging/stats_{slug}_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    (ROOT/f'data/staging/stats_{slug}_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':

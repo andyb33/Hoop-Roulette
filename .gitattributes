@@ -1,0 +1,3 @@
+# Preserve exact bytes for source and audit SHA-256 checks on Windows.
+*.json text eol=lf
+*.py text eol=lf

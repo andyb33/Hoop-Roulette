@@ -12,9 +12,9 @@ class CompletedHistoryTests(unittest.TestCase):
             slug=season.replace('-','_')
             staged=ROOT/f'data/staging/stats_{slug}.json'
             output=ROOT/f'data/game/players_{slug}.json'
-            audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text())
-            rows=json.loads(output.read_text())
-            originals=json.loads(staged.read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text(encoding='utf-8'))
+            rows=json.loads(output.read_text(encoding='utf-8'))
+            originals=json.loads(staged.read_text(encoding='utf-8'))
             self.assertTrue(audit['passed'])
             self.assertEqual(audit['unresolved'],[])
             self.assertEqual(audit['entries'],count)
@@ -37,7 +37,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_championship_credit_requires_title_roster_and_team_stint(self):
         for season in ('2022-23','2021-22'):
             slug=season.replace('-','_')
-            audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text(encoding='utf-8'))
             members={int(p['personId']) for p in audit['champion_roster']}
             for r in load_records([season]):
                 self.assertEqual(r.champion,r.team==audit['champion_team'] and r.player_id in members)
