@@ -3,16 +3,38 @@ import argparse
 import csv
 import hashlib
 import json
+from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def rounded_rate(total, games):
+    return float((Decimal(total) / Decimal(games)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
+
+
+def require_previous_verified(season):
+    year = int(season[:4])
+    if year == 2022:
+        return
+    if not 2010 <= year < 2022:
+        raise ValueError("This staging batch covers 2010–11 through 2022–23")
+    previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
+    report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
+    data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
+    if not report_path.exists() or not data_path.exists():
+        raise ValueError("Verify the preceding season before collecting this one")
+    report = json.loads(report_path.read_text())
+    if not report.get("passed") or report.get("staged_sha256") != hashlib.sha256(data_path.read_bytes()).hexdigest():
+        raise ValueError("Preceding season verification failed or is stale; resolve it first")
+
+
 def collect(season):
     year = int(season[:4])
     if season != f"{year}-{str(year + 1)[-2:]}":
         raise ValueError("Use season format YYYY-YY")
+    require_previous_verified(season)
     url = f"https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_{year + 1}.csv"
     raw = ROOT / f"data/raw/{season}/player_boxscores_{year + 1}.csv"
     raw.parent.mkdir(parents=True, exist_ok=True)
@@ -30,8 +52,7 @@ def collect(season):
                 continue
             minutes, seconds = row["minutes"].split(":")
             played_seconds = int(minutes) * 60 + int(seconds)
-            if played_seconds <= 0:
-                continue
+            # A recorded 0:00 appearance still counts toward GP. DNP rows have no minutes.
             player_id, team_id = int(row["person_id"]), int(row["team_id"])
             appearance = (game_id, team_id, player_id)
             if appearance in seen:
@@ -55,7 +76,7 @@ def collect(season):
         if gp < 30 or mpg < 15:
             continue
         rows.append({**{k: record[k] for k in ("season", "player_id", "player", "team", "gp")},
-                     "mpg": round(mpg, 1), **{stat: round(record[field] / gp, 1) for stat, field in
+                     "mpg": rounded_rate(record["seconds"], 60 * gp), **{stat: rounded_rate(record[field], gp) for stat, field in
                      (("ppg", "points"), ("rpg", "rebounds_total"), ("apg", "assists"), ("spg", "steals"), ("bpg", "blocks"))}})
     rows.sort(key=lambda r: (r["team"], r["player"]))
     if not rows:

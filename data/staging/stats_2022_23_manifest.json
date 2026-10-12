@@ -1,6 +1,6 @@
 {
   "season": "2022-23",
-  "status": "stats_only_unverified",
+  "status": "stats_independently_checked",
   "enabled_in_game": false,
   "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_2023.csv",
   "source_sha256": "33bd3f9813429d2f3a57e4453196e734b5ddcc99c7e1be09c4a616cfd1ea628d",
@@ -46,8 +46,8 @@
   "pending": [
     "Final team-stint jersey numbers",
     "Accolades and champions",
-    "Independent source verification",
     "Distribution analysis",
     "Game activation"
-  ]
+  ],
+  "verification_report": "data/staging/stats_2022_23_verification.json"
 }
