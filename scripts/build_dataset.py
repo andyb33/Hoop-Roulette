@@ -171,7 +171,7 @@ def main() -> None:
             if row.get("NUM") not in (None, "")
         }
         for row in result_rows(stats, "LeagueDashPlayerStats"):
-            if int(row["GP"]) < 15 or float(row["MIN"]) < 10.0:
+            if int(row["GP"]) < 30 or float(row["MIN"]) < 15.0:
                 continue
             player_id = int(row["PLAYER_ID"])
             name = row["PLAYER_NAME"]
@@ -231,7 +231,7 @@ def main() -> None:
     missing = [row for row in records if row["jersey"] is None]
     summary = {
         "season": season,
-        "eligibility": {"minimum_team_gp": 15, "minimum_team_mpg": 10.0},
+        "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15.0},
         "eligible_player_team_records": len(records),
         "eligible_records_by_team": {
             team: sum(row["team"] == team for row in records) for team in TEAMS

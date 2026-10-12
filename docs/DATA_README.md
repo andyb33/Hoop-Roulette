@@ -13,8 +13,8 @@ have multiple rows, each containing only his statistics for that team.
 
 A row enters the roulette pool when both conditions are true:
 
-- at least 15 regular-season games for that team;
-- at least 10.0 minutes per game for that team.
+- at least 30 regular-season games for that team;
+- at least 15.0 minutes per game for that team.
 
 ## Outputs
 
@@ -30,9 +30,20 @@ Current validated output:
 
 | Season | Eligible records | Jersey audits | Missing jerseys |
 |---|---:|---:|---:|
-| 2023–24 | 441 | 60 | 0 |
-| 2024–25 | 454 | 61 | 0 |
-| 2025–26 | 451 | 451 | 0 |
+| 2023–24 | 300 | 30 | 0 |
+| 2024–25 | 317 | 31 | 0 |
+| 2025–26 | 326 | 326 | 0 |
+
+## Legacy snapshot
+
+`data/legacy/15gp_10mpg/` preserves the exact previous JSON, CSV, summaries
+and jersey evidence (1,346 entries). Raw source files remain untouched.
+Run `python scripts/filter_current_datasets.py` to reproduce the current
+943-entry pool from that snapshot. This migration uses the existing published
+one-decimal MPG; fresh source collectors apply the cutoff to their source MPG.
+Historical distribution and simulation reports retain their original dataset
+and rule versions and have not been rerun for this release. GOAT pools keep
+their separate eligibility.
 
 ## Sources and joins
 

@@ -137,7 +137,7 @@ def main() -> None:
     for row in grouped.to_dict("records"):
         gp = int(row["gp"])
         mpg = row["seconds"] / 60 / gp
-        if gp < 15 or mpg < 10.0:
+        if gp < 30 or mpg < 15.0:
             continue
         team = TEAM_IDS[int(row["team_id"])]
         if team != row["team_tricode"]:
@@ -188,7 +188,7 @@ def main() -> None:
 
     summary = {
         "season": season,
-        "eligibility": {"minimum_team_gp": 15, "minimum_team_mpg": 10.0},
+        "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15.0},
         "source_regular_season_games": int(box["game_id"].nunique()),
         "eligible_player_team_records": len(records),
         "eligible_records_by_team": {

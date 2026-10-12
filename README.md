@@ -11,7 +11,10 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.7 adds unique draft picks:** scoring a player (even for zero) removes every
+**v0.8 tightens normal eligibility to 30 team GP / 15 team MPG.** The Upper
+Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
+
+**Unique draft picks:** scoring a player (even for zero) removes every
 season, team, and jackpot version of that real player for the rest of the game.
 Passed players remain eligible; starting a new game resets the draft.
 
@@ -22,17 +25,18 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows and Mac v0.7 builds are produced by
-the GitHub Actions workflows; [tester instructions](docs/EXTERNAL_ALPHA_V0_6_1.md).
+Development games are not logged. Windows and Mac v0.8 builds are produced by
+the GitHub Actions workflows; [tester instructions](docs/EXTERNAL_ALPHA_V0_8.md).
 
 The 2023–24, 2024–25, and 2025–26 datasets are complete:
 
-- 1,346 eligible player-team records across the three seasons and all 30 NBA teams;
-- eligibility of at least 15 games and 10.0 minutes per game for that team;
+- 943 eligible player-team records across the three seasons and all 30 NBA teams;
+- eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
 - All-NBA, All-Defensive, champion, MVP, DPOY, and ROTY fields;
-- 121 historical jersey records verified against official NBA last-game box scores.
+- verified jersey evidence retained for all surviving records;
+- previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 ## Repository structure
 
