@@ -1,0 +1,74 @@
+{
+  "season": "2019-20",
+  "completed_at": "2026-10-12T12:24:25.648669+00:00",
+  "passed": true,
+  "entries": 298,
+  "jerseys_verified": 298,
+  "unresolved": [],
+  "staged_sha256": "3f95e7cd7c9cc1525f29cedce308f5b0b2e7ee4de8266077d18175e4c99714b7",
+  "game_sha256": "0bb1437e927c79b6554a29ae31f495e84f3170a93e09627dd91fa41a68d47c83",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2019-20&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "giannis-antetokounmpo": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "ja-morant": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://www.nba.com/game/0041900406/box-score",
+  "champion_team": "LAL",
+  "champion_records": 9,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BKN": 9,
+    "BOS": 9,
+    "CHA": 10,
+    "CHI": 9,
+    "CLE": 7,
+    "DAL": 10,
+    "DEN": 11,
+    "DET": 9,
+    "GSW": 11,
+    "HOU": 8,
+    "IND": 9,
+    "LAC": 10,
+    "LAL": 10,
+    "MEM": 11,
+    "MIA": 9,
+    "MIL": 10,
+    "MIN": 13,
+    "NOP": 11,
+    "NYK": 12,
+    "OKC": 11,
+    "ORL": 10,
+    "PHI": 10,
+    "PHX": 11,
+    "POR": 10,
+    "SAC": 9,
+    "SAS": 11,
+    "TOR": 10,
+    "UTA": 9,
+    "WAS": 10
+  }
+}

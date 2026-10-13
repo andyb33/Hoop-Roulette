@@ -11,7 +11,7 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.9 expands the normal pool to 2021–22 through 2025–26.**
+**v0.10 completes Stage 1: the normal pool from 2010–11 through 2025–26.**
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -26,12 +26,12 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows and Mac v0.9 builds are produced by
-the GitHub Actions workflows; [tester instructions](docs/EXTERNAL_ALPHA_V0_9.md).
+Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
+Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The five datasets from 2021–22 through 2025–26 are complete:
+The sixteen datasets from 2010–11 through 2025–26 are complete:
 
-- 1,565 eligible player-team records across the five seasons and all 30 NBA teams;
+- 4,840 eligible player-team records across the sixteen seasons and all 30 NBA teams;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -40,8 +40,11 @@ The five datasets from 2021–22 through 2025–26 are complete:
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 The new historical seasons retain their independent stats audits and official
-final-appearance jersey evidence. See [completion report](docs/HISTORICAL_COMPLETION_2021_2023.md).
+final-appearance jersey evidence. See [completion report](docs/HISTORICAL_COMPLETION_2010_2012.md).
 Existing balance reports describe the earlier pool and have not been rerun.
+
+Stage 1 data is complete in the v0.10 source. Desktop packages wait until Stage 3 is complete through 1973–74.
+Stage 2 covers 1980–81 through 2009–10; Stage 3 covers 1973–74 through 1979–80.
 
 ## Repository structure
 

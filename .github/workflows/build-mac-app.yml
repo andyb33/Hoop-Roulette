@@ -1,12 +1,7 @@
-name: Build Hoopreel Mac alpha v0.9
+name: Build Hoopreel Mac alpha v0.10
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    tags:
-      - "prototype-v*"
 
 permissions:
   contents: read
@@ -39,7 +34,7 @@ jobs:
       - name: Build Mac app
         run: |
           pyinstaller --noconfirm --clean --windowed --onedir \
-            --name Hoopreel-v0.9-Alpha \
+            --name Hoopreel-v0.10-Alpha \
             --icon web/static/app-icon.icns \
             --osx-bundle-identifier com.andyb33.hoopreel \
             --paths . \
@@ -53,7 +48,7 @@ jobs:
       - name: Smoke-test packaged app
         run: |
           set -euo pipefail
-          executable="dist/Hoopreel-v0.9-Alpha.app/Contents/MacOS/Hoopreel-v0.9-Alpha"
+          executable="dist/Hoopreel-v0.10-Alpha.app/Contents/MacOS/Hoopreel-v0.10-Alpha"
           "$executable" --no-open-browser --port 38117 &
           app_pid=$!
           trap 'kill "$app_pid" 2>/dev/null || true' EXIT
@@ -75,13 +70,13 @@ jobs:
 
       - name: Package app and instructions
         run: |
-          cp docs/EXTERNAL_ALPHA_V0_9.md dist/README.txt
+          cp docs/EXTERNAL_ALPHA_V0_10.md dist/README.txt
           cd dist
-          zip -q -r Hoopreel-v0.9-Alpha-Mac-${{ matrix.arch }}.zip Hoopreel-v0.9-Alpha.app README.txt
+          zip -q -r Hoopreel-v0.10-Alpha-Mac-${{ matrix.arch }}.zip Hoopreel-v0.10-Alpha.app README.txt
 
       - name: Upload Mac build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.9-Alpha-Mac-${{ matrix.arch }}
-          path: dist/Hoopreel-v0.9-Alpha-Mac-${{ matrix.arch }}.zip
+          name: Hoopreel-v0.10-Alpha-Mac-${{ matrix.arch }}
+          path: dist/Hoopreel-v0.10-Alpha-Mac-${{ matrix.arch }}.zip
           if-no-files-found: error

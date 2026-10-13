@@ -1,0 +1,4802 @@
+{
+  "season": "2018-19",
+  "passed": true,
+  "scope": "Stats-only; jerseys and accolades not yet verified",
+  "records_checked": 307,
+  "fields_per_record": 7,
+  "stat_comparisons": 2149,
+  "reference": {
+    "url": "https://raw.githubusercontent.com/dataprofessor/data/087cb5383af3b09e68f6eeb00dea8819c1340de0/nba-player-stats-2019.csv",
+    "provenance": "https://github.com/dataprofessor/data/tree/087cb5383af3b09e68f6eeb00dea8819c1340de0",
+    "primary": "https://www.basketball-reference.com/leagues/NBA_2019_per_game.html",
+    "note": "Archived Basketball Reference per-game table; retains separate traded-player team stints."
+  },
+  "reference_sha256": "be588b35351f80bd7773fd127bf1d24350e9915ec4f52b36e4c3527875943a39",
+  "staged_sha256": "f8e1c52980de70280708ce57da71db29dd4aad6e9e48bcfe0b45ef126130df91",
+  "eligibility_sets_match": true,
+  "all_30_teams_have_82_games": true,
+  "schedule_evidence": {
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2018-19&SeasonType=Regular+Season",
+    "sha256": "9ee357a0c5a62fe519168145647f8cae27bd2391d230a18b58c3ae0249fd2b94",
+    "matches": true,
+    "team_games": {
+      "ATL": 82,
+      "BKN": 82,
+      "BOS": 82,
+      "CHA": 82,
+      "CHI": 82,
+      "CLE": 82,
+      "DAL": 82,
+      "DEN": 82,
+      "DET": 82,
+      "GSW": 82,
+      "HOU": 82,
+      "IND": 82,
+      "LAC": 82,
+      "LAL": 82,
+      "MEM": 82,
+      "MIA": 82,
+      "MIL": 82,
+      "MIN": 82,
+      "NOP": 82,
+      "NYK": 82,
+      "OKC": 82,
+      "ORL": 82,
+      "PHI": 82,
+      "PHX": 82,
+      "POR": 82,
+      "SAC": 82,
+      "SAS": 82,
+      "TOR": 82,
+      "UTA": 82,
+      "WAS": 82
+    }
+  },
+  "regular_season_games": 1230,
+  "cutoff_boundary_resolutions": [],
+  "resolved_differences": [
+    {
+      "player": "DeAndre' Bembry",
+      "player_id": 1627761,
+      "team": "ATL",
+      "field": "mpg",
+      "staged": 23.6,
+      "reference": 23.5,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Allen Crabbe",
+      "player_id": 203459,
+      "team": "BKN",
+      "field": "mpg",
+      "staged": 26.4,
+      "reference": 26.3,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Dwayne Bacon",
+      "player_id": 1628407,
+      "team": "CHA",
+      "field": "mpg",
+      "staged": 17.6,
+      "reference": 17.7,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Devin Harris",
+      "player_id": 2734,
+      "team": "DAL",
+      "field": "mpg",
+      "staged": 15.7,
+      "reference": 15.8,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Brandon Ingram",
+      "player_id": 1627742,
+      "team": "LAL",
+      "field": "mpg",
+      "staged": 33.9,
+      "reference": 33.8,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "JaMychal Green",
+      "player_id": 203210,
+      "team": "MEM",
+      "field": "mpg",
+      "staged": 21.9,
+      "reference": 22.0,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "player_id": 1626157,
+      "team": "MIN",
+      "field": "mpg",
+      "staged": 33.0,
+      "reference": 33.1,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Damyean Dotson",
+      "player_id": 1628422,
+      "team": "NYK",
+      "field": "mpg",
+      "staged": 27.4,
+      "reference": 27.5,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Jerian Grant",
+      "player_id": 1626170,
+      "team": "ORL",
+      "field": "mpg",
+      "staged": 15.6,
+      "reference": 15.7,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Mike Muscala",
+      "player_id": 203488,
+      "team": "PHI",
+      "field": "mpg",
+      "staged": 22.2,
+      "reference": 22.1,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Kyle Lowry",
+      "player_id": 200768,
+      "team": "TOR",
+      "field": "mpg",
+      "staged": 34.1,
+      "reference": 34.0,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Pascal Siakam",
+      "player_id": 1627783,
+      "team": "TOR",
+      "field": "mpg",
+      "staged": 31.8,
+      "reference": 31.9,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Kyle Korver",
+      "player_id": 2594,
+      "team": "UTA",
+      "field": "mpg",
+      "staged": 20.0,
+      "reference": 20.1,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Otto Porter Jr.",
+      "player_id": 203490,
+      "team": "WAS",
+      "field": "mpg",
+      "staged": 29.1,
+      "reference": 29.0,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    },
+    {
+      "player": "Tomas Satoransky",
+      "player_id": 203107,
+      "team": "WAS",
+      "field": "mpg",
+      "staged": 27.0,
+      "reference": 27.1,
+      "resolution": "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+    }
+  ],
+  "errors": [],
+  "reference_evidence": [
+    {
+      "player_id": 203458,
+      "player": "Alex Len",
+      "team": "ATL",
+      "reference_name": "Alex Len",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 20.1,
+        "ppg": 11.1,
+        "rpg": 5.5,
+        "apg": 1.1,
+        "spg": 0.4,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 1627761,
+      "player": "DeAndre' Bembry",
+      "team": "ATL",
+      "reference_name": "DeAndre' Bembry",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 23.5,
+        "ppg": 8.4,
+        "rpg": 4.4,
+        "apg": 2.5,
+        "spg": 1.3,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203473,
+      "player": "Dewayne Dedmon",
+      "team": "ATL",
+      "reference_name": "Dewayne Dedmon",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 25.1,
+        "ppg": 10.8,
+        "rpg": 7.5,
+        "apg": 1.4,
+        "spg": 1.1,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 202391,
+      "player": "Jeremy Lin",
+      "team": "ATL",
+      "reference_name": "Jeremy Lin",
+      "reference_stats": {
+        "gp": 51.0,
+        "mpg": 19.7,
+        "ppg": 10.7,
+        "rpg": 2.3,
+        "apg": 3.5,
+        "spg": 0.7,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1628381,
+      "player": "John Collins",
+      "team": "ATL",
+      "reference_name": "John Collins",
+      "reference_stats": {
+        "gp": 61.0,
+        "mpg": 30.0,
+        "ppg": 19.5,
+        "rpg": 9.8,
+        "apg": 2.0,
+        "spg": 0.4,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 203145,
+      "player": "Kent Bazemore",
+      "team": "ATL",
+      "reference_name": "Kent Bazemore",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 24.5,
+        "ppg": 11.6,
+        "rpg": 3.9,
+        "apg": 2.3,
+        "spg": 1.3,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1628989,
+      "player": "Kevin Huerter",
+      "team": "ATL",
+      "reference_name": "Kevin Huerter",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 27.3,
+        "ppg": 9.7,
+        "rpg": 3.3,
+        "apg": 2.9,
+        "spg": 0.9,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1629016,
+      "player": "Omari Spellman",
+      "team": "ATL",
+      "reference_name": "Omari Spellman",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 17.5,
+        "ppg": 5.9,
+        "rpg": 4.2,
+        "apg": 1.0,
+        "spg": 0.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1627752,
+      "player": "Taurean Prince",
+      "team": "ATL",
+      "reference_name": "Taurean Prince",
+      "reference_stats": {
+        "gp": 55.0,
+        "mpg": 28.2,
+        "ppg": 13.5,
+        "rpg": 3.6,
+        "apg": 2.1,
+        "spg": 1.0,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1629027,
+      "player": "Trae Young",
+      "team": "ATL",
+      "reference_name": "Trae Young",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 30.9,
+        "ppg": 19.1,
+        "rpg": 3.7,
+        "apg": 8.1,
+        "spg": 0.9,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1713,
+      "player": "Vince Carter",
+      "team": "ATL",
+      "reference_name": "Vince Carter",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 17.5,
+        "ppg": 7.4,
+        "rpg": 2.6,
+        "apg": 1.1,
+        "spg": 0.6,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203459,
+      "player": "Allen Crabbe",
+      "team": "BKN",
+      "reference_name": "Allen Crabbe",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 26.3,
+        "ppg": 9.6,
+        "rpg": 3.4,
+        "apg": 1.1,
+        "spg": 0.5,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627747,
+      "player": "Caris LeVert",
+      "team": "BKN",
+      "reference_name": "Caris LeVert",
+      "reference_stats": {
+        "gp": 40.0,
+        "mpg": 26.6,
+        "ppg": 13.7,
+        "rpg": 3.8,
+        "apg": 3.9,
+        "spg": 1.1,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1626156,
+      "player": "D'Angelo Russell",
+      "team": "BKN",
+      "reference_name": "D'Angelo Russell",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 30.2,
+        "ppg": 21.1,
+        "rpg": 3.9,
+        "apg": 7.0,
+        "spg": 1.2,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 201960,
+      "player": "DeMarre Carroll",
+      "team": "BKN",
+      "reference_name": "DeMarre Carroll",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 25.4,
+        "ppg": 11.1,
+        "rpg": 5.2,
+        "apg": 1.3,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 202334,
+      "player": "Ed Davis",
+      "team": "BKN",
+      "reference_name": "Ed Davis",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 17.9,
+        "ppg": 5.8,
+        "rpg": 8.6,
+        "apg": 0.8,
+        "spg": 0.4,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201162,
+      "player": "Jared Dudley",
+      "team": "BKN",
+      "reference_name": "Jared Dudley",
+      "reference_stats": {
+        "gp": 59.0,
+        "mpg": 20.7,
+        "ppg": 4.9,
+        "rpg": 2.6,
+        "apg": 1.4,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1628386,
+      "player": "Jarrett Allen",
+      "team": "BKN",
+      "reference_name": "Jarrett Allen",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 26.2,
+        "ppg": 10.9,
+        "rpg": 8.4,
+        "apg": 1.4,
+        "spg": 0.5,
+        "bpg": 1.5
+      }
+    },
+    {
+      "player_id": 203925,
+      "player": "Joe Harris",
+      "team": "BKN",
+      "reference_name": "Joe Harris",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 30.2,
+        "ppg": 13.7,
+        "rpg": 3.8,
+        "apg": 2.4,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1629066,
+      "player": "Rodions Kurucs",
+      "team": "BKN",
+      "reference_name": "Rodions Kurucs",
+      "reference_stats": {
+        "gp": 63.0,
+        "mpg": 20.5,
+        "ppg": 8.5,
+        "rpg": 3.9,
+        "apg": 0.8,
+        "spg": 0.7,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1626178,
+      "player": "Rondae Hollis-Jefferson",
+      "team": "BKN",
+      "reference_name": "Rondae Hollis-Jefferson",
+      "reference_stats": {
+        "gp": 59.0,
+        "mpg": 20.9,
+        "ppg": 8.9,
+        "rpg": 5.3,
+        "apg": 1.6,
+        "spg": 0.7,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203894,
+      "player": "Shabazz Napier",
+      "team": "BKN",
+      "reference_name": "Shabazz Napier",
+      "reference_stats": {
+        "gp": 56.0,
+        "mpg": 17.6,
+        "ppg": 9.4,
+        "rpg": 1.8,
+        "apg": 2.6,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203915,
+      "player": "Spencer Dinwiddie",
+      "team": "BKN",
+      "reference_name": "Spencer Dinwiddie",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 28.1,
+        "ppg": 16.8,
+        "rpg": 2.4,
+        "apg": 4.6,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1626203,
+      "player": "Treveon Graham",
+      "team": "BKN",
+      "reference_name": "Treveon Graham",
+      "reference_stats": {
+        "gp": 35.0,
+        "mpg": 20.4,
+        "ppg": 5.3,
+        "rpg": 3.1,
+        "apg": 1.0,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 201143,
+      "player": "Al Horford",
+      "team": "BOS",
+      "reference_name": "Al Horford",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 29.0,
+        "ppg": 13.6,
+        "rpg": 6.7,
+        "apg": 4.2,
+        "spg": 0.9,
+        "bpg": 1.3
+      }
+    },
+    {
+      "player_id": 203382,
+      "player": "Aron Baynes",
+      "team": "BOS",
+      "reference_name": "Aron Baynes",
+      "reference_stats": {
+        "gp": 51.0,
+        "mpg": 16.1,
+        "ppg": 5.6,
+        "rpg": 4.7,
+        "apg": 1.1,
+        "spg": 0.2,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 202330,
+      "player": "Gordon Hayward",
+      "team": "BOS",
+      "reference_name": "Gordon Hayward",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 25.9,
+        "ppg": 11.5,
+        "rpg": 4.5,
+        "apg": 3.4,
+        "spg": 0.9,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627759,
+      "player": "Jaylen Brown",
+      "team": "BOS",
+      "reference_name": "Jaylen Brown",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 25.9,
+        "ppg": 13.0,
+        "rpg": 4.2,
+        "apg": 1.4,
+        "spg": 0.9,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628369,
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "reference_name": "Jayson Tatum",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 31.1,
+        "ppg": 15.7,
+        "rpg": 6.0,
+        "apg": 2.1,
+        "spg": 1.1,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 202681,
+      "player": "Kyrie Irving",
+      "team": "BOS",
+      "reference_name": "Kyrie Irving",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 33.0,
+        "ppg": 23.8,
+        "rpg": 5.0,
+        "apg": 6.9,
+        "spg": 1.5,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 202694,
+      "player": "Marcus Morris Sr.",
+      "team": "BOS",
+      "reference_name": "Marcus Morris",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 27.9,
+        "ppg": 13.9,
+        "rpg": 6.1,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203935,
+      "player": "Marcus Smart",
+      "team": "BOS",
+      "reference_name": "Marcus Smart",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 27.5,
+        "ppg": 8.9,
+        "rpg": 2.9,
+        "apg": 4.0,
+        "spg": 1.8,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1626179,
+      "player": "Terry Rozier",
+      "team": "BOS",
+      "reference_name": "Terry Rozier",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 22.7,
+        "ppg": 9.0,
+        "rpg": 3.9,
+        "apg": 2.9,
+        "spg": 0.9,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203469,
+      "player": "Cody Zeller",
+      "team": "CHA",
+      "reference_name": "Cody Zeller",
+      "reference_stats": {
+        "gp": 49.0,
+        "mpg": 25.4,
+        "ppg": 10.1,
+        "rpg": 6.8,
+        "apg": 2.1,
+        "spg": 0.8,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 1628407,
+      "player": "Dwayne Bacon",
+      "team": "CHA",
+      "reference_name": "Dwayne Bacon",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 17.7,
+        "ppg": 7.3,
+        "rpg": 2.1,
+        "apg": 1.1,
+        "spg": 0.3,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626163,
+      "player": "Frank Kaminsky",
+      "team": "CHA",
+      "reference_name": "Frank Kaminsky",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 16.1,
+        "ppg": 8.6,
+        "rpg": 3.5,
+        "apg": 1.3,
+        "spg": 0.3,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203087,
+      "player": "Jeremy Lamb",
+      "team": "CHA",
+      "reference_name": "Jeremy Lamb",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 28.5,
+        "ppg": 15.3,
+        "rpg": 5.5,
+        "apg": 2.2,
+        "spg": 1.1,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 202689,
+      "player": "Kemba Walker",
+      "team": "CHA",
+      "reference_name": "Kemba Walker",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 34.9,
+        "ppg": 25.6,
+        "rpg": 4.4,
+        "apg": 5.9,
+        "spg": 1.2,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628370,
+      "player": "Malik Monk",
+      "team": "CHA",
+      "reference_name": "Malik Monk",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 17.2,
+        "ppg": 8.9,
+        "rpg": 1.9,
+        "apg": 1.6,
+        "spg": 0.5,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 101107,
+      "player": "Marvin Williams",
+      "team": "CHA",
+      "reference_name": "Marvin Williams",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 28.4,
+        "ppg": 10.1,
+        "rpg": 5.4,
+        "apg": 1.2,
+        "spg": 0.9,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 203077,
+      "player": "Michael Kidd-Gilchrist",
+      "team": "CHA",
+      "reference_name": "Michael Kidd-Gilchrist",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 18.4,
+        "ppg": 6.7,
+        "rpg": 3.8,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1628970,
+      "player": "Miles Bridges",
+      "team": "CHA",
+      "reference_name": "Miles Bridges",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 21.2,
+        "ppg": 7.5,
+        "rpg": 4.0,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 201587,
+      "player": "Nicolas Batum",
+      "team": "CHA",
+      "reference_name": "Nicolas Batum",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 31.4,
+        "ppg": 9.3,
+        "rpg": 5.2,
+        "apg": 3.3,
+        "spg": 0.9,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 2225,
+      "player": "Tony Parker",
+      "team": "CHA",
+      "reference_name": "Tony Parker",
+      "reference_stats": {
+        "gp": 56.0,
+        "mpg": 17.9,
+        "ppg": 9.5,
+        "rpg": 1.5,
+        "apg": 3.7,
+        "spg": 0.4,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626166,
+      "player": "Cameron Payne",
+      "team": "CHI",
+      "reference_name": "Cameron Payne",
+      "reference_stats": {
+        "gp": 31.0,
+        "mpg": 17.3,
+        "ppg": 5.7,
+        "rpg": 1.7,
+        "apg": 2.7,
+        "spg": 0.6,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628990,
+      "player": "Chandler Hutchison",
+      "team": "CHI",
+      "reference_name": "Chandler Hutchison",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 20.3,
+        "ppg": 5.2,
+        "rpg": 4.2,
+        "apg": 0.8,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203953,
+      "player": "Jabari Parker",
+      "team": "CHI",
+      "reference_name": "Jabari Parker",
+      "reference_stats": {
+        "gp": 39.0,
+        "mpg": 26.7,
+        "ppg": 14.3,
+        "rpg": 6.2,
+        "apg": 2.2,
+        "spg": 0.6,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203200,
+      "player": "Justin Holiday",
+      "team": "CHI",
+      "reference_name": "Justin Holiday",
+      "reference_stats": {
+        "gp": 38.0,
+        "mpg": 34.9,
+        "ppg": 11.6,
+        "rpg": 4.4,
+        "apg": 2.2,
+        "spg": 1.8,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1627739,
+      "player": "Kris Dunn",
+      "team": "CHI",
+      "reference_name": "Kris Dunn",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 30.2,
+        "ppg": 11.3,
+        "rpg": 4.1,
+        "apg": 6.0,
+        "spg": 1.5,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1628374,
+      "player": "Lauri Markkanen",
+      "team": "CHI",
+      "reference_name": "Lauri Markkanen",
+      "reference_stats": {
+        "gp": 52.0,
+        "mpg": 32.3,
+        "ppg": 18.7,
+        "rpg": 9.0,
+        "apg": 1.4,
+        "spg": 0.7,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 201577,
+      "player": "Robin Lopez",
+      "team": "CHI",
+      "reference_name": "Robin Lopez",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 21.7,
+        "ppg": 9.5,
+        "rpg": 3.9,
+        "apg": 1.2,
+        "spg": 0.1,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 1627853,
+      "player": "Ryan Arcidiacono",
+      "team": "CHI",
+      "reference_name": "Ryan Arcidiacono",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 24.2,
+        "ppg": 6.7,
+        "rpg": 2.7,
+        "apg": 3.3,
+        "spg": 0.8,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 1627885,
+      "player": "Shaquille Harrison",
+      "team": "CHI",
+      "reference_name": "Shaquille Harrison",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 19.6,
+        "ppg": 6.5,
+        "rpg": 3.0,
+        "apg": 1.9,
+        "spg": 1.2,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1627782,
+      "player": "Wayne Selden",
+      "team": "CHI",
+      "reference_name": "Wayne Selden",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 22.9,
+        "ppg": 8.0,
+        "rpg": 3.2,
+        "apg": 1.7,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628976,
+      "player": "Wendell Carter Jr.",
+      "team": "CHI",
+      "reference_name": "Wendell Carter Jr.",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 25.2,
+        "ppg": 10.3,
+        "rpg": 7.0,
+        "apg": 1.8,
+        "spg": 0.6,
+        "bpg": 1.3
+      }
+    },
+    {
+      "player_id": 203897,
+      "player": "Zach LaVine",
+      "team": "CHI",
+      "reference_name": "Zach LaVine",
+      "reference_stats": {
+        "gp": 63.0,
+        "mpg": 34.5,
+        "ppg": 23.7,
+        "rpg": 4.7,
+        "apg": 4.5,
+        "spg": 1.0,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 202692,
+      "player": "Alec Burks",
+      "team": "CLE",
+      "reference_name": "Alec Burks",
+      "reference_stats": {
+        "gp": 34.0,
+        "mpg": 28.8,
+        "ppg": 11.6,
+        "rpg": 5.5,
+        "apg": 2.9,
+        "spg": 0.7,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1627790,
+      "player": "Ante Zizic",
+      "team": "CLE",
+      "reference_name": "Ante Žižić",
+      "reference_stats": {
+        "gp": 59.0,
+        "mpg": 18.3,
+        "ppg": 7.8,
+        "rpg": 5.4,
+        "apg": 0.9,
+        "spg": 0.2,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1626224,
+      "player": "Cedi Osman",
+      "team": "CLE",
+      "reference_name": "Cedi Osman",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 32.2,
+        "ppg": 13.0,
+        "rpg": 4.7,
+        "apg": 2.6,
+        "spg": 0.8,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1629012,
+      "player": "Collin Sexton",
+      "team": "CLE",
+      "reference_name": "Collin Sexton",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 31.8,
+        "ppg": 16.7,
+        "rpg": 2.9,
+        "apg": 3.0,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1628021,
+      "player": "David Nwaba",
+      "team": "CLE",
+      "reference_name": "David Nwaba",
+      "reference_stats": {
+        "gp": 51.0,
+        "mpg": 19.3,
+        "ppg": 6.5,
+        "rpg": 3.2,
+        "apg": 1.1,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203903,
+      "player": "Jordan Clarkson",
+      "team": "CLE",
+      "reference_name": "Jordan Clarkson",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 27.3,
+        "ppg": 16.8,
+        "rpg": 3.3,
+        "apg": 2.4,
+        "spg": 0.7,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1626204,
+      "player": "Larry Nance Jr.",
+      "team": "CLE",
+      "reference_name": "Larry Nance Jr.",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 26.8,
+        "ppg": 9.4,
+        "rpg": 8.2,
+        "apg": 3.2,
+        "spg": 1.5,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 203521,
+      "player": "Matthew Dellavedova",
+      "team": "CLE",
+      "reference_name": "Matthew Dellavedova",
+      "reference_stats": {
+        "gp": 36.0,
+        "mpg": 19.9,
+        "ppg": 7.3,
+        "rpg": 1.9,
+        "apg": 4.2,
+        "spg": 0.3,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203918,
+      "player": "Rodney Hood",
+      "team": "CLE",
+      "reference_name": "Rodney Hood",
+      "reference_stats": {
+        "gp": 45.0,
+        "mpg": 27.4,
+        "ppg": 12.2,
+        "rpg": 2.5,
+        "apg": 2.0,
+        "spg": 0.8,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 202684,
+      "player": "Tristan Thompson",
+      "team": "CLE",
+      "reference_name": "Tristan Thompson",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 27.9,
+        "ppg": 10.9,
+        "rpg": 10.2,
+        "apg": 2.0,
+        "spg": 0.7,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201599,
+      "player": "DeAndre Jordan",
+      "team": "DAL",
+      "reference_name": "DeAndre Jordan",
+      "reference_stats": {
+        "gp": 50.0,
+        "mpg": 31.1,
+        "ppg": 11.0,
+        "rpg": 13.7,
+        "apg": 2.0,
+        "spg": 0.7,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 1628372,
+      "player": "Dennis Smith Jr.",
+      "team": "DAL",
+      "reference_name": "Dennis Smith Jr.",
+      "reference_stats": {
+        "gp": 32.0,
+        "mpg": 28.4,
+        "ppg": 12.9,
+        "rpg": 3.0,
+        "apg": 4.3,
+        "spg": 1.3,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 2734,
+      "player": "Devin Harris",
+      "team": "DAL",
+      "reference_name": "Devin Harris",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 15.8,
+        "ppg": 6.3,
+        "rpg": 1.6,
+        "apg": 1.8,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1717,
+      "player": "Dirk Nowitzki",
+      "team": "DAL",
+      "reference_name": "Dirk Nowitzki",
+      "reference_stats": {
+        "gp": 51.0,
+        "mpg": 15.6,
+        "ppg": 7.3,
+        "rpg": 3.1,
+        "apg": 0.7,
+        "spg": 0.2,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1627827,
+      "player": "Dorian Finney-Smith",
+      "team": "DAL",
+      "reference_name": "Dorian Finney-Smith",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 24.5,
+        "ppg": 7.5,
+        "rpg": 4.8,
+        "apg": 1.2,
+        "spg": 0.9,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203939,
+      "player": "Dwight Powell",
+      "team": "DAL",
+      "reference_name": "Dwight Powell",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 21.6,
+        "ppg": 10.6,
+        "rpg": 5.3,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 203084,
+      "player": "Harrison Barnes",
+      "team": "DAL",
+      "reference_name": "Harrison Barnes",
+      "reference_stats": {
+        "gp": 49.0,
+        "mpg": 32.3,
+        "ppg": 17.7,
+        "rpg": 4.2,
+        "apg": 1.3,
+        "spg": 0.7,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 200826,
+      "player": "J.J. Barea",
+      "team": "DAL",
+      "reference_name": "J.J. Barea",
+      "reference_stats": {
+        "gp": 38.0,
+        "mpg": 19.8,
+        "ppg": 10.9,
+        "rpg": 2.5,
+        "apg": 5.6,
+        "spg": 0.6,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 1628973,
+      "player": "Jalen Brunson",
+      "team": "DAL",
+      "reference_name": "Jalen Brunson",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 21.8,
+        "ppg": 9.3,
+        "rpg": 2.3,
+        "apg": 3.2,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1629029,
+      "player": "Luka Dončić",
+      "team": "DAL",
+      "reference_name": "Luka Dončić",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 32.2,
+        "ppg": 21.2,
+        "rpg": 7.8,
+        "apg": 6.0,
+        "spg": 1.1,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1628467,
+      "player": "Maxi Kleber",
+      "team": "DAL",
+      "reference_name": "Maxi Kleber",
+      "reference_stats": {
+        "gp": 71.0,
+        "mpg": 21.2,
+        "ppg": 6.8,
+        "rpg": 4.6,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 202083,
+      "player": "Wesley Matthews",
+      "team": "DAL",
+      "reference_name": "Wesley Matthews",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 29.8,
+        "ppg": 13.1,
+        "rpg": 2.3,
+        "apg": 2.3,
+        "spg": 0.8,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203914,
+      "player": "Gary Harris",
+      "team": "DEN",
+      "reference_name": "Gary Harris",
+      "reference_stats": {
+        "gp": 57.0,
+        "mpg": 28.8,
+        "ppg": 12.9,
+        "rpg": 2.8,
+        "apg": 2.2,
+        "spg": 1.0,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627750,
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "reference_name": "Jamal Murray",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 32.6,
+        "ppg": 18.2,
+        "rpg": 4.2,
+        "apg": 4.8,
+        "spg": 0.9,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1627823,
+      "player": "Juancho Hernangomez",
+      "team": "DEN",
+      "reference_name": "Juan Hernangómez",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 19.4,
+        "ppg": 5.8,
+        "rpg": 3.8,
+        "apg": 0.8,
+        "spg": 0.4,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627736,
+      "player": "Malik Beasley",
+      "team": "DEN",
+      "reference_name": "Malik Beasley",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 23.2,
+        "ppg": 11.3,
+        "rpg": 2.5,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203486,
+      "player": "Mason Plumlee",
+      "team": "DEN",
+      "reference_name": "Mason Plumlee",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 21.1,
+        "ppg": 7.8,
+        "rpg": 6.4,
+        "apg": 3.0,
+        "spg": 0.8,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 1628420,
+      "player": "Monté Morris",
+      "team": "DEN",
+      "reference_name": "Monte Morris",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 24.0,
+        "ppg": 10.4,
+        "rpg": 2.4,
+        "apg": 3.6,
+        "spg": 0.9,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 203999,
+      "player": "Nikola Jokić",
+      "team": "DEN",
+      "reference_name": "Nikola Jokić",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 31.3,
+        "ppg": 20.1,
+        "rpg": 10.8,
+        "apg": 7.3,
+        "spg": 1.4,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 200794,
+      "player": "Paul Millsap",
+      "team": "DEN",
+      "reference_name": "Paul Millsap",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 27.1,
+        "ppg": 12.6,
+        "rpg": 7.2,
+        "apg": 2.0,
+        "spg": 1.2,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 1628470,
+      "player": "Torrey Craig",
+      "team": "DEN",
+      "reference_name": "Torrey Craig",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 20.0,
+        "ppg": 5.7,
+        "rpg": 3.5,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1626168,
+      "player": "Trey Lyles",
+      "team": "DEN",
+      "reference_name": "Trey Lyles",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 17.5,
+        "ppg": 8.5,
+        "rpg": 3.8,
+        "apg": 1.4,
+        "spg": 0.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203115,
+      "player": "Will Barton",
+      "team": "DEN",
+      "reference_name": "Will Barton",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 27.7,
+        "ppg": 11.5,
+        "rpg": 4.6,
+        "apg": 2.9,
+        "spg": 0.4,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203083,
+      "player": "Andre Drummond",
+      "team": "DET",
+      "reference_name": "Andre Drummond",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 33.5,
+        "ppg": 17.3,
+        "rpg": 15.6,
+        "apg": 1.4,
+        "spg": 1.7,
+        "bpg": 1.7
+      }
+    },
+    {
+      "player_id": 201933,
+      "player": "Blake Griffin",
+      "team": "DET",
+      "reference_name": "Blake Griffin",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 35.0,
+        "ppg": 24.5,
+        "rpg": 7.5,
+        "apg": 5.4,
+        "spg": 0.7,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628971,
+      "player": "Bruce Brown",
+      "team": "DET",
+      "reference_name": "Bruce Brown",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 19.6,
+        "ppg": 4.3,
+        "rpg": 2.5,
+        "apg": 1.2,
+        "spg": 0.5,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 202397,
+      "player": "Ish Smith",
+      "team": "DET",
+      "reference_name": "Ish Smith",
+      "reference_stats": {
+        "gp": 56.0,
+        "mpg": 22.3,
+        "ppg": 8.9,
+        "rpg": 2.6,
+        "apg": 3.6,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 204038,
+      "player": "Langston Galloway",
+      "team": "DET",
+      "reference_name": "Langston Galloway",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 21.8,
+        "ppg": 8.4,
+        "rpg": 2.1,
+        "apg": 1.1,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1628379,
+      "player": "Luke Kennard",
+      "team": "DET",
+      "reference_name": "Luke Kennard",
+      "reference_stats": {
+        "gp": 63.0,
+        "mpg": 22.8,
+        "ppg": 9.7,
+        "rpg": 2.9,
+        "apg": 1.8,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203493,
+      "player": "Reggie Bullock Jr.",
+      "team": "DET",
+      "reference_name": "Reggie Bullock",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 30.8,
+        "ppg": 12.1,
+        "rpg": 2.8,
+        "apg": 2.5,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 202704,
+      "player": "Reggie Jackson",
+      "team": "DET",
+      "reference_name": "Reggie Jackson",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 27.9,
+        "ppg": 15.4,
+        "rpg": 2.6,
+        "apg": 4.2,
+        "spg": 0.7,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626169,
+      "player": "Stanley Johnson",
+      "team": "DET",
+      "reference_name": "Stanley Johnson",
+      "reference_stats": {
+        "gp": 48.0,
+        "mpg": 20.0,
+        "ppg": 7.5,
+        "rpg": 3.6,
+        "apg": 1.3,
+        "spg": 1.0,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 2738,
+      "player": "Andre Iguodala",
+      "team": "GSW",
+      "reference_name": "Andre Iguodala",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 23.2,
+        "ppg": 5.7,
+        "rpg": 3.7,
+        "apg": 3.2,
+        "spg": 0.9,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 202326,
+      "player": "DeMarcus Cousins",
+      "team": "GSW",
+      "reference_name": "DeMarcus Cousins",
+      "reference_stats": {
+        "gp": 30.0,
+        "mpg": 25.7,
+        "ppg": 16.3,
+        "rpg": 8.2,
+        "apg": 3.6,
+        "spg": 1.3,
+        "bpg": 1.5
+      }
+    },
+    {
+      "player_id": 203110,
+      "player": "Draymond Green",
+      "team": "GSW",
+      "reference_name": "Draymond Green",
+      "reference_stats": {
+        "gp": 66.0,
+        "mpg": 31.3,
+        "ppg": 7.4,
+        "rpg": 7.3,
+        "apg": 6.9,
+        "spg": 1.4,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 201973,
+      "player": "Jonas Jerebko",
+      "team": "GSW",
+      "reference_name": "Jonas Jerebko",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 16.7,
+        "ppg": 6.3,
+        "rpg": 3.9,
+        "apg": 1.3,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 201142,
+      "player": "Kevin Durant",
+      "team": "GSW",
+      "reference_name": "Kevin Durant",
+      "reference_stats": {
+        "gp": 78.0,
+        "mpg": 34.6,
+        "ppg": 26.0,
+        "rpg": 6.4,
+        "apg": 5.9,
+        "spg": 0.7,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 1626172,
+      "player": "Kevon Looney",
+      "team": "GSW",
+      "reference_name": "Kevon Looney",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 18.5,
+        "ppg": 6.3,
+        "rpg": 5.2,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 202691,
+      "player": "Klay Thompson",
+      "team": "GSW",
+      "reference_name": "Klay Thompson",
+      "reference_stats": {
+        "gp": 78.0,
+        "mpg": 34.0,
+        "ppg": 21.5,
+        "rpg": 3.8,
+        "apg": 2.4,
+        "spg": 1.1,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 2733,
+      "player": "Shaun Livingston",
+      "team": "GSW",
+      "reference_name": "Shaun Livingston",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 15.1,
+        "ppg": 4.0,
+        "rpg": 1.8,
+        "apg": 1.8,
+        "spg": 0.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201939,
+      "player": "Stephen Curry",
+      "team": "GSW",
+      "reference_name": "Stephen Curry",
+      "reference_stats": {
+        "gp": 69.0,
+        "mpg": 33.8,
+        "ppg": 27.3,
+        "rpg": 5.3,
+        "apg": 5.2,
+        "spg": 1.3,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203085,
+      "player": "Austin Rivers",
+      "team": "HOU",
+      "reference_name": "Austin Rivers",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 28.6,
+        "ppg": 8.7,
+        "rpg": 1.9,
+        "apg": 2.3,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 101108,
+      "player": "Chris Paul",
+      "team": "HOU",
+      "reference_name": "Chris Paul",
+      "reference_stats": {
+        "gp": 58.0,
+        "mpg": 32.0,
+        "ppg": 15.6,
+        "rpg": 4.6,
+        "apg": 8.2,
+        "spg": 2.0,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203991,
+      "player": "Clint Capela",
+      "team": "HOU",
+      "reference_name": "Clint Capela",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 33.6,
+        "ppg": 16.6,
+        "rpg": 12.7,
+        "apg": 1.4,
+        "spg": 0.7,
+        "bpg": 1.5
+      }
+    },
+    {
+      "player_id": 1627863,
+      "player": "Danuel House Jr.",
+      "team": "HOU",
+      "reference_name": "Danuel House",
+      "reference_stats": {
+        "gp": 39.0,
+        "mpg": 25.1,
+        "ppg": 9.4,
+        "rpg": 3.6,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 201569,
+      "player": "Eric Gordon",
+      "team": "HOU",
+      "reference_name": "Eric Gordon",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 31.7,
+        "ppg": 16.2,
+        "rpg": 2.2,
+        "apg": 1.9,
+        "spg": 0.6,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 101123,
+      "player": "Gerald Green",
+      "team": "HOU",
+      "reference_name": "Gerald Green",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 20.2,
+        "ppg": 9.2,
+        "rpg": 2.5,
+        "apg": 0.5,
+        "spg": 0.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203516,
+      "player": "James Ennis III",
+      "team": "HOU",
+      "reference_name": "James Ennis",
+      "reference_stats": {
+        "gp": 40.0,
+        "mpg": 23.7,
+        "ppg": 7.4,
+        "rpg": 2.9,
+        "apg": 0.7,
+        "spg": 1.0,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201935,
+      "player": "James Harden",
+      "team": "HOU",
+      "reference_name": "James Harden",
+      "reference_stats": {
+        "gp": 78.0,
+        "mpg": 36.8,
+        "ppg": 36.1,
+        "rpg": 6.6,
+        "apg": 7.5,
+        "spg": 2.0,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 200782,
+      "player": "P.J. Tucker",
+      "team": "HOU",
+      "reference_name": "P.J. Tucker",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 34.2,
+        "ppg": 7.3,
+        "rpg": 5.8,
+        "apg": 1.2,
+        "spg": 1.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 202711,
+      "player": "Bojan Bogdanović",
+      "team": "IND",
+      "reference_name": "Bojan Bogdanović",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 31.8,
+        "ppg": 18.0,
+        "rpg": 4.1,
+        "apg": 2.0,
+        "spg": 0.9,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 202709,
+      "player": "Cory Joseph",
+      "team": "IND",
+      "reference_name": "Cory Joseph",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 25.2,
+        "ppg": 6.5,
+        "rpg": 3.4,
+        "apg": 3.9,
+        "spg": 1.1,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 201954,
+      "player": "Darren Collison",
+      "team": "IND",
+      "reference_name": "Darren Collison",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 28.2,
+        "ppg": 11.2,
+        "rpg": 3.1,
+        "apg": 6.0,
+        "spg": 1.4,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1627734,
+      "player": "Domantas Sabonis",
+      "team": "IND",
+      "reference_name": "Domantas Sabonis",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 24.8,
+        "ppg": 14.1,
+        "rpg": 9.3,
+        "apg": 2.9,
+        "spg": 0.6,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203926,
+      "player": "Doug McDermott",
+      "team": "IND",
+      "reference_name": "Doug McDermott",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 17.4,
+        "ppg": 7.3,
+        "rpg": 1.4,
+        "apg": 0.9,
+        "spg": 0.2,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626167,
+      "player": "Myles Turner",
+      "team": "IND",
+      "reference_name": "Myles Turner",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 28.6,
+        "ppg": 13.3,
+        "rpg": 7.2,
+        "apg": 1.6,
+        "spg": 0.8,
+        "bpg": 2.7
+      }
+    },
+    {
+      "player_id": 201152,
+      "player": "Thaddeus Young",
+      "team": "IND",
+      "reference_name": "Thaddeus Young",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 30.7,
+        "ppg": 12.6,
+        "rpg": 6.5,
+        "apg": 2.5,
+        "spg": 1.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201936,
+      "player": "Tyreke Evans",
+      "team": "IND",
+      "reference_name": "Tyreke Evans",
+      "reference_stats": {
+        "gp": 69.0,
+        "mpg": 20.3,
+        "ppg": 10.2,
+        "rpg": 2.9,
+        "apg": 2.4,
+        "spg": 0.8,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203506,
+      "player": "Victor Oladipo",
+      "team": "IND",
+      "reference_name": "Victor Oladipo",
+      "reference_stats": {
+        "gp": 36.0,
+        "mpg": 31.9,
+        "ppg": 18.8,
+        "rpg": 5.6,
+        "apg": 5.2,
+        "spg": 1.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 202340,
+      "player": "Avery Bradley",
+      "team": "LAC",
+      "reference_name": "Avery Bradley",
+      "reference_stats": {
+        "gp": 49.0,
+        "mpg": 29.9,
+        "ppg": 8.2,
+        "rpg": 2.7,
+        "apg": 2.0,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 201568,
+      "player": "Danilo Gallinari",
+      "team": "LAC",
+      "reference_name": "Danilo Gallinari",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 30.3,
+        "ppg": 19.8,
+        "rpg": 6.1,
+        "apg": 2.6,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 101150,
+      "player": "Lou Williams",
+      "team": "LAC",
+      "reference_name": "Lou Williams",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 26.6,
+        "ppg": 20.0,
+        "rpg": 3.0,
+        "apg": 5.4,
+        "spg": 0.8,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 101162,
+      "player": "Marcin Gortat",
+      "team": "LAC",
+      "reference_name": "Marcin Gortat",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 16.0,
+        "ppg": 5.0,
+        "rpg": 5.6,
+        "apg": 1.4,
+        "spg": 0.1,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1626149,
+      "player": "Montrezl Harrell",
+      "team": "LAC",
+      "reference_name": "Montrezl Harrell",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 26.3,
+        "ppg": 16.6,
+        "rpg": 6.5,
+        "apg": 2.0,
+        "spg": 0.9,
+        "bpg": 1.3
+      }
+    },
+    {
+      "player_id": 201976,
+      "player": "Patrick Beverley",
+      "team": "LAC",
+      "reference_name": "Patrick Beverley",
+      "reference_stats": {
+        "gp": 78.0,
+        "mpg": 27.4,
+        "ppg": 7.6,
+        "rpg": 5.0,
+        "apg": 3.8,
+        "spg": 0.9,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1628983,
+      "player": "Shai Gilgeous-Alexander",
+      "team": "LAC",
+      "reference_name": "Shai Gilgeous-Alexander",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 26.5,
+        "ppg": 10.8,
+        "rpg": 2.8,
+        "apg": 3.3,
+        "spg": 1.2,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 202699,
+      "player": "Tobias Harris",
+      "team": "LAC",
+      "reference_name": "Tobias Harris",
+      "reference_stats": {
+        "gp": 55.0,
+        "mpg": 34.6,
+        "ppg": 20.9,
+        "rpg": 7.9,
+        "apg": 2.7,
+        "spg": 0.7,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1627742,
+      "player": "Brandon Ingram",
+      "team": "LAL",
+      "reference_name": "Brandon Ingram",
+      "reference_stats": {
+        "gp": 52.0,
+        "mpg": 33.8,
+        "ppg": 18.3,
+        "rpg": 5.1,
+        "apg": 3.0,
+        "spg": 0.5,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1627826,
+      "player": "Ivica Zubac",
+      "team": "LAL",
+      "reference_name": "Ivica Zubac",
+      "reference_stats": {
+        "gp": 33.0,
+        "mpg": 15.6,
+        "ppg": 8.5,
+        "rpg": 4.9,
+        "apg": 0.8,
+        "spg": 0.1,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 201580,
+      "player": "JaVale McGee",
+      "team": "LAL",
+      "reference_name": "JaVale McGee",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 22.3,
+        "ppg": 12.0,
+        "rpg": 7.5,
+        "apg": 0.7,
+        "spg": 0.6,
+        "bpg": 2.0
+      }
+    },
+    {
+      "player_id": 1628404,
+      "player": "Josh Hart",
+      "team": "LAL",
+      "reference_name": "Josh Hart",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 25.6,
+        "ppg": 7.8,
+        "rpg": 3.7,
+        "apg": 1.4,
+        "spg": 1.0,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 203484,
+      "player": "Kentavious Caldwell-Pope",
+      "team": "LAL",
+      "reference_name": "Kentavious Caldwell-Pope",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 24.8,
+        "ppg": 11.4,
+        "rpg": 2.9,
+        "apg": 1.3,
+        "spg": 0.9,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628398,
+      "player": "Kyle Kuzma",
+      "team": "LAL",
+      "reference_name": "Kyle Kuzma",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 33.1,
+        "ppg": 18.7,
+        "rpg": 5.5,
+        "apg": 2.5,
+        "spg": 0.6,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 202362,
+      "player": "Lance Stephenson",
+      "team": "LAL",
+      "reference_name": "Lance Stephenson",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 16.5,
+        "ppg": 7.2,
+        "rpg": 3.2,
+        "apg": 2.1,
+        "spg": 0.6,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 2544,
+      "player": "LeBron James",
+      "team": "LAL",
+      "reference_name": "LeBron James",
+      "reference_stats": {
+        "gp": 55.0,
+        "mpg": 35.2,
+        "ppg": 27.4,
+        "rpg": 8.5,
+        "apg": 8.3,
+        "spg": 1.3,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1628366,
+      "player": "Lonzo Ball",
+      "team": "LAL",
+      "reference_name": "Lonzo Ball",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 30.3,
+        "ppg": 9.9,
+        "rpg": 5.3,
+        "apg": 5.4,
+        "spg": 1.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 200765,
+      "player": "Rajon Rondo",
+      "team": "LAL",
+      "reference_name": "Rajon Rondo",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 29.8,
+        "ppg": 9.2,
+        "rpg": 5.3,
+        "apg": 8.0,
+        "spg": 1.2,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 2199,
+      "player": "Tyson Chandler",
+      "team": "LAL",
+      "reference_name": "Tyson Chandler",
+      "reference_stats": {
+        "gp": 48.0,
+        "mpg": 16.4,
+        "ppg": 3.1,
+        "rpg": 5.6,
+        "apg": 0.6,
+        "spg": 0.4,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203998,
+      "player": "Bruno Caboclo",
+      "team": "MEM",
+      "reference_name": "Bruno Caboclo",
+      "reference_stats": {
+        "gp": 34.0,
+        "mpg": 23.5,
+        "ppg": 8.3,
+        "rpg": 4.6,
+        "apg": 1.5,
+        "spg": 0.4,
+        "bpg": 1.0
+      }
+    },
+    {
+      "player_id": 202066,
+      "player": "Garrett Temple",
+      "team": "MEM",
+      "reference_name": "Garrett Temple",
+      "reference_stats": {
+        "gp": 49.0,
+        "mpg": 31.2,
+        "ppg": 9.4,
+        "rpg": 3.1,
+        "apg": 1.4,
+        "spg": 1.0,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203210,
+      "player": "JaMychal Green",
+      "team": "MEM",
+      "reference_name": "JaMychal Green",
+      "reference_stats": {
+        "gp": 41.0,
+        "mpg": 22.0,
+        "ppg": 9.8,
+        "rpg": 6.1,
+        "apg": 0.9,
+        "spg": 0.8,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1628991,
+      "player": "Jaren Jackson Jr.",
+      "team": "MEM",
+      "reference_name": "Jaren Jackson Jr.",
+      "reference_stats": {
+        "gp": 58.0,
+        "mpg": 26.1,
+        "ppg": 13.8,
+        "rpg": 4.7,
+        "apg": 1.1,
+        "spg": 0.9,
+        "bpg": 1.4
+      }
+    },
+    {
+      "player_id": 201149,
+      "player": "Joakim Noah",
+      "team": "MEM",
+      "reference_name": "Joakim Noah",
+      "reference_stats": {
+        "gp": 42.0,
+        "mpg": 16.5,
+        "ppg": 7.1,
+        "rpg": 5.7,
+        "apg": 2.1,
+        "spg": 0.5,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 203200,
+      "player": "Justin Holiday",
+      "team": "MEM",
+      "reference_name": "Justin Holiday",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 29.1,
+        "ppg": 9.5,
+        "rpg": 3.5,
+        "apg": 1.4,
+        "spg": 1.2,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203937,
+      "player": "Kyle Anderson",
+      "team": "MEM",
+      "reference_name": "Kyle Anderson",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 29.8,
+        "ppg": 8.0,
+        "rpg": 5.8,
+        "apg": 3.0,
+        "spg": 1.3,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 201188,
+      "player": "Marc Gasol",
+      "team": "MEM",
+      "reference_name": "Marc Gasol",
+      "reference_stats": {
+        "gp": 53.0,
+        "mpg": 33.7,
+        "ppg": 15.7,
+        "rpg": 8.6,
+        "apg": 4.7,
+        "spg": 1.1,
+        "bpg": 1.2
+      }
+    },
+    {
+      "player_id": 201144,
+      "player": "Mike Conley",
+      "team": "MEM",
+      "reference_name": "Mike Conley",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 33.5,
+        "ppg": 21.1,
+        "rpg": 3.4,
+        "apg": 6.4,
+        "spg": 1.3,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 202714,
+      "player": "Shelvin Mack",
+      "team": "MEM",
+      "reference_name": "Shelvin Mack",
+      "reference_stats": {
+        "gp": 53.0,
+        "mpg": 22.7,
+        "ppg": 7.9,
+        "rpg": 1.9,
+        "apg": 3.4,
+        "spg": 0.8,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1628389,
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "reference_name": "Bam Adebayo",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 23.3,
+        "ppg": 8.9,
+        "rpg": 7.3,
+        "apg": 2.2,
+        "spg": 0.9,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 1627884,
+      "player": "Derrick Jones Jr.",
+      "team": "MIA",
+      "reference_name": "Derrick Jones Jr.",
+      "reference_stats": {
+        "gp": 60.0,
+        "mpg": 19.2,
+        "ppg": 7.0,
+        "rpg": 4.0,
+        "apg": 0.6,
+        "spg": 0.8,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 203079,
+      "player": "Dion Waiters",
+      "team": "MIA",
+      "reference_name": "Dion Waiters",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 25.9,
+        "ppg": 12.0,
+        "rpg": 2.6,
+        "apg": 2.8,
+        "spg": 0.7,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 2548,
+      "player": "Dwyane Wade",
+      "team": "MIA",
+      "reference_name": "Dwyane Wade",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 26.2,
+        "ppg": 15.0,
+        "rpg": 4.0,
+        "apg": 4.2,
+        "spg": 0.8,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 201609,
+      "player": "Goran Dragic",
+      "team": "MIA",
+      "reference_name": "Goran Dragić",
+      "reference_stats": {
+        "gp": 36.0,
+        "mpg": 27.5,
+        "ppg": 13.7,
+        "rpg": 3.1,
+        "apg": 4.8,
+        "spg": 0.8,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 202355,
+      "player": "Hassan Whiteside",
+      "team": "MIA",
+      "reference_name": "Hassan Whiteside",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 23.3,
+        "ppg": 12.3,
+        "rpg": 11.3,
+        "apg": 0.8,
+        "spg": 0.6,
+        "bpg": 1.9
+      }
+    },
+    {
+      "player_id": 201949,
+      "player": "James Johnson",
+      "team": "MIA",
+      "reference_name": "James Johnson",
+      "reference_stats": {
+        "gp": 55.0,
+        "mpg": 21.2,
+        "ppg": 7.8,
+        "rpg": 3.2,
+        "apg": 2.5,
+        "spg": 0.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1626196,
+      "player": "Josh Richardson",
+      "team": "MIA",
+      "reference_name": "Josh Richardson",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 34.8,
+        "ppg": 16.6,
+        "rpg": 3.6,
+        "apg": 4.1,
+        "spg": 1.1,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1626159,
+      "player": "Justise Winslow",
+      "team": "MIA",
+      "reference_name": "Justise Winslow",
+      "reference_stats": {
+        "gp": 66.0,
+        "mpg": 29.7,
+        "ppg": 12.6,
+        "rpg": 5.4,
+        "apg": 4.3,
+        "spg": 1.1,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203482,
+      "player": "Kelly Olynyk",
+      "team": "MIA",
+      "reference_name": "Kelly Olynyk",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 22.9,
+        "ppg": 10.0,
+        "rpg": 4.7,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203585,
+      "player": "Rodney McGruder",
+      "team": "MIA",
+      "reference_name": "Rodney McGruder",
+      "reference_stats": {
+        "gp": 66.0,
+        "mpg": 23.5,
+        "ppg": 7.6,
+        "rpg": 3.6,
+        "apg": 1.7,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 204020,
+      "player": "Tyler Johnson",
+      "team": "MIA",
+      "reference_name": "Tyler Johnson",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 25.5,
+        "ppg": 10.8,
+        "rpg": 2.8,
+        "apg": 2.5,
+        "spg": 0.9,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 201572,
+      "player": "Brook Lopez",
+      "team": "MIL",
+      "reference_name": "Brook Lopez",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 28.7,
+        "ppg": 12.5,
+        "rpg": 4.9,
+        "apg": 1.2,
+        "spg": 0.6,
+        "bpg": 2.2
+      }
+    },
+    {
+      "player_id": 1628391,
+      "player": "D.J. Wilson",
+      "team": "MIL",
+      "reference_name": "D.J. Wilson",
+      "reference_stats": {
+        "gp": 48.0,
+        "mpg": 18.4,
+        "ppg": 5.8,
+        "rpg": 4.6,
+        "apg": 1.1,
+        "spg": 0.4,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 202339,
+      "player": "Eric Bledsoe",
+      "team": "MIL",
+      "reference_name": "Eric Bledsoe",
+      "reference_stats": {
+        "gp": 78.0,
+        "mpg": 29.1,
+        "ppg": 15.9,
+        "rpg": 4.6,
+        "apg": 5.5,
+        "spg": 1.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 101141,
+      "player": "Ersan Ilyasova",
+      "team": "MIL",
+      "reference_name": "Ersan İlyasova",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 18.4,
+        "ppg": 6.8,
+        "rpg": 4.5,
+        "apg": 0.8,
+        "spg": 0.5,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 201588,
+      "player": "George Hill",
+      "team": "MIL",
+      "reference_name": "George Hill",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 20.4,
+        "ppg": 6.8,
+        "rpg": 2.6,
+        "apg": 2.1,
+        "spg": 0.9,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203507,
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "reference_name": "Giannis Antetokounmpo",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 32.8,
+        "ppg": 27.7,
+        "rpg": 12.5,
+        "apg": 5.9,
+        "spg": 1.3,
+        "bpg": 1.5
+      }
+    },
+    {
+      "player_id": 203114,
+      "player": "Khris Middleton",
+      "team": "MIL",
+      "reference_name": "Khris Middleton",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 31.1,
+        "ppg": 18.3,
+        "rpg": 6.0,
+        "apg": 4.3,
+        "spg": 1.0,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1627763,
+      "player": "Malcolm Brogdon",
+      "team": "MIL",
+      "reference_name": "Malcolm Brogdon",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 28.6,
+        "ppg": 15.6,
+        "rpg": 4.5,
+        "apg": 3.2,
+        "spg": 0.7,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1626192,
+      "player": "Pat Connaughton",
+      "team": "MIL",
+      "reference_name": "Pat Connaughton",
+      "reference_stats": {
+        "gp": 61.0,
+        "mpg": 20.7,
+        "ppg": 6.9,
+        "rpg": 4.2,
+        "apg": 2.0,
+        "spg": 0.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628425,
+      "player": "Sterling Brown",
+      "team": "MIL",
+      "reference_name": "Sterling Brown",
+      "reference_stats": {
+        "gp": 58.0,
+        "mpg": 17.8,
+        "ppg": 6.4,
+        "rpg": 3.2,
+        "apg": 1.4,
+        "spg": 0.4,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203503,
+      "player": "Tony Snell",
+      "team": "MIL",
+      "reference_name": "Tony Snell",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 17.6,
+        "ppg": 6.0,
+        "rpg": 2.1,
+        "apg": 0.9,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203952,
+      "player": "Andrew Wiggins",
+      "team": "MIN",
+      "reference_name": "Andrew Wiggins",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 34.8,
+        "ppg": 18.1,
+        "rpg": 4.8,
+        "apg": 2.5,
+        "spg": 1.0,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 201229,
+      "player": "Anthony Tolliver",
+      "team": "MIN",
+      "reference_name": "Anthony Tolliver",
+      "reference_stats": {
+        "gp": 65.0,
+        "mpg": 16.6,
+        "ppg": 5.0,
+        "rpg": 2.7,
+        "apg": 0.7,
+        "spg": 0.3,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203967,
+      "player": "Dario Šarić",
+      "team": "MIN",
+      "reference_name": "Dario Šarić",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 23.9,
+        "ppg": 10.5,
+        "rpg": 5.5,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 201565,
+      "player": "Derrick Rose",
+      "team": "MIN",
+      "reference_name": "Derrick Rose",
+      "reference_stats": {
+        "gp": 51.0,
+        "mpg": 27.3,
+        "ppg": 18.0,
+        "rpg": 2.7,
+        "apg": 4.3,
+        "spg": 0.6,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 201952,
+      "player": "Jeff Teague",
+      "team": "MIN",
+      "reference_name": "Jeff Teague",
+      "reference_stats": {
+        "gp": 42.0,
+        "mpg": 30.1,
+        "ppg": 12.1,
+        "rpg": 2.5,
+        "apg": 8.2,
+        "spg": 1.0,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201573,
+      "player": "Jerryd Bayless",
+      "team": "MIN",
+      "reference_name": "Jerryd Bayless",
+      "reference_stats": {
+        "gp": 34.0,
+        "mpg": 19.3,
+        "ppg": 6.1,
+        "rpg": 1.8,
+        "apg": 3.5,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1629006,
+      "player": "Josh Okogie",
+      "team": "MIN",
+      "reference_name": "Josh Okogie",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 23.7,
+        "ppg": 7.7,
+        "rpg": 2.9,
+        "apg": 1.2,
+        "spg": 1.2,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1626157,
+      "player": "Karl-Anthony Towns",
+      "team": "MIN",
+      "reference_name": "Karl-Anthony Towns",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 33.1,
+        "ppg": 24.4,
+        "rpg": 12.4,
+        "apg": 3.4,
+        "spg": 0.9,
+        "bpg": 1.6
+      }
+    },
+    {
+      "player_id": 1628966,
+      "player": "Keita Bates-Diop",
+      "team": "MIN",
+      "reference_name": "Keita Bates-Diop",
+      "reference_stats": {
+        "gp": 30.0,
+        "mpg": 16.8,
+        "ppg": 5.0,
+        "rpg": 2.8,
+        "apg": 0.6,
+        "spg": 0.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 201959,
+      "player": "Taj Gibson",
+      "team": "MIN",
+      "reference_name": "Taj Gibson",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 24.1,
+        "ppg": 10.8,
+        "rpg": 6.5,
+        "apg": 1.2,
+        "spg": 0.8,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1626145,
+      "player": "Tyus Jones",
+      "team": "MIN",
+      "reference_name": "Tyus Jones",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 22.9,
+        "ppg": 6.9,
+        "rpg": 2.0,
+        "apg": 4.8,
+        "spg": 1.2,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203076,
+      "player": "Anthony Davis",
+      "team": "NOP",
+      "reference_name": "Anthony Davis",
+      "reference_stats": {
+        "gp": 56.0,
+        "mpg": 33.0,
+        "ppg": 25.9,
+        "rpg": 12.0,
+        "apg": 3.9,
+        "spg": 1.6,
+        "bpg": 2.4
+      }
+    },
+    {
+      "player_id": 203121,
+      "player": "Darius Miller",
+      "team": "NOP",
+      "reference_name": "Darius Miller",
+      "reference_stats": {
+        "gp": 69.0,
+        "mpg": 25.5,
+        "ppg": 8.2,
+        "rpg": 1.9,
+        "apg": 2.1,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 202734,
+      "player": "E'Twaun Moore",
+      "team": "NOP",
+      "reference_name": "E'Twaun Moore",
+      "reference_stats": {
+        "gp": 53.0,
+        "mpg": 27.6,
+        "ppg": 11.9,
+        "rpg": 2.4,
+        "apg": 1.9,
+        "spg": 0.8,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203901,
+      "player": "Elfrid Payton",
+      "team": "NOP",
+      "reference_name": "Elfrid Payton",
+      "reference_stats": {
+        "gp": 42.0,
+        "mpg": 29.8,
+        "ppg": 10.6,
+        "rpg": 5.2,
+        "apg": 7.6,
+        "spg": 1.0,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628402,
+      "player": "Frank Jackson",
+      "team": "NOP",
+      "reference_name": "Frank Jackson",
+      "reference_stats": {
+        "gp": 61.0,
+        "mpg": 19.2,
+        "ppg": 8.1,
+        "rpg": 2.2,
+        "apg": 1.1,
+        "spg": 0.4,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 203546,
+      "player": "Ian Clark",
+      "team": "NOP",
+      "reference_name": "Ian Clark",
+      "reference_stats": {
+        "gp": 60.0,
+        "mpg": 16.2,
+        "ppg": 6.7,
+        "rpg": 1.5,
+        "apg": 1.6,
+        "spg": 0.4,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626143,
+      "player": "Jahlil Okafor",
+      "team": "NOP",
+      "reference_name": "Jahlil Okafor",
+      "reference_stats": {
+        "gp": 59.0,
+        "mpg": 15.8,
+        "ppg": 8.2,
+        "rpg": 4.7,
+        "apg": 0.7,
+        "spg": 0.3,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 201950,
+      "player": "Jrue Holiday",
+      "team": "NOP",
+      "reference_name": "Jrue Holiday",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 35.9,
+        "ppg": 21.2,
+        "rpg": 5.0,
+        "apg": 7.7,
+        "spg": 1.6,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 203944,
+      "player": "Julius Randle",
+      "team": "NOP",
+      "reference_name": "Julius Randle",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 30.6,
+        "ppg": 21.4,
+        "rpg": 8.7,
+        "apg": 3.1,
+        "spg": 0.7,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1629026,
+      "player": "Kenrich Williams",
+      "team": "NOP",
+      "reference_name": "Kenrich Williams",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 23.5,
+        "ppg": 6.1,
+        "rpg": 4.8,
+        "apg": 1.8,
+        "spg": 1.0,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 202703,
+      "player": "Nikola Mirotic",
+      "team": "NOP",
+      "reference_name": "Nikola Mirotić",
+      "reference_stats": {
+        "gp": 32.0,
+        "mpg": 28.9,
+        "ppg": 16.7,
+        "rpg": 8.3,
+        "apg": 1.1,
+        "spg": 0.7,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 203524,
+      "player": "Solomon Hill",
+      "team": "NOP",
+      "reference_name": "Solomon Hill",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 20.0,
+        "ppg": 4.3,
+        "rpg": 3.0,
+        "apg": 1.3,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 204025,
+      "player": "Tim Frazier",
+      "team": "NOP",
+      "reference_name": "Tim Frazier",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 19.3,
+        "ppg": 5.0,
+        "rpg": 2.9,
+        "apg": 4.4,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1629019,
+      "player": "Allonzo Trier",
+      "team": "NYK",
+      "reference_name": "Allonzo Trier",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 22.8,
+        "ppg": 10.9,
+        "rpg": 3.1,
+        "apg": 1.9,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628422,
+      "player": "Damyean Dotson",
+      "team": "NYK",
+      "reference_name": "Damyean Dotson",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 27.5,
+        "ppg": 10.7,
+        "rpg": 3.6,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626144,
+      "player": "Emmanuel Mudiay",
+      "team": "NYK",
+      "reference_name": "Emmanuel Mudiay",
+      "reference_stats": {
+        "gp": 59.0,
+        "mpg": 27.2,
+        "ppg": 14.8,
+        "rpg": 3.3,
+        "apg": 3.9,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 202683,
+      "player": "Enes Freedom",
+      "team": "NYK",
+      "reference_name": "Enes Kanter",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 25.6,
+        "ppg": 14.0,
+        "rpg": 10.5,
+        "apg": 1.9,
+        "spg": 0.4,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628373,
+      "player": "Frank Ntilikina",
+      "team": "NYK",
+      "reference_name": "Frank Ntilikina",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 21.0,
+        "ppg": 5.7,
+        "rpg": 2.0,
+        "apg": 2.8,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1628995,
+      "player": "Kevin Knox II",
+      "team": "NYK",
+      "reference_name": "Kevin Knox",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 28.8,
+        "ppg": 12.8,
+        "rpg": 4.5,
+        "apg": 1.1,
+        "spg": 0.6,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 202498,
+      "player": "Lance Thomas",
+      "team": "NYK",
+      "reference_name": "Lance Thomas",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 17.0,
+        "ppg": 4.5,
+        "rpg": 2.5,
+        "apg": 0.6,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628436,
+      "player": "Luke Kornet",
+      "team": "NYK",
+      "reference_name": "Luke Kornet",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 17.0,
+        "ppg": 7.0,
+        "rpg": 2.9,
+        "apg": 1.2,
+        "spg": 0.6,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 1626209,
+      "player": "Mario Hezonja",
+      "team": "NYK",
+      "reference_name": "Mario Hezonja",
+      "reference_stats": {
+        "gp": 58.0,
+        "mpg": 20.8,
+        "ppg": 8.8,
+        "rpg": 4.1,
+        "apg": 1.5,
+        "spg": 1.0,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1629011,
+      "player": "Mitchell Robinson",
+      "team": "NYK",
+      "reference_name": "Mitchell Robinson",
+      "reference_stats": {
+        "gp": 66.0,
+        "mpg": 20.6,
+        "ppg": 7.3,
+        "rpg": 6.4,
+        "apg": 0.6,
+        "spg": 0.8,
+        "bpg": 2.4
+      }
+    },
+    {
+      "player_id": 203943,
+      "player": "Noah Vonleh",
+      "team": "NYK",
+      "reference_name": "Noah Vonleh",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 25.3,
+        "ppg": 8.4,
+        "rpg": 7.8,
+        "apg": 1.9,
+        "spg": 0.7,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 203501,
+      "player": "Tim Hardaway Jr.",
+      "team": "NYK",
+      "reference_name": "Tim Hardaway Jr.",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 32.6,
+        "ppg": 19.1,
+        "rpg": 3.5,
+        "apg": 2.7,
+        "spg": 0.9,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203504,
+      "player": "Trey Burke",
+      "team": "NYK",
+      "reference_name": "Trey Burke",
+      "reference_stats": {
+        "gp": 33.0,
+        "mpg": 20.9,
+        "ppg": 11.8,
+        "rpg": 1.9,
+        "apg": 2.8,
+        "spg": 0.6,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203518,
+      "player": "Alex Abrines",
+      "team": "OKC",
+      "reference_name": "Álex Abrines",
+      "reference_stats": {
+        "gp": 31.0,
+        "mpg": 19.0,
+        "ppg": 5.3,
+        "rpg": 1.5,
+        "apg": 0.6,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203471,
+      "player": "Dennis Schröder",
+      "team": "OKC",
+      "reference_name": "Dennis Schröder",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 29.3,
+        "ppg": 15.5,
+        "rpg": 3.6,
+        "apg": 4.1,
+        "spg": 0.8,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203924,
+      "player": "Jerami Grant",
+      "team": "OKC",
+      "reference_name": "Jerami Grant",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 32.7,
+        "ppg": 13.6,
+        "rpg": 5.2,
+        "apg": 1.0,
+        "spg": 0.8,
+        "bpg": 1.3
+      }
+    },
+    {
+      "player_id": 202331,
+      "player": "Paul George",
+      "team": "OKC",
+      "reference_name": "Paul George",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 36.9,
+        "ppg": 28.0,
+        "rpg": 8.2,
+        "apg": 4.1,
+        "spg": 2.2,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201566,
+      "player": "Russell Westbrook",
+      "team": "OKC",
+      "reference_name": "Russell Westbrook",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 36.0,
+        "ppg": 22.9,
+        "rpg": 11.1,
+        "apg": 10.7,
+        "spg": 1.9,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203500,
+      "player": "Steven Adams",
+      "team": "OKC",
+      "reference_name": "Steven Adams",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 33.4,
+        "ppg": 13.9,
+        "rpg": 9.5,
+        "apg": 1.6,
+        "spg": 1.5,
+        "bpg": 1.0
+      }
+    },
+    {
+      "player_id": 1628390,
+      "player": "Terrance Ferguson",
+      "team": "OKC",
+      "reference_name": "Terrance Ferguson",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 26.1,
+        "ppg": 6.9,
+        "rpg": 1.9,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 203932,
+      "player": "Aaron Gordon",
+      "team": "ORL",
+      "reference_name": "Aaron Gordon",
+      "reference_stats": {
+        "gp": 78.0,
+        "mpg": 33.8,
+        "ppg": 16.0,
+        "rpg": 7.4,
+        "apg": 3.7,
+        "spg": 0.7,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 201571,
+      "player": "D.J. Augustin",
+      "team": "ORL",
+      "reference_name": "D.J. Augustin",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 28.0,
+        "ppg": 11.7,
+        "rpg": 2.5,
+        "apg": 5.3,
+        "spg": 0.6,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 203095,
+      "player": "Evan Fournier",
+      "team": "ORL",
+      "reference_name": "Evan Fournier",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 31.5,
+        "ppg": 15.1,
+        "rpg": 3.2,
+        "apg": 3.6,
+        "spg": 0.9,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626170,
+      "player": "Jerian Grant",
+      "team": "ORL",
+      "reference_name": "Jerian Grant",
+      "reference_stats": {
+        "gp": 60.0,
+        "mpg": 15.7,
+        "ppg": 4.2,
+        "rpg": 1.6,
+        "apg": 2.6,
+        "spg": 0.7,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1628371,
+      "player": "Jonathan Isaac",
+      "team": "ORL",
+      "reference_name": "Jonathan Isaac",
+      "reference_stats": {
+        "gp": 75.0,
+        "mpg": 26.6,
+        "ppg": 9.6,
+        "rpg": 5.5,
+        "apg": 1.1,
+        "spg": 0.8,
+        "bpg": 1.3
+      }
+    },
+    {
+      "player_id": 203613,
+      "player": "Jonathon Simmons",
+      "team": "ORL",
+      "reference_name": "Jonathon Simmons",
+      "reference_stats": {
+        "gp": 41.0,
+        "mpg": 20.6,
+        "ppg": 6.9,
+        "rpg": 2.4,
+        "apg": 2.3,
+        "spg": 0.4,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1628964,
+      "player": "Mo Bamba",
+      "team": "ORL",
+      "reference_name": "Mo Bamba",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 16.3,
+        "ppg": 6.2,
+        "rpg": 5.0,
+        "apg": 0.8,
+        "spg": 0.3,
+        "bpg": 1.4
+      }
+    },
+    {
+      "player_id": 202696,
+      "player": "Nikola Vučević",
+      "team": "ORL",
+      "reference_name": "Nikola Vučević",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 31.4,
+        "ppg": 20.8,
+        "rpg": 12.0,
+        "apg": 3.8,
+        "spg": 1.0,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 203082,
+      "player": "Terrence Ross",
+      "team": "ORL",
+      "reference_name": "Terrence Ross",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 26.5,
+        "ppg": 15.1,
+        "rpg": 3.5,
+        "apg": 1.7,
+        "spg": 0.9,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628411,
+      "player": "Wes Iwundu",
+      "team": "ORL",
+      "reference_name": "Wesley Iwundu",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 18.1,
+        "ppg": 5.0,
+        "rpg": 2.7,
+        "apg": 1.1,
+        "spg": 0.4,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627732,
+      "player": "Ben Simmons",
+      "team": "PHI",
+      "reference_name": "Ben Simmons",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 34.2,
+        "ppg": 16.9,
+        "rpg": 8.8,
+        "apg": 7.7,
+        "spg": 1.4,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 200755,
+      "player": "JJ Redick",
+      "team": "PHI",
+      "reference_name": "J.J. Redick",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 31.3,
+        "ppg": 18.1,
+        "rpg": 2.4,
+        "apg": 2.7,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 202710,
+      "player": "Jimmy Butler III",
+      "team": "PHI",
+      "reference_name": "Jimmy Butler",
+      "reference_stats": {
+        "gp": 55.0,
+        "mpg": 33.2,
+        "ppg": 18.2,
+        "rpg": 5.3,
+        "apg": 4.0,
+        "spg": 1.8,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 203954,
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "reference_name": "Joel Embiid",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 33.7,
+        "ppg": 27.5,
+        "rpg": 13.6,
+        "apg": 3.7,
+        "spg": 0.7,
+        "bpg": 1.9
+      }
+    },
+    {
+      "player_id": 1629013,
+      "player": "Landry Shamet",
+      "team": "PHI",
+      "reference_name": "Landry Shamet",
+      "reference_stats": {
+        "gp": 54.0,
+        "mpg": 20.5,
+        "ppg": 8.3,
+        "rpg": 1.4,
+        "apg": 1.1,
+        "spg": 0.4,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203488,
+      "player": "Mike Muscala",
+      "team": "PHI",
+      "reference_name": "Mike Muscala",
+      "reference_stats": {
+        "gp": 47.0,
+        "mpg": 22.1,
+        "ppg": 7.4,
+        "rpg": 4.3,
+        "apg": 1.3,
+        "spg": 0.4,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 204456,
+      "player": "T.J. McConnell",
+      "team": "PHI",
+      "reference_name": "T.J. McConnell",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 19.3,
+        "ppg": 6.4,
+        "rpg": 2.3,
+        "apg": 3.4,
+        "spg": 1.0,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 201163,
+      "player": "Wilson Chandler",
+      "team": "PHI",
+      "reference_name": "Wilson Chandler",
+      "reference_stats": {
+        "gp": 36.0,
+        "mpg": 26.4,
+        "ppg": 6.7,
+        "rpg": 4.7,
+        "apg": 2.0,
+        "spg": 0.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1629001,
+      "player": "De'Anthony Melton",
+      "team": "PHX",
+      "reference_name": "De'Anthony Melton",
+      "reference_stats": {
+        "gp": 50.0,
+        "mpg": 19.7,
+        "ppg": 5.0,
+        "rpg": 2.7,
+        "apg": 3.2,
+        "spg": 1.4,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1629028,
+      "player": "Deandre Ayton",
+      "team": "PHX",
+      "reference_name": "Deandre Ayton",
+      "reference_stats": {
+        "gp": 71.0,
+        "mpg": 30.7,
+        "ppg": 16.3,
+        "rpg": 10.3,
+        "apg": 1.8,
+        "spg": 0.9,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 1626164,
+      "player": "Devin Booker",
+      "team": "PHX",
+      "reference_name": "Devin Booker",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 35.0,
+        "ppg": 26.6,
+        "rpg": 4.1,
+        "apg": 6.8,
+        "spg": 0.9,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1627733,
+      "player": "Dragan Bender",
+      "team": "PHX",
+      "reference_name": "Dragan Bender",
+      "reference_stats": {
+        "gp": 46.0,
+        "mpg": 18.0,
+        "ppg": 5.0,
+        "rpg": 4.0,
+        "apg": 1.2,
+        "spg": 0.4,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1629059,
+      "player": "Elie Okobo",
+      "team": "PHX",
+      "reference_name": "Elie Okobo",
+      "reference_stats": {
+        "gp": 53.0,
+        "mpg": 18.1,
+        "ppg": 5.7,
+        "rpg": 1.8,
+        "apg": 2.4,
+        "spg": 0.6,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 2037,
+      "player": "Jamal Crawford",
+      "team": "PHX",
+      "reference_name": "Jamal Crawford",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 18.9,
+        "ppg": 7.9,
+        "rpg": 1.3,
+        "apg": 3.6,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628367,
+      "player": "Josh Jackson",
+      "team": "PHX",
+      "reference_name": "Josh Jackson",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 25.2,
+        "ppg": 11.5,
+        "rpg": 4.4,
+        "apg": 2.3,
+        "spg": 0.9,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 1626162,
+      "player": "Kelly Oubre Jr.",
+      "team": "PHX",
+      "reference_name": "Kelly Oubre Jr.",
+      "reference_stats": {
+        "gp": 40.0,
+        "mpg": 29.5,
+        "ppg": 16.9,
+        "rpg": 4.9,
+        "apg": 1.6,
+        "spg": 1.4,
+        "bpg": 1.0
+      }
+    },
+    {
+      "player_id": 1628969,
+      "player": "Mikal Bridges",
+      "team": "PHX",
+      "reference_name": "Mikal Bridges",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 29.5,
+        "ppg": 8.3,
+        "rpg": 3.2,
+        "apg": 2.1,
+        "spg": 1.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1626158,
+      "player": "Richaun Holmes",
+      "team": "PHX",
+      "reference_name": "Richaun Holmes",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 16.9,
+        "ppg": 8.2,
+        "rpg": 4.7,
+        "apg": 0.9,
+        "spg": 0.6,
+        "bpg": 1.1
+      }
+    },
+    {
+      "player_id": 203933,
+      "player": "T.J. Warren",
+      "team": "PHX",
+      "reference_name": "T.J. Warren",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 31.6,
+        "ppg": 18.0,
+        "rpg": 4.0,
+        "apg": 1.5,
+        "spg": 1.2,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 202329,
+      "player": "Al-Farouq Aminu",
+      "team": "POR",
+      "reference_name": "Al-Farouq Aminu",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 28.3,
+        "ppg": 9.4,
+        "rpg": 7.5,
+        "apg": 1.3,
+        "spg": 0.8,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203468,
+      "player": "CJ McCollum",
+      "team": "POR",
+      "reference_name": "CJ McCollum",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 33.9,
+        "ppg": 21.0,
+        "rpg": 4.0,
+        "apg": 3.0,
+        "spg": 0.8,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203081,
+      "player": "Damian Lillard",
+      "team": "POR",
+      "reference_name": "Damian Lillard",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 35.5,
+        "ppg": 25.8,
+        "rpg": 4.6,
+        "apg": 6.9,
+        "spg": 1.1,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 202323,
+      "player": "Evan Turner",
+      "team": "POR",
+      "reference_name": "Evan Turner",
+      "reference_stats": {
+        "gp": 73.0,
+        "mpg": 22.0,
+        "ppg": 6.8,
+        "rpg": 4.5,
+        "apg": 3.9,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1627774,
+      "player": "Jake Layman",
+      "team": "POR",
+      "reference_name": "Jake Layman",
+      "reference_stats": {
+        "gp": 71.0,
+        "mpg": 18.7,
+        "ppg": 7.6,
+        "rpg": 3.1,
+        "apg": 0.7,
+        "spg": 0.4,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203994,
+      "player": "Jusuf Nurkić",
+      "team": "POR",
+      "reference_name": "Jusuf Nurkić",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 27.4,
+        "ppg": 15.6,
+        "rpg": 10.4,
+        "apg": 3.2,
+        "spg": 1.0,
+        "bpg": 1.4
+      }
+    },
+    {
+      "player_id": 203090,
+      "player": "Maurice Harkless",
+      "team": "POR",
+      "reference_name": "Maurice Harkless",
+      "reference_stats": {
+        "gp": 60.0,
+        "mpg": 23.6,
+        "ppg": 7.7,
+        "rpg": 4.5,
+        "apg": 1.2,
+        "spg": 1.1,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 203917,
+      "player": "Nik Stauskas",
+      "team": "POR",
+      "reference_name": "Nik Stauskas",
+      "reference_stats": {
+        "gp": 44.0,
+        "mpg": 15.3,
+        "ppg": 6.1,
+        "rpg": 1.8,
+        "apg": 1.4,
+        "spg": 0.3,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 203552,
+      "player": "Seth Curry",
+      "team": "POR",
+      "reference_name": "Seth Curry",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 18.9,
+        "ppg": 7.9,
+        "rpg": 1.6,
+        "apg": 0.9,
+        "spg": 0.5,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628380,
+      "player": "Zach Collins",
+      "team": "POR",
+      "reference_name": "Zach Collins",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 17.6,
+        "ppg": 6.6,
+        "rpg": 4.2,
+        "apg": 0.9,
+        "spg": 0.3,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 203992,
+      "player": "Bogdan Bogdanović",
+      "team": "SAC",
+      "reference_name": "Bogdan Bogdanović",
+      "reference_stats": {
+        "gp": 70.0,
+        "mpg": 27.8,
+        "ppg": 14.1,
+        "rpg": 3.5,
+        "apg": 3.8,
+        "spg": 1.0,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1627741,
+      "player": "Buddy Hield",
+      "team": "SAC",
+      "reference_name": "Buddy Hield",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 31.9,
+        "ppg": 20.7,
+        "rpg": 5.0,
+        "apg": 2.5,
+        "spg": 0.7,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 1628368,
+      "player": "De'Aaron Fox",
+      "team": "SAC",
+      "reference_name": "De'Aaron Fox",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 31.4,
+        "ppg": 17.3,
+        "rpg": 3.8,
+        "apg": 7.3,
+        "spg": 1.6,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 202697,
+      "player": "Iman Shumpert",
+      "team": "SAC",
+      "reference_name": "Iman Shumpert",
+      "reference_stats": {
+        "gp": 42.0,
+        "mpg": 26.2,
+        "ppg": 8.9,
+        "rpg": 3.1,
+        "apg": 2.2,
+        "spg": 1.1,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1628382,
+      "player": "Justin Jackson",
+      "team": "SAC",
+      "reference_name": "Justin Jackson",
+      "reference_stats": {
+        "gp": 52.0,
+        "mpg": 20.8,
+        "ppg": 6.7,
+        "rpg": 2.8,
+        "apg": 1.3,
+        "spg": 0.4,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1628963,
+      "player": "Marvin Bagley III",
+      "team": "SAC",
+      "reference_name": "Marvin Bagley III",
+      "reference_stats": {
+        "gp": 62.0,
+        "mpg": 25.3,
+        "ppg": 14.9,
+        "rpg": 7.6,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 1.0
+      }
+    },
+    {
+      "player_id": 202357,
+      "player": "Nemanja Bjelica",
+      "team": "SAC",
+      "reference_name": "Nemanja Bjelica",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 23.2,
+        "ppg": 9.6,
+        "rpg": 5.8,
+        "apg": 1.9,
+        "spg": 0.7,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 1626161,
+      "player": "Willie Cauley-Stein",
+      "team": "SAC",
+      "reference_name": "Willie Cauley-Stein",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 27.3,
+        "ppg": 11.9,
+        "rpg": 8.4,
+        "apg": 2.4,
+        "spg": 1.2,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 1627812,
+      "player": "Yogi Ferrell",
+      "team": "SAC",
+      "reference_name": "Yogi Ferrell",
+      "reference_stats": {
+        "gp": 71.0,
+        "mpg": 15.0,
+        "ppg": 5.9,
+        "rpg": 1.5,
+        "apg": 1.9,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1627854,
+      "player": "Bryn Forbes",
+      "team": "SAS",
+      "reference_name": "Bryn Forbes",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 28.0,
+        "ppg": 11.8,
+        "rpg": 2.9,
+        "apg": 2.1,
+        "spg": 0.5,
+        "bpg": 0.0
+      }
+    },
+    {
+      "player_id": 202722,
+      "player": "Davis Bertans",
+      "team": "SAS",
+      "reference_name": "Dāvis Bertāns",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 21.5,
+        "ppg": 8.0,
+        "rpg": 3.5,
+        "apg": 1.3,
+        "spg": 0.5,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 201942,
+      "player": "DeMar DeRozan",
+      "team": "SAS",
+      "reference_name": "DeMar DeRozan",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 34.9,
+        "ppg": 21.2,
+        "rpg": 6.0,
+        "apg": 6.2,
+        "spg": 1.1,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1628401,
+      "player": "Derrick White",
+      "team": "SAS",
+      "reference_name": "Derrick White",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 25.8,
+        "ppg": 9.9,
+        "rpg": 3.7,
+        "apg": 3.9,
+        "spg": 1.0,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 1627751,
+      "player": "Jakob Poeltl",
+      "team": "SAS",
+      "reference_name": "Jakob Poeltl",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 16.5,
+        "ppg": 5.5,
+        "rpg": 5.3,
+        "apg": 1.2,
+        "spg": 0.4,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 200746,
+      "player": "LaMarcus Aldridge",
+      "team": "SAS",
+      "reference_name": "LaMarcus Aldridge",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 33.2,
+        "ppg": 21.3,
+        "rpg": 9.2,
+        "apg": 2.4,
+        "spg": 0.5,
+        "bpg": 1.3
+      }
+    },
+    {
+      "player_id": 201158,
+      "player": "Marco Belinelli",
+      "team": "SAS",
+      "reference_name": "Marco Belinelli",
+      "reference_stats": {
+        "gp": 79.0,
+        "mpg": 23.0,
+        "ppg": 10.5,
+        "rpg": 2.5,
+        "apg": 1.7,
+        "spg": 0.4,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 201988,
+      "player": "Patty Mills",
+      "team": "SAS",
+      "reference_name": "Patty Mills",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 23.3,
+        "ppg": 9.9,
+        "rpg": 2.2,
+        "apg": 3.0,
+        "spg": 0.6,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 200752,
+      "player": "Rudy Gay",
+      "team": "SAS",
+      "reference_name": "Rudy Gay",
+      "reference_stats": {
+        "gp": 69.0,
+        "mpg": 26.7,
+        "ppg": 13.7,
+        "rpg": 6.8,
+        "apg": 2.6,
+        "spg": 0.8,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 201980,
+      "player": "Danny Green",
+      "team": "TOR",
+      "reference_name": "Danny Green",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 27.7,
+        "ppg": 10.3,
+        "rpg": 4.0,
+        "apg": 1.6,
+        "spg": 0.9,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 1626153,
+      "player": "Delon Wright",
+      "team": "TOR",
+      "reference_name": "Delon Wright",
+      "reference_stats": {
+        "gp": 49.0,
+        "mpg": 18.3,
+        "ppg": 6.9,
+        "rpg": 2.6,
+        "apg": 2.2,
+        "spg": 0.9,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627832,
+      "player": "Fred VanVleet",
+      "team": "TOR",
+      "reference_name": "Fred VanVleet",
+      "reference_stats": {
+        "gp": 64.0,
+        "mpg": 27.5,
+        "ppg": 11.0,
+        "rpg": 2.6,
+        "apg": 4.8,
+        "spg": 0.9,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 202685,
+      "player": "Jonas Valančiūnas",
+      "team": "TOR",
+      "reference_name": "Jonas Valančiūnas",
+      "reference_stats": {
+        "gp": 30.0,
+        "mpg": 18.8,
+        "ppg": 12.8,
+        "rpg": 7.2,
+        "apg": 1.0,
+        "spg": 0.4,
+        "bpg": 0.8
+      }
+    },
+    {
+      "player_id": 202695,
+      "player": "Kawhi Leonard",
+      "team": "TOR",
+      "reference_name": "Kawhi Leonard",
+      "reference_stats": {
+        "gp": 60.0,
+        "mpg": 34.0,
+        "ppg": 26.6,
+        "rpg": 7.3,
+        "apg": 3.3,
+        "spg": 1.8,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 200768,
+      "player": "Kyle Lowry",
+      "team": "TOR",
+      "reference_name": "Kyle Lowry",
+      "reference_stats": {
+        "gp": 65.0,
+        "mpg": 34.0,
+        "ppg": 14.2,
+        "rpg": 4.8,
+        "apg": 8.7,
+        "spg": 1.4,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1626181,
+      "player": "Norman Powell",
+      "team": "TOR",
+      "reference_name": "Norman Powell",
+      "reference_stats": {
+        "gp": 60.0,
+        "mpg": 18.8,
+        "ppg": 8.6,
+        "rpg": 2.3,
+        "apg": 1.5,
+        "spg": 0.7,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628384,
+      "player": "OG Anunoby",
+      "team": "TOR",
+      "reference_name": "OG Anunoby",
+      "reference_stats": {
+        "gp": 67.0,
+        "mpg": 20.2,
+        "ppg": 7.0,
+        "rpg": 2.9,
+        "apg": 0.7,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 1627783,
+      "player": "Pascal Siakam",
+      "team": "TOR",
+      "reference_name": "Pascal Siakam",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 31.9,
+        "ppg": 16.9,
+        "rpg": 6.9,
+        "apg": 3.1,
+        "spg": 0.9,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 201586,
+      "player": "Serge Ibaka",
+      "team": "TOR",
+      "reference_name": "Serge Ibaka",
+      "reference_stats": {
+        "gp": 74.0,
+        "mpg": 27.2,
+        "ppg": 15.0,
+        "rpg": 8.1,
+        "apg": 1.3,
+        "spg": 0.4,
+        "bpg": 1.4
+      }
+    },
+    {
+      "player_id": 203957,
+      "player": "Danté Exum",
+      "team": "UTA",
+      "reference_name": "Dante Exum",
+      "reference_stats": {
+        "gp": 42.0,
+        "mpg": 15.8,
+        "ppg": 6.9,
+        "rpg": 1.6,
+        "apg": 2.6,
+        "spg": 0.3,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 202324,
+      "player": "Derrick Favors",
+      "team": "UTA",
+      "reference_name": "Derrick Favors",
+      "reference_stats": {
+        "gp": 76.0,
+        "mpg": 23.2,
+        "ppg": 11.8,
+        "rpg": 7.4,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 1.4
+      }
+    },
+    {
+      "player_id": 1628378,
+      "player": "Donovan Mitchell",
+      "team": "UTA",
+      "reference_name": "Donovan Mitchell",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 33.7,
+        "ppg": 23.8,
+        "rpg": 4.1,
+        "apg": 4.2,
+        "spg": 1.4,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 203109,
+      "player": "Jae Crowder",
+      "team": "UTA",
+      "reference_name": "Jae Crowder",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 27.1,
+        "ppg": 11.9,
+        "rpg": 4.8,
+        "apg": 1.7,
+        "spg": 0.8,
+        "bpg": 0.4
+      }
+    },
+    {
+      "player_id": 204060,
+      "player": "Joe Ingles",
+      "team": "UTA",
+      "reference_name": "Joe Ingles",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 31.3,
+        "ppg": 12.1,
+        "rpg": 4.0,
+        "apg": 5.7,
+        "spg": 1.2,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 2594,
+      "player": "Kyle Korver",
+      "team": "UTA",
+      "reference_name": "Kyle Korver",
+      "reference_stats": {
+        "gp": 54.0,
+        "mpg": 20.1,
+        "ppg": 9.1,
+        "rpg": 2.5,
+        "apg": 1.2,
+        "spg": 0.4,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 201937,
+      "player": "Ricky Rubio",
+      "team": "UTA",
+      "reference_name": "Ricky Rubio",
+      "reference_stats": {
+        "gp": 68.0,
+        "mpg": 27.9,
+        "ppg": 12.7,
+        "rpg": 3.6,
+        "apg": 6.1,
+        "spg": 1.3,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 1626220,
+      "player": "Royce O'Neale",
+      "team": "UTA",
+      "reference_name": "Royce O'Neale",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 20.4,
+        "ppg": 5.2,
+        "rpg": 3.5,
+        "apg": 1.5,
+        "spg": 0.7,
+        "bpg": 0.3
+      }
+    },
+    {
+      "player_id": 203497,
+      "player": "Rudy Gobert",
+      "team": "UTA",
+      "reference_name": "Rudy Gobert",
+      "reference_stats": {
+        "gp": 81.0,
+        "mpg": 31.8,
+        "ppg": 15.9,
+        "rpg": 12.9,
+        "apg": 2.0,
+        "spg": 0.8,
+        "bpg": 2.3
+      }
+    },
+    {
+      "player_id": 203078,
+      "player": "Bradley Beal",
+      "team": "WAS",
+      "reference_name": "Bradley Beal",
+      "reference_stats": {
+        "gp": 82.0,
+        "mpg": 36.9,
+        "ppg": 25.6,
+        "rpg": 5.0,
+        "apg": 5.5,
+        "spg": 1.5,
+        "bpg": 0.7
+      }
+    },
+    {
+      "player_id": 1626184,
+      "player": "Chasson Randle",
+      "team": "WAS",
+      "reference_name": "Chasson Randle",
+      "reference_stats": {
+        "gp": 49.0,
+        "mpg": 15.2,
+        "ppg": 5.5,
+        "rpg": 1.1,
+        "apg": 2.0,
+        "spg": 0.5,
+        "bpg": 0.1
+      }
+    },
+    {
+      "player_id": 201145,
+      "player": "Jeff Green",
+      "team": "WAS",
+      "reference_name": "Jeff Green",
+      "reference_stats": {
+        "gp": 77.0,
+        "mpg": 27.2,
+        "ppg": 12.3,
+        "rpg": 4.0,
+        "apg": 1.8,
+        "spg": 0.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 202322,
+      "player": "John Wall",
+      "team": "WAS",
+      "reference_name": "John Wall",
+      "reference_stats": {
+        "gp": 32.0,
+        "mpg": 34.5,
+        "ppg": 20.7,
+        "rpg": 3.6,
+        "apg": 8.7,
+        "spg": 1.5,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 202693,
+      "player": "Markieff Morris",
+      "team": "WAS",
+      "reference_name": "Markieff Morris",
+      "reference_stats": {
+        "gp": 34.0,
+        "mpg": 26.0,
+        "ppg": 11.5,
+        "rpg": 5.1,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 0.6
+      }
+    },
+    {
+      "player_id": 203490,
+      "player": "Otto Porter Jr.",
+      "team": "WAS",
+      "reference_name": "Otto Porter",
+      "reference_stats": {
+        "gp": 41.0,
+        "mpg": 29.0,
+        "ppg": 12.6,
+        "rpg": 5.6,
+        "apg": 2.0,
+        "spg": 1.6,
+        "bpg": 0.5
+      }
+    },
+    {
+      "player_id": 1626155,
+      "player": "Sam Dekker",
+      "team": "WAS",
+      "reference_name": "Sam Dekker",
+      "reference_stats": {
+        "gp": 38.0,
+        "mpg": 16.3,
+        "ppg": 6.1,
+        "rpg": 3.0,
+        "apg": 1.0,
+        "spg": 0.7,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 1628418,
+      "player": "Thomas Bryant",
+      "team": "WAS",
+      "reference_name": "Thomas Bryant",
+      "reference_stats": {
+        "gp": 72.0,
+        "mpg": 20.8,
+        "ppg": 10.5,
+        "rpg": 6.3,
+        "apg": 1.3,
+        "spg": 0.3,
+        "bpg": 0.9
+      }
+    },
+    {
+      "player_id": 203107,
+      "player": "Tomas Satoransky",
+      "team": "WAS",
+      "reference_name": "Tomáš Satoranský",
+      "reference_stats": {
+        "gp": 80.0,
+        "mpg": 27.1,
+        "ppg": 8.9,
+        "rpg": 3.5,
+        "apg": 5.0,
+        "spg": 1.0,
+        "bpg": 0.2
+      }
+    },
+    {
+      "player_id": 2772,
+      "player": "Trevor Ariza",
+      "team": "WAS",
+      "reference_name": "Trevor Ariza",
+      "reference_stats": {
+        "gp": 43.0,
+        "mpg": 34.1,
+        "ppg": 14.1,
+        "rpg": 5.3,
+        "apg": 3.8,
+        "spg": 1.2,
+        "bpg": 0.3
+      }
+    }
+  ]
+}

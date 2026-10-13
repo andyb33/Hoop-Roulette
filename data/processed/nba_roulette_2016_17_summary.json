@@ -1,0 +1,79 @@
+{
+  "season": "2016-17",
+  "completed_at": "2026-10-13T02:17:12.431547+00:00",
+  "passed": true,
+  "entries": 310,
+  "jerseys_verified": 310,
+  "unresolved": [],
+  "staged_sha256": "ff457c5e368025b03805ec3459933c928fb6fafb56a5291363ab0c6e2c4c94c3",
+  "game_sha256": "9e277006761a40114105334ce6b184b291bc9e24caba621edd756de86b1f40f3",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2016-17&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "draymond-green": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "malcolm-brogdon": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "russell-westbrook": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://www.nba.com/game/0041600405/box-score",
+  "champion_team": "GSW",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BKN": 13,
+    "BOS": 10,
+    "CHA": 11,
+    "CHI": 14,
+    "CLE": 9,
+    "DAL": 10,
+    "DEN": 11,
+    "DET": 10,
+    "GSW": 8,
+    "HOU": 10,
+    "IND": 8,
+    "LAC": 9,
+    "LAL": 11,
+    "MEM": 10,
+    "MIA": 9,
+    "MIL": 10,
+    "MIN": 9,
+    "NOP": 10,
+    "NYK": 11,
+    "OKC": 10,
+    "ORL": 10,
+    "PHI": 12,
+    "PHX": 12,
+    "POR": 10,
+    "SAC": 12,
+    "SAS": 10,
+    "TOR": 10,
+    "UTA": 12,
+    "WAS": 8
+  }
+}

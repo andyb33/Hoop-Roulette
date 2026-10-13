@@ -1,0 +1,76 @@
+{
+  "season": "2020-21",
+  "completed_at": "2026-10-12T10:39:32.440953+00:00",
+  "passed": true,
+  "entries": 307,
+  "jerseys_verified": 307,
+  "unresolved": [],
+  "staged_sha256": "340c96f952cff3d5c60b7091606b9cc0c0bd1b37c4725527b47c42b589327334",
+  "game_sha256": "99a5ac918dc888ccf8909d9adc505b72b47f83979d35e446188d4b360f650fbd",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2020-21&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "lamelo-ball": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "nikola-jokic": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "rudy-gobert": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0042000406.json",
+  "champion_team": "MIL",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 8,
+    "BKN": 11,
+    "BOS": 11,
+    "CHA": 12,
+    "CHI": 9,
+    "CLE": 10,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 11,
+    "GSW": 12,
+    "HOU": 9,
+    "IND": 10,
+    "LAC": 12,
+    "LAL": 11,
+    "MEM": 10,
+    "MIA": 9,
+    "MIL": 9,
+    "MIN": 12,
+    "NOP": 12,
+    "NYK": 10,
+    "OKC": 13,
+    "ORL": 11,
+    "PHI": 11,
+    "PHX": 10,
+    "POR": 10,
+    "SAC": 8,
+    "SAS": 9,
+    "TOR": 10,
+    "UTA": 9,
+    "WAS": 10
+  }
+}

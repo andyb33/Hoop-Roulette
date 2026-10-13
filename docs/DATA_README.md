@@ -97,7 +97,30 @@ game's equal Season → Team → Player roulette weighting.
 
 ## v0.9 historical completion
 
-Normal play now includes 2021–22 through 2025–26 (1,565 entries). The two new
+v0.9 introduced 2021–22 and 2022–23, producing a 1,565-entry five-season pool. The two new
 seasons retain independently verified stats and final-appearance jersey audits.
 See [the completion report](HISTORICAL_COMPLETION_2021_2023.md) for provenance,
 championship roster membership, and reproduction commands.
+
+## v0.9.1 historical completion
+
+Normal play now includes 2018–19 through 2025–26 (2,477 entries). The three
+additions pass independent stats and official schedule checks, including the
+shortened 2020–21 and unequal 2019–20 schedules. Official final-game roster
+metadata supplies older jersey evidence. See [completion report](HISTORICAL_COMPLETION_2018_2021.md).
+
+## Prepared v0.9.2 completion
+
+The local normal pool covers 2015–16 through 2025–26, with 3,383 entries.
+The latest three seasons add 906 fully audited records. See
+[the completion report](HISTORICAL_COMPLETION_2015_2018.md).
+GitHub publication remains pending the earlier main-branch approval.
+Version v0.10 remains reserved for the complete 2010–11 onward pool.
+
+## Prepared v0.9.3 historical expansion
+
+The normal pool now targets 2012–13 through 2025–26: 4,277 records across 14 seasons. See `HISTORICAL_COMPLETION_2012_2015.md` for the latest checks. Eligibility remains 30 team GP / 15 unrounded team MPG. NOH is retained for the 2012–13 New Orleans Hornets rather than relabeling them NOP. Only 2011–12 and 2010–11 remain for v0.10. Desktop builds are deferred until that data is ready; workflows support manual dispatch only. Main publication is pending.
+
+## Current Stage 1 completion — prepared v0.10
+
+The normal pool contains all 16 seasons from 2010–11 through 2025–26, with 4,840 entries and 480 team-season combinations. See `HISTORICAL_COMPLETION_2010_2012.md` for the final batch and validation evidence. Historical NJN/NOH codes remain distinct from BKN/NOP. Eligibility, upper bonus and GOAT pools remain unchanged. Desktop workflows now target v0.10 with manual dispatch only; packages are deferred until the normal pool is complete through 1973–74. Prior balance analyses describe earlier pools. Stage 2 covers 1980–81 through 2009–10; Stage 3 covers 1973–74 through 1979–80.

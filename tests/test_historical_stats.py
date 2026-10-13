@@ -42,3 +42,24 @@ class HistoricalStatsTests(unittest.TestCase):
             data.write_text("[{}]")
             with self.assertRaisesRegex(ValueError, "stale"):
                 collector.require_previous_verified("2021-22")
+
+    def test_workbook_mojibake_names_match_without_changing_identity(self):
+        from scripts.verify_historical_stats import name_key
+        self.assertEqual(name_key('Nikola JokiÄ‡'),name_key('Nikola Jokić'))
+        self.assertEqual(name_key('Jonas ValanÄ\x8diÅ«nas'),name_key('Jonas Valančiūnas'))
+        self.assertEqual(name_key('Dennis SchrÃ¶der'),name_key('Dennis Schröder'))
+        self.assertEqual(name_key('Bogdan Bogdanović'),name_key('Bogdan BogdanoviÄ‡'))
+        self.assertNotEqual(name_key('Bogdan Bogdanović'),name_key('Bojan Bogdanović'))
+
+        self.assertEqual(name_key('Ömer Aşık'),name_key('Omer Asik'))
+        self.assertEqual(name_key('Nene Hilario'),name_key('Nenê'))
+
+    def test_taylor_reference_alias_preserves_identity(self):
+        from scripts.verify_historical_stats import name_key
+        self.assertEqual(name_key('Jeffery Taylor'),name_key('Jeff Taylor'))
+        self.assertNotEqual(name_key('Jeffery Taylor'),name_key('Jeff Adrien'))
+
+    def test_yi_reference_name_order_preserves_identity(self):
+        from scripts.verify_historical_stats import name_key
+        self.assertEqual(name_key('Jianlian Yi'),name_key('Yi Jianlian'))
+        self.assertNotEqual(name_key('Jianlian Yi'),name_key('Yao Ming'))

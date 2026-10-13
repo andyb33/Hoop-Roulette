@@ -1,0 +1,79 @@
+{
+  "season": "2010-11",
+  "completed_at": "2026-10-13T03:02:22.347702+00:00",
+  "passed": true,
+  "entries": 287,
+  "jerseys_verified": 287,
+  "unresolved": [],
+  "staged_sha256": "9c4c37e8b8bb2810313b0a5fc5179554214f76586947d19ee927525532be2bf4",
+  "game_sha256": "40ad4f7a96e64a340d577d2110532ec2a47036a9fdbfbf49f1ccbc7650b01d09",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2010-11&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "blake-griffin": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "derrick-rose": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "dwight-howard": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://www.nba.com/game/0041000406/box-score",
+  "champion_team": "DAL",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 8,
+    "BOS": 8,
+    "CHA": 9,
+    "CHI": 9,
+    "CLE": 14,
+    "DAL": 8,
+    "DEN": 10,
+    "DET": 12,
+    "GSW": 10,
+    "HOU": 11,
+    "IND": 12,
+    "LAC": 10,
+    "LAL": 9,
+    "MEM": 8,
+    "MIA": 11,
+    "MIL": 11,
+    "MIN": 11,
+    "NJN": 9,
+    "NOH": 8,
+    "NYK": 8,
+    "OKC": 8,
+    "ORL": 10,
+    "PHI": 9,
+    "PHX": 10,
+    "POR": 8,
+    "SAC": 10,
+    "SAS": 9,
+    "TOR": 10,
+    "UTA": 8,
+    "WAS": 9
+  }
+}

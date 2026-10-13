@@ -25,7 +25,7 @@ def require_previous_verified(season):
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
     if not report_path.exists() or not data_path.exists():
         raise ValueError("Verify the preceding season before collecting this one")
-    report = json.loads(report_path.read_text())
+    report = json.loads(report_path.read_text(encoding="utf-8"))
     if not report.get("passed") or report.get("staged_sha256") != hashlib.sha256(data_path.read_bytes()).hexdigest():
         raise ValueError("Preceding season verification failed or is stale; resolve it first")
 

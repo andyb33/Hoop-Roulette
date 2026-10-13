@@ -1,0 +1,5765 @@
+{
+  "season": "2020-21",
+  "completed_at": "2026-10-12T10:39:32.440953+00:00",
+  "passed": true,
+  "entries": 307,
+  "jerseys_verified": 307,
+  "unresolved": [],
+  "staged_sha256": "340c96f952cff3d5c60b7091606b9cc0c0bd1b37c4725527b47c42b589327334",
+  "game_sha256": "99a5ac918dc888ccf8909d9adc505b72b47f83979d35e446188d4b360f650fbd",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2020-21&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "lamelo-ball": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "nikola-jokic": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "rudy-gobert": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "official_all_nba": {
+    "giannis-antetokounmpo": 1,
+    "kawhi-leonard": 1,
+    "nikola-jokic": 1,
+    "stephen-curry": 1,
+    "luka-doncic": 1,
+    "julius-randle": 2,
+    "lebron-james": 2,
+    "joel-embiid": 2,
+    "chris-paul": 2,
+    "damian-lillard": 2,
+    "jimmy-butler": 3,
+    "paul-george": 3,
+    "rudy-gobert": 3,
+    "bradley-beal": 3,
+    "kyrie-irving": 3
+  },
+  "official_all_defense": {
+    "rudy-gobert": 1,
+    "ben-simmons": 1,
+    "draymond-green": 1,
+    "jrue-holiday": 1,
+    "giannis-antetokounmpo": 1,
+    "bam-adebayo": 2,
+    "jimmy-butler": 2,
+    "joel-embiid": 2,
+    "matisse-thybulle": 2,
+    "kawhi-leonard": 2
+  },
+  "official_award_winners": {
+    "lamelo-ball": {
+      "season": "2020-21",
+      "player_key": "lamelo-ball",
+      "player": "LaMelo Ball",
+      "award_team": "Charlotte Hornets",
+      "mvp": false,
+      "roy": true,
+      "dpoy": false,
+      "award_sources": {
+        "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+      },
+      "source_names": [
+        "LaMelo Ball"
+      ]
+    },
+    "nikola-jokic": {
+      "season": "2020-21",
+      "player_key": "nikola-jokic",
+      "player": "Nikola Jokić",
+      "award_team": "Denver Nuggets",
+      "mvp": true,
+      "roy": false,
+      "dpoy": false,
+      "award_sources": {
+        "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+      },
+      "source_names": [
+        "Nikola Jokić"
+      ]
+    },
+    "rudy-gobert": {
+      "season": "2020-21",
+      "player_key": "rudy-gobert",
+      "player": "Rudy Gobert",
+      "award_team": "Utah Jazz",
+      "mvp": false,
+      "roy": false,
+      "dpoy": true,
+      "award_sources": {
+        "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+      },
+      "source_names": [
+        "Rudy Gobert"
+      ]
+    }
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0042000406.json",
+  "champion_roster": [
+    {
+      "personId": 200782,
+      "firstName": "P.J.",
+      "familyName": "Tucker",
+      "jerseyNum": "17",
+      "played": "1"
+    },
+    {
+      "personId": 203507,
+      "firstName": "Giannis",
+      "familyName": "Antetokounmpo",
+      "jerseyNum": "34",
+      "played": "1"
+    },
+    {
+      "personId": 201572,
+      "firstName": "Brook",
+      "familyName": "Lopez",
+      "jerseyNum": "11",
+      "played": "1"
+    },
+    {
+      "personId": 203114,
+      "firstName": "Khris",
+      "familyName": "Middleton",
+      "jerseyNum": "22",
+      "played": "1"
+    },
+    {
+      "personId": 201950,
+      "firstName": "Jrue",
+      "familyName": "Holiday",
+      "jerseyNum": "21",
+      "played": "1"
+    },
+    {
+      "personId": 1626171,
+      "firstName": "Bobby",
+      "familyName": "Portis",
+      "jerseyNum": "9",
+      "played": "1"
+    },
+    {
+      "personId": 1626192,
+      "firstName": "Pat",
+      "familyName": "Connaughton",
+      "jerseyNum": "24",
+      "played": "1"
+    },
+    {
+      "personId": 201952,
+      "firstName": "Jeff",
+      "familyName": "Teague",
+      "jerseyNum": "5",
+      "played": "1"
+    },
+    {
+      "personId": 1629091,
+      "firstName": "Elijah",
+      "familyName": "Bryant",
+      "jerseyNum": "3",
+      "played": "0"
+    },
+    {
+      "personId": 1629603,
+      "firstName": "Mamadi",
+      "familyName": "Diakite",
+      "jerseyNum": "25",
+      "played": "0"
+    },
+    {
+      "personId": 1627854,
+      "firstName": "Bryn",
+      "familyName": "Forbes",
+      "jerseyNum": "7",
+      "played": "0"
+    },
+    {
+      "personId": 1628382,
+      "firstName": "Justin",
+      "familyName": "Jackson",
+      "jerseyNum": "44",
+      "played": "0"
+    },
+    {
+      "personId": 1630241,
+      "firstName": "Sam",
+      "familyName": "Merrill",
+      "jerseyNum": "15",
+      "played": "0"
+    },
+    {
+      "personId": 1629670,
+      "firstName": "Jordan",
+      "familyName": "Nwora",
+      "jerseyNum": "13",
+      "played": "0"
+    },
+    {
+      "personId": 1626253,
+      "firstName": "Axel",
+      "familyName": "Toupane",
+      "jerseyNum": "66",
+      "played": "0"
+    },
+    {
+      "personId": 203648,
+      "firstName": "Thanasis",
+      "familyName": "Antetokounmpo",
+      "jerseyNum": "43",
+      "played": "0"
+    },
+    {
+      "personId": 1628978,
+      "firstName": "Donte",
+      "familyName": "DiVincenzo",
+      "jerseyNum": "0",
+      "played": "0"
+    }
+  ],
+  "champion_team": "MIL",
+  "champion_records": 8,
+  "jersey_evidence": [
+    {
+      "player_id": 203992,
+      "player": "Bogdan Bogdanović",
+      "team": "ATL",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001049",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 203992,
+        "firstName": "Bogdan",
+        "familyName": "Bogdanovic",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "6ec0dd5dc08ad60b727bb57240ab3cfa00deb3ae94c6378077e16393d0aadd62",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001049.json"
+    },
+    {
+      "player_id": 203991,
+      "player": "Clint Capela",
+      "team": "ATL",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001049",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 203991,
+        "firstName": "Clint",
+        "familyName": "Capela",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "6ec0dd5dc08ad60b727bb57240ab3cfa00deb3ae94c6378077e16393d0aadd62",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001049.json"
+    },
+    {
+      "player_id": 201568,
+      "player": "Danilo Gallinari",
+      "team": "ATL",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001049",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 201568,
+        "firstName": "Danilo",
+        "familyName": "Gallinari",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "6ec0dd5dc08ad60b727bb57240ab3cfa00deb3ae94c6378077e16393d0aadd62",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001049.json"
+    },
+    {
+      "player_id": 1628381,
+      "player": "John Collins",
+      "team": "ATL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001066",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1628381,
+        "firstName": "John",
+        "familyName": "Collins",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "89d3540f4fdf52ca527e1f805e28e6be23286c9169808fe8079b14385232ca5a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001066.json"
+    },
+    {
+      "player_id": 1628989,
+      "player": "Kevin Huerter",
+      "team": "ATL",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001049",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1628989,
+        "firstName": "Kevin",
+        "familyName": "Huerter",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "6ec0dd5dc08ad60b727bb57240ab3cfa00deb3ae94c6378077e16393d0aadd62",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001049.json"
+    },
+    {
+      "player_id": 203524,
+      "player": "Solomon Hill",
+      "team": "ATL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001066",
+      "jersey": 18,
+      "jersey_display": "18",
+      "official_box_score_player": {
+        "personId": 203524,
+        "firstName": "Solomon",
+        "familyName": "Hill",
+        "jerseyNum": "18",
+        "played": "1"
+      },
+      "box_score_sha256": "89d3540f4fdf52ca527e1f805e28e6be23286c9169808fe8079b14385232ca5a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001066.json"
+    },
+    {
+      "player_id": 203503,
+      "player": "Tony Snell",
+      "team": "ATL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001066",
+      "jersey": 19,
+      "jersey_display": "19",
+      "official_box_score_player": {
+        "personId": 203503,
+        "firstName": "Tony",
+        "familyName": "Snell",
+        "jerseyNum": "19",
+        "played": "1"
+      },
+      "box_score_sha256": "89d3540f4fdf52ca527e1f805e28e6be23286c9169808fe8079b14385232ca5a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001066.json"
+    },
+    {
+      "player_id": 1629027,
+      "player": "Trae Young",
+      "team": "ATL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001066",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1629027,
+        "firstName": "Trae",
+        "familyName": "Young",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "89d3540f4fdf52ca527e1f805e28e6be23286c9169808fe8079b14385232ca5a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001066.json"
+    },
+    {
+      "player_id": 1628971,
+      "player": "Bruce Brown",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1628971,
+        "firstName": "Bruce",
+        "familyName": "Brown",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 201599,
+      "player": "DeAndre Jordan",
+      "team": "BKN",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001015",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 201599,
+        "firstName": "DeAndre",
+        "familyName": "Jordan",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "f2b1829d1fedfa9de3adc81ad1a845bc56dc6fd60e800bb36edd94a82ffb81b2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001015.json"
+    },
+    {
+      "player_id": 201935,
+      "player": "James Harden",
+      "team": "BKN",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001060",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 201935,
+        "firstName": "James",
+        "familyName": "Harden",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "64ec59d2fffe3c72835862f5b16a0393cf66977365ddc978834e836a777b3603",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001060.json"
+    },
+    {
+      "player_id": 201145,
+      "player": "Jeff Green",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 201145,
+        "firstName": "Jeff",
+        "familyName": "Green",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 203925,
+      "player": "Joe Harris",
+      "team": "BKN",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001036",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 203925,
+        "firstName": "Joe",
+        "familyName": "Harris",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "20d26b3ca4134dead3559de9928ef01ca540ea21c3d50d000e14859b925eef1e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001036.json"
+    },
+    {
+      "player_id": 201142,
+      "player": "Kevin Durant",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 201142,
+        "firstName": "Kevin",
+        "familyName": "Durant",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 202681,
+      "player": "Kyrie Irving",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 202681,
+        "firstName": "Kyrie",
+        "familyName": "Irving",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1629013,
+      "player": "Landry Shamet",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1629013,
+        "firstName": "Landry",
+        "familyName": "Shamet",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1629651,
+      "player": "Nic Claxton",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1629651,
+        "firstName": "Nicolas",
+        "familyName": "Claxton",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1627789,
+      "player": "Timothe Luwawu-Cabarrot",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1627789,
+        "firstName": "Timothe",
+        "familyName": "Luwawu-Cabarrot",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 204020,
+      "player": "Tyler Johnson",
+      "team": "BKN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 204020,
+        "firstName": "Tyler",
+        "familyName": "Johnson",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1628464,
+      "player": "Daniel Theis",
+      "team": "BOS",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000669",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 1628464,
+        "firstName": "Daniel",
+        "familyName": "Theis",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "f0799984e06b91281954cb2c94446d028285be221b598b8e1c3f353b5f749dad",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000669.json"
+    },
+    {
+      "player_id": 1629684,
+      "player": "Grant Williams",
+      "team": "BOS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629684,
+        "firstName": "Grant",
+        "familyName": "Williams",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 1627759,
+      "player": "Jaylen Brown",
+      "team": "BOS",
+      "last_game_date": "2021-05-02",
+      "game_id": "0022000968",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1627759,
+        "firstName": "Jaylen",
+        "familyName": "Brown",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "53e586e4c05d51ee5a5b43866564d48410eab8d92f1cd607e37151c3935d2c3b",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000968.json"
+    },
+    {
+      "player_id": 1628369,
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001063",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628369,
+        "firstName": "Jayson",
+        "familyName": "Tatum",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "6e756d04ed9f05bb9d7f89ef87eb0fbc665cba032862e19333720487f8a0b4e9",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001063.json"
+    },
+    {
+      "player_id": 201952,
+      "player": "Jeff Teague",
+      "team": "BOS",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000669",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 201952,
+        "firstName": "Jeff",
+        "familyName": "Teague",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "f0799984e06b91281954cb2c94446d028285be221b598b8e1c3f353b5f749dad",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000669.json"
+    },
+    {
+      "player_id": 202689,
+      "player": "Kemba Walker",
+      "team": "BOS",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001032",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 202689,
+        "firstName": "Kemba",
+        "familyName": "Walker",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "b0610665a34003276380e7beb887c19aa8b2d24747bd09ea56ea6472d7c0ba9f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001032.json"
+    },
+    {
+      "player_id": 203935,
+      "player": "Marcus Smart",
+      "team": "BOS",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001032",
+      "jersey": 36,
+      "jersey_display": "36",
+      "official_box_score_player": {
+        "personId": 203935,
+        "firstName": "Marcus",
+        "familyName": "Smart",
+        "jerseyNum": "36",
+        "played": "1"
+      },
+      "box_score_sha256": "b0610665a34003276380e7beb887c19aa8b2d24747bd09ea56ea6472d7c0ba9f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001032.json"
+    },
+    {
+      "player_id": 1630202,
+      "player": "Payton Pritchard",
+      "team": "BOS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1630202,
+        "firstName": "Payton",
+        "familyName": "Pritchard",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 1629057,
+      "player": "Robert Williams III",
+      "team": "BOS",
+      "last_game_date": "2021-05-09",
+      "game_id": "0022000145",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 1629057,
+        "firstName": "Robert",
+        "familyName": "Williams III",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "a71a781168ab2a7eb2272e8209b966b09ed7d613a97b39f634115a8065e68308",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000145.json"
+    },
+    {
+      "player_id": 1628400,
+      "player": "Semi Ojeleye",
+      "team": "BOS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 37,
+      "jersey_display": "37",
+      "official_box_score_player": {
+        "personId": 1628400,
+        "firstName": "Semi",
+        "familyName": "Ojeleye",
+        "jerseyNum": "37",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 202684,
+      "player": "Tristan Thompson",
+      "team": "BOS",
+      "last_game_date": "2021-05-12",
+      "game_id": "0022001044",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 202684,
+        "firstName": "Tristan",
+        "familyName": "Thompson",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "2f5107e967b5bb68e8f24d067899208d1f8e313dbc1dfaf997b58aaf07d79a77",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001044.json"
+    },
+    {
+      "player_id": 202687,
+      "player": "Bismack Biyombo",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 202687,
+        "firstName": "Bismack",
+        "familyName": "Biyombo",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1628997,
+      "player": "Caleb Martin",
+      "team": "CHA",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001047",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1628997,
+        "firstName": "Caleb",
+        "familyName": "Martin",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "f08c0b690764b16931bd703d6745a85ee9f8ecaf2e584c9f263f428b20f64a44",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001047.json"
+    },
+    {
+      "player_id": 1628998,
+      "player": "Cody Martin",
+      "team": "CHA",
+      "last_game_date": "2021-05-02",
+      "game_id": "0022000969",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1628998,
+        "firstName": "Cody",
+        "familyName": "Martin",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "3d7d6b6c675f91edfe10660be75f37b1221618eca6b1a8778c605fc842873f74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000969.json"
+    },
+    {
+      "player_id": 203469,
+      "player": "Cody Zeller",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 40,
+      "jersey_display": "40",
+      "official_box_score_player": {
+        "personId": 203469,
+        "firstName": "Cody",
+        "familyName": "Zeller",
+        "jerseyNum": "40",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1628984,
+      "player": "Devonte' Graham",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1628984,
+        "firstName": "Devonte'",
+        "familyName": "Graham",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 202330,
+      "player": "Gordon Hayward",
+      "team": "CHA",
+      "last_game_date": "2021-04-02",
+      "game_id": "0022000740",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 202330,
+        "firstName": "Gordon",
+        "familyName": "Hayward",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "f3610a7c451297452da2c7cb32cdb4f1b1e6860748a47e20a73bb9cae7b27074",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000740.json"
+    },
+    {
+      "player_id": 1629667,
+      "player": "Jalen McDaniels",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1629667,
+        "firstName": "Jalen",
+        "familyName": "McDaniels",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1630163,
+      "player": "LaMelo Ball",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1630163,
+        "firstName": "LaMelo",
+        "familyName": "Ball",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1628370,
+      "player": "Malik Monk",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1628370,
+        "firstName": "Malik",
+        "familyName": "Monk",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1628970,
+      "player": "Miles Bridges",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628970,
+        "firstName": "Miles",
+        "familyName": "Bridges",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1629023,
+      "player": "P.J. Washington",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1629023,
+        "firstName": "P.J.",
+        "familyName": "Washington",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1626179,
+      "player": "Terry Rozier",
+      "team": "CHA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1626179,
+        "firstName": "Terry",
+        "familyName": "Rozier",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1629632,
+      "player": "Coby White",
+      "team": "CHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1629632,
+        "firstName": "Coby",
+        "familyName": "White",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 1627756,
+      "player": "Denzel Valentine",
+      "team": "CHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 45,
+      "jersey_display": "45",
+      "official_box_score_player": {
+        "personId": 1627756,
+        "firstName": "Denzel",
+        "familyName": "Valentine",
+        "jerseyNum": "45",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 202066,
+      "player": "Garrett Temple",
+      "team": "CHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 202066,
+        "firstName": "Garrett",
+        "familyName": "Temple",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 1628374,
+      "player": "Lauri Markkanen",
+      "team": "CHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1628374,
+        "firstName": "Lauri",
+        "familyName": "Markkanen",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 1630172,
+      "player": "Patrick Williams",
+      "team": "CHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 1630172,
+        "firstName": "Patrick",
+        "familyName": "Williams",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 201152,
+      "player": "Thaddeus Young",
+      "team": "CHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 201152,
+        "firstName": "Thaddeus",
+        "familyName": "Young",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 203107,
+      "player": "Tomas Satoransky",
+      "team": "CHI",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001051",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 203107,
+        "firstName": "Tomas",
+        "familyName": "Satoransky",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "9d770a6ac7ea72b207f0db01bf981717ed148fb4fdd7994da7e8b2e83c14b06d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001051.json"
+    },
+    {
+      "player_id": 1628976,
+      "player": "Wendell Carter Jr.",
+      "team": "CHI",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000671",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 1628976,
+        "firstName": "Wendell",
+        "familyName": "Carter Jr.",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "30f1527a391655aff0d5825483107c89b868c13b19ef24ff1ee05987a8691b92",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000671.json"
+    },
+    {
+      "player_id": 203897,
+      "player": "Zach LaVine",
+      "team": "CHI",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001051",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 203897,
+        "firstName": "Zach",
+        "familyName": "LaVine",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "9d770a6ac7ea72b207f0db01bf981717ed148fb4fdd7994da7e8b2e83c14b06d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001051.json"
+    },
+    {
+      "player_id": 1626224,
+      "player": "Cedi Osman",
+      "team": "CLE",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 16,
+      "jersey_display": "16",
+      "official_box_score_player": {
+        "personId": 1626224,
+        "firstName": "Cedi",
+        "familyName": "Osman",
+        "jerseyNum": "16",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1629012,
+      "player": "Collin Sexton",
+      "team": "CLE",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1629012,
+        "firstName": "Collin",
+        "familyName": "Sexton",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1628422,
+      "player": "Damyean Dotson",
+      "team": "CLE",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 1628422,
+        "firstName": "Damyean",
+        "familyName": "Dotson",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1629636,
+      "player": "Darius Garland",
+      "team": "CLE",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022000204",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1629636,
+        "firstName": "Darius",
+        "familyName": "Garland",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "5bdd6f61771180ebe27296b9539f542cc7efc83ace991a4f2794bdf785fece53",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000204.json"
+    },
+    {
+      "player_id": 1629731,
+      "player": "Dean Wade",
+      "team": "CLE",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 32,
+      "jersey_display": "32",
+      "official_box_score_player": {
+        "personId": 1629731,
+        "firstName": "Dean",
+        "familyName": "Wade",
+        "jerseyNum": "32",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1629685,
+      "player": "Dylan Windler",
+      "team": "CLE",
+      "last_game_date": "2021-03-26",
+      "game_id": "0022000693",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1629685,
+        "firstName": "Dylan",
+        "familyName": "Windler",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "9660dc46f4163ed7db2449d4d8d665663d9595b3b63ab631a67c60d814aaef35",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000693.json"
+    },
+    {
+      "player_id": 1630171,
+      "player": "Isaac Okoro",
+      "team": "CLE",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1630171,
+        "firstName": "Isaac",
+        "familyName": "Okoro",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 201580,
+      "player": "JaVale McGee",
+      "team": "CLE",
+      "last_game_date": "2021-03-22",
+      "game_id": "0022000653",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 201580,
+        "firstName": "JaVale",
+        "familyName": "McGee",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "1bbe5cd3c36e21bd70fb87083242ac94b7570e917ea01d90ea1e56bf00a0cad4",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000653.json"
+    },
+    {
+      "player_id": 1628386,
+      "player": "Jarrett Allen",
+      "team": "CLE",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001067",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 1628386,
+        "firstName": "Jarrett",
+        "familyName": "Allen",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "ec74a317226a7bd8f6c3cb26a030b6a2ecd3679dd4d3f66bcaf7be0848bea137",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001067.json"
+    },
+    {
+      "player_id": 1626204,
+      "player": "Larry Nance Jr.",
+      "team": "CLE",
+      "last_game_date": "2021-04-25",
+      "game_id": "0022000197",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1626204,
+        "firstName": "Larry",
+        "familyName": "Nance Jr.",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "2d91064b4a922e2bf045d406a91eda6fe02e5532534d5bfb2f86cfc70fadfa9c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000197.json"
+    },
+    {
+      "player_id": 1627827,
+      "player": "Dorian Finney-Smith",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1627827,
+        "firstName": "Dorian",
+        "familyName": "Finney-Smith",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 203939,
+      "player": "Dwight Powell",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 203939,
+        "firstName": "Dwight",
+        "familyName": "Powell",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1628973,
+      "player": "Jalen Brunson",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1628973,
+        "firstName": "Jalen",
+        "familyName": "Brunson",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1626196,
+      "player": "Josh Richardson",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1626196,
+        "firstName": "Josh",
+        "familyName": "Richardson",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 204001,
+      "player": "Kristaps Porziņģis",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 204001,
+        "firstName": "Kristaps",
+        "familyName": "Porzingis",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1629029,
+      "player": "Luka Dončić",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 77,
+      "jersey_display": "77",
+      "official_box_score_player": {
+        "personId": 1629029,
+        "firstName": "Luka",
+        "familyName": "Doncic",
+        "jerseyNum": "77",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1628467,
+      "player": "Maxi Kleber",
+      "team": "DAL",
+      "last_game_date": "2021-05-12",
+      "game_id": "0022000154",
+      "jersey": 42,
+      "jersey_display": "42",
+      "official_box_score_player": {
+        "personId": 1628467,
+        "firstName": "Maxi",
+        "familyName": "Kleber",
+        "jerseyNum": "42",
+        "played": "1"
+      },
+      "box_score_sha256": "347d9bb517291ff0c098375374bba17cc78939ddd210c0fe2f7b420fc45e356d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000154.json"
+    },
+    {
+      "player_id": 203501,
+      "player": "Tim Hardaway Jr.",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 203501,
+        "firstName": "Tim",
+        "familyName": "Hardaway Jr.",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1626161,
+      "player": "Willie Cauley-Stein",
+      "team": "DAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1626161,
+        "firstName": "Willie",
+        "familyName": "Cauley-Stein",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1630267,
+      "player": "Facundo Campazzo",
+      "team": "DEN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1630267,
+        "firstName": "Facundo",
+        "familyName": "Campazzo",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203210,
+      "player": "JaMychal Green",
+      "team": "DEN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 203210,
+        "firstName": "JaMychal",
+        "familyName": "Green",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 1627750,
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "last_game_date": "2021-04-12",
+      "game_id": "0022000821",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 1627750,
+        "firstName": "Jamal",
+        "familyName": "Murray",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "0932f16936e5e9774afcd052a05101b0c260df339237b8358c95fb478a4e31d2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000821.json"
+    },
+    {
+      "player_id": 1629008,
+      "player": "Michael Porter Jr.",
+      "team": "DEN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1629008,
+        "firstName": "Michael",
+        "familyName": "Porter Jr.",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 1628420,
+      "player": "Monté Morris",
+      "team": "DEN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1628420,
+        "firstName": "Monte",
+        "familyName": "Morris",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203999,
+      "player": "Nikola Jokić",
+      "team": "DEN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 203999,
+        "firstName": "Nikola",
+        "familyName": "Jokic",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 1628408,
+      "player": "PJ Dozier",
+      "team": "DEN",
+      "last_game_date": "2021-05-03",
+      "game_id": "0022000982",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1628408,
+        "firstName": "PJ",
+        "familyName": "Dozier",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "daa544cbf14f72e2b3c4c592f577062b68148a694b99687356ec3f20a43db8cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000982.json"
+    },
+    {
+      "player_id": 200794,
+      "player": "Paul Millsap",
+      "team": "DEN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 200794,
+        "firstName": "Paul",
+        "familyName": "Millsap",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203115,
+      "player": "Will Barton",
+      "team": "DEN",
+      "last_game_date": "2021-04-23",
+      "game_id": "0022000903",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 203115,
+        "firstName": "Will",
+        "familyName": "Barton",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "e27319177a52a84c06c1d27b3e71b846026b21a473f65b0852473d17f6c73794",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000903.json"
+    },
+    {
+      "player_id": 1626153,
+      "player": "Delon Wright",
+      "team": "DET",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000667",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 1626153,
+        "firstName": "Delon",
+        "familyName": "Wright",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "c69beab23fa0a68a59a17f7d95ef4ba8974aec429f8a7b64f568aca15dd50eae",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000667.json"
+    },
+    {
+      "player_id": 1628402,
+      "player": "Frank Jackson",
+      "team": "DET",
+      "last_game_date": "2021-05-09",
+      "game_id": "0022001023",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628402,
+        "firstName": "Frank",
+        "familyName": "Jackson",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "59ca07816dd7c45dd9ef7459744eddcfb10f481cfd357b20e289f6047e3a10a0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001023.json"
+    },
+    {
+      "player_id": 1630191,
+      "player": "Isaiah Stewart",
+      "team": "DET",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001033",
+      "jersey": 28,
+      "jersey_display": "28",
+      "official_box_score_player": {
+        "personId": 1630191,
+        "firstName": "Isaiah",
+        "familyName": "Stewart",
+        "jerseyNum": "28",
+        "played": "1"
+      },
+      "box_score_sha256": "64ffb8ce2bd92b374b92633f005bcb4b029140a0b6e206a386cb8ddcd3fe6f18",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001033.json"
+    },
+    {
+      "player_id": 203924,
+      "player": "Jerami Grant",
+      "team": "DET",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001013",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 203924,
+        "firstName": "Jerami",
+        "familyName": "Grant",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "b930658c239976b36eaa3f620076f36c554902f0368813f14790019f923c9235",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001013.json"
+    },
+    {
+      "player_id": 1628367,
+      "player": "Josh Jackson",
+      "team": "DET",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001069",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1628367,
+        "firstName": "Josh",
+        "familyName": "Jackson",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "95f02aee4fb82f34fa0cf09ac9b042652e11f441c6a6a3296436ecf1be1ff863",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001069.json"
+    },
+    {
+      "player_id": 203486,
+      "player": "Mason Plumlee",
+      "team": "DET",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001013",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 203486,
+        "firstName": "Mason",
+        "familyName": "Plumlee",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "b930658c239976b36eaa3f620076f36c554902f0368813f14790019f923c9235",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001013.json"
+    },
+    {
+      "player_id": 1630240,
+      "player": "Saben Lee",
+      "team": "DET",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001069",
+      "jersey": 38,
+      "jersey_display": "38",
+      "official_box_score_player": {
+        "personId": 1630240,
+        "firstName": "Saben",
+        "familyName": "Lee",
+        "jerseyNum": "38",
+        "played": "1"
+      },
+      "box_score_sha256": "95f02aee4fb82f34fa0cf09ac9b042652e11f441c6a6a3296436ecf1be1ff863",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001069.json"
+    },
+    {
+      "player_id": 1630180,
+      "player": "Saddiq Bey",
+      "team": "DET",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001069",
+      "jersey": 41,
+      "jersey_display": "41",
+      "official_box_score_player": {
+        "personId": 1630180,
+        "firstName": "Saddiq",
+        "familyName": "Bey",
+        "jerseyNum": "41",
+        "played": "1"
+      },
+      "box_score_sha256": "95f02aee4fb82f34fa0cf09ac9b042652e11f441c6a6a3296436ecf1be1ff863",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001069.json"
+    },
+    {
+      "player_id": 1629635,
+      "player": "Sekou Doumbouya",
+      "team": "DET",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001033",
+      "jersey": 45,
+      "jersey_display": "45",
+      "official_box_score_player": {
+        "personId": 1629635,
+        "firstName": "Sekou",
+        "familyName": "Doumbouya",
+        "jerseyNum": "45",
+        "played": "1"
+      },
+      "box_score_sha256": "64ffb8ce2bd92b374b92633f005bcb4b029140a0b6e206a386cb8ddcd3fe6f18",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001033.json"
+    },
+    {
+      "player_id": 1629004,
+      "player": "Svi Mykhailiuk",
+      "team": "DET",
+      "last_game_date": "2021-03-11",
+      "game_id": "0022000568",
+      "jersey": 19,
+      "jersey_display": "19",
+      "official_box_score_player": {
+        "personId": 1629004,
+        "firstName": "Svi",
+        "familyName": "Mykhailiuk",
+        "jerseyNum": "19",
+        "played": "1"
+      },
+      "box_score_sha256": "1b72c623394a6a8e73cc03d933a772597bb0db11819c072f83e96c2393d16b15",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000568.json"
+    },
+    {
+      "player_id": 201961,
+      "player": "Wayne Ellington",
+      "team": "DET",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001013",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 201961,
+        "firstName": "Wayne",
+        "familyName": "Ellington",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "b930658c239976b36eaa3f620076f36c554902f0368813f14790019f923c9235",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001013.json"
+    },
+    {
+      "player_id": 203952,
+      "player": "Andrew Wiggins",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 203952,
+        "firstName": "Andrew",
+        "familyName": "Wiggins",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 202954,
+      "player": "Brad Wanamaker",
+      "team": "GSW",
+      "last_game_date": "2021-03-20",
+      "game_id": "0022000642",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 202954,
+        "firstName": "Brad",
+        "familyName": "Wanamaker",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "6b52d117427f073677d9dfc123ff9adbacde6d709a47f26b3be09108814e99ee",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000642.json"
+    },
+    {
+      "player_id": 1627814,
+      "player": "Damion Lee",
+      "team": "GSW",
+      "last_game_date": "2021-04-19",
+      "game_id": "0022000870",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1627814,
+        "firstName": "Damion",
+        "familyName": "Lee",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "2aaef967301462145166a0cc9f5c88b4ffba23abcedce1a2bf7e5b13d9a157b7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000870.json"
+    },
+    {
+      "player_id": 203110,
+      "player": "Draymond Green",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 203110,
+        "firstName": "Draymond",
+        "familyName": "Green",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1629672,
+      "player": "Eric Paschall",
+      "team": "GSW",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001059",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1629672,
+        "firstName": "Eric",
+        "familyName": "Paschall",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "50469d6da1809aa7dfa431315852877ce7753e68eda78b7196fa8e797b566c3d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001059.json"
+    },
+    {
+      "player_id": 1630164,
+      "player": "James Wiseman",
+      "team": "GSW",
+      "last_game_date": "2021-04-10",
+      "game_id": "0022000802",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1630164,
+        "firstName": "James",
+        "familyName": "Wiseman",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "3c1dc723f52a5359227df47cd8129c5bfe5309c92e9efafb5f755c209e91ff5d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000802.json"
+    },
+    {
+      "player_id": 1629673,
+      "player": "Jordan Poole",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1629673,
+        "firstName": "Jordan",
+        "familyName": "Poole",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1629308,
+      "player": "Juan Toscano-Anderson",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 95,
+      "jersey_display": "95",
+      "official_box_score_player": {
+        "personId": 1629308,
+        "firstName": "Juan",
+        "familyName": "Toscano-Anderson",
+        "jerseyNum": "95",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1626162,
+      "player": "Kelly Oubre Jr.",
+      "team": "GSW",
+      "last_game_date": "2021-04-27",
+      "game_id": "0022000932",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1626162,
+        "firstName": "Kelly",
+        "familyName": "Oubre Jr.",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "c2f0c7a61a4b597c558ba0320105645c0755addec3088e586aebc5d107d9244f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000932.json"
+    },
+    {
+      "player_id": 203145,
+      "player": "Kent Bazemore",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 26,
+      "jersey_display": "26",
+      "official_box_score_player": {
+        "personId": 203145,
+        "firstName": "Kent",
+        "familyName": "Bazemore",
+        "jerseyNum": "26",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1626172,
+      "player": "Kevon Looney",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1626172,
+        "firstName": "Kevon",
+        "familyName": "Looney",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 201939,
+      "player": "Stephen Curry",
+      "team": "GSW",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 201939,
+        "firstName": "Stephen",
+        "familyName": "Curry",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 203463,
+      "player": "Ben McLemore",
+      "team": "HOU",
+      "last_game_date": "2021-04-02",
+      "game_id": "0022000738",
+      "jersey": 16,
+      "jersey_display": "16",
+      "official_box_score_player": {
+        "personId": 203463,
+        "firstName": "Ben",
+        "familyName": "McLemore",
+        "jerseyNum": "16",
+        "played": "1"
+      },
+      "box_score_sha256": "cea77181b64afa75aff794ef26b02d5a22adc6b5b8caa04108b8833f1402d8f6",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000738.json"
+    },
+    {
+      "player_id": 1626174,
+      "player": "Christian Wood",
+      "team": "HOU",
+      "last_game_date": "2021-05-02",
+      "game_id": "0022000971",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1626174,
+        "firstName": "Christian",
+        "familyName": "Wood",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "f0ef4c1a207cef2d4c2fc28876deb3ebd9101119698d9b2166714bc52b1be3b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000971.json"
+    },
+    {
+      "player_id": 1627863,
+      "player": "Danuel House Jr.",
+      "team": "HOU",
+      "last_game_date": "2021-05-10",
+      "game_id": "0022001031",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1627863,
+        "firstName": "Danuel",
+        "familyName": "House Jr.",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "5dabb65abc6d077c31a887accb6679519c60532601c03bb19fb2fd59fc6dae6e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001031.json"
+    },
+    {
+      "player_id": 1628021,
+      "player": "David Nwaba",
+      "team": "HOU",
+      "last_game_date": "2021-03-14",
+      "game_id": "0022000598",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1628021,
+        "firstName": "David",
+        "familyName": "Nwaba",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "6aad7e1c3ced032ef94b6336e9dcb9fa33cc0cc606196aa84af6db3ba58592f9",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000598.json"
+    },
+    {
+      "player_id": 1630256,
+      "player": "Jae'Sean Tate",
+      "team": "HOU",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001066",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630256,
+        "firstName": "Jae'Sean",
+        "familyName": "Tate",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "89d3540f4fdf52ca527e1f805e28e6be23286c9169808fe8079b14385232ca5a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001066.json"
+    },
+    {
+      "player_id": 202322,
+      "player": "John Wall",
+      "team": "HOU",
+      "last_game_date": "2021-04-23",
+      "game_id": "0022000901",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 202322,
+        "firstName": "John",
+        "familyName": "Wall",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "8687a6d393ad23bd409508007907baf717768235304354e5837afe462157da76",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000901.json"
+    },
+    {
+      "player_id": 1630231,
+      "player": "KJ Martin",
+      "team": "HOU",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001066",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1630231,
+        "firstName": "Kenyon",
+        "familyName": "Martin Jr.",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "89d3540f4fdf52ca527e1f805e28e6be23286c9169808fe8079b14385232ca5a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001066.json"
+    },
+    {
+      "player_id": 200782,
+      "player": "P.J. Tucker",
+      "team": "HOU",
+      "last_game_date": "2021-03-03",
+      "game_id": "0022000546",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 200782,
+        "firstName": "P.J.",
+        "familyName": "Tucker",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "d68953413c9c879f772359e3fbadf28258319164c58c05c458fb306880400275",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000546.json"
+    },
+    {
+      "player_id": 1628425,
+      "player": "Sterling Brown",
+      "team": "HOU",
+      "last_game_date": "2021-04-10",
+      "game_id": "0022000802",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628425,
+        "firstName": "Sterling",
+        "familyName": "Brown",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "3c1dc723f52a5359227df47cd8129c5bfe5309c92e9efafb5f755c209e91ff5d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000802.json"
+    },
+    {
+      "player_id": 1628988,
+      "player": "Aaron Holiday",
+      "team": "IND",
+      "last_game_date": "2021-05-10",
+      "game_id": "0022001027",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1628988,
+        "firstName": "Aaron",
+        "familyName": "Holiday",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "dbfd83e4a9ca8c9a41c16e517be136b383aa514fdc6e508061fd62ff71efccbb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001027.json"
+    },
+    {
+      "player_id": 1627747,
+      "player": "Caris LeVert",
+      "team": "IND",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1627747,
+        "firstName": "Caris",
+        "familyName": "LeVert",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1627734,
+      "player": "Domantas Sabonis",
+      "team": "IND",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1627734,
+        "firstName": "Domantas",
+        "familyName": "Sabonis",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 203926,
+      "player": "Doug McDermott",
+      "team": "IND",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 203926,
+        "firstName": "Doug",
+        "familyName": "McDermott",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1628410,
+      "player": "Edmond Sumner",
+      "team": "IND",
+      "last_game_date": "2021-05-10",
+      "game_id": "0022001027",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628410,
+        "firstName": "Edmond",
+        "familyName": "Sumner",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "dbfd83e4a9ca8c9a41c16e517be136b383aa514fdc6e508061fd62ff71efccbb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001027.json"
+    },
+    {
+      "player_id": 203087,
+      "player": "Jeremy Lamb",
+      "team": "IND",
+      "last_game_date": "2021-04-18",
+      "game_id": "0022000861",
+      "jersey": 26,
+      "jersey_display": "26",
+      "official_box_score_player": {
+        "personId": 203087,
+        "firstName": "Jeremy",
+        "familyName": "Lamb",
+        "jerseyNum": "26",
+        "played": "1"
+      },
+      "box_score_sha256": "990a5f4da936c868352c74badcf386b5ccacfb56cc4fdfbfb9ab0921daea3fa2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000861.json"
+    },
+    {
+      "player_id": 203200,
+      "player": "Justin Holiday",
+      "team": "IND",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 203200,
+        "firstName": "Justin",
+        "familyName": "Holiday",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1627763,
+      "player": "Malcolm Brogdon",
+      "team": "IND",
+      "last_game_date": "2021-04-29",
+      "game_id": "0022000944",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1627763,
+        "firstName": "Malcolm",
+        "familyName": "Brogdon",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "3c4d18f0369b4bd0682d71a0bb5d9354af05c363d170bb7e22d673d2c4302916",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000944.json"
+    },
+    {
+      "player_id": 1626167,
+      "player": "Myles Turner",
+      "team": "IND",
+      "last_game_date": "2021-04-18",
+      "game_id": "0022000861",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 1626167,
+        "firstName": "Myles",
+        "familyName": "Turner",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "990a5f4da936c868352c74badcf386b5ccacfb56cc4fdfbfb9ab0921daea3fa2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000861.json"
+    },
+    {
+      "player_id": 204456,
+      "player": "T.J. McConnell",
+      "team": "IND",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 204456,
+        "firstName": "T.J.",
+        "familyName": "McConnell",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1627826,
+      "player": "Ivica Zubac",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 40,
+      "jersey_display": "40",
+      "official_box_score_player": {
+        "personId": 1627826,
+        "firstName": "Ivica",
+        "familyName": "Zubac",
+        "jerseyNum": "40",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 202695,
+      "player": "Kawhi Leonard",
+      "team": "LAC",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001047",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 202695,
+        "firstName": "Kawhi",
+        "familyName": "Leonard",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "f08c0b690764b16931bd703d6745a85ee9f8ecaf2e584c9f263f428b20f64a44",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001047.json"
+    },
+    {
+      "player_id": 101150,
+      "player": "Lou Williams",
+      "team": "LAC",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000675",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 101150,
+        "firstName": "Lou",
+        "familyName": "Williams",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae917480e13b4cf473094086793eea390a163b987549e43e2cd6e28f03b85e4",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000675.json"
+    },
+    {
+      "player_id": 1628379,
+      "player": "Luke Kennard",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628379,
+        "firstName": "Luke",
+        "familyName": "Kennard",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 202694,
+      "player": "Marcus Morris Sr.",
+      "team": "LAC",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001058",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 202694,
+        "firstName": "Marcus",
+        "familyName": "Morris Sr.",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "a46b71805a890a43a3c1e60c68466f634ba1aa118be0ebc0abb6f187c6fa2f46",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001058.json"
+    },
+    {
+      "player_id": 201587,
+      "player": "Nicolas Batum",
+      "team": "LAC",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001058",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 201587,
+        "firstName": "Nicolas",
+        "familyName": "Batum",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "a46b71805a890a43a3c1e60c68466f634ba1aa118be0ebc0abb6f187c6fa2f46",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001058.json"
+    },
+    {
+      "player_id": 201976,
+      "player": "Patrick Beverley",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 201976,
+        "firstName": "Patrick",
+        "familyName": "Beverley",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 202335,
+      "player": "Patrick Patterson",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 54,
+      "jersey_display": "54",
+      "official_box_score_player": {
+        "personId": 202335,
+        "firstName": "Patrick",
+        "familyName": "Patterson",
+        "jerseyNum": "54",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 202331,
+      "player": "Paul George",
+      "team": "LAC",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001047",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 202331,
+        "firstName": "Paul",
+        "familyName": "George",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "f08c0b690764b16931bd703d6745a85ee9f8ecaf2e584c9f263f428b20f64a44",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001047.json"
+    },
+    {
+      "player_id": 202704,
+      "player": "Reggie Jackson",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 202704,
+        "firstName": "Reggie",
+        "familyName": "Jackson",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 201586,
+      "player": "Serge Ibaka",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 201586,
+        "firstName": "Serge",
+        "familyName": "Ibaka",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 1629611,
+      "player": "Terance Mann",
+      "team": "LAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1629611,
+        "firstName": "Terance",
+        "familyName": "Mann",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 1627936,
+      "player": "Alex Caruso",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1627936,
+        "firstName": "Alex",
+        "familyName": "Caruso",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 203076,
+      "player": "Anthony Davis",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203076,
+        "firstName": "Anthony",
+        "familyName": "Davis",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 203471,
+      "player": "Dennis Schröder",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 203471,
+        "firstName": "Dennis",
+        "familyName": "Schroder",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 203484,
+      "player": "Kentavious Caldwell-Pope",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 203484,
+        "firstName": "Kentavious",
+        "familyName": "Caldwell-Pope",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 1628398,
+      "player": "Kyle Kuzma",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628398,
+        "firstName": "Kyle",
+        "familyName": "Kuzma",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 2544,
+      "player": "LeBron James",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 2544,
+        "firstName": "LeBron",
+        "familyName": "James",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 201188,
+      "player": "Marc Gasol",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 201188,
+        "firstName": "Marc",
+        "familyName": "Gasol",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 202693,
+      "player": "Markieff Morris",
+      "team": "LAL",
+      "last_game_date": "2021-05-12",
+      "game_id": "0022001046",
+      "jersey": 88,
+      "jersey_display": "88",
+      "official_box_score_player": {
+        "personId": 202693,
+        "firstName": "Markieff",
+        "familyName": "Morris",
+        "jerseyNum": "88",
+        "played": "1"
+      },
+      "box_score_sha256": "4c4fda5055b1125e46c5c11ee71dc8ac3b398d5c75a6f147064e2bbfff40ad46",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001046.json"
+    },
+    {
+      "player_id": 1626149,
+      "player": "Montrezl Harrell",
+      "team": "LAL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001061",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1626149,
+        "firstName": "Montrezl",
+        "familyName": "Harrell",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "45773594e7a59498957c18a3594f34e540fa9793bbf28a8427286ceaae158d58",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001061.json"
+    },
+    {
+      "player_id": 1629659,
+      "player": "Talen Horton-Tucker",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1629659,
+        "firstName": "Talen",
+        "familyName": "Horton-Tucker",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 202083,
+      "player": "Wesley Matthews",
+      "team": "LAL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 202083,
+        "firstName": "Wesley",
+        "familyName": "Matthews",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 1629634,
+      "player": "Brandon Clarke",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1629634,
+        "firstName": "Brandon",
+        "familyName": "Clarke",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1629001,
+      "player": "De'Anthony Melton",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1629001,
+        "firstName": "De'Anthony",
+        "familyName": "Melton",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1630217,
+      "player": "Desmond Bane",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1630217,
+        "firstName": "Desmond",
+        "familyName": "Bane",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1628415,
+      "player": "Dillon Brooks",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1628415,
+        "firstName": "Dillon",
+        "familyName": "Brooks",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1628960,
+      "player": "Grayson Allen",
+      "team": "MEM",
+      "last_game_date": "2021-05-05",
+      "game_id": "0022000183",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1628960,
+        "firstName": "Grayson",
+        "familyName": "Allen",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "7e1f65cddfa481139cd4cf7a7890b7cf906bf14da24a3f7b2a1df031bfe979dd",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000183.json"
+    },
+    {
+      "player_id": 1629630,
+      "player": "Ja Morant",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629630,
+        "firstName": "Ja",
+        "familyName": "Morant",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 202685,
+      "player": "Jonas Valančiūnas",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 202685,
+        "firstName": "Jonas",
+        "familyName": "Valanciunas",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 203937,
+      "player": "Kyle Anderson",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 203937,
+        "firstName": "Kyle",
+        "familyName": "Anderson",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1626145,
+      "player": "Tyus Jones",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 1626145,
+        "firstName": "Tyus",
+        "familyName": "Jones",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 1630214,
+      "player": "Xavier Tillman",
+      "team": "MEM",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001070",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1630214,
+        "firstName": "Xavier",
+        "familyName": "Tillman",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "b5b5ebcebdbe85c3b428eaccc917e0e44d6476b2a0fd98da9a92173919812464",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001070.json"
+    },
+    {
+      "player_id": 2738,
+      "player": "Andre Iguodala",
+      "team": "MIA",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 28,
+      "jersey_display": "28",
+      "official_box_score_player": {
+        "personId": 2738,
+        "firstName": "Andre",
+        "familyName": "Iguodala",
+        "jerseyNum": "28",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 1628389,
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1628389,
+        "firstName": "Bam",
+        "familyName": "Adebayo",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 1629130,
+      "player": "Duncan Robinson",
+      "team": "MIA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001069",
+      "jersey": 55,
+      "jersey_display": "55",
+      "official_box_score_player": {
+        "personId": 1629130,
+        "firstName": "Duncan",
+        "familyName": "Robinson",
+        "jerseyNum": "55",
+        "played": "1"
+      },
+      "box_score_sha256": "95f02aee4fb82f34fa0cf09ac9b042652e11f441c6a6a3296436ecf1be1ff863",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001069.json"
+    },
+    {
+      "player_id": 201609,
+      "player": "Goran Dragic",
+      "team": "MIA",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 201609,
+        "firstName": "Goran",
+        "familyName": "Dragic",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 202710,
+      "player": "Jimmy Butler III",
+      "team": "MIA",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022001050",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 202710,
+        "firstName": "Jimmy",
+        "familyName": "Butler",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "6a6c1dba51ce6f76f081be7a1eb2ff7c668fa2a175a506d4bc63faa225debc16",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001050.json"
+    },
+    {
+      "player_id": 203482,
+      "player": "Kelly Olynyk",
+      "team": "MIA",
+      "last_game_date": "2021-03-23",
+      "game_id": "0022000664",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 203482,
+        "firstName": "Kelly",
+        "familyName": "Olynyk",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "1fb8da92ce93f68091256af1d87310429f75c2350c476b35191b9c7f279df09d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000664.json"
+    },
+    {
+      "player_id": 1629134,
+      "player": "Kendrick Nunn",
+      "team": "MIA",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1629134,
+        "firstName": "Kendrick",
+        "familyName": "Nunn",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 2772,
+      "player": "Trevor Ariza",
+      "team": "MIA",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 2772,
+        "firstName": "Trevor",
+        "familyName": "Ariza",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 1629639,
+      "player": "Tyler Herro",
+      "team": "MIA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001069",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1629639,
+        "firstName": "Tyler",
+        "familyName": "Herro",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "95f02aee4fb82f34fa0cf09ac9b042652e11f441c6a6a3296436ecf1be1ff863",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001069.json"
+    },
+    {
+      "player_id": 1626171,
+      "player": "Bobby Portis",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1626171,
+        "firstName": "Bobby",
+        "familyName": "Portis",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 201572,
+      "player": "Brook Lopez",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 201572,
+        "firstName": "Brook",
+        "familyName": "Lopez",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 1627854,
+      "player": "Bryn Forbes",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1627854,
+        "firstName": "Bryn",
+        "familyName": "Forbes",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 201571,
+      "player": "D.J. Augustin",
+      "team": "MIL",
+      "last_game_date": "2021-03-15",
+      "game_id": "0022000603",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 201571,
+        "firstName": "D.J.",
+        "familyName": "Augustin",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "448e31cb65a7acc3a6eaac80e62968bb2a830b4eaecd85e8f4ece5e677e7d206",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000603.json"
+    },
+    {
+      "player_id": 1628978,
+      "player": "Donte DiVincenzo",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1628978,
+        "firstName": "Donte",
+        "familyName": "DiVincenzo",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 203507,
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 203507,
+        "firstName": "Giannis",
+        "familyName": "Antetokounmpo",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 201950,
+      "player": "Jrue Holiday",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 201950,
+        "firstName": "Jrue",
+        "familyName": "Holiday",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 203114,
+      "player": "Khris Middleton",
+      "team": "MIL",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001062",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 203114,
+        "firstName": "Khris",
+        "familyName": "Middleton",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "d0057c69e7d788834aab8b445e040d548982abb262a1a9dec383678cf563d80c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001062.json"
+    },
+    {
+      "player_id": 1626192,
+      "player": "Pat Connaughton",
+      "team": "MIL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001068",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1626192,
+        "firstName": "Pat",
+        "familyName": "Connaughton",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "0b58452e7cfae0a9b7b513a2c652ab25339891ba1d86e4bc55ed5ee63c7540cc",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001068.json"
+    },
+    {
+      "player_id": 1630162,
+      "player": "Anthony Edwards",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1630162,
+        "firstName": "Anthony",
+        "familyName": "Edwards",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1626156,
+      "player": "D'Angelo Russell",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1626156,
+        "firstName": "D'Angelo",
+        "familyName": "Russell",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1630183,
+      "player": "Jaden McDaniels",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1630183,
+        "firstName": "Jaden",
+        "familyName": "McDaniels",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1629020,
+      "player": "Jarred Vanderbilt",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1629020,
+        "firstName": "Jarred",
+        "familyName": "Vanderbilt",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1629669,
+      "player": "Jaylen Nowell",
+      "team": "MIN",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001063",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1629669,
+        "firstName": "Jaylen",
+        "familyName": "Nowell",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "6e756d04ed9f05bb9d7f89ef87eb0fbc665cba032862e19333720487f8a0b4e9",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001063.json"
+    },
+    {
+      "player_id": 1629162,
+      "player": "Jordan McLaughlin",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1629162,
+        "firstName": "Jordan",
+        "familyName": "McLaughlin",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1629006,
+      "player": "Josh Okogie",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 1629006,
+        "firstName": "Josh",
+        "familyName": "Okogie",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1627823,
+      "player": "Juancho Hernangomez",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 41,
+      "jersey_display": "41",
+      "official_box_score_player": {
+        "personId": 1627823,
+        "firstName": "Juancho",
+        "familyName": "Hernangomez",
+        "jerseyNum": "41",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1626157,
+      "player": "Karl-Anthony Towns",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 32,
+      "jersey_display": "32",
+      "official_box_score_player": {
+        "personId": 1626157,
+        "firstName": "Karl-Anthony",
+        "familyName": "Towns",
+        "jerseyNum": "32",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1627736,
+      "player": "Malik Beasley",
+      "team": "MIN",
+      "last_game_date": "2021-04-02",
+      "game_id": "0022000741",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1627736,
+        "firstName": "Malik",
+        "familyName": "Beasley",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "6e3537c482b278fa12c58bda3a641f38711bc5af3e757abbd26c42b5f64968b0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000741.json"
+    },
+    {
+      "player_id": 1629675,
+      "player": "Naz Reid",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1629675,
+        "firstName": "Naz",
+        "familyName": "Reid",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 201937,
+      "player": "Ricky Rubio",
+      "team": "MIN",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001071",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 201937,
+        "firstName": "Ricky",
+        "familyName": "Rubio",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "1cb825232f08a10ab4784aba6d530efe72b25585be144847958966795a3a25b3",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001071.json"
+    },
+    {
+      "player_id": 1627742,
+      "player": "Brandon Ingram",
+      "team": "NOP",
+      "last_game_date": "2021-05-04",
+      "game_id": "0022000987",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1627742,
+        "firstName": "Brandon",
+        "familyName": "Ingram",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "e1aafab5ccffa807c9fc47c8cc023301e057deda45e11c3630b6d7aea9877c80",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000987.json"
+    },
+    {
+      "player_id": 202339,
+      "player": "Eric Bledsoe",
+      "team": "NOP",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 202339,
+        "firstName": "Eric",
+        "familyName": "Bledsoe",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 200755,
+      "player": "JJ Redick",
+      "team": "NOP",
+      "last_game_date": "2021-03-03",
+      "game_id": "0022000548",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 200755,
+        "firstName": "JJ",
+        "familyName": "Redick",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "2b42ae94401e4cf3ebd6d3f06c37532dc84b2414a22fb6f86e49576143697c30",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000548.json"
+    },
+    {
+      "player_id": 1629637,
+      "player": "Jaxson Hayes",
+      "team": "NOP",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 1629637,
+        "firstName": "Jaxson",
+        "familyName": "Hayes",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 1628404,
+      "player": "Josh Hart",
+      "team": "NOP",
+      "last_game_date": "2021-04-01",
+      "game_id": "0022000734",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1628404,
+        "firstName": "Josh",
+        "familyName": "Hart",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "9f1a4d64e76394092db6613418015a171cc6a2e968247076906b8e3f988e6b14",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000734.json"
+    },
+    {
+      "player_id": 1630184,
+      "player": "Kira Lewis Jr.",
+      "team": "NOP",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 13,
+      "jersey_display": "13",
+      "official_box_score_player": {
+        "personId": 1630184,
+        "firstName": "Kira",
+        "familyName": "Lewis Jr.",
+        "jerseyNum": "13",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 1628366,
+      "player": "Lonzo Ball",
+      "team": "NOP",
+      "last_game_date": "2021-05-10",
+      "game_id": "0022001028",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1628366,
+        "firstName": "Lonzo",
+        "familyName": "Ball",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "a3a9ff31c7e9ace76761668c4d0595b28bb381078691d2b10c7b49bff8bd55e0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001028.json"
+    },
+    {
+      "player_id": 1630230,
+      "player": "Naji Marshall",
+      "team": "NOP",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630230,
+        "firstName": "Naji",
+        "familyName": "Marshall",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 1629638,
+      "player": "Nickeil Alexander-Walker",
+      "team": "NOP",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1629638,
+        "firstName": "Nickeil",
+        "familyName": "Alexander-Walker",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 203500,
+      "player": "Steven Adams",
+      "team": "NOP",
+      "last_game_date": "2021-05-04",
+      "game_id": "0022000987",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 203500,
+        "firstName": "Steven",
+        "familyName": "Adams",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "e1aafab5ccffa807c9fc47c8cc023301e057deda45e11c3630b6d7aea9877c80",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000987.json"
+    },
+    {
+      "player_id": 1626195,
+      "player": "Willy Hernangomez",
+      "team": "NOP",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001072",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1626195,
+        "firstName": "Willy",
+        "familyName": "Hernangomez",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "e8690397cb11dca6b064aa0e393c12f4cdf3106990ae908f2500aee378173218",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001072.json"
+    },
+    {
+      "player_id": 1629627,
+      "player": "Zion Williamson",
+      "team": "NOP",
+      "last_game_date": "2021-05-04",
+      "game_id": "0022000987",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1629627,
+        "firstName": "Zion",
+        "familyName": "Williamson",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "e1aafab5ccffa807c9fc47c8cc023301e057deda45e11c3630b6d7aea9877c80",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000987.json"
+    },
+    {
+      "player_id": 202692,
+      "player": "Alec Burks",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 18,
+      "jersey_display": "18",
+      "official_box_score_player": {
+        "personId": 202692,
+        "firstName": "Alec",
+        "familyName": "Burks",
+        "jerseyNum": "18",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 201565,
+      "player": "Derrick Rose",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 201565,
+        "firstName": "Derrick",
+        "familyName": "Rose",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 203901,
+      "player": "Elfrid Payton",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 203901,
+        "firstName": "Elfrid",
+        "familyName": "Payton",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 1630193,
+      "player": "Immanuel Quickley",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1630193,
+        "firstName": "Immanuel",
+        "familyName": "Quickley",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 203944,
+      "player": "Julius Randle",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 203944,
+        "firstName": "Julius",
+        "familyName": "Randle",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 1629011,
+      "player": "Mitchell Robinson",
+      "team": "NYK",
+      "last_game_date": "2021-03-27",
+      "game_id": "0022000695",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1629011,
+        "firstName": "Mitchell",
+        "familyName": "Robinson",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "cc9b034259b6af3a55dd2ca6b0d61a1688581aca7948a6b285d7656a6bbc7bd1",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000695.json"
+    },
+    {
+      "player_id": 203457,
+      "player": "Nerlens Noel",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203457,
+        "firstName": "Nerlens",
+        "familyName": "Noel",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 1629628,
+      "player": "RJ Barrett",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1629628,
+        "firstName": "RJ",
+        "familyName": "Barrett",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 203493,
+      "player": "Reggie Bullock Jr.",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 203493,
+        "firstName": "Reggie",
+        "familyName": "Bullock",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 201959,
+      "player": "Taj Gibson",
+      "team": "NYK",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001073",
+      "jersey": 67,
+      "jersey_display": "67",
+      "official_box_score_player": {
+        "personId": 201959,
+        "firstName": "Taj",
+        "familyName": "Gibson",
+        "jerseyNum": "67",
+        "played": "1"
+      },
+      "box_score_sha256": "a2b12b8f12e98daf78c63ce2bf6a0c3d0890164e6a2230fdff9268b45ccee1e7",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001073.json"
+    },
+    {
+      "player_id": 1630197,
+      "player": "Aleksej Pokusevski",
+      "team": "OKC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 17,
+      "jersey_display": "17",
+      "official_box_score_player": {
+        "personId": 1630197,
+        "firstName": "Aleksej",
+        "familyName": "Pokusevski",
+        "jerseyNum": "17",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 1629647,
+      "player": "Darius Bazley",
+      "team": "OKC",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001056",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 1629647,
+        "firstName": "Darius",
+        "familyName": "Bazley",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "93041d4a5bf5c672a5cfcc1fb1947d35db488934d5a694c816ee01909310c32c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001056.json"
+    },
+    {
+      "player_id": 1628977,
+      "player": "Hamidou Diallo",
+      "team": "OKC",
+      "last_game_date": "2021-02-24",
+      "game_id": "0022000495",
+      "jersey": 6,
+      "jersey_display": "6",
+      "official_box_score_player": {
+        "personId": 1628977,
+        "firstName": "Hamidou",
+        "familyName": "Diallo",
+        "jerseyNum": "6",
+        "played": "1"
+      },
+      "box_score_sha256": "71038592764d337e4871fb3a0fbda6239706f33d1b907878a9c7cfda7ee60e75",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000495.json"
+    },
+    {
+      "player_id": 1629676,
+      "player": "Isaiah Roby",
+      "team": "OKC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1629676,
+        "firstName": "Isaiah",
+        "familyName": "Roby",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 1628382,
+      "player": "Justin Jackson",
+      "team": "OKC",
+      "last_game_date": "2021-04-03",
+      "game_id": "0022000753",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 1628382,
+        "firstName": "Justin",
+        "familyName": "Jackson",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "60594dbc2ac0f445ef6921c4294a0fddabff8fa7359e77207caf396fce3043da",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000753.json"
+    },
+    {
+      "player_id": 1629026,
+      "player": "Kenrich Williams",
+      "team": "OKC",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001040",
+      "jersey": 34,
+      "jersey_display": "34",
+      "official_box_score_player": {
+        "personId": 1629026,
+        "firstName": "Kenrich",
+        "familyName": "Williams",
+        "jerseyNum": "34",
+        "played": "1"
+      },
+      "box_score_sha256": "271c81790c499b2c6595946bbd512d850860636c5f49616719f0c9d3754d5383",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001040.json"
+    },
+    {
+      "player_id": 1629652,
+      "player": "Luguentz Dort",
+      "team": "OKC",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001017",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1629652,
+        "firstName": "Luguentz",
+        "familyName": "Dort",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "fac056383be7889423d4705f98bc3d250eee21cfa25422b579afc79e3148aead",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001017.json"
+    },
+    {
+      "player_id": 203488,
+      "player": "Mike Muscala",
+      "team": "OKC",
+      "last_game_date": "2021-03-14",
+      "game_id": "0022000593",
+      "jersey": 33,
+      "jersey_display": "33",
+      "official_box_score_player": {
+        "personId": 203488,
+        "firstName": "Mike",
+        "familyName": "Muscala",
+        "jerseyNum": "33",
+        "played": "1"
+      },
+      "box_score_sha256": "693a528912d30a8351a2ebc3eae162cb52b51946d3757adb3ef4bbb771f0240a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000593.json"
+    },
+    {
+      "player_id": 1629650,
+      "player": "Moses Brown",
+      "team": "OKC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1629650,
+        "firstName": "Moses",
+        "familyName": "Brown",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 1628983,
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "last_game_date": "2021-03-22",
+      "game_id": "0022000654",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1628983,
+        "firstName": "Shai",
+        "familyName": "Gilgeous-Alexander",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "a6c93dc5010ca09b10688a5c9cd1ef17e861363bd559b6a59592c21b32558b2a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000654.json"
+    },
+    {
+      "player_id": 1629004,
+      "player": "Svi Mykhailiuk",
+      "team": "OKC",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001056",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 1629004,
+        "firstName": "Svi",
+        "familyName": "Mykhailiuk",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "93041d4a5bf5c672a5cfcc1fb1947d35db488934d5a694c816ee01909310c32c",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001056.json"
+    },
+    {
+      "player_id": 1630177,
+      "player": "Theo Maledon",
+      "team": "OKC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001074",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 1630177,
+        "firstName": "Theo",
+        "familyName": "Maledon",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "6eac1e242376805eb614c640181c1572349c3791ddbe4f58155d331c4919c29a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001074.json"
+    },
+    {
+      "player_id": 1629660,
+      "player": "Ty Jerome",
+      "team": "OKC",
+      "last_game_date": "2021-05-06",
+      "game_id": "0022001001",
+      "jersey": 16,
+      "jersey_display": "16",
+      "official_box_score_player": {
+        "personId": 1629660,
+        "firstName": "Ty",
+        "familyName": "Jerome",
+        "jerseyNum": "16",
+        "played": "1"
+      },
+      "box_score_sha256": "36b4b029503cffc4b1f6077c3c9f171807a1d946be5c6b180fa61d13d67476d9",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001001.json"
+    },
+    {
+      "player_id": 1626184,
+      "player": "Chasson Randle",
+      "team": "ORL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1626184,
+        "firstName": "Chasson",
+        "familyName": "Randle",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 1629643,
+      "player": "Chuma Okeke",
+      "team": "ORL",
+      "last_game_date": "2021-04-28",
+      "game_id": "0022000933",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1629643,
+        "firstName": "Chuma",
+        "familyName": "Okeke",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "90863abeccfb1cd6fa619de1d1c5ba177585804a8b0a8cdf415f3c34b3cd65a6",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000933.json"
+    },
+    {
+      "player_id": 1630175,
+      "player": "Cole Anthony",
+      "team": "ORL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 50,
+      "jersey_display": "50",
+      "official_box_score_player": {
+        "personId": 1630175,
+        "firstName": "Cole",
+        "familyName": "Anthony",
+        "jerseyNum": "50",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 1628407,
+      "player": "Dwayne Bacon",
+      "team": "ORL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1628407,
+        "firstName": "Dwayne",
+        "familyName": "Bacon",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 1629109,
+      "player": "Gary Clark",
+      "team": "ORL",
+      "last_game_date": "2021-03-23",
+      "game_id": "0022000661",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1629109,
+        "firstName": "Gary",
+        "familyName": "Clark",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "f4d5f4c239dade9dbcfc5670d263ba799359b96c3a2ebb1da7e92205333a541d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000661.json"
+    },
+    {
+      "player_id": 203516,
+      "player": "James Ennis III",
+      "team": "ORL",
+      "last_game_date": "2021-04-30",
+      "game_id": "0022000953",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 203516,
+        "firstName": "James",
+        "familyName": "Ennis III",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "fb30c8b2d274436a9e100bd9c7a95ce5b7d1174403b3210de55c12ea43e0be96",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000953.json"
+    },
+    {
+      "player_id": 203920,
+      "player": "Khem Birch",
+      "team": "ORL",
+      "last_game_date": "2021-04-07",
+      "game_id": "0022000777",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 203920,
+        "firstName": "Khem",
+        "familyName": "Birch",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "e4007a6346f1faba466fbe8755ade1a78c2418f197bfa7d56d75e039bac6cc53",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000777.json"
+    },
+    {
+      "player_id": 203487,
+      "player": "Michael Carter-Williams",
+      "team": "ORL",
+      "last_game_date": "2021-04-14",
+      "game_id": "0022000833",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 203487,
+        "firstName": "Michael",
+        "familyName": "Carter-Williams",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "5c176abb41ea334e333cab3c160cddd241a40b35433bd3cfbdb5b7717e6726f8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000833.json"
+    },
+    {
+      "player_id": 1628964,
+      "player": "Mo Bamba",
+      "team": "ORL",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628964,
+        "firstName": "Mo",
+        "familyName": "Bamba",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 202696,
+      "player": "Nikola Vučević",
+      "team": "ORL",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000670",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 202696,
+        "firstName": "Nikola",
+        "familyName": "Vucevic",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "8d9fd606afd54cc531f307fcb06a176dec6f056c23d615d4273026da8f75c9a8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000670.json"
+    },
+    {
+      "player_id": 203082,
+      "player": "Terrence Ross",
+      "team": "ORL",
+      "last_game_date": "2021-04-16",
+      "game_id": "0022000849",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 203082,
+        "firstName": "Terrence",
+        "familyName": "Ross",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "8db193a3bba05fe7689cb757505746e61625d3fe7d7294ce76fa3ce8d9fcd797",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000849.json"
+    },
+    {
+      "player_id": 1627732,
+      "player": "Ben Simmons",
+      "team": "PHI",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001055",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1627732,
+        "firstName": "Ben",
+        "familyName": "Simmons",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "07bd7fb8c6a9423f465e22de5847476bf695bc16aafa61541e040fc986847b23",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001055.json"
+    },
+    {
+      "player_id": 201980,
+      "player": "Danny Green",
+      "team": "PHI",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001055",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 201980,
+        "firstName": "Danny",
+        "familyName": "Green",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "07bd7fb8c6a9423f465e22de5847476bf695bc16aafa61541e040fc986847b23",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001055.json"
+    },
+    {
+      "player_id": 2730,
+      "player": "Dwight Howard",
+      "team": "PHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 39,
+      "jersey_display": "39",
+      "official_box_score_player": {
+        "personId": 2730,
+        "firstName": "Dwight",
+        "familyName": "Howard",
+        "jerseyNum": "39",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 1627788,
+      "player": "Furkan Korkmaz",
+      "team": "PHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 30,
+      "jersey_display": "30",
+      "official_box_score_player": {
+        "personId": 1627788,
+        "firstName": "Furkan",
+        "familyName": "Korkmaz",
+        "jerseyNum": "30",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 203954,
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001055",
+      "jersey": 21,
+      "jersey_display": "21",
+      "official_box_score_player": {
+        "personId": 203954,
+        "firstName": "Joel",
+        "familyName": "Embiid",
+        "jerseyNum": "21",
+        "played": "1"
+      },
+      "box_score_sha256": "07bd7fb8c6a9423f465e22de5847476bf695bc16aafa61541e040fc986847b23",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001055.json"
+    },
+    {
+      "player_id": 1629680,
+      "player": "Matisse Thybulle",
+      "team": "PHI",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001013",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1629680,
+        "firstName": "Matisse",
+        "familyName": "Thybulle",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "b930658c239976b36eaa3f620076f36c554902f0368813f14790019f923c9235",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001013.json"
+    },
+    {
+      "player_id": 203118,
+      "player": "Mike Scott",
+      "team": "PHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 203118,
+        "firstName": "Mike",
+        "familyName": "Scott",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 203552,
+      "player": "Seth Curry",
+      "team": "PHI",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001055",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 203552,
+        "firstName": "Seth",
+        "familyName": "Curry",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "07bd7fb8c6a9423f465e22de5847476bf695bc16aafa61541e040fc986847b23",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001055.json"
+    },
+    {
+      "player_id": 1629003,
+      "player": "Shake Milton",
+      "team": "PHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 18,
+      "jersey_display": "18",
+      "official_box_score_player": {
+        "personId": 1629003,
+        "firstName": "Shake",
+        "familyName": "Milton",
+        "jerseyNum": "18",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 202699,
+      "player": "Tobias Harris",
+      "team": "PHI",
+      "last_game_date": "2021-05-14",
+      "game_id": "0022001055",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 202699,
+        "firstName": "Tobias",
+        "familyName": "Harris",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "07bd7fb8c6a9423f465e22de5847476bf695bc16aafa61541e040fc986847b23",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001055.json"
+    },
+    {
+      "player_id": 1630178,
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001075",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1630178,
+        "firstName": "Tyrese",
+        "familyName": "Maxey",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "d1dbdd2701f702e40f070f526f572423d37c426ac407f57f3c1f7eb909b8e122",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001075.json"
+    },
+    {
+      "player_id": 1629661,
+      "player": "Cameron Johnson",
+      "team": "PHX",
+      "last_game_date": "2021-05-05",
+      "game_id": "0022000992",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1629661,
+        "firstName": "Cameron",
+        "familyName": "Johnson",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "dd1e3da4bd6cbb8560fc9700694f1ae2d7f2a30061e9aaf4fbbf01a8079f149d",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000992.json"
+    },
+    {
+      "player_id": 1626166,
+      "player": "Cameron Payne",
+      "team": "PHX",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 1626166,
+        "firstName": "Cameron",
+        "familyName": "Payne",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 101108,
+      "player": "Chris Paul",
+      "team": "PHX",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001065",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 101108,
+        "firstName": "Chris",
+        "familyName": "Paul",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "9274d8994471c64cd739ee51415fbe3cbd2d70346c171c055b3e6c1580147e0f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001065.json"
+    },
+    {
+      "player_id": 203967,
+      "player": "Dario Šarić",
+      "team": "PHX",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 203967,
+        "firstName": "Dario",
+        "familyName": "Saric",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1629028,
+      "player": "Deandre Ayton",
+      "team": "PHX",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001039",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1629028,
+        "firstName": "Deandre",
+        "familyName": "Ayton",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "9f392cd898f4de6c991c2acda217c9381778f3043eb9a665e272fa6e876677ee",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001039.json"
+    },
+    {
+      "player_id": 1626164,
+      "player": "Devin Booker",
+      "team": "PHX",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001065",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1626164,
+        "firstName": "Devin",
+        "familyName": "Booker",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "9274d8994471c64cd739ee51415fbe3cbd2d70346c171c055b3e6c1580147e0f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001065.json"
+    },
+    {
+      "player_id": 1626163,
+      "player": "Frank Kaminsky",
+      "team": "PHX",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1626163,
+        "firstName": "Frank",
+        "familyName": "Kaminsky",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 203109,
+      "player": "Jae Crowder",
+      "team": "PHX",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001065",
+      "jersey": 99,
+      "jersey_display": "99",
+      "official_box_score_player": {
+        "personId": 203109,
+        "firstName": "Jae",
+        "familyName": "Crowder",
+        "jerseyNum": "99",
+        "played": "1"
+      },
+      "box_score_sha256": "9274d8994471c64cd739ee51415fbe3cbd2d70346c171c055b3e6c1580147e0f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001065.json"
+    },
+    {
+      "player_id": 1628969,
+      "player": "Mikal Bridges",
+      "team": "PHX",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1628969,
+        "firstName": "Mikal",
+        "familyName": "Bridges",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1628470,
+      "player": "Torrey Craig",
+      "team": "PHX",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 12,
+      "jersey_display": "12",
+      "official_box_score_player": {
+        "personId": 1628470,
+        "firstName": "Torrey",
+        "familyName": "Craig",
+        "jerseyNum": "12",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1629014,
+      "player": "Anfernee Simons",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1629014,
+        "firstName": "Anfernee",
+        "familyName": "Simons",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203468,
+      "player": "CJ McCollum",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203468,
+        "firstName": "CJ",
+        "familyName": "McCollum",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 2546,
+      "player": "Carmelo Anthony",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 0,
+      "jersey_display": "00",
+      "official_box_score_player": {
+        "personId": 2546,
+        "firstName": "Carmelo",
+        "familyName": "Anthony",
+        "jerseyNum": "00",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203081,
+      "player": "Damian Lillard",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 203081,
+        "firstName": "Damian",
+        "familyName": "Lillard",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 1627884,
+      "player": "Derrick Jones Jr.",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1627884,
+        "firstName": "Derrick",
+        "familyName": "Jones Jr.",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 202683,
+      "player": "Enes Freedom",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 11,
+      "jersey_display": "11",
+      "official_box_score_player": {
+        "personId": 202683,
+        "firstName": "Enes",
+        "familyName": "Kanter",
+        "jerseyNum": "11",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 1629018,
+      "player": "Gary Trent Jr.",
+      "team": "POR",
+      "last_game_date": "2021-03-23",
+      "game_id": "0022000666",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 1629018,
+        "firstName": "Gary",
+        "familyName": "Trent Jr.",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "7806fe6ce521ffb8f69c036de54b7c1d279b4cee702eb8aee927f0d91f5b663a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000666.json"
+    },
+    {
+      "player_id": 203994,
+      "player": "Jusuf Nurkić",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 203994,
+        "firstName": "Jusuf",
+        "familyName": "Nurkic",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203496,
+      "player": "Robert Covington",
+      "team": "POR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001076",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 203496,
+        "firstName": "Robert",
+        "familyName": "Covington",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "23cdf074a348774c530d95ffa04192e0ee069a2454cbaf165fb5263243765f0e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001076.json"
+    },
+    {
+      "player_id": 203918,
+      "player": "Rodney Hood",
+      "team": "POR",
+      "last_game_date": "2021-03-23",
+      "game_id": "0022000666",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 203918,
+        "firstName": "Rodney",
+        "familyName": "Hood",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "7806fe6ce521ffb8f69c036de54b7c1d279b4cee702eb8aee927f0d91f5b663a",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000666.json"
+    },
+    {
+      "player_id": 1627741,
+      "player": "Buddy Hield",
+      "team": "SAC",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1627741,
+        "firstName": "Buddy",
+        "familyName": "Hield",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 202709,
+      "player": "Cory Joseph",
+      "team": "SAC",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000677",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 202709,
+        "firstName": "Cory",
+        "familyName": "Joseph",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "61e2b10397acadf6a8f6e5ec7c13805b2db70510a5fbcf042c9bbf68c7ce52a0",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000677.json"
+    },
+    {
+      "player_id": 1628368,
+      "player": "De'Aaron Fox",
+      "team": "SAC",
+      "last_game_date": "2021-04-21",
+      "game_id": "0022000891",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1628368,
+        "firstName": "De'Aaron",
+        "familyName": "Fox",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "ad0408d461203bd1a772ffe7eb425c09c7f8a944c208bd2563ec06d4fb45672e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000891.json"
+    },
+    {
+      "player_id": 203084,
+      "player": "Harrison Barnes",
+      "team": "SAC",
+      "last_game_date": "2021-04-26",
+      "game_id": "0022000926",
+      "jersey": 40,
+      "jersey_display": "40",
+      "official_box_score_player": {
+        "personId": 203084,
+        "firstName": "Harrison",
+        "familyName": "Barnes",
+        "jerseyNum": "40",
+        "played": "1"
+      },
+      "box_score_sha256": "09b644d01a6e7ef7e5c349466c313c24fdcd3402174d184c52ec7fffde690404",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000926.json"
+    },
+    {
+      "player_id": 202355,
+      "player": "Hassan Whiteside",
+      "team": "SAC",
+      "last_game_date": "2021-04-21",
+      "game_id": "0022000891",
+      "jersey": 20,
+      "jersey_display": "20",
+      "official_box_score_player": {
+        "personId": 202355,
+        "firstName": "Hassan",
+        "familyName": "Whiteside",
+        "jerseyNum": "20",
+        "played": "1"
+      },
+      "box_score_sha256": "ad0408d461203bd1a772ffe7eb425c09c7f8a944c208bd2563ec06d4fb45672e",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000891.json"
+    },
+    {
+      "player_id": 1628963,
+      "player": "Marvin Bagley III",
+      "team": "SAC",
+      "last_game_date": "2021-05-09",
+      "game_id": "0022001025",
+      "jersey": 35,
+      "jersey_display": "35",
+      "official_box_score_player": {
+        "personId": 1628963,
+        "firstName": "Marvin",
+        "familyName": "Bagley III",
+        "jerseyNum": "35",
+        "played": "1"
+      },
+      "box_score_sha256": "1f7451b2361bda15009cd13fe7c88cdb81b435f2ed16d2ee2fc3edb4422ece35",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001025.json"
+    },
+    {
+      "player_id": 1626158,
+      "player": "Richaun Holmes",
+      "team": "SAC",
+      "last_game_date": "2021-05-13",
+      "game_id": "0022000255",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 1626158,
+        "firstName": "Richaun",
+        "familyName": "Holmes",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "f87c1630c14e93b8e2b08ad4220a73edf6afbeb071f74dc5a9876a1667c2ce30",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000255.json"
+    },
+    {
+      "player_id": 1630169,
+      "player": "Tyrese Haliburton",
+      "team": "SAC",
+      "last_game_date": "2021-05-02",
+      "game_id": "0022000970",
+      "jersey": 0,
+      "jersey_display": "0",
+      "official_box_score_player": {
+        "personId": 1630169,
+        "firstName": "Tyrese",
+        "familyName": "Haliburton",
+        "jerseyNum": "0",
+        "played": "1"
+      },
+      "box_score_sha256": "236ec9b9e35af1712b38deba0d348440cb403695e6cce251d3e7ac69f7855580",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000970.json"
+    },
+    {
+      "player_id": 201942,
+      "player": "DeMar DeRozan",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 201942,
+        "firstName": "DeMar",
+        "familyName": "DeRozan",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1627749,
+      "player": "Dejounte Murray",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1627749,
+        "firstName": "Dejounte",
+        "familyName": "Murray",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1628401,
+      "player": "Derrick White",
+      "team": "SAS",
+      "last_game_date": "2021-04-26",
+      "game_id": "0022000919",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 1628401,
+        "firstName": "Derrick",
+        "familyName": "White",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "4ea137a4a01ebb11db12f50fc4ffb0e103c1c15fc8f48f89a7def5c5cf1adf74",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000919.json"
+    },
+    {
+      "player_id": 1630170,
+      "player": "Devin Vassell",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1630170,
+        "firstName": "Devin",
+        "familyName": "Vassell",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1627751,
+      "player": "Jakob Poeltl",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1627751,
+        "firstName": "Jakob",
+        "familyName": "Poeltl",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1629640,
+      "player": "Keldon Johnson",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1629640,
+        "firstName": "Keldon",
+        "familyName": "Johnson",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 1629022,
+      "player": "Lonnie Walker IV",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 1,
+      "jersey_display": "1",
+      "official_box_score_player": {
+        "personId": 1629022,
+        "firstName": "Lonnie",
+        "familyName": "Walker IV",
+        "jerseyNum": "1",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 201988,
+      "player": "Patty Mills",
+      "team": "SAS",
+      "last_game_date": "2021-05-15",
+      "game_id": "0022001065",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 201988,
+        "firstName": "Patty",
+        "familyName": "Mills",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "9274d8994471c64cd739ee51415fbe3cbd2d70346c171c055b3e6c1580147e0f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001065.json"
+    },
+    {
+      "player_id": 200752,
+      "player": "Rudy Gay",
+      "team": "SAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001078",
+      "jersey": 22,
+      "jersey_display": "22",
+      "official_box_score_player": {
+        "personId": 200752,
+        "firstName": "Rudy",
+        "familyName": "Gay",
+        "jerseyNum": "22",
+        "played": "1"
+      },
+      "box_score_sha256": "6ae77d7e3f2516b6e9e43c0ab21e2a4ce84878799127fad54e955556f2ec5ed2",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001078.json"
+    },
+    {
+      "player_id": 203382,
+      "player": "Aron Baynes",
+      "team": "TOR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 46,
+      "jersey_display": "46",
+      "official_box_score_player": {
+        "personId": 203382,
+        "firstName": "Aron",
+        "familyName": "Baynes",
+        "jerseyNum": "46",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1628449,
+      "player": "Chris Boucher",
+      "team": "TOR",
+      "last_game_date": "2021-05-11",
+      "game_id": "0022001034",
+      "jersey": 25,
+      "jersey_display": "25",
+      "official_box_score_player": {
+        "personId": 1628449,
+        "firstName": "Chris",
+        "familyName": "Boucher",
+        "jerseyNum": "25",
+        "played": "1"
+      },
+      "box_score_sha256": "f6cd025332cd1e0dc95e8955c3aafb0533f8d0c94104173c93f2dc7d2d3fdffb",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001034.json"
+    },
+    {
+      "player_id": 1627761,
+      "player": "DeAndre' Bembry",
+      "team": "TOR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 95,
+      "jersey_display": "95",
+      "official_box_score_player": {
+        "personId": 1627761,
+        "firstName": "DeAndre'",
+        "familyName": "Bembry",
+        "jerseyNum": "95",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1627832,
+      "player": "Fred VanVleet",
+      "team": "TOR",
+      "last_game_date": "2021-05-06",
+      "game_id": "0022000997",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1627832,
+        "firstName": "Fred",
+        "familyName": "VanVleet",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "0410b887253154d11e015d0002f7fc413f8659a1c19b10699451f3613f4f484f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000997.json"
+    },
+    {
+      "player_id": 200768,
+      "player": "Kyle Lowry",
+      "team": "TOR",
+      "last_game_date": "2021-05-02",
+      "game_id": "0022000974",
+      "jersey": 7,
+      "jersey_display": "7",
+      "official_box_score_player": {
+        "personId": 200768,
+        "firstName": "Kyle",
+        "familyName": "Lowry",
+        "jerseyNum": "7",
+        "played": "1"
+      },
+      "box_score_sha256": "ab0cd42807b2215dc65c7f264d4406d0f028ef1b6fecdcfca9528d11b02e4770",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000974.json"
+    },
+    {
+      "player_id": 1630201,
+      "player": "Malachi Flynn",
+      "team": "TOR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1630201,
+        "firstName": "Malachi",
+        "familyName": "Flynn",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 1626181,
+      "player": "Norman Powell",
+      "team": "TOR",
+      "last_game_date": "2021-03-24",
+      "game_id": "0022000668",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1626181,
+        "firstName": "Norman",
+        "familyName": "Powell",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "a00569361b72a1343306df00b22e18849459bd6ac4912bbcc00e22d04dcfaf96",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000668.json"
+    },
+    {
+      "player_id": 1628384,
+      "player": "OG Anunoby",
+      "team": "TOR",
+      "last_game_date": "2021-05-01",
+      "game_id": "0022000965",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 1628384,
+        "firstName": "OG",
+        "familyName": "Anunoby",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "84396300109dceeded24110effc083c32c1e2b314208d3f1ab9a9f35e5f03876",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000965.json"
+    },
+    {
+      "player_id": 1627783,
+      "player": "Pascal Siakam",
+      "team": "TOR",
+      "last_game_date": "2021-05-08",
+      "game_id": "0022001014",
+      "jersey": 43,
+      "jersey_display": "43",
+      "official_box_score_player": {
+        "personId": 1627783,
+        "firstName": "Pascal",
+        "familyName": "Siakam",
+        "jerseyNum": "43",
+        "played": "1"
+      },
+      "box_score_sha256": "2da24e23f35cb07bc8ae493ec80244752435632a47337aad61393d37b65401c5",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001014.json"
+    },
+    {
+      "player_id": 1626169,
+      "player": "Stanley Johnson",
+      "team": "TOR",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001079",
+      "jersey": 5,
+      "jersey_display": "5",
+      "official_box_score_player": {
+        "personId": 1626169,
+        "firstName": "Stanley",
+        "familyName": "Johnson",
+        "jerseyNum": "5",
+        "played": "1"
+      },
+      "box_score_sha256": "c95c68b48431f31ac0c0629c06d2dbd8f1ddc2a391c42d755a9b5ec12fe44400",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001079.json"
+    },
+    {
+      "player_id": 202711,
+      "player": "Bojan Bogdanović",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 44,
+      "jersey_display": "44",
+      "official_box_score_player": {
+        "personId": 202711,
+        "firstName": "Bojan",
+        "familyName": "Bogdanovic",
+        "jerseyNum": "44",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 202324,
+      "player": "Derrick Favors",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 202324,
+        "firstName": "Derrick",
+        "familyName": "Favors",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 1628378,
+      "player": "Donovan Mitchell",
+      "team": "UTA",
+      "last_game_date": "2021-04-16",
+      "game_id": "0022000844",
+      "jersey": 45,
+      "jersey_display": "45",
+      "official_box_score_player": {
+        "personId": 1628378,
+        "firstName": "Donovan",
+        "familyName": "Mitchell",
+        "jerseyNum": "45",
+        "played": "1"
+      },
+      "box_score_sha256": "b22cc4fcbd684a9be125c173295f34a8603f000d2502a2f1d08dea3c83d4fe65",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000844.json"
+    },
+    {
+      "player_id": 1627777,
+      "player": "Georges Niang",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 31,
+      "jersey_display": "31",
+      "official_box_score_player": {
+        "personId": 1627777,
+        "firstName": "Georges",
+        "familyName": "Niang",
+        "jerseyNum": "31",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 204060,
+      "player": "Joe Ingles",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 2,
+      "jersey_display": "2",
+      "official_box_score_player": {
+        "personId": 204060,
+        "firstName": "Joe",
+        "familyName": "Ingles",
+        "jerseyNum": "2",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 203903,
+      "player": "Jordan Clarkson",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 0,
+      "jersey_display": "00",
+      "official_box_score_player": {
+        "personId": 203903,
+        "firstName": "Jordan",
+        "familyName": "Clarkson",
+        "jerseyNum": "00",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 201144,
+      "player": "Mike Conley",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 10,
+      "jersey_display": "10",
+      "official_box_score_player": {
+        "personId": 201144,
+        "firstName": "Mike",
+        "familyName": "Conley",
+        "jerseyNum": "10",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 1626220,
+      "player": "Royce O'Neale",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 23,
+      "jersey_display": "23",
+      "official_box_score_player": {
+        "personId": 1626220,
+        "firstName": "Royce",
+        "familyName": "O'Neale",
+        "jerseyNum": "23",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 203497,
+      "player": "Rudy Gobert",
+      "team": "UTA",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001077",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 203497,
+        "firstName": "Rudy",
+        "familyName": "Gobert",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "9584bd130d7627e5d2e865a4dfc5adf8863280461dd95692efd070218670fcf8",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001077.json"
+    },
+    {
+      "player_id": 203458,
+      "player": "Alex Len",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 27,
+      "jersey_display": "27",
+      "official_box_score_player": {
+        "personId": 203458,
+        "firstName": "Alex",
+        "familyName": "Len",
+        "jerseyNum": "27",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 203078,
+      "player": "Bradley Beal",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 3,
+      "jersey_display": "3",
+      "official_box_score_player": {
+        "personId": 203078,
+        "firstName": "Bradley",
+        "familyName": "Beal",
+        "jerseyNum": "3",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 202722,
+      "player": "Davis Bertans",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 42,
+      "jersey_display": "42",
+      "official_box_score_player": {
+        "personId": 202722,
+        "firstName": "Davis",
+        "familyName": "Bertans",
+        "jerseyNum": "42",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1630166,
+      "player": "Deni Avdija",
+      "team": "WAS",
+      "last_game_date": "2021-04-21",
+      "game_id": "0022000885",
+      "jersey": 9,
+      "jersey_display": "9",
+      "official_box_score_player": {
+        "personId": 1630166,
+        "firstName": "Deni",
+        "familyName": "Avdija",
+        "jerseyNum": "9",
+        "played": "1"
+      },
+      "box_score_sha256": "65196ca56233a035d3823c40ded9fd496520e17da9e488fb14becee4c187db5f",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022000885.json"
+    },
+    {
+      "player_id": 1629726,
+      "player": "Garrison Mathews",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 24,
+      "jersey_display": "24",
+      "official_box_score_player": {
+        "personId": 1629726,
+        "firstName": "Garrison",
+        "familyName": "Mathews",
+        "jerseyNum": "24",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 202397,
+      "player": "Ish Smith",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 14,
+      "jersey_display": "14",
+      "official_box_score_player": {
+        "personId": 202397,
+        "firstName": "Ish",
+        "familyName": "Smith",
+        "jerseyNum": "14",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 203526,
+      "player": "Raul Neto",
+      "team": "WAS",
+      "last_game_date": "2021-05-12",
+      "game_id": "0022001042",
+      "jersey": 19,
+      "jersey_display": "19",
+      "official_box_score_player": {
+        "personId": 203526,
+        "firstName": "Raul",
+        "familyName": "Neto",
+        "jerseyNum": "19",
+        "played": "1"
+      },
+      "box_score_sha256": "98448d435031fad7eac2624a30258d81942a3f0c7682192f7faf69f6d5b83386",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001042.json"
+    },
+    {
+      "player_id": 201577,
+      "player": "Robin Lopez",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 15,
+      "jersey_display": "15",
+      "official_box_score_player": {
+        "personId": 201577,
+        "firstName": "Robin",
+        "familyName": "Lopez",
+        "jerseyNum": "15",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 1629060,
+      "player": "Rui Hachimura",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 8,
+      "jersey_display": "8",
+      "official_box_score_player": {
+        "personId": 1629060,
+        "firstName": "Rui",
+        "familyName": "Hachimura",
+        "jerseyNum": "8",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    },
+    {
+      "player_id": 201566,
+      "player": "Russell Westbrook",
+      "team": "WAS",
+      "last_game_date": "2021-05-16",
+      "game_id": "0022001080",
+      "jersey": 4,
+      "jersey_display": "4",
+      "official_box_score_player": {
+        "personId": 201566,
+        "firstName": "Russell",
+        "familyName": "Westbrook",
+        "jerseyNum": "4",
+        "played": "1"
+      },
+      "box_score_sha256": "d6dd5498dcc1eac251c3dd3dee7772de6d03bbc3741cb2c0e67e2a380f80c1df",
+      "source": "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_0022001080.json"
+    }
+  ]
+}

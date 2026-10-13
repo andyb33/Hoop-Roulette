@@ -1,0 +1,76 @@
+{
+  "season": "2018-19",
+  "completed_at": "2026-10-12T12:25:45.528857+00:00",
+  "passed": true,
+  "entries": 307,
+  "jerseys_verified": 307,
+  "unresolved": [],
+  "staged_sha256": "f8e1c52980de70280708ce57da71db29dd4aad6e9e48bcfe0b45ef126130df91",
+  "game_sha256": "90627d9b3714ff03f14eaa99bf3a1b8090167f028b2af45945c57b05869e7ab8",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2018-19&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "53e35bbf5f6730eb714192a80343c7cb17628a62e8d76e27d3830a0676c70b07",
+    "all_defense": "91bd82c6ad12952ab1849238a7a6fd5faa430e9a81702d986cc2ab55bbea7396",
+    "champions": "4ab4759c8a76357501da16138681b1016b8c79cbd36704f0738a54a381a07aa7"
+  },
+  "award_sources": {
+    "giannis-antetokounmpo": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "luka-doncic": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "rudy-gobert": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://www.nba.com/game/0041800406/box-score",
+  "champion_team": "TOR",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BKN": 13,
+    "BOS": 9,
+    "CHA": 11,
+    "CHI": 12,
+    "CLE": 10,
+    "DAL": 12,
+    "DEN": 11,
+    "DET": 9,
+    "GSW": 9,
+    "HOU": 9,
+    "IND": 9,
+    "LAC": 8,
+    "LAL": 11,
+    "MEM": 10,
+    "MIA": 12,
+    "MIL": 11,
+    "MIN": 11,
+    "NOP": 13,
+    "NYK": 13,
+    "OKC": 7,
+    "ORL": 10,
+    "PHI": 8,
+    "PHX": 11,
+    "POR": 10,
+    "SAC": 9,
+    "SAS": 9,
+    "TOR": 10,
+    "UTA": 9,
+    "WAS": 10
+  }
+}

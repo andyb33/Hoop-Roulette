@@ -7,13 +7,13 @@ from nba_roulette.data import load_records
 
 
 class DataLoaderTests(unittest.TestCase):
-    def test_loads_validated_five_season_pool(self) -> None:
+    def test_loads_validated_sixteen_season_pool(self) -> None:
         records = load_records()
-        self.assertEqual(len(records), 1565)
+        self.assertEqual(len(records), 4840)
         self.assertEqual(Counter(row.season for row in records), {
-            "2021-22": 317, "2022-23": 305, "2023-24": 300, "2024-25": 317, "2025-26": 326,
+            "2010-11": 287, "2011-12": 276, "2012-13": 289, "2013-14": 291, "2014-15": 314, "2015-16": 293, "2016-17": 310, "2017-18": 303, "2018-19": 307, "2019-20": 298, "2020-21": 307, "2021-22": 317, "2022-23": 305, "2023-24": 300, "2024-25": 317, "2025-26": 326,
         })
-        self.assertEqual(len({(row.season, row.team) for row in records}), 150)
+        self.assertEqual(len({(row.season, row.team) for row in records}), 480)
         self.assertTrue(all(row.gp >= 30 and row.mpg >= 15.0 for row in records))
         self.assertTrue(all(0 <= row.jersey <= 99 for row in records))
 

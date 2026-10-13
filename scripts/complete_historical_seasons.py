@@ -5,6 +5,7 @@ import csv
 from datetime import datetime, timezone
 import hashlib
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -33,6 +34,50 @@ def fetch(url):
                 data = json.load(response)
             path.write_text(json.dumps(data, ensure_ascii=False),encoding='utf-8')
             return data
+        except Exception as exc:
+            error = exc
+    raise RuntimeError(f'{url}: {error}')
+
+def fetch_box(gid, season):
+    live_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json'
+    live_cache = CACHE / (hashlib.sha256(live_url.encode()).hexdigest() + '.json')
+    if int(season[:4]) >= 2020 or live_cache.exists():
+        return fetch(live_url)
+    # Older NBA game pages retain game-specific roster numbers even when
+    # their legacy box-score rows leave jerseyNum blank.
+    url = f'https://www.nba.com/game/{gid}/box-score'
+    path = CACHE / (hashlib.sha256(url.encode()).hexdigest() + '.json')
+    if path.exists():
+        return json.loads(path.read_text(encoding='utf-8'))
+    error = None
+    for attempt in range(3):
+        try:
+            with urlopen(Request(url, headers=HEADERS), timeout=30) as response:
+                raw = response.read()
+            match = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', raw.decode('utf-8'), re.DOTALL)
+            if not match:
+                raise ValueError('NBA game page has no embedded game data')
+            game = json.loads(match[1])['props']['pageProps']['game']
+            assert game['gameId'] == gid
+            game['gameTimeLocal'] = game['gameEt']
+            for side in ('homeTeam', 'awayTeam'):
+                numbers = {int(p['personId']): str(p['jerseyNum']) for p in game[side + 'Players']}
+                team = game[side]
+                for player in team['players']:
+                    old = str(player.get('jerseyNum', ''))
+                    number = numbers.get(int(player['personId']), old)
+                    if old and number != old:
+                        raise ValueError('Conflicting NBA box-score and game-roster jerseys')
+                    player['jerseyNum'] = number
+                    player['played'] = '1' if player['statistics']['minutes'] != '' else '0'
+                # Inactive title-roster players also belong to the championship squad.
+                for player in team.get('inactives', []):
+                    if int(player['personId']) not in {int(p['personId']) for p in team['players']}:
+                        team['players'].append({**player, 'played': '0', 'statistics': {'minutes': ''}})
+            result = {'game': game, '_source_url': url, '_source_sha256': hashlib.sha256(raw).hexdigest(),
+                      '_jersey_method': 'Official game-specific active/inactive roster joined by NBA player ID'}
+            path.write_text(json.dumps(result, ensure_ascii=False), encoding='utf-8')
+            return result
         except Exception as exc:
             error = exc
     raise RuntimeError(f'{url}: {error}')
@@ -68,7 +113,7 @@ def complete(season, workers=6):
     ids = sorted({gid for date,gid in last.values()})
     boxes = {}
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        jobs = {pool.submit(fetch, f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json'):gid for gid in ids}
+        jobs = {pool.submit(fetch_box, gid, season):gid for gid in ids}
         for job in as_completed(jobs):
             gid = jobs[job]
             boxes[gid] = job.result()
@@ -80,12 +125,18 @@ def complete(season, workers=6):
                 path.write_bytes(response.read())
     nba = parse_honors((CACHE/'all_nba.html').read_text(encoding='utf-8'))[season]
     defense = parse_honors((CACHE/'all_defense.html').read_text(encoding='utf-8'))[season]
+    # Official historical list misspells Beverley in the 2016-17 section.
+    if 'patrick-beverly' in defense:
+        assert 'patrick-beverley' not in defense
+        defense['patrick-beverley'] = defense.pop('patrick-beverly')
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
-    finals = fetch(finals_url)['game']
+    finals_box = fetch_box(finals_id, season)
+    finals_url = finals_box.get('_source_url', finals_url)
+    finals = finals_box['game']
     champion_sides = [finals[s] for s in ('homeTeam', 'awayTeam') if finals[s]['teamTricode'] == champion]
     assert len(champion_sides) == 1
     champion_players = {int(p['personId']) for p in champion_sides[0]['players']}
@@ -93,7 +144,7 @@ def complete(season, workers=6):
     for r in rows:
         date,gid = last[(r['team'],r['player_id'])]
         box = boxes[gid]['game']
-        assert box['gameId'] == gid and box['gameStatus'] == 3
+        assert box['gameId'] == gid and box['gameStatus'] in (3, 'finalbox')
         assert box['gameTimeLocal'][:10] == date
         sides = [box[s] for s in ('homeTeam','awayTeam') if box[s]['teamTricode']==r['team']]
         assert len(sides)==1
@@ -110,8 +161,14 @@ def complete(season, workers=6):
         evidence.append({'player_id':r['player_id'],'player':r['player'],'team':r['team'],'last_game_date':date,'game_id':gid,
                          'jersey':int(jersey),'jersey_display':jersey,'official_box_score_player':{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')},
                          'box_score_sha256':hashlib.sha256(json.dumps(boxes[gid],ensure_ascii=False).encode()).hexdigest(),
-                         'source':f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json'})
-    assert len(nba)==15 and len(defense)==10 and len(awards)==3
+                         'jersey_method':boxes[gid].get('_jersey_method', 'Official final-appearance live box score'),
+                         'source_sha256':boxes[gid].get('_source_sha256'),
+                         'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
+    assert len(nba)==15 and len(defense)==(11 if season == "2012-13" else 10)
+    if season == "2012-13":
+        assert defense["tyson-chandler"] == defense["joakim-noah"] == 1
+        assert sum(tier == 1 for tier in defense.values()) == 6
+    assert all(sum(bool(r.get(a)) for r in awards.values()) == 1 for a in ('mvp', 'dpoy', 'roy'))
     for honors,field in [(nba,'all_nba'),(defense,'all_defense')]:
         matched={honors_key(r) for r in rows if r[field] is not None}
         assert matched==set(honors), (field,set(honors)-matched)
@@ -129,7 +186,7 @@ def complete(season, workers=6):
            'staged_sha256':hashlib.sha256(staged.read_bytes()).hexdigest(),'game_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
            'sources':{'game_dates':url,**HISTORY_URLS},
            'history_sha256':{name:hashlib.sha256((CACHE/f'{name}.html').read_bytes()).hexdigest() for name in HISTORY_URLS},'award_sources':{k:v.get('award_sources',{}) for k,v in awards.items()},
-           'honors_name_aliases':HONORS_NAME_ALIASES, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
+           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley'}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
            'all_nba_records':sum(r['all_nba'] is not None for r in rows),'all_defense_records':sum(r['all_defense'] is not None for r in rows),
            'champion_roster_source':finals_url, 'champion_roster':[{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')} for p in champion_sides[0]['players']], 'champion_team':champion,'champion_records':sum(r['champion'] for r in rows),'jersey_evidence':evidence}
     (processed/f'completion_{slug}.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -147,5 +204,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)
