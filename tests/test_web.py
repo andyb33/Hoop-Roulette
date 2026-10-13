@@ -72,6 +72,35 @@ class BrowserGameTests(unittest.TestCase):
         )
         self.assertTrue(all("icon" in award for award in player["awards"]))
 
+    def test_animation_uses_all_seasons_and_valid_locked_warriors(self):
+        from nba_roulette.data import load_records
+        from nba_roulette.game import TurnState
+        rows=load_records()
+        browser=BrowserGame(rows,seed=7)
+        first=browser.spin()
+        self.assertEqual(set(first['animation_choices']['season']),{r.season for r in rows})
+        current=next(r for r in rows if r.season=='2015-16' and r.team=='GSW' and r.player_id==201939)
+        browser.game.turn=TurnState(current)
+        result=browser.spin(['season','team'])
+        expected={r.player for r in rows if r.season=='2015-16' and r.team=='GSW' and r.player_id!=201939}
+        self.assertEqual(set(result['animation_choices']['player']),expected)
+        self.assertEqual(result['animation_choices']['season'],['2015-16'])
+        self.assertEqual(result['animation_choices']['team'],['GSW'])
+        self.assertNotIn('Nikola Jokić',result['animation_choices']['player'])
+
+    def test_animation_excludes_drafted_players_and_uses_jackpot_dataset(self):
+        from nba_roulette.data import load_records,load_goat_pools
+        rows=load_records();goats=load_goat_pools()
+        browser=BrowserGame(rows,seed=1,goat_pools=goats,dev_jackpots=True)
+        browser.spin(force_pool='award')
+        scored=browser.game.turn.current.player_id
+        browser.score(Category.POINTS.value)
+        result=browser.spin(force_pool='award')
+        current=browser.game.turn.current
+        eligible=[r for r in goats['award'] if r.player_id!=scored]
+        self.assertEqual(set(result['animation_choices']['season']),{r.season for r in eligible})
+        self.assertEqual(set(result['animation_choices']['player']),{r.player for r in eligible if r.season==current.season and r.team==current.team})
+
 
 if __name__ == "__main__":
     unittest.main()

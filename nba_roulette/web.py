@@ -97,6 +97,7 @@ class BrowserGame:
             raise ValueError("Jackpot previews are available only in development mode")
         if self.game.is_complete:
             raise ValueError("The game is complete")
+        candidates = self.game.roulette.records
         if self.game.turn is None:
             self.game.start_turn(force_pool)
             selected_keeps: list[str] = []
@@ -105,6 +106,8 @@ class BrowserGame:
                 locks = tuple(Lock(value) for value in (keeps or []))
             except ValueError as error:
                 raise ValueError("Unknown Keep selection") from error
+            if self.game.turn.current.pool == "normal":
+                candidates = self.game.roulette.valid_outcomes(self.game.turn.current, locks)
             self.game.reroll(locks, force_pool)
             selected_keeps = [lock.value for lock in locks]
         turn = self.game.turn
@@ -116,7 +119,18 @@ class BrowserGame:
             "result": self._record_identity(turn.current),
             "development_forced": force_pool is not None,
         })
-        return self.state()
+        result = self.state()
+        current = turn.current
+        if current.pool != "normal":
+            candidates = tuple(row for row in self.goat_pools[current.pool]
+                               if row.player_id not in self.game.drafted_player_ids)
+        result["animation_choices"] = {
+            "season": sorted({row.season for row in candidates}),
+            "team": sorted({row.team for row in candidates if row.season == current.season}),
+            "player": sorted({row.player for row in candidates
+                              if row.season == current.season and row.team == current.team}),
+        }
+        return result
 
     def score(self, category_name: str) -> dict:
         if self.game.turn is None:

@@ -4,24 +4,6 @@ const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-const REEL_DECOYS = {
-  season: ["2023–24", "2024–25", "2025–26"],
-  team: ["ATL", "BOS", "BKN", "CHI", "DAL", "DEN", "GSW", "LAL", "MIA", "MIL", "NYK", "OKC", "PHX", "SAS"],
-  player: ["J. Brunson", "S. Gilgeous-Alexander", "N. Jokić", "A. Edwards", "J. Tatum", "L. Dončić", "G. Antetokounmpo", "S. Curry"],
-};
-const GOAT_DECOYS = {
-  award: {
-    season: ["1973–74", "1987–88", "1993–94", "2007–08", "2015–16", "2025–26"],
-    team: ["MIL", "CHI", "HOU", "LAL", "GSW", "SAS", "OKC"],
-    player: ["M. Jordan", "K. Abdul-Jabbar", "H. Olajuwon", "S. Curry", "V. Wembanyama"],
-  },
-  prehistoric: {
-    season: ["1956–57", "1958–59", "1961–62", "1964–65", "1969–70", "1971–72"],
-    team: ["PHW", "BOS", "CIN", "LAL", "MIL", "STL", "SFW", "NYK"],
-    player: ["W. Chamberlain", "B. Russell", "O. Robertson", "J. West", "E. Baylor"],
-  },
-};
-
 const CATEGORY_CODES = {
   all_nba_third: "NBA 3", all_nba_second: "NBA 2", all_nba_first: "NBA 1",
   champion: "CHAMP", all_defense_second: "DEF 2", all_defense_first: "DEF 1",
@@ -150,19 +132,19 @@ function render(game, { preserveReels = false } = {}) {
   }
 }
 
-function cycleReel(name, finalValue, duration, pool = "normal") {
+function cycleReel(name, finalValue, duration, choices = []) {
   const value = $(`#${name}-value`);
   const slot = value.closest(".slot");
   if (state.keeps.has(name) || reducedMotion.matches) {
     value.textContent = finalValue;
     return Promise.resolve();
   }
-  const choices = GOAT_DECOYS[pool]?.[name] || REEL_DECOYS[name];
+  if (!choices.length) choices = [finalValue];
   slot.classList.add("spinning");
   let index = Math.floor(Math.random() * choices.length);
   const timer = window.setInterval(() => {
     value.textContent = choices[index % choices.length];
-    index += 1 + Math.floor(Math.random() * 2);
+    index += 1;
   }, 62);
   return new Promise(resolve => {
     window.setTimeout(() => {
@@ -189,10 +171,14 @@ async function animateReels(game) {
     $("#jackpot-banner").classList.remove("hidden");
   }
   $("#player-card").classList.add("is-waiting");
+  const choices = game.animation_choices || {};
+  const seasonDuration = Math.max(jackpot ? 1100 : 700, ((choices.season?.length || 1) + 1) * 62);
+  const teamDuration = Math.max(seasonDuration + 380, (choices.team?.length || 1) * 62);
+  const playerDuration = Math.max(teamDuration + 460, (choices.player?.length || 1) * 62);
   await Promise.all([
-    cycleReel("season", player.season, jackpot ? 1100 : 700, player.pool),
-    cycleReel("team", player.team, jackpot ? 1500 : 1080, player.pool),
-    cycleReel("player", player.name, jackpot ? 2000 : 1540, player.pool),
+    cycleReel("season", player.season, seasonDuration, choices.season),
+    cycleReel("team", player.team, teamDuration, choices.team),
+    cycleReel("player", player.name, playerDuration, choices.player),
   ]);
   $("#player-card").classList.remove("is-waiting");
   if (jackpot) {
