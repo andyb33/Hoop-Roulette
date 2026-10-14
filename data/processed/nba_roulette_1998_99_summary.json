@@ -1,0 +1,148 @@
+{
+  "season": "1998-99",
+  "completed_at": "2026-10-14T13:05:42.438395+00:00",
+  "passed": true,
+  "entries": 234,
+  "jerseys_verified": 234,
+  "unresolved": [],
+  "staged_sha256": "5ab5d2dcbeb165115ca143fc2da09eb3129e0e6cf8234ee2423628f6b7873763",
+  "game_sha256": "51ab88b52392b65e4a0df74fa88ab755e2ac407e4d2393a19b03ee6777ebe1e4",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1998-99&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "alonzo-mourning": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "karl-malone": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "vince-carter": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley",
+    "gary-payton-seattle-supersonics": "gary-payton"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 11,
+  "title_game_verification": {
+    "game_id": "0049800087",
+    "game_date": "1999-06-25",
+    "champion_team": "SAS",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41998",
+        "TEAM_ID": 1610612752,
+        "TEAM_ABBREVIATION": "NYK",
+        "TEAM_NAME": "New York Knicks",
+        "GAME_ID": "0049800087",
+        "GAME_DATE": "1999-06-25",
+        "MATCHUP": "NYK vs. SAS",
+        "WL": "L",
+        "MIN": 237,
+        "PTS": 77,
+        "FGM": 32,
+        "FGA": 72,
+        "FG_PCT": 0.444,
+        "FG3M": 1,
+        "FG3A": 9,
+        "FG3_PCT": 0.111,
+        "FTM": 12,
+        "FTA": 16,
+        "FT_PCT": 0.75,
+        "OREB": 4,
+        "DREB": 31,
+        "REB": 35,
+        "AST": 18,
+        "STL": 8,
+        "BLK": 1,
+        "TOV": 12,
+        "PF": 23,
+        "PLUS_MINUS": -1.0
+      },
+      {
+        "SEASON_ID": "41998",
+        "TEAM_ID": 1610612759,
+        "TEAM_ABBREVIATION": "SAS",
+        "TEAM_NAME": "San Antonio Spurs",
+        "GAME_ID": "0049800087",
+        "GAME_DATE": "1999-06-25",
+        "MATCHUP": "SAS @ NYK",
+        "WL": "W",
+        "MIN": 236,
+        "PTS": 78,
+        "FGM": 27,
+        "FGA": 67,
+        "FG_PCT": 0.403,
+        "FG3M": 5,
+        "FG3A": 13,
+        "FG3_PCT": 0.385,
+        "FTM": 19,
+        "FTA": 25,
+        "FT_PCT": 0.76,
+        "OREB": 9,
+        "DREB": 31,
+        "REB": 40,
+        "AST": 20,
+        "STL": 7,
+        "BLK": 2,
+        "TOV": 14,
+        "PF": 17,
+        "PLUS_MINUS": 1.0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1998-99&SeasonType=Playoffs",
+    "source_sha256": "2544a81b45198d161474d3b9d33954add9bcfc971781815ee9ea2ec813d770e3"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049800087/box-score",
+  "champion_team": "SAS",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 8,
+    "BOS": 10,
+    "CHH": 8,
+    "CHI": 8,
+    "CLE": 9,
+    "DAL": 8,
+    "DEN": 9,
+    "DET": 8,
+    "GSW": 10,
+    "HOU": 7,
+    "IND": 9,
+    "LAC": 9,
+    "LAL": 6,
+    "MIA": 7,
+    "MIL": 10,
+    "MIN": 6,
+    "NJN": 7,
+    "NYK": 8,
+    "ORL": 9,
+    "PHI": 8,
+    "PHX": 7,
+    "POR": 9,
+    "SAC": 9,
+    "SAS": 8,
+    "SEA": 6,
+    "TOR": 9,
+    "UTA": 7,
+    "VAN": 7,
+    "WAS": 8
+  }
+}

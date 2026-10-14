@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 2037,
+  "player": "Jamal Crawford",
+  "team": "CHI",
+  "game_id": "0020001126",
+  "game_date": "2001-04-11",
+  "original_nba_jersey": "",
+  "resolved_jersey": 1,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Bulls.pdf",
+  "source_sha256": "8f4829ca653ebc00a930e7bcf317c497076bb29c85d469a5c5d515996a5f5a0b",
+  "pdf_page": 360,
+  "uniform_register_entry": "1: Jamal Crawford (2000-04)",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

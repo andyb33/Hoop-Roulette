@@ -1,0 +1,41 @@
+{
+  "season": "1998-99",
+  "rate_overrides": [
+    {
+      "player_id": 432,
+      "team": "VAN",
+      "official_row": {
+        "PLAYER_ID": 432,
+        "SEASON_ID": "1998-99",
+        "LEAGUE_ID": "00",
+        "TEAM_ID": 1610612763,
+        "TEAM_ABBREVIATION": "VAN",
+        "PLAYER_AGE": 30.0,
+        "GP": 46,
+        "GS": 0,
+        "MIN": 697,
+        "FGM": 63,
+        "FGA": 172,
+        "FG_PCT": 0.366,
+        "FG3M": 26,
+        "FG3A": 68,
+        "FG3_PCT": 0.382,
+        "FTM": 14,
+        "FTA": 17,
+        "FT_PCT": 0.824,
+        "OREB": 29,
+        "DREB": 88,
+        "REB": 117,
+        "AST": 30,
+        "STL": 22,
+        "BLK": 12,
+        "TOV": 28,
+        "PF": 52,
+        "PTS": 166
+      },
+      "source": "https://stats.nba.com/stats/playercareerstats?PlayerID=432&PerMode=Totals&LeagueID=00",
+      "source_sha256": "0207b3b80f1c620cbb0b32d73beefd9212bf11b0ce291751d04af655f18b44a5",
+      "reason": "Official 697 MIN / 46 GP supports 15.2 display MPG; source unrounded minutes already exceed 15, so eligibility is unchanged."
+    }
+  ]
+}

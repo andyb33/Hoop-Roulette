@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 164,
+  "player": "Chris Childs",
+  "team": "NYK",
+  "game_id": "0020000775",
+  "game_date": "2001-02-21",
+  "original_nba_jersey": "",
+  "resolved_jersey": 1,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Knicks.pdf",
+  "source_sha256": "4c9c2636ba84f3966269cfc06f400cedb500db92c274811c32f25d87f93cf3df",
+  "pdf_page": 192,
+  "uniform_register_entry": "No. 1: Chris Childs (1996-01)",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

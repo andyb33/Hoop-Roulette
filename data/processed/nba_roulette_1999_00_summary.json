@@ -1,0 +1,150 @@
+{
+  "season": "1999-00",
+  "completed_at": "2026-10-14T13:05:39.928235+00:00",
+  "passed": true,
+  "entries": 266,
+  "jerseys_verified": 266,
+  "unresolved": [],
+  "staged_sha256": "7daadb8390ef49cb09c90ea3f60202071a92cce235df7138568c79dbcc510c18",
+  "game_sha256": "3ea8fcb02832b550b194f9c4ee0766cc8c3595f8006bc6516a3c5977f8d47a64",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1999-00&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "alonzo-mourning": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "elton-brand": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "shaquille-oneal": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "steve-francis": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049900088",
+    "game_date": "2000-06-19",
+    "champion_team": "LAL",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41999",
+        "TEAM_ID": 1610612754,
+        "TEAM_ABBREVIATION": "IND",
+        "TEAM_NAME": "Indiana Pacers",
+        "GAME_ID": "0049900088",
+        "GAME_DATE": "2000-06-19",
+        "MATCHUP": "IND @ LAL",
+        "WL": "L",
+        "MIN": 236,
+        "PTS": 111,
+        "FGM": 36,
+        "FGA": 77,
+        "FG_PCT": 0.468,
+        "FG3M": 12,
+        "FG3A": 25,
+        "FG3_PCT": 0.48,
+        "FTM": 27,
+        "FTA": 32,
+        "FT_PCT": 0.844,
+        "OREB": 9,
+        "DREB": 32,
+        "REB": 41,
+        "AST": 24,
+        "STL": 2,
+        "BLK": 6,
+        "TOV": 9,
+        "PF": 27,
+        "PLUS_MINUS": -5.0
+      },
+      {
+        "SEASON_ID": "41999",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0049900088",
+        "GAME_DATE": "2000-06-19",
+        "MATCHUP": "LAL vs. IND",
+        "WL": "W",
+        "MIN": 235,
+        "PTS": 116,
+        "FGM": 43,
+        "FGA": 90,
+        "FG_PCT": 0.478,
+        "FG3M": 10,
+        "FG3A": 17,
+        "FG3_PCT": 0.588,
+        "FTM": 20,
+        "FTA": 33,
+        "FT_PCT": 0.606,
+        "OREB": 13,
+        "DREB": 31,
+        "REB": 44,
+        "AST": 25,
+        "STL": 5,
+        "BLK": 7,
+        "TOV": 5,
+        "PF": 24,
+        "PLUS_MINUS": 5.0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1999-00&SeasonType=Playoffs",
+    "source_sha256": "b4a6861262695427c237bf011e3a4a3f51def1b742aafb587cd397152981f679"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049900088/box-score",
+  "champion_team": "LAL",
+  "champion_records": 9,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 10,
+    "CHH": 8,
+    "CHI": 10,
+    "CLE": 10,
+    "DAL": 8,
+    "DEN": 9,
+    "DET": 7,
+    "GSW": 9,
+    "HOU": 11,
+    "IND": 10,
+    "LAC": 9,
+    "LAL": 9,
+    "MIA": 9,
+    "MIL": 10,
+    "MIN": 8,
+    "NJN": 9,
+    "NYK": 8,
+    "ORL": 12,
+    "PHI": 10,
+    "PHX": 10,
+    "POR": 9,
+    "SAC": 9,
+    "SAS": 10,
+    "SEA": 7,
+    "TOR": 9,
+    "UTA": 8,
+    "VAN": 8,
+    "WAS": 11
+  }
+}

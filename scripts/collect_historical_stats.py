@@ -28,8 +28,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 2001 <= year < 2022:
-        raise ValueError("This staging batch covers 2001–02 through 2022–23")
+    if not 1998 <= year < 2022:
+        raise ValueError("This staging batch covers 1998–99 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
@@ -47,6 +47,10 @@ def collect(season):
     require_previous_verified(season)
     url = f"https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_{year + 1}.csv"
     raw = ROOT / f"data/raw/{season}/player_boxscores_{year + 1}.csv"
+    corrections_path = ROOT / f"data/staging/stats_{season.replace('-', '_')}_source_corrections.json"
+    corrections = json.loads(corrections_path.read_text(encoding='utf-8')) if corrections_path.exists() else {}
+    if corrections:
+        assert corrections['season'] == season
     raw.parent.mkdir(parents=True, exist_ok=True)
     if not raw.exists():
         with urlopen(Request(url, headers={"User-Agent": "Hoopreel"}), timeout=45) as response:
@@ -80,7 +84,21 @@ def collect(season):
             record["seconds"] += played_seconds
             for field in ("points", "rebounds_total", "assists", "steals", "blocks"):
                 record[field] += int(float(row[field]))
-    rows = []
+    for proof in corrections.get('missing_appearances', []):
+        r = proof['official_row']
+        assert r['SEASON_ID'] == f'2{year}' and r['PLAYER_ID'] == proof['player_id'] and r['MATCHUP'].split()[0] == proof['team']
+        appearance = (r['GAME_ID'], proof['team_id'], proof['player_id'])
+        assert r['GAME_ID'] in games and appearance not in seen
+        seen.add(appearance)
+        g = groups[(proof['team_id'], proof['player_id'])]
+        assert g['team'] == proof['team']
+        g['gp'] += 1
+        g['seconds'] += source_seconds(str(r['MIN']))
+        for field, official_field in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:
+            g[field] += r[official_field]
+            assert g[field] == proof['official_season_row'][official_field]
+        assert g['gp'] == proof['official_season_row']['GP']
+    rows, rate_evidence = [], []
     for record in groups.values():
         gp = record["gp"]
         mpg = record["seconds"] / 60 / gp
@@ -89,6 +107,14 @@ def collect(season):
         rows.append({**{k: record[k] for k in ("season", "player_id", "player", "team", "gp")},
                      "mpg": rounded_rate(record["seconds"], 60 * gp), **{stat: rounded_rate(record[field], gp) for stat, field in
                      (("ppg", "points"), ("rpg", "rebounds_total"), ("apg", "assists"), ("spg", "steals"), ("bpg", "blocks"))}})
+        for proof in corrections.get('rate_overrides', []):
+            if (proof['player_id'],proof['team']) == (record['player_id'],record['team']):
+                official = proof['official_row']
+                assert (official['PLAYER_ID'],official['SEASON_ID'],official['TEAM_ABBREVIATION'],official['GP']) == (record['player_id'],season,record['team'],gp)
+                assert official['MIN'] >= 15 * gp
+                rate_evidence.append({'player_id':record['player_id'],'team':record['team'],'source_gp':gp,'source_seconds':record['seconds'],'source_unrounded_mpg':mpg,'source_display_mpg':rows[-1]['mpg'],'official_display_mpg':rounded_rate(official['MIN'],gp),'official_evidence':proof})
+                rows[-1]['mpg'] = rounded_rate(official['MIN'], gp)
+    assert len(rate_evidence) == len(corrections.get('rate_overrides', []))
     rows.sort(key=lambda r: (r["team"], r["player"]))
     if not rows:
         raise ValueError("No eligible staging records")
@@ -100,6 +126,8 @@ def collect(season):
                 "source": url, "source_sha256": hashlib.sha256(raw.read_bytes()).hexdigest(),
                 "regular_season_games_observed": len(games), "eligible_records": len(rows),
                 "whole_minute_source_rows": whole_minute_rows,
+                "source_corrections": corrections,
+                "display_rate_overrides": rate_evidence,
                 "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15},
                 "eligibility_precision": "Unrounded box-score minutes per team stint",
                 "records_by_team": {t: sum(r["team"] == t for r in rows) for t in sorted({r["team"] for r in rows})},

@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 428,
+  "player": "Sherman Douglas",
+  "team": "NJN",
+  "game_id": "0020000968",
+  "game_date": "2001-03-20",
+  "original_nba_jersey": "",
+  "resolved_jersey": 11,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Nets.pdf",
+  "source_sha256": "06815c61d6eebddb91938540ba9014b49cfaa3e2f46c509e9fca4f1a4f6a2bc8",
+  "pdf_page": 132,
+  "uniform_register_entry": "11: Sherman Douglas",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

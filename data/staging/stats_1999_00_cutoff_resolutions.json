@@ -1,0 +1,42 @@
+[
+  {
+    "season": "1999-00",
+    "player_id": 359,
+    "team": "CHH",
+    "gp": 33,
+    "source_seconds": 29544,
+    "reference_mpg": 15.0,
+    "official_row": {
+      "PLAYER_ID": 359,
+      "SEASON_ID": "1999-00",
+      "LEAGUE_ID": "00",
+      "TEAM_ID": 1610612766,
+      "TEAM_ABBREVIATION": "CHH",
+      "PLAYER_AGE": 32.0,
+      "GP": 33,
+      "GS": 2,
+      "MIN": 494,
+      "FGM": 66,
+      "FGA": 152,
+      "FG_PCT": 0.434,
+      "FG3M": 1,
+      "FG3A": 7,
+      "FG3_PCT": 0.143,
+      "FTM": 11,
+      "FTA": 21,
+      "FT_PCT": 0.524,
+      "OREB": 24,
+      "DREB": 66,
+      "REB": 90,
+      "AST": 25,
+      "STL": 12,
+      "BLK": 8,
+      "TOV": 17,
+      "PF": 61,
+      "PTS": 144
+    },
+    "source": "https://stats.nba.com/stats/playercareerstats?PlayerID=359&PerMode=Totals&LeagueID=00",
+    "source_sha256": "33077f438ae14c83892e7235cf6783f841a2f36aca8ea9ab488d39b1f19902a0",
+    "decision": "Exclude: source seconds and official NBA minutes both put this stint strictly below 15 MPG despite archive rounding to 15.0."
+  }
+]

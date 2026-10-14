@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 1562,
+  "player": "Gerard King",
+  "team": "WAS",
+  "game_id": "0020000763",
+  "game_date": "2001-02-20",
+  "original_nba_jersey": "",
+  "resolved_jersey": 51,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Wizards.pdf",
+  "source_sha256": "1370ba817f495c2c6dac406ac2270ac3216d08633da10c9cce5b7aa17e834b85",
+  "pdf_page": 193,
+  "uniform_register_entry": "GERARD KING #51",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

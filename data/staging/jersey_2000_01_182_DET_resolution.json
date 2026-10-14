@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 182,
+  "player": "Billy Owens",
+  "team": "DET",
+  "game_id": "0020001078",
+  "game_date": "2001-04-04",
+  "original_nba_jersey": "",
+  "resolved_jersey": 5,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Pistons.pdf",
+  "source_sha256": "b0a6845638588e1c8c07b72a1030e31dcf14301506e12893db6cc20c12393fa7",
+  "pdf_page": 82,
+  "uniform_register_entry": "5-BILLY OWENS",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

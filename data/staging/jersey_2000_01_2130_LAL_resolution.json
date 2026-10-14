@@ -1,0 +1,18 @@
+{
+  "season": "2000-01",
+  "player_id": 2130,
+  "player": "Mike Penberthy",
+  "team": "LAL",
+  "game_id": "0020001177",
+  "game_date": "2001-04-17",
+  "original_nba_jersey": "",
+  "resolved_jersey": 12,
+  "status": "VERIFIED_OFFICIAL_SEASON_PHOTO",
+  "method": "Official club 2000-01 team photo; named caption positions identify players and visible jersey numbers",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Lakers.pdf",
+  "source_sha256": "26c51a671c5c5cf65a408225f0f45d8c8d1ae90cbf0dccb93831bd5ae8a21355",
+  "pdf_page": 190,
+  "uniform_register_entry": "2000-01 team photo: Mike Penberthy stands second from left, wearing 12",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved.",
+  "photo_review": "The caption identifies Mike Penberthy second and J.R. Rider seventh in the standing row; their visible jersey numbers are 12 and 7 respectively."
+}

@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 782,
+  "player": "Mitch Richmond",
+  "team": "WAS",
+  "game_id": "0020000900",
+  "game_date": "2001-03-10",
+  "original_nba_jersey": "",
+  "resolved_jersey": 2,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Wizards.pdf",
+  "source_sha256": "1370ba817f495c2c6dac406ac2270ac3216d08633da10c9cce5b7aa17e834b85",
+  "pdf_page": 202,
+  "uniform_register_entry": "MITCH RICHMOND #2",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

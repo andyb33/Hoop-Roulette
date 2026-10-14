@@ -1,0 +1,17 @@
+{
+  "season": "2000-01",
+  "player_id": 1683,
+  "player": "Larry Robinson",
+  "team": "ATL",
+  "game_id": "0020000769",
+  "game_date": "2001-02-20",
+  "original_nba_jersey": "",
+  "resolved_jersey": 20,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or numbered all-time player entry; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Hawks.pdf",
+  "source_sha256": "0626f6c0d0e530a875746b5e2ac9e73a30e4f0975b9628c4474c8303be85cc24",
+  "pdf_page": 107,
+  "uniform_register_entry": "20: Larry Robinson",
+  "review": "Reviewed club guide; original NBA final-game blank is preserved."
+}

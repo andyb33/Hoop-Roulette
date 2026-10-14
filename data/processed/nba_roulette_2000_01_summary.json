@@ -1,0 +1,147 @@
+{
+  "season": "2000-01",
+  "completed_at": "2026-10-14T13:04:04.412324+00:00",
+  "passed": true,
+  "entries": 267,
+  "jerseys_verified": 267,
+  "unresolved": [],
+  "staged_sha256": "2c9bee6436d975ce704fd50a3ab84a611500e9bc9f3beb980000f97492e9ea4a",
+  "game_sha256": "a93f1a76b9de8b1d2abd98145c9d33e5969c2cdd2e32a925dc064f6b775ecb66",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2000-01&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "allen-iverson": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "dikembe-mutombo": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "mike-miller": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0040000087",
+    "game_date": "2001-06-15",
+    "champion_team": "LAL",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "42000",
+        "TEAM_ID": 1610612755,
+        "TEAM_ABBREVIATION": "PHI",
+        "TEAM_NAME": "Philadelphia 76ers",
+        "GAME_ID": "0040000087",
+        "GAME_DATE": "2001-06-15",
+        "MATCHUP": "PHI vs. LAL",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 96,
+        "FGM": 37,
+        "FGA": 90,
+        "FG_PCT": 0.411,
+        "FG3M": 4,
+        "FG3A": 15,
+        "FG3_PCT": 0.267,
+        "FTM": 18,
+        "FTA": 26,
+        "FT_PCT": 0.692,
+        "OREB": 20,
+        "DREB": 31,
+        "REB": 51,
+        "AST": 23,
+        "STL": 6,
+        "BLK": 4,
+        "TOV": 10,
+        "PF": 32,
+        "PLUS_MINUS": -12.0
+      },
+      {
+        "SEASON_ID": "42000",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0040000087",
+        "GAME_DATE": "2001-06-15",
+        "MATCHUP": "LAL @ PHI",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 108,
+        "FGM": 32,
+        "FGA": 71,
+        "FG_PCT": 0.451,
+        "FG3M": 12,
+        "FG3A": 17,
+        "FG3_PCT": 0.706,
+        "FTM": 32,
+        "FTA": 45,
+        "FT_PCT": 0.711,
+        "OREB": 14,
+        "DREB": 33,
+        "REB": 47,
+        "AST": 21,
+        "STL": 6,
+        "BLK": 10,
+        "TOV": 12,
+        "PF": 22,
+        "PLUS_MINUS": 12.0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2000-01&SeasonType=Playoffs",
+    "source_sha256": "2df4c9019db2df773b8e529a36bc5c72c1824e1eed4ec0e99ba36977e56f974a"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0040000087/box-score",
+  "champion_team": "LAL",
+  "champion_records": 7,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BOS": 10,
+    "CHH": 7,
+    "CHI": 11,
+    "CLE": 12,
+    "DAL": 8,
+    "DEN": 9,
+    "DET": 9,
+    "GSW": 10,
+    "HOU": 10,
+    "IND": 8,
+    "LAC": 10,
+    "LAL": 9,
+    "MIA": 8,
+    "MIL": 8,
+    "MIN": 7,
+    "NJN": 10,
+    "NYK": 9,
+    "ORL": 7,
+    "PHI": 8,
+    "PHX": 8,
+    "POR": 9,
+    "SAC": 9,
+    "SAS": 10,
+    "SEA": 10,
+    "TOR": 9,
+    "UTA": 9,
+    "VAN": 10,
+    "WAS": 12
+  }
+}

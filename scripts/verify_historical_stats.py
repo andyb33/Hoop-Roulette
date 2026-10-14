@@ -39,7 +39,7 @@ REFERENCES.update({season: {
     "provenance": "https://github.com/favourumeh/NBA-DATA-PIPELINE/blob/a19c7d43b65028d80c782ce64d308ed392c57bbf/NBA_webscraping_OOP.py",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Independently scraped Basketball Reference workbook. Producer removes TOT rows but retains individual team stints; season selected by ending Year."
-} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02")})
+} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99")})
 SCHEDULES.update({s:(1230,82) for s in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11")})
 
 
@@ -72,8 +72,9 @@ def extract_reference_workbook(path, year, output):
         writer=csv.DictWriter(handle,fieldnames=headings);writer.writeheader();writer.writerows(selected)
 
 SCHEDULES["2011-12"] = (990, 66)
-SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02")})
-SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02")})
+SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99")})
+SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99")})
+SCHEDULES["1998-99"] = (725, 50)
 SCHEDULES["2012-13"] = (1229, None)  # NBA schedule: BOS/IND 81 games, all other teams 82.
 
 FIELDS = {"gp": "G", "mpg": "MP", "ppg": "PTS", "rpg": "TRB", "apg": "AST", "spg": "STL", "bpg": "BLK"}
@@ -100,7 +101,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin"}.get(text, text)
 
 
 def verify(season):
@@ -147,9 +148,12 @@ def verify(season):
     actual = {(r["team"], name_key(r["player"])) for r in records}
     expected = {key for key, row in reference.items() if int(row["G"]) >= 30 and float(row["MP"]) >= 15}
     borderline = []
+    cutoff_path = ROOT / f'data/staging/stats_{slug}_cutoff_resolutions.json'
+    cutoff_proofs = json.loads(cutoff_path.read_text(encoding='utf-8')) if cutoff_path.exists() else []
     # A table rounded to 15.0 MPG can include a stint strictly below the cutoff.
     for key in sorted(expected - actual):
         candidates = []
+        candidate_ids = set()
         for raw_row in csv.DictReader(box_path.open(encoding="utf-8", newline="")):
             if raw_row["game_id"].zfill(10).startswith(f"002{season[2:4]}") and raw_row["minutes"]:
                 if (raw_row["team_tricode"], name_key(f"{raw_row['first_name']} {raw_row['family_name']}")) == key:
@@ -158,7 +162,21 @@ def verify(season):
                     except ImportError:
                         from collect_historical_stats import source_seconds
                     candidates.append(source_seconds(raw_row['minutes']))
-        if candidates and len(candidates) == int(reference[key]["G"]) and float(reference[key]["MP"]) == 15 and 14.95 <= sum(candidates)/60/len(candidates) < 15:
+                    candidate_ids.add(int(raw_row['person_id']))
+        proof = None
+        for p in cutoff_proofs:
+            if candidate_ids == {p['player_id']} and p['team'] == key[0] and p['gp'] == len(candidates) and p['source_seconds'] == sum(candidates):
+                official = p['official_row']
+                assert p['season'] == season and official['PLAYER_ID'] == p['player_id'] and official['SEASON_ID'] == season
+                assert official['TEAM_ABBREVIATION'] == key[0] and official['GP'] == len(candidates)
+                assert official['MIN'] < 15 * official['GP'] and sum(candidates) < 900 * len(candidates)
+                assert float(reference[key]['MP']) == p['reference_mpg'] and int(reference[key]['G']) == official['GP']
+                proof = p
+                break
+        if proof:
+            borderline.append(proof)
+            expected.remove(key)
+        elif candidates and len(candidates) == int(reference[key]["G"]) and float(reference[key]["MP"]) == 15 and 14.95 <= sum(candidates)/60/len(candidates) < 15:
             borderline.append({"team": key[0], "player": reference[key]["Player"], "gp": len(candidates), "seconds": sum(candidates), "unrounded_mpg": sum(candidates)/60/len(candidates), "decision": "Excluded: actual MPG below 15 despite reference display rounding to 15.0"})
             expected.remove(key)
     if expected != actual:

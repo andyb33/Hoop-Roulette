@@ -88,3 +88,8 @@ Recovered 283, 275 and 286 entries respectively. Current prepared pool: 6,502 en
 ## Third recovery batch: 2001–02 through 2003–04
 
 Recovered 268, 265 and 260 entries respectively; prepared pool contains 7,295 entries across 25 seasons. Each new schedule matches 1,189 games and 29 teams. All stats, final jerseys, honors and championship credit are verified. Four blank jerseys use official club register evidence; Lenard MPG uses official totals. See [completion report](../../docs/HISTORICAL_COMPLETION_2001_2004.md). Stage 2 recovery is 9/30. This committed batch stops at 2001–02.
+
+
+## Next three-season batch: 1998–99 through 2000–01
+
+Completed 234, 266 and 267 entries respectively; v0.10.4 contains 8,062 entries across 28 seasons. Fixed eligibility remains 30 GP / 15 unrounded MPG, including the lockout year. All statistics, schedules, jerseys, honors and title-roster fields passed verification. See [completion report](../../docs/HISTORICAL_COMPLETION_1998_2001.md). Stage 2 progress is 12/30; next: 1997–98, 1996–97, 1995–96.
