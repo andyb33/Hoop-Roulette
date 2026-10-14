@@ -1,0 +1,19 @@
+{
+  "season": "2005-06",
+  "player_id": 213,
+  "player": "Antonio Davis",
+  "team": "NYK",
+  "game_id": "0020500658",
+  "game_date": "2006-01-31",
+  "original_nba_jersey": "",
+  "resolved_jersey": 32,
+  "status": "VERIFIED_FINAL_GAME_PHOTO",
+  "method": "Reviewed AP photograph from the exact final Knicks appearance; visible front jersey number 32",
+  "photo_page": "https://www.alamy.com/new-york-knicks-antonio-davis-drives-past-los-angeles-lakers-lamar-odom-in-the-first-half-of-basketball-action-at-new-yorks-madison-square-garden-tuesday-jan-31-2006-the-knicks-lost-the-game-130-97-ap-photofrank-franklin-ii-image541809150.html",
+  "photo_url": "https://c7.alamy.com/comp/2PDDF2P/new-york-knicks-antonio-davis-drives-past-los-angeles-lakers-lamar-odom-in-the-first-half-of-basketball-action-at-new-yorks-madison-square-garden-tuesday-jan-31-2006-the-knicks-lost-the-game-130-97-ap-photofrank-franklin-ii-2PDDF2P.jpg",
+  "page_sha256": "d10b59e328f283e387c09b8dc7ca878d9f2852b2f0d1b42c52952a77cfedb6d6",
+  "photo_sha256": "2eb3203170b4c29d438b68bb47f69eaf05db52e9637a899fe3d1b52b76bb6fe0",
+  "credit": "AP Photo / Frank Franklin II",
+  "photo_date": "2006-01-31",
+  "visual_review": "Antonio Davis wears Knicks number 32 while driving past Lamar Odom; archive caption identifies the player and exact game."
+}

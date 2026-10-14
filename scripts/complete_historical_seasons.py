@@ -152,6 +152,12 @@ def complete(season, workers=6):
         assert len(players)==1
         p = players[0]
         jersey = str(p['jerseyNum'])
+        resolution = None
+        if not jersey.isdigit():
+            path = ROOT / f"data/staging/jersey_{slug}_{r['player_id']}_{r['team']}_resolution.json"
+            resolution = json.loads(path.read_text(encoding='utf-8'))
+            assert (resolution['season'], resolution['player_id'], resolution['team'], resolution['game_id'], resolution['game_date'], resolution['original_nba_jersey']) == (season, r['player_id'], r['team'], gid, date, jersey)
+            jersey = str(resolution['resolved_jersey'])
         assert jersey.isdigit() and 0 <= int(jersey) <= 99
         assert p['played']=='1', (r['player'],gid,p['played'])
         key = honors_key(r)
@@ -161,7 +167,8 @@ def complete(season, workers=6):
         evidence.append({'player_id':r['player_id'],'player':r['player'],'team':r['team'],'last_game_date':date,'game_id':gid,
                          'jersey':int(jersey),'jersey_display':jersey,'official_box_score_player':{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')},
                          'box_score_sha256':hashlib.sha256(json.dumps(boxes[gid],ensure_ascii=False).encode()).hexdigest(),
-                         'jersey_method':boxes[gid].get('_jersey_method', 'Official final-appearance live box score'),
+                         'jersey_method':resolution['method'] if resolution else boxes[gid].get('_jersey_method', 'Official final-appearance live box score'),
+                         'jersey_resolution':resolution,
                          'source_sha256':boxes[gid].get('_source_sha256'),
                          'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
     assert len(nba)==15 and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05") else 10)
@@ -202,7 +209,7 @@ def complete(season, workers=6):
         fields = ['team','player_id','player','last_game_date','game_id','verified_final_jersey','status','source']
         writer=csv.DictWriter(handle,fieldnames=fields);writer.writeheader()
         for entry in evidence:
-            writer.writerow({**{key:entry[key] for key in ('team','player_id','player','last_game_date','game_id','source')}, 'verified_final_jersey':entry['jersey'],'status':'VERIFIED'})
+            writer.writerow({**{key:entry[key] for key in ('team','player_id','player','last_game_date','game_id','source')}, 'verified_final_jersey':entry['jersey'],'status':entry['jersey_resolution']['status'] if entry['jersey_resolution'] else 'VERIFIED'})
     manifest.update(status='complete_promoted',enabled_in_game=True,pending=['Distribution analysis'])
     (ROOT/f'data/staging/stats_{slug}_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)

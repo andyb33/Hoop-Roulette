@@ -191,6 +191,15 @@ def verify(season):
                     item["resolution_source"]=proof["source"]
                     item["official_total_evidence"]=official
                     item["official_source_sha256"]=proof["source_sha256"]
+            elif season == "2004-05" and row["player_id"] == 2418 and row["team"] == "NOH" and field == "mpg":
+                proof=json.loads((ROOT/"data/staging/stats_2004_05_jacobsen_official_resolution.json").read_text(encoding="utf-8"))
+                official=proof["official_row"]
+                from decimal import Decimal, ROUND_HALF_UP
+                official_mpg=float((Decimal(official["MIN"])/Decimal(official["GP"])).quantize(Decimal("0.1"),rounding=ROUND_HALF_UP))
+                if official["PLAYER_ID"] != row["player_id"] or official["SEASON_ID"] != season or official["TEAM_ABBREVIATION"] != row["team"] or official["GP"] != row["gp"] or official_mpg != row[field]:
+                    errors.append("Official Jacobsen resolution does not match staged record")
+                else:
+                    item.update(resolution=proof["resolution"], resolution_source=proof["source"], official_total_evidence=official, official_source_sha256=proof["source_sha256"])
             else:
                 errors.append(item)
             if "resolution" in item:
