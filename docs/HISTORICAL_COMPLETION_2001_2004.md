@@ -22,6 +22,6 @@ Each season has 15 All-NBA and 10 distinct All-Defense selections, plus one each
 
 Validation passed: 98 unit tests; 100 complete browser games with fourteen unique drafted players each; 2,791 checked spins with valid animation choices and Keeps; all 25 normal seasons observed; live HTTP page/state/spin checks; both GOAT pools (149 award, 15 prehistoric); JavaScript syntax and whitespace checks. Evidence is retained in analysis/recovery_2001_2004_smoke.json. Jackpot season appearances in that report are separate from the normal pool.
 
-Prepared source uses Playtest Batch 16 / recovery v0.10.3 and is committed on recovery/three-season-batches-20261014. GitHub main remains published v0.10 plus its animation fix. Desktop packages remain deferred through 1973–74, and earlier balance reports have not been rerun.
+Published v0.10.3 source uses Playtest Batch 16 and includes the verified pool through 2001–02 on GitHub main. The existing animation fix is retained; recovery/three-season-batches-20261014 preserves the recovery checkpoints. Desktop packages remain deferred through 1973–74, and earlier balance reports have not been rerun.
 
 Recoverable Stage 2 progress is 9/30. This batch stops at 2001–02 as requested. Next proposed recovery batch: 2000–01, 1999–2000, 1998–99. The earlier unpublished 1999–2001 completion and unfinished 1994–99 work remain historical logs until rebuilt.

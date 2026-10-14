@@ -11,9 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**Recovery v0.10.3 restores the normal pool from 2001–02 through 2025–26.**
+**v0.10.3 includes the normal pool from 2001–02 through 2025–26.**
 The first nine Stage 2 seasons have been rebuilt and independently verified.
-Work is checkpointed on `recovery/three-season-batches-20261014`; main remains v0.10.
+The verified 25-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
