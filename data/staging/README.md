@@ -73,3 +73,8 @@ The current expansion report is `docs/HISTORICAL_COMPLETION_2012_2015.md`. The p
 2011–12 has 276 eligible entries and 1,932 independent stat comparisons; 2010–11 has 287 entries and 2,009 comparisons. The preceding verification/checksum gate remains enforced. The 2011–12 schedule matches all 990 official games and 66 per team; 2010–11 matches all 1,230 games and 82 per team. Archive name Yi Jianlian is explicitly joined to source name Jianlian Yi (NBA ID 201146), with raw reference names retained. Historical NJN and NOH team codes are preserved.
 
 Stage 1 now covers every season from 2010–11 through 2025–26: 4,840 normal entries across 16 seasons. Current completion evidence is in `docs/HISTORICAL_COMPLETION_2010_2012.md`. Earlier progress sections describe completed prior batches. Version v0.10 contains the completed Stage 1 source. Desktop packages are deferred until the normal pool is complete through 1973–74. Manual package workflows target v0.10. Stage 2: 1980–81 through 2009–10; Stage 3: 1973–74 through 1979–80. Distribution analysis has not been rerun.
+
+
+## Recovery checkpoint: 2007–08 through 2009–10
+
+The first three Stage 2 seasons are rebuilt: 271, 274 and 273 entries respectively. The current prepared pool contains 5,658 entries across 19 seasons. All stats, exact schedules, final jerseys and accolades passed verification. See [recovery report](../../docs/HISTORICAL_COMPLETION_2007_2010.md) for retained evidence and remaining recovery work. Completed batches are checkpointed remotely; future batches contain three seasons.

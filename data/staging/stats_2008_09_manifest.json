@@ -1,0 +1,50 @@
+{
+  "season": "2008-09",
+  "status": "complete_promoted",
+  "enabled_in_game": true,
+  "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_2009.csv",
+  "source_sha256": "abf01a9e1bbf54b82d47a08f0148cd2972f199aae379fa7cfdb4f5145a6399c0",
+  "regular_season_games_observed": 1230,
+  "eligible_records": 274,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligibility_precision": "Unrounded box-score minutes per team stint",
+  "records_by_team": {
+    "ATL": 8,
+    "BOS": 9,
+    "CHA": 8,
+    "CHI": 10,
+    "CLE": 9,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 9,
+    "GSW": 11,
+    "HOU": 10,
+    "IND": 8,
+    "LAC": 12,
+    "LAL": 10,
+    "MEM": 9,
+    "MIA": 8,
+    "MIL": 9,
+    "MIN": 10,
+    "NJN": 10,
+    "NOH": 7,
+    "NYK": 8,
+    "OKC": 11,
+    "ORL": 10,
+    "PHI": 7,
+    "PHX": 8,
+    "POR": 9,
+    "SAC": 9,
+    "SAS": 10,
+    "TOR": 8,
+    "UTA": 8,
+    "WAS": 11
+  },
+  "pending": [
+    "Distribution analysis"
+  ],
+  "verification_report": "data/staging/stats_2008_09_verification.json"
+}

@@ -1,0 +1,79 @@
+{
+  "season": "2007-08",
+  "completed_at": "2026-10-14T07:37:38.153028+00:00",
+  "passed": true,
+  "entries": 271,
+  "jerseys_verified": 271,
+  "unresolved": [],
+  "staged_sha256": "4d6c8490cfbc162548322fe5eb41f4454300cbe72a946238e781d2497dfe3c77",
+  "game_sha256": "61bedc3119a016c8c3ea08c9e53a2360b24488d28efa37111f65be3595102921",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2007-08&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "kevin-durant": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "kevin-garnett": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "kobe-bryant": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://www.nba.com/game/0040700406/box-score",
+  "champion_team": "BOS",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BOS": 8,
+    "CHA": 9,
+    "CHI": 10,
+    "CLE": 10,
+    "DAL": 10,
+    "DEN": 8,
+    "DET": 8,
+    "GSW": 8,
+    "HOU": 11,
+    "IND": 9,
+    "LAC": 10,
+    "LAL": 9,
+    "MEM": 10,
+    "MIA": 10,
+    "MIL": 9,
+    "MIN": 10,
+    "NJN": 11,
+    "NOH": 8,
+    "NYK": 9,
+    "ORL": 8,
+    "PHI": 7,
+    "PHX": 7,
+    "POR": 9,
+    "SAC": 7,
+    "SAS": 9,
+    "SEA": 11,
+    "TOR": 9,
+    "UTA": 8,
+    "WAS": 9
+  }
+}

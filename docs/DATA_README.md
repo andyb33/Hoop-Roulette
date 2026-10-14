@@ -124,3 +124,8 @@ The normal pool now targets 2012–13 through 2025–26: 4,277 records across 14
 ## Current Stage 1 completion — prepared v0.10
 
 The normal pool contains all 16 seasons from 2010–11 through 2025–26, with 4,840 entries and 480 team-season combinations. See `HISTORICAL_COMPLETION_2010_2012.md` for the final batch and validation evidence. Historical NJN/NOH codes remain distinct from BKN/NOP. Eligibility, upper bonus and GOAT pools remain unchanged. Desktop workflows now target v0.10 with manual dispatch only; packages are deferred until the normal pool is complete through 1973–74. Prior balance analyses describe earlier pools. Stage 2 covers 1980–81 through 2009–10; Stage 3 covers 1973–74 through 1979–80.
+
+
+## Recovery checkpoint: 2007–08 through 2009–10
+
+The first three Stage 2 seasons are rebuilt: 271, 274 and 273 entries respectively. The current prepared pool contains 5,658 entries across 19 seasons. All stats, exact schedules, final jerseys and accolades passed verification. See [recovery report](HISTORICAL_COMPLETION_2007_2010.md) for retained evidence and remaining recovery work. Completed batches are checkpointed remotely; future batches contain three seasons.

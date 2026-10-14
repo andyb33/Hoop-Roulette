@@ -8,7 +8,7 @@ from nba_roulette.data import ROOT, load_records
 
 class CompletedHistoryTests(unittest.TestCase):
     def test_promoted_stats_are_unchanged_and_all_jerseys_have_final_game_evidence(self):
-        for season, count in [('2022-23',305),('2021-22',317),('2020-21',307),('2019-20',298),('2018-19',307),('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287)]:
+        for season, count in [('2022-23',305),('2021-22',317),('2020-21',307),('2019-20',298),('2018-19',307),('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287),('2009-10',273),('2008-09',274),('2007-08',271)]:
             slug=season.replace('-','_')
             staged=ROOT/f'data/staging/stats_{slug}.json'
             output=ROOT/f'data/game/players_{slug}.json'
@@ -35,7 +35,7 @@ class CompletedHistoryTests(unittest.TestCase):
                 self.assertEqual(sum(r[award] for r in rows),1)
 
     def test_championship_credit_requires_title_roster_and_team_stint(self):
-        for season in ('2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11'):
+        for season in ('2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08'):
             slug=season.replace('-','_')
             audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text(encoding='utf-8'))
             members={int(p['personId']) for p in audit['champion_roster']}
@@ -44,11 +44,11 @@ class CompletedHistoryTests(unittest.TestCase):
         bones=next(r for r in load_records(['2022-23']) if r.player_id==1630538 and r.team=='DEN')
         self.assertFalse(bones.champion)
 
-    def test_loading_all_sixteen_seasons_has_no_duplicate_entries(self):
+    def test_loading_all_nineteen_seasons_has_no_duplicate_entries(self):
         rows=load_records()
-        self.assertEqual(len(rows),4840)
-        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),4840)
-        self.assertEqual(len({(r.season,r.team) for r in rows}),480)
+        self.assertEqual(len(rows),5658)
+        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),5658)
+        self.assertEqual(len({(r.season,r.team) for r in rows}),570)
 
     def test_shortened_seasons_match_official_schedule(self):
         for season, games, uniform in [('2020-21',1080,72),('2019-20',1059,None),('2018-19',1230,82)]:
@@ -83,7 +83,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertFalse(tor[202685].champion)   # Jonas Valanciunas: traded to Memphis.
 
     def test_workbook_reference_seasons_are_complete_and_pinned(self):
-        for season, count in [('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287)]:
+        for season, count in [('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287),('2009-10',273),('2008-09',274),('2007-08',271)]:
             slug=season.replace('-','_')
             report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text(encoding='utf-8'))
             self.assertTrue(report['passed'])
@@ -135,7 +135,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertTrue(all(r.all_defense==1 for r in defense if r.player_id in (2199,201149)))
 
     def test_stage_one_has_every_season_and_historical_franchises(self):
-        rows=load_records()
+        rows=load_records(f'{year}-{str(year+1)[-2:]}' for year in range(2010,2026))
         self.assertEqual({r.season for r in rows},{f'{year}-{str(year+1)[-2:]}' for year in range(2010,2026)})
         for season in ('2010-11','2011-12'):
             teams={r.team for r in load_records([season])}
@@ -145,3 +145,23 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertNotIn('NOP',teams)
         yi=next(r for r in load_records(['2010-11']) if r.player_id==201146)
         self.assertEqual((yi.team,yi.gp),('WAS',63))
+
+    def test_recovered_sonics_and_thunder_are_scoped_to_their_actual_seasons(self):
+        from nba_roulette.models import Lock
+        from nba_roulette.roulette import RouletteEngine
+        rows=load_records()
+        seattle=next(r for r in rows if r.season=='2007-08' and r.team=='SEA')
+        self.assertNotIn('OKC', {r.team for r in load_records(['2007-08'])})
+        self.assertNotIn('SEA', {r.team for r in load_records(['2008-09','2009-10'])})
+        outcomes=RouletteEngine(rows).valid_outcomes(seattle, (Lock.TEAM,))
+        self.assertTrue(outcomes)
+        self.assertEqual({r.season for r in outcomes}, {'2007-08'})
+        self.assertEqual({r.team for r in outcomes}, {'SEA'})
+
+    def test_recovered_traded_champions_receive_credit_only_for_title_team(self):
+        rows=load_records(['2007-08'])
+        cassell={r.team:r for r in rows if r.player_id==208}
+        self.assertEqual(set(cassell), {'LAC'})
+        self.assertFalse(cassell['LAC'].champion)
+        yao=next(r for r in load_records(['2008-09']) if r.player_id==2397)
+        self.assertEqual(yao.player, 'Yao Ming')

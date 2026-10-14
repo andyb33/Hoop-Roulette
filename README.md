@@ -11,7 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.10 completes Stage 1: the normal pool from 2010–11 through 2025–26.**
+**Recovery v0.10.1 restores the normal pool from 2007–08 through 2025–26.**
+The first three Stage 2 seasons have been rebuilt and independently verified.
+Work is checkpointed on `recovery/three-season-batches-20261014`; main remains v0.10.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -29,9 +31,9 @@ For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots
 Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
 Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The sixteen datasets from 2010–11 through 2025–26 are complete:
+The nineteen datasets from 2007–08 through 2025–26 are complete:
 
-- 4,840 eligible player-team records across the sixteen seasons and all 30 NBA teams;
+- 5,658 eligible player-team records across the nineteen seasons and all 30 NBA teams;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -40,7 +42,7 @@ The sixteen datasets from 2010–11 through 2025–26 are complete:
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 The new historical seasons retain their independent stats audits and official
-final-appearance jersey evidence. See [completion report](docs/HISTORICAL_COMPLETION_2010_2012.md).
+final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_2007_2010.md).
 Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. Desktop packages wait until Stage 3 is complete through 1973–74.
