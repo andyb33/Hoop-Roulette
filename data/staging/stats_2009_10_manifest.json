@@ -1,0 +1,53 @@
+{
+  "season": "2009-10",
+  "status": "stats_independently_checked",
+  "enabled_in_game": false,
+  "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_2010.csv",
+  "source_sha256": "3854801f6cb739dbaf5de09ef69bd8fb3626dabfb46b9d6d22953713257f90b6",
+  "regular_season_games_observed": 1230,
+  "eligible_records": 273,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligibility_precision": "Unrounded box-score minutes per team stint",
+  "records_by_team": {
+    "ATL": 7,
+    "BOS": 10,
+    "CHA": 8,
+    "CHI": 7,
+    "CLE": 10,
+    "DAL": 8,
+    "DEN": 9,
+    "DET": 10,
+    "GSW": 11,
+    "HOU": 8,
+    "IND": 10,
+    "LAC": 8,
+    "LAL": 8,
+    "MEM": 7,
+    "MIA": 10,
+    "MIL": 10,
+    "MIN": 9,
+    "NJN": 11,
+    "NOH": 10,
+    "NYK": 9,
+    "OKC": 9,
+    "ORL": 8,
+    "PHI": 9,
+    "PHX": 9,
+    "POR": 10,
+    "SAC": 7,
+    "SAS": 10,
+    "TOR": 10,
+    "UTA": 9,
+    "WAS": 12
+  },
+  "pending": [
+    "Final team-stint jersey numbers",
+    "Accolades and champions",
+    "Distribution analysis",
+    "Game activation"
+  ],
+  "verification_report": "data/staging/stats_2009_10_verification.json"
+}

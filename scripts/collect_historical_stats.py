@@ -18,8 +18,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 2010 <= year < 2022:
-        raise ValueError("This staging batch covers 2010–11 through 2022–23")
+    if not 2007 <= year < 2022:
+        raise ValueError("This staging batch covers 2007–08 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
