@@ -132,7 +132,7 @@ def complete(season, workers=6):
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     finals_box = fetch_box(finals_id, season)
     finals_url = finals_box.get('_source_url', finals_url)
@@ -204,5 +204,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

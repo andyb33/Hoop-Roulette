@@ -99,7 +99,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming"}.get(text, text)
 
 
 def verify(season):

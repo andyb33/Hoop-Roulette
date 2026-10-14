@@ -61,7 +61,7 @@ def collect(season):
             key = (team_id, player_id)
             if key not in groups:
                 groups[key] = {"season": season, "player_id": player_id,
-                               "player": f"{row['first_name']} {row['family_name']}",
+                               "player": "Yao Ming" if player_id == 2397 else f"{row['first_name']} {row['family_name']}",
                                "team": row["team_tricode"], "gp": 0, "seconds": 0,
                                "points": 0, "rebounds_total": 0, "assists": 0, "steals": 0, "blocks": 0}
             record = groups[key]
