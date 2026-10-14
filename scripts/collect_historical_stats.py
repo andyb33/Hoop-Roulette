@@ -6,6 +6,7 @@ import json
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from urllib.request import Request, urlopen
+from urllib.parse import urlencode
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -24,12 +25,39 @@ def rounded_rate(total, games):
     return float((Decimal(total) / Decimal(games)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
 
 
+def historical_team(season, team):
+    team = {"GOS":"GSW", "PHL":"PHI", "SAN":"SAS", "UTH":"UTA"}.get(team, team)
+    return "WSB" if team == "WAS" and int(season[:4]) < 1997 else team
+
+
+def primary_game_log(season, raw):
+    """Deterministic adapter; retain the original payload and nullable statistics."""
+    from complete_historical_seasons import fetch, table
+    url = 'https://stats.nba.com/stats/leaguegamelog?' + urlencode(dict(LeagueID='00',Season=season,SeasonType='Regular Season',PlayerOrTeam='P',Counter=0,Direction='ASC',Sorter='DATE',DateFrom='',DateTo=''))
+    payload=fetch(url)
+    original=raw.parent/'official_player_game_log.json'
+    original.write_text(json.dumps(payload,ensure_ascii=False),encoding='utf-8')
+    rows=table(payload,'LeagueGameLog')
+    fields=['game_id','team_id','team_tricode','person_id','first_name','family_name','minutes','points','rebounds_total','assists','steals','blocks']
+    nullable=[]
+    with raw.open('w',newline='',encoding='utf-8') as handle:
+        writer=csv.DictWriter(handle,fieldnames=fields);writer.writeheader()
+        for r in sorted(rows,key=lambda r:(r['GAME_ID'],r['TEAM_ID'],r['PLAYER_ID'])):
+            first,_,family=r['PLAYER_NAME'].partition(' ')
+            out=dict(game_id=r['GAME_ID'],team_id=r['TEAM_ID'],team_tricode=r['TEAM_ABBREVIATION'],person_id=r['PLAYER_ID'],first_name=first,family_name=family,minutes=r['MIN'])
+            for field,src in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:out[field]=r[src]
+            missing=[f for f in fields if out[f] is None]
+            if missing:nullable.append(dict(game_id=r['GAME_ID'],player_id=r['PLAYER_ID'],missing_fields=missing))
+            writer.writerow(out)
+    return url,dict(source_format='official_player_game_log',primary_payload_path=str(original.relative_to(ROOT)),primary_payload_sha256=hashlib.sha256(original.read_bytes()).hexdigest(),primary_player_appearances=len(rows),nullable_source_rows=nullable)
+
+
 def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 1998 <= year < 2022:
-        raise ValueError("This staging batch covers 1998–99 through 2022–23")
+    if not 1995 <= year < 2022:
+        raise ValueError("This staging batch covers 1995–96 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
@@ -52,7 +80,10 @@ def collect(season):
     if corrections:
         assert corrections['season'] == season
     raw.parent.mkdir(parents=True, exist_ok=True)
-    if not raw.exists():
+    primary_metadata={}
+    if year == 1995:
+        url,primary_metadata=primary_game_log(season,raw)
+    elif not raw.exists():
         with urlopen(Request(url, headers={"User-Agent": "Hoopreel"}), timeout=45) as response:
             raw.write_bytes(response.read())
     groups, games, seen, whole_minute_rows = {}, set(), set(), []
@@ -77,27 +108,43 @@ def collect(season):
             if key not in groups:
                 groups[key] = {"season": season, "player_id": player_id,
                                "player": "Yao Ming" if player_id == 2397 else "Steve Smith" if player_id == 120 else "Clarence Weatherspoon" if player_id == 221 else f"{row['first_name']} {row['family_name']}",
-                               "team": row["team_tricode"], "gp": 0, "seconds": 0,
+                               "team": historical_team(season, row["team_tricode"]), "gp": 0, "seconds": 0,
                                "points": 0, "rebounds_total": 0, "assists": 0, "steals": 0, "blocks": 0}
             record = groups[key]
             record["gp"] += 1
             record["seconds"] += played_seconds
             for field in ("points", "rebounds_total", "assists", "steals", "blocks"):
-                record[field] += int(float(row[field]))
+                record[field] = None if row[field] == '' or record[field] is None else record[field] + int(float(row[field]))
     for proof in corrections.get('missing_appearances', []):
         r = proof['official_row']
+        if proof.get('identity_resolution'):
+            identity=proof['identity_resolution'];original={k.upper():v for k,v in proof['original_response_row'].items()}
+            assert (identity['season'],identity['canonical_player_id'],original['PLAYER_ID']) == (season,proof['player_id'],identity['legacy_player_id'])
+            assert {k:v for k,v in r.items() if k != 'PLAYER_ID'} == {k:v for k,v in original.items() if k != 'PLAYER_ID'}
+            assert {'GP','MIN','PTS','AST','STL','BLK'} <= set(identity['matched_fields'])
+            assert all(identity['legacy_aggregate'][f] == identity['canonical_official_row'][f] for f in identity['matched_fields'])
         assert r['SEASON_ID'] == f'2{year}' and r['PLAYER_ID'] == proof['player_id'] and r['MATCHUP'].split()[0] == proof['team']
         appearance = (r['GAME_ID'], proof['team_id'], proof['player_id'])
         assert r['GAME_ID'] in games and appearance not in seen
         seen.add(appearance)
-        g = groups[(proof['team_id'], proof['player_id'])]
+        key=(proof['team_id'],proof['player_id'])
+        if key not in groups:
+            groups[key]=dict(season=season,player_id=proof['player_id'],player=proof['player'],team=proof['team'],gp=0,seconds=0,points=0,rebounds_total=0,assists=0,steals=0,blocks=0)
+        g = groups[key]
         assert g['team'] == proof['team']
         g['gp'] += 1
         g['seconds'] += source_seconds(str(r['MIN']))
         for field, official_field in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:
-            g[field] += r[official_field]
-            assert g[field] == proof['official_season_row'][official_field]
-        assert g['gp'] == proof['official_season_row']['GP']
+            g[field] = None if r[official_field] is None or g[field] is None else g[field]+r[official_field]
+    for proof in corrections.get('stat_total_overrides', []):
+        official=proof['official_row'];g=groups[(official['TEAM_ID'],proof['player_id'])]
+        assert (official['PLAYER_ID'],official['SEASON_ID'],official['TEAM_ABBREVIATION'],official['GP']) == (g['player_id'],season,g['team'],g['gp'])
+        assert g[proof['field']] is None
+        g[proof['field']]=official[proof['official_field']]
+    for proof in corrections.get('missing_appearances', []):
+        g=groups[(proof['team_id'],proof['player_id'])];official=proof['official_season_row']
+        assert g['gp']==official['GP']
+        for field,src in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:assert g[field]==official[src]
     rows, rate_evidence = [], []
     for record in groups.values():
         gp = record["gp"]
@@ -125,7 +172,9 @@ def collect(season):
     manifest = {"season": season, "status": "stats_only_unverified", "enabled_in_game": False,
                 "source": url, "source_sha256": hashlib.sha256(raw.read_bytes()).hexdigest(),
                 "regular_season_games_observed": len(games), "eligible_records": len(rows),
-                "whole_minute_source_rows": whole_minute_rows,
+                "whole_minute_source_rows": [] if primary_metadata else whole_minute_rows,
+                "whole_minute_source_row_count": len(whole_minute_rows),
+                **primary_metadata,
                 "source_corrections": corrections,
                 "display_rate_overrides": rate_evidence,
                 "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15},

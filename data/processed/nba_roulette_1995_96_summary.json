@@ -1,0 +1,147 @@
+{
+  "season": "1995-96",
+  "completed_at": "2026-10-14T13:37:21.652904+00:00",
+  "passed": true,
+  "entries": 258,
+  "jerseys_verified": 258,
+  "unresolved": [],
+  "staged_sha256": "ab8d5acf49a07c5cd82dc07047175a75fb70b4b83255d24c5a5a8bc07bb2f909",
+  "game_sha256": "ff288393fbec65612db0aa0f35b93b149af9c692bc7154da6063cdfb8f20dfbc",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1995-96&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "damon-stoudamire": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "gary-payton": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "michael-jordan": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049500068",
+    "game_date": "1996-06-16",
+    "champion_team": "CHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41995",
+        "TEAM_ID": 1610612760,
+        "TEAM_ABBREVIATION": "SEA",
+        "TEAM_NAME": "Seattle SuperSonics",
+        "GAME_ID": "0049500068",
+        "GAME_DATE": "1996-06-16",
+        "MATCHUP": "SEA @ CHI",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 75,
+        "FGM": 31,
+        "FGA": 73,
+        "FG_PCT": 0.425,
+        "FG3M": 5,
+        "FG3A": 24,
+        "FG3_PCT": 0.208,
+        "FTM": 8,
+        "FTA": 10,
+        "FT_PCT": 0.8,
+        "OREB": 12,
+        "DREB": 23,
+        "REB": 35,
+        "AST": 19,
+        "STL": 10,
+        "BLK": 3,
+        "TOV": 20,
+        "PF": 20,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41995",
+        "TEAM_ID": 1610612741,
+        "TEAM_ABBREVIATION": "CHI",
+        "TEAM_NAME": "Chicago Bulls",
+        "GAME_ID": "0049500068",
+        "GAME_DATE": "1996-06-16",
+        "MATCHUP": "CHI vs. SEA",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 87,
+        "FGM": 31,
+        "FGA": 78,
+        "FG_PCT": 0.397,
+        "FG3M": 9,
+        "FG3A": 25,
+        "FG3_PCT": 0.36,
+        "FTM": 16,
+        "FTA": 20,
+        "FT_PCT": 0.8,
+        "OREB": 24,
+        "DREB": 27,
+        "REB": 51,
+        "AST": 20,
+        "STL": 14,
+        "BLK": 4,
+        "TOV": 19,
+        "PF": 15,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1995-96&SeasonType=Playoffs",
+    "source_sha256": "714fde37fa8feb229a59645006c55b46f1ac2a39f412b19186dbed6f3285fa07"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049500068/box-score",
+  "champion_team": "CHI",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BOS": 10,
+    "CHH": 6,
+    "CHI": 8,
+    "CLE": 7,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 8,
+    "GSW": 9,
+    "HOU": 10,
+    "IND": 9,
+    "LAC": 9,
+    "LAL": 8,
+    "MIA": 9,
+    "MIL": 7,
+    "MIN": 9,
+    "NJN": 9,
+    "NYK": 8,
+    "ORL": 9,
+    "PHI": 12,
+    "PHX": 10,
+    "POR": 10,
+    "SAC": 9,
+    "SAS": 9,
+    "SEA": 9,
+    "TOR": 10,
+    "UTA": 8,
+    "VAN": 10,
+    "WSB": 8
+  }
+}

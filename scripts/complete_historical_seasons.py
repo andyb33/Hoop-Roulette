@@ -11,6 +11,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from verify_goat_datasets import parse_honors, parse_champions, HISTORY_URLS, TEAM_NAMES, table
 from build_goat_datasets import player_key
+from collect_historical_stats import historical_team
 
 # NBA's box-score mirror uses Jimmy Butler III; the official honors list uses Jimmy Butler.
 HONORS_NAME_ALIASES = {202710: 'Jimmy Butler'}
@@ -84,6 +85,17 @@ def fetch_box(gid, season):
 
 def complete(season, workers=6):
     slug = season.replace('-', '_')
+    identity_path=ROOT/f'data/staging/player_identity_{slug}_resolutions.json'
+    identities=json.loads(identity_path.read_text()) if identity_path.exists() else []
+    for proof in identities:
+        official=proof['canonical_official_row']
+        assert (proof['season'],official['SEASON_ID'],official['PLAYER_ID'],official['TEAM_ABBREVIATION']) == (season,season,proof['canonical_player_id'],proof['team'])
+        assert {'GP','MIN','PTS','AST','STL','BLK'} <= set(proof['matched_fields'])
+        assert all(proof['legacy_aggregate'][f] == official[f] for f in proof['matched_fields'])
+    identity_by_legacy={p['legacy_player_id']:p for p in identities}
+    def canonical_id(value):
+        value=int(value)
+        return identity_by_legacy[value]['canonical_player_id'] if value in identity_by_legacy else value
     staged = ROOT / f'data/staging/stats_{slug}.json'
     report = json.loads((ROOT / f'data/staging/stats_{slug}_verification.json').read_text(encoding='utf-8'))
     assert report['passed'] and report['staged_sha256'] == hashlib.sha256(staged.read_bytes()).hexdigest()
@@ -104,7 +116,7 @@ def complete(season, workers=6):
     with raw.open(encoding='utf-8-sig') as handle:
         for r in csv.DictReader(handle):
             gid = r['game_id'].zfill(10)
-            key = (r['team_tricode'], int(r['person_id']))
+            key = (historical_team(season,r['team_tricode']), int(r['person_id']))
             if gid.startswith(prefix) and r['minutes'] and key in keys:
                 assert gid in dates, f'Missing game date {gid}'
                 appearances[key].append((dates[gid], gid))
@@ -143,9 +155,12 @@ def complete(season, workers=6):
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     title_proof = None
+    if season in ('1997-98','1996-97','1995-96'):
+        title_proof = json.loads((ROOT/'data/processed/title_game_verification_1995_1998.json').read_text())[season]
+        assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
     if season in ('2000-01','1999-00','1998-99'):
         title_proof = json.loads((ROOT/'data/processed/title_game_verification_1998_2001.json').read_text(encoding='utf-8'))[season]
         assert title_proof['champion_team'] == champion
@@ -156,14 +171,14 @@ def complete(season, workers=6):
     finals = finals_box['game']
     if title_proof:
         assert finals['gameId'] == title_proof['game_id'] and finals['gameTimeLocal'][:10] == title_proof['game_date']
-    champion_sides = [finals[s] for s in ('homeTeam', 'awayTeam') if finals[s]['teamTricode'] == champion]
+    champion_sides = [finals[s] for s in ('homeTeam', 'awayTeam') if historical_team(season,finals[s]['teamTricode']) == champion]
     assert len(champion_sides) == 1
-    champion_players = {int(p['personId']) for p in champion_sides[0]['players']}
+    champion_players = {canonical_id(p['personId']) for p in champion_sides[0]['players']}
     unresolved = []
     for r in rows:
         date,gid = last[(r['team'],r['player_id'])]
         game = boxes[gid]['game']
-        players = [p for side in ('homeTeam','awayTeam') if game[side]['teamTricode'] == r['team'] for p in game[side]['players'] if int(p['personId']) == r['player_id']]
+        players = [p for side in ('homeTeam','awayTeam') if historical_team(season,game[side]['teamTricode']) == r['team'] for p in game[side]['players'] if canonical_id(p['personId']) == r['player_id']]
         assert len(players) == 1
         jersey = str(players[0]['jerseyNum'])
         path = ROOT / f"data/staging/jersey_{slug}_{r['player_id']}_{r['team']}_resolution.json"
@@ -179,9 +194,9 @@ def complete(season, workers=6):
         box = boxes[gid]['game']
         assert box['gameId'] == gid and box['gameStatus'] in (3, 'finalbox')
         assert box['gameTimeLocal'][:10] == date
-        sides = [box[s] for s in ('homeTeam','awayTeam') if box[s]['teamTricode']==r['team']]
+        sides = [box[s] for s in ('homeTeam','awayTeam') if historical_team(season,box[s]['teamTricode'])==r['team']]
         assert len(sides)==1
-        players = [p for p in sides[0]['players'] if int(p['personId'])==r['player_id']]
+        players = [p for p in sides[0]['players'] if canonical_id(p['personId'])==r['player_id']]
         assert len(players)==1
         p = players[0]
         jersey = str(p['jerseyNum'])
@@ -202,6 +217,7 @@ def complete(season, workers=6):
                          'box_score_sha256':hashlib.sha256(json.dumps(boxes[gid],ensure_ascii=False).encode()).hexdigest(),
                          'jersey_method':resolution['method'] if resolution else boxes[gid].get('_jersey_method', 'Official final-appearance live box score'),
                          'jersey_resolution':resolution,
+                         'identity_resolution':identity_by_legacy.get(int(p['personId'])),
                          'source_sha256':boxes[gid].get('_source_sha256'),
                          'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
     assert len(nba)==15 and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05", "1998-99") else 10)
@@ -250,5 +266,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

@@ -144,3 +144,6 @@ Recovered 268, 265 and 260 entries respectively; prepared pool contains 7,295 en
 ## Next three-season batch: 1998–99 through 2000–01
 
 Completed 234, 266 and 267 entries respectively; v0.10.4 contains 8,062 entries across 28 seasons. Fixed eligibility remains 30 GP / 15 unrounded MPG, including the lockout year. All statistics, schedules, jerseys, honors and title-roster fields passed verification. See [completion report](HISTORICAL_COMPLETION_1998_2001.md). Stage 2 progress is 12/30; next: 1997–98, 1996–97, 1995–96.
+
+
+1995–96 through 1997–98 are complete in v0.10.5. The normal pool now covers 31 seasons, 1995–96 through 2025–26, with 8,843 entries. See [completion report](HISTORICAL_COMPLETION_1995_1998.md). The 1995–96 official NBA game-log adapter preserves original nullable fields and scoped legacy-ID proofs. The fixed 30 GP / 15 unrounded MPG rule applies to every team stint.

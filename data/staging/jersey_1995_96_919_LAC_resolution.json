@@ -1,0 +1,17 @@
+{
+  "season": "1995-96",
+  "player_id": 919,
+  "player": "Loy Vaught",
+  "team": "LAC",
+  "game_id": "0029501179",
+  "game_date": "1996-04-21",
+  "original_nba_jersey": "",
+  "resolved_jersey": 35,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club season roster or uniform register; season checked",
+  "source": "https://library.sfo2.cdn.digitaloceanspaces.com/publications/basketball/yearbooks/KLACLMG-1996.pdf",
+  "source_sha256": "44c2c84f210137ee6abba8f2480622072f47e1a681cb12a2c5f0b3427a108388",
+  "pdf_page": 15,
+  "uniform_register_entry": "35 Loy Vaught",
+  "review": "Club primary source checked; original NBA missing/composite number preserved."
+}

@@ -9,6 +9,11 @@ from collections import defaultdict
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+try:
+    from .collect_historical_stats import historical_team
+except ImportError:
+    from collect_historical_stats import historical_team
+
 ROOT = Path(__file__).resolve().parent.parent
 REFERENCES = {
     "2022-23": {
@@ -39,7 +44,7 @@ REFERENCES.update({season: {
     "provenance": "https://github.com/favourumeh/NBA-DATA-PIPELINE/blob/a19c7d43b65028d80c782ce64d308ed392c57bbf/NBA_webscraping_OOP.py",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Independently scraped Basketball Reference workbook. Producer removes TOT rows but retains individual team stints; season selected by ending Year."
-} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99")})
+} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96")})
 SCHEDULES.update({s:(1230,82) for s in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11")})
 
 
@@ -72,8 +77,8 @@ def extract_reference_workbook(path, year, output):
         writer=csv.DictWriter(handle,fieldnames=headings);writer.writeheader();writer.writerows(selected)
 
 SCHEDULES["2011-12"] = (990, 66)
-SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99")})
-SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99")})
+SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96")})
+SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96")})
 SCHEDULES["1998-99"] = (725, 50)
 SCHEDULES["2012-13"] = (1229, None)  # NBA schedule: BOS/IND 81 games, all other teams 82.
 
@@ -101,7 +106,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
 
 
 def verify(season):
@@ -131,7 +136,7 @@ def verify(season):
     for row in csv.DictReader(reference_text.splitlines(), dialect=dialect):
         if not row["G"].isdigit() or row["Tm"] in ("TOT", "2TM", "3TM", "4TM"):
             continue
-        key = (TEAM_ALIASES.get(row["Tm"], row["Tm"]), name_key(row["Player"]))
+        key = (historical_team(season, TEAM_ALIASES.get(row["Tm"], row["Tm"])), name_key(row["Player"]))
         if key in reference:
             errors.append(f"Duplicate independent reference key: {key}")
         reference[key] = row
@@ -143,6 +148,9 @@ def verify(season):
     box_path = raw / f"player_boxscores_{int(season[:4])+1}.csv"
     if hashlib.sha256(box_path.read_bytes()).hexdigest() != manifest["source_sha256"]:
         errors.append("Raw box-score checksum changed")
+    if manifest.get('primary_payload_path'):
+        if hashlib.sha256((ROOT/manifest['primary_payload_path']).read_bytes()).hexdigest() != manifest['primary_payload_sha256']:
+            errors.append('Primary NBA game-log checksum changed')
     if len({(r["team"], r["player_id"]) for r in records}) != len(records):
         errors.append("Duplicate staged player-team key")
     actual = {(r["team"], name_key(r["player"])) for r in records}
@@ -156,7 +164,7 @@ def verify(season):
         candidate_ids = set()
         for raw_row in csv.DictReader(box_path.open(encoding="utf-8", newline="")):
             if raw_row["game_id"].zfill(10).startswith(f"002{season[2:4]}") and raw_row["minutes"]:
-                if (raw_row["team_tricode"], name_key(f"{raw_row['first_name']} {raw_row['family_name']}")) == key:
+                if (historical_team(season, raw_row["team_tricode"]), name_key(f"{raw_row['first_name']} {raw_row['family_name']}")) == key:
                     try:
                         from .collect_historical_stats import source_seconds
                     except ImportError:
@@ -196,8 +204,16 @@ def verify(season):
             item = {"player": row["player"], "player_id": row["player_id"], "team": row["team"],
                     "field": field, "staged": row[field], "reference": float(ref[column])}
             differences.append(item)
-            if field == "mpg" and difference <= 0.100001:
-                item["resolution"] = "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
+            if season == '1996-97' and field == 'mpg' and row['player_id'] in (157,469,96,137):
+                from decimal import Decimal, ROUND_HALF_UP
+                proofs=json.loads((ROOT/'data/staging/stats_1996_97_official_resolutions.json').read_text())
+                proof=next(p for p in proofs if (p['player_id'],p['team']) == (row['player_id'],row['team']))
+                official=proof['official_row']
+                assert (official['PLAYER_ID'],official['SEASON_ID'],official['TEAM_ABBREVIATION'],official['GP']) == (row['player_id'],season,row['team'],row['gp'])
+                assert float((Decimal(official['MIN'])/Decimal(official['GP'])).quantize(Decimal('.1'),rounding=ROUND_HALF_UP)) == row[field]
+                item.update(resolution=proof['resolution'],resolution_source=proof['source'],official_total_evidence=official,official_source_sha256=proof['source_sha256'])
+            elif field == "mpg" and difference <= 0.100001:
+                item["resolution"] = "Retain official whole-minute game-log aggregate; archived display rounding differs by 0.1. Eligibility sets agree." if manifest.get('source_format') == 'official_player_game_log' else "Retain second-precision NBA aggregate; reference minute rounding differs by 0.1. Eligibility sets agree."
             elif season == "2022-23" and row["player_id"] == 1631104 and field == "apg" and row[field] == 2.6 and float(ref[column]) == 2.7:
                 item["resolution"] = "Archived reference is stale; current Basketball Reference page reports 98 assists / 37 GP = 2.6."
                 item["resolution_source"] = "https://www.basketball-reference.com/players/w/weslebl01.html"
@@ -232,8 +248,8 @@ def verify(season):
         game = row["game_id"].zfill(10)
         if not game.startswith(f"002{season[2:4]}"):
             continue
-        games[game].add(row["team_tricode"])
-        team_games[row["team_tricode"]].add(game)
+        games[game].add(historical_team(season, row["team_tricode"]))
+        team_games[historical_team(season, row["team_tricode"])].add(game)
         if row["minutes"]:
             appearance = (game, row["team_id"], row["person_id"])
             if appearance in appearances:
@@ -255,8 +271,8 @@ def verify(season):
             item = dict(zip(result["headers"], values))
             if not item["GAME_ID"].startswith(f"002{season[2:4]}"):
                 continue
-            official_games[item["GAME_ID"]].add(item["TEAM_ABBREVIATION"])
-            official_team_games[item["TEAM_ABBREVIATION"]].add(item["GAME_ID"])
+            official_games[item["GAME_ID"]].add(historical_team(season, item["TEAM_ABBREVIATION"]))
+            official_team_games[historical_team(season,item["TEAM_ABBREVIATION"])].add(item["GAME_ID"])
         if dict(official_games) != dict(games) or dict(official_team_games) != dict(team_games):
             errors.append("Source game IDs and team appearances differ from official NBA schedule")
         schedule_evidence = {"source": schedule_url, "sha256": hashlib.sha256(schedule_path.read_bytes()).hexdigest(),

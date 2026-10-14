@@ -1,0 +1,17 @@
+{
+  "season": "1995-96",
+  "player_id": 709,
+  "player": "Ed O'Bannon",
+  "team": "NJN",
+  "game_id": "0029501083",
+  "game_date": "1996-04-08",
+  "original_nba_jersey": "",
+  "resolved_jersey": 31,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club season roster or uniform register; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Nets.pdf",
+  "source_sha256": "06815c61d6eebddb91938540ba9014b49cfaa3e2f46c509e9fca4f1a4f6a2bc8",
+  "pdf_page": 171,
+  "uniform_register_entry": "31 Ed O'Bannon",
+  "review": "Club primary source checked; original NBA missing/composite number preserved."
+}

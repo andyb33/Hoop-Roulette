@@ -1,0 +1,147 @@
+{
+  "season": "1997-98",
+  "completed_at": "2026-10-14T13:29:40.556585+00:00",
+  "passed": true,
+  "entries": 269,
+  "jerseys_verified": 269,
+  "unresolved": [],
+  "staged_sha256": "9ce2b4b09a53d047d9e69b9ca6a8839edf56d8b39503270e6fde08d1c51ee402",
+  "game_sha256": "d22e382cdee7ca5c4c0696774d0239c7e8b4ab153436a8c855d79929b42b28a3",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1997-98&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "dikembe-mutombo": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "michael-jordan": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "tim-duncan": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049700088",
+    "game_date": "1998-06-14",
+    "champion_team": "CHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41997",
+        "TEAM_ID": 1610612741,
+        "TEAM_ABBREVIATION": "CHI",
+        "TEAM_NAME": "Chicago Bulls",
+        "GAME_ID": "0049700088",
+        "GAME_DATE": "1998-06-14",
+        "MATCHUP": "CHI @ UTA",
+        "WL": "W",
+        "MIN": 236,
+        "PTS": 87,
+        "FGM": 34,
+        "FGA": 67,
+        "FG_PCT": 0.507,
+        "FG3M": 4,
+        "FG3A": 10,
+        "FG3_PCT": 0.4,
+        "FTM": 15,
+        "FTA": 19,
+        "FT_PCT": 0.789,
+        "OREB": 5,
+        "DREB": 17,
+        "REB": 22,
+        "AST": 17,
+        "STL": 11,
+        "BLK": 4,
+        "TOV": 9,
+        "PF": 23,
+        "PLUS_MINUS": 1.0
+      },
+      {
+        "SEASON_ID": "41997",
+        "TEAM_ID": 1610612762,
+        "TEAM_ABBREVIATION": "UTA",
+        "TEAM_NAME": "Utah Jazz",
+        "GAME_ID": "0049700088",
+        "GAME_DATE": "1998-06-14",
+        "MATCHUP": "UTA vs. CHI",
+        "WL": "L",
+        "MIN": 235,
+        "PTS": 86,
+        "FGM": 32,
+        "FGA": 64,
+        "FG_PCT": 0.5,
+        "FG3M": 2,
+        "FG3A": 10,
+        "FG3_PCT": 0.2,
+        "FTM": 20,
+        "FTA": 25,
+        "FT_PCT": 0.8,
+        "OREB": 10,
+        "DREB": 23,
+        "REB": 33,
+        "AST": 19,
+        "STL": 4,
+        "BLK": 0,
+        "TOV": 14,
+        "PF": 19,
+        "PLUS_MINUS": -1.0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1997-98&SeasonType=Playoffs",
+    "source_sha256": "46ff080e2ff0d606d6ca18686c30e0849800e35323b53c8e67af2676b5585a69"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049700088/box-score",
+  "champion_team": "CHI",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 10,
+    "CHH": 8,
+    "CHI": 8,
+    "CLE": 9,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 8,
+    "GSW": 9,
+    "HOU": 11,
+    "IND": 9,
+    "LAC": 10,
+    "LAL": 8,
+    "MIA": 10,
+    "MIL": 8,
+    "MIN": 11,
+    "NJN": 9,
+    "NYK": 10,
+    "ORL": 10,
+    "PHI": 9,
+    "PHX": 11,
+    "POR": 10,
+    "SAC": 11,
+    "SAS": 9,
+    "SEA": 8,
+    "TOR": 9,
+    "UTA": 10,
+    "VAN": 10,
+    "WAS": 7
+  }
+}

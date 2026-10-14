@@ -11,9 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.10.4 includes the normal pool from 1998–99 through 2025–26.**
-The first twelve Stage 2 seasons have been rebuilt and independently verified.
-The verified 28-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
+**v0.10.5 includes the normal pool from 1995–96 through 2025–26.**
+The first fifteen Stage 2 seasons have been rebuilt and independently verified.
+The verified 31-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -31,9 +31,9 @@ For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots
 Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
 Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The twenty-eight datasets from 1998–99 through 2025–26 are complete:
+The thirty-one datasets from 1995–96 through 2025–26 are complete:
 
-- 8,062 eligible player-team records across the twenty-eight seasons and all 30 NBA teams;
+- 8,843 eligible player-team records across thirty-one seasons and 921 team-season combinations;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -42,7 +42,7 @@ The twenty-eight datasets from 1998–99 through 2025–26 are complete:
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 The new historical seasons retain their independent stats audits and official
-final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_1998_2001.md).
+final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_1995_1998.md).
 Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. Desktop packages wait until Stage 3 is complete through 1973–74.

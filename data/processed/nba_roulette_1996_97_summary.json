@@ -1,0 +1,147 @@
+{
+  "season": "1996-97",
+  "completed_at": "2026-10-14T13:32:21.290702+00:00",
+  "passed": true,
+  "entries": 254,
+  "jerseys_verified": 254,
+  "unresolved": [],
+  "staged_sha256": "89c946f61a73d9519407945a94190fd1c1a4d23914afea94f7def80488d3a6e9",
+  "game_sha256": "ff97ab3734879763640c5a1171d9739ec1f898dc08039ed24e88585445edea41",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1996-97&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "allen-iverson": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "dikembe-mutombo": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "karl-malone": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049600088",
+    "game_date": "1997-06-13",
+    "champion_team": "CHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41996",
+        "TEAM_ID": 1610612741,
+        "TEAM_ABBREVIATION": "CHI",
+        "TEAM_NAME": "Chicago Bulls",
+        "GAME_ID": "0049600088",
+        "GAME_DATE": "1997-06-13",
+        "MATCHUP": "CHI vs. UTA",
+        "WL": "W",
+        "MIN": 232,
+        "PTS": 90,
+        "FGM": 31,
+        "FGA": 81,
+        "FG_PCT": 0.383,
+        "FG3M": 5,
+        "FG3A": 14,
+        "FG3_PCT": 0.357,
+        "FTM": 23,
+        "FTA": 30,
+        "FT_PCT": 0.767,
+        "OREB": 15,
+        "DREB": 35,
+        "REB": 50,
+        "AST": 15,
+        "STL": 7,
+        "BLK": 4,
+        "TOV": 13,
+        "PF": 28,
+        "PLUS_MINUS": 4.0
+      },
+      {
+        "SEASON_ID": "41996",
+        "TEAM_ID": 1610612762,
+        "TEAM_ABBREVIATION": "UTA",
+        "TEAM_NAME": "Utah Jazz",
+        "GAME_ID": "0049600088",
+        "GAME_DATE": "1997-06-13",
+        "MATCHUP": "UTA @ CHI",
+        "WL": "L",
+        "MIN": 234,
+        "PTS": 86,
+        "FGM": 26,
+        "FGA": 65,
+        "FG_PCT": 0.4,
+        "FG3M": 7,
+        "FG3A": 15,
+        "FG3_PCT": 0.467,
+        "FTM": 27,
+        "FTA": 39,
+        "FT_PCT": 0.692,
+        "OREB": 5,
+        "DREB": 31,
+        "REB": 36,
+        "AST": 14,
+        "STL": 8,
+        "BLK": 6,
+        "TOV": 11,
+        "PF": 25,
+        "PLUS_MINUS": -4.0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1996-97&SeasonType=Playoffs",
+    "source_sha256": "ed7b6b20486eb984de906ff20cbcf79b893bdec95a028894d5b79e8c35943220"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049600088/box-score",
+  "champion_team": "CHI",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 6,
+    "CHH": 8,
+    "CHI": 8,
+    "CLE": 7,
+    "DAL": 10,
+    "DEN": 10,
+    "DET": 9,
+    "GSW": 8,
+    "HOU": 9,
+    "IND": 10,
+    "LAC": 9,
+    "LAL": 9,
+    "MIA": 9,
+    "MIL": 8,
+    "MIN": 8,
+    "NJN": 10,
+    "NYK": 8,
+    "ORL": 9,
+    "PHI": 10,
+    "PHX": 9,
+    "POR": 9,
+    "SAC": 8,
+    "SAS": 11,
+    "SEA": 8,
+    "TOR": 9,
+    "UTA": 7,
+    "VAN": 11,
+    "WSB": 8
+  }
+}

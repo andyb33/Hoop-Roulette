@@ -1,0 +1,41 @@
+{
+  "season": "1996-97",
+  "rate_overrides": [
+    {
+      "player_id": 137,
+      "team": "SAS",
+      "official_row": {
+        "PLAYER_ID": 137,
+        "SEASON_ID": "1996-97",
+        "LEAGUE_ID": "00",
+        "TEAM_ID": 1610612759,
+        "TEAM_ABBREVIATION": "SAS",
+        "PLAYER_AGE": 31.0,
+        "GP": 72,
+        "GS": 31,
+        "MIN": 2077,
+        "FGM": 340,
+        "FGA": 906,
+        "FG_PCT": 0.375,
+        "FG3M": 115,
+        "FG3A": 372,
+        "FG3_PCT": 0.309,
+        "FTM": 134,
+        "FTA": 180,
+        "FT_PCT": 0.744,
+        "OREB": 27,
+        "DREB": 132,
+        "REB": 159,
+        "AST": 153,
+        "STL": 87,
+        "BLK": 19,
+        "TOV": 121,
+        "PF": 168,
+        "PTS": 929
+      },
+      "source": "https://stats.nba.com/stats/playercareerstats?PlayerID=137&PerMode=Totals&LeagueID=00",
+      "source_sha256": "509faa4e8a9e99cfa10e07ec5a969079158d2e4c83139347cef0af06165b405e",
+      "reason": "Official season minutes resolve display MPG; eligibility uses the unrounded appearance aggregate."
+    }
+  ]
+}

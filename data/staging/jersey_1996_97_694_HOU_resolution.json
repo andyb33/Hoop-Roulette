@@ -1,0 +1,17 @@
+{
+  "season": "1996-97",
+  "player_id": 694,
+  "player": "Sam Mack",
+  "team": "HOU",
+  "game_id": "0029601012",
+  "game_date": "1997-03-27",
+  "original_nba_jersey": "2-5",
+  "resolved_jersey": 5,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club season roster or uniform register; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Rockets.pdf",
+  "source_sha256": "45fcc34b80bb6a7b753113861fade1fe51c092f4f4315026a84e787ae5bfc7b6",
+  "pdf_page": 174,
+  "uniform_register_entry": "5 Sam Mack",
+  "review": "Club primary source checked; original NBA missing/composite number preserved."
+}
