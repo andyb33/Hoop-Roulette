@@ -1,0 +1,78 @@
+{
+  "season": "2002-03",
+  "completed_at": "2026-10-14T12:31:56.270617+00:00",
+  "passed": true,
+  "entries": 265,
+  "jerseys_verified": 265,
+  "unresolved": [],
+  "staged_sha256": "f7395b5d96a7a5386d9bc6283b564f046f8b523cbc153c0769594c3338663b56",
+  "game_sha256": "fb965f75053d40f8d356891317c6f43df29d22ff1c8ec497fbe6e840772d8b66",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2002-03&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "amare-stoudemire": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "ben-wallace": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "tim-duncan": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "champion_roster_source": "https://www.nba.com/game/0040200406/box-score",
+  "champion_team": "SAS",
+  "champion_records": 9,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 7,
+    "BOS": 9,
+    "CHI": 10,
+    "CLE": 10,
+    "DAL": 10,
+    "DEN": 10,
+    "DET": 10,
+    "GSW": 9,
+    "HOU": 9,
+    "IND": 9,
+    "LAC": 13,
+    "LAL": 7,
+    "MEM": 11,
+    "MIA": 10,
+    "MIL": 11,
+    "MIN": 9,
+    "NJN": 8,
+    "NOH": 8,
+    "NYK": 8,
+    "ORL": 7,
+    "PHI": 9,
+    "PHX": 8,
+    "POR": 10,
+    "SAC": 9,
+    "SAS": 9,
+    "SEA": 9,
+    "TOR": 9,
+    "UTA": 8,
+    "WAS": 9
+  }
+}

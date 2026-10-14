@@ -1,0 +1,78 @@
+{
+  "season": "2003-04",
+  "completed_at": "2026-10-14T12:31:28.717724+00:00",
+  "passed": true,
+  "entries": 260,
+  "jerseys_verified": 260,
+  "unresolved": [],
+  "staged_sha256": "3e2baaa50fff06b6f553c4f8321fab001bfbc4f97c016f9f67033f21a2a8064b",
+  "game_sha256": "fe34b78dc6d6824a40baf0e8d006147f9e0888241e1582c07dd0ba50b3fb216e",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2003-04&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "kevin-garnett": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "lebron-james": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "metta-world-peace": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 11,
+  "champion_roster_source": "https://www.nba.com/game/0040300405/box-score",
+  "champion_team": "DET",
+  "champion_records": 7,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 9,
+    "CHI": 12,
+    "CLE": 11,
+    "DAL": 8,
+    "DEN": 7,
+    "DET": 8,
+    "GSW": 8,
+    "HOU": 7,
+    "IND": 9,
+    "LAC": 12,
+    "LAL": 10,
+    "MEM": 10,
+    "MIA": 7,
+    "MIL": 9,
+    "MIN": 8,
+    "NJN": 8,
+    "NOH": 7,
+    "NYK": 10,
+    "ORL": 8,
+    "PHI": 8,
+    "PHX": 9,
+    "POR": 11,
+    "SAC": 7,
+    "SAS": 8,
+    "SEA": 11,
+    "TOR": 9,
+    "UTA": 9,
+    "WAS": 11
+  }
+}

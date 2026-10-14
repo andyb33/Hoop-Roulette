@@ -10,6 +10,16 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def source_seconds(minutes):
+    if ':' in minutes:
+        whole, seconds = minutes.split(':')
+        return int(whole) * 60 + int(seconds)
+    value = Decimal(minutes) * 60
+    if value != value.to_integral_value():
+        raise ValueError('Source minute value cannot be represented as seconds')
+    return int(value)
+
+
 def rounded_rate(total, games):
     return float((Decimal(total) / Decimal(games)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
 
@@ -18,8 +28,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 2004 <= year < 2022:
-        raise ValueError("This staging batch covers 2004–05 through 2022–23")
+    if not 2001 <= year < 2022:
+        raise ValueError("This staging batch covers 2001–02 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
@@ -41,7 +51,7 @@ def collect(season):
     if not raw.exists():
         with urlopen(Request(url, headers={"User-Agent": "Hoopreel"}), timeout=45) as response:
             raw.write_bytes(response.read())
-    groups, games, seen = {}, set(), set()
+    groups, games, seen, whole_minute_rows = {}, set(), set(), []
     with raw.open(encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
             game_id = row["game_id"].zfill(10)
@@ -50,8 +60,9 @@ def collect(season):
             games.add(game_id)
             if not row["minutes"]:
                 continue
-            minutes, seconds = row["minutes"].split(":")
-            played_seconds = int(minutes) * 60 + int(seconds)
+            played_seconds = source_seconds(row['minutes'])
+            if ':' not in row['minutes']:
+                whole_minute_rows.append({k: row[k] for k in ('game_id','team_tricode','person_id','minutes')})
             # A recorded 0:00 appearance still counts toward GP. DNP rows have no minutes.
             player_id, team_id = int(row["person_id"]), int(row["team_id"])
             appearance = (game_id, team_id, player_id)
@@ -61,7 +72,7 @@ def collect(season):
             key = (team_id, player_id)
             if key not in groups:
                 groups[key] = {"season": season, "player_id": player_id,
-                               "player": "Yao Ming" if player_id == 2397 else "Steve Smith" if player_id == 120 else f"{row['first_name']} {row['family_name']}",
+                               "player": "Yao Ming" if player_id == 2397 else "Steve Smith" if player_id == 120 else "Clarence Weatherspoon" if player_id == 221 else f"{row['first_name']} {row['family_name']}",
                                "team": row["team_tricode"], "gp": 0, "seconds": 0,
                                "points": 0, "rebounds_total": 0, "assists": 0, "steals": 0, "blocks": 0}
             record = groups[key]
@@ -88,6 +99,7 @@ def collect(season):
     manifest = {"season": season, "status": "stats_only_unverified", "enabled_in_game": False,
                 "source": url, "source_sha256": hashlib.sha256(raw.read_bytes()).hexdigest(),
                 "regular_season_games_observed": len(games), "eligible_records": len(rows),
+                "whole_minute_source_rows": whole_minute_rows,
                 "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15},
                 "eligibility_precision": "Unrounded box-score minutes per team stint",
                 "records_by_team": {t: sum(r["team"] == t for r in rows) for t in sorted({r["team"] for r in rows})},

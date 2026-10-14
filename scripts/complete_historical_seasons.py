@@ -132,7 +132,7 @@ def complete(season, workers=6):
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     finals_box = fetch_box(finals_id, season)
     finals_url = finals_box.get('_source_url', finals_url)
@@ -140,6 +140,20 @@ def complete(season, workers=6):
     champion_sides = [finals[s] for s in ('homeTeam', 'awayTeam') if finals[s]['teamTricode'] == champion]
     assert len(champion_sides) == 1
     champion_players = {int(p['personId']) for p in champion_sides[0]['players']}
+    unresolved = []
+    for r in rows:
+        date,gid = last[(r['team'],r['player_id'])]
+        game = boxes[gid]['game']
+        players = [p for side in ('homeTeam','awayTeam') if game[side]['teamTricode'] == r['team'] for p in game[side]['players'] if int(p['personId']) == r['player_id']]
+        assert len(players) == 1
+        jersey = str(players[0]['jerseyNum'])
+        path = ROOT / f"data/staging/jersey_{slug}_{r['player_id']}_{r['team']}_resolution.json"
+        if not jersey.isdigit() and not path.exists():
+            unresolved.append({'season':season,'player_id':r['player_id'],'player':r['player'],'team':r['team'],'game_id':gid,'game_date':date,'original_nba_jersey':jersey})
+    if unresolved:
+        path = CACHE / f'unresolved_jerseys_{slug}.json'
+        path.write_text(json.dumps(unresolved,indent=2)+'\n',encoding='utf-8')
+        raise ValueError(f'{len(unresolved)} jersey resolutions required; see {path}')
     evidence = []
     for r in rows:
         date,gid = last[(r['team'],r['player_id'])]
@@ -215,5 +229,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

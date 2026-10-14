@@ -39,7 +39,7 @@ REFERENCES.update({season: {
     "provenance": "https://github.com/favourumeh/NBA-DATA-PIPELINE/blob/a19c7d43b65028d80c782ce64d308ed392c57bbf/NBA_webscraping_OOP.py",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Independently scraped Basketball Reference workbook. Producer removes TOT rows but retains individual team stints; season selected by ending Year."
-} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05")})
+} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02")})
 SCHEDULES.update({s:(1230,82) for s in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11")})
 
 
@@ -72,7 +72,8 @@ def extract_reference_workbook(path, year, output):
         writer=csv.DictWriter(handle,fieldnames=headings);writer.writeheader();writer.writerows(selected)
 
 SCHEDULES["2011-12"] = (990, 66)
-SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05")})
+SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02")})
+SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02")})
 SCHEDULES["2012-13"] = (1229, None)  # NBA schedule: BOS/IND 81 games, all other teams 82.
 
 FIELDS = {"gp": "G", "mpg": "MP", "ppg": "PTS", "rpg": "TRB", "apg": "AST", "spg": "STL", "bpg": "BLK"}
@@ -99,7 +100,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko"}.get(text, text)
 
 
 def verify(season):
@@ -152,8 +153,8 @@ def verify(season):
         for raw_row in csv.DictReader(box_path.open(encoding="utf-8", newline="")):
             if raw_row["game_id"].zfill(10).startswith(f"002{season[2:4]}") and raw_row["minutes"]:
                 if (raw_row["team_tricode"], name_key(f"{raw_row['first_name']} {raw_row['family_name']}")) == key:
-                    m, s = map(int, raw_row["minutes"].split(":"))
-                    candidates.append(m * 60 + s)
+                    from collect_historical_stats import source_seconds
+                    candidates.append(source_seconds(raw_row['minutes']))
         if candidates and len(candidates) == int(reference[key]["G"]) and float(reference[key]["MP"]) == 15 and 14.95 <= sum(candidates)/60/len(candidates) < 15:
             borderline.append({"team": key[0], "player": reference[key]["Player"], "gp": len(candidates), "seconds": sum(candidates), "unrounded_mpg": sum(candidates)/60/len(candidates), "decision": "Excluded: actual MPG below 15 despite reference display rounding to 15.0"})
             expected.remove(key)
@@ -191,13 +192,14 @@ def verify(season):
                     item["resolution_source"]=proof["source"]
                     item["official_total_evidence"]=official
                     item["official_source_sha256"]=proof["source_sha256"]
-            elif season == "2004-05" and row["player_id"] == 2418 and row["team"] == "NOH" and field == "mpg":
-                proof=json.loads((ROOT/"data/staging/stats_2004_05_jacobsen_official_resolution.json").read_text(encoding="utf-8"))
+            elif (season,row["player_id"],row["team"],field) in {("2004-05",2418,"NOH","mpg"), ("2001-02",702,"DEN","mpg")}:
+                proof_path = "data/staging/stats_2004_05_jacobsen_official_resolution.json" if season == "2004-05" else "data/staging/stats_2001_02_702_official_resolution.json"
+                proof=json.loads((ROOT/proof_path).read_text(encoding="utf-8"))
                 official=proof["official_row"]
                 from decimal import Decimal, ROUND_HALF_UP
                 official_mpg=float((Decimal(official["MIN"])/Decimal(official["GP"])).quantize(Decimal("0.1"),rounding=ROUND_HALF_UP))
                 if official["PLAYER_ID"] != row["player_id"] or official["SEASON_ID"] != season or official["TEAM_ABBREVIATION"] != row["team"] or official["GP"] != row["gp"] or official_mpg != row[field]:
-                    errors.append("Official Jacobsen resolution does not match staged record")
+                    errors.append("Official MPG resolution does not match staged record")
                 else:
                     item.update(resolution=proof["resolution"], resolution_source=proof["source"], official_total_evidence=official, official_source_sha256=proof["source_sha256"])
             else:
@@ -239,8 +241,9 @@ def verify(season):
         schedule_evidence = {"source": schedule_url, "sha256": hashlib.sha256(schedule_path.read_bytes()).hexdigest(),
                              "matches": dict(official_games) == dict(games),
                              "team_games": {t: len(v) for t, v in sorted(official_team_games.items())}}
-    if len(games) != expected_games or len(team_games) != 30 or any(len(t) != 2 for t in games.values()):
-        errors.append(f"Expected {expected_games} games, two teams per game, and all 30 teams")
+    expected_teams = 29 if int(season[:4]) < 2004 else 30
+    if len(games) != expected_games or len(team_games) != expected_teams or any(len(t) != 2 for t in games.values()):
+        errors.append(f"Expected {expected_games} games, two teams per game, and all {expected_teams} teams")
     if expected_team_games is not None and any(len(g) != expected_team_games for g in team_games.values()):
         errors.append(f"Expected {expected_team_games} games for every team")
     if season == "2012-13" and {t: len(g) for t, g in team_games.items()} != {t: (81 if t in ("BOS", "IND") else 82) for t in team_games}:
