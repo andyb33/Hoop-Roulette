@@ -1,0 +1,50 @@
+{
+  "season": "2001-02",
+  "status": "complete_promoted",
+  "enabled_in_game": true,
+  "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/nba_stats_player_boxscores/player_boxscores_2002.csv",
+  "source_sha256": "7c75782909797c3a8d7fe754e7ac4b07f93b73475323c405283bf6ac8bc879b4",
+  "regular_season_games_observed": 1189,
+  "eligible_records": 268,
+  "whole_minute_source_rows": [],
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligibility_precision": "Unrounded box-score minutes per team stint",
+  "records_by_team": {
+    "ATL": 9,
+    "BOS": 8,
+    "CHH": 9,
+    "CHI": 12,
+    "CLE": 9,
+    "DAL": 9,
+    "DEN": 11,
+    "DET": 9,
+    "GSW": 11,
+    "HOU": 10,
+    "IND": 9,
+    "LAC": 7,
+    "LAL": 8,
+    "MEM": 9,
+    "MIA": 10,
+    "MIL": 9,
+    "MIN": 8,
+    "NJN": 9,
+    "NYK": 9,
+    "ORL": 7,
+    "PHI": 9,
+    "PHX": 10,
+    "POR": 8,
+    "SAC": 8,
+    "SAS": 10,
+    "SEA": 10,
+    "TOR": 9,
+    "UTA": 11,
+    "WAS": 11
+  },
+  "pending": [
+    "Distribution analysis"
+  ],
+  "verification_report": "data/staging/stats_2001_02_verification.json"
+}

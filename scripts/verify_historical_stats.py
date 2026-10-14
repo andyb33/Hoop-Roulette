@@ -153,7 +153,10 @@ def verify(season):
         for raw_row in csv.DictReader(box_path.open(encoding="utf-8", newline="")):
             if raw_row["game_id"].zfill(10).startswith(f"002{season[2:4]}") and raw_row["minutes"]:
                 if (raw_row["team_tricode"], name_key(f"{raw_row['first_name']} {raw_row['family_name']}")) == key:
-                    from collect_historical_stats import source_seconds
+                    try:
+                        from .collect_historical_stats import source_seconds
+                    except ImportError:
+                        from collect_historical_stats import source_seconds
                     candidates.append(source_seconds(raw_row['minutes']))
         if candidates and len(candidates) == int(reference[key]["G"]) and float(reference[key]["MP"]) == 15 and 14.95 <= sum(candidates)/60/len(candidates) < 15:
             borderline.append({"team": key[0], "player": reference[key]["Player"], "gp": len(candidates), "seconds": sum(candidates), "unrounded_mpg": sum(candidates)/60/len(candidates), "decision": "Excluded: actual MPG below 15 despite reference display rounding to 15.0"})

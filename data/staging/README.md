@@ -83,3 +83,8 @@ The first three Stage 2 seasons are rebuilt: 271, 274 and 273 entries respective
 ## Second recovery batch: 2004–05 through 2006–07
 
 Recovered 283, 275 and 286 entries respectively. Current prepared pool: 6,502 entries across 22 seasons, 2004–05 through 2025–26. All stats, schedules, jerseys, honors and championship credit passed verification. The original blank NBA jersey for Antonio Davis is resolved to 32 using an exact final-game AP photo. Casey Jacobsen MPG is verified against official totals. See [completion report](../../docs/HISTORICAL_COMPLETION_2004_2007.md). Stage 2 recovery is 6/30; next: 2003–04, 2002–03, 2001–02.
+
+
+## Third recovery batch: 2001–02 through 2003–04
+
+Recovered 268, 265 and 260 entries respectively; prepared pool contains 7,295 entries across 25 seasons. Each new schedule matches 1,189 games and 29 teams. All stats, final jerseys, honors and championship credit are verified. Four blank jerseys use official club register evidence; Lenard MPG uses official totals. See [completion report](../../docs/HISTORICAL_COMPLETION_2001_2004.md). Stage 2 recovery is 9/30. This committed batch stops at 2001–02.

@@ -11,8 +11,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**Recovery v0.10.2 restores the normal pool from 2004–05 through 2025–26.**
-The first six Stage 2 seasons have been rebuilt and independently verified.
+**Recovery v0.10.3 restores the normal pool from 2001–02 through 2025–26.**
+The first nine Stage 2 seasons have been rebuilt and independently verified.
 Work is checkpointed on `recovery/three-season-batches-20261014`; main remains v0.10.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
@@ -31,9 +31,9 @@ For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots
 Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
 Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The twenty-two datasets from 2004–05 through 2025–26 are complete:
+The twenty-five datasets from 2001–02 through 2025–26 are complete:
 
-- 6,502 eligible player-team records across the twenty-two seasons and all 30 NBA teams;
+- 7,295 eligible player-team records across the twenty-five seasons and all 30 NBA teams;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -42,7 +42,7 @@ The twenty-two datasets from 2004–05 through 2025–26 are complete:
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 The new historical seasons retain their independent stats audits and official
-final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_2004_2007.md).
+final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_2001_2004.md).
 Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. Desktop packages wait until Stage 3 is complete through 1973–74.

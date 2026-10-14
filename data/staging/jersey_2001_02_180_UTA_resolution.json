@@ -1,0 +1,17 @@
+{
+  "season": "2001-02",
+  "player_id": 180,
+  "player": "John Crotty",
+  "team": "UTA",
+  "game_id": "0020101135",
+  "game_date": "2002-04-11",
+  "original_nba_jersey": "",
+  "resolved_jersey": 25,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register; exact season checked for players with number changes",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Jazz.pdf",
+  "source_sha256": "841e7de5a0249f1194d5b21601d32072682603e9e318bb9805948c82d942d5fe",
+  "pdf_page": 361,
+  "uniform_register_entry": "John Crotty - #25 (1992-95, 2001-02), #22 (2000-01)",
+  "review": "Primary club guide page reviewed; Crotty 2001-02 is explicitly 25, distinct from 22 in 2000-01."
+}
