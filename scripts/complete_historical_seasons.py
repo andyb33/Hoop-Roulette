@@ -132,7 +132,7 @@ def complete(season, workers=6):
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     finals_box = fetch_box(finals_id, season)
     finals_url = finals_box.get('_source_url', finals_url)
@@ -164,10 +164,14 @@ def complete(season, workers=6):
                          'jersey_method':boxes[gid].get('_jersey_method', 'Official final-appearance live box score'),
                          'source_sha256':boxes[gid].get('_source_sha256'),
                          'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
-    assert len(nba)==15 and len(defense)==(11 if season == "2012-13" else 10)
+    assert len(nba)==15 and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05") else 10)
     if season == "2012-13":
         assert defense["tyson-chandler"] == defense["joakim-noah"] == 1
         assert sum(tier == 1 for tier in defense.values()) == 6
+    for tied_season, tier, names in [("2005-06", 1, ("kobe-bryant", "jason-kidd")), ("2004-05", 2, ("jason-kidd", "dwyane-wade"))]:
+        if season == tied_season:
+            assert all(defense[name] == tier for name in names)
+            assert sum(value == tier for value in defense.values()) == 6
     assert all(sum(bool(r.get(a)) for r in awards.values()) == 1 for a in ('mvp', 'dpoy', 'roy'))
     for honors,field in [(nba,'all_nba'),(defense,'all_defense')]:
         matched={honors_key(r) for r in rows if r[field] is not None}
@@ -204,5 +208,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

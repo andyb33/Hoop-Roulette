@@ -18,8 +18,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 2007 <= year < 2022:
-        raise ValueError("This staging batch covers 2007–08 through 2022–23")
+    if not 2004 <= year < 2022:
+        raise ValueError("This staging batch covers 2004–05 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
@@ -61,7 +61,7 @@ def collect(season):
             key = (team_id, player_id)
             if key not in groups:
                 groups[key] = {"season": season, "player_id": player_id,
-                               "player": "Yao Ming" if player_id == 2397 else f"{row['first_name']} {row['family_name']}",
+                               "player": "Yao Ming" if player_id == 2397 else "Steve Smith" if player_id == 120 else f"{row['first_name']} {row['family_name']}",
                                "team": row["team_tricode"], "gp": 0, "seconds": 0,
                                "points": 0, "rebounds_total": 0, "assists": 0, "steals": 0, "blocks": 0}
             record = groups[key]
