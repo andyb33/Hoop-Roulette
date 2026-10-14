@@ -1,0 +1,79 @@
+{
+  "season": "2004-05",
+  "completed_at": "2026-10-14T12:21:04.744151+00:00",
+  "passed": true,
+  "entries": 283,
+  "jerseys_verified": 283,
+  "unresolved": [],
+  "staged_sha256": "0afe0992bcb1246e026055fd56d719bcce3270646847416a0179414479a72f2d",
+  "game_sha256": "f54956aa1035be6a454dff18f78c07ff5ad3d9c61c802380e253f1d304885f1c",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=2004-05&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "ben-wallace": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "emeka-okafor": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "steve-nash": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 11,
+  "champion_roster_source": "https://www.nba.com/game/0040400407/box-score",
+  "champion_team": "SAS",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BOS": 7,
+    "CHA": 11,
+    "CHI": 9,
+    "CLE": 9,
+    "DAL": 9,
+    "DEN": 8,
+    "DET": 9,
+    "GSW": 10,
+    "HOU": 8,
+    "IND": 11,
+    "LAC": 11,
+    "LAL": 8,
+    "MEM": 10,
+    "MIA": 9,
+    "MIL": 11,
+    "MIN": 9,
+    "NJN": 9,
+    "NOH": 11,
+    "NYK": 9,
+    "ORL": 8,
+    "PHI": 10,
+    "PHX": 8,
+    "POR": 11,
+    "SAC": 9,
+    "SAS": 9,
+    "SEA": 10,
+    "TOR": 9,
+    "UTA": 11,
+    "WAS": 10
+  }
+}
