@@ -1,0 +1,20 @@
+{
+  "season": "1994-95",
+  "player_id": 938,
+  "player": "Rony Seikaly",
+  "team": "GSW",
+  "game_id": "0029400679",
+  "game_date": "1995-02-20",
+  "original_nba_jersey": "4-9",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+  "source": "https://apbr.org/nmbr9000.html",
+  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "4 Rony Seikaly (#9)",
+  "alternate_register_number": 9,
+  "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+}

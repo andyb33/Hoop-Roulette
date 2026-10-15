@@ -1,0 +1,20 @@
+{
+  "season": "1992-93",
+  "player_id": 919,
+  "player": "Loy Vaught",
+  "team": "LAC",
+  "game_id": "0029201104",
+  "game_date": "1993-04-25",
+  "original_nba_jersey": "",
+  "resolved_jersey": 35,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+  "source": "https://apbr.org/nmbr9000.html",
+  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "35 Loy Vaught",
+  "alternate_register_number": null,
+  "season_team_register": "3 Ken Norman, 4 Ron Harper, 5 Danny Manning, 7 Lester Conner, 8 Jaren Jackson, 10 Duane Washington, 13 Mark Jackson, 14 Randy Woods, 23 Gary Grant, 25 Alex Stivrins, 27 Elmore Spencer, 34 John Williams, 35 Loy Vaught, 53 Stanley Roberts, 55 Kiki Vanderweghe",
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+}

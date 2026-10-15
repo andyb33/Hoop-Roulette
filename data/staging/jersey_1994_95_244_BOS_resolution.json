@@ -1,0 +1,26 @@
+{
+  "season": "1994-95",
+  "player_id": 244,
+  "player": "Dee Brown",
+  "team": "BOS",
+  "game_id": "0029401107",
+  "game_date": "1995-04-23",
+  "original_nba_jersey": "",
+  "resolved_jersey": 7,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club season roster or uniform register; season checked",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Celtics.pdf",
+  "source_sha256": "ae2dedd7e9be7f4c29b397c55514655a16b7453af72b888bb1ed60f0d740cd3d",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "7 Dee Brown",
+  "alternate_register_number": null,
+  "season_team_register": "0 Eric Montross, 4 David Wesley, 5 Jay Humphries, 7 Dee Brown, 8 James Blackwell, 9 Greg Minor, 12 Dominique Wilkins, 20 Sherman Douglas, 29 Pervis Ellison, 30 Blue Edwards, 31 Derek Strong, 34 Xavier McDaniel, 40 Dino Radja, 43 Tony Harris, 44 Rick Fox, 45 Tony Dawson, 55 Acie Earl",
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+  "pdf_page": 174,
+  "corroborating_season_register": {
+    "source": "https://apbr.org/nmbr9000.html",
+    "entry": "7 Dee Brown",
+    "sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5"
+  }
+}

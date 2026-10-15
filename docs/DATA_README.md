@@ -147,3 +147,6 @@ Completed 234, 266 and 267 entries respectively; v0.10.4 contains 8,062 entries 
 
 
 1995–96 through 1997–98 are complete in v0.10.5. The normal pool now covers 31 seasons, 1995–96 through 2025–26, with 8,843 entries. See [completion report](HISTORICAL_COMPLETION_1995_1998.md). The 1995–96 official NBA game-log adapter preserves original nullable fields and scoped legacy-ID proofs. The fixed 30 GP / 15 unrounded MPG rule applies to every team stint.
+
+
+1992–93 through 1994–95 are complete in v0.10.6: 743 new entries, 9,586 total across 34 seasons and 1,002 team-season combinations. Each new schedule matches 1,107 games / 27 teams / 82 per team. Official season-total overrides preserve conflicting appearance logs and original counts; nineteen jersey exceptions retain labelled club-guide or independent historical-register evidence. See [completion report](HISTORICAL_COMPLETION_1992_1995.md). Updated packaging decision: the next desktop package follows the Stage 2 major checkpoint at 1980–81, superseding older deferrals through 1973–74. Stage 3 then continues to 1973–74.

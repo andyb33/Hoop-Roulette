@@ -1,0 +1,21 @@
+{
+  "season": "1992-93",
+  "player_id": 199,
+  "player": "Reggie Williams",
+  "team": "DEN",
+  "game_id": "0029201079",
+  "game_date": "1993-04-22",
+  "original_nba_jersey": "",
+  "resolved_jersey": 34,
+  "status": "VERIFIED_OFFICIAL_SEASON_ROSTER",
+  "method": "Official Nuggets exact season numerical roster",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Nuggets.pdf",
+  "source_sha256": "a15e56292432206d11b54948ba2d106ee98f937271c329a30528eb27e8f1d9e1",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "34 Reggie Williams",
+  "alternate_register_number": null,
+  "season_team_register": "1 Mark Macon, 3 Chris Jackson, 10 Scott Hastings, 12 Robert Pack, 20 LaPhonso Ellis, 21 Todd Lichti, 21 Tom Hammonds, 23 Bryant Stith, 28 Robert Werdann, 30 Marcus Liberty, 34 Reggie Williams, 43 Michael Brooks, 45 Gary Plummer, 55 Dikembe Mutombo",
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+  "pdf_page": 124
+}

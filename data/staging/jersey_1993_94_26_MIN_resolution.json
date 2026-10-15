@@ -1,0 +1,20 @@
+{
+  "season": "1993-94",
+  "player_id": 26,
+  "player": "Luc Longley",
+  "team": "MIN",
+  "game_id": "0029300690",
+  "game_date": "1994-02-22",
+  "original_nba_jersey": " ",
+  "resolved_jersey": 13,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official Timberwolves all-time uniform register; Longley only listed under 13",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Timberwolves.pdf",
+  "source_sha256": "9eead8d4bbfc1224c79aa1241d97da71e273328feb45bcad0f8ab86cb8ee1a86",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "13 Luc Longley",
+  "alternate_register_number": null,
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+  "pdf_page": 176
+}

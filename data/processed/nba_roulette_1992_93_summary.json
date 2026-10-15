@@ -1,0 +1,145 @@
+{
+  "season": "1992-93",
+  "completed_at": "2026-10-15T05:14:42.919830+00:00",
+  "passed": true,
+  "entries": 247,
+  "jerseys_verified": 247,
+  "unresolved": [],
+  "staged_sha256": "70bd2073b980617e28a6059805a2bc7677566c2fa67596afdad6269850a77fbd",
+  "game_sha256": "aab2af5e47297ee52a81e5a4db0a251bfa990607589b451c137171da330d0a67",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1992-93&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "charles-barkley": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "hakeem-olajuwon": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "shaquille-oneal": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049200076",
+    "game_date": "1993-06-20",
+    "champion_team": "CHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41992",
+        "TEAM_ID": 1610612741,
+        "TEAM_ABBREVIATION": "CHI",
+        "TEAM_NAME": "Chicago Bulls",
+        "GAME_ID": "0049200076",
+        "GAME_DATE": "1993-06-20",
+        "MATCHUP": "CHI @ PHX",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 99,
+        "FGM": 39,
+        "FGA": 82,
+        "FG_PCT": 0.476,
+        "FG3M": 10,
+        "FG3A": 14,
+        "FG3_PCT": 0.714,
+        "FTM": 11,
+        "FTA": 20,
+        "FT_PCT": 0.55,
+        "OREB": 12,
+        "DREB": 27,
+        "REB": 39,
+        "AST": 24,
+        "STL": 6,
+        "BLK": 2,
+        "TOV": 8,
+        "PF": 26,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41992",
+        "TEAM_ID": 1610612756,
+        "TEAM_ABBREVIATION": "PHX",
+        "TEAM_NAME": "Phoenix Suns",
+        "GAME_ID": "0049200076",
+        "GAME_DATE": "1993-06-20",
+        "MATCHUP": "PHX vs. CHI",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 98,
+        "FGM": 32,
+        "FGA": 82,
+        "FG_PCT": 0.39,
+        "FG3M": 4,
+        "FG3A": 11,
+        "FG3_PCT": 0.364,
+        "FTM": 30,
+        "FTA": 36,
+        "FT_PCT": 0.833,
+        "OREB": 18,
+        "DREB": 29,
+        "REB": 47,
+        "AST": 20,
+        "STL": 5,
+        "BLK": 9,
+        "TOV": 9,
+        "PF": 21,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1992-93&SeasonType=Playoffs",
+    "source_sha256": "258b3c95e32399d2f55d670ccf61f6cf0a76f5a547c3b6b112aca74e6b2824e2"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049200076/box-score",
+  "champion_team": "CHI",
+  "champion_records": 7,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 9,
+    "CHH": 8,
+    "CHI": 8,
+    "CLE": 9,
+    "DAL": 12,
+    "DEN": 10,
+    "DET": 9,
+    "GSW": 11,
+    "HOU": 10,
+    "IND": 8,
+    "LAC": 8,
+    "LAL": 8,
+    "MIA": 9,
+    "MIL": 10,
+    "MIN": 9,
+    "NJN": 9,
+    "NYK": 10,
+    "ORL": 8,
+    "PHI": 8,
+    "PHX": 10,
+    "POR": 9,
+    "SAC": 9,
+    "SAS": 8,
+    "SEA": 10,
+    "UTA": 9,
+    "WSB": 10
+  }
+}

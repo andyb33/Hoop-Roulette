@@ -56,8 +56,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 1995 <= year < 2022:
-        raise ValueError("This staging batch covers 1995–96 through 2022–23")
+    if not 1992 <= year < 2022:
+        raise ValueError("This staging batch covers 1992–93 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
@@ -81,7 +81,7 @@ def collect(season):
         assert corrections['season'] == season
     raw.parent.mkdir(parents=True, exist_ok=True)
     primary_metadata={}
-    if year == 1995:
+    if year <= 1995:
         url,primary_metadata=primary_game_log(season,raw)
     elif not raw.exists():
         with urlopen(Request(url, headers={"User-Agent": "Hoopreel"}), timeout=45) as response:
@@ -145,12 +145,21 @@ def collect(season):
         g=groups[(proof['team_id'],proof['player_id'])];official=proof['official_season_row']
         assert g['gp']==official['GP']
         for field,src in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:assert g[field]==official[src]
-    rows, rate_evidence = [], []
+    rows, rate_evidence, total_evidence = [], [], []
     for record in groups.values():
         gp = record["gp"]
         mpg = record["seconds"] / 60 / gp
         if gp < 30 or mpg < 15:
             continue
+        for proof in corrections.get('season_total_overrides', []):
+            if (proof['player_id'],proof['team']) == (record['player_id'],record['team']):
+                official=proof['official_row']
+                assert (official['PLAYER_ID'],official['SEASON_ID'],historical_team(season,official['TEAM_ABBREVIATION'])) == (record['player_id'],season,record['team'])
+                assert proof['source_aggregate'] == {f:record[f] for f in proof['source_aggregate']}
+                assert official['GP'] >= 30 and official['MIN'] >= 15*official['GP']
+                total_evidence.append(proof)
+                record=dict(record,gp=official['GP'],seconds=official['MIN']*60,**{f:official[c] for f,c in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]})
+                gp=record['gp']
         rows.append({**{k: record[k] for k in ("season", "player_id", "player", "team", "gp")},
                      "mpg": rounded_rate(record["seconds"], 60 * gp), **{stat: rounded_rate(record[field], gp) for stat, field in
                      (("ppg", "points"), ("rpg", "rebounds_total"), ("apg", "assists"), ("spg", "steals"), ("bpg", "blocks"))}})
@@ -162,6 +171,7 @@ def collect(season):
                 rate_evidence.append({'player_id':record['player_id'],'team':record['team'],'source_gp':gp,'source_seconds':record['seconds'],'source_unrounded_mpg':mpg,'source_display_mpg':rows[-1]['mpg'],'official_display_mpg':rounded_rate(official['MIN'],gp),'official_evidence':proof})
                 rows[-1]['mpg'] = rounded_rate(official['MIN'], gp)
     assert len(rate_evidence) == len(corrections.get('rate_overrides', []))
+    assert len(total_evidence) == len(corrections.get('season_total_overrides', []))
     rows.sort(key=lambda r: (r["team"], r["player"]))
     if not rows:
         raise ValueError("No eligible staging records")
@@ -177,6 +187,7 @@ def collect(season):
                 **primary_metadata,
                 "source_corrections": corrections,
                 "display_rate_overrides": rate_evidence,
+                "season_total_overrides": total_evidence,
                 "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15},
                 "eligibility_precision": "Unrounded box-score minutes per team stint",
                 "records_by_team": {t: sum(r["team"] == t for r in rows) for t in sorted({r["team"] for r in rows})},

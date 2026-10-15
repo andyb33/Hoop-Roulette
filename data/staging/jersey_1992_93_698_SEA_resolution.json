@@ -1,0 +1,20 @@
+{
+  "season": "1992-93",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "SEA",
+  "game_id": "0029201107",
+  "game_date": "1993-04-25",
+  "original_nba_jersey": "",
+  "resolved_jersey": 8,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+  "source": "https://apbr.org/nmbr9000.html",
+  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "8 Eddie Johnson",
+  "alternate_register_number": null,
+  "season_team_register": "00 Benoit Benjamin, 3 Dana Barros, 8 Eddie Johnson, 10 Nate McMillan, 14 Sam Perkins, 17 Vincent Askew, 20 Gary Payton, 21 Gerald Paddio, 22 Ricky Pierce, 25 Rich King, 31 Derrick McKey, 40 Shawn Kemp, 44 Michael Cage, 55 Steve Scheffler",
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+}

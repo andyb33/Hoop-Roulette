@@ -1,0 +1,21 @@
+{
+  "season": "1994-95",
+  "player_id": 1861,
+  "player": "Negele Knight",
+  "team": "DET",
+  "game_id": "0029401100",
+  "game_date": "1995-04-23",
+  "original_nba_jersey": "",
+  "resolved_jersey": 32,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official Pistons numbered all-time player entry, exact 1994-95 stint",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Pistons.pdf",
+  "source_sha256": "b0a6845638588e1c8c07b72a1030e31dcf14301506e12893db6cc20c12393fa7",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "32-NEGELE KNIGHT; 1994-95",
+  "alternate_register_number": null,
+  "season_team_register": "1 Lindsay Hunter, 2 Mark Macon, 4 Joe Dumars, 6 Terry Mills, 7 Rafael Addison, 9 Walter Bond, 12 Johnny Dawkins, 17 Bill Curley, 20 Allan Houston, 25 Oliver Miller, 32 Negele Knight, 33 Grant Hill, 41 Mark West, 45 Eric Leckner, 52 Ivano Newbill, 54 Mike Peplowski",
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+  "pdf_page": 77
+}

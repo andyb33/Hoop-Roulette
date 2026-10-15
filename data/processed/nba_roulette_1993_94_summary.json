@@ -1,0 +1,143 @@
+{
+  "season": "1993-94",
+  "completed_at": "2026-10-15T05:14:42.508224+00:00",
+  "passed": true,
+  "entries": 246,
+  "jerseys_verified": 246,
+  "unresolved": [],
+  "staged_sha256": "8ce0815f13ba894ea33c69d9c6cce2bf58f4ed037362c1a57dbd505fdbc58305",
+  "game_sha256": "a3a738abc4a5fc9cd62cfa3a932cdefb82d56cc48fdbf9428f016ce302a3ac3f",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1993-94&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "chris-webber": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "hakeem-olajuwon": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049300077",
+    "game_date": "1994-06-22",
+    "champion_team": "HOU",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41993",
+        "TEAM_ID": 1610612752,
+        "TEAM_ABBREVIATION": "NYK",
+        "TEAM_NAME": "New York Knicks",
+        "GAME_ID": "0049300077",
+        "GAME_DATE": "1994-06-22",
+        "MATCHUP": "NYK @ HOU",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 84,
+        "FGM": 31,
+        "FGA": 78,
+        "FG_PCT": 0.397,
+        "FG3M": 4,
+        "FG3A": 20,
+        "FG3_PCT": 0.2,
+        "FTM": 18,
+        "FTA": 24,
+        "FT_PCT": 0.75,
+        "OREB": 14,
+        "DREB": 26,
+        "REB": 40,
+        "AST": 17,
+        "STL": 5,
+        "BLK": 3,
+        "TOV": 11,
+        "PF": 23,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41993",
+        "TEAM_ID": 1610612745,
+        "TEAM_ABBREVIATION": "HOU",
+        "TEAM_NAME": "Houston Rockets",
+        "GAME_ID": "0049300077",
+        "GAME_DATE": "1994-06-22",
+        "MATCHUP": "HOU vs. NYK",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 90,
+        "FGM": 34,
+        "FGA": 73,
+        "FG_PCT": 0.466,
+        "FG3M": 4,
+        "FG3A": 11,
+        "FG3_PCT": 0.364,
+        "FTM": 18,
+        "FTA": 23,
+        "FT_PCT": 0.783,
+        "OREB": 3,
+        "DREB": 30,
+        "REB": 33,
+        "AST": 22,
+        "STL": 8,
+        "BLK": 5,
+        "TOV": 9,
+        "PF": 23,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1993-94&SeasonType=Playoffs",
+    "source_sha256": "acfac90a1c8aa7278dc94478294784bcdc5a544193332f3484adfc9e5aa50079"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049300077/box-score",
+  "champion_team": "HOU",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 8,
+    "BOS": 9,
+    "CHH": 9,
+    "CHI": 10,
+    "CLE": 11,
+    "DAL": 10,
+    "DEN": 8,
+    "DET": 10,
+    "GSW": 8,
+    "HOU": 9,
+    "IND": 9,
+    "LAC": 10,
+    "LAL": 9,
+    "MIA": 9,
+    "MIL": 10,
+    "MIN": 9,
+    "NJN": 8,
+    "NYK": 10,
+    "ORL": 9,
+    "PHI": 8,
+    "PHX": 8,
+    "POR": 8,
+    "SAC": 10,
+    "SAS": 9,
+    "SEA": 9,
+    "UTA": 9,
+    "WSB": 10
+  }
+}

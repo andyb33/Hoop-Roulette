@@ -1,0 +1,60 @@
+[
+  {
+    "season": "1993-94",
+    "legacy_player_id": 78412,
+    "canonical_player_id": 919,
+    "player": "Loy Vaught",
+    "team": "LAC",
+    "matched_fields": [
+      "GP",
+      "MIN",
+      "PTS",
+      "REB",
+      "AST",
+      "STL",
+      "BLK"
+    ],
+    "legacy_aggregate": {
+      "GP": 75,
+      "MIN": 2118,
+      "PTS": 877,
+      "REB": 656,
+      "AST": 74,
+      "STL": 76,
+      "BLK": 22
+    },
+    "canonical_official_row": {
+      "PLAYER_ID": 919,
+      "SEASON_ID": "1993-94",
+      "LEAGUE_ID": "00",
+      "TEAM_ID": 1610612746,
+      "TEAM_ABBREVIATION": "LAC",
+      "PLAYER_AGE": 26.0,
+      "GP": 75,
+      "GS": 56,
+      "MIN": 2118,
+      "FGM": 373,
+      "FGA": 695,
+      "FG_PCT": 0.537,
+      "FG3M": 0,
+      "FG3A": 5,
+      "FG3_PCT": 0.0,
+      "FTM": 131,
+      "FTA": 182,
+      "FT_PCT": 0.72,
+      "OREB": 218,
+      "DREB": 438,
+      "REB": 656,
+      "AST": 74,
+      "STL": 76,
+      "BLK": 22,
+      "TOV": 96,
+      "PF": 221,
+      "PTS": 877
+    },
+    "source": "https://stats.nba.com/stats/playergamelog?PlayerID=78412&Season=1993-94&SeasonType=Regular+Season&LeagueID=00&DateFrom=&DateTo=",
+    "source_sha256": "b875e20fd5e8399a6c38363527755f0c7323dd61560ccd68cd3578c2e7cc0a77",
+    "canonical_source": "https://stats.nba.com/stats/playercareerstats?PlayerID=919&PerMode=Totals&LeagueID=00",
+    "canonical_source_sha256": "ebb9f99a1312511b68fe74e4a7dcec8d82dc2c4bfecebf4f12cc41693c47ac03"
+  }
+]
