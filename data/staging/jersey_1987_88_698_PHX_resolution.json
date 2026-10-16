@@ -1,0 +1,17 @@
+{
+  "season": "1987-88",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "PHX",
+  "game_id": "0028700941",
+  "game_date": "1988-04-24",
+  "original_nba_jersey": "",
+  "resolved_jersey": 8,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "8 Eddie Johnson",
+  "season_team_register": "2 James Bailey, 6 Walter Davis, 8 Eddie Johnson, 11 Mike Sanders, 11 Kevin Johnson, 12 Winston Crite, 14 Jeff Hornacek, 22 Larry Nance, 23 Tyrone Corbin, 24 Jay Humphries, 25 Craig Hodges, 26 Bill Martin, 33 Alvan Adams, 35 Armen Gilliam, 41 Mark West, 45 Jeff Cook, 53 James Edwards, 53 Ron Moore"
+}

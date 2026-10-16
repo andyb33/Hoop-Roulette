@@ -1,0 +1,18 @@
+{
+  "season": "1988-89",
+  "player_id": 77819,
+  "player": "Jim Paxson",
+  "team": "BOS",
+  "game_id": "0028800776",
+  "game_date": "1989-03-16",
+  "original_nba_jersey": "",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official Celtics all-time numerical register explicitly lists 4 for 1987-90",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Celtics.pdf",
+  "source_sha256": "ae2dedd7e9be7f4c29b397c55514655a16b7453af72b888bb1ed60f0d740cd3d",
+  "source_format": "original_pdf",
+  "uniform_register_entry": "4 Jim Paxson 1987-90",
+  "season_team_register": "00 Robert Parish, 3 Dennis Johnson, 4 Jim Paxson, 7 Kelvin Upshaw, 12 Otis Birdsong, 20 Brian Shaw, 31 Ronnie Grandison, 32 Kevin McHale, 33 Larry Bird, 34 Kevin Gamble, 35 Reggie Lewis, 42 Mark Acres, 44 Danny Ainge, 45 Ramon Rivas, 53 Joe Kleine, 54 Brad Lohaus, 54 Ed Pinckney",
+  "pdf_page": 174
+}

@@ -10,9 +10,9 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 try:
-    from .collect_historical_stats import historical_team
+    from .collect_historical_stats import historical_team, rounded_rate
 except ImportError:
-    from collect_historical_stats import historical_team
+    from collect_historical_stats import historical_team, rounded_rate
 
 ROOT = Path(__file__).resolve().parent.parent
 REFERENCES = {
@@ -45,6 +45,39 @@ REFERENCES.update({season: {
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Independently scraped Basketball Reference workbook. Producer removes TOT rows but retains individual team stints; season selected by ending Year."
 } for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93", "1991-92", "1990-91", "1989-90")})
+REFERENCES.update({season: {
+    "url": "https://raw.githubusercontent.com/illumitata/NBA/99fb55e641c7009ae729e502ebdade8c6ecb2b7f/data/Seasons_Stats.csv",
+    "format": "historical_totals_csv", "season": season,
+    "provenance": "https://www.kaggle.com/datasets/drgilermo/nba-players-stats",
+    "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
+    "note": "Archived Basketball Reference totals from NBA Players stats since 1950; exact ending Year and individual traded-player stints retained. Rates derive from original totals with decimal half-up rounding; original archive and selected totals preserved."
+} for season in ("1988-89", "1987-88", "1986-87")})
+SCHEDULES.update({"1988-89": (1025,82), "1987-88": (943,82), "1986-87": (943,82)})
+
+
+def extract_reference_csv(path, season, output):
+    from decimal import Decimal
+    selected=[]
+    with path.open(encoding="utf-8-sig",newline="") as handle:
+        for r in csv.DictReader(handle):
+            if r["Year"] != str(int(season[:4])+1):continue
+            gp=Decimal(r["G"])
+            if gp != gp.to_integral_value() or gp<=0:raise ValueError("Invalid independent games count")
+            row={"Player":r["Player"],"Tm":r["Tm"],"G":str(int(gp)),"reference_key_name":r["Player"],"original_age":r["Age"],"original_archive_index":r[""]}
+            # Two different Charles Joneses shared WSB. Preserve both original names;
+            # the younger player's GP/minutes match NBA ID 77178, not eligible ID 279.
+            if (season,r["Tm"],r["Player"],r["Age"])==("1988-89","WSB","Charles Jones","27"):
+                row["reference_key_name"]="Charles Jones [77178]"
+            for key in ("MP","PTS","TRB","AST","STL","BLK"):
+                total=Decimal(r[key])
+                row[key]=rounded_rate(total,int(gp))
+                row["original_total_"+key]=r[key]
+            selected.append(row)
+    if not selected:raise ValueError("Independent archive has no rows for season")
+    with output.open("w",newline="",encoding="utf-8") as handle:
+        writer=csv.DictWriter(handle,fieldnames=selected[0]);writer.writeheader();writer.writerows(selected)
+
+
 SCHEDULES.update({s:(1230,82) for s in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11")})
 
 
@@ -107,7 +140,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "clifftrobinson":"cliffrobinson", "hotrod":"hotrodwilliams", "joebarry":"joebarrycarroll", "vinnydel":"vinnydelnegro", "michaelholton":"mikeholton", "dwaynewashington":"pearlwashington", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
 
 
 def verify(season):
@@ -115,6 +148,14 @@ def verify(season):
     raw = ROOT / f"data/raw/{season}"
     ref_path = raw / "reference/reference.csv"
     workbook_sha256 = None
+    archive_sha256 = None
+    if source.get("format") == "historical_totals_csv":
+        archive_path=raw/"reference/original_totals_archive.csv"
+        archive_path.parent.mkdir(parents=True,exist_ok=True)
+        if not archive_path.exists():
+            with urlopen(Request(source["url"],headers={"User-Agent":"Hoopreel"}),timeout=45) as response:archive_path.write_bytes(response.read())
+        archive_sha256=hashlib.sha256(archive_path.read_bytes()).hexdigest()
+        extract_reference_csv(archive_path,season,ref_path)
     if source.get("format") == "xlsx":
         workbook_path = raw / "reference/reference.xlsx"
         workbook_path.parent.mkdir(parents=True, exist_ok=True)
@@ -137,10 +178,19 @@ def verify(season):
     for row in csv.DictReader(reference_text.splitlines(), dialect=dialect):
         if not row["G"].isdigit() or row["Tm"] in ("TOT", "2TM", "3TM", "4TM"):
             continue
-        key = (historical_team(season, TEAM_ALIASES.get(row["Tm"], row["Tm"])), name_key(row["Player"]))
+        key = (historical_team(season, TEAM_ALIASES.get(row["Tm"], row["Tm"])), name_key(row.get("reference_key_name",row["Player"])))
         if key in reference:
             errors.append(f"Duplicate independent reference key: {key}")
         reference[key] = row
+    reference_identity_evidence=[]
+    if season=="1988-89":
+        reference_identity_evidence=json.loads((ROOT/'data/staging/reference_identity_1988_89_resolutions.json').read_text())
+        for p in reference_identity_evidence:
+            key_name="Charles Jones [77178]" if p['player_id']==77178 else "Charles Jones"
+            ref=reference[("WSB",name_key(key_name))]
+            assert int(ref['G'])==p['official_row']['GP']
+            for col,official_col in [('MP','MIN'),('PTS','PTS'),('TRB','REB'),('AST','AST'),('STL','STL'),('BLK','BLK')]:
+                assert int(ref['original_total_'+col])==p['official_row'][official_col]
     slug = season.replace("-", "_")
     data_path = ROOT / f"data/staging/stats_{slug}.json"
     records = json.loads(data_path.read_text(encoding="utf-8"))
@@ -197,7 +247,7 @@ def verify(season):
             errors.append(f"Missing independent row: {row['team']} {row['player']}")
             continue
         evidence.append({"player_id": row["player_id"], "player": row["player"], "team": row["team"],
-                         "reference_name": ref["Player"], "reference_stats": {f: float(ref[c]) for f, c in FIELDS.items()}})
+                         "reference_name": ref["Player"], **({"original_reference_totals": {k: ref["original_total_"+k] for k in ("MP","PTS","TRB","AST","STL","BLK")}} if source.get("format")=="historical_totals_csv" else {}), "reference_stats": {f: float(ref[c]) for f, c in FIELDS.items()}})
         for field, column in FIELDS.items():
             difference = abs(row[field] - float(ref[column]))
             if difference < 0.000001:
@@ -240,6 +290,11 @@ def verify(season):
                     errors.append("Official MPG resolution does not match staged record")
                 else:
                     item.update(resolution=proof["resolution"], resolution_source=proof["source"], official_total_evidence=official, official_source_sha256=proof["source_sha256"])
+            elif (season,row["player_id"],row["team"],field)==("1987-88",77626,"MIL","bpg"):
+                proof=next(p for p in manifest['season_total_overrides'] if p['player_id']==77626 and p['team']=='MIL')
+                assert proof['official_row']['GP']==row['gp']==56 and proof['official_row']['BLK']==proof['source_aggregate']['blocks']==12
+                assert ref['original_total_BLK']=='14' and row[field]==0.2 and float(ref[column])==0.3
+                item.update(resolution="Retain 12 blocks / 56 GP from official NBA season totals and original game logs; independent Basketball Reference archive reports 14. Source disagreement remains explicit.",resolution_source=proof['source'],official_total_evidence=proof['official_row'],official_source_sha256=proof['source_sha256'],independent_total=14)
             else:
                 errors.append(item)
             if "resolution" in item:
@@ -279,7 +334,7 @@ def verify(season):
         schedule_evidence = {"source": schedule_url, "sha256": hashlib.sha256(schedule_path.read_bytes()).hexdigest(),
                              "matches": dict(official_games) == dict(games),
                              "team_games": {t: len(v) for t, v in sorted(official_team_games.items())}}
-    expected_teams = 27 if int(season[:4]) < 1995 else 29 if int(season[:4]) < 2004 else 30
+    expected_teams = 23 if int(season[:4]) < 1988 else 25 if int(season[:4]) == 1988 else 27 if int(season[:4]) < 1995 else 29 if int(season[:4]) < 2004 else 30
     if len(games) != expected_games or len(team_games) != expected_teams or any(len(t) != 2 for t in games.values()):
         errors.append(f"Expected {expected_games} games, two teams per game, and all {expected_teams} teams")
     if expected_team_games is not None and any(len(g) != expected_team_games for g in team_games.values()):
@@ -288,7 +343,8 @@ def verify(season):
         errors.append("Expected BOS/IND 81 games and the remaining 28 teams 82")
     report = {"season": season, "passed": not errors, "scope": "Stats-only; jerseys and accolades not yet verified",
               "records_checked": len(records), "fields_per_record": 7, "stat_comparisons": len(evidence)*7,
-              "reference_workbook_sha256": workbook_sha256, "reference": source, "reference_sha256": hashlib.sha256(ref_path.read_bytes()).hexdigest(),
+              "reference_workbook_sha256": workbook_sha256, "reference_archive_sha256": archive_sha256,
+              "reference_identity_evidence": reference_identity_evidence, "reference_identity_resolutions": [{k:r[k] for k in ("Player","Tm","G","reference_key_name","original_age","original_archive_index","original_total_MP")} for r in reference.values() if r.get("reference_key_name",r["Player"])!=r["Player"]], "reference": source, "reference_sha256": hashlib.sha256(ref_path.read_bytes()).hexdigest(),
               "staged_sha256": hashlib.sha256(data_path.read_bytes()).hexdigest(),
               "eligibility_sets_match": expected == actual, "all_30_teams_have_82_games": all(len(g)==82 for g in team_games.values()) and len(team_games)==30,
               "schedule_evidence": schedule_evidence, "regular_season_games": len(games), "cutoff_boundary_resolutions": borderline, "resolved_differences": resolutions, "errors": errors,

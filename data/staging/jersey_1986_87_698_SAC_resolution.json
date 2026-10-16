@@ -1,0 +1,17 @@
+{
+  "season": "1986-87",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "SAC",
+  "game_id": "0028600938",
+  "game_date": "1987-04-18",
+  "original_nba_jersey": "",
+  "resolved_jersey": 8,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "8 Eddie Johnson",
+  "season_team_register": "2 Othell Wilson, 8 Eddie Johnson, 18 Derek Smith, 21 Harold Pressley, 22 Franklin Edwards, 22 Jerry Eaves, 24 Reggie Theus, 25 Brook Steppe, 30 Johnny Rogers, 33 Otis Thorpe, 35 Joe Kleine, 40 Terry Tyler, 41 LaSalle Thompson, 42 Bruce Douglas, 53 Mark Olberding"
+}

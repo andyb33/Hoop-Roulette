@@ -1,0 +1,18 @@
+{
+  "season": "1987-88",
+  "player_id": 901,
+  "player": "Otis Thorpe",
+  "team": "SAC",
+  "game_id": "0028700937",
+  "game_date": "1988-04-23",
+  "original_nba_jersey": "24-33",
+  "resolved_jersey": 33,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official Kings franchise uniform list explicitly places Thorpe under 33 for 1984-85 through 1987-88",
+  "source": "https://www.nba.com/kings/history-franchise-uniform-list",
+  "source_sha256": "b70791a144474f45878ebb29577deb7b611e8442c74ab7cdc6a4ba0b9f402416",
+  "source_format": "original_html",
+  "uniform_register_entry": "33: Otis Thorpe (84/85-87/88, 97/98)",
+  "season_team_register": "2 Michael Jackson, 10 Franklin Edwards, 18 Derek Smith, 21 Harold Pressley, 24 Otis Thorpe, 25 Mike McGee, 30 Kenny Smith, 32 Juwann Oldham, 33 Otis Thorpe, 35 Joe Kleine, 40 Terry Tyler, 41 LaSalle Thompson, 51 Martin Nessley, 53 Joe Arlauckas, 54 Ed Pinckney",
+  "corroboration_source": "https://www.basketball-reference.com/leagues/NBA_1988_numbers.html"
+}

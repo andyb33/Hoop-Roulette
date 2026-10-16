@@ -1,0 +1,17 @@
+{
+  "season": "1988-89",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "PHX",
+  "game_id": "0028801017",
+  "game_date": "1989-04-22",
+  "original_nba_jersey": "",
+  "resolved_jersey": 8,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "8 Eddie Johnson",
+  "season_team_register": "4 Steve Kerr, 7 Kevin Johnson, 8 Eddie Johnson, 9 Dan Majerle, 12 Winston Crite, 14 Jay Hornacek, 23 Tyrone Corbin, 24 Tom Chambers, 25 Craig Hodges, 25 T.R. Dunn, 28 Andrew Lang, 34 Tim Perry, 35 Armon Gilliam, 41 Mark West, 43 Mark Davis, 44 Kenny Gattison, 45 Ed Nealy"
+}

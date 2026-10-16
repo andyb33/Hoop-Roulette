@@ -1,0 +1,17 @@
+{
+  "season": "1987-88",
+  "player_id": 199,
+  "player": "Reggie Williams",
+  "team": "LAC",
+  "game_id": "0028700706",
+  "game_date": "1988-03-15",
+  "original_nba_jersey": "",
+  "resolved_jersey": 34,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "34 Reggie Williams",
+  "season_team_register": "00 Benoit Benjamin, 1 Darnell Valentine, 2 Larry Drew, 4 Lancaster Gordon, 12 Eric White, 14 Michael Phelps, 15 Steve Burtt, 20 Quintin Dailey, 24 Joe Wolf, 25 Earl Cureton, 32 Greg Kite, 33 Ken Norman, 34 Reggie Williams, 42 Mike Woodson, 43 Claude Gregory, 44 Michael Cage, 45 Norris Coleman, 46 Tod Murphy, 51 Martin Nessley, 54 Kenny Fields"
+}

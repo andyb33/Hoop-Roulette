@@ -63,3 +63,21 @@ class HistoricalStatsTests(unittest.TestCase):
         from scripts.verify_historical_stats import name_key
         self.assertEqual(name_key('Jianlian Yi'),name_key('Yi Jianlian'))
         self.assertNotEqual(name_key('Jianlian Yi'),name_key('Yao Ming'))
+
+    def test_older_totals_adapter_keeps_traded_rows_names_and_unrounded_totals(self):
+        from scripts.verify_historical_stats import extract_reference_csv, name_key
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'source.csv';output=Path(directory)/'reference.csv'
+            fields=['','Year','Player','Age','Tm','G','MP','PTS','TRB','AST','STL','BLK']
+            cases=[['1','1989','Charles Jones','31','WSB','53','1154','136','257','42','39','76'],['2','1989','Charles Jones','27','WSB','43','516','110','140','18','18','16'],['3','1989','Traded Player','25','TOT','60','1800','600','100','100','30','10'],['4','1989','Traded Player','25','BOS','30','449','300','50','50','15','5'],['5','1989','Traded Player','25','SAC','30','1351','300','50','50','15','5']]
+            with path.open('w',newline='') as handle:
+                writer=csv.writer(handle);writer.writerow(fields);writer.writerows(cases)
+            extract_reference_csv(path,'1988-89',output)
+            with output.open() as handle:rows=list(csv.DictReader(handle))
+            self.assertEqual(len(rows),5)
+            self.assertEqual([r['Player'] for r in rows[:2]],['Charles Jones','Charles Jones'])
+            self.assertNotEqual(rows[0]['reference_key_name'],rows[1]['reference_key_name'])
+            self.assertEqual({r['Tm'] for r in rows[2:]},{'TOT','BOS','SAC'})
+            self.assertEqual((float(rows[3]['MP']),rows[3]['original_total_MP']),(15.0,'449'))
+            self.assertEqual(name_key('Cliff T. Robinson'),name_key('Cliff Robinson'))
+            self.assertNotEqual(name_key('Cliff T. Robinson'),name_key('Clifford Robinson'))

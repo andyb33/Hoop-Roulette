@@ -1,0 +1,144 @@
+{
+  "season": "1988-89",
+  "completed_at": "2026-10-16T02:06:33.713239+00:00",
+  "passed": true,
+  "entries": 225,
+  "jerseys_verified": 225,
+  "unresolved": [],
+  "staged_sha256": "1e4ac120f68c25e829e4eeb3bd7fe41a4a245e9d0329b24a38cf9c9ccf328b83",
+  "game_sha256": "a7aed57729038bd54f1f17c91a714a882b55ac28a1c4d3a8b9482a3448e492ea",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1988-89&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "magic-johnson": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "mark-eaton": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "mitch-richmond": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0048800062",
+    "game_date": "1989-06-13",
+    "champion_team": "DET",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41988",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0048800062",
+        "GAME_DATE": "1989-06-13",
+        "MATCHUP": "LAL vs. DET",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 97,
+        "FGM": 35,
+        "FGA": 79,
+        "FG_PCT": 0.443,
+        "FG3M": 3,
+        "FG3A": 11,
+        "FG3_PCT": 0.273,
+        "FTM": 24,
+        "FTA": 33,
+        "FT_PCT": 0.727,
+        "OREB": 10,
+        "DREB": 30,
+        "REB": 40,
+        "AST": 23,
+        "STL": 3,
+        "BLK": 6,
+        "TOV": 7,
+        "PF": 30,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41988",
+        "TEAM_ID": 1610612765,
+        "TEAM_ABBREVIATION": "DET",
+        "TEAM_NAME": "Detroit Pistons",
+        "GAME_ID": "0048800062",
+        "GAME_DATE": "1989-06-13",
+        "MATCHUP": "DET @ LAL",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 105,
+        "FGM": 34,
+        "FGA": 70,
+        "FG_PCT": 0.486,
+        "FG3M": 2,
+        "FG3A": 3,
+        "FG3_PCT": 0.667,
+        "FTM": 35,
+        "FTA": 51,
+        "FT_PCT": 0.686,
+        "OREB": 9,
+        "DREB": 27,
+        "REB": 36,
+        "AST": 21,
+        "STL": 3,
+        "BLK": 4,
+        "TOV": 9,
+        "PF": 26,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1988-89&SeasonType=Playoffs",
+    "source_sha256": "cf03e9467d6a4ad6a8cbea3e21f6fca0d3d9f1aeb14f7209cf3f8f59c9c6d195"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048800062/box-score",
+  "champion_team": "DET",
+  "champion_records": 9,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 8,
+    "CHH": 11,
+    "CHI": 9,
+    "CLE": 7,
+    "DAL": 11,
+    "DEN": 9,
+    "DET": 10,
+    "GSW": 10,
+    "HOU": 9,
+    "IND": 11,
+    "LAC": 9,
+    "LAL": 8,
+    "MIA": 10,
+    "MIL": 9,
+    "NJN": 8,
+    "NYK": 8,
+    "PHI": 8,
+    "PHX": 8,
+    "POR": 8,
+    "SAC": 10,
+    "SAS": 11,
+    "SEA": 7,
+    "UTA": 7,
+    "WSB": 10
+  }
+}

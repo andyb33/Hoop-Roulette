@@ -1,0 +1,140 @@
+{
+  "season": "1987-88",
+  "completed_at": "2026-10-16T02:06:34.321680+00:00",
+  "passed": true,
+  "entries": 202,
+  "jerseys_verified": 202,
+  "unresolved": [],
+  "staged_sha256": "ff59fe5c9364a7e4aae5c8299cad17f6bdee6f9f373930e677e567c010aa2b2b",
+  "game_sha256": "48f0d8b23d6d93b9da08b3b35760f910ed53cf0e7ac7d78e53b935c91dce74c4",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1987-88&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "mark-jackson": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "michael-jordan": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners",
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 11,
+  "title_game_verification": {
+    "game_id": "0048700080",
+    "game_date": "1988-06-21",
+    "champion_team": "LAL",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41987",
+        "TEAM_ID": 1610612765,
+        "TEAM_ABBREVIATION": "DET",
+        "TEAM_NAME": "Detroit Pistons",
+        "GAME_ID": "0048700080",
+        "GAME_DATE": "1988-06-21",
+        "MATCHUP": "DET @ LAL",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 105,
+        "FGM": 39,
+        "FGA": 85,
+        "FG_PCT": 0.459,
+        "FG3M": 2,
+        "FG3A": 7,
+        "FG3_PCT": 0.286,
+        "FTM": 25,
+        "FTA": 35,
+        "FT_PCT": 0.714,
+        "OREB": 15,
+        "DREB": 24,
+        "REB": 39,
+        "AST": 22,
+        "STL": 13,
+        "BLK": 2,
+        "TOV": 11,
+        "PF": 23,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41987",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0048700080",
+        "GAME_DATE": "1988-06-21",
+        "MATCHUP": "LAL vs. DET",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 108,
+        "FGM": 43,
+        "FGA": 77,
+        "FG_PCT": 0.558,
+        "FG3M": 3,
+        "FG3A": 10,
+        "FG3_PCT": 0.3,
+        "FTM": 19,
+        "FTA": 27,
+        "FT_PCT": 0.704,
+        "OREB": 10,
+        "DREB": 31,
+        "REB": 41,
+        "AST": 30,
+        "STL": 6,
+        "BLK": 1,
+        "TOV": 18,
+        "PF": 22,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1987-88&SeasonType=Playoffs",
+    "source_sha256": "5446d1474de98677172e4f08d2a525a2f791c8cd608f8d206e1588198dd51978"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048700080/box-score",
+  "champion_team": "LAL",
+  "champion_records": 7,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BOS": 5,
+    "CHI": 9,
+    "CLE": 10,
+    "DAL": 8,
+    "DEN": 9,
+    "DET": 8,
+    "GSW": 11,
+    "HOU": 8,
+    "IND": 7,
+    "LAC": 11,
+    "LAL": 7,
+    "MIL": 10,
+    "NJN": 9,
+    "NYK": 9,
+    "PHI": 8,
+    "PHX": 10,
+    "POR": 10,
+    "SAC": 10,
+    "SAS": 9,
+    "SEA": 6,
+    "UTA": 8,
+    "WSB": 10
+  }
+}

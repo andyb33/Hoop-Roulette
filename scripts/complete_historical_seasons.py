@@ -14,7 +14,7 @@ from build_goat_datasets import player_key
 from collect_historical_stats import historical_team
 
 # NBA's box-score mirror uses Jimmy Butler III; the official honors list uses Jimmy Butler.
-HONORS_NAME_ALIASES = {202710: 'Jimmy Butler'}
+HONORS_NAME_ALIASES = {202710: 'Jimmy Butler', 77376: 'Fat Lever'}
 
 def honors_key(row):
     return player_key(HONORS_NAME_ALIASES.get(row['player_id'], row['player']))
@@ -131,11 +131,22 @@ def complete(season, workers=6):
     total_overrides={(p['team'],p['player_id']):p for p in manifest.get('season_total_overrides',[])}
     assert all(len(appearances[(r['team'], r['player_id'])]) == total_overrides[(r['team'],r['player_id'])]['source_aggregate']['gp'] if (r['team'],r['player_id']) in total_overrides else len(appearances[(r['team'],r['player_id'])])==r['gp'] for r in rows)
     last = {k: max(v) for k,v in appearances.items()}
+    final_path=ROOT/f'data/staging/final_appearance_{slug}_resolutions.json'
+    final_proofs=json.loads(final_path.read_text()) if final_path.exists() else []
+    final_resolutions={(p['team'],p['player_id']):p for p in final_proofs}
     for key in total_overrides:
         proof=total_overrides[key]
         if proof['source_aggregate']['gp'] != proof['official_row']['GP']:
             team_final=max(g['GAME_DATE'] for g in games if historical_team(season,g['TEAM_ABBREVIATION']) == key[0])
-            assert last[key][0] == team_final, 'Conflicting GP requires independent final-game coverage'
+            if last[key][0] != team_final:
+                assert key in final_resolutions, 'Conflicting GP requires a separate final-appearance proof'
+                resolution=final_resolutions[key]
+                assert (resolution['season'],resolution['game_date'],resolution['game_id'])==(season,*last[key])
+                assert resolution['official_row']==proof['official_row']
+                log=resolution['official_stint_game_log_rows']
+                assert log and all(r['Player_ID']==key[1] and historical_team(season,r['MATCHUP'].split()[0])==key[0] and r['Game_ID'] in dates for r in log)
+                assert max((datetime.strptime(r['GAME_DATE'],'%b %d, %Y').strftime('%Y-%m-%d'),r['Game_ID']) for r in log)==last[key]
+
     ids = sorted({gid for date,gid in last.values()})
     boxes = {}
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -161,9 +172,12 @@ def complete(season, workers=6):
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     title_proof = None
+    if season in ('1988-89','1987-88','1986-87'):
+        title_proof=json.loads((ROOT/'data/processed/title_game_verification_1986_1989.json').read_text())[season]
+        assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
     if season in ('1991-92','1990-91','1989-90'):
         title_proof=json.loads((ROOT/'data/processed/title_game_verification_1989_1992.json').read_text())[season]
         assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
@@ -231,14 +245,15 @@ def complete(season, workers=6):
                          'jersey_resolution':resolution,
                          'identity_resolution':identity_by_legacy.get(int(p['personId'])),
                          'season_total_resolution':total_overrides.get((r['team'],r['player_id'])),
+                         'final_appearance_resolution':final_resolutions.get((r['team'],r['player_id'])),
                          'observed_appearance_count':len(appearances[(r['team'],r['player_id'])]),
                          'source_sha256':boxes[gid].get('_source_sha256'),
                          'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
-    assert len(nba)==15 and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05", "1998-99") else 10)
+    assert len(nba)==(10 if int(season[:4])<1988 else 15) and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05", "1998-99", "1987-88") else 10)
     if season == "2012-13":
         assert defense["tyson-chandler"] == defense["joakim-noah"] == 1
         assert sum(tier == 1 for tier in defense.values()) == 6
-    for tied_season, tier, names in [("1998-99", 1, ("karl-malone", "scottie-pippen")), ("2005-06", 1, ("kobe-bryant", "jason-kidd")), ("2004-05", 2, ("jason-kidd", "dwyane-wade"))]:
+    for tied_season, tier, names in [("1987-88", 2, ("mark-eaton", "patrick-ewing")), ("1998-99", 1, ("karl-malone", "scottie-pippen")), ("2005-06", 1, ("kobe-bryant", "jason-kidd")), ("2004-05", 2, ("jason-kidd", "dwyane-wade"))]:
         if season == tied_season:
             assert all(defense[name] == tier for name in names)
             assert sum(value == tier for value in defense.values()) == 6
@@ -280,5 +295,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

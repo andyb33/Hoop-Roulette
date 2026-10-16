@@ -1,0 +1,142 @@
+{
+  "season": "1986-87",
+  "completed_at": "2026-10-16T02:06:34.821151+00:00",
+  "passed": true,
+  "entries": 208,
+  "jerseys_verified": 208,
+  "unresolved": [],
+  "staged_sha256": "96e92a3fd9ed7aafa6bfc5b5a7d11e953cd96d6433b0ceec53d374b4e732bdc2",
+  "game_sha256": "d80a0617acd39f871772a9e4c7bf64fe2c9644ef4da311707e80bf7ced7b0975",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1986-87&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "chuck-person": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "magic-johnson": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "michael-cooper": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0048600071",
+    "game_date": "1987-06-14",
+    "champion_team": "LAL",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41986",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0048600071",
+        "GAME_DATE": "1987-06-14",
+        "MATCHUP": "LAL vs. BOS",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 106,
+        "FGM": 45,
+        "FGA": 93,
+        "FG_PCT": 0.484,
+        "FG3M": 0,
+        "FG3A": 5,
+        "FG3_PCT": 0.0,
+        "FTM": 16,
+        "FTA": 23,
+        "FT_PCT": 0.696,
+        "OREB": 13,
+        "DREB": 31,
+        "REB": 44,
+        "AST": 33,
+        "STL": 11,
+        "BLK": 9,
+        "TOV": 11,
+        "PF": 28,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41986",
+        "TEAM_ID": 1610612738,
+        "TEAM_ABBREVIATION": "BOS",
+        "TEAM_NAME": "Boston Celtics",
+        "GAME_ID": "0048600071",
+        "GAME_DATE": "1987-06-14",
+        "MATCHUP": "BOS @ LAL",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 93,
+        "FGM": 33,
+        "FGA": 81,
+        "FG_PCT": 0.407,
+        "FG3M": 0,
+        "FG3A": 5,
+        "FG3_PCT": 0.0,
+        "FTM": 27,
+        "FTA": 31,
+        "FT_PCT": 0.871,
+        "OREB": 13,
+        "DREB": 29,
+        "REB": 42,
+        "AST": 21,
+        "STL": 6,
+        "BLK": 7,
+        "TOV": 18,
+        "PF": 25,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1986-87&SeasonType=Playoffs",
+    "source_sha256": "7e6f812a26167c9f4e27724c45034ff1a5ee89da34248defca4551aeb0d9f041"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048600071/box-score",
+  "champion_team": "LAL",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 6,
+    "CHI": 8,
+    "CLE": 8,
+    "DAL": 8,
+    "DEN": 10,
+    "DET": 9,
+    "GSW": 9,
+    "HOU": 11,
+    "IND": 8,
+    "LAC": 12,
+    "LAL": 8,
+    "MIL": 9,
+    "NJN": 11,
+    "NYK": 11,
+    "PHI": 9,
+    "PHX": 8,
+    "POR": 8,
+    "SAC": 8,
+    "SAS": 12,
+    "SEA": 7,
+    "UTA": 8,
+    "WSB": 11
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "season": "1986-87",
+  "player_id": 77819,
+  "player": "Jim Paxson",
+  "team": "POR",
+  "game_id": "0028600941",
+  "game_date": "1987-04-19",
+  "original_nba_jersey": "",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "4 Jim Paxson",
+  "season_team_register": "00 Kevin Duckworth, 2 Perry Young, 4 Jim Paxson, 6 Michael Holton, 10 Fernando Martin, 11 Ron Rowan, 21 Walter Berry, 22 Clyde Drexler, 25 Jerome Kersey, 27 Caldwell Jones, 30 Terry Porter, 31 Sam Bowie, 33 Steve Johnson, 34 Kenny Carr, 50 Chris Engler, 50 Joe Binion, 55 Kiki Vandeweghe"
+}
