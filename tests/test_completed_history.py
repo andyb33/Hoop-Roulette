@@ -457,7 +457,7 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertEqual((row.team,row.gp,row.jersey),('LAC',gp,35))
 
     def test_composite_jerseys_use_specific_evidence_and_preserve_originals(self):
-        for season,pid,team,jersey,original in [('1991-92',428,'BOS',20,'4-20'),('1991-92',77167,'SAS',25,'15-25'),('1991-92',78615,'DET',0,'0-6'),('1994-95',182,'MIA',32,'30-32'),('1994-95',943,'GSW',33,'9-33')]:
+        for season,pid,team,jersey,original in [('1991-92',428,'BOS',20,'4-20'),('1991-92',77167,'SAS',25,'15-25'),('1991-92',78615,'DET',0,'0-6'),('1994-95',182,'MIA',32,'30-32'),('1994-95',943,'GSW',9,'9-33')]:
             audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
             e=next(e for e in audit['jersey_evidence'] if e['player_id']==pid and e['team']==team)
             self.assertEqual(e['jersey'],jersey)

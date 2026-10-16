@@ -27,13 +27,15 @@ Modern counts are now 299, 315 and 325 respectively; 939 modern entries replace 
 
 The expansion encountered incomplete or nullable NBA appearance logs, alternate legacy player IDs, rounded eligibility boundaries, conflicting counting totals, misspelled names, renamed franchises, tied awards, traded-player championship membership and blank/composite jerseys. Scoped proofs preserve the original data and selected resolution. No universal 82-GP requirement is applied.
 
-Examples include recovering Loy Vaught's legacy-ID appearances; preserving Sidney Moncrief's 1987–88 NBA 12 blocks versus archive 14 and Sidney Green's 1984–85 NBA 11 versus archive 14; correcting Steve Johnson's erroneous post-trade KCK appearances; and earlier jersey corrections for Billy Owens MIA (32), Harold Miner MIA (4) and Ryan Lorthridge GSW (33). Detailed batch reports and machine-readable audit files preserve these decisions.
+Examples include recovering Loy Vaught's legacy-ID appearances; preserving Sidney Moncrief's 1987–88 NBA 12 blocks versus archive 14 and Sidney Green's 1984–85 NBA 11 versus archive 14; correcting Steve Johnson's erroneous post-trade KCK appearances; and earlier jersey corrections for Billy Owens MIA (32), Harold Miner MIA (4) and Ryan Lorthridge GSW (initially 33, subsequently corrected to 9 after user evidence review). Detailed batch reports and machine-readable audit files preserve these decisions.
 
 ## Items requiring stronger jersey evidence
 
-**Rony Seikaly, 1994–95 GSW:** the game currently stores 4. Its proof lists `4 Rony Seikaly (#9)` and selected the register's main number. That does not establish which came last. Treat 4 as provisional pending dated evidence distinguishing 4 and 9. This review flags the unsupported chronology; it does not guess a replacement or claim that the existing completion status proves the final number.
+**User evidence follow-up:** all six uploaded images were visually reviewed. They show the 1994–95 roster alternatives (Seikaly 4/9; Lorthridge 9/33), Seikaly as 4 in 1995–96, Webber as 4 in 1993–94, the trade/signing timeline, a 1995 SkyBox card listing Seikaly 9 after the trade, and Wikipedia's 1994–95 roster listing Seikaly 4 / Lorthridge 9.
 
-Two existing values are explicitly based on inferred ordered history: **Vinnie Johnson SAS 1991–92 = 25** and **Ryan Lorthridge GSW 1994–95 = 33**. Their sources and alternatives remain preserved. Stronger dated confirmation would improve confidence. Sherman Douglas BOS 1991–92 = 20 additionally has an explicit first-4 then-20 account, distinguished from those two inferences.
+The user accepts **Seikaly 4** and explicitly corrects **Lorthridge from 33 to 9**. These are retained as documented chronology inferences, not exact final-game visual verification. Lorthridge joined in January after Webber's November departure; neither screenshot ordering nor the card dates the actual number changes. The former assumption that Fanspo display order established Lorthridge's final 33 is superseded. Both proofs preserve their prior decisions and all six image hashes/Library references.
+
+The Seikaly open question is closed under the accepted inference standard. Three values carry an inference qualification: **Seikaly GSW 1994–95 = 4**, **Lorthridge GSW 1994–95 = 9**, and **Vinnie Johnson SAS 1991–92 = 25**. Stronger dated confirmation remains welcome. Sherman Douglas BOS 1991–92 = 20 additionally has an explicit first-4 then-20 account.
 
 The unactivated 1980–81 season still has seven unresolved final numbers:
 

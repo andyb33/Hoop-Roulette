@@ -43,7 +43,7 @@ The forty-three playable datasets from 1983–84 through 2025–26 contain:
 
 The new historical seasons retain their independent stats audits and official
 final-appearance jersey audits. See [recovery completion report](docs/HISTORICAL_COMPLETION_1983_1986.md).
-The [October 16 data review](docs/DATA_REVIEW_2026_10_16.md) fixes four rounded-MPG eligibility errors, records one provisional active jersey (Rony Seikaly GSW 1994–95, 4 versus 9), and identifies two existing historical jersey inferences. Seven 1980–81 final jerseys remain unresolved. The final batch is not activated. Existing balance reports describe the earlier pool and have not been rerun.
+The [October 16 data review](docs/DATA_REVIEW_2026_10_16.md) fixes four rounded-MPG eligibility errors, records the accepted Seikaly 4 / Lorthridge 9 chronology inference and the existing Vinnie Johnson inference. Seven 1980–81 final jerseys remain unresolved. The final batch is not activated. Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. The next desktop package will be built after Stage 2 reaches 1980–81. Stage 3 then continues through 1973–74.
 Stage 2 covers 1980–81 through 2009–10; Stage 3 covers 1973–74 through 1979–80.

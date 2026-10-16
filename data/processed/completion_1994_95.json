@@ -6,7 +6,7 @@
   "jerseys_verified": 250,
   "unresolved": [],
   "staged_sha256": "e1be67b4133284fb39245d9c254d0d03fe16022708e6029a48dff3e128fbc85d",
-  "game_sha256": "8a52d3e0e2ce5d848571460a5e9eaa9d239abcfdb23f6feb99af09ea1be486c7",
+  "game_sha256": "fb885941d260f964b123cbd14cc60cb04bb338a5a8ffa45bcf7b8bb7921b14af",
   "sources": {
     "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1994-95&SeasonType=Regular+Season",
     "all_nba": "https://www.nba.com/news/history-all-nba-teams",
@@ -2239,7 +2239,7 @@
         "played": "1"
       },
       "box_score_sha256": "8cdfaa4d178407bb70c1bcc292867ca73125e05a0d76836beb940be29f47f76a",
-      "jersey_method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+      "jersey_method": "User-reviewed roster, trade chronology and trading-card evidence; final number inferred",
       "jersey_resolution": {
         "season": "1994-95",
         "player_id": 938,
@@ -2249,8 +2249,8 @@
         "game_date": "1995-02-20",
         "original_nba_jersey": "4-9",
         "resolved_jersey": 4,
-        "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
-        "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+        "status": "INFERRED_USER_REVIEWED_CHRONOLOGY",
+        "method": "User-reviewed roster, trade chronology and trading-card evidence; final number inferred",
         "source": "https://apbr.org/nmbr9000.html",
         "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
         "source_format": "original_html",
@@ -2258,7 +2258,68 @@
         "uniform_register_entry": "4 Rony Seikaly (#9)",
         "alternate_register_number": 9,
         "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
-        "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+        "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+        "superseded_resolution": {
+          "season": "1994-95",
+          "player_id": 938,
+          "player": "Rony Seikaly",
+          "team": "GSW",
+          "game_id": "0029400679",
+          "game_date": "1995-02-20",
+          "original_nba_jersey": "4-9",
+          "resolved_jersey": 4,
+          "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+          "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+          "source": "https://apbr.org/nmbr9000.html",
+          "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+          "source_format": "original_html",
+          "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+          "uniform_register_entry": "4 Rony Seikaly (#9)",
+          "alternate_register_number": 9,
+          "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
+          "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+        },
+        "user_supplied_evidence": [
+          {
+            "filename": "image(20261016-075645).png",
+            "library_file_id": "libfile_f9e280db0f3c819197d347278def9151",
+            "sha256": "25ebaf36d166604d6fef0d5f768b119d07fbd8fb3614856eb4950c972845df34",
+            "visual_observation": "1994-95 Basketball Reference roster lists Seikaly 4/9 and Lorthridge 9/33; listing order does not establish chronology."
+          },
+          {
+            "filename": "image(20261016-075649).png",
+            "library_file_id": "libfile_b0a0f4db4370819194aa15c9bf2b6f58",
+            "sha256": "2d2947d0ffef5c4962411b94ca78654e22614c5fcae010b03d1d0d35b023311c",
+            "visual_observation": "1995-96 Basketball Reference roster lists Seikaly only under 4."
+          },
+          {
+            "filename": "image(20261016-075652).png",
+            "library_file_id": "libfile_4c1c210cbce08191aeaec891bc36ff54",
+            "sha256": "bd3996366b91e386d00d27047f742f9f4da8fbc3ade9db303a0afea1de91dcb8",
+            "visual_observation": "1993-94 Basketball Reference roster lists Webber under 4."
+          },
+          {
+            "filename": "image(20261016-075654).png",
+            "library_file_id": "libfile_fe03e236b8648191a7c3c769dc283558",
+            "sha256": "9ca931005de374edc3a9e1a6a7ca90d8f7819a349eb3ea77eebf70eef2f76550",
+            "visual_observation": "Transactions: Seikaly arrives Nov 2 1994, Webber departs Nov 17 1994, Lorthridge signs Jan 12 1995 and signs for remainder Jan 22."
+          },
+          {
+            "filename": "image(20261016-075655).png",
+            "library_file_id": "libfile_8002399dadb08191a8c6d7d8601bd90f",
+            "sha256": "e3d4409357b6d495377aa83079813f756ffb870e026425b9f5dcafbd318ab619",
+            "visual_observation": "1995 SkyBox card 329 explicitly lists Seikaly jersey 9 and mentions Nov 2 1994 trade; establishes 9 usage, not exact switch date."
+          },
+          {
+            "filename": "image(20261016-075656).png",
+            "library_file_id": "libfile_2913969015d08191a9a5f01487325e33",
+            "sha256": "be61e03b72e123e61f6a26d552a44b3fdcc6c6287ab022e02b3d18325d7a8281",
+            "visual_observation": "Wikipedia 1994-95 roster lists Seikaly 4 and Lorthridge 9; supporting season-roster evidence, not an exact final-game photograph."
+          }
+        ],
+        "decision_basis": "User explicitly accepts Seikaly 4 and directs Lorthridge 9. Combined roster/number-availability reasoning and next-season continuity support these final values. Lorthridge joined after Webber departed; the evidence does not date either number change or directly show the final-game jersey. Prior Fanspo display-order inference for Lorthridge 33 is superseded.",
+        "confidence": "documented inference; not exact final-game visual verification",
+        "user_review_date": "2026-10-16"
       },
       "identity_resolution": null,
       "season_total_resolution": null,
@@ -2272,8 +2333,8 @@
       "team": "GSW",
       "last_game_date": "1995-04-23",
       "game_id": "0029401099",
-      "jersey": 33,
-      "jersey_display": "33",
+      "jersey": 9,
+      "jersey_display": "9",
       "official_box_score_player": {
         "personId": 943,
         "firstName": "Ryan",
@@ -2282,7 +2343,7 @@
         "played": "1"
       },
       "box_score_sha256": "1fdcaf9860267342ba75b2a5f67f2af9a0571cf5c0a7570328d6107c5fb2188a",
-      "jersey_method": "Official roster alternatives resolved by independent ordered uniform history",
+      "jersey_method": "User-reviewed roster, trade chronology and trading-card evidence; final number inferred",
       "jersey_resolution": {
         "season": "1994-95",
         "player_id": 943,
@@ -2291,9 +2352,9 @@
         "game_id": "0029401099",
         "game_date": "1995-04-23",
         "original_nba_jersey": "9-33",
-        "resolved_jersey": 33,
-        "status": "VERIFIED_CHRONOLOGICAL_UNIFORM_HISTORY",
-        "method": "Official roster alternatives resolved by independent ordered uniform history",
+        "resolved_jersey": 9,
+        "status": "INFERRED_USER_REVIEWED_CHRONOLOGY",
+        "method": "User-reviewed roster, trade chronology and trading-card evidence; final number inferred",
         "source": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612744&Season=1994-95&LeagueID=00",
         "source_sha256": "1ed783cb89188ecb11709a4f5b59cdfe6d95679f13227c7024c8fba93faa1891",
         "source_format": "official_json_payload",
@@ -2345,7 +2406,7 @@
             ]
           }
         ],
-        "decision_basis": "Infer later GSW number 33 from independent ordered history, replacing an unsupported assumption that the APBR main number was last. Original composite retained.",
+        "decision_basis": "User explicitly accepts Seikaly 4 and directs Lorthridge 9. Combined roster/number-availability reasoning and next-season continuity support these final values. Lorthridge joined after Webber departed; the evidence does not date either number change or directly show the final-game jersey. Prior Fanspo display-order inference for Lorthridge 33 is superseded.",
         "superseded_resolution": {
           "season": "1994-95",
           "player_id": 943,
@@ -2354,18 +2415,122 @@
           "game_id": "0029401099",
           "game_date": "1995-04-23",
           "original_nba_jersey": "9-33",
-          "resolved_jersey": 9,
-          "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
-          "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
-          "source": "https://apbr.org/nmbr9000.html",
-          "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
-          "source_format": "original_html",
+          "resolved_jersey": 33,
+          "status": "VERIFIED_CHRONOLOGICAL_UNIFORM_HISTORY",
+          "method": "Official roster alternatives resolved by independent ordered uniform history",
+          "source": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612744&Season=1994-95&LeagueID=00",
+          "source_sha256": "1ed783cb89188ecb11709a4f5b59cdfe6d95679f13227c7024c8fba93faa1891",
+          "source_format": "official_json_payload",
           "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
           "uniform_register_entry": "9 Ryan Lorthridge (#33)",
           "alternate_register_number": 33,
           "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
-          "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
-        }
+          "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+          "official_roster_row": {
+            "TeamID": 1610612744,
+            "SEASON": "1994",
+            "LeagueID": "00",
+            "PLAYER": "Ryan Lorthridge",
+            "NICKNAME": "Ryan",
+            "PLAYER_SLUG": "ryan-lorthridge",
+            "NUM": "9-33",
+            "POSITION": "G",
+            "HEIGHT": "6-4",
+            "WEIGHT": "190",
+            "BIRTH_DATE": "JUL 27, 1972",
+            "AGE": 22.0,
+            "EXP": "R",
+            "SCHOOL": "Jackson State",
+            "PLAYER_ID": 943,
+            "HOW_ACQUIRED": null,
+            "SUPPLEMENTAL_STATUS": 0
+          },
+          "chronology_sources": [
+            {
+              "source": "https://fanspo.com/nba/players/ryan-lorthridge/943",
+              "display_order": "reverse chronological",
+              "reviewed_team_stints": [
+                {
+                  "team": "GSW",
+                  "ending_years": [
+                    1995,
+                    1995
+                  ],
+                  "jersey": 33
+                },
+                {
+                  "team": "GSW",
+                  "ending_years": [
+                    1995,
+                    1995
+                  ],
+                  "jersey": 9
+                }
+              ]
+            }
+          ],
+          "decision_basis": "Infer later GSW number 33 from independent ordered history, replacing an unsupported assumption that the APBR main number was last. Original composite retained.",
+          "superseded_resolution": {
+            "season": "1994-95",
+            "player_id": 943,
+            "player": "Ryan Lorthridge",
+            "team": "GSW",
+            "game_id": "0029401099",
+            "game_date": "1995-04-23",
+            "original_nba_jersey": "9-33",
+            "resolved_jersey": 9,
+            "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+            "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+            "source": "https://apbr.org/nmbr9000.html",
+            "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+            "source_format": "original_html",
+            "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+            "uniform_register_entry": "9 Ryan Lorthridge (#33)",
+            "alternate_register_number": 33,
+            "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
+            "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+          }
+        },
+        "user_supplied_evidence": [
+          {
+            "filename": "image(20261016-075645).png",
+            "library_file_id": "libfile_f9e280db0f3c819197d347278def9151",
+            "sha256": "25ebaf36d166604d6fef0d5f768b119d07fbd8fb3614856eb4950c972845df34",
+            "visual_observation": "1994-95 Basketball Reference roster lists Seikaly 4/9 and Lorthridge 9/33; listing order does not establish chronology."
+          },
+          {
+            "filename": "image(20261016-075649).png",
+            "library_file_id": "libfile_b0a0f4db4370819194aa15c9bf2b6f58",
+            "sha256": "2d2947d0ffef5c4962411b94ca78654e22614c5fcae010b03d1d0d35b023311c",
+            "visual_observation": "1995-96 Basketball Reference roster lists Seikaly only under 4."
+          },
+          {
+            "filename": "image(20261016-075652).png",
+            "library_file_id": "libfile_4c1c210cbce08191aeaec891bc36ff54",
+            "sha256": "bd3996366b91e386d00d27047f742f9f4da8fbc3ade9db303a0afea1de91dcb8",
+            "visual_observation": "1993-94 Basketball Reference roster lists Webber under 4."
+          },
+          {
+            "filename": "image(20261016-075654).png",
+            "library_file_id": "libfile_fe03e236b8648191a7c3c769dc283558",
+            "sha256": "9ca931005de374edc3a9e1a6a7ca90d8f7819a349eb3ea77eebf70eef2f76550",
+            "visual_observation": "Transactions: Seikaly arrives Nov 2 1994, Webber departs Nov 17 1994, Lorthridge signs Jan 12 1995 and signs for remainder Jan 22."
+          },
+          {
+            "filename": "image(20261016-075655).png",
+            "library_file_id": "libfile_8002399dadb08191a8c6d7d8601bd90f",
+            "sha256": "e3d4409357b6d495377aa83079813f756ffb870e026425b9f5dcafbd318ab619",
+            "visual_observation": "1995 SkyBox card 329 explicitly lists Seikaly jersey 9 and mentions Nov 2 1994 trade; establishes 9 usage, not exact switch date."
+          },
+          {
+            "filename": "image(20261016-075656).png",
+            "library_file_id": "libfile_2913969015d08191a9a5f01487325e33",
+            "sha256": "be61e03b72e123e61f6a26d552a44b3fdcc6c6287ab022e02b3d18325d7a8281",
+            "visual_observation": "Wikipedia 1994-95 roster lists Seikaly 4 and Lorthridge 9; supporting season-roster evidence, not an exact final-game photograph."
+          }
+        ],
+        "confidence": "documented inference; not exact final-game visual verification",
+        "user_review_date": "2026-10-16"
       },
       "identity_resolution": null,
       "season_total_resolution": null,

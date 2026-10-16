@@ -1,5 +1,7 @@
 # Historical expansion: 1992–93 through 1994–95
 
+Follow-up: user-reviewed six-image evidence supersedes the earlier Ryan Lorthridge GSW 1994–95 value of 33 with **9**; Seikaly remains **4**, accepted as documented chronology inference. Earlier decisions below are preserved as history. See [current review](DATA_REVIEW_2026_10_16.md).
+
 | Season | Eligible entries | Independent comparisons | Verified jerseys | Champion entries |
 |---|---:|---:|---:|---|
 | 1994–95 | 250 | 1,750 | 250 | HOU: 7 |

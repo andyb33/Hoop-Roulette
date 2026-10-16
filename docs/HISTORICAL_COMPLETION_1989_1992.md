@@ -1,5 +1,7 @@
 # Historical expansion: 1989–90 through 1991–92
 
+Follow-up: user-reviewed six-image evidence supersedes the earlier Ryan Lorthridge GSW 1994–95 value of 33 with **9**; Seikaly remains **4**, accepted as documented chronology inference. Earlier decisions below are preserved as history. See [current review](DATA_REVIEW_2026_10_16.md).
+
 | Season | Eligible entries | Independent comparisons | Verified jerseys | Champion entries |
 |---|---:|---:|---:|---|
 | 1991–92 | 239 | 1,673 | 239 | CHI: 7 |

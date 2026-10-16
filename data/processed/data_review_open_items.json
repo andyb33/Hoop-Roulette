@@ -1,20 +1,6 @@
 {
   "review_date": "2026-10-16",
-  "active_jersey_recheck": [
-    {
-      "season": "1994-95",
-      "player_id": 938,
-      "player": "Rony Seikaly",
-      "team": "GSW",
-      "current_value": 4,
-      "alternatives": [
-        4,
-        9
-      ],
-      "status": "needs_dated_chronology_evidence",
-      "evidence": "data/staging/jersey_1994_95_938_GSW_resolution.json"
-    }
-  ],
+  "active_jersey_recheck": [],
   "inferred_existing_jerseys": [
     {
       "season": "1991-92",
@@ -26,7 +12,15 @@
       "season": "1994-95",
       "player": "Ryan Lorthridge",
       "team": "GSW",
-      "current_value": 33
+      "current_value": 9,
+      "basis": "User-reviewed six-image evidence and chronology"
+    },
+    {
+      "season": "1994-95",
+      "player": "Rony Seikaly",
+      "team": "GSW",
+      "current_value": 4,
+      "basis": "User-reviewed six-image evidence and chronology"
     }
   ],
   "inactive_1980_81_pending": [
@@ -95,5 +89,6 @@
     }
   ],
   "stats_missing_values": 0,
-  "manual_user_data_required": false
+  "manual_user_data_required": false,
+  "note": "Seikaly open question closed as accepted inference; Lorthridge 33 superseded by 9. Seven 1980-81 cases remain unresolved."
 }
