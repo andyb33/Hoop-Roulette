@@ -1,0 +1,99 @@
+{
+  "review_date": "2026-10-16",
+  "active_jersey_recheck": [
+    {
+      "season": "1994-95",
+      "player_id": 938,
+      "player": "Rony Seikaly",
+      "team": "GSW",
+      "current_value": 4,
+      "alternatives": [
+        4,
+        9
+      ],
+      "status": "needs_dated_chronology_evidence",
+      "evidence": "data/staging/jersey_1994_95_938_GSW_resolution.json"
+    }
+  ],
+  "inferred_existing_jerseys": [
+    {
+      "season": "1991-92",
+      "player": "Vinnie Johnson",
+      "team": "SAS",
+      "current_value": 25
+    },
+    {
+      "season": "1994-95",
+      "player": "Ryan Lorthridge",
+      "team": "GSW",
+      "current_value": 33
+    }
+  ],
+  "inactive_1980_81_pending": [
+    {
+      "season": "1980-81",
+      "player_id": 76418,
+      "player": "Don Collins",
+      "team": "ATL",
+      "game_id": "0028000533",
+      "game_date": "1981-01-16",
+      "original_nba_jersey": "7-42"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 78215,
+      "player": "Ricky Sobers",
+      "team": "CHI",
+      "game_id": "0028000942",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "14-40"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 78222,
+      "player": "Jim Spanarkel",
+      "team": "DAL",
+      "game_id": "0028000938",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "33-34"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 77623,
+      "player": "Paul Mokeski",
+      "team": "DET",
+      "game_id": "0028000929",
+      "game_date": "1981-03-28",
+      "original_nba_jersey": ""
+    },
+    {
+      "season": "1980-81",
+      "player_id": 76317,
+      "player": "Don Buse",
+      "team": "IND",
+      "game_id": "0028000942",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "10-11"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 77633,
+      "player": "Johnny Moore",
+      "team": "SAS",
+      "game_id": "0028000935",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "00-10"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 76162,
+      "player": "Henry Bibby",
+      "team": "SDC",
+      "game_id": "0028000941",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "10-15"
+    }
+  ],
+  "stats_missing_values": 0,
+  "manual_user_data_required": false
+}

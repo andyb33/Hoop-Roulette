@@ -4,7 +4,7 @@
     "minimum_team_gp": 30,
     "minimum_team_mpg": 15.0
   },
-  "eligible_player_team_records": 317,
+  "eligible_player_team_records": 315,
   "eligible_records_by_team": {
     "ATL": 12,
     "BKN": 10,
@@ -15,7 +15,7 @@
     "DAL": 12,
     "DEN": 8,
     "DET": 10,
-    "GSW": 14,
+    "GSW": 13,
     "HOU": 8,
     "IND": 11,
     "LAC": 11,
@@ -24,7 +24,7 @@
     "MIA": 10,
     "MIL": 9,
     "MIN": 8,
-    "NOP": 13,
+    "NOP": 12,
     "NYK": 9,
     "OKC": 12,
     "ORL": 11,
@@ -44,5 +44,6 @@
   "champion_records": 12,
   "major_award_records": 3,
   "filtered_from": "data/legacy/15gp_10mpg",
-  "eligibility_precision": "Existing published one-decimal MPG"
+  "eligibility_precision": "Published MPG with official total-minute verification for every displayed 15.0 boundary entry",
+  "eligibility_review": "data/processed/modern_unrounded_eligibility_review.json"
 }

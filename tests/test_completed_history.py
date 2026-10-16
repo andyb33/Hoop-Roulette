@@ -54,8 +54,8 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_loading_all_forty_three_seasons_has_no_duplicate_entries(self):
         rows=load_records()
-        self.assertEqual(len(rows),11540)
-        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),11540)
+        self.assertEqual(len(rows),11536)
+        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),11536)
         self.assertEqual(len({(r.season,r.team) for r in rows}),1223)
 
     def test_shortened_seasons_match_official_schedule(self):

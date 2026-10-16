@@ -11,9 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.10.9 includes the normal pool from 1983–84 through 2025–26.**
+**v0.10.10 includes the normal pool from 1983–84 through 2025–26.**
 The first twenty-seven Stage 2 seasons have been rebuilt and independently verified.
-The verified 43-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
+The 43-season pool is published on `main`. The reviewed source also includes the unactivated 1982–83/1981–82 completion work and staged 1980–81 stats.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -31,9 +31,9 @@ For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots
 Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
 Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The forty-three datasets from 1983–84 through 2025–26 are complete:
+The forty-three playable datasets from 1983–84 through 2025–26 contain:
 
-- 11,540 eligible player-team records across forty-three seasons and 1,223 team-season combinations;
+- 11,536 eligible player-team records across forty-three seasons and 1,223 team-season combinations;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -43,7 +43,7 @@ The forty-three datasets from 1983–84 through 2025–26 are complete:
 
 The new historical seasons retain their independent stats audits and official
 final-appearance jersey audits. See [recovery completion report](docs/HISTORICAL_COMPLETION_1983_1986.md).
-Existing balance reports describe the earlier pool and have not been rerun.
+The [October 16 data review](docs/DATA_REVIEW_2026_10_16.md) fixes four rounded-MPG eligibility errors, records one provisional active jersey (Rony Seikaly GSW 1994–95, 4 versus 9), and identifies two existing historical jersey inferences. Seven 1980–81 final jerseys remain unresolved. The final batch is not activated. Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. The next desktop package will be built after Stage 2 reaches 1980–81. Stage 3 then continues through 1973–74.
 Stage 2 covers 1980–81 through 2009–10; Stage 3 covers 1973–74 through 1979–80.

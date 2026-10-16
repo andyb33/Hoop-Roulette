@@ -26,21 +26,21 @@ For each season, the pipeline writes:
 - `data/processed/jersey_verification_<season>.csv`: final-game jersey audit;
 - `data/raw/<season>/`: untouched NBA API responses, excluded from Git.
 
-Current validated output:
+Original three-season pipeline output after the v0.10.10 cutoff review (the default game also includes 40 historical seasons):
 
 | Season | Eligible records | Jersey audits | Missing jerseys |
 |---|---:|---:|---:|
-| 2023–24 | 300 | 30 | 0 |
-| 2024–25 | 317 | 31 | 0 |
-| 2025–26 | 326 | 326 | 0 |
+| 2023–24 | 299 | 29 | 0 |
+| 2024–25 | 315 | 31 | 0 |
+| 2025–26 | 325 | 325 | 0 |
 
 ## Legacy snapshot
 
 `data/legacy/15gp_10mpg/` preserves the exact previous JSON, CSV, summaries
 and jersey evidence (1,346 entries). Raw source files remain untouched.
 Run `python scripts/filter_current_datasets.py` to reproduce the current
-943-entry pool from that snapshot. This migration uses the existing published
-one-decimal MPG; fresh source collectors apply the cutoff to their source MPG.
+939-entry modern pool from that snapshot. This migration uses the existing published
+one-decimal MPG with official total-minute proofs for all 15.0 boundary entries. The October 16 review removes four entries below 15 unrounded MPG; precise minutes resolve Reeves despite a whole-minute total of 660. See `data/processed/modern_unrounded_eligibility_review.json`.
 Historical distribution and simulation reports retain their original dataset
 and rule versions and have not been rerun for this release. GOAT pools keep
 their separate eligibility.

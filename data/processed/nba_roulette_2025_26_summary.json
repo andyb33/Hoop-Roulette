@@ -5,7 +5,7 @@
     "minimum_team_mpg": 15.0
   },
   "source_regular_season_games": 1230,
-  "eligible_player_team_records": 326,
+  "eligible_player_team_records": 325,
   "eligible_records_by_team": {
     "ATL": 10,
     "BKN": 13,
@@ -25,7 +25,7 @@
     "MIA": 12,
     "MIL": 12,
     "MIN": 8,
-    "NOP": 11,
+    "NOP": 10,
     "NYK": 9,
     "OKC": 13,
     "ORL": 10,
@@ -39,12 +39,13 @@
     "WAS": 13
   },
   "missing_jersey_records": 0,
-  "jersey_records_verified": 326,
-  "team_table_records_verified": 326,
+  "jersey_records_verified": 325,
+  "team_table_records_verified": 325,
   "all_nba_records": 15,
   "all_defense_records": 10,
   "champion_records": 9,
   "major_award_records": 3,
   "filtered_from": "data/legacy/15gp_10mpg",
-  "eligibility_precision": "Existing published one-decimal MPG"
+  "eligibility_precision": "Published MPG with official total-minute verification for every displayed 15.0 boundary entry",
+  "eligibility_review": "data/processed/modern_unrounded_eligibility_review.json"
 }
