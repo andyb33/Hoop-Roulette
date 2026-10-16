@@ -1,0 +1,18 @@
+{
+  "season": "1981-82",
+  "player_id": 78569,
+  "player": "Samuel Williams",
+  "team": "GSW",
+  "game_id": "0028100934",
+  "game_date": "1982-04-17",
+  "original_nba_jersey": "",
+  "resolved_jersey": 33,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "33 Sam Williams",
+  "season_team_register": "2 Joe Barry Carroll, 10 Joey Hassett, 12 Mike Gale, 13 Larry Smith, 18 Lorenzo Romar, 21 World Free, 22 Sonny Parker, 23 Rickey Brown, 30 Bernard King, 32 Lewis Lloyd, 33 Sam Williams, 44 Hank McDowell, 45 Purvis Short",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

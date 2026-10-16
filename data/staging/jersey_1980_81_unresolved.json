@@ -1,0 +1,70 @@
+{
+  "season": "1980-81",
+  "status": "needs_dated_final_number_evidence",
+  "entries": [
+    {
+      "season": "1980-81",
+      "player_id": 76418,
+      "player": "Don Collins",
+      "team": "ATL",
+      "game_id": "0028000533",
+      "game_date": "1981-01-16",
+      "original_nba_jersey": "7-42"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 78215,
+      "player": "Ricky Sobers",
+      "team": "CHI",
+      "game_id": "0028000942",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "14-40"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 78222,
+      "player": "Jim Spanarkel",
+      "team": "DAL",
+      "game_id": "0028000938",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "33-34"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 77623,
+      "player": "Paul Mokeski",
+      "team": "DET",
+      "game_id": "0028000929",
+      "game_date": "1981-03-28",
+      "original_nba_jersey": ""
+    },
+    {
+      "season": "1980-81",
+      "player_id": 76317,
+      "player": "Don Buse",
+      "team": "IND",
+      "game_id": "0028000942",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "10-11"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 77633,
+      "player": "Johnny Moore",
+      "team": "SAS",
+      "game_id": "0028000935",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "00-10"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 76162,
+      "player": "Henry Bibby",
+      "team": "SDC",
+      "game_id": "0028000941",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "10-15"
+    }
+  ],
+  "note": "APBR lists more than one number for these stints; main number and numeric ordering do not establish chronology. No guessed resolution has been applied."
+}

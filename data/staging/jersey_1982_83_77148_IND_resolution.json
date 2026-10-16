@@ -1,0 +1,18 @@
+{
+  "season": "1982-83",
+  "player_id": 77148,
+  "player": "George Johnson",
+  "team": "IND",
+  "game_id": "0028200937",
+  "game_date": "1983-04-17",
+  "original_nba_jersey": "",
+  "resolved_jersey": 24,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "24 George Johnson",
+  "season_team_register": "11 Marty Byrnes, 12 Butch Carter, 14 Jerry Sichting, 21 Jose Slaughter, 24 George Johnson, 25 Billy Knight, 32 Herb Williams, 33 Clark Kellogg, 35 Guy Morgan, 40 Russ Schoene, 44 John Duren, 45 Clemon Johnson, 52 Brad Branson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

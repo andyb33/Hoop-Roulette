@@ -1,0 +1,18 @@
+{
+  "season": "1981-82",
+  "player_id": 77149,
+  "player": "George Johnson",
+  "team": "SAS",
+  "game_id": "0028100941",
+  "game_date": "1982-04-18",
+  "original_nba_jersey": "",
+  "resolved_jersey": 52,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "52 George Johnson",
+  "season_team_register": "00 Johnny Moore, 10 Ron Brewer, 15 Ed Rains, 20 Gene Banks, 21 Roger Phegley, 23 Mike Bratz, 24 John Lambert, 30 Paul Griffin, 31 Kevin Restani, 32 Reggie Johnson, 34 Mike Mitchell, 40 David Corzine, 43 Steve Hayes, 43 Rich Yonaker, 44 George Gervin, 52 George Johnson, 53 Mark Olberding",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

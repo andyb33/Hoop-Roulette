@@ -1,0 +1,144 @@
+{
+  "season": "1982-83",
+  "completed_at": "2026-10-16T06:33:53.941811+00:00",
+  "passed": true,
+  "entries": 217,
+  "jerseys_verified": 217,
+  "unresolved": [],
+  "staged_sha256": "799d3f22dad84e959e07989fb42d8cbabefc5d7b84903c2af8bcb9b30c2089e7",
+  "game_sha256": "54cef89c0f995dc63d3d8d430f27f8ee7de48185f833178f4828546ca07958f5",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1982-83&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "moses-malone": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "sidney-moncrief": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "terry-cummings": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 11,
+  "title_game_verification": {
+    "game_id": "0048200043",
+    "game_date": "1983-05-31",
+    "champion_team": "PHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41982",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0048200043",
+        "GAME_DATE": "1983-05-31",
+        "MATCHUP": "LAL vs. PHL",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 41,
+        "FGA": 92,
+        "FG_PCT": 0.446,
+        "FG3M": 1,
+        "FG3A": 3,
+        "FG3_PCT": 0.333,
+        "FTM": 25,
+        "FTA": 31,
+        "FT_PCT": 0.806,
+        "OREB": 16,
+        "DREB": 27,
+        "REB": 43,
+        "AST": 26,
+        "STL": 7,
+        "BLK": 3,
+        "TOV": 20,
+        "PF": 31,
+        "PTS": 108,
+        "PLUS_MINUS": -7,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41982",
+        "TEAM_ID": 1610612755,
+        "TEAM_ABBREVIATION": "PHL",
+        "TEAM_NAME": "Philadelphia 76ers",
+        "GAME_ID": "0048200043",
+        "GAME_DATE": "1983-05-31",
+        "MATCHUP": "PHL @ LAL",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 42,
+        "FGA": 81,
+        "FG_PCT": 0.519,
+        "FG3M": 0,
+        "FG3A": 1,
+        "FG3_PCT": 0.0,
+        "FTM": 31,
+        "FTA": 40,
+        "FT_PCT": 0.775,
+        "OREB": 13,
+        "DREB": 28,
+        "REB": 41,
+        "AST": 29,
+        "STL": 9,
+        "BLK": 11,
+        "TOV": 17,
+        "PF": 28,
+        "PTS": 115,
+        "PLUS_MINUS": 7,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1982-83&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "835d5ad82fb6485b94d1d3e72c1a1e99707b66ab800b356f547409cc531de12d"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048200043/box-score",
+  "champion_team": "PHI",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BOS": 8,
+    "CHI": 9,
+    "CLE": 10,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 7,
+    "GSW": 11,
+    "HOU": 10,
+    "IND": 10,
+    "KCK": 9,
+    "LAL": 9,
+    "MIL": 10,
+    "NJN": 10,
+    "NYK": 11,
+    "PHI": 10,
+    "PHX": 6,
+    "POR": 8,
+    "SAS": 8,
+    "SDC": 11,
+    "SEA": 11,
+    "UTA": 10,
+    "WSB": 10
+  }
+}

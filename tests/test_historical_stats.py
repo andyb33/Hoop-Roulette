@@ -9,6 +9,16 @@ from scripts import collect_historical_stats as collector
 
 
 class HistoricalStatsTests(unittest.TestCase):
+    def test_early_eighties_reference_names(self):
+        from scripts.verify_historical_stats import name_key
+        self.assertEqual(name_key("Edmund Sherod"), name_key("Ed Sherod"))
+        self.assertEqual(name_key("Mitchell Anderson"), name_key("J.J. Anderson"))
+        self.assertEqual(name_key("Billyray Bates"), name_key("Billy Ray"))
+        self.assertEqual(name_key("Peter Verhoeven"), name_key("Pete Verhoeven"))
+        self.assertEqual(name_key("Jan Van Breda Kolff"), name_key("Jan Van"))
+        self.assertEqual(name_key("Garfield Heard"), name_key("Gar Heard"))
+        self.assertEqual(name_key("Charles Whitney"), name_key("Hawkeye Whitney"))
+
     def test_decimal_ties_round_up(self):
         self.assertEqual(collector.rounded_rate(153, 60), 2.6)
         self.assertEqual(collector.rounded_rate(855, 60), 14.3)

@@ -1,0 +1,18 @@
+{
+  "season": "1982-83",
+  "player_id": 77819,
+  "player": "Jim Paxson",
+  "team": "POR",
+  "game_id": "0028200939",
+  "game_date": "1983-04-17",
+  "original_nba_jersey": "",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "4 Jim Paxson",
+  "season_team_register": "2 Linton Townes, 3 Jeff Lamp, 4 Jim Paxson, 7 Hank McDowell, 10 Don Buse, 12 Lafayette Lever, 14 Darnell Valentine, 22 Jeff Judkins, 24 Audie Norris, 31 Peter Verhoeven, 33 Calvin Natt, 34 Kenny Carr, 42 Wayne Cooper, 43 Mychal Thompson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

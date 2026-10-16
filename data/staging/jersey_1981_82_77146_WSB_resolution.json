@@ -1,0 +1,24 @@
+{
+  "season": "1981-82",
+  "player_id": 77146,
+  "player": "Frank Johnson",
+  "team": "WSB",
+  "game_id": "0028100938",
+  "game_date": "1982-04-18",
+  "original_nba_jersey": " ",
+  "resolved_jersey": 15,
+  "status": "VERIFIED_OFFICIAL_CLUB_REGISTER",
+  "method": "Official Wizards all-time uniform register; Frank Johnson has one listed franchise number",
+  "source": "https://library.sfo2.cdn.digitaloceanspaces.com/publications/basketball/yearbooks/KWASBMG-2015.pdf",
+  "source_sha256": "2ac53f772394df20ec04e903afe2b03b47fec95fddf95445fa7e186e671b25a3",
+  "source_format": "official_club_pdf_reprint",
+  "pdf_page": 186,
+  "printed_page": 197,
+  "uniform_register_entry": "15 \u2014 Frank Johnson",
+  "visual_review": "Reviewed rendered official ALL-TIME NUMBERS page: Frank Johnson appears under 15 and has no alternative number listed.",
+  "independent_register_omission": {
+    "source": "https://apbr.org/nmbr8090.html",
+    "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+    "note": "1981-82 WASHINGTON BULLETS list omits Frank Johnson; no jersey inferred from its absence."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "season": "1982-83",
+  "player_id": 78569,
+  "player": "Samuel Williams",
+  "team": "GSW",
+  "game_id": "0028200936",
+  "game_date": "1983-04-16",
+  "original_nba_jersey": "",
+  "resolved_jersey": 33,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "33 Sam Williams",
+  "season_team_register": "2 Joe Barry Carroll, 10 Joey Hassett, 13 Larry Smith, 15 Lester Conner, 17 Ron Brewer, 18 Lorenzo Romar, 20 Michael Ray Richardson, 21 World Free, 21 Eric Floyd, 23 Rickey Brown, 32 Lewis Lloyd, 33 Sam Williams, 35 Larry Kenon, 40 Terry Duerod, 41 Derek Smith, 43 Mickey Johnson, 44 Hank McDowell, 45 Purvis Short, 55 Chris Engler",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

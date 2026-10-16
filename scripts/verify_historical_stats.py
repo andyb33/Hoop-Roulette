@@ -51,8 +51,8 @@ REFERENCES.update({season: {
     "provenance": "https://www.kaggle.com/datasets/drgilermo/nba-players-stats",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Archived Basketball Reference totals from NBA Players stats since 1950; exact ending Year and individual traded-player stints retained. Rates derive from original totals with decimal half-up rounding; original archive and selected totals preserved."
-} for season in ("1988-89", "1987-88", "1986-87", "1985-86", "1984-85", "1983-84")})
-SCHEDULES.update({"1988-89": (1025,82), "1987-88": (943,82), "1986-87": (943,82), "1985-86": (943,82), "1984-85": (943,82), "1983-84": (943,82)})
+} for season in ("1988-89", "1987-88", "1986-87", "1985-86", "1984-85", "1983-84", "1982-83", "1981-82", "1980-81")})
+SCHEDULES.update({"1988-89": (1025,82), "1987-88": (943,82), "1986-87": (943,82), "1985-86": (943,82), "1984-85": (943,82), "1983-84": (943,82), "1982-83": (943,82), "1981-82": (943,82), "1980-81": (943,82)})
 
 
 def extract_reference_csv(path, season, output):
@@ -140,7 +140,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "natearchibald":"tinyarchibald", "samuelwilliams":"samwilliams", "eddielee":"eddieleewilkins", "melvinturpin":"melturpin", "worldb":"worldfree", "worldbfree":"worldfree", "charlesdavis":"charliedavis", "michealray":"michealrayrichardson", "charlespittman":"charliepittman", "clifftrobinson":"cliffrobinson", "hotrod":"hotrodwilliams", "joebarry":"joebarrycarroll", "vinnydel":"vinnydelnegro", "michaelholton":"mikeholton", "dwaynewashington":"pearlwashington", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "garfieldheard":"garheard", "charleswhitney":"hawkeyewhitney", "janvanbredakolff":"janvan", "peterverhoeven":"peteverhoeven", "billyraybates":"billyray", "mitchellanderson":"jjanderson", "edmundsherod":"edsherod", "natearchibald":"tinyarchibald", "samuelwilliams":"samwilliams", "eddielee":"eddieleewilkins", "melvinturpin":"melturpin", "worldb":"worldfree", "worldbfree":"worldfree", "charlesdavis":"charliedavis", "michealray":"michealrayrichardson", "charlespittman":"charliepittman", "clifftrobinson":"cliffrobinson", "hotrod":"hotrodwilliams", "joebarry":"joebarrycarroll", "vinnydel":"vinnydelnegro", "michaelholton":"mikeholton", "dwaynewashington":"pearlwashington", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
 
 
 def verify(season):
@@ -324,12 +324,14 @@ def verify(season):
     if season in SCHEDULES:
         from urllib.parse import urlencode
         schedule_url = "https://stats.nba.com/stats/leaguegamefinder?" + urlencode({"LeagueID": "00", "Season": season, "SeasonType": "Regular Season"})
+        if int(season[:4]) < 1983:
+            schedule_url = "https://stats.nba.com/stats/leaguegamelog?" + urlencode({"LeagueID":"00", "Season":season, "SeasonType":"Regular Season", "PlayerOrTeam":"T", "Counter":0, "Direction":"ASC", "Sorter":"DATE", "DateFrom":"", "DateTo":""})
         schedule_path = raw / "reference/official_schedule.json"
         if not schedule_path.exists():
             with urlopen(Request(schedule_url, headers={"User-Agent": "Mozilla/5.0", "Referer": "https://www.nba.com/"}), timeout=45) as response:
                 schedule_path.write_bytes(response.read())
         payload = json.loads(schedule_path.read_text(encoding="utf-8"))
-        result = next(r for r in payload["resultSets"] if r["name"] == "LeagueGameFinderResults")
+        result = next(r for r in payload["resultSets"] if r["name"] == ("LeagueGameLog" if int(season[:4]) < 1983 else "LeagueGameFinderResults"))
         official_games, official_team_games = defaultdict(set), defaultdict(set)
         for values in result["rowSet"]:
             item = dict(zip(result["headers"], values))

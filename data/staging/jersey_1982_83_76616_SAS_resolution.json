@@ -1,0 +1,18 @@
+{
+  "season": "1982-83",
+  "player_id": 76616,
+  "player": "Mike Dunleavy",
+  "team": "SAS",
+  "game_id": "0028200934",
+  "game_date": "1983-04-16",
+  "original_nba_jersey": "",
+  "resolved_jersey": 10,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "10 Mike Dunleavy",
+  "season_team_register": "00 Johnnie Moore, 1 Oliver Robinson, 5 Billy Paultz, 9 Robert Smith, 10 Mike Dunleavy, 15 Ed Rains, 20 Gene Banks, 21 Roger Phegley, 25 Jim Johnstone, 25 Coby Dietrick, 30 Paul Griffin, 33 Bill Willoughby, 34 Mike Mitchell, 35 Mike Sanders, 42 Edgar Jones, 44 George Gervin, 50 Geoff Crompton, 53 Artis Gilmore",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

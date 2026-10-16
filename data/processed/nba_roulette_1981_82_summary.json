@@ -1,0 +1,141 @@
+{
+  "season": "1981-82",
+  "completed_at": "2026-10-16T06:43:53.090665+00:00",
+  "passed": true,
+  "entries": 208,
+  "jerseys_verified": 208,
+  "unresolved": [],
+  "staged_sha256": "259e795770da00f68f2c59e670a1fc1c76f5e799cf5b55b0fda914f3d10b53de",
+  "game_sha256": "947bd5b559a5d323eec163a3a20c86c59e5fbc27f68696c8d89a8c9864af8aec",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1981-82&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "buck-williams": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "moses-malone": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0048100045",
+    "game_date": "1982-06-08",
+    "champion_team": "LAL",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41981",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0048100045",
+        "GAME_DATE": "1982-06-08",
+        "MATCHUP": "LAL vs. PHL",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 47,
+        "FGA": 87,
+        "FG_PCT": 0.54,
+        "FG3M": 0,
+        "FG3A": 0,
+        "FG3_PCT": null,
+        "FTM": 20,
+        "FTA": 25,
+        "FT_PCT": 0.8,
+        "OREB": 15,
+        "DREB": 34,
+        "REB": 49,
+        "AST": 33,
+        "STL": 12,
+        "BLK": 11,
+        "TOV": 22,
+        "PF": 26,
+        "PTS": 114,
+        "PLUS_MINUS": 10,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41981",
+        "TEAM_ID": 1610612755,
+        "TEAM_ABBREVIATION": "PHL",
+        "TEAM_NAME": "Philadelphia 76ers",
+        "GAME_ID": "0048100045",
+        "GAME_DATE": "1982-06-08",
+        "MATCHUP": "PHL @ LAL",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 41,
+        "FGA": 91,
+        "FG_PCT": 0.451,
+        "FG3M": 0,
+        "FG3A": 2,
+        "FG3_PCT": 0.0,
+        "FTM": 22,
+        "FTA": 29,
+        "FT_PCT": 0.759,
+        "OREB": 14,
+        "DREB": 21,
+        "REB": 35,
+        "AST": 22,
+        "STL": 11,
+        "BLK": 7,
+        "TOV": 15,
+        "PF": 26,
+        "PTS": 104,
+        "PLUS_MINUS": -10,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1981-82&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "bddcb17456b6bf20eb7396269982b0370149542e793a0bd8bbf48e37f39e2e4c"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048100045/box-score",
+  "champion_team": "LAL",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BOS": 8,
+    "CHI": 9,
+    "CLE": 10,
+    "DAL": 10,
+    "DEN": 9,
+    "DET": 10,
+    "GSW": 9,
+    "HOU": 9,
+    "IND": 10,
+    "KCK": 12,
+    "LAL": 8,
+    "MIL": 9,
+    "NJN": 9,
+    "NYK": 8,
+    "PHI": 9,
+    "PHX": 8,
+    "POR": 9,
+    "SAS": 8,
+    "SDC": 10,
+    "SEA": 7,
+    "UTA": 8,
+    "WSB": 8
+  }
+}

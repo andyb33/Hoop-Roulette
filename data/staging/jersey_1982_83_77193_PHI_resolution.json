@@ -1,0 +1,18 @@
+{
+  "season": "1982-83",
+  "player_id": 77193,
+  "player": "Bobby Jones",
+  "team": "PHI",
+  "game_id": "0028200942",
+  "game_date": "1983-04-17",
+  "original_nba_jersey": "",
+  "resolved_jersey": 24,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "24 Bobby Jones",
+  "season_team_register": "2 Moses Malone, 3 Russ Schoene, 4 Clint Richardson, 6 Julius Erving, 7 J.J. Anderson, 8 Marc Iavaroni, 10 Maurice Cheeks, 14 Franklin Edwards, 22 Andrew Toney, 24 Bobby Jones, 25 Earl Cureton, 31 Mark McNamara, 33 Reggie Johnson, 45 Clemon Johnson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

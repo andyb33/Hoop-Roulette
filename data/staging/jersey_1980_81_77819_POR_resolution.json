@@ -1,0 +1,18 @@
+{
+  "season": "1980-81",
+  "player_id": 77819,
+  "player": "Jim Paxson",
+  "team": "POR",
+  "game_id": "0028000911",
+  "game_date": "1981-03-25",
+  "original_nba_jersey": "",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "4 Jim Paxson",
+  "season_team_register": "4 Jim Paxson, 10 Ron Brewer, 11 Mike Gale, 12 Billy Ray Bates, 14 Kelvin Ransey, 23 Roy Lee Hamilton, 25 Tom Owens, 30 Bob Gross, 32 Mike Harper, 33 Calvin Natt, 42 Kermit Washington, 43 Mychal Thompson, 44 Kevin Kunnert, 45 Geoff Crompton",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

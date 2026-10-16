@@ -1,0 +1,18 @@
+{
+  "season": "1982-83",
+  "player_id": 78299,
+  "player": "Jeff Taylor",
+  "team": "HOU",
+  "game_id": "0028200718",
+  "game_date": "1983-03-10",
+  "original_nba_jersey": "",
+  "resolved_jersey": 13,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "13 Jeff Taylor",
+  "season_team_register": "00 Calvin Garrett, 2 James Bailey, 5 Billy Paultz, 6 Tom Henderson, 11 Major Jones, 13 Jeff Taylor, 20 Terry Teagle, 22 Joe Bryant, 23 Calvin Murphy, 27 Caldwell Jones, 30 Allen Leavell, 42 Wally Walker, 44 Elvin Hayes, 52 Chuck Nevitt",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

@@ -1,0 +1,18 @@
+{
+  "season": "1980-81",
+  "player_id": 77010,
+  "player": "Keith Herron",
+  "team": "DET",
+  "game_id": "0028000928",
+  "game_date": "1981-03-27",
+  "original_nba_jersey": "",
+  "resolved_jersey": 33,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "33 Keith Herron",
+  "season_team_register": "11 Bob McAdoo, 15 Larry Wright, 22 Larry Drew, 25 John Long, 30 Ron Lee, 32 Greg Kelser, 33 Keith Herron, 35 Phil Hubbard, 41 Terry Tyler, 42 Wayne Robinson, 43 Tony Fuller, 44 Paul Mokeski (#53), 50 Lee Johnson, 50 Norman Black, 50 Edmund Lawrence, 54 Kent Benson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}
