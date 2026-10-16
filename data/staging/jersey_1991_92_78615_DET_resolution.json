@@ -1,0 +1,20 @@
+{
+  "season": "1991-92",
+  "player_id": 78615,
+  "player": "Orlando Woolridge",
+  "team": "DET",
+  "game_id": "0029101101",
+  "game_date": "1992-04-19",
+  "original_nba_jersey": "0-6",
+  "resolved_jersey": 0,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or exact season numerical roster",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Pistons.pdf",
+  "source_sha256": "b0a6845638588e1c8c07b72a1030e31dcf14301506e12893db6cc20c12393fa7",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "0 Orlando Woolridge 1991-92",
+  "season_team_register": "0 Orlando Woolridge (#6), 00 William Bedford, 3 Brad Sellers, 4 Joe Dumars, 5 Darrell Walker, 10 Dennis Rodman, 11 Isaiah Thomas, 12 Gerald Henderson, 14 Charlie Thomas, 22 John Salley, 23 Mark Aguirre, 30 Bob McCann, 32 Lance Blanks, 40 Bill Laimbeer",
+  "review": "Exact season/team/player checked; original NBA field preserved.",
+  "pdf_page": 89
+}

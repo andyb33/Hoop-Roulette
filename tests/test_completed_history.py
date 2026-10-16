@@ -8,7 +8,7 @@ from nba_roulette.data import ROOT, load_records
 
 class CompletedHistoryTests(unittest.TestCase):
     def test_promoted_stats_are_unchanged_and_all_jerseys_have_final_game_evidence(self):
-        for season, count in [('2022-23',305),('2021-22',317),('2020-21',307),('2019-20',298),('2018-19',307),('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287),('2009-10',273),('2008-09',274),('2007-08',271),('2006-07',286),('2005-06',275),('2004-05',283),('2003-04',260),('2002-03',265),('2001-02',268),('2000-01',267),('1999-00',266),('1998-99',234),('1997-98',269),('1996-97',254),('1995-96',258),('1994-95',250),('1993-94',246),('1992-93',247)]:
+        for season, count in [('2022-23',305),('2021-22',317),('2020-21',307),('2019-20',298),('2018-19',307),('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287),('2009-10',273),('2008-09',274),('2007-08',271),('2006-07',286),('2005-06',275),('2004-05',283),('2003-04',260),('2002-03',265),('2001-02',268),('2000-01',267),('1999-00',266),('1998-99',234),('1997-98',269),('1996-97',254),('1995-96',258),('1994-95',250),('1993-94',246),('1992-93',247),('1991-92',239),('1990-91',235),('1989-90',231)]:
             slug=season.replace('-','_')
             staged=ROOT/f'data/staging/stats_{slug}.json'
             output=ROOT/f'data/game/players_{slug}.json'
@@ -43,7 +43,7 @@ class CompletedHistoryTests(unittest.TestCase):
                 self.assertEqual(sum(r[award] for r in rows),2 if award == 'roy' and season in ('1999-00','1994-95') else 1)
 
     def test_championship_credit_requires_title_roster_and_team_stint(self):
-        for season in ('2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93'):
+        for season in ('2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90'):
             slug=season.replace('-','_')
             audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text(encoding='utf-8'))
             members={int(p['personId']) for p in audit['champion_roster']}
@@ -52,11 +52,11 @@ class CompletedHistoryTests(unittest.TestCase):
         bones=next(r for r in load_records(['2022-23']) if r.player_id==1630538 and r.team=='DEN')
         self.assertFalse(bones.champion)
 
-    def test_loading_all_thirty_four_seasons_has_no_duplicate_entries(self):
+    def test_loading_all_thirty_seven_seasons_has_no_duplicate_entries(self):
         rows=load_records()
-        self.assertEqual(len(rows),9586)
-        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),9586)
-        self.assertEqual(len({(r.season,r.team) for r in rows}),1002)
+        self.assertEqual(len(rows),10291)
+        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),10291)
+        self.assertEqual(len({(r.season,r.team) for r in rows}),1083)
 
     def test_shortened_seasons_match_official_schedule(self):
         for season, games, uniform in [('2020-21',1080,72),('2019-20',1059,None),('2018-19',1230,82)]:
@@ -91,7 +91,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertFalse(tor[202685].champion)   # Jonas Valanciunas: traded to Memphis.
 
     def test_workbook_reference_seasons_are_complete_and_pinned(self):
-        for season, count in [('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287),('2009-10',273),('2008-09',274),('2007-08',271),('2006-07',286),('2005-06',275),('2004-05',283),('2003-04',260),('2002-03',265),('2001-02',268),('2000-01',267),('1999-00',266),('1998-99',234),('1997-98',269),('1996-97',254),('1995-96',258),('1994-95',250),('1993-94',246),('1992-93',247)]:
+        for season, count in [('2017-18',303),('2016-17',310),('2015-16',293),('2014-15',314),('2013-14',291),('2012-13',289),('2011-12',276),('2010-11',287),('2009-10',273),('2008-09',274),('2007-08',271),('2006-07',286),('2005-06',275),('2004-05',283),('2003-04',260),('2002-03',265),('2001-02',268),('2000-01',267),('1999-00',266),('1998-99',234),('1997-98',269),('1996-97',254),('1995-96',258),('1994-95',250),('1993-94',246),('1992-93',247),('1991-92',239),('1990-91',235),('1989-90',231)]:
             slug=season.replace('-','_')
             report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text(encoding='utf-8'))
             self.assertTrue(report['passed'])
@@ -102,7 +102,7 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertEqual(len(report['reference_workbook_sha256']),64)
             self.assertIn('a19c7d43b65028d80c782ce64d308ed392c57bbf',report['reference']['url'])
             self.assertTrue(report['schedule_evidence']['matches'])
-            self.assertEqual(report['regular_season_games'],{'2012-13':1229,'2011-12':990,'2003-04':1189,'2002-03':1189,'2001-02':1189,'2000-01':1189,'1999-00':1189,'1998-99':725,'1997-98':1189,'1996-97':1189,'1995-96':1189,'1994-95':1107,'1993-94':1107,'1992-93':1107}.get(season,1230))
+            self.assertEqual(report['regular_season_games'],{'2012-13':1229,'2011-12':990,'2003-04':1189,'2002-03':1189,'2001-02':1189,'2000-01':1189,'1999-00':1189,'1998-99':725,'1997-98':1189,'1996-97':1189,'1995-96':1189,'1994-95':1107,'1993-94':1107,'1992-93':1107,'1991-92':1107,'1990-91':1107,'1989-90':1107}.get(season,1230))
             counts=report['schedule_evidence']['team_games']
             self.assertEqual(counts,{team:50 if season=='1998-99' else 66 if season=='2011-12' else 81 if season=='2012-13' and team in ('BOS','IND') else 82 for team in counts})
 
@@ -163,7 +163,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertNotIn('SEA', {r.team for r in load_records(['2008-09','2009-10'])})
         outcomes=RouletteEngine(rows).valid_outcomes(seattle, (Lock.TEAM,))
         self.assertTrue(outcomes)
-        self.assertEqual({r.season for r in outcomes}, {f'{year}-{str(year+1)[-2:]}' for year in range(1992,2007)})
+        self.assertEqual({r.season for r in outcomes}, {f'{year}-{str(year+1)[-2:]}' for year in range(1989,2007)})
         self.assertEqual({r.team for r in outcomes}, {'SEA'})
 
     def test_recovered_traded_champions_receive_credit_only_for_title_team(self):
@@ -217,7 +217,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertEqual(smith.player,'Steve Smith')
 
     def test_recovered_pre_bobcats_schedules_and_franchises(self):
-        for season in ('2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93'):
+        for season in ('2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90'):
             slug=season.replace('-','_')
             report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text())
             self.assertTrue(report['passed'] and report['schedule_evidence']['matches'])
@@ -433,3 +433,45 @@ class CompletedHistoryTests(unittest.TestCase):
                     self.assertEqual(p['source'],'https://apbr.org/nmbr9000.html')
                     self.assertEqual(p['source_format'],'original_html')
                     self.assertIn(str(p['resolved_jersey'])+' '+p['player'],p['uniform_register_entry'])
+
+    def test_1991_and_1989_stat_discrepancies_preserve_both_totals(self):
+        cases=[('1991-92',76017,'POR','blocks',12,'BLK',13,'bpg',0.2),
+               ('1989-90',165,'HOU','assists',232,'AST',234,'apg',2.9),
+               ('1989-90',137,'HOU','seconds',51900,'MIN',869,'mpg',29.0)]
+        for season,pid,team,source_field,original,official_field,total,rate,expected in cases:
+            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text())
+            proof=next(p for p in manifest['season_total_overrides'] if p['player_id']==pid)
+            self.assertEqual(proof['source_aggregate'][source_field],original)
+            self.assertEqual(proof['official_row'][official_field],total)
+            row=next(r for r in load_records([season]) if r.player_id==pid and r.team==team)
+            self.assertEqual(getattr(row,rate),expected)
+
+    def test_1991_and_1990_vaught_recovery_matches_canonical_totals(self):
+        for season,gp in [('1991-92',79),('1990-91',73)]:
+            proofs=json.loads((ROOT/f'data/staging/player_identity_{season.replace("-","_")}_resolutions.json').read_text())
+            p=next(p for p in proofs if p['canonical_player_id']==919)
+            self.assertEqual(p['legacy_player_id'],78412)
+            self.assertEqual(set(p['matched_fields']),{'GP','MIN','PTS','REB','AST','STL','BLK'})
+            for field in p['matched_fields']:self.assertEqual(p['legacy_aggregate'][field],p['canonical_official_row'][field])
+            row=next(r for r in load_records([season]) if r.player_id==919)
+            self.assertEqual((row.team,row.gp,row.jersey),('LAC',gp,35))
+
+    def test_composite_jerseys_use_specific_evidence_and_preserve_originals(self):
+        for season,pid,team,jersey,original in [('1991-92',428,'BOS',20,'4-20'),('1991-92',77167,'SAS',25,'15-25'),('1991-92',78615,'DET',0,'0-6'),('1994-95',182,'MIA',32,'30-32'),('1994-95',943,'GSW',33,'9-33')]:
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            e=next(e for e in audit['jersey_evidence'] if e['player_id']==pid and e['team']==team)
+            self.assertEqual(e['jersey'],jersey)
+            self.assertEqual(e['official_box_score_player']['jerseyNum'],original)
+            self.assertNotEqual(e['jersey_resolution']['status'],'VERIFIED_HISTORICAL_SEASON_REGISTER')
+        row=next(r for r in load_records(['1990-91']) if r.player_id==698 and r.team=='SEA')
+        self.assertEqual(row.jersey,22)
+        proof=json.loads((ROOT/'data/staging/jersey_1994_95_182_MIA_resolution.json').read_text())
+        self.assertIn('1994-95',proof['uniform_register_entry'])
+        self.assertEqual(proof['superseded_resolution']['resolved_jersey'],30)
+
+    def test_1989_through_1991_title_games_match_official_schedules(self):
+        for season,gid,team in [('1991-92','0049100073','CHI'),('1990-91','0049000068','CHI'),('1989-90','0048900072','DET')]:
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            self.assertEqual(audit['title_game_verification']['game_id'],gid)
+            self.assertEqual(audit['champion_team'],team)
+            self.assertEqual(len(audit['title_game_verification']['official_final_game_rows']),2)

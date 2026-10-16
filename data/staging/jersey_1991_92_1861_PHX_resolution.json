@@ -1,0 +1,19 @@
+{
+  "season": "1991-92",
+  "player_id": 1861,
+  "player": "Negele Knight",
+  "team": "PHX",
+  "game_id": "0029100618",
+  "game_date": "1992-02-05",
+  "original_nba_jersey": "",
+  "resolved_jersey": 32,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entries only unless separately corroborated",
+  "source": "https://apbr.org/nmbr9000.html",
+  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "32 Negele Knight",
+  "season_team_register": "0 Jerrod Mustaf, 7 Kevin Johnson, 9 Dan Majerle, 14 Jeff Hornacek, 15 Steve Burtt, 23 Cedric Ceballos, 24 Tom Chambers, 28 Andrew Lang, 31 Kurt Rambis, 32 Negele Knight, 34 Tim Perry, 41 Mark West, 45 Ed Nealy",
+  "review": "Exact season/team/player checked; original NBA field preserved."
+}

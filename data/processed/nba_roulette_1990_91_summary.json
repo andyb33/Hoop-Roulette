@@ -1,0 +1,145 @@
+{
+  "season": "1990-91",
+  "completed_at": "2026-10-16T01:38:32.825495+00:00",
+  "passed": true,
+  "entries": 235,
+  "jerseys_verified": 235,
+  "unresolved": [],
+  "staged_sha256": "9bd00b01a68d5e021aad705a51fb632645636a29e13c762aef1e3b214ce10f53",
+  "game_sha256": "108e519530717cef865b23dfd713e51e87a1c4f8757a3aeb5a146c59cff11ac4",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1990-91&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "dennis-rodman": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "derrick-coleman": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "michael-jordan": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049000068",
+    "game_date": "1991-06-12",
+    "champion_team": "CHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41990",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0049000068",
+        "GAME_DATE": "1991-06-12",
+        "MATCHUP": "LAL vs. CHI",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 101,
+        "FGM": 37,
+        "FGA": 74,
+        "FG_PCT": 0.5,
+        "FG3M": 3,
+        "FG3A": 11,
+        "FG3_PCT": 0.273,
+        "FTM": 24,
+        "FTA": 30,
+        "FT_PCT": 0.8,
+        "OREB": 12,
+        "DREB": 24,
+        "REB": 36,
+        "AST": 29,
+        "STL": 6,
+        "BLK": 7,
+        "TOV": 22,
+        "PF": 22,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41990",
+        "TEAM_ID": 1610612741,
+        "TEAM_ABBREVIATION": "CHI",
+        "TEAM_NAME": "Chicago Bulls",
+        "GAME_ID": "0049000068",
+        "GAME_DATE": "1991-06-12",
+        "MATCHUP": "CHI @ LAL",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 108,
+        "FGM": 42,
+        "FGA": 78,
+        "FG_PCT": 0.538,
+        "FG3M": 2,
+        "FG3A": 3,
+        "FG3_PCT": 0.667,
+        "FTM": 22,
+        "FTA": 28,
+        "FT_PCT": 0.786,
+        "OREB": 10,
+        "DREB": 27,
+        "REB": 37,
+        "AST": 28,
+        "STL": 14,
+        "BLK": 6,
+        "TOV": 18,
+        "PF": 23,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1990-91&SeasonType=Playoffs",
+    "source_sha256": "0a2789ae8240a49b5e2a8480c8440934b1b787b4596954546d3ce7725e44eaab"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049000068/box-score",
+  "champion_team": "CHI",
+  "champion_records": 6,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 8,
+    "BOS": 8,
+    "CHH": 10,
+    "CHI": 7,
+    "CLE": 10,
+    "DAL": 8,
+    "DEN": 12,
+    "DET": 8,
+    "GSW": 9,
+    "HOU": 8,
+    "IND": 8,
+    "LAC": 11,
+    "LAL": 7,
+    "MIA": 10,
+    "MIL": 9,
+    "MIN": 7,
+    "NJN": 8,
+    "NYK": 8,
+    "ORL": 10,
+    "PHI": 9,
+    "PHX": 7,
+    "POR": 7,
+    "SAC": 10,
+    "SAS": 9,
+    "SEA": 11,
+    "UTA": 7,
+    "WSB": 9
+  }
+}

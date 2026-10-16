@@ -1,0 +1,19 @@
+{
+  "season": "1989-90",
+  "player_id": 199,
+  "player": "Reggie Williams",
+  "team": "CLE",
+  "game_id": "0028900714",
+  "game_date": "1990-02-23",
+  "original_nba_jersey": "",
+  "resolved_jersey": 2,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entries only unless separately corroborated",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "2 Reggie Williams",
+  "season_team_register": "2 Reggie Williams, 3 Craig Ehlo, 4 Ron Harper, 5 Steve Kerr, 18 John Williams, 20 Winston Bennett, 22 Larry Nance, 23 John Morton, 24 Chris Dudley, 25 Mark Price, 30 Wayne Rollins, 31 Randolph Keys, 33 Derrick Chievous, 43 Brad Daugherty, 44 Paul Mokeski, 52 Chucky Brown, 54 Gary Voce",
+  "review": "Exact season/team/player checked; original NBA field preserved."
+}

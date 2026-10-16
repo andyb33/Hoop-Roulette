@@ -1,0 +1,19 @@
+{
+  "season": "1989-90",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "PHX",
+  "game_id": "0028901101",
+  "game_date": "1990-04-22",
+  "original_nba_jersey": "",
+  "resolved_jersey": 8,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entries only unless separately corroborated",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "8 Eddie Johnson",
+  "season_team_register": "3 Kenny Battle, 7 Kevin Johnson, 8 Eddie Johnson, 9 Dan Majerle, 10 Greg Grant, 14 Jeff Hornacek, 21 Micheal Williams, 23 Tim Legler, 24 Tom Chambers, 28 Andrew Lang, 31 Kurt Rambis, 32 Mike Morrison, 34 Tim Perry, 35 Armon Gilliam, 40 Mike McGee, 41 Mark West",
+  "review": "Exact season/team/player checked; original NBA field preserved."
+}

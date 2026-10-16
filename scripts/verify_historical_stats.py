@@ -44,7 +44,7 @@ REFERENCES.update({season: {
     "provenance": "https://github.com/favourumeh/NBA-DATA-PIPELINE/blob/a19c7d43b65028d80c782ce64d308ed392c57bbf/NBA_webscraping_OOP.py",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Independently scraped Basketball Reference workbook. Producer removes TOT rows but retains individual team stints; season selected by ending Year."
-} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93")})
+} for season in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93", "1991-92", "1990-91", "1989-90")})
 SCHEDULES.update({s:(1230,82) for s in ("2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11")})
 
 
@@ -77,10 +77,10 @@ def extract_reference_workbook(path, year, output):
         writer=csv.DictWriter(handle,fieldnames=headings);writer.writeheader();writer.writerows(selected)
 
 SCHEDULES["2011-12"] = (990, 66)
-SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93")})
-SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93")})
+SCHEDULES.update({s: (1230, 82) for s in ("2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93", "1991-92", "1990-91", "1989-90")})
+SCHEDULES.update({s: (1189, 82) for s in ("2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95", "1993-94", "1992-93", "1991-92", "1990-91", "1989-90")})
 SCHEDULES["1998-99"] = (725, 50)
-SCHEDULES.update({s:(1107,82) for s in ("1994-95","1993-94","1992-93")})
+SCHEDULES.update({s:(1107,82) for s in ("1994-95","1993-94","1992-93","1991-92","1990-91","1989-90")})
 SCHEDULES["2012-13"] = (1229, None)  # NBA schedule: BOS/IND 81 games, all other teams 82.
 
 FIELDS = {"gp": "G", "mpg": "MP", "ppg": "PTS", "rpg": "TRB", "apg": "AST", "spg": "STL", "bpg": "BLK"}
@@ -107,7 +107,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
 
 
 def verify(season):

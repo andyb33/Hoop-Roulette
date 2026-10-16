@@ -6,15 +6,79 @@
   "game_id": "0029401099",
   "game_date": "1995-04-23",
   "original_nba_jersey": "9-33",
-  "resolved_jersey": 9,
-  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
-  "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
-  "source": "https://apbr.org/nmbr9000.html",
-  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
-  "source_format": "original_html",
+  "resolved_jersey": 33,
+  "status": "VERIFIED_CHRONOLOGICAL_UNIFORM_HISTORY",
+  "method": "Official roster alternatives resolved by independent ordered uniform history",
+  "source": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612744&Season=1994-95&LeagueID=00",
+  "source_sha256": "1ed783cb89188ecb11709a4f5b59cdfe6d95679f13227c7024c8fba93faa1891",
+  "source_format": "official_json_payload",
   "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
   "uniform_register_entry": "9 Ryan Lorthridge (#33)",
   "alternate_register_number": 33,
   "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
-  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+  "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata.",
+  "official_roster_row": {
+    "TeamID": 1610612744,
+    "SEASON": "1994",
+    "LeagueID": "00",
+    "PLAYER": "Ryan Lorthridge",
+    "NICKNAME": "Ryan",
+    "PLAYER_SLUG": "ryan-lorthridge",
+    "NUM": "9-33",
+    "POSITION": "G",
+    "HEIGHT": "6-4",
+    "WEIGHT": "190",
+    "BIRTH_DATE": "JUL 27, 1972",
+    "AGE": 22.0,
+    "EXP": "R",
+    "SCHOOL": "Jackson State",
+    "PLAYER_ID": 943,
+    "HOW_ACQUIRED": null,
+    "SUPPLEMENTAL_STATUS": 0
+  },
+  "chronology_sources": [
+    {
+      "source": "https://fanspo.com/nba/players/ryan-lorthridge/943",
+      "display_order": "reverse chronological",
+      "reviewed_team_stints": [
+        {
+          "team": "GSW",
+          "ending_years": [
+            1995,
+            1995
+          ],
+          "jersey": 33
+        },
+        {
+          "team": "GSW",
+          "ending_years": [
+            1995,
+            1995
+          ],
+          "jersey": 9
+        }
+      ]
+    }
+  ],
+  "decision_basis": "Infer later GSW number 33 from independent ordered history, replacing an unsupported assumption that the APBR main number was last. Original composite retained.",
+  "superseded_resolution": {
+    "season": "1994-95",
+    "player_id": 943,
+    "player": "Ryan Lorthridge",
+    "team": "GSW",
+    "game_id": "0029401099",
+    "game_date": "1995-04-23",
+    "original_nba_jersey": "9-33",
+    "resolved_jersey": 9,
+    "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+    "method": "Independent APBR season-specific uniform register, matched by exact team and player; main listed number retained, alternate recorded separately",
+    "source": "https://apbr.org/nmbr9000.html",
+    "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+    "source_format": "original_html",
+    "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+    "uniform_register_entry": "9 Ryan Lorthridge (#33)",
+    "alternate_register_number": 33,
+    "season_team_register": "1 Manute Bol, 2 Keith Jennings, 3 Donyall Marshall, 4 Rony Seikaly (#9), 8 Tom Gugliotta, 9 Ryan Lorthridge (#33), 10 Tim Hardaway, 12 David Wood, 15 Latrell Sprewell, 17 Chris Mullin, 20 Tim Legler, 22 Ricky Pierce, 25 Chris Gatling, 32 Rod Higgins, 34 Carlos Rogers, 44 Cliff Rozier, 50 Dwayne Morton, 52 Victor Alexander",
+    "review": "Exact season/team checked. Original NBA final-appearance blank or composite remains preserved; the independent register is identified separately from official NBA roster metadata."
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "season": "1991-92",
+  "player_id": 919,
+  "player": "Loy Vaught",
+  "team": "LAC",
+  "game_id": "0029101106",
+  "game_date": "1992-04-19",
+  "original_nba_jersey": "",
+  "resolved_jersey": 35,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entries only unless separately corroborated",
+  "source": "https://apbr.org/nmbr9000.html",
+  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "35 Loy Vaught",
+  "season_team_register": "0 Olden Polynice, 3 Ken Norman, 4 Ron Harper, 5 Danny Manning, 8 Theron Mayes, 17 Tony Brown, 21 Lanard Copeland, 21 Danny Young, 22 Leron Ellis, 23 Gary Grant, 25 Doc Rivers, 30 Bo Kimble, 32 David Rivers, 34 Elliott Perry, 35 Loy Vaught, 53 James Edwards, 54 Charles Smith",
+  "review": "Exact season/team/player checked; original NBA field preserved."
+}

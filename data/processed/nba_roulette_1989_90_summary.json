@@ -1,0 +1,145 @@
+{
+  "season": "1989-90",
+  "completed_at": "2026-10-16T01:38:33.063872+00:00",
+  "passed": true,
+  "entries": 231,
+  "jerseys_verified": 231,
+  "unresolved": [],
+  "staged_sha256": "929ebe9b91146098648f1eea3597d3dd21a99a7443c40cd68911267789c5fa26",
+  "game_sha256": "b80250070d170968cf0d96d5578ca763223481588f2c5da4e9c674c539834f04",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1989-90&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "david-robinson": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "dennis-rodman": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "magic-johnson": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0048900072",
+    "game_date": "1990-06-14",
+    "champion_team": "DET",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41989",
+        "TEAM_ID": 1610612757,
+        "TEAM_ABBREVIATION": "POR",
+        "TEAM_NAME": "Portland Trail Blazers",
+        "GAME_ID": "0048900072",
+        "GAME_DATE": "1990-06-14",
+        "MATCHUP": "POR vs. DET",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 90,
+        "FGM": 33,
+        "FGA": 78,
+        "FG_PCT": 0.423,
+        "FG3M": 5,
+        "FG3A": 12,
+        "FG3_PCT": 0.417,
+        "FTM": 19,
+        "FTA": 30,
+        "FT_PCT": 0.633,
+        "OREB": 14,
+        "DREB": 26,
+        "REB": 40,
+        "AST": 20,
+        "STL": 8,
+        "BLK": 4,
+        "TOV": 17,
+        "PF": 25,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41989",
+        "TEAM_ID": 1610612765,
+        "TEAM_ABBREVIATION": "DET",
+        "TEAM_NAME": "Detroit Pistons",
+        "GAME_ID": "0048900072",
+        "GAME_DATE": "1990-06-14",
+        "MATCHUP": "DET @ POR",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 92,
+        "FGM": 37,
+        "FGA": 81,
+        "FG_PCT": 0.457,
+        "FG3M": 4,
+        "FG3A": 6,
+        "FG3_PCT": 0.667,
+        "FTM": 14,
+        "FTA": 23,
+        "FT_PCT": 0.609,
+        "OREB": 16,
+        "DREB": 28,
+        "REB": 44,
+        "AST": 15,
+        "STL": 9,
+        "BLK": 6,
+        "TOV": 18,
+        "PF": 29,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1989-90&SeasonType=Playoffs",
+    "source_sha256": "62010c50ffb4a7a1c634cbfa6898fd4a1e83ba5e423574be4a26f09db3a0e53d"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048900072/box-score",
+  "champion_team": "DET",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BOS": 8,
+    "CHH": 8,
+    "CHI": 8,
+    "CLE": 11,
+    "DAL": 8,
+    "DEN": 9,
+    "DET": 8,
+    "GSW": 9,
+    "HOU": 9,
+    "IND": 7,
+    "LAC": 8,
+    "LAL": 9,
+    "MIA": 8,
+    "MIL": 10,
+    "MIN": 7,
+    "NJN": 9,
+    "NYK": 9,
+    "ORL": 12,
+    "PHI": 7,
+    "PHX": 7,
+    "POR": 7,
+    "SAC": 10,
+    "SAS": 9,
+    "SEA": 8,
+    "UTA": 8,
+    "WSB": 7
+  }
+}

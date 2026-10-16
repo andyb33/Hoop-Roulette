@@ -1,0 +1,20 @@
+{
+  "season": "1991-92",
+  "player_id": 244,
+  "player": "Dee Brown",
+  "team": "BOS",
+  "game_id": "0029101029",
+  "game_date": "1992-04-08",
+  "original_nba_jersey": "",
+  "resolved_jersey": 7,
+  "status": "VERIFIED_OFFICIAL_UNIFORM_REGISTER",
+  "method": "Official club uniform register or exact season numerical roster",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Celtics.pdf",
+  "source_sha256": "ae2dedd7e9be7f4c29b397c55514655a16b7453af72b888bb1ed60f0d740cd3d",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "7 Dee Brown 1990-98",
+  "season_team_register": "00 Robert Parish, 4 Larry Robinson, 4 Sherman Douglas (#20), 5 John Bagley, 7 Dee Brown, 8 Kenny Battle, 11 Stojko Vrankovic, 12 Kevin Pritchard, 13 Rickey Green, 20 Brian Shaw, 32 Kevin McHale, 33 Larry Bird, 34 Kevin Gamble, 35 Reggie Lewis, 41 Tony Massenburg, 44 Rick Fox, 53 Joe Kleine, 54 Ed Pinckney",
+  "review": "Exact season/team/player checked; original NBA field preserved.",
+  "pdf_page": 174
+}

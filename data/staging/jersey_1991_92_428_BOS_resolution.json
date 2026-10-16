@@ -1,0 +1,53 @@
+{
+  "season": "1991-92",
+  "player_id": 428,
+  "player": "Sherman Douglas",
+  "team": "BOS",
+  "game_id": "0029101102",
+  "game_date": "1992-04-19",
+  "original_nba_jersey": "4-20",
+  "resolved_jersey": 20,
+  "status": "VERIFIED_CHRONOLOGICAL_UNIFORM_HISTORY",
+  "method": "Official club register corroborates both numbers; independent ordered jersey history and explicit first-4 then-20 account resolve chronology",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Celtics.pdf",
+  "source_sha256": "ae2dedd7e9be7f4c29b397c55514655a16b7453af72b888bb1ed60f0d740cd3d",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "20 Sherman Douglas 1991-96; also wore 4",
+  "season_team_register": "00 Robert Parish, 4 Larry Robinson, 4 Sherman Douglas (#20), 5 John Bagley, 7 Dee Brown, 8 Kenny Battle, 11 Stojko Vrankovic, 12 Kevin Pritchard, 13 Rickey Green, 20 Brian Shaw, 32 Kevin McHale, 33 Larry Bird, 34 Kevin Gamble, 35 Reggie Lewis, 41 Tony Massenburg, 44 Rick Fox, 53 Joe Kleine, 54 Ed Pinckney",
+  "review": "Exact season/team/player checked; original NBA field preserved.",
+  "pdf_page": 174,
+  "chronology_sources": [
+    {
+      "source": "https://fanspo.com/nba/players/sherman-douglas/428",
+      "display_order": "reverse chronological",
+      "reviewed_team_stints": [
+        {
+          "team": "BOS",
+          "ending_years": [
+            1992,
+            1996
+          ],
+          "jersey": 20
+        },
+        {
+          "team": "BOS",
+          "ending_years": [
+            1992,
+            1992
+          ],
+          "jersey": 4
+        }
+      ]
+    },
+    {
+      "source": "https://www.celticslife.com/2015/03/what-hell-happened-tosherman-douglas.html",
+      "source_sha256": "b3915b6a61132de1d157ffa05d87731d3cf5725c259b2394ba1c287f803c4b1c",
+      "number_transition": [
+        4,
+        20
+      ]
+    }
+  ],
+  "decision_basis": "Select later BOS number 20; do not infer chronology from the APBR main-number ordering."
+}

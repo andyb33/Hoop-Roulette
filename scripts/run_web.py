@@ -53,8 +53,8 @@ def default_log_directory() -> Path:
 
 PLAYTEST_LOGGER = PlaytestBatchLogger(
     default_log_directory(),
-    "playtest_batch_19_v0_10_6_thirty_four_seasons",
-    "Playtest Batch 19 - v0.10.6 Thirty Four Seasons",
+    "playtest_batch_20_v0_10_7_thirty_seven_seasons",
+    "Playtest Batch 20 - v0.10.7 Thirty Seven Seasons",
     target=100,
 )
 SESSIONS: dict[str, BrowserGame] = {}

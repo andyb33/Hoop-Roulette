@@ -1,0 +1,145 @@
+{
+  "season": "1991-92",
+  "completed_at": "2026-10-16T01:38:32.624772+00:00",
+  "passed": true,
+  "entries": 239,
+  "jerseys_verified": 239,
+  "unresolved": [],
+  "staged_sha256": "b7b379e9eb27706e64719baaa94c9cba657ac819c7e0ca3e531067e967a4ab0d",
+  "game_sha256": "716899809bef7dcdb81379aa9a9c57596663e46b59bd07e9a1deb873c0f879f9",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1991-92&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "david-robinson": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "larry-johnson": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "michael-jordan": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 15,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0049100073",
+    "game_date": "1992-06-14",
+    "champion_team": "CHI",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41991",
+        "TEAM_ID": 1610612741,
+        "TEAM_ABBREVIATION": "CHI",
+        "TEAM_NAME": "Chicago Bulls",
+        "GAME_ID": "0049100073",
+        "GAME_DATE": "1992-06-14",
+        "MATCHUP": "CHI vs. POR",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 97,
+        "FGM": 38,
+        "FGA": 73,
+        "FG_PCT": 0.521,
+        "FG3M": 6,
+        "FG3A": 13,
+        "FG3_PCT": 0.462,
+        "FTM": 15,
+        "FTA": 21,
+        "FT_PCT": 0.714,
+        "OREB": 9,
+        "DREB": 22,
+        "REB": 31,
+        "AST": 20,
+        "STL": 8,
+        "BLK": 5,
+        "TOV": 18,
+        "PF": 19,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41991",
+        "TEAM_ID": 1610612757,
+        "TEAM_ABBREVIATION": "POR",
+        "TEAM_NAME": "Portland Trail Blazers",
+        "GAME_ID": "0049100073",
+        "GAME_DATE": "1992-06-14",
+        "MATCHUP": "POR @ CHI",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 93,
+        "FGM": 35,
+        "FGA": 78,
+        "FG_PCT": 0.449,
+        "FG3M": 2,
+        "FG3A": 7,
+        "FG3_PCT": 0.286,
+        "FTM": 21,
+        "FTA": 21,
+        "FT_PCT": 1.0,
+        "OREB": 13,
+        "DREB": 25,
+        "REB": 38,
+        "AST": 21,
+        "STL": 11,
+        "BLK": 5,
+        "TOV": 21,
+        "PF": 24,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1991-92&SeasonType=Playoffs",
+    "source_sha256": "ed0190f7634bd523d1e497dad2c764ba644b53715eb5390b6d4a59537c79d791"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0049100073/box-score",
+  "champion_team": "CHI",
+  "champion_records": 7,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BOS": 10,
+    "CHH": 7,
+    "CHI": 7,
+    "CLE": 9,
+    "DAL": 12,
+    "DEN": 10,
+    "DET": 8,
+    "GSW": 8,
+    "HOU": 9,
+    "IND": 9,
+    "LAC": 10,
+    "LAL": 8,
+    "MIA": 9,
+    "MIL": 11,
+    "MIN": 9,
+    "NJN": 9,
+    "NYK": 8,
+    "ORL": 12,
+    "PHI": 8,
+    "PHX": 8,
+    "POR": 7,
+    "SAC": 7,
+    "SAS": 7,
+    "SEA": 9,
+    "UTA": 8,
+    "WSB": 9
+  }
+}

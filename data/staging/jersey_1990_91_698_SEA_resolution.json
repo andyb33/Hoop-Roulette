@@ -1,0 +1,23 @@
+{
+  "season": "1990-91",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "SEA",
+  "game_id": "0029001101",
+  "game_date": "1991-04-21",
+  "original_nba_jersey": "",
+  "resolved_jersey": 22,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entries only unless separately corroborated",
+  "source": "https://apbr.org/nmbr9000.html",
+  "source_sha256": "4a2ecc5e34b14b113e0860c936dd0b35b06d0dd9ef23c4aaa078f3d2dd009dd5",
+  "source_format": "original_html",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "22 Johnson",
+  "season_team_register": "0 Olden Polynice, 00 Benoit Benjamin, 2 Gary Payton, 3 Dale Ellis, 4 Sedale Threatt, 8 Scott Meents, 10 Nate McMillan, 11 Dana Barros, 20 Quintin Dailey, 21 Ricky Pierce, 22 Johnson, 31 Derrick McKey, 34 Xavier McDaniel, 40 Shawn Kemp, 42 Dave Corzine, 44 Michael Cage",
+  "review": "APBR abbreviates the name as Johnson; independent exact-season roster identifies Eddie Johnson as number 22. The subsequent season number 8 is not applied retroactively.",
+  "identity_corroboration": {
+    "source": "https://www.basketball-reference.com/teams/SEA/1991.html",
+    "reviewed_entry": "22 Eddie Johnson"
+  }
+}

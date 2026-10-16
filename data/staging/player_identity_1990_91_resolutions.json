@@ -1,0 +1,60 @@
+[
+  {
+    "season": "1990-91",
+    "legacy_player_id": 78412,
+    "canonical_player_id": 919,
+    "player": "Loy Vaught",
+    "team": "LAC",
+    "matched_fields": [
+      "GP",
+      "MIN",
+      "PTS",
+      "REB",
+      "AST",
+      "STL",
+      "BLK"
+    ],
+    "legacy_aggregate": {
+      "GP": 73,
+      "MIN": 1178,
+      "PTS": 399,
+      "REB": 349,
+      "AST": 40,
+      "STL": 20,
+      "BLK": 23
+    },
+    "canonical_official_row": {
+      "PLAYER_ID": 919,
+      "SEASON_ID": "1990-91",
+      "LEAGUE_ID": "00",
+      "TEAM_ID": 1610612746,
+      "TEAM_ABBREVIATION": "LAC",
+      "PLAYER_AGE": 23.0,
+      "GP": 73,
+      "GS": 0,
+      "MIN": 1178,
+      "FGM": 175,
+      "FGA": 359,
+      "FG_PCT": 0.487,
+      "FG3M": 0,
+      "FG3A": 2,
+      "FG3_PCT": 0.0,
+      "FTM": 49,
+      "FTA": 74,
+      "FT_PCT": 0.662,
+      "OREB": 124,
+      "DREB": 225,
+      "REB": 349,
+      "AST": 40,
+      "STL": 20,
+      "BLK": 23,
+      "TOV": 49,
+      "PF": 135,
+      "PTS": 399
+    },
+    "source": "https://stats.nba.com/stats/playergamelog?PlayerID=78412&Season=1990-91&SeasonType=Regular+Season&LeagueID=00&DateFrom=&DateTo=",
+    "source_sha256": "db54b7a91c9a6b31a6b7b2e19a1f42a610d391ee0bb93fa66464e6c0bb095859",
+    "canonical_source": "https://stats.nba.com/stats/playercareerstats?PlayerID=919&PerMode=Totals&LeagueID=00",
+    "canonical_source_sha256": "ebb9f99a1312511b68fe74e4a7dcec8d82dc2c4bfecebf4f12cc41693c47ac03"
+  }
+]

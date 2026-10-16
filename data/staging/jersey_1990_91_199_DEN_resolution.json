@@ -1,0 +1,20 @@
+{
+  "season": "1990-91",
+  "player_id": 199,
+  "player": "Reggie Williams",
+  "team": "DEN",
+  "game_id": "0029001107",
+  "game_date": "1991-04-21",
+  "original_nba_jersey": "",
+  "resolved_jersey": 34,
+  "status": "VERIFIED_OFFICIAL_SEASON_ROSTER",
+  "method": "Official club uniform register or exact season numerical roster",
+  "source": "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Nuggets.pdf",
+  "source_sha256": "a15e56292432206d11b54948ba2d106ee98f937271c329a30528eb27e8f1d9e1",
+  "source_format": "original_pdf",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "34 Reggie Williams; exact season numerical roster",
+  "season_team_register": "0 Orlando Woolridge, 1 Corey Gaines, 3 Chris Jackson, 5 Terry Mills, 5 Kenny Battle, 6 Walter Davis, 14 Michael Adams, 15 Avery Johnson, 21 Todd Lichti, 22 Craig Neal, 22 Tim Legler, 22 Jim Farmer, 23 T.R. Dunn, 30 Marcus Liberty, 33 Greg Anderson, 34 Anthony Mason, 34 Reggie Williams, 35 Jerome Lane, 41 Blair Rasmussen, 42 Joe Wolf, 45 Jeff Cook",
+  "review": "Exact season/team/player checked; original NBA field preserved.",
+  "pdf_page": 120
+}

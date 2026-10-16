@@ -11,9 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.10.6 includes the normal pool from 1992–93 through 2025–26.**
-The first eighteen Stage 2 seasons have been rebuilt and independently verified.
-The verified 34-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
+**v0.10.7 includes the normal pool from 1989–90 through 2025–26.**
+The first twenty-one Stage 2 seasons have been rebuilt and independently verified.
+The verified 37-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -31,9 +31,9 @@ For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots
 Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
 Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The thirty-four datasets from 1992–93 through 2025–26 are complete:
+The thirty-seven datasets from 1989–90 through 2025–26 are complete:
 
-- 9,586 eligible player-team records across thirty-four seasons and 1,002 team-season combinations;
+- 10,291 eligible player-team records across thirty-seven seasons and 1,083 team-season combinations;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -42,7 +42,7 @@ The thirty-four datasets from 1992–93 through 2025–26 are complete:
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 The new historical seasons retain their independent stats audits and official
-final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_1992_1995.md).
+final-appearance jersey evidence. See [recovery completion report](docs/HISTORICAL_COMPLETION_1989_1992.md).
 Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. The next desktop package will be built after Stage 2 reaches 1980–81. Stage 3 then continues through 1973–74.

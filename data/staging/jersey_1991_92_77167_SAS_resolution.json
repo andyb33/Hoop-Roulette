@@ -1,0 +1,64 @@
+{
+  "season": "1991-92",
+  "player_id": 77167,
+  "player": "Vinnie Johnson",
+  "team": "SAS",
+  "game_id": "0029101104",
+  "game_date": "1992-04-19",
+  "original_nba_jersey": "15-25",
+  "resolved_jersey": 25,
+  "status": "VERIFIED_CHRONOLOGICAL_UNIFORM_HISTORY",
+  "method": "Official NBA roster alternatives resolved with independent reverse-chronological uniform history",
+  "source": "https://stats.nba.com/stats/commonteamroster?TeamID=1610612759&Season=1991-92&LeagueID=00",
+  "source_sha256": "4e83e1337f1de2dbc638958983d41415a2b581c17d2153dc4bcb96f1bded028b",
+  "source_format": "official_json_payload",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley",
+  "uniform_register_entry": "15 Vinny Johnson (#25)",
+  "season_team_register": "1 Rod Strickland, 3 Sean Higgins, 5 Donald Royal, 6 Trent Tucker, 8 Paul Pressey, 15 Avery Johnson, 15 Vinny Johnson (#25), 20 Morlon Wiley, 21 Sidney Green, 22 Tom Garrick, 23 Greg Sutton, 30 Tom Copa, 32 Sean Elliott, 33 Jud Buechler, 34 Terry Cummings, 35 Antoine Carr, 40 Willie Anderson, 42 Stephen Bardo, 45 Tony Massenburg",
+  "review": "Exact season/team/player checked; original NBA field preserved.",
+  "official_roster_row": {
+    "TeamID": 1610612759,
+    "SEASON": "1991",
+    "LeagueID": "00",
+    "PLAYER": "Vinnie Johnson",
+    "NICKNAME": "Vinnie",
+    "PLAYER_SLUG": "vinnie-johnson",
+    "NUM": "15-25",
+    "POSITION": "G",
+    "HEIGHT": "6-2",
+    "WEIGHT": "200",
+    "BIRTH_DATE": "SEP 01, 1956",
+    "AGE": 35.0,
+    "EXP": "12",
+    "SCHOOL": "Baylor",
+    "PLAYER_ID": 77167,
+    "HOW_ACQUIRED": null,
+    "SUPPLEMENTAL_STATUS": 0
+  },
+  "chronology_sources": [
+    {
+      "source": "https://fanspo.com/nba/players/vinnie-johnson/77167",
+      "display_order": "reverse chronological",
+      "reviewed_team_stints": [
+        {
+          "team": "SAS",
+          "ending_years": [
+            1992,
+            1992
+          ],
+          "jersey": 25
+        },
+        {
+          "team": "SAS",
+          "ending_years": [
+            1992,
+            1992
+          ],
+          "jersey": 15
+        }
+      ],
+      "corroboration_source": "https://www.legendsofbasketball.com/alumni/vinnie-johnson/"
+    }
+  ],
+  "decision_basis": "Infer last SAS number 25 from the ordered independent history; official roster confirms both alternatives. No exact final-game photo is claimed."
+}
