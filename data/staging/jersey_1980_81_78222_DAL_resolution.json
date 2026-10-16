@@ -1,0 +1,19 @@
+{
+  "season": "1980-81",
+  "player_id": 78222,
+  "player": "Jim Spanarkel",
+  "team": "DAL",
+  "game_id": "0028000938",
+  "game_date": "1981-03-29",
+  "original_nba_jersey": "33-34",
+  "resolved_jersey": 34,
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "Season roster supports 34; Mavericks media guide records 33/34, with later-season career continuity for 34. Switch date not established.",
+  "sources": [
+    "https://library.sfo2.cdn.digitaloceanspaces.com/publications/basketball/yearbooks/KDALMMG-2021.pdf"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": []
+}

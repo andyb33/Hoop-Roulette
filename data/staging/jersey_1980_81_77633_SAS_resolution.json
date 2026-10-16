@@ -1,0 +1,19 @@
+{
+  "season": "1980-81",
+  "player_id": 77633,
+  "player": "Johnny Moore",
+  "team": "SAS",
+  "game_id": "0028000935",
+  "game_date": "1981-03-29",
+  "original_nba_jersey": "00-10",
+  "resolved_jersey": "00",
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "Associated Press archival caption identifies Johnny Moore 00 in April 1981 playoffs. Applying that number to March 29 final regular-season appearance is a continuity inference.",
+  "sources": [
+    "https://www.expressnews.com/sports/spurs/article/Spurs-Where-Are-They-Now-Johnny-Moore-7240375.php"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": []
+}

@@ -58,3 +58,9 @@ Notion's detailed verification tracker was current, but the project dashboard, d
 1982–83 (217 entries) and 1981–82 (208) are complete in the repository but remain outside the default loader. 1980–81 has 208 independently verified stats entries but incomplete jersey/honors completion. The final three seasons will be activated together after remaining validation. Stage 2 verification is 29/30 complete, while 27/30 Stage 2 seasons are playable. Desktop packaging remains deferred to the completed 1980–81 checkpoint.
 
 Validation: **133 tests pass; 100 complete games, 2,790 checked spins, all 43 normal seasons observed; live HTTP startup/state/spin checks; both GOAT pools; JavaScript syntax and whitespace checks pass.** New games use Playtest Batch 23. Earlier balance studies have not been rerun.
+
+## Jersey decisions accepted — 2026-10-16
+
+The user accepted all seven pending 1980–81 choices: Collins ATL **7**, Sobers CHI **40**, Spanarkel DAL **34**, Mokeski DET **44**, Buse IND **11**, Moore SAS **00**, Bibby SDC **10**. This supersedes the pending-jersey statements above. Individual resolution files retain original NBA fields, sources, uploaded-image hashes and conflicting evidence. These are reviewed project decisions with chronology limitations, not claims of exact final-game visual verification.
+
+No jersey research items remain open in this batch. The 1980–81 honors/completion checks and activation of the final three seasons remain pending; the playable pool remains 43 seasons.

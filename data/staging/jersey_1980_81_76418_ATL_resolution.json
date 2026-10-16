@@ -1,0 +1,26 @@
+{
+  "season": "1980-81",
+  "player_id": 76418,
+  "player": "Don Collins",
+  "team": "ATL",
+  "game_id": "0028000533",
+  "game_date": "1981-01-16",
+  "original_nba_jersey": "7-42",
+  "resolved_jersey": 7,
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "User supplied 1980-81 roster explicitly lists Don Collins 7; contemporary newspaper supports 42 earlier during the season. Change date not established.",
+  "sources": [
+    "https://content.libraries.wsu.edu/digital/api/collection/evergreens/id/83750/download"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": [
+    {
+      "filename": "image(20261016-102755).png",
+      "library_file_id": "libfile_0643c5d570ec81918e29b18575e83c32",
+      "sha256": "f8b83b20b4c8c538721a435de0135b5fce6b997215f71691b0be23bc97eb3922",
+      "visual_observation": "1980-81 roster lists Don Collins 7."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "season": "1980-81",
+  "player_id": 76317,
+  "player": "Don Buse",
+  "team": "IND",
+  "game_id": "0028000942",
+  "game_date": "1981-03-29",
+  "original_nba_jersey": "10-11",
+  "resolved_jersey": 11,
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "User screenshots of Basketball Reference tooltips specifically associate Indiana 1981 with 11; overlapping Indiana 1977-1982 number 10 remains conflicting chronology evidence.",
+  "sources": [
+    "https://www.basketball-reference.com/players/b/busedo01.html"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": [
+    {
+      "filename": "image(20261016-104500).png",
+      "library_file_id": "libfile_aa9d0398cb408191bfadc2de0213b32a",
+      "sha256": "3c1d0ae08d402acccc6f8fbf4bfa529e542fa2f5a16f0a5a281d215a6f4578f9",
+      "visual_observation": "Indiana 1973-1976 tooltip over 10."
+    },
+    {
+      "filename": "image(20261016-104510).png",
+      "library_file_id": "libfile_731dd859aeb08191ace0cd22bd042bb1",
+      "sha256": "8b22022716a0b295680844600e775ad3792083a6002c146816d40ac4e1325e9a",
+      "visual_observation": "Indiana 1977-1982 tooltip over 10."
+    },
+    {
+      "filename": "image(20261016-104517).png",
+      "library_file_id": "libfile_838b43cad6608191acba02fa190ab150",
+      "sha256": "aaa595d97f74a37f660a98f5b9b0c615cb3debef70e99d8d26add5470f36f7d7",
+      "visual_observation": "Phoenix 1978-1980 tooltip over 10."
+    },
+    {
+      "filename": "image(20261016-104529).png",
+      "library_file_id": "libfile_87b9904964288191a6be21a645bb0200",
+      "sha256": "2c1458bbc8a9b943dadd9baa26b5e6647dcbef23580069a27e3285b22ac15a11",
+      "visual_observation": "Indiana 1981 tooltip over 11."
+    }
+  ]
+}

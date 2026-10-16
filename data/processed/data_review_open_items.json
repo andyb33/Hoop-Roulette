@@ -23,7 +23,11 @@
       "basis": "User-reviewed six-image evidence and chronology"
     }
   ],
-  "inactive_1980_81_pending": [
+  "inactive_1980_81_pending": [],
+  "stats_missing_values": 0,
+  "manual_user_data_required": false,
+  "note": "Seven 1980-81 jersey decisions accepted by user; final season completion and batch activation remain pending. Inference qualifications retained.",
+  "inactive_1980_81_reviewed_jerseys": [
     {
       "season": "1980-81",
       "player_id": 76418,
@@ -31,7 +35,9 @@
       "team": "ATL",
       "game_id": "0028000533",
       "game_date": "1981-01-16",
-      "original_nba_jersey": "7-42"
+      "original_nba_jersey": "7-42",
+      "resolved_jersey": 7,
+      "resolution_file": "data/staging/jersey_1980_81_76418_ATL_resolution.json"
     },
     {
       "season": "1980-81",
@@ -40,7 +46,9 @@
       "team": "CHI",
       "game_id": "0028000942",
       "game_date": "1981-03-29",
-      "original_nba_jersey": "14-40"
+      "original_nba_jersey": "14-40",
+      "resolved_jersey": 40,
+      "resolution_file": "data/staging/jersey_1980_81_78215_CHI_resolution.json"
     },
     {
       "season": "1980-81",
@@ -49,7 +57,9 @@
       "team": "DAL",
       "game_id": "0028000938",
       "game_date": "1981-03-29",
-      "original_nba_jersey": "33-34"
+      "original_nba_jersey": "33-34",
+      "resolved_jersey": 34,
+      "resolution_file": "data/staging/jersey_1980_81_78222_DAL_resolution.json"
     },
     {
       "season": "1980-81",
@@ -58,7 +68,9 @@
       "team": "DET",
       "game_id": "0028000929",
       "game_date": "1981-03-28",
-      "original_nba_jersey": ""
+      "original_nba_jersey": "",
+      "resolved_jersey": 44,
+      "resolution_file": "data/staging/jersey_1980_81_77623_DET_resolution.json"
     },
     {
       "season": "1980-81",
@@ -67,7 +79,9 @@
       "team": "IND",
       "game_id": "0028000942",
       "game_date": "1981-03-29",
-      "original_nba_jersey": "10-11"
+      "original_nba_jersey": "10-11",
+      "resolved_jersey": 11,
+      "resolution_file": "data/staging/jersey_1980_81_76317_IND_resolution.json"
     },
     {
       "season": "1980-81",
@@ -76,7 +90,9 @@
       "team": "SAS",
       "game_id": "0028000935",
       "game_date": "1981-03-29",
-      "original_nba_jersey": "00-10"
+      "original_nba_jersey": "00-10",
+      "resolved_jersey": "00",
+      "resolution_file": "data/staging/jersey_1980_81_77633_SAS_resolution.json"
     },
     {
       "season": "1980-81",
@@ -85,10 +101,9 @@
       "team": "SDC",
       "game_id": "0028000941",
       "game_date": "1981-03-29",
-      "original_nba_jersey": "10-15"
+      "original_nba_jersey": "10-15",
+      "resolved_jersey": 10,
+      "resolution_file": "data/staging/jersey_1980_81_76162_SDC_resolution.json"
     }
-  ],
-  "stats_missing_values": 0,
-  "manual_user_data_required": false,
-  "note": "Seikaly open question closed as accepted inference; Lorthridge 33 superseded by 9. Seven 1980-81 cases remain unresolved."
+  ]
 }

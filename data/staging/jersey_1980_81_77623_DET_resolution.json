@@ -1,0 +1,19 @@
+{
+  "season": "1980-81",
+  "player_id": 77623,
+  "player": "Paul Mokeski",
+  "team": "DET",
+  "game_id": "0028000929",
+  "game_date": "1981-03-28",
+  "original_nba_jersey": "",
+  "resolved_jersey": 44,
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "NBRPA records Detroit 53 in 1981 and 44 in 1981-1982. Accepted chronology inference; exact switch date not established.",
+  "sources": [
+    "https://www.legendsofbasketball.com/alumni/paul-mokeski/"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": []
+}

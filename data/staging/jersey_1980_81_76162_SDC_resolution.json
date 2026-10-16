@@ -1,0 +1,50 @@
+{
+  "season": "1980-81",
+  "player_id": 76162,
+  "player": "Henry Bibby",
+  "team": "SDC",
+  "game_id": "0028000941",
+  "game_date": "1981-03-29",
+  "original_nba_jersey": "10-15",
+  "resolved_jersey": 10,
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "User explicitly selects 10. Topps card photograph shows 10 on Clippers warm-up and Wikipedia season roster lists 10. Captioned team photograph shows Bibby 15 and Clippers media guide lists 15; sequence remains unproven.",
+  "sources": [
+    "https://library.sfo2.cdn.digitaloceanspaces.com/publications/basketball/yearbooks/KLACLMG-2016.pdf"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": [
+    {
+      "filename": "image(20261016-095429).png",
+      "library_file_id": "libfile_617c7272e2cc8191b0284646a1bf22c2",
+      "sha256": "cb433b6a5fda7fdecc0588714bb8a98c288b210d73d6a3fa4827b7fe6b5b7bfa",
+      "visual_observation": "Topps card front shows Clippers warm-up number 10."
+    },
+    {
+      "filename": "image(20261016-095432).png",
+      "library_file_id": "libfile_5e0a2332b91081919405a19526e9fff7",
+      "sha256": "2b53d3b67fe32851f892c3cfac8a4017a746be51fc756de1f4982765a07cd77d",
+      "visual_observation": "Card reverse copyright 1981 and complete 1980-81 stats; does not date photograph."
+    },
+    {
+      "filename": "image(20261016-100307).png",
+      "library_file_id": "libfile_86f18b55b7688191925ee33fbc82e234",
+      "sha256": "a6b720779405d467cf7cdf1cdc32b192afd8d27f4a9a13a4c6ac48ec354e1ab1",
+      "visual_observation": "Wikipedia 1980-81 roster lists Bibby 10."
+    },
+    {
+      "filename": "image(20261016-101010).png",
+      "library_file_id": "libfile_66a799d3f0a88191ac64341ac3fbb92e",
+      "sha256": "1bd1015842b9c3f00142a3484603bcb3469bcadd21dcf00301d2b742a9cf25de",
+      "visual_observation": "Team photograph shows 15 at front right."
+    },
+    {
+      "filename": "image(20261016-101036).png",
+      "library_file_id": "libfile_e4662cfb9acc8191a4c05539d69e8c6c",
+      "sha256": "32b10256d1871d3a18784858dff2c2bc00262c8ed9eed8af25ecd44326ae4715",
+      "visual_observation": "Caption identifies front-right player wearing 15 as Henry Bibby; conflicting evidence retained."
+    }
+  ]
+}

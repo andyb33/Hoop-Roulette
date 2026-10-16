@@ -47,3 +47,9 @@ A register's main number, parenthetical alternative, or numeric ordering does no
 133 tests pass for this checkpoint, including completed-season checks, source-name aliases, strict zero-minute appearance behavior, scoped placeholder proofs and preserved Collins counting disagreements. These are source/data validation checks; the proposed 46-season playable pool has not yet been activated or given the 100-game expansion smoke check. The published 43-season default remains unchanged.
 
 Next: resolve the seven final jersey numbers; finish 1980–81 completion; activate all three seasons together; update counts/version/playtest metadata; run full tests, 100 games and live HTTP checks; publish main and update Notion; then build Windows, Apple Silicon Mac and Intel Mac packages at the Stage 2 checkpoint.
+
+## Jersey decisions accepted — 2026-10-16
+
+The user accepted all seven pending 1980–81 choices: Collins ATL **7**, Sobers CHI **40**, Spanarkel DAL **34**, Mokeski DET **44**, Buse IND **11**, Moore SAS **00**, Bibby SDC **10**. This supersedes the pending-jersey statements above. Individual resolution files retain original NBA fields, sources, uploaded-image hashes and conflicting evidence. These are reviewed project decisions with chronology limitations, not claims of exact final-game visual verification.
+
+No jersey research items remain open in this batch. The 1980–81 honors/completion checks and activation of the final three seasons remain pending; the playable pool remains 43 seasons.

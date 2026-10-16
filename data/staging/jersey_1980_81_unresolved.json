@@ -1,7 +1,87 @@
 {
   "season": "1980-81",
-  "status": "needs_dated_final_number_evidence",
-  "entries": [
+  "status": "resolved_by_user_review",
+  "entries": [],
+  "resolved_entries": [
+    {
+      "season": "1980-81",
+      "player_id": 76418,
+      "player": "Don Collins",
+      "team": "ATL",
+      "game_id": "0028000533",
+      "game_date": "1981-01-16",
+      "original_nba_jersey": "7-42",
+      "resolved_jersey": 7,
+      "resolution_file": "data/staging/jersey_1980_81_76418_ATL_resolution.json"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 78215,
+      "player": "Ricky Sobers",
+      "team": "CHI",
+      "game_id": "0028000942",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "14-40",
+      "resolved_jersey": 40,
+      "resolution_file": "data/staging/jersey_1980_81_78215_CHI_resolution.json"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 78222,
+      "player": "Jim Spanarkel",
+      "team": "DAL",
+      "game_id": "0028000938",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "33-34",
+      "resolved_jersey": 34,
+      "resolution_file": "data/staging/jersey_1980_81_78222_DAL_resolution.json"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 77623,
+      "player": "Paul Mokeski",
+      "team": "DET",
+      "game_id": "0028000929",
+      "game_date": "1981-03-28",
+      "original_nba_jersey": "",
+      "resolved_jersey": 44,
+      "resolution_file": "data/staging/jersey_1980_81_77623_DET_resolution.json"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 76317,
+      "player": "Don Buse",
+      "team": "IND",
+      "game_id": "0028000942",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "10-11",
+      "resolved_jersey": 11,
+      "resolution_file": "data/staging/jersey_1980_81_76317_IND_resolution.json"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 77633,
+      "player": "Johnny Moore",
+      "team": "SAS",
+      "game_id": "0028000935",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "00-10",
+      "resolved_jersey": "00",
+      "resolution_file": "data/staging/jersey_1980_81_77633_SAS_resolution.json"
+    },
+    {
+      "season": "1980-81",
+      "player_id": 76162,
+      "player": "Henry Bibby",
+      "team": "SDC",
+      "game_id": "0028000941",
+      "game_date": "1981-03-29",
+      "original_nba_jersey": "10-15",
+      "resolved_jersey": 10,
+      "resolution_file": "data/staging/jersey_1980_81_76162_SDC_resolution.json"
+    }
+  ],
+  "previous_unresolved_entries": [
     {
       "season": "1980-81",
       "player_id": 76418,
@@ -66,5 +146,5 @@
       "original_nba_jersey": "10-15"
     }
   ],
-  "note": "APBR lists more than one number for these stints; main number and numeric ordering do not establish chronology. No guessed resolution has been applied."
+  "note": "All seven choices accepted by user on 2026-10-16. Evidence, conflicting numbers and chronology limitations are preserved in individual resolution files. Season completion and activation remain pending."
 }

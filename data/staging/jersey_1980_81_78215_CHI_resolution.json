@@ -1,0 +1,19 @@
+{
+  "season": "1980-81",
+  "player_id": 78215,
+  "player": "Ricky Sobers",
+  "team": "CHI",
+  "game_id": "0028000942",
+  "game_date": "1981-03-29",
+  "original_nba_jersey": "14-40",
+  "resolved_jersey": 40,
+  "status": "INFERRED_USER_REVIEWED",
+  "method": "User-reviewed historical jersey evidence; final number accepted with chronology limitations",
+  "decision_basis": "Bulls Brasil 1980-81 history explicitly reports 14 then 40. Secondary historical account; no dated final-game photo recovered.",
+  "sources": [
+    "https://bullsbrasil.wordpress.com/2009/09/15/temporada-a-temporada-1980-81/"
+  ],
+  "user_review_date": "2026-10-16",
+  "confidence": "Accepted project decision; exact final-game jersey not directly verified",
+  "user_supplied_evidence": []
+}
