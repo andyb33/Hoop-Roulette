@@ -184,7 +184,7 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertTrue(all(r.all_defense==tier for r in defense if r.player_id in ids))
 
     def test_recovered_davis_photo_resolves_exact_last_game_and_preserves_nba_blank(self):
-        audit=json.loads((ROOT/'data/processed/completion_2005_06.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_2005_06.json').read_text(encoding="utf-8"))
         evidence=next(r for r in audit['jersey_evidence'] if r['player_id']==213 and r['team']=='NYK')
         proof=evidence['jersey_resolution']
         self.assertEqual((evidence['game_id'],evidence['last_game_date']),('0020500658','2006-01-31'))
@@ -196,12 +196,12 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertIn('image541809150',proof['photo_page'])
 
     def test_recovered_jacobsen_minutes_match_official_stint_totals(self):
-        proof=json.loads((ROOT/'data/staging/stats_2004_05_jacobsen_official_resolution.json').read_text())
+        proof=json.loads((ROOT/'data/staging/stats_2004_05_jacobsen_official_resolution.json').read_text(encoding="utf-8"))
         official=proof['official_row']
         self.assertEqual((official['PLAYER_ID'],official['SEASON_ID'],official['TEAM_ABBREVIATION'],official['GP'],official['MIN']),(2418,'2004-05','NOH',44,1037))
         row=next(r for r in load_records(['2004-05']) if r.player_id==2418 and r.team=='NOH')
         self.assertEqual(row.mpg,23.6)
-        report=json.loads((ROOT/'data/staging/stats_2004_05_verification.json').read_text())
+        report=json.loads((ROOT/'data/staging/stats_2004_05_verification.json').read_text(encoding="utf-8"))
         resolution=next(r for r in report['resolved_differences'] if r['player_id']==2418 and r['field']=='mpg')
         self.assertEqual(resolution['official_total_evidence'],official)
         self.assertEqual(resolution['reference'],23.4)
@@ -219,7 +219,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_recovered_pre_bobcats_schedules_and_franchises(self):
         for season in ('2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87','1985-86','1984-85','1983-84'):
             slug=season.replace('-','_')
-            report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text())
+            report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text(encoding="utf-8"))
             self.assertTrue(report['passed'] and report['schedule_evidence']['matches'])
             self.assertEqual(report['regular_season_games'],725 if season == '1998-99' else 943 if int(season[:4])<1988 else 1025 if int(season[:4])==1988 else 1107 if int(season[:4])<1995 else 1189)
             self.assertEqual(len(report['schedule_evidence']['team_games']),23 if int(season[:4])<1988 else 25 if int(season[:4])==1988 else 27 if int(season[:4])<1995 else 29)
@@ -239,7 +239,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_recovered_crotty_jersey_uses_2001_02_register_entry(self):
         row=next(r for r in load_records(['2001-02']) if r.player_id==180 and r.team=='UTA')
         self.assertEqual(row.jersey,25)
-        audit=json.loads((ROOT/'data/processed/completion_2001_02.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_2001_02.json').read_text(encoding="utf-8"))
         evidence=next(r for r in audit['jersey_evidence'] if r['player_id']==180 and r['team']=='UTA')
         self.assertEqual(evidence['official_box_score_player']['jerseyNum'],'')
         self.assertEqual((evidence['game_id'],evidence['last_game_date']),('0020101135','2002-04-11'))
@@ -249,9 +249,9 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_recovered_lenard_rate_and_whole_minute_source_provenance(self):
         row=next(r for r in load_records(['2001-02']) if r.player_id==702 and r.team=='DEN')
         self.assertEqual((row.gp,row.mpg),(71,23.3))
-        proof=json.loads((ROOT/'data/staging/stats_2001_02_702_official_resolution.json').read_text())
+        proof=json.loads((ROOT/'data/staging/stats_2001_02_702_official_resolution.json').read_text(encoding="utf-8"))
         self.assertEqual((proof['official_row']['GP'],proof['official_row']['MIN']),(71,1656))
-        manifest=json.loads((ROOT/'data/staging/stats_2003_04_manifest.json').read_text())
+        manifest=json.loads((ROOT/'data/staging/stats_2003_04_manifest.json').read_text(encoding="utf-8"))
         self.assertEqual(len(manifest['whole_minute_source_rows']),23)
         self.assertEqual({r['game_id'] for r in manifest['whole_minute_source_rows']},{'0020300778'})
         from scripts.collect_historical_stats import source_seconds
@@ -262,7 +262,7 @@ class CompletedHistoryTests(unittest.TestCase):
         rows=load_records(['1998-99'])
         self.assertEqual(len(rows),234)
         self.assertTrue(all(30 <= r.gp <= 50 for r in rows))
-        report=json.loads((ROOT/'data/staging/stats_1998_99_verification.json').read_text())
+        report=json.loads((ROOT/'data/staging/stats_1998_99_verification.json').read_text(encoding="utf-8"))
         self.assertEqual(report['regular_season_games'],725)
         self.assertEqual(len(report['schedule_evidence']['team_games']),29)
         self.assertEqual(set(report['schedule_evidence']['team_games'].values()),{50})
@@ -279,7 +279,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertEqual(sum(r.dpoy for r in rows),1)
 
     def test_fortson_missing_appearance_is_exact_and_totals_match(self):
-        manifest=json.loads((ROOT/'data/staging/stats_1999_00_manifest.json').read_text())
+        manifest=json.loads((ROOT/'data/staging/stats_1999_00_manifest.json').read_text(encoding="utf-8"))
         proof=manifest['source_corrections']['missing_appearances'][0]
         self.assertEqual((proof['player_id'],proof['team'],proof['official_row']['GAME_ID']),(1504,'BOS','0029900712'))
         self.assertEqual(proof['official_row']['GAME_DATE'],'Feb 15, 2000')
@@ -291,7 +291,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_rate_overrides_keep_source_eligibility_and_primary_totals(self):
         for season,pid,team,expected,gp,minutes in [('1999-00',682,'CLE',30.4,73,2216),('1998-99',432,'VAN',15.2,46,697)]:
             slug=season.replace('-','_')
-            manifest=json.loads((ROOT/f'data/staging/stats_{slug}_manifest.json').read_text())
+            manifest=json.loads((ROOT/f'data/staging/stats_{slug}_manifest.json').read_text(encoding="utf-8"))
             proof=next(r for r in manifest['display_rate_overrides'] if r['player_id']==pid and r['team']==team)
             self.assertGreaterEqual(proof['source_unrounded_mpg'],15)
             self.assertEqual(proof['source_gp'],gp)
@@ -303,7 +303,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_cutoff_proofs_exclude_only_the_verified_team_stints(self):
         for season,count in [('2000-01',3),('1999-00',1)]:
             slug=season.replace('-','_')
-            proofs=json.loads((ROOT/f'data/staging/stats_{slug}_cutoff_resolutions.json').read_text())
+            proofs=json.loads((ROOT/f'data/staging/stats_{slug}_cutoff_resolutions.json').read_text(encoding="utf-8"))
             self.assertEqual(len(proofs),count)
             actual={(r.player_id,r.team) for r in load_records([season])}
             for p in proofs:
@@ -315,12 +315,12 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_legacy_title_ids_and_lakers_jersey_photos_are_audited(self):
         for season,gid in [('2000-01','0040000087'),('1999-00','0049900088'),('1998-99','0049800087')]:
             slug=season.replace('-','_')
-            audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text(encoding="utf-8"))
             proof=audit['title_game_verification']
             self.assertEqual(proof['game_id'],gid)
             self.assertEqual(proof['champion_team'],audit['champion_team'])
             self.assertEqual(len(proof['official_final_game_rows']),2)
-        audit=json.loads((ROOT/'data/processed/completion_2000_01.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_2000_01.json').read_text(encoding="utf-8"))
         rows={r.player_id:r for r in load_records(['2000-01']) if r.team=='LAL'}
         for pid,jersey in [(375,7),(2130,12)]:
             e=next(e for e in audit['jersey_evidence'] if e['player_id']==pid and e['team']=='LAL')
@@ -334,16 +334,16 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertIn('WSB',{r.team for r in rows})
         self.assertNotIn('WAS',{r.team for r in rows})
         self.assertIn('WAS',{r.team for r in load_records(['1997-98'])})
-        audit=json.loads((ROOT/'data/processed/completion_1996_97.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_1996_97.json').read_text(encoding="utf-8"))
         e=next(e for e in audit['jersey_evidence'] if e['player_id']==694 and e['team']=='HOU')
         self.assertEqual(e['official_box_score_player']['jerseyNum'],'2-5')
         self.assertEqual(e['jersey'],5)
         self.assertEqual(e['jersey_resolution']['pdf_page'],174)
 
     def test_1995_legacy_ids_preserve_missing_rebounds_and_primary_evidence(self):
-        manifest=json.loads((ROOT/'data/staging/stats_1995_96_manifest.json').read_text())
+        manifest=json.loads((ROOT/'data/staging/stats_1995_96_manifest.json').read_text(encoding="utf-8"))
         self.assertEqual(manifest['primary_player_appearances'],23744)
-        proofs=json.loads((ROOT/'data/staging/player_identity_1995_96_resolutions.json').read_text())
+        proofs=json.loads((ROOT/'data/staging/player_identity_1995_96_resolutions.json').read_text(encoding="utf-8"))
         self.assertEqual({(p['legacy_player_id'],p['canonical_player_id']) for p in proofs},{(78412,919),(77741,709)})
         for p in proofs:
             self.assertTrue({'GP','MIN','PTS','AST','STL','BLK'} <= set(p['matched_fields']))
@@ -360,14 +360,14 @@ class CompletedHistoryTests(unittest.TestCase):
         rows={r.player_id:r for r in load_records(['1995-96'])}
         self.assertEqual((rows[709].gp,rows[709].rpg,rows[709].jersey),(64,2.6,31))
         self.assertEqual((rows[919].gp,rows[919].jersey),(80,35))
-        audit=json.loads((ROOT/'data/processed/completion_1995_96.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_1995_96.json').read_text(encoding="utf-8"))
         for pid,legacy in [(919,78412),(709,77741)]:
             e=next(e for e in audit['jersey_evidence'] if e['player_id']==pid)
             self.assertEqual(e['official_box_score_player']['personId'],legacy)
             self.assertEqual(e['identity_resolution']['canonical_player_id'],pid)
 
     def test_1996_regular_season_cutoffs_and_new_title_sources(self):
-        proofs=json.loads((ROOT/'data/staging/stats_1996_97_cutoff_resolutions.json').read_text())
+        proofs=json.loads((ROOT/'data/staging/stats_1996_97_cutoff_resolutions.json').read_text(encoding="utf-8"))
         rows={(r.player_id,r.team) for r in load_records(['1996-97'])}
         self.assertEqual({p['player_id']:p['gp'] for p in proofs},{692:71,713:55})
         for p in proofs:
@@ -375,14 +375,14 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertLess(p['official_row']['MIN'],15*p['gp'])
             self.assertNotIn((p['player_id'],p['team']),rows)
         for season,gid in [('1997-98','0049700088'),('1996-97','0049600088'),('1995-96','0049500068')]:
-            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text(encoding="utf-8"))
             proof=audit['title_game_verification']
             self.assertEqual((proof['game_id'],proof['champion_team']),(gid,'CHI'))
             self.assertEqual(len(proof['official_final_game_rows']),2)
 
     def test_1994_conflicting_game_logs_preserve_season_totals_and_observed_gp(self):
-        manifest=json.loads((ROOT/'data/staging/stats_1994_95_manifest.json').read_text())
-        audit=json.loads((ROOT/'data/processed/completion_1994_95.json').read_text())
+        manifest=json.loads((ROOT/'data/staging/stats_1994_95_manifest.json').read_text(encoding="utf-8"))
+        audit=json.loads((ROOT/'data/processed/completion_1994_95.json').read_text(encoding="utf-8"))
         rows={(r.player_id,r.team):r for r in load_records(['1994-95'])}
         for pid,team,observed,official in [(324,'LAL',74,73),(76726,'NJN',47,48)]:
             p=next(p for p in manifest['season_total_overrides'] if p['player_id']==pid)
@@ -397,7 +397,7 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_1992_counting_stat_resolutions_retain_original_totals(self):
         from decimal import Decimal, ROUND_HALF_UP
-        manifest=json.loads((ROOT/'data/staging/stats_1992_93_manifest.json').read_text())
+        manifest=json.loads((ROOT/'data/staging/stats_1992_93_manifest.json').read_text(encoding="utf-8"))
         proofs=manifest['season_total_overrides']
         self.assertEqual(len(proofs),8)
         rows={(r.player_id,r.team):r for r in load_records(['1992-93'])}
@@ -422,7 +422,7 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_historical_registers_are_not_labelled_as_official_box_numbers(self):
         for season,expected in [('1994-95',8),('1993-94',6),('1992-93',5)]:
-            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text(encoding="utf-8"))
             resolved=[e for e in audit['jersey_evidence'] if e['jersey_resolution']]
             self.assertEqual(len(resolved),expected)
             for e in resolved:
@@ -439,7 +439,7 @@ class CompletedHistoryTests(unittest.TestCase):
                ('1989-90',165,'HOU','assists',232,'AST',234,'apg',2.9),
                ('1989-90',137,'HOU','seconds',51900,'MIN',869,'mpg',29.0)]
         for season,pid,team,source_field,original,official_field,total,rate,expected in cases:
-            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text())
+            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text(encoding="utf-8"))
             proof=next(p for p in manifest['season_total_overrides'] if p['player_id']==pid)
             self.assertEqual(proof['source_aggregate'][source_field],original)
             self.assertEqual(proof['official_row'][official_field],total)
@@ -448,7 +448,7 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_1991_and_1990_vaught_recovery_matches_canonical_totals(self):
         for season,gp in [('1991-92',79),('1990-91',73)]:
-            proofs=json.loads((ROOT/f'data/staging/player_identity_{season.replace("-","_")}_resolutions.json').read_text())
+            proofs=json.loads((ROOT/f'data/staging/player_identity_{season.replace("-","_")}_resolutions.json').read_text(encoding="utf-8"))
             p=next(p for p in proofs if p['canonical_player_id']==919)
             self.assertEqual(p['legacy_player_id'],78412)
             self.assertEqual(set(p['matched_fields']),{'GP','MIN','PTS','REB','AST','STL','BLK'})
@@ -458,20 +458,20 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_composite_jerseys_use_specific_evidence_and_preserve_originals(self):
         for season,pid,team,jersey,original in [('1991-92',428,'BOS',20,'4-20'),('1991-92',77167,'SAS',25,'15-25'),('1991-92',78615,'DET',0,'0-6'),('1994-95',182,'MIA',32,'30-32'),('1994-95',943,'GSW',9,'9-33')]:
-            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text(encoding="utf-8"))
             e=next(e for e in audit['jersey_evidence'] if e['player_id']==pid and e['team']==team)
             self.assertEqual(e['jersey'],jersey)
             self.assertEqual(e['official_box_score_player']['jerseyNum'],original)
             self.assertNotEqual(e['jersey_resolution']['status'],'VERIFIED_HISTORICAL_SEASON_REGISTER')
         row=next(r for r in load_records(['1990-91']) if r.player_id==698 and r.team=='SEA')
         self.assertEqual(row.jersey,22)
-        proof=json.loads((ROOT/'data/staging/jersey_1994_95_182_MIA_resolution.json').read_text())
+        proof=json.loads((ROOT/'data/staging/jersey_1994_95_182_MIA_resolution.json').read_text(encoding="utf-8"))
         self.assertIn('1994-95',proof['uniform_register_entry'])
         self.assertEqual(proof['superseded_resolution']['resolved_jersey'],30)
 
     def test_1989_through_1991_title_games_match_official_schedules(self):
         for season,gid,team in [('1991-92','0049100073','CHI'),('1990-91','0049000068','CHI'),('1989-90','0048900072','DET')]:
-            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text(encoding="utf-8"))
             self.assertEqual(audit['title_game_verification']['game_id'],gid)
             self.assertEqual(audit['champion_team'],team)
             self.assertEqual(len(audit['title_game_verification']['official_final_game_rows']),2)
@@ -479,7 +479,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_1980s_reference_archive_preserves_totals_and_same_name_players(self):
         hashes=set()
         for season,count,games,teams in [('1988-89',225,1025,25),('1987-88',202,943,23),('1986-87',208,943,23)]:
-            report=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_verification.json').read_text())
+            report=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_verification.json').read_text(encoding="utf-8"))
             self.assertTrue(report['passed'] and report['eligibility_sets_match'])
             self.assertEqual(report['stat_comparisons'],7*count)
             self.assertEqual(report['regular_season_games'],games)
@@ -490,7 +490,7 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertTrue(all(len(e['original_reference_totals'])==6 for e in report['reference_evidence']))
         self.assertEqual(len(hashes),1)
         self.assertEqual(len(next(iter(hashes))),64)
-        report=json.loads((ROOT/'data/staging/stats_1988_89_verification.json').read_text())
+        report=json.loads((ROOT/'data/staging/stats_1988_89_verification.json').read_text(encoding="utf-8"))
         evidence={p['player_id']:p for p in report['reference_identity_evidence']}
         self.assertEqual((evidence[279]['official_row']['GP'],evidence[77178]['official_row']['GP']),(53,43))
         rows={r.player_id:r for r in load_records(['1988-89']) if r.team=='WSB'}
@@ -501,7 +501,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_1980s_official_total_overrides_retain_nullable_and_conflicting_logs(self):
         from decimal import Decimal, ROUND_HALF_UP
         for season,count in [('1988-89',4),('1987-88',5),('1986-87',25)]:
-            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text())
+            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text(encoding="utf-8"))
             self.assertEqual(len(manifest['season_total_overrides']),count)
             rows={(r.player_id,r.team):r for r in load_records([season])}
             for p in manifest['season_total_overrides']:
@@ -512,13 +512,13 @@ class CompletedHistoryTests(unittest.TestCase):
                 for field,col in [('mpg','MIN'),('ppg','PTS'),('rpg','REB'),('apg','AST'),('spg','STL'),('bpg','BLK')]:
                     expected=float((Decimal(official[col])/Decimal(official['GP'])).quantize(Decimal('.1'),rounding=ROUND_HALF_UP))
                     self.assertEqual(getattr(r,field),expected)
-        manifest=json.loads((ROOT/'data/staging/stats_1986_87_manifest.json').read_text())
+        manifest=json.loads((ROOT/'data/staging/stats_1986_87_manifest.json').read_text(encoding="utf-8"))
         for pid in (9,76993):
             p=next(p for p in manifest['season_total_overrides'] if p['player_id']==pid)
             self.assertIsNone(p['source_aggregate']['rebounds_total'])
             self.assertIsNone(p['source_aggregate']['assists'])
             self.assertEqual(p['source_aggregate']['gp'],p['official_row']['GP']+1)
-        report=json.loads((ROOT/'data/staging/stats_1987_88_verification.json').read_text())
+        report=json.loads((ROOT/'data/staging/stats_1987_88_verification.json').read_text(encoding="utf-8"))
         p=next(p for p in report['resolved_differences'] if p['player_id']==77626)
         self.assertEqual((p['official_total_evidence']['BLK'],p['independent_total'],p['staged'],p['reference']),(12,14,0.2,0.3))
 
@@ -533,13 +533,13 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertTrue(all(r.all_defense==2 for r in defense if r.player in ('Mark Eaton','Patrick Ewing')))
         lever=next(r for r in rows if r.player_id==77376)
         self.assertEqual(lever.all_defense,2)
-        report=json.loads((ROOT/'data/staging/stats_1987_88_verification.json').read_text())
+        report=json.loads((ROOT/'data/staging/stats_1987_88_verification.json').read_text(encoding="utf-8"))
         cutoff=next(p for p in report['cutoff_boundary_resolutions'] if p['player']=='Dallas Comegys')
         self.assertEqual((cutoff['gp'],cutoff['seconds']),(75,67320))
         self.assertNotIn('Dallas Comegys',{r.player for r in rows})
 
     def test_1986_henderson_final_appearance_uses_individual_log_proof(self):
-        audit=json.loads((ROOT/'data/processed/completion_1986_87.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_1986_87.json').read_text(encoding="utf-8"))
         e=next(e for e in audit['jersey_evidence'] if e['player_id']==76993 and e['team']=='NYK')
         proof=e['final_appearance_resolution']
         self.assertEqual((e['last_game_date'],e['game_id']),('1987-04-17','0028600925'))
@@ -550,7 +550,7 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_1980s_expansion_and_title_game_proofs_are_scoped(self):
         for season,gid,team in [('1988-89','0048800062','DET'),('1987-88','0048700080','LAL'),('1986-87','0048600071','LAL')]:
-            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text())
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text(encoding="utf-8"))
             self.assertEqual(audit['title_game_verification']['game_id'],gid)
             self.assertEqual(audit['champion_team'],team)
             teams={r.team for r in load_records([season])}
@@ -563,7 +563,7 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_1983_through_1985_schedule_honors_and_title_proofs(self):
         for season,count,gid,champion in [('1985-86',211,'0048500406','BOS'),('1984-85',204,'0048400406','LAL'),('1983-84',199,'0048300079','BOS')]:
-            slug=season.replace('-','_');report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text());audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text())
+            slug=season.replace('-','_');report=json.loads((ROOT/f'data/staging/stats_{slug}_verification.json').read_text(encoding="utf-8"));audit=json.loads((ROOT/f'data/processed/completion_{slug}.json').read_text(encoding="utf-8"))
             self.assertTrue(report['passed'] and report['eligibility_sets_match'])
             self.assertEqual(report['stat_comparisons'],7*count)
             self.assertEqual(report['regular_season_games'],943)
@@ -574,7 +574,7 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertEqual(len({r.player_id for r in rows if r.all_nba}),10)
             self.assertEqual({r.all_nba for r in rows if r.all_nba},{1,2})
             self.assertEqual(len({r.player_id for r in rows if r.all_defense}),10)
-        audit=json.loads((ROOT/'data/processed/completion_1984_85.json').read_text())
+        audit=json.loads((ROOT/'data/processed/completion_1984_85.json').read_text(encoding="utf-8"))
         self.assertEqual(audit['honors_key_aliases']['benard-king'],'bernard-king')
         king=next(r for r in load_records(['1984-85']) if r.player_id==77264)
         self.assertEqual(king.all_nba,1)
@@ -597,7 +597,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertEqual({r.team for r in outcomes},{'KCK'})
 
     def test_1984_incomplete_minute_coverage_uses_two_sources_for_eligibility(self):
-        manifest=json.loads((ROOT/'data/staging/stats_1984_85_manifest.json').read_text());report=json.loads((ROOT/'data/staging/stats_1984_85_verification.json').read_text());rows={(r.player_id,r.team):r for r in load_records(['1984-85'])}
+        manifest=json.loads((ROOT/'data/staging/stats_1984_85_manifest.json').read_text(encoding="utf-8"));report=json.loads((ROOT/'data/staging/stats_1984_85_verification.json').read_text(encoding="utf-8"));rows={(r.player_id,r.team):r for r in load_records(['1984-85'])}
         proofs=manifest['eligibility_source_overrides'];self.assertEqual(len(proofs),3)
         for p in proofs:
             official=p['official_row'];ref=p['independent_reference_row'];key=(p['player_id'],p['team'])
@@ -620,7 +620,7 @@ class CompletedHistoryTests(unittest.TestCase):
     def test_new_official_totals_preserve_original_nulls_and_rate_precision(self):
         from decimal import Decimal, ROUND_HALF_UP
         for season,count in [('1985-86',39),('1984-85',81),('1983-84',30)]:
-            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text());rows={(r.player_id,r.team):r for r in load_records([season])}
+            manifest=json.loads((ROOT/f'data/staging/stats_{season.replace("-","_")}_manifest.json').read_text(encoding="utf-8"));rows={(r.player_id,r.team):r for r in load_records([season])}
             self.assertEqual(len(manifest['season_total_overrides']),count)
             self.assertTrue(any(p['source_aggregate']['rebounds_total'] is None or p['source_aggregate']['steals'] is None for p in manifest['season_total_overrides']))
             for p in manifest['season_total_overrides']:
@@ -636,7 +636,7 @@ class CompletedHistoryTests(unittest.TestCase):
         from unittest.mock import patch
         with patch.object(sys,"path",[str(ROOT/"scripts"),*sys.path]):
             from complete_historical_seasons import final_log_rows
-        audit=json.loads((ROOT/'data/processed/completion_1983_84.json').read_text());e=next(e for e in audit['jersey_evidence'] if e['player_id']==77134 and e['team']=='KCK');p=e['final_appearance_resolution'];bounded=final_log_rows(p)
+        audit=json.loads((ROOT/'data/processed/completion_1983_84.json').read_text(encoding="utf-8"));e=next(e for e in audit['jersey_evidence'] if e['player_id']==77134 and e['team']=='KCK');p=e['final_appearance_resolution'];bounded=final_log_rows(p)
         self.assertEqual((e['last_game_date'],e['game_id']),('1984-02-14','0028300586'))
         self.assertEqual(p['source_observed_game_date'],'1984-03-31')
         self.assertEqual(p['roster_end_date_exclusive'],'1984-02-15')
@@ -649,7 +649,7 @@ class CompletedHistoryTests(unittest.TestCase):
 
     def test_new_jersey_resolutions_retain_exact_team_and_original_blank(self):
         for season,count in [('1985-86',4),('1984-85',4),('1983-84',5)]:
-            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text());resolved=[e for e in audit['jersey_evidence'] if e['jersey_resolution']]
+            audit=json.loads((ROOT/f'data/processed/completion_{season.replace("-","_")}.json').read_text(encoding="utf-8"));resolved=[e for e in audit['jersey_evidence'] if e['jersey_resolution']]
             self.assertEqual(len(resolved),count)
             for e in resolved:
                 proof=e['jersey_resolution']
