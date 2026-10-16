@@ -1,0 +1,18 @@
+{
+  "season": "1983-84",
+  "player_id": 698,
+  "player": "Eddie Johnson",
+  "team": "KCK",
+  "game_id": "0028300935",
+  "game_date": "1984-04-14",
+  "original_nba_jersey": "",
+  "resolved_jersey": 8,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "8 Eddie Johnson",
+  "season_team_register": "2 Dana Suttle, 8 Eddie Johnson, 10 Don Buse, 20 Ed Nealy, 22 Larry Drew, 24 Reggie Theus, 25 Billy Knight, 30 Kevin Loder, 33 Steve Johnson, 35 Dave Robisch, 40 Larry Micheaux, 41 LaSalle Thompson, 42 Mike Woodson, 50 Joe Meriweather",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

@@ -1,0 +1,142 @@
+{
+  "season": "1983-84",
+  "completed_at": "2026-10-16T02:29:35.720170+00:00",
+  "passed": true,
+  "entries": 199,
+  "jerseys_verified": 199,
+  "unresolved": [],
+  "staged_sha256": "2e6d70718a4145d6e2519d62211e69cdc2f0817265567e310d8e4e33106ec8f9",
+  "game_sha256": "f907071864cc6fd922284aa0435ceb48217fe6ddded7829731a585ad14a2e94c",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1983-84&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "larry-bird": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "ralph-sampson": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "sidney-moncrief": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0048300079",
+    "game_date": "1984-06-12",
+    "champion_team": "BOS",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41983",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0048300079",
+        "GAME_DATE": "1984-06-12",
+        "MATCHUP": "LAL @ BOS",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 102,
+        "FGM": 41,
+        "FGA": 84,
+        "FG_PCT": 0.488,
+        "FG3M": 2,
+        "FG3A": 8,
+        "FG3_PCT": 0.25,
+        "FTM": 18,
+        "FTA": 28,
+        "FT_PCT": 0.643,
+        "OREB": 9,
+        "DREB": 24,
+        "REB": 33,
+        "AST": 28,
+        "STL": 9,
+        "BLK": 8,
+        "TOV": 17,
+        "PF": 32,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41983",
+        "TEAM_ID": 1610612738,
+        "TEAM_ABBREVIATION": "BOS",
+        "TEAM_NAME": "Boston Celtics",
+        "GAME_ID": "0048300079",
+        "GAME_DATE": "1984-06-12",
+        "MATCHUP": "BOS vs. LAL",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 111,
+        "FGM": 34,
+        "FGA": 86,
+        "FG_PCT": 0.395,
+        "FG3M": 0,
+        "FG3A": 2,
+        "FG3_PCT": 0.0,
+        "FTM": 43,
+        "FTA": 51,
+        "FT_PCT": 0.843,
+        "OREB": 20,
+        "DREB": 32,
+        "REB": 52,
+        "AST": 18,
+        "STL": 11,
+        "BLK": 3,
+        "TOV": 14,
+        "PF": 23,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1983-84&SeasonType=Playoffs",
+    "source_sha256": "c5b8c1600a0a959780649487c05574e47b7f26c24703af28a110211cf4b3cc80"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048300079/box-score",
+  "champion_team": "BOS",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 8,
+    "BOS": 8,
+    "CHI": 10,
+    "CLE": 10,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 8,
+    "GSW": 8,
+    "HOU": 8,
+    "IND": 9,
+    "KCK": 10,
+    "LAL": 9,
+    "MIL": 9,
+    "NJN": 9,
+    "NYK": 9,
+    "PHI": 9,
+    "PHX": 7,
+    "POR": 8,
+    "SAS": 9,
+    "SDC": 9,
+    "SEA": 8,
+    "UTA": 8,
+    "WSB": 8
+  }
+}

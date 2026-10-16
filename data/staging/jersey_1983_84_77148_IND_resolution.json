@@ -1,0 +1,18 @@
+{
+  "season": "1983-84",
+  "player_id": 77148,
+  "player": "George Johnson",
+  "team": "IND",
+  "game_id": "0028300936",
+  "game_date": "1984-04-14",
+  "original_nba_jersey": "",
+  "resolved_jersey": 24,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "24 George Johnson",
+  "season_team_register": "7 Tracy Jackson, 7 Bruce Kuczenski, 11 Brook Steppe, 12 Butch Carter, 14 Jerry Sichting, 16 Jim Thomas, 21 Kevin McKenna, 24 George Johnson, 31 Granville Waiters, 32 Herb Williams, 33 Clark Kellogg, 34 Leroy Combs, 35 Sidney Lowe, 40 Steve Stipanovich",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

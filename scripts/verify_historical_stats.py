@@ -51,8 +51,8 @@ REFERENCES.update({season: {
     "provenance": "https://www.kaggle.com/datasets/drgilermo/nba-players-stats",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Archived Basketball Reference totals from NBA Players stats since 1950; exact ending Year and individual traded-player stints retained. Rates derive from original totals with decimal half-up rounding; original archive and selected totals preserved."
-} for season in ("1988-89", "1987-88", "1986-87")})
-SCHEDULES.update({"1988-89": (1025,82), "1987-88": (943,82), "1986-87": (943,82)})
+} for season in ("1988-89", "1987-88", "1986-87", "1985-86", "1984-85", "1983-84")})
+SCHEDULES.update({"1988-89": (1025,82), "1987-88": (943,82), "1986-87": (943,82), "1985-86": (943,82), "1984-85": (943,82), "1983-84": (943,82)})
 
 
 def extract_reference_csv(path, season, output):
@@ -140,7 +140,7 @@ def name_key(name):
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
             "jonasvalaninas": "jonasvalanciunas", "nikolavuevi": "nikolavucevic",
-            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "clifftrobinson":"cliffrobinson", "hotrod":"hotrodwilliams", "joebarry":"joebarrycarroll", "vinnydel":"vinnydelnegro", "michaelholton":"mikeholton", "dwaynewashington":"pearlwashington", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
+            "tomassatoransk": "tomassatoransky", "flipmurray": "ronaldmurray", "mingyao": "yaoming", "michaelsweetney": "mikesweetney", "clarweatherspoon": "clarenceweatherspoon", "slavamedvedenko": "stanislavmedvedenko", "ikeaustin": "isaacaustin", "lafayettelever":"fatlever", "davidgreenwood":"davegreenwood", "natearchibald":"tinyarchibald", "samuelwilliams":"samwilliams", "eddielee":"eddieleewilkins", "melvinturpin":"melturpin", "worldb":"worldfree", "worldbfree":"worldfree", "charlesdavis":"charliedavis", "michealray":"michealrayrichardson", "charlespittman":"charliepittman", "clifftrobinson":"cliffrobinson", "hotrod":"hotrodwilliams", "joebarry":"joebarrycarroll", "vinnydel":"vinnydelnegro", "michaelholton":"mikeholton", "dwaynewashington":"pearlwashington", "danschayes": "dannyschayes", "gheorghemureetman": "gheorghemuresan"}.get(text, text)
 
 
 def verify(season):
@@ -204,6 +204,13 @@ def verify(season):
             errors.append('Primary NBA game-log checksum changed')
     if len({(r["team"], r["player_id"]) for r in records}) != len(records):
         errors.append("Duplicate staged player-team key")
+    for p in manifest.get('eligibility_source_overrides',[]):
+        official=p['official_row'];ref=p['independent_reference_row']
+        assert p['independent_archive_sha256']==archive_sha256
+        key=(historical_team(season,TEAM_ALIASES.get(ref['Tm'],ref['Tm'])),name_key(ref['Player']))
+        independent=reference[key]
+        assert int(independent['G'])==int(ref['G'])==official['GP'] and int(independent['original_total_MP'])==int(ref['MP'])==official['MIN']
+        assert p['decision']==('include' if official['GP']>=30 and official['MIN']>=15*official['GP'] else 'exclude')
     actual = {(r["team"], name_key(r["player"])) for r in records}
     expected = {key for key, row in reference.items() if int(row["G"]) >= 30 and float(row["MP"]) >= 15}
     borderline = []
@@ -290,11 +297,12 @@ def verify(season):
                     errors.append("Official MPG resolution does not match staged record")
                 else:
                     item.update(resolution=proof["resolution"], resolution_source=proof["source"], official_total_evidence=official, official_source_sha256=proof["source_sha256"])
-            elif (season,row["player_id"],row["team"],field)==("1987-88",77626,"MIL","bpg"):
-                proof=next(p for p in manifest['season_total_overrides'] if p['player_id']==77626 and p['team']=='MIL')
-                assert proof['official_row']['GP']==row['gp']==56 and proof['official_row']['BLK']==proof['source_aggregate']['blocks']==12
-                assert ref['original_total_BLK']=='14' and row[field]==0.2 and float(ref[column])==0.3
-                item.update(resolution="Retain 12 blocks / 56 GP from official NBA season totals and original game logs; independent Basketball Reference archive reports 14. Source disagreement remains explicit.",resolution_source=proof['source'],official_total_evidence=proof['official_row'],official_source_sha256=proof['source_sha256'],independent_total=14)
+            elif (season,row["player_id"],row["team"],field) in {("1987-88",77626,"MIL","bpg"),("1984-85",76876,"CHI","bpg")}:
+                gp,blocks,independent_blocks={("1987-88",77626):(56,12,14),("1984-85",76876):(48,11,14)}[(season,row['player_id'])]
+                proof=next(p for p in manifest['season_total_overrides'] if p['player_id']==row['player_id'] and p['team']==row['team'])
+                assert proof['official_row']['GP']==row['gp']==gp and proof['official_row']['BLK']==proof['source_aggregate']['blocks']==blocks
+                assert int(ref['original_total_BLK'])==independent_blocks and row[field]==rounded_rate(blocks,gp) and float(ref[column])==rounded_rate(independent_blocks,gp)
+                item.update(resolution=f"Retain {blocks} blocks / {gp} GP from official NBA season totals and original game logs; independent Basketball Reference archive reports {independent_blocks}. Source disagreement remains explicit.",resolution_source=proof['source'],official_total_evidence=proof['official_row'],official_source_sha256=proof['source_sha256'],independent_total=independent_blocks)
             else:
                 errors.append(item)
             if "resolution" in item:
@@ -347,7 +355,7 @@ def verify(season):
               "reference_identity_evidence": reference_identity_evidence, "reference_identity_resolutions": [{k:r[k] for k in ("Player","Tm","G","reference_key_name","original_age","original_archive_index","original_total_MP")} for r in reference.values() if r.get("reference_key_name",r["Player"])!=r["Player"]], "reference": source, "reference_sha256": hashlib.sha256(ref_path.read_bytes()).hexdigest(),
               "staged_sha256": hashlib.sha256(data_path.read_bytes()).hexdigest(),
               "eligibility_sets_match": expected == actual, "all_30_teams_have_82_games": all(len(g)==82 for g in team_games.values()) and len(team_games)==30,
-              "schedule_evidence": schedule_evidence, "regular_season_games": len(games), "cutoff_boundary_resolutions": borderline, "resolved_differences": resolutions, "errors": errors,
+              "schedule_evidence": schedule_evidence, "regular_season_games": len(games), "eligibility_source_resolutions": manifest.get("eligibility_source_overrides",[]), "cutoff_boundary_resolutions": borderline, "resolved_differences": resolutions, "errors": errors,
               "reference_evidence": evidence}
     (ROOT / f"data/staging/stats_{slug}_verification.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     manifest["status"] = "stats_independently_checked" if report["passed"] else "stats_verification_failed"

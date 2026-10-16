@@ -11,9 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.10.8 includes the normal pool from 1986–87 through 2025–26.**
-The first twenty-four Stage 2 seasons have been rebuilt and independently verified.
-The verified 40-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
+**v0.10.9 includes the normal pool from 1983–84 through 2025–26.**
+The first twenty-seven Stage 2 seasons have been rebuilt and independently verified.
+The verified 43-season pool is published on `main`. Recovery checkpoints remain on `recovery/three-season-batches-20261014`.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -31,9 +31,9 @@ For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots
 Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
 Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
 
-The forty datasets from 1986–87 through 2025–26 are complete:
+The forty-three datasets from 1983–84 through 2025–26 are complete:
 
-- 10,926 eligible player-team records across forty seasons and 1,154 team-season combinations;
+- 11,540 eligible player-team records across forty-three seasons and 1,223 team-season combinations;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -42,7 +42,7 @@ The forty datasets from 1986–87 through 2025–26 are complete:
 - previous 15 GP / 10 MPG outputs preserved in `data/legacy/15gp_10mpg/`.
 
 The new historical seasons retain their independent stats audits and official
-final-appearance jersey audits. See [recovery completion report](docs/HISTORICAL_COMPLETION_1986_1989.md).
+final-appearance jersey audits. See [recovery completion report](docs/HISTORICAL_COMPLETION_1983_1986.md).
 Existing balance reports describe the earlier pool and have not been rerun.
 
 Stage 1 data is complete in the v0.10 source. The next desktop package will be built after Stage 2 reaches 1980–81. Stage 3 then continues through 1973–74.

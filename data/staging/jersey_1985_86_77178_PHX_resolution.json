@@ -1,0 +1,18 @@
+{
+  "season": "1985-86",
+  "player_id": 77178,
+  "player": "Charles Jones",
+  "team": "PHX",
+  "game_id": "0028500811",
+  "game_date": "1986-03-22",
+  "original_nba_jersey": "",
+  "resolved_jersey": 34,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr8090.html",
+  "source_sha256": "1f83a49c6c6c2b7bcf6832b05e9d2521d68f7d04f01f097d6913e85f4d950048",
+  "source_format": "original_html",
+  "uniform_register_entry": "34 Charles Jones",
+  "season_team_register": "6 Walter Davis, 7 Bernard Thompson, 8 Rick Robey, 10 Rod Foster, 11 Mike Sanders, 15 Michael Holton, 15 Sedric Toney, 16 Georgi Glouchkov, 17 Devin Durrant, 22 Larry Nance, 24 Jay Humphries, 30 Nick Vanos, 32 Charlie Pittman, 33 Alvan Adams, 34 Charles Jones, 53 James Edwards, 54 Ed Pinckney",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

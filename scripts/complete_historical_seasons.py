@@ -39,6 +39,22 @@ def fetch(url):
             error = exc
     raise RuntimeError(f'{url}: {error}')
 
+def final_log_rows(resolution):
+    rows=resolution['official_stint_game_log_rows']
+    cutoff=resolution.get('roster_end_date_exclusive')
+    if not cutoff:return rows
+    transaction=resolution['transaction_evidence'];official=resolution['official_row']
+    assert (transaction['trade_date'],transaction['player_id'],transaction['from_team'])==(cutoff,resolution['player_id'],resolution['team'])
+    before=[r for r in rows if datetime.strptime(r['GAME_DATE'],'%b %d, %Y').strftime('%Y-%m-%d')<cutoff]
+    after=[r for r in rows if r not in before]
+    assert after==resolution['excluded_post_transaction_rows']
+    assert len({r['Game_ID'] for r in before})==len(before)
+    assert len(before)==official['GP'] and set(resolution['bounded_matched_fields'])=={'GP','MIN','PTS','REB','AST','STL','BLK'}
+    for field in ('MIN','PTS','REB','AST','STL','BLK'):
+        assert all(r[field] is not None for r in before) and sum(r[field] for r in before)==official[field]
+    return before
+
+
 def fetch_box(gid, season):
     live_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json'
     live_cache = CACHE / (hashlib.sha256(live_url.encode()).hexdigest() + '.json')
@@ -128,12 +144,19 @@ def complete(season, workers=6):
             assert all(observed_gid != gid for _, observed_gid in appearances[key])
             assert dates[gid] == datetime.strptime(official['GAME_DATE'], '%b %d, %Y').strftime('%Y-%m-%d')
             appearances[key].append((dates[gid],gid))
-    total_overrides={(p['team'],p['player_id']):p for p in manifest.get('season_total_overrides',[])}
+    total_overrides={(p['team'],p['player_id']):p for p in manifest.get('season_total_overrides',[])+[p for p in manifest.get('eligibility_source_overrides',[]) if p['decision']=='include']}
     assert all(len(appearances[(r['team'], r['player_id'])]) == total_overrides[(r['team'],r['player_id'])]['source_aggregate']['gp'] if (r['team'],r['player_id']) in total_overrides else len(appearances[(r['team'],r['player_id'])])==r['gp'] for r in rows)
     last = {k: max(v) for k,v in appearances.items()}
     final_path=ROOT/f'data/staging/final_appearance_{slug}_resolutions.json'
     final_proofs=json.loads(final_path.read_text()) if final_path.exists() else []
     final_resolutions={(p['team'],p['player_id']):p for p in final_proofs}
+    for key,resolution in final_resolutions.items():
+        if not resolution.get('roster_end_date_exclusive'):continue
+        assert (resolution['season'],resolution['source_observed_game_date'],resolution['source_observed_game_id'])==(season,*last[key])
+        bounded=final_log_rows(resolution)
+        target=max((datetime.strptime(r['GAME_DATE'],'%b %d, %Y').strftime('%Y-%m-%d'),r['Game_ID']) for r in bounded)
+        assert target==(resolution['game_date'],resolution['game_id']) and target[1] in dates
+        last[key]=target
     for key in total_overrides:
         proof=total_overrides[key]
         if proof['source_aggregate']['gp'] != proof['official_row']['GP']:
@@ -143,7 +166,7 @@ def complete(season, workers=6):
                 resolution=final_resolutions[key]
                 assert (resolution['season'],resolution['game_date'],resolution['game_id'])==(season,*last[key])
                 assert resolution['official_row']==proof['official_row']
-                log=resolution['official_stint_game_log_rows']
+                log=final_log_rows(resolution)
                 assert log and all(r['Player_ID']==key[1] and historical_team(season,r['MATCHUP'].split()[0])==key[0] and r['Game_ID'] in dates for r in log)
                 assert max((datetime.strptime(r['GAME_DATE'],'%b %d, %Y').strftime('%Y-%m-%d'),r['Game_ID']) for r in log)==last[key]
 
@@ -166,15 +189,21 @@ def complete(season, workers=6):
     if 'patrick-beverly' in defense:
         assert 'patrick-beverley' not in defense
         defense['patrick-beverley'] = defense.pop('patrick-beverly')
+    if season == '1984-85' and 'benard-king' in nba:
+        assert 'bernard-king' not in nba
+        nba['bernard-king']=nba.pop('benard-king')
     if season == '1998-99' and 'gary-payton-seattle-supersonics' in nba:
         assert 'gary-payton' not in nba
         nba['gary-payton'] = nba.pop('gary-payton-seattle-supersonics')
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071','1985-86':'0048500406','1984-85':'0048400406','1983-84':'0048300079'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     title_proof = None
+    if season in ('1985-86','1984-85','1983-84'):
+        title_proof=json.loads((ROOT/'data/processed/title_game_verification_1983_1986.json').read_text())[season]
+        assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
     if season in ('1988-89','1987-88','1986-87'):
         title_proof=json.loads((ROOT/'data/processed/title_game_verification_1986_1989.json').read_text())[season]
         assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
@@ -276,7 +305,7 @@ def complete(season, workers=6):
            'staged_sha256':hashlib.sha256(staged.read_bytes()).hexdigest(),'game_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
            'sources':{'game_dates':url,**HISTORY_URLS},
            'history_sha256':{name:hashlib.sha256((CACHE/f'{name}.html').read_bytes()).hexdigest() for name in HISTORY_URLS},'award_sources':{k:v.get('award_sources',{}) for k,v in awards.items()},
-           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley', **({'gary-payton-seattle-supersonics':'gary-payton'} if season == '1998-99' else {})}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
+           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley', **({'benard-king':'bernard-king'} if season == '1984-85' else {}), **({'gary-payton-seattle-supersonics':'gary-payton'} if season == '1998-99' else {})}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
            'all_nba_records':sum(r['all_nba'] is not None for r in rows),'all_defense_records':sum(r['all_defense'] is not None for r in rows),
            'title_game_verification':title_proof,
            'champion_roster_source':finals_url, 'champion_roster':[{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')} for p in champion_sides[0]['players']], 'champion_team':champion,'champion_records':sum(r['champion'] for r in rows),'jersey_evidence':evidence}
@@ -295,5 +324,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87','1985-86','1984-85','1983-84']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

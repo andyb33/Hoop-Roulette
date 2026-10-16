@@ -27,6 +27,10 @@ def rounded_rate(total, games):
 
 def historical_team(season, team):
     team = {"GOS":"GSW", "PHL":"PHI", "SAN":"SAS", "UTH":"UTA"}.get(team, team)
+    if team == "LAC" and int(season[:4]) < 1984:
+        return "SDC"
+    if team == "SAC" and int(season[:4]) < 1985:
+        return "KCK"
     return "WSB" if team == "WAS" and int(season[:4]) < 1997 else team
 
 
@@ -56,8 +60,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 1986 <= year < 2022:
-        raise ValueError("This staging batch covers 1986–87 through 2022–23")
+    if not 1983 <= year < 2022:
+        raise ValueError("This staging batch covers 1983–84 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"
@@ -145,10 +149,24 @@ def collect(season):
         g=groups[(proof['team_id'],proof['player_id'])];official=proof['official_season_row']
         assert g['gp']==official['GP']
         for field,src in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:assert g[field]==official[src]
-    rows, rate_evidence, total_evidence = [], [], []
+    rows, rate_evidence, total_evidence, eligibility_evidence = [], [], [], []
     for record in groups.values():
         gp = record["gp"]
         mpg = record["seconds"] / 60 / gp
+        matches=[p for p in corrections.get('eligibility_source_overrides',[]) if (p['player_id'],p['team'])==(record['player_id'],record['team'])]
+        assert len(matches)<=1
+        if matches:
+            proof=matches[0];official=proof['official_row'];independent=proof['independent_reference_row']
+            assert (proof['season'],official['PLAYER_ID'],official['SEASON_ID'],historical_team(season,official['TEAM_ABBREVIATION']))==(season,record['player_id'],season,record['team'])
+            assert proof['source_aggregate']=={f:record[f] for f in proof['source_aggregate']}
+            assert int(independent['G'])==official['GP'] and int(independent['MP'])==official['MIN']
+            included=official['GP']>=30 and official['MIN']>=15*official['GP']
+            assert proof['decision']==('include' if included else 'exclude')
+            assert not any((p['player_id'],p['team'])==(record['player_id'],record['team']) for p in corrections.get('season_total_overrides',[]))
+            eligibility_evidence.append(proof)
+            if not included:continue
+            record=dict(record,gp=official['GP'],seconds=official['MIN']*60,**{f:official[c] for f,c in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]})
+            gp=record['gp'];mpg=record['seconds']/60/gp
         if gp < 30 or mpg < 15:
             continue
         for proof in corrections.get('season_total_overrides', []):
@@ -172,6 +190,7 @@ def collect(season):
                 rows[-1]['mpg'] = rounded_rate(official['MIN'], gp)
     assert len(rate_evidence) == len(corrections.get('rate_overrides', []))
     assert len(total_evidence) == len(corrections.get('season_total_overrides', []))
+    assert len(eligibility_evidence) == len(corrections.get('eligibility_source_overrides', []))
     rows.sort(key=lambda r: (r["team"], r["player"]))
     if not rows:
         raise ValueError("No eligible staging records")
@@ -188,8 +207,9 @@ def collect(season):
                 "source_corrections": corrections,
                 "display_rate_overrides": rate_evidence,
                 "season_total_overrides": total_evidence,
+                "eligibility_source_overrides": eligibility_evidence,
                 "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15},
-                "eligibility_precision": "Unrounded box-score minutes per team stint",
+                "eligibility_precision": "Unrounded box-score minutes per team stint; explicitly scoped incomplete-log cases use official season totals corroborated by independent totals" if eligibility_evidence else "Unrounded box-score minutes per team stint",
                 "records_by_team": {t: sum(r["team"] == t for r in rows) for t in sorted({r["team"] for r in rows})},
                 "pending": ["Final team-stint jersey numbers", "Accolades and champions", "Independent source verification", "Distribution analysis", "Game activation"]}
     (output / f"stats_{slug}_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")

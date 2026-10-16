@@ -81,3 +81,24 @@ class HistoricalStatsTests(unittest.TestCase):
             self.assertEqual((float(rows[3]['MP']),rows[3]['original_total_MP']),(15.0,'449'))
             self.assertEqual(name_key('Cliff T. Robinson'),name_key('Cliff Robinson'))
             self.assertNotEqual(name_key('Cliff T. Robinson'),name_key('Clifford Robinson'))
+
+    def test_incomplete_logs_use_corroborated_totals_without_relaxing_cutoffs(self):
+        with tempfile.TemporaryDirectory() as directory, patch.object(collector,'ROOT',Path(directory)), patch('builtins.print'):
+            root=Path(directory);raw=root/'data/raw/2022-23/player_boxscores_2023.csv';raw.parent.mkdir(parents=True)
+            fields=['game_id','minutes','person_id','team_id','team_tricode','first_name','family_name','points','rebounds_total','assists','steals','blocks']
+            with raw.open('w',newline='') as handle:
+                writer=csv.DictWriter(handle,fieldnames=fields);writer.writeheader()
+                for pid in (1,2,3):
+                    for i in range(30):writer.writerow(dict(zip(fields,[f'00222{i:05}','20:00' if pid==2 else '0:00',pid,10,'ABC','Example',str(pid),0,0,0,0,0])))
+            proofs=[]
+            for pid,gp,minutes,decision in [(1,30,450,'include'),(2,40,599,'exclude'),(3,29,600,'exclude')]:
+                official=dict(PLAYER_ID=pid,SEASON_ID='2022-23',TEAM_ID=10,TEAM_ABBREVIATION='ABC',GP=gp,MIN=minutes,PTS=0,REB=0,AST=0,STL=0,BLK=0)
+                proofs.append(dict(season='2022-23',player_id=pid,team='ABC',source_aggregate=dict(gp=30,seconds=36000 if pid==2 else 0,points=0,rebounds_total=0,assists=0,steals=0,blocks=0),official_row=official,independent_reference_row={'G':str(gp),'MP':str(minutes)},decision=decision))
+            staging=root/'data/staging';staging.mkdir(parents=True);path=staging/'stats_2022_23_source_corrections.json';payload=dict(season='2022-23',eligibility_source_overrides=proofs);path.write_text(json.dumps(payload))
+            collector.collect('2022-23')
+            rows=json.loads((staging/'stats_2022_23.json').read_text())
+            self.assertEqual([(r['player_id'],r['gp'],r['mpg']) for r in rows],[(1,30,15.0)])
+            manifest=json.loads((staging/'stats_2022_23_manifest.json').read_text())
+            self.assertEqual(len(manifest['eligibility_source_overrides']),3)
+            proofs[0]['independent_reference_row']['MP']='449';path.write_text(json.dumps(payload))
+            with self.assertRaises(AssertionError):collector.collect('2022-23')

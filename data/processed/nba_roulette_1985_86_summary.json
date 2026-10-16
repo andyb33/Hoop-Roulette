@@ -1,0 +1,142 @@
+{
+  "season": "1985-86",
+  "completed_at": "2026-10-16T02:19:49.426544+00:00",
+  "passed": true,
+  "entries": 211,
+  "jerseys_verified": 211,
+  "unresolved": [],
+  "staged_sha256": "80ac29b2dfbde6265b0c370b18537d9aaf4c4d517c4e531af183ad93322db98c",
+  "game_sha256": "6b4e83515cf9f91e106c6bb07ffc07365363970677faa9aeafa23cb0294d0f93",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1985-86&SeasonType=Regular+Season",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "f135ef7358a123ad43aeb7ef394e0eb0cc55bfe6e4edaa6ba80d9821d4d391a8",
+    "all_defense": "f881a229cc50ede82093a6e2f5404f8512b9d134abd568c4eb32363742bb92a3",
+    "champions": "dd9fccc5983d7663eb69147fa5fd7818a928497bc3a371409ae703ba432eabd0"
+  },
+  "award_sources": {
+    "alvin-robertson": {
+      "dpoy": "https://www.nba.com/news/history-defensive-player-of-the-year-winners"
+    },
+    "larry-bird": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "patrick-ewing": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0048500406",
+    "game_date": "1986-06-08",
+    "champion_team": "BOS",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41985",
+        "TEAM_ID": 1610612745,
+        "TEAM_ABBREVIATION": "HOU",
+        "TEAM_NAME": "Houston Rockets",
+        "GAME_ID": "0048500406",
+        "GAME_DATE": "1986-06-08",
+        "MATCHUP": "HOU @ BOS",
+        "WL": "L",
+        "MIN": 240,
+        "PTS": 97,
+        "FGM": 38,
+        "FGA": 89,
+        "FG_PCT": 0.427,
+        "FG3M": 1,
+        "FG3A": 5,
+        "FG3_PCT": 0.2,
+        "FTM": 20,
+        "FTA": 28,
+        "FT_PCT": 0.714,
+        "OREB": 17,
+        "DREB": 27,
+        "REB": 44,
+        "AST": 21,
+        "STL": 10,
+        "BLK": 3,
+        "TOV": 17,
+        "PF": 26,
+        "PLUS_MINUS": null
+      },
+      {
+        "SEASON_ID": "41985",
+        "TEAM_ID": 1610612738,
+        "TEAM_ABBREVIATION": "BOS",
+        "TEAM_NAME": "Boston Celtics",
+        "GAME_ID": "0048500406",
+        "GAME_DATE": "1986-06-08",
+        "MATCHUP": "BOS vs. HOU",
+        "WL": "W",
+        "MIN": 240,
+        "PTS": 114,
+        "FGM": 41,
+        "FGA": 83,
+        "FG_PCT": 0.494,
+        "FG3M": 3,
+        "FG3A": 4,
+        "FG3_PCT": 0.75,
+        "FTM": 29,
+        "FTA": 44,
+        "FT_PCT": 0.659,
+        "OREB": 15,
+        "DREB": 34,
+        "REB": 49,
+        "AST": 30,
+        "STL": 9,
+        "BLK": 8,
+        "TOV": 14,
+        "PF": 21,
+        "PLUS_MINUS": null
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamefinder?LeagueID=00&Season=1985-86&SeasonType=Playoffs",
+    "source_sha256": "abb93f0a855f80bb8f4da55966e6517cf1d909539f96d01ae43c71d3329dd79a"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0048500406/box-score",
+  "champion_team": "BOS",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 8,
+    "CHI": 10,
+    "CLE": 11,
+    "DAL": 9,
+    "DEN": 9,
+    "DET": 10,
+    "GSW": 7,
+    "HOU": 9,
+    "IND": 8,
+    "LAC": 9,
+    "LAL": 9,
+    "MIL": 10,
+    "NJN": 10,
+    "NYK": 12,
+    "PHI": 7,
+    "PHX": 11,
+    "POR": 10,
+    "SAC": 8,
+    "SAS": 9,
+    "SEA": 9,
+    "UTA": 7,
+    "WSB": 10
+  }
+}
