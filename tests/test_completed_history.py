@@ -52,11 +52,11 @@ class CompletedHistoryTests(unittest.TestCase):
         bones=next(r for r in load_records(['2022-23']) if r.player_id==1630538 and r.team=='DEN')
         self.assertFalse(bones.champion)
 
-    def test_loading_all_forty_three_seasons_has_no_duplicate_entries(self):
+    def test_loading_all_forty_six_seasons_has_no_duplicate_entries(self):
         rows=load_records()
-        self.assertEqual(len(rows),11536)
-        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),11536)
-        self.assertEqual(len({(r.season,r.team) for r in rows}),1223)
+        self.assertEqual(len(rows),12169)
+        self.assertEqual(len({(r.season,r.team,r.player_id) for r in rows}),12169)
+        self.assertEqual(len({(r.season,r.team) for r in rows}),1292)
 
     def test_shortened_seasons_match_official_schedule(self):
         for season, games, uniform in [('2020-21',1080,72),('2019-20',1059,None),('2018-19',1230,82)]:
@@ -163,7 +163,7 @@ class CompletedHistoryTests(unittest.TestCase):
         self.assertNotIn('SEA', {r.team for r in load_records(['2008-09','2009-10'])})
         outcomes=RouletteEngine(rows).valid_outcomes(seattle, (Lock.TEAM,))
         self.assertTrue(outcomes)
-        self.assertEqual({r.season for r in outcomes}, {f'{year}-{str(year+1)[-2:]}' for year in range(1983,2007)})
+        self.assertEqual({r.season for r in outcomes}, {f'{year}-{str(year+1)[-2:]}' for year in range(1980,2007)})
         self.assertEqual({r.team for r in outcomes}, {'SEA'})
 
     def test_recovered_traded_champions_receive_credit_only_for_title_team(self):
@@ -593,7 +593,7 @@ class CompletedHistoryTests(unittest.TestCase):
             self.assertEqual('SDC' in teams,season=='1983-84')
         rows=load_records();anchor=next(r for r in rows if r.season=='1984-85' and r.team=='KCK')
         outcomes=RouletteEngine(rows).valid_outcomes(anchor,(Lock.TEAM,))
-        self.assertEqual({r.season for r in outcomes},{'1983-84'})
+        self.assertEqual({r.season for r in outcomes},{'1980-81','1981-82','1982-83','1983-84'})
         self.assertEqual({r.team for r in outcomes},{'KCK'})
 
     def test_1984_incomplete_minute_coverage_uses_two_sources_for_eligibility(self):

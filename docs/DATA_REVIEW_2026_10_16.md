@@ -1,3 +1,5 @@
+> Final update: v0.11.0 activates 1982–83, 1981–82 and 1980–81 after completion. All seven jerseys have accepted user-reviewed decisions. The current pool is 46 seasons / 12,169 entries / 1,292 team-seasons. [Final report](HISTORICAL_COMPLETION_1980_1983.md). Earlier counts and pending states below describe the pre-activation review.
+
 # Data and publication review — v0.10.10
 
 The playable pool remains 43 seasons, 1983–84 through 2025–26, now with **11,536 entries** and **1,223 team-season combinations**. The review fixes four rounded-MPG eligibility mistakes and publishes the recovery work to main without activating the unfinished final Stage 2 batch.

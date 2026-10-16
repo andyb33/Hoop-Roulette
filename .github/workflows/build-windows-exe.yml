@@ -1,7 +1,11 @@
-name: Build Hoopreel Windows alpha v0.10
+name: Build Hoopreel Windows alpha v0.11.0
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-windows-exe.yml"
 
 permissions:
   contents: read
@@ -28,7 +32,7 @@ jobs:
         shell: cmd
         run: >-
           pyinstaller --noconfirm --clean --onefile
-          --name Hoopreel-v0.10-Alpha
+          --name Hoopreel-v0.11.0-Alpha
           --icon web/static/app-icon.ico
           --paths "."
           --collect-submodules nba_roulette
@@ -41,7 +45,7 @@ jobs:
       - name: Smoke-test packaged launcher
         shell: pwsh
         run: |
-          $exe = Resolve-Path "dist/Hoopreel-v0.10-Alpha.exe"
+          $exe = Resolve-Path "dist/Hoopreel-v0.11.0-Alpha.exe"
           $process = Start-Process -FilePath $exe -ArgumentList "--no-open-browser", "--port", "38117" -PassThru
           try {
             $ready = $false
@@ -52,7 +56,7 @@ jobs:
                 if ($state.turn -eq 1 -and $state.turns_total -eq 14 -and $state.goat_enabled) {
                   $page = Invoke-WebRequest -Uri "http://127.0.0.1:38117/" -UseBasicParsing
                   if ($page.Content -notmatch 'reel-window') {
-                    throw "Packaged launcher is missing the v0.10 roulette UI."
+                    throw "Packaged launcher is missing the v0.11.0 roulette UI."
                   }
                   $ready = $true
                   break
@@ -74,13 +78,13 @@ jobs:
 
       - name: Add tester instructions
         shell: pwsh
-        run: Copy-Item docs/EXTERNAL_ALPHA_V0_10.md dist/README.txt
+        run: Copy-Item docs/EXTERNAL_ALPHA_V0_11.md dist/README.txt
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.10-Alpha-Windows
+          name: Hoopreel-v0.11.0-Alpha-Windows
           path: |
-            dist/Hoopreel-v0.10-Alpha.exe
+            dist/Hoopreel-v0.11.0-Alpha.exe
             dist/README.txt
           if-no-files-found: error

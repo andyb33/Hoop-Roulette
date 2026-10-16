@@ -1,3 +1,7 @@
+# Final Stage 2 checkpoint — completed in v0.11.0
+
+All three final seasons are complete and active. The current pool has 46 seasons and 12,169 entries. See [final completion and validation report](HISTORICAL_COMPLETION_1980_1983.md). The earlier checkpoint below is retained as historical source-review context and is superseded by this completion.
+
 # Final Stage 2 batch — verification checkpoint
 
 The published playable pool remains v0.10.9: 43 seasons, 1983–84 through 2025–26. This checkpoint preserves new validation work; it does not activate the final batch or declare the desktop-package checkpoint complete.

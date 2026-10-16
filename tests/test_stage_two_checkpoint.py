@@ -13,6 +13,7 @@ class StageTwoCheckpointTests(unittest.TestCase):
         for season, champion, final, defense_count in [
             ('1982-83', 'PHI', '0048200043', 11),
             ('1981-82', 'LAL', '0048100045', 10),
+            ('1980-81', 'BOS', '0048000053', 11),
         ]:
             with self.subTest(season=season):
                 slug = season.replace('-', '_')

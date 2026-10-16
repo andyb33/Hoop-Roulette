@@ -26,8 +26,8 @@
   "inactive_1980_81_pending": [],
   "stats_missing_values": 0,
   "manual_user_data_required": false,
-  "note": "Seven 1980-81 jersey decisions accepted by user; final season completion and batch activation remain pending. Inference qualifications retained.",
-  "inactive_1980_81_reviewed_jerseys": [
+  "note": "All seven 1980-81 choices accepted and activated in v0.11.0, with chronology limitations retained. No pending jersey items. Stage 2 complete.",
+  "reviewed_1980_81_jerseys": [
     {
       "season": "1980-81",
       "player_id": 76418,

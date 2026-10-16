@@ -220,6 +220,10 @@ def complete(season, workers=6):
     if season == '1998-99' and 'gary-payton-seattle-supersonics' in nba:
         assert 'gary-payton' not in nba
         nba['gary-payton'] = nba.pop('gary-payton-seattle-supersonics')
+    # Official 1980-81 history spells Micheal Ray Richardson as Michael.
+    if season == '1980-81' and 'michael-ray-richardson' in defense:
+        assert 'micheal-ray-richardson' not in defense
+        defense['micheal-ray-richardson'] = defense.pop('michael-ray-richardson')
     champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
@@ -333,7 +337,7 @@ def complete(season, workers=6):
            'staged_sha256':hashlib.sha256(staged.read_bytes()).hexdigest(),'game_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
            'sources':{'game_dates':url,**HISTORY_URLS},
            'history_sha256':{name:hashlib.sha256((CACHE/f'{name}.html').read_bytes()).hexdigest() for name in HISTORY_URLS},'award_sources':{k:v.get('award_sources',{}) for k,v in awards.items()},
-           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley', **({'benard-king':'bernard-king'} if season == '1984-85' else {}), **({'gary-payton-seattle-supersonics':'gary-payton'} if season == '1998-99' else {})}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
+           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley', **({'michael-ray-richardson':'micheal-ray-richardson'} if season == '1980-81' else {}), **({'benard-king':'bernard-king'} if season == '1984-85' else {}), **({'gary-payton-seattle-supersonics':'gary-payton'} if season == '1998-99' else {})}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
            'all_nba_records':sum(r['all_nba'] is not None for r in rows),'all_defense_records':sum(r['all_defense'] is not None for r in rows),
            'title_game_verification':title_proof,
            'champion_roster_source':finals_url, 'champion_roster':[{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')} for p in champion_sides[0]['players']], 'champion_team':champion,'champion_records':sum(r['champion'] for r in rows),'jersey_evidence':evidence}

@@ -11,9 +11,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.10.10 includes the normal pool from 1983–84 through 2025–26.**
-The first twenty-seven Stage 2 seasons have been rebuilt and independently verified.
-The 43-season pool is published on `main`. The reviewed source also includes the unactivated 1982–83/1981–82 completion work and staged 1980–81 stats.
+**v0.11.0 includes the normal pool from 1980–81 through 2025–26.**
+All thirty Stage 2 seasons are complete and active. The final batch adds 1982–83, 1981–82 and 1980–81.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -28,12 +27,11 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows and Mac v0.10 packaging workflows are prepared for manual dispatch.
-Packages have not been built; [tester instructions](docs/EXTERNAL_ALPHA_V0_10.md).
+Development games are not logged. Windows and Mac v0.11.0 builds run when the packaging workflows are updated on main, or by manual dispatch. Download the matching run artifacts; [tester instructions](docs/EXTERNAL_ALPHA_V0_11.md).
 
-The forty-three playable datasets from 1983–84 through 2025–26 contain:
+The forty-six playable datasets from 1980–81 through 2025–26 contain:
 
-- 11,536 eligible player-team records across forty-three seasons and 1,223 team-season combinations;
+- 12,169 eligible player-team records across forty-six seasons and 1,292 team-season combinations;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;
@@ -43,9 +41,9 @@ The forty-three playable datasets from 1983–84 through 2025–26 contain:
 
 The new historical seasons retain their independent stats audits and official
 final-appearance jersey audits. See [recovery completion report](docs/HISTORICAL_COMPLETION_1983_1986.md).
-The [October 16 data review](docs/DATA_REVIEW_2026_10_16.md) fixes four rounded-MPG eligibility errors, records the accepted Seikaly 4 / Lorthridge 9 chronology inference and the existing Vinnie Johnson inference. Seven 1980–81 final jerseys remain unresolved. The final batch is not activated. Existing balance reports describe the earlier pool and have not been rerun.
+The [October 16 data review](docs/DATA_REVIEW_2026_10_16.md) fixes four rounded-MPG eligibility errors, records the accepted Seikaly 4 / Lorthridge 9 chronology inference and the existing Vinnie Johnson inference. All seven 1980–81 jersey decisions are user-reviewed, with conflicting evidence and chronology limitations retained. The final batch is active. Existing balance reports describe the earlier pool and have not been rerun.
 
-Stage 1 data is complete in the v0.10 source. The next desktop package will be built after Stage 2 reaches 1980–81. Stage 3 then continues through 1973–74.
+Stage 1 and Stage 2 are complete in v0.11.0. Desktop packaging resumes at this checkpoint. Stage 3 continues through 1973–74.
 Stage 2 covers 1980–81 through 2009–10; Stage 3 covers 1973–74 through 1979–80.
 
 ## Repository structure

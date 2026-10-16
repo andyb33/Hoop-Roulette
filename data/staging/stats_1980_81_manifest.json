@@ -1,7 +1,7 @@
 {
   "season": "1980-81",
-  "status": "stats_independently_checked",
-  "enabled_in_game": false,
+  "status": "complete_promoted",
+  "enabled_in_game": true,
   "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1980-81&SeasonType=Regular+Season&PlayerOrTeam=P&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
   "source_sha256": "4255435517f55cd04ae433c71bf193e7232cc274c85da8bcdf15ca71ca1075f3",
   "regular_season_games_observed": 943,
@@ -61942,10 +61942,7 @@
     "WSB": 8
   },
   "pending": [
-    "Final team-stint jersey numbers",
-    "Accolades and champions",
-    "Distribution analysis",
-    "Game activation"
+    "Distribution analysis"
   ],
   "verification_report": "data/staging/stats_1980_81_verification.json"
 }
