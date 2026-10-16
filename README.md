@@ -27,7 +27,7 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows and Mac v0.11.0 builds run when the packaging workflows are updated on main, or by manual dispatch. Download the matching run artifacts; [tester instructions](docs/EXTERNAL_ALPHA_V0_11.md).
+Development games are not logged. Windows, Apple Silicon Mac and Intel Mac v0.11.0 packages have built successfully and passed packaged launch checks. [Download links and tester instructions](docs/EXTERNAL_ALPHA_V0_11.md).
 
 The forty-six playable datasets from 1980–81 through 2025–26 contain:
 

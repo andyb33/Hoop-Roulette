@@ -17,3 +17,13 @@ The earlier checkpoint preserves the original incomplete-log corrections, includ
 Validation: **133 tests passed; 100 complete games; 2,790 checked spins; all 46 seasons observed; fourteen unique drafted players per game; animation options checked against valid outcomes under Keeps; live HTTP startup/state/spin passed; both GOAT pools loaded (149 Award, 15 Prehistoric); JavaScript syntax and whitespace passed.** Results are in `analysis/historical_1980_1983_smoke.json` and `analysis/stage_two_http_smoke.json`. These checks are not a fresh balance study.
 
 New games use Playtest Batch 24 / v0.11.0. Windows, Apple Silicon Mac and Intel Mac workflows package the same source and run tests plus packaged HTTP smoke checks. Packaging is authorized at this checkpoint. Build success and downloadable artifacts must be checked in the corresponding Actions runs; workflow configuration alone is not a completed build.
+
+## Desktop downloads — builds verified
+
+- [Windows](https://github.com/andyb33/Hoopreel/actions/runs/38905403057/artifacts/12048346253)
+- [Apple Silicon Mac](https://github.com/andyb33/Hoopreel/actions/runs/38905042518/artifacts/12048385601)
+- [Intel Mac](https://github.com/andyb33/Hoopreel/actions/runs/38905042518/artifacts/12048595129)
+
+All three uploaded archives passed their platform tests and packaged HTTP launch checks. GitHub sign-in may be required for Actions artifact downloads. Extract the downloaded archive fully; Mac artifacts contain a second ZIP holding the app and README.
+
+The common game/data source is `84a8f04`; Windows includes `fa8f10d`, which fixes UTF-8 audit-fixture reads and enables UTF-8 mode in its workflow. Game and data files are identical. Build provenance is saved in `analysis/desktop_v0_11_0_builds.json`.

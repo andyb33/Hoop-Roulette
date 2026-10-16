@@ -1,0 +1,30 @@
+{
+  "version": "0.11.0",
+  "status": "all_three_packages_built_and_smoke_tested",
+  "seasons": 46,
+  "records": 12169,
+  "team_seasons": 1292,
+  "game_data_commit": "84a8f04c641100d985f69b1124b2e1dd2bcfef94",
+  "windows_build_fix_commit": "fa8f10de40c15d93ef0a0297da922c0c7002f5f5",
+  "artifacts": [
+    {
+      "id": 12048346253,
+      "name": "Hoopreel-v0.11.0-Alpha-Windows",
+      "size_bytes": 9525944,
+      "url": "https://github.com/andyb33/Hoopreel/actions/runs/38905403057/artifacts/12048346253"
+    },
+    {
+      "id": 12048595129,
+      "name": "Hoopreel-v0.11.0-Alpha-Mac-Intel",
+      "size_bytes": 34457372,
+      "url": "https://github.com/andyb33/Hoopreel/actions/runs/38905042518/artifacts/12048595129"
+    },
+    {
+      "id": 12048385601,
+      "name": "Hoopreel-v0.11.0-Alpha-Mac-Apple-Silicon",
+      "size_bytes": 31847357,
+      "url": "https://github.com/andyb33/Hoopreel/actions/runs/38905042518/artifacts/12048385601"
+    }
+  ],
+  "verification": "Each platform ran all 133 tests and packaged HTTP startup/state checks successfully. Windows required explicit UTF-8 audit fixture reads. Only tests and Windows workflow changed after the common game-data commit."
+}
