@@ -308,7 +308,15 @@ def complete(season, workers=6):
         date,gid = last[(r['team'],r['player_id'])]
         box = boxes[gid]['game']
         assert box['gameId'] == gid and box['gameStatus'] in (3, 'finalbox')
-        assert box['gameTimeLocal'][:10] == date
+        date_resolution = None
+        if season == '1975-76' and box['gameTimeLocal'] == '0001-01-01T00:00:00Z':
+            schedule_rows = [g for g in games if g['GAME_ID'] == gid]
+            assert len(schedule_rows) == 2 and all(g['GAME_DATE'] == date for g in schedule_rows)
+            date_resolution = {'method': 'BOTH_TEAM_OFFICIAL_SCHEDULE_ROWS',
+                               'original_game_time_local': box['gameTimeLocal'],
+                               'resolved_date': date, 'source': url, 'schedule_rows': schedule_rows}
+        else:
+            assert box['gameTimeLocal'][:10] == date, (season,gid,date,box['gameTimeLocal'])
         sides = [box[s] for s in ('homeTeam','awayTeam') if historical_team(season,box[s]['teamTricode'])==r['team']]
         assert len(sides)==1
         players = [p for p in sides[0]['players'] if canonical_id(p['personId'])==r['player_id']]
@@ -343,6 +351,7 @@ def complete(season, workers=6):
                          'box_score_sha256':hashlib.sha256(json.dumps(boxes[gid],ensure_ascii=False).encode()).hexdigest(),
                          'jersey_method':resolution['method'] if resolution else boxes[gid].get('_jersey_method', 'Official final-appearance live box score'),
                          'jersey_resolution':resolution,
+                         'game_date_resolution':date_resolution,
                          'identity_resolution':identity_by_legacy.get(int(p['personId'])),
                          'season_total_resolution':total_overrides.get((r['team'],r['player_id'])),
                          'team_guide_total_resolution':next((p for p in manifest.get('team_guide_total_overrides',[]) if (p['team'],p['player_id'])==(r['team'],r['player_id'])),None),
@@ -377,8 +386,12 @@ def complete(season, workers=6):
     processed=ROOT/'data/processed'
     with (processed/f'nba_roulette_{slug}.csv').open('w',newline='',encoding='utf-8-sig') as handle:
         writer=csv.DictWriter(handle,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+    policy_resolutions = sum(e['jersey_resolution'] is not None and
+                             e['jersey_resolution'].get('historically_verified_final_jersey') is False
+                             for e in evidence)
     audit={'season':season,'completed_at':datetime.now(timezone.utc).isoformat(),'passed':True,
-           'entries':len(rows),'jerseys_verified':len(evidence),'unresolved':[],
+           'entries':len(rows),'jerseys_verified':len(evidence)-policy_resolutions,
+           'jerseys_resolved':len(evidence),'jerseys_resolved_by_user_policy':policy_resolutions,'unresolved':[],
            'staged_sha256':hashlib.sha256(staged.read_bytes()).hexdigest(),'game_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
            'sources':{'game_dates':url,**HISTORY_URLS},
            'history_sha256':{name:hashlib.sha256((CACHE/f'{name}.html').read_bytes()).hexdigest() for name in HISTORY_URLS},'award_sources':{k:v.get('award_sources',{}) for k,v in awards.items()},

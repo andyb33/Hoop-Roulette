@@ -1,0 +1,144 @@
+{
+  "season": "1976-77",
+  "completed_at": "2026-10-17T05:02:35.239085+00:00",
+  "passed": true,
+  "entries": 212,
+  "jerseys_verified": 209,
+  "jerseys_resolved": 212,
+  "jerseys_resolved_by_user_policy": 3,
+  "unresolved": [],
+  "staged_sha256": "3762b2cd86d00d7aeb9d447c9b2daac4b7a3bb516451db5e79c73cb9237681ff",
+  "game_sha256": "3230784f4fb2ba78aeab7156c614125daa24ee817835729f4211a034dc237c92",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1976-77&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "adrian-dantley": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "kareem-abdul-jabbar": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever",
+    "76753": "World B. Free",
+    "78510": "Jo Jo White"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0047600100",
+    "game_date": "1977-06-05",
+    "champion_team": "POR",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41976",
+        "TEAM_ID": 1610612755,
+        "TEAM_ABBREVIATION": "PHL",
+        "TEAM_NAME": "Philadelphia 76ers",
+        "GAME_ID": "0047600100",
+        "GAME_DATE": "1977-06-05",
+        "MATCHUP": "PHL @ POR",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 44,
+        "FGA": 91,
+        "FG_PCT": 0.484,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 19,
+        "FTA": 27,
+        "FT_PCT": 0.704,
+        "OREB": 13,
+        "DREB": 28,
+        "REB": 41,
+        "AST": 25,
+        "STL": 12,
+        "BLK": 7,
+        "TOV": null,
+        "PF": 28,
+        "PTS": 107,
+        "PLUS_MINUS": -2,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41976",
+        "TEAM_ID": 1610612757,
+        "TEAM_ABBREVIATION": "POR",
+        "TEAM_NAME": "Portland Trail Blazers",
+        "GAME_ID": "0047600100",
+        "GAME_DATE": "1977-06-05",
+        "MATCHUP": "POR vs. PHL",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 44,
+        "FGA": 86,
+        "FG_PCT": 0.512,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 21,
+        "FTA": 30,
+        "FT_PCT": 0.7,
+        "OREB": 19,
+        "DREB": 36,
+        "REB": 55,
+        "AST": 23,
+        "STL": 10,
+        "BLK": 10,
+        "TOV": null,
+        "PF": 23,
+        "PTS": 109,
+        "PLUS_MINUS": 2,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1976-77&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "0fe0091c5450b97cd705ff5b09d90cfddc7c9ca7dc6dce0308712d111fad3834"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0047600100/box-score",
+  "champion_team": "POR",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 11,
+    "BOS": 9,
+    "BUF": 8,
+    "CHI": 7,
+    "CLE": 11,
+    "DEN": 9,
+    "DET": 10,
+    "GSW": 11,
+    "HOU": 8,
+    "IND": 9,
+    "KCK": 9,
+    "LAL": 10,
+    "MIL": 10,
+    "NOJ": 10,
+    "NYK": 9,
+    "NYN": 13,
+    "PHI": 8,
+    "PHX": 11,
+    "POR": 10,
+    "SAS": 9,
+    "SEA": 10,
+    "WSB": 10
+  }
+}

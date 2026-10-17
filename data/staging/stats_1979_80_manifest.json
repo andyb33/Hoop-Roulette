@@ -1,7 +1,7 @@
 {
   "season": "1979-80",
-  "status": "stats_independently_checked",
-  "enabled_in_game": false,
+  "status": "complete_promoted",
+  "enabled_in_game": true,
   "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1979-80&SeasonType=Regular+Season&PlayerOrTeam=P&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
   "source_sha256": "2cd6ccea10bd4d5125e533f795eca8abd5f0a48a45674bf1f182f9c17c477042",
   "regular_season_games_observed": 902,
@@ -55909,10 +55909,7 @@
     "WSB": 10
   },
   "pending": [
-    "Final team-stint jersey numbers",
-    "Accolades and champions",
-    "Distribution analysis",
-    "Game activation"
+    "Distribution analysis"
   ],
   "verification_report": "data/staging/stats_1979_80_verification.json"
 }

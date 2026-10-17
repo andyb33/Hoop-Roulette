@@ -1,0 +1,145 @@
+{
+  "season": "1979-80",
+  "completed_at": "2026-10-17T05:02:34.772809+00:00",
+  "passed": true,
+  "entries": 197,
+  "jerseys_verified": 196,
+  "jerseys_resolved": 197,
+  "jerseys_resolved_by_user_policy": 1,
+  "unresolved": [],
+  "staged_sha256": "0d74c9e86eb17e4cc483db77bc5fffeddd384fb218acf8762c5eca5f60938bf0",
+  "game_sha256": "67f89576a0a4267acf05c8a4eb646b5bc9b78b3a989c95497f4909ddf0b3b6f6",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1979-80&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "kareem-abdul-jabbar": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "larry-bird": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever",
+    "76753": "World B. Free",
+    "78510": "Jo Jo White"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley",
+    "michael-ray-richardson": "micheal-ray-richardson"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 11,
+  "title_game_verification": {
+    "game_id": "0047900048",
+    "game_date": "1980-05-16",
+    "champion_team": "LAL",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41979",
+        "TEAM_ID": 1610612747,
+        "TEAM_ABBREVIATION": "LAL",
+        "TEAM_NAME": "Los Angeles Lakers",
+        "GAME_ID": "0047900048",
+        "GAME_DATE": "1980-05-16",
+        "MATCHUP": "LAL @ PHL",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 45,
+        "FGA": 92,
+        "FG_PCT": 0.489,
+        "FG3M": 0,
+        "FG3A": 2,
+        "FG3_PCT": 0.0,
+        "FTM": 33,
+        "FTA": 35,
+        "FT_PCT": 0.943,
+        "OREB": 17,
+        "DREB": 35,
+        "REB": 52,
+        "AST": 27,
+        "STL": 14,
+        "BLK": 4,
+        "TOV": 17,
+        "PF": 22,
+        "PTS": 123,
+        "PLUS_MINUS": 16,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41979",
+        "TEAM_ID": 1610612755,
+        "TEAM_ABBREVIATION": "PHL",
+        "TEAM_NAME": "Philadelphia 76ers",
+        "GAME_ID": "0047900048",
+        "GAME_DATE": "1980-05-16",
+        "MATCHUP": "PHL vs. LAL",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 47,
+        "FGA": 89,
+        "FG_PCT": 0.528,
+        "FG3M": 0,
+        "FG3A": 6,
+        "FG3_PCT": 0.0,
+        "FTM": 13,
+        "FTA": 22,
+        "FT_PCT": 0.591,
+        "OREB": 7,
+        "DREB": 29,
+        "REB": 36,
+        "AST": 27,
+        "STL": 4,
+        "BLK": 11,
+        "TOV": 18,
+        "PF": 27,
+        "PTS": 107,
+        "PLUS_MINUS": -16,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1979-80&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "5896dca0d412054e65f8a7bfc74e930695ea9af8d48abdb5c04a310010a2d886"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0047900048/box-score",
+  "champion_team": "LAL",
+  "champion_records": 5,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BOS": 7,
+    "CHI": 10,
+    "CLE": 10,
+    "DEN": 9,
+    "DET": 12,
+    "GSW": 10,
+    "HOU": 10,
+    "IND": 9,
+    "KCK": 9,
+    "LAL": 7,
+    "MIL": 9,
+    "NJN": 8,
+    "NYK": 7,
+    "PHI": 9,
+    "PHX": 8,
+    "POR": 10,
+    "SAS": 9,
+    "SDC": 8,
+    "SEA": 7,
+    "UTA": 9,
+    "WSB": 10
+  }
+}

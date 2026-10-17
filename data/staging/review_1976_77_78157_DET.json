@@ -6,7 +6,7 @@
   "game_id": "0027600864",
   "game_date": "1977-04-10",
   "original_nba_jersey": "10-32",
-  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "status": "RESOLVED_BY_USER_POLICY",
   "alternatives": [
     10,
     32
@@ -14,5 +14,8 @@
   "sources": [
     "https://apbr.org/nmbr7080.html"
   ],
-  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+  "resolved_jersey": 32,
+  "resolution_file": "data/staging/jersey_1976_77_78157_DET_resolution.json",
+  "historically_verified_final_jersey": false
 }

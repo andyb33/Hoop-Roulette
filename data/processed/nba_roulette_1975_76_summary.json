@@ -1,0 +1,140 @@
+{
+  "season": "1975-76",
+  "completed_at": "2026-10-17T05:03:16.561296+00:00",
+  "passed": true,
+  "entries": 152,
+  "jerseys_verified": 149,
+  "jerseys_resolved": 152,
+  "jerseys_resolved_by_user_policy": 3,
+  "unresolved": [],
+  "staged_sha256": "f9a27843b73f675da88e4522e040ab9dd6119ef394a14eaaa5527dc2e6fe3a2d",
+  "game_sha256": "6ba3a7681fe25262193e43544654292d2af27c7e0af5263f7573f52d4c5cc0aa",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1975-76&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "alvan-adams": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "kareem-abdul-jabbar": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever",
+    "76753": "World B. Free",
+    "78510": "Jo Jo White"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0047500406",
+    "game_date": "1976-06-06",
+    "champion_team": "BOS",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41975",
+        "TEAM_ID": 1610612738,
+        "TEAM_ABBREVIATION": "BOS",
+        "TEAM_NAME": "Boston Celtics",
+        "GAME_ID": "0047500406",
+        "GAME_DATE": "1976-06-06",
+        "MATCHUP": "BOS @ PHX",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 32,
+        "FGA": 83,
+        "FG_PCT": 0.386,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 23,
+        "FTA": 28,
+        "FT_PCT": 0.821,
+        "OREB": 16,
+        "DREB": 37,
+        "REB": 53,
+        "AST": 15,
+        "STL": 12,
+        "BLK": 2,
+        "TOV": null,
+        "PF": 29,
+        "PTS": 87,
+        "PLUS_MINUS": 7,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41975",
+        "TEAM_ID": 1610612756,
+        "TEAM_ABBREVIATION": "PHX",
+        "TEAM_NAME": "Phoenix Suns",
+        "GAME_ID": "0047500406",
+        "GAME_DATE": "1976-06-06",
+        "MATCHUP": "PHX vs. BOS",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 32,
+        "FGA": 77,
+        "FG_PCT": 0.416,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 16,
+        "FTA": 21,
+        "FT_PCT": 0.762,
+        "OREB": 8,
+        "DREB": 31,
+        "REB": 39,
+        "AST": 13,
+        "STL": 6,
+        "BLK": 4,
+        "TOV": null,
+        "PF": 23,
+        "PTS": 80,
+        "PLUS_MINUS": -7,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1975-76&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "b4172ca5c3a10987f05236d0c6b058d7b000f61d57d5381a45334a4802d311aa"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0047500406/box-score",
+  "champion_team": "BOS",
+  "champion_records": 5,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 5,
+    "BUF": 8,
+    "CHI": 9,
+    "CLE": 9,
+    "DET": 8,
+    "GSW": 9,
+    "HOU": 8,
+    "KCK": 8,
+    "LAL": 9,
+    "MIL": 8,
+    "NOJ": 12,
+    "NYK": 8,
+    "PHI": 8,
+    "PHX": 9,
+    "POR": 8,
+    "SEA": 9,
+    "WSB": 8
+  }
+}

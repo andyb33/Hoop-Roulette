@@ -1,7 +1,7 @@
 {
   "season": "1976-77",
-  "status": "stats_independently_checked",
-  "enabled_in_game": false,
+  "status": "complete_promoted",
+  "enabled_in_game": true,
   "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1976-77&SeasonType=Regular+Season&PlayerOrTeam=P&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
   "source_sha256": "4712724f2607bb92bbe4dab959fc997f9944facc188c9ddc47eee7dc5a00571d",
   "regular_season_games_observed": 902,
@@ -73933,10 +73933,7 @@
     "WSB": 10
   },
   "pending": [
-    "Final team-stint jersey numbers",
-    "Accolades and champions",
-    "Distribution analysis",
-    "Game activation"
+    "Distribution analysis"
   ],
   "verification_report": "data/staging/stats_1976_77_verification.json"
 }

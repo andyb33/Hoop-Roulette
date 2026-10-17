@@ -51,12 +51,34 @@ class SeventiesHistoryTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             final_log_rows(changed)
 
-    def test_hassett_stays_pending_and_batch_stays_out_of_default_pool(self):
-        review = read('data/staging/review_1979_80_76966_IND.json')
-        self.assertEqual(review['status'], 'NEEDS_DATED_FINAL_UNIFORM_EVIDENCE')
-        self.assertNotIn('resolved_jersey', review)
-        self.assertFalse((ROOT / 'data/staging/jersey_1979_80_76966_IND_resolution.json').exists())
-        self.assertFalse({'1979-80', '1978-79', '1977-78'} & {r.season for r in load_records()})
+    def test_user_policy_resolves_eight_conflicts_without_claiming_historical_verification(self):
+        expected = {76966: 11, 78473: 14, 78157: 32, 76356: 5,
+                    77689: 35, 77869: 42, 77812: 42, 78215: 40}
+        status = read('data/processed/stage3_readiness_1973_1980.json')
+        observed = {}
+        for season in status['seasons']:
+            slug = season['season'].replace('-', '_')
+            audit = read(f'data/processed/completion_{slug}.json')
+            rows = read(f'data/game/players_{slug}.json')
+            policies = season['policy_jersey_resolutions']
+            self.assertEqual(audit.get('jerseys_resolved_by_user_policy', 0), len(policies))
+            for review in policies:
+                proof = read(review['resolution_file'])
+                chosen = max(map(int, review['alternatives']))
+                self.assertEqual(proof['resolved_jersey'], chosen)
+                self.assertFalse(proof['historically_verified_final_jersey'])
+                self.assertEqual(proof['status'], 'RESOLVED_BY_USER_POLICY')
+                row = next(r for r in rows if r['player_id'] == proof['player_id'] and r['team'] == proof['team'])
+                self.assertEqual(row['jersey'], chosen)
+                observed[proof['player_id']] = chosen
+            for entry in audit['jersey_evidence']:
+                date_proof = entry.get('game_date_resolution')
+                if date_proof:
+                    self.assertEqual(date_proof['original_game_time_local'], '0001-01-01T00:00:00Z')
+                    self.assertEqual(len(date_proof['schedule_rows']), 2)
+                    self.assertTrue(all(r['GAME_ID'] == entry['game_id'] and r['GAME_DATE'] == entry['last_game_date']
+                                        for r in date_proof['schedule_rows']))
+        self.assertEqual(observed, expected)
 
     def test_completed_1978_season_has_verified_title_and_every_uniform(self):
         audit = read('data/processed/completion_1978_79.json')
@@ -133,8 +155,9 @@ class SeventiesHistoryTests(unittest.TestCase):
     def test_stage3_readiness_lists_every_pending_uniform_without_enabling_the_batch(self):
         status = read('data/processed/stage3_readiness_1973_1980.json')
         self.assertEqual((status['entries'], status['stat_comparisons']), (1273, 8911))
-        self.assertEqual(status['complete_seasons'], ['1973-74', '1974-75', '1978-79'])
-        self.assertEqual(status['pending_jerseys'], 8)
+        self.assertEqual(status['complete_seasons'], [f'{y}-{(y+1)%100:02}' for y in range(1973, 1980)])
+        self.assertEqual(status['pending_jerseys'], 0)
+        self.assertEqual(status['policy_jersey_resolutions'], 8)
         self.assertFalse(status['enabled_in_default_pool'])
         self.assertEqual(len(status['seasons']), 7)
         for season in status['seasons']:

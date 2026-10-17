@@ -1,3 +1,5 @@
+> Update 2026-10-17: All seven Stage 3 datasets are complete. The user approved the higher of each unresolved jersey pair: eight policy choices, zero pending reviews. These choices are not historically verified final numbers. See [the consolidated report](HISTORICAL_PROGRESS_1973_1977.md). The default pool is still unchanged pending activation. The earlier review status below is retained as research history.
+
 # Stage 3: 1977–78 through 1979–80
 
 All three stats gates passed on 2026-10-17 using the fixed 30 team GP / 15 unrounded team MPG rule. The playable release remains v0.11.1: 46 seasons, 12,169 entries. This batch is not enabled, and no desktop package was built.

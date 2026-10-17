@@ -1,7 +1,7 @@
 {
   "season": "1977-78",
-  "status": "stats_independently_checked",
-  "enabled_in_game": false,
+  "status": "complete_promoted",
+  "enabled_in_game": true,
   "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1977-78&SeasonType=Regular+Season&PlayerOrTeam=P&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
   "source_sha256": "05841258e89fe02985833893e95b373b2482c6656024cddfe6134f79b46a30fb",
   "regular_season_games_observed": 902,
@@ -66024,10 +66024,7 @@
     "WSB": 9
   },
   "pending": [
-    "Final team-stint jersey numbers",
-    "Accolades and champions",
-    "Distribution analysis",
-    "Game activation"
+    "Distribution analysis"
   ],
   "verification_report": "data/staging/stats_1977_78_verification.json"
 }

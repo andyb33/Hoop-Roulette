@@ -6,7 +6,7 @@
   "game_id": "0027900899",
   "game_date": "1980-03-30",
   "original_nba_jersey": "10-11",
-  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "status": "RESOLVED_BY_USER_POLICY",
   "alternatives": [
     10,
     11
@@ -17,5 +17,8 @@
     "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Pacers.pdf"
   ],
   "reason": "NBA final-game roster has composite 10-11. APBR confirms both without chronology. Pacers media guide also lists 30. No dated late-season evidence found; do not choose a final number from listing order.",
-  "additional_media_guide_alternative": 30
+  "additional_media_guide_alternative": 30,
+  "resolved_jersey": 11,
+  "resolution_file": "data/staging/jersey_1979_80_76966_IND_resolution.json",
+  "historically_verified_final_jersey": false
 }

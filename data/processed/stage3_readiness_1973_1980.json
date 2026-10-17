@@ -7,9 +7,14 @@
   "complete_seasons": [
     "1973-74",
     "1974-75",
-    "1978-79"
+    "1975-76",
+    "1976-77",
+    "1977-78",
+    "1978-79",
+    "1979-80"
   ],
-  "pending_jerseys": 8,
+  "pending_jerseys": 0,
+  "policy_jersey_resolutions": 8,
   "enabled_in_default_pool": false,
   "seasons": [
     {
@@ -83,7 +88,8 @@
       ],
       "champion_team": "BOS",
       "complete": true,
-      "pending_jerseys": []
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": []
     },
     {
       "season": "1974-75",
@@ -154,7 +160,8 @@
       ],
       "champion_team": "GSW",
       "complete": true,
-      "pending_jerseys": []
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": []
     },
     {
       "season": "1975-76",
@@ -224,8 +231,9 @@
         }
       ],
       "champion_team": "BOS",
-      "complete": false,
-      "pending_jerseys": [
+      "complete": true,
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": [
         {
           "season": "1975-76",
           "player_id": 77812,
@@ -234,7 +242,7 @@
           "game_id": "0027500659",
           "game_date": "1976-03-27",
           "original_nba_jersey": "32-42",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             32,
             42
@@ -242,7 +250,10 @@
           "sources": [
             "https://apbr.org/nmbr7080.html"
           ],
-          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+          "resolved_jersey": 42,
+          "resolution_file": "data/staging/jersey_1975_76_77812_CHI_resolution.json",
+          "historically_verified_final_jersey": false
         },
         {
           "season": "1975-76",
@@ -252,7 +263,7 @@
           "game_id": "0027500733",
           "game_date": "1976-04-11",
           "original_nba_jersey": "41-42",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             41,
             42
@@ -260,7 +271,10 @@
           "sources": [
             "https://apbr.org/nmbr7080.html"
           ],
-          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+          "resolved_jersey": 42,
+          "resolution_file": "data/staging/jersey_1975_76_77869_CHI_resolution.json",
+          "historically_verified_final_jersey": false
         },
         {
           "season": "1975-76",
@@ -270,7 +284,7 @@
           "game_id": "0027500731",
           "game_date": "1976-04-10",
           "original_nba_jersey": "4-40",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             4,
             40
@@ -278,7 +292,10 @@
           "sources": [
             "https://apbr.org/nmbr7080.html"
           ],
-          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+          "resolved_jersey": 40,
+          "resolution_file": "data/staging/jersey_1975_76_78215_PHX_resolution.json",
+          "historically_verified_final_jersey": false
         }
       ]
     },
@@ -350,8 +367,9 @@
         }
       ],
       "champion_team": "POR",
-      "complete": false,
-      "pending_jerseys": [
+      "complete": true,
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": [
         {
           "season": "1976-77",
           "player_id": 76356,
@@ -360,7 +378,7 @@
           "game_id": "0027600865",
           "game_date": "1977-04-10",
           "original_nba_jersey": "3-5",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             3,
             5
@@ -368,7 +386,10 @@
           "sources": [
             "https://apbr.org/nmbr7080.html"
           ],
-          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+          "resolved_jersey": 5,
+          "resolution_file": "data/staging/jersey_1976_77_76356_MIL_resolution.json",
+          "historically_verified_final_jersey": false
         },
         {
           "season": "1976-77",
@@ -378,7 +399,7 @@
           "game_id": "0027600855",
           "game_date": "1977-04-08",
           "original_nba_jersey": "31-35",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             31,
             35
@@ -386,7 +407,10 @@
           "sources": [
             "https://apbr.org/nmbr7080.html"
           ],
-          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+          "resolved_jersey": 35,
+          "resolution_file": "data/staging/jersey_1976_77_77689_MIL_resolution.json",
+          "historically_verified_final_jersey": false
         },
         {
           "season": "1976-77",
@@ -396,7 +420,7 @@
           "game_id": "0027600864",
           "game_date": "1977-04-10",
           "original_nba_jersey": "10-32",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             10,
             32
@@ -404,7 +428,10 @@
           "sources": [
             "https://apbr.org/nmbr7080.html"
           ],
-          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required.",
+          "resolved_jersey": 32,
+          "resolution_file": "data/staging/jersey_1976_77_78157_DET_resolution.json",
+          "historically_verified_final_jersey": false
         }
       ]
     },
@@ -477,8 +504,9 @@
         }
       ],
       "champion_team": "WSB",
-      "complete": false,
-      "pending_jerseys": [
+      "complete": true,
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": [
         {
           "season": "1977-78",
           "player_id": 78473,
@@ -487,7 +515,7 @@
           "game_id": "0027700845",
           "game_date": "1978-04-01",
           "original_nba_jersey": "00-14",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             "00",
             14
@@ -496,7 +524,10 @@
             "https://apbr.org/nmbr7080.html",
             "https://www.landofbasketball.com/nba_rosters/1977_1978_jazz_grs.htm"
           ],
-          "reason": "NBA final-game roster and independent exact-season registers list both 00 and 14 without chronology. No dated late-season evidence found; do not infer final number from listing order."
+          "reason": "NBA final-game roster and independent exact-season registers list both 00 and 14 without chronology. No dated late-season evidence found; do not infer final number from listing order.",
+          "resolved_jersey": 14,
+          "resolution_file": "data/staging/jersey_1977_78_78473_NOJ_resolution.json",
+          "historically_verified_final_jersey": false
         }
       ]
     },
@@ -569,7 +600,8 @@
       ],
       "champion_team": "SEA",
       "complete": true,
-      "pending_jerseys": []
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": []
     },
     {
       "season": "1979-80",
@@ -640,8 +672,9 @@
         }
       ],
       "champion_team": "LAL",
-      "complete": false,
-      "pending_jerseys": [
+      "complete": true,
+      "pending_jerseys": [],
+      "policy_jersey_resolutions": [
         {
           "season": "1979-80",
           "player_id": 76966,
@@ -650,7 +683,7 @@
           "game_id": "0027900899",
           "game_date": "1980-03-30",
           "original_nba_jersey": "10-11",
-          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "status": "RESOLVED_BY_USER_POLICY",
           "alternatives": [
             10,
             11
@@ -661,7 +694,10 @@
             "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Pacers.pdf"
           ],
           "reason": "NBA final-game roster has composite 10-11. APBR confirms both without chronology. Pacers media guide also lists 30. No dated late-season evidence found; do not choose a final number from listing order.",
-          "additional_media_guide_alternative": 30
+          "additional_media_guide_alternative": 30,
+          "resolved_jersey": 11,
+          "resolution_file": "data/staging/jersey_1979_80_76966_IND_resolution.json",
+          "historically_verified_final_jersey": false
         }
       ]
     }
