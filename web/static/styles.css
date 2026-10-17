@@ -413,3 +413,10 @@ dialog h2 { margin-top: 8px; font: 900 38px/1 var(--display); text-transform: up
 @keyframes jackpot-celebrate { from { box-shadow: 0 0 35px var(--jackpot-glow); transform: scale(.98); } to { box-shadow: none; transform: scale(1); } }
 @keyframes jackpot-confetti { from { transform: translateY(-8px) rotate(0); opacity: 1; } to { transform: translateY(170px) rotate(180deg); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .jackpot-hit .jackpot-banner, #jackpot-particles i { animation: none !important; } }
+
+#finished .secondary { margin: 8px 0 16px; }
+#score-history { width: min(600px, calc(100vw - 32px)); max-height: 85vh; overflow-y: auto; }
+#history-scores { text-align: left; margin: 20px 0; }
+#history-scores details { padding: 12px 0; border-bottom: 1px solid var(--line); }
+#history-scores summary { cursor: pointer; font-weight: 700; }
+#history-scores p { font-size: 13px; line-height: 1.5; }

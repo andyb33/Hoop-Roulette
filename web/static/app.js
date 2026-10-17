@@ -1,4 +1,4 @@
-const state = { game: null, keeps: new Set(), busy: false, selectedCategory: null };
+const state = { game: null, keeps: new Set(), busy: false, selectedCategory: null, finishedShownId: null };
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -128,7 +128,13 @@ function render(game, { preserveReels = false } = {}) {
 
   if (game.complete) {
     $("#final-score").textContent = game.total_score;
-    $("#finished").showModal();
+    $("#final-breakdown").textContent = `Upper: ${game.upper_total} · Bonus: +${game.bonus}`;
+    saveCompletedScore(game);
+    $("#final-best").textContent = `Personal best: ${scores.best}`;
+    if (state.finishedShownId !== game.game_id) {
+      state.finishedShownId = game.game_id;
+      $("#finished").showModal();
+    }
   }
 }
 
@@ -141,10 +147,8 @@ function cycleReel(name, finalValue, duration, choices = []) {
   }
   if (!choices.length) choices = [finalValue];
   slot.classList.add("spinning");
-  let index = Math.floor(Math.random() * choices.length);
   const timer = window.setInterval(() => {
-    value.textContent = choices[index % choices.length];
-    index += 1;
+    value.textContent = choices[Math.floor(Math.random() * choices.length)];
   }, 62);
   return new Promise(resolve => {
     window.setTimeout(() => {
@@ -172,14 +176,15 @@ async function animateReels(game) {
   }
   $("#player-card").classList.add("is-waiting");
   const choices = game.animation_choices || {};
-  const seasonDuration = Math.max(jackpot ? 1100 : 700, ((choices.season?.length || 1) + 1) * 62);
-  const teamDuration = Math.max(seasonDuration + 380, (choices.team?.length || 1) * 62);
-  const playerDuration = Math.max(teamDuration + 460, (choices.player?.length || 1) * 62);
-  await Promise.all([
-    cycleReel("season", player.season, seasonDuration, choices.season),
-    cycleReel("team", player.team, teamDuration, choices.team),
-    cycleReel("player", player.name, playerDuration, choices.player),
-  ]);
+  // Resolve the context before previewing the next reel; time never grows with pool size.
+  const reroll = game.spins_used > 1;
+  const durations = jackpot ? [450, 350, 550] : reroll ? [250, 180, 300] : [400, 280, 420];
+  for (const name of ["team", "player"]) {
+    if (!state.keeps.has(name)) $(`#${name}-value`).textContent = "…";
+  }
+  await cycleReel("season", player.season, durations[0], choices.season);
+  await cycleReel("team", player.team, durations[1], choices.team);
+  await cycleReel("player", player.name, durations[2], choices.player);
   $("#player-card").classList.remove("is-waiting");
   if (jackpot) {
     jackpotBanner(player.pool, false);
@@ -276,5 +281,55 @@ $$("[data-force]").forEach(button => button.addEventListener("click", () => spin
 $("#confirm-score").addEventListener("click", () => score(state.selectedCategory));
 $("#new-game").addEventListener("click", newGame);
 $("#play-again").addEventListener("click", newGame);
+
+
+const SCORE_STORAGE = "hoopreel.scores.v1";
+function readScores() {
+  try {
+    const data = JSON.parse(localStorage.getItem(SCORE_STORAGE) || "null");
+    if (data && Array.isArray(data.recent) && Number.isFinite(data.best)) {
+      data.recent = data.recent.filter(item => item && typeof item.id === "string" && Number.isFinite(item.total)).slice(0, 50);
+      return data;
+    }
+  } catch (_) { /* Storage may be unavailable; gameplay still works. */ }
+  return { recent: [], best: 0 };
+}
+let scores = readScores();
+function saveCompletedScore(game) {
+  if (game.dev_jackpots || scores.recent.some(item => item.id === game.game_id)) return;
+  scores.best = Math.max(scores.best, game.total_score);
+  scores.recent.unshift({ id: game.game_id, date: new Date().toISOString(), total: game.total_score,
+    upper: game.upper_total, bonus: game.bonus,
+    categories: game.categories.map(c => ({ label: c.label, score: c.score, selection: c.selection })) });
+  scores.recent = scores.recent.slice(0, 50);
+  try { localStorage.setItem(SCORE_STORAGE, JSON.stringify(scores)); } catch (_) { /* Keep this session's scores. */ }
+  $("#final-best").textContent = `Personal best: ${scores.best}`;
+}
+function showScoreHistory() {
+  $("#history-best").textContent = `Personal best: ${scores.best}`;
+  const list = $("#history-scores");
+  list.replaceChildren();
+  for (const item of scores.recent) {
+    const detail = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = `${item.total} points · ${new Date(item.date).toLocaleString()}`;
+    detail.append(summary);
+    const breakdown = document.createElement("p");
+    breakdown.textContent = `Upper: ${item.upper} · Bonus: +${item.bonus}`;
+    detail.append(breakdown);
+    for (const category of item.categories || []) {
+      const row = document.createElement("p");
+      const pick = category.selection;
+      row.textContent = `${category.label}: ${category.score}${pick ? ` — ${pick.player} · ${pick.season} ${pick.team}` : ""}`;
+      detail.append(row);
+    }
+    list.append(detail);
+  }
+  if (!scores.recent.length) list.textContent = "Finish a game to save your first score.";
+  $("#score-history").showModal();
+}
+$("#view-scorecard").addEventListener("click", () => $("#finished").close());
+$("#show-history").addEventListener("click", showScoreHistory);
+$("#close-history").addEventListener("click", () => $("#score-history").close());
 
 request("/api/state").then(render).catch(error => { $("#message").textContent = error.message; });

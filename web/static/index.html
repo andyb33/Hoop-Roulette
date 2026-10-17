@@ -20,6 +20,7 @@
     </div>
     <div class="header-actions">
       <div class="turn-chip"><span>Turn</span><strong id="header-turn">1 / 14</strong></div>
+      <button id="show-history" class="secondary">Scores</button>
       <button id="new-game" class="secondary">New game</button>
     </div>
   </header>
@@ -107,10 +108,21 @@
     </aside>
   </main>
 
-  <dialog id="finished">
+  <dialog id="finished" aria-labelledby="finished-title">
     <p class="eyebrow">GAME COMPLETE</p>
-    <h2>Final score: <span id="final-score"></span></h2>
+    <h2 id="finished-title">Final score: <span id="final-score"></span></h2>
+    <p id="final-breakdown"></p>
+    <p id="final-best"></p>
+    <button id="view-scorecard" class="secondary">View scorecard</button>
     <button id="play-again" class="spin-button">Play Again</button>
+  </dialog>
+
+  <dialog id="score-history" aria-labelledby="history-title">
+    <h2 id="history-title">Your scores</h2>
+    <p id="history-best"></p>
+    <p>Last 50 games · saved in this browser</p>
+    <div id="history-scores"></div>
+    <button id="close-history" class="secondary">Close</button>
   </dialog>
 
   <script src="/app.js" defer></script>

@@ -170,6 +170,7 @@ class BrowserGame:
         }
         preview = self.game.preview() if turn else {}
         return {
+            "game_id": self.game_id,
             "turn": self.game.turns_completed + (0 if self.game.is_complete else 1),
             "turns_total": len(Category),
             "complete": self.game.is_complete,

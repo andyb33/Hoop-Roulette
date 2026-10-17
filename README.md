@@ -11,7 +11,7 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.11.0 includes the normal pool from 1980–81 through 2025–26.**
+**v0.11.1 includes the normal pool from 1980–81 through 2025–26.**
 All thirty Stage 2 seasons are complete and active. The final batch adds 1982–83, 1981–82 and 1980–81.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
@@ -27,7 +27,7 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. Windows, Apple Silicon Mac and Intel Mac v0.11.0 packages have built successfully and passed packaged launch checks. [Download links and tester instructions](docs/EXTERNAL_ALPHA_V0_11.md).
+Development games are not logged. v0.11.1 adds faster contextual spins, a dismissible results popup, and browser-local score history. [Tester instructions](docs/EXTERNAL_ALPHA_V0_11_1.md). Desktop builds run from the updated packaging workflows.
 
 The forty-six playable datasets from 1980–81 through 2025–26 contain:
 
