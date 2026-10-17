@@ -27,6 +27,12 @@ def rounded_rate(total, games):
 
 def historical_team(season, team):
     team = {"GOS":"GSW", "PHL":"PHI", "SAN":"SAS", "UTH":"UTA"}.get(team, team)
+    if team == "OKC" and int(season[:4]) < 2008:
+        return "SEA"
+    if team == "UTA" and int(season[:4]) < 1979:
+        return "NOJ"
+    if team == "LAC" and int(season[:4]) < 1978:
+        return "BUF"
     if team == "LAC" and int(season[:4]) < 1984:
         return "SDC"
     if team == "SAC" and int(season[:4]) < 1985:
@@ -60,8 +66,8 @@ def require_previous_verified(season):
     year = int(season[:4])
     if year == 2022:
         return
-    if not 1980 <= year < 2022:
-        raise ValueError("This staging batch covers 1980–81 through 2022–23")
+    if not 1973 <= year < 2022:
+        raise ValueError("This staging batch covers 1973–74 through 2022–23")
     previous_slug = f"{year + 1}_{str(year + 2)[-2:]}"
     report_path = ROOT / f"data/staging/stats_{previous_slug}_verification.json"
     data_path = ROOT / f"data/staging/stats_{previous_slug}.json"

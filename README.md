@@ -12,6 +12,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 ## Current status
 
 **v0.11.1 includes the normal pool from 1980–81 through 2025–26.**
+Stage 3 progress: 1979–80, 1978–79 and 1977–78 have passed independent stats verification. 1978–79 is complete; final jerseys for Joe Hassett (1979–80 IND) and Slick Watts (1977–78 NOJ) remain under review. This batch is not enabled yet. See [batch evidence](docs/HISTORICAL_PROGRESS_1977_1980.md).
+
 All thirty Stage 2 seasons are complete and active. The final batch adds 1982–83, 1981–82 and 1980–81.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.

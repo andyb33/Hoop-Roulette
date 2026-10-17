@@ -1,0 +1,18 @@
+{
+  "season": "1979-80",
+  "player_id": 77528,
+  "player": "Jim McElroy",
+  "team": "DET",
+  "game_id": "0027900517",
+  "game_date": "1980-01-17",
+  "original_nba_jersey": "",
+  "resolved_jersey": 33,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "33 James McElroy",
+  "season_team_register": "9 Jackie Robinson (#30), 11 Bob McAdoo, 13 Leon Douglas, 14 Eric Money, 16 Bob Lanier, 21 Earl Evans, 24 Roy Hamilton, 25 John Long, 30 Ron Lee, 32 Greg Kelser, 33 James McElroy, 34 John Shumate, 35 Phil Hubbard, 41 Terry Tyler, 42 Terry Duerod, 44 Steve Malovic, 54 Kent Benson GOLDEN STATE WARRIORS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

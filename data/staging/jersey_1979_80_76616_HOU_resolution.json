@@ -1,0 +1,18 @@
+{
+  "season": "1979-80",
+  "player_id": 76616,
+  "player": "Mike Dunleavy",
+  "team": "HOU",
+  "game_id": "0027900899",
+  "game_date": "1980-03-30",
+  "original_nba_jersey": "",
+  "resolved_jersey": 10,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "10 Mike Dunleavy",
+  "season_team_register": "2 Rick Barry (#4), 5 Billy Paultz, 6 Tom Henderson, 10 Mike Dunleavy, 11 Major Jones, 13 Dwight Jones, 22 Alonzo Bradley, 23 Calvin Murphy, 24 Moses Malone, 30 Allen Leavell, 32 Rudy White, 34 John Shumate, 45 Rudy Tomjanovich, 50 Robert Reid, 54 Paul Mokeski INDIANA PACERS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

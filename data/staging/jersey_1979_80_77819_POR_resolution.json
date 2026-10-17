@@ -1,0 +1,18 @@
+{
+  "season": "1979-80",
+  "player_id": 77819,
+  "player": "Jim Paxson",
+  "team": "POR",
+  "game_id": "0027900893",
+  "game_date": "1980-03-30",
+  "original_nba_jersey": "",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "4 Jim Paxson",
+  "season_team_register": "4 Jim Paxson, 10 Ron Brewer, 11 Abdul Jeelani, 12 Billy Ray Bates, 13 Dave Twardzik, 14 Lionel Hollins, 15 Larry Steele, 20 Maurice Lucas, 23 T.R. Dunn, 25 Tom Owens, 30 Bob Gross, 33 Calvin Natt, 42 Kermit Washington, 44 Kevin Kunnert, 52 Jim Brewer SAN ANTONIO SPURS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

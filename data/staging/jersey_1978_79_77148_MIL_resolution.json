@@ -1,0 +1,18 @@
+{
+  "season": "1978-79",
+  "player_id": 77148,
+  "player": "George Johnson",
+  "team": "MIL",
+  "game_id": "0027800882",
+  "game_date": "1979-04-06",
+  "original_nba_jersey": "",
+  "resolved_jersey": 24,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "24 George Johnson",
+  "season_team_register": "2 Junior Bridgeman, 4 Norm Van Lier, 5 Sam Smith, 8 Marques Johnson, 11 Lloyd Walton, 12 Delmer Beshore, 18 Kevin Restani, 20 Ernie Grunfeld, 21 Quinn Buckner, 24 George Johnson, 30 Otis Howard, 32 Brian Winters, 40 John Gianelli, 54 Kent Benson NEW JERSEY NETS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

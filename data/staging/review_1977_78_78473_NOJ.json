@@ -1,0 +1,19 @@
+{
+  "season": "1977-78",
+  "player_id": 78473,
+  "player": "Slick Watts",
+  "team": "NOJ",
+  "game_id": "0027700845",
+  "game_date": "1978-04-01",
+  "original_nba_jersey": "00-14",
+  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "alternatives": [
+    "00",
+    14
+  ],
+  "sources": [
+    "https://apbr.org/nmbr7080.html",
+    "https://www.landofbasketball.com/nba_rosters/1977_1978_jazz_grs.htm"
+  ],
+  "reason": "NBA final-game roster and independent exact-season registers list both 00 and 14 without chronology. No dated late-season evidence found; do not infer final number from listing order."
+}

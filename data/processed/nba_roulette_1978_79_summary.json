@@ -1,0 +1,141 @@
+{
+  "season": "1978-79",
+  "completed_at": "2026-10-17T03:50:04.671792+00:00",
+  "passed": true,
+  "entries": 209,
+  "jerseys_verified": 209,
+  "unresolved": [],
+  "staged_sha256": "dcfc88fffec451a61b6df0f9cf1b89875825d208966c1ceb4955975a818a965f",
+  "game_sha256": "9c215edd7951008b67e15fb3b2d0d186a2b70f3f5698e86095864005859d2422",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1978-79&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "moses-malone": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "phil-ford": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever",
+    "76753": "World B. Free"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0047800053",
+    "game_date": "1979-06-01",
+    "champion_team": "SEA",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41978",
+        "TEAM_ID": 1610612764,
+        "TEAM_ABBREVIATION": "WAS",
+        "TEAM_NAME": "Washington Bullets",
+        "GAME_ID": "0047800053",
+        "GAME_DATE": "1979-06-01",
+        "MATCHUP": "WAS vs. SEA",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 39,
+        "FGA": 83,
+        "FG_PCT": 0.47,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 15,
+        "FTA": 23,
+        "FT_PCT": 0.652,
+        "OREB": 11,
+        "DREB": 27,
+        "REB": 38,
+        "AST": 23,
+        "STL": 9,
+        "BLK": 3,
+        "TOV": 18,
+        "PF": 27,
+        "PTS": 93,
+        "PLUS_MINUS": -4,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41978",
+        "TEAM_ID": 1610612760,
+        "TEAM_ABBREVIATION": "SEA",
+        "TEAM_NAME": "Seattle SuperSonics",
+        "GAME_ID": "0047800053",
+        "GAME_DATE": "1979-06-01",
+        "MATCHUP": "SEA @ WAS",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 42,
+        "FGA": 91,
+        "FG_PCT": 0.462,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 13,
+        "FTA": 18,
+        "FT_PCT": 0.722,
+        "OREB": 15,
+        "DREB": 31,
+        "REB": 46,
+        "AST": 21,
+        "STL": 8,
+        "BLK": 5,
+        "TOV": 16,
+        "PF": 23,
+        "PTS": 97,
+        "PLUS_MINUS": 4,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1978-79&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "a6b8e3339454dd4e2279b317c8cb670bea00299597d6ba539a7521fa94ec88b1"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0047800053/box-score",
+  "champion_team": "SEA",
+  "champion_records": 7,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 10,
+    "BOS": 11,
+    "CHI": 9,
+    "CLE": 10,
+    "DEN": 8,
+    "DET": 8,
+    "GSW": 8,
+    "HOU": 9,
+    "IND": 9,
+    "KCK": 10,
+    "LAL": 10,
+    "MIL": 10,
+    "NJN": 12,
+    "NOJ": 11,
+    "NYK": 11,
+    "PHI": 9,
+    "PHX": 11,
+    "POR": 9,
+    "SAS": 9,
+    "SDC": 8,
+    "SEA": 8,
+    "WSB": 9
+  }
+}

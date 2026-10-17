@@ -1,0 +1,18 @@
+{
+  "season": "1977-78",
+  "player_id": 77149,
+  "player": "George Johnson",
+  "team": "NJN",
+  "game_id": "0027700889",
+  "game_date": "1978-04-08",
+  "original_nba_jersey": "",
+  "resolved_jersey": 52,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "52 George Johnson",
+  "season_team_register": "1 Kevin Porter, 11 Robert Hawkins, 11 Louie Nelson, 14 Bird Averett, 15 Dave Wohl, 15 Eddie Jordan, 16 Bob Carrington, 20 Jan van Breda Kolff, 21 Tim Bassett, 22 Bernard King, 23 John Williamson, 28 Darnell Hillman, 30 Al Skinner, 31 Mark Crow, 35 Kim Hughes, 42 Wilson Washington, 52 George Johnson, 54 Howard Porter NEW ORLEANS JAZZ",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

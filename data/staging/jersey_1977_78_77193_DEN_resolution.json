@@ -1,0 +1,18 @@
+{
+  "season": "1977-78",
+  "player_id": 77193,
+  "player": "Bobby Jones",
+  "team": "DEN",
+  "game_id": "0027700898",
+  "game_date": "1978-04-09",
+  "original_nba_jersey": "",
+  "resolved_jersey": 24,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "24 Bobby Jones",
+  "season_team_register": "5 Robert Smith, 10 Ralph Simpson, 14 Brian Taylor, 15 Jim Price, 20 Mack Calvin, 21 Anthony Roberts, 24 Bobby Jones, 30 Norm Cook (#52), 30 Jacky Dorsey, 30 Darnell Hillman, 31 Bo Ellis, 32 Bobby Wilkerson, 33 David Thompson, 44 Dan Issel, 45 Tom LaGarde DETROIT PISTONS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

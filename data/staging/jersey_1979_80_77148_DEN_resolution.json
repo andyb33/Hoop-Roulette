@@ -1,0 +1,18 @@
+{
+  "season": "1979-80",
+  "player_id": 77148,
+  "player": "George Johnson",
+  "team": "DEN",
+  "game_id": "0027900874",
+  "game_date": "1980-03-26",
+  "original_nba_jersey": "",
+  "resolved_jersey": 20,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "20 George Johnson",
+  "season_team_register": "2 Alex English, 10 John Roche, 11 Charlie Scott, 20 George Johnson, 21 Anthony Roberts, 22 Glen Gondrezick, 24 Gary Garland, 30 George McGinnis, 31 Bo Ellis, 32 Bobby Wilkerson, 33 David Thompson, 35 Kim Hughes, 41 Tom Boswell, 41 Arvid Kramer, 44 Dan Issel DETROIT PISTONS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

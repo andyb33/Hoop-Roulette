@@ -1,0 +1,14 @@
+{
+  "season": "1978-79",
+  "player_id": 600013,
+  "player": "Rick Barry",
+  "team": "HOU",
+  "game_id": "0027800901",
+  "game_date": "1979-04-08",
+  "original_nba_jersey": "2-4",
+  "resolved_jersey": 4,
+  "status": "VERIFIED_HOME_AWAY_UNIFORM_RULE",
+  "method": "VERIFIED_HOME_AWAY_UNIFORM_RULE",
+  "source": "https://www.basketballnetwork.net/old-school/rick-barry-explains-why-he-wore-two-different-jersey-numbers-with-the-rockets",
+  "reason": "Barry describes 2 at home and 4 away; final regular-season venue verified by official game box score; composite 2-4 preserved."
+}

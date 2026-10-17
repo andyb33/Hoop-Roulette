@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "records": 209,
+  "seasons": 1,
+  "team_seasons": 22,
+  "complete_games": 10,
+  "spins_checked": 269,
+  "normal_seasons_seen": [
+    "1978-79"
+  ],
+  "all_seasons_seen": [
+    "1978-79"
+  ],
+  "jackpot_only": [],
+  "score_min": 113,
+  "score_max": 213,
+  "goat_pools": {
+    "award": 149,
+    "prehistoric": 15
+  }
+}

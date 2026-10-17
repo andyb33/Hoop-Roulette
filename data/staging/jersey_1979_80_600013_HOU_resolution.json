@@ -1,0 +1,14 @@
+{
+  "season": "1979-80",
+  "player_id": 600013,
+  "player": "Rick Barry",
+  "team": "HOU",
+  "game_id": "0027900888",
+  "game_date": "1980-03-28",
+  "original_nba_jersey": "2-4",
+  "resolved_jersey": 2,
+  "status": "VERIFIED_HOME_AWAY_UNIFORM_RULE",
+  "method": "VERIFIED_HOME_AWAY_UNIFORM_RULE",
+  "source": "https://www.basketballnetwork.net/old-school/rick-barry-explains-why-he-wore-two-different-jersey-numbers-with-the-rockets",
+  "reason": "Barry describes wearing 2 at home and 4 away. His final regular-season appearance March 28 was HOU vs DET at home; official game roster retains composite 2-4."
+}

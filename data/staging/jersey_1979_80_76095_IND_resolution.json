@@ -1,0 +1,14 @@
+{
+  "season": "1979-80",
+  "player_id": 76095,
+  "player": "Mike Bantom",
+  "team": "IND",
+  "game_id": "0027900899",
+  "game_date": "1980-03-30",
+  "original_nba_jersey": " ",
+  "resolved_jersey": 42,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "source": "https://www.basketball-reference.com/leagues/NBA_1980_numbers.html",
+  "reason": "Independent exact-season uniform register lists Bantom only under 42; corroborated by 1979-80 season history and adjacent Pacers registers. APBR 1979-80 listing omits him."
+}

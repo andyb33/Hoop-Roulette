@@ -51,7 +51,8 @@ REFERENCES.update({season: {
     "provenance": "https://www.kaggle.com/datasets/drgilermo/nba-players-stats",
     "primary": f"https://www.basketball-reference.com/leagues/NBA_{int(season[:4])+1}_per_game.html",
     "note": "Archived Basketball Reference totals from NBA Players stats since 1950; exact ending Year and individual traded-player stints retained. Rates derive from original totals with decimal half-up rounding; original archive and selected totals preserved."
-} for season in ("1988-89", "1987-88", "1986-87", "1985-86", "1984-85", "1983-84", "1982-83", "1981-82", "1980-81")})
+} for season in ("1988-89", "1987-88", "1986-87", "1985-86", "1984-85", "1983-84", "1982-83", "1981-82", "1980-81", "1979-80", "1978-79", "1977-78")})
+SCHEDULES.update({s:(902,82) for s in ("1979-80","1978-79","1977-78")})
 SCHEDULES.update({"1988-89": (1025,82), "1987-88": (943,82), "1986-87": (943,82), "1985-86": (943,82), "1984-85": (943,82), "1983-84": (943,82), "1982-83": (943,82), "1981-82": (943,82), "1980-81": (943,82)})
 
 
@@ -135,7 +136,7 @@ def name_key(name):
     text = unicodedata.normalize("NFKD", name.replace("ı", "i")).encode("ascii", "ignore").decode().lower().rstrip("*").strip()
     text = re.sub(r"\b(jr|sr|ii|iii|iv)\.?$", "", text).strip()
     text = re.sub("[^a-z0-9]", "", text)
-    return {"jianlianyi": "yijianlian", "jefferytaylor": "jefftaylor", "nenehilario": "nene", "juanhernangomez": "juanchohernangomez", "enesfreedom": "eneskanter", "wesiwundu": "wesleyiwundu", "kjmartin": "kenyonmartin", "bogdanbogdanovi": "bogdanbogdanovic",
+    return {"normvanlier": "normvan", "tedhounddogmcclain": "tedmcclain", "loudampier": "louiedampier", "williamaveritt": "birdaveritt", "charliejohnson": "charlesjohnson", "donwilliams": "duckwilliams", "royleehamilton": "royhamilton", "sammysmith": "samsmith", "joeyhassett": "joehassett", "jojo": "jojowhite", "jianlianyi": "yijianlian", "jefferytaylor": "jefftaylor", "nenehilario": "nene", "juanhernangomez": "juanchohernangomez", "enesfreedom": "eneskanter", "wesiwundu": "wesleyiwundu", "kjmartin": "kenyonmartin", "bogdanbogdanovi": "bogdanbogdanovic",
             "bojanbogdanovi": "bojanbogdanovic", "lukadoni": "lukadoncic",
             "nikolajoki": "nikolajokic", "jusufnurki": "jusufnurkic",
             "kristapsporziis": "kristapsporzingis", "alperenengun": "alperensengun",
@@ -344,7 +345,7 @@ def verify(season):
         schedule_evidence = {"source": schedule_url, "sha256": hashlib.sha256(schedule_path.read_bytes()).hexdigest(),
                              "matches": dict(official_games) == dict(games),
                              "team_games": {t: len(v) for t, v in sorted(official_team_games.items())}}
-    expected_teams = 23 if int(season[:4]) < 1988 else 25 if int(season[:4]) == 1988 else 27 if int(season[:4]) < 1995 else 29 if int(season[:4]) < 2004 else 30
+    expected_teams = 22 if int(season[:4]) < 1980 else 23 if int(season[:4]) < 1988 else 25 if int(season[:4]) == 1988 else 27 if int(season[:4]) < 1995 else 29 if int(season[:4]) < 2004 else 30
     if len(games) != expected_games or len(team_games) != expected_teams or any(len(t) != 2 for t in games.values()):
         errors.append(f"Expected {expected_games} games, two teams per game, and all {expected_teams} teams")
     if expected_team_games is not None and any(len(g) != expected_team_games for g in team_games.values()):

@@ -1,0 +1,18 @@
+{
+  "season": "1978-79",
+  "player_id": 77193,
+  "player": "Bobby Jones",
+  "team": "PHI",
+  "game_id": "0027800887",
+  "game_date": "1979-04-06",
+  "original_nba_jersey": "",
+  "resolved_jersey": 24,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "24 Bobby Jones",
+  "season_team_register": "4 Marlon Redmond, 6 Julius Erving, 10 Maurice Cheeks, 11 Caldwell Jones, 14 Henry Bibby, 20 Doug Collins, 22 Eric Money, 23 Joe Bryant, 24 Bobby Jones, 30 Al Skinner, 42 Harvey Catchings, 44 Ralph Simpson, 50 Steve Mix, 53 Darryl Dawkins PHOENIX SUNS",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

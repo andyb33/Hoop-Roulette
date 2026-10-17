@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import re
+import tempfile
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -14,7 +15,7 @@ from build_goat_datasets import player_key
 from collect_historical_stats import historical_team
 
 # NBA's box-score mirror uses Jimmy Butler III; the official honors list uses Jimmy Butler.
-HONORS_NAME_ALIASES = {202710: 'Jimmy Butler', 77376: 'Fat Lever'}
+HONORS_NAME_ALIASES = {202710: 'Jimmy Butler', 77376: 'Fat Lever', 76753: 'World B. Free'}
 
 def honors_key(row):
     return player_key(HONORS_NAME_ALIASES.get(row['player_id'], row['player']))
@@ -27,13 +28,19 @@ def fetch(url):
     CACHE.mkdir(parents=True, exist_ok=True)
     path = CACHE / (hashlib.sha256(url.encode()).hexdigest() + '.json')
     if path.exists():
-        return json.loads(path.read_text(encoding='utf-8'))
+        try:
+            return json.loads(path.read_text(encoding='utf-8'))
+        except json.JSONDecodeError:
+            pass  # A previously interrupted cache write must be fetched again.
     error = None
     for attempt in range(3):
         try:
             with urlopen(Request(url, headers=HEADERS), timeout=30) as response:
                 data = json.load(response)
-            path.write_text(json.dumps(data, ensure_ascii=False),encoding='utf-8')
+            with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=CACHE, delete=False) as temporary:
+                temporary.write(json.dumps(data, ensure_ascii=False))
+                temporary_path = Path(temporary.name)
+            temporary_path.replace(path)
             return data
         except Exception as exc:
             error = exc
@@ -41,6 +48,18 @@ def fetch(url):
 
 def final_log_rows(resolution):
     rows=resolution['official_stint_game_log_rows']
+    if resolution.get('method') == 'SCOPED_1979_LANDSBERGER_MISATTRIBUTED_GAME':
+        assert (resolution['season'],resolution['player_id'],resolution['team']) == ('1979-80',77334,'CHI')
+        excluded=[r for r in rows if r['Game_ID']=='0027900619']
+        before=[r for r in rows if r not in excluded]
+        assert len(excluded)==1 and excluded[0]['PTS']==14 and excluded==resolution['excluded_misattributed_rows']
+        official=resolution['official_row'];ref=resolution['independent_reference_row']
+        assert len(before)==official['GP']==int(ref['G'])==54
+        assert sum(r['PTS'] for r in before)==official['PTS']==int(ref['PTS'])==453
+        assert official['MIN']==int(ref['MP'])==1136
+        assert max(r['Game_ID'] for r in before if r['GAME_DATE']=='Feb 06, 1980')=='0027900608'
+        assert 'apbr.org/forum/' in resolution['independent_final_appearance_source']
+        return before
     if resolution.get('method') in ('OFFICIAL_TOTALS_CORROBORATED_PLACEHOLDER_EXCLUSION','SCOPED_1980_COLLINS_PLACEHOLDER_EXCLUSION'):
         official=resolution['official_row']
         before=[r for r in rows if r['MIN'] is not None and r['MIN']>0]
@@ -88,7 +107,10 @@ def fetch_box(gid, season):
     url = f'https://www.nba.com/game/{gid}/box-score'
     path = CACHE / (hashlib.sha256(url.encode()).hexdigest() + '.json')
     if path.exists():
-        return json.loads(path.read_text(encoding='utf-8'))
+        try:
+            return json.loads(path.read_text(encoding='utf-8'))
+        except json.JSONDecodeError:
+            pass  # A previously interrupted cache write must be fetched again.
     error = None
     for attempt in range(3):
         try:
@@ -176,7 +198,7 @@ def complete(season, workers=6):
     final_proofs=json.loads(final_path.read_text()) if final_path.exists() else []
     final_resolutions={(p['team'],p['player_id']):p for p in final_proofs}
     for key,resolution in final_resolutions.items():
-        if not resolution.get('roster_end_date_exclusive') and resolution.get('method') not in ('OFFICIAL_TOTALS_CORROBORATED_PLACEHOLDER_EXCLUSION','SCOPED_1980_COLLINS_PLACEHOLDER_EXCLUSION'):continue
+        if not resolution.get('roster_end_date_exclusive') and resolution.get('method') not in ('OFFICIAL_TOTALS_CORROBORATED_PLACEHOLDER_EXCLUSION','SCOPED_1980_COLLINS_PLACEHOLDER_EXCLUSION','SCOPED_1979_LANDSBERGER_MISATTRIBUTED_GAME'):continue
         assert (resolution['season'],resolution['source_observed_game_date'],resolution['source_observed_game_id'])==(season,*last[key])
         bounded=final_log_rows(resolution)
         target=max((datetime.strptime(r['GAME_DATE'],'%b %d, %Y').strftime('%Y-%m-%d'),r['Game_ID']) for r in bounded)
@@ -221,16 +243,19 @@ def complete(season, workers=6):
         assert 'gary-payton' not in nba
         nba['gary-payton'] = nba.pop('gary-payton-seattle-supersonics')
     # Official 1980-81 history spells Micheal Ray Richardson as Michael.
-    if season == '1980-81' and 'michael-ray-richardson' in defense:
+    if season in ('1980-81','1979-80') and 'michael-ray-richardson' in defense:
         assert 'micheal-ray-richardson' not in defense
         defense['micheal-ray-richardson'] = defense.pop('michael-ray-richardson')
-    champion = TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]]
+    champion = historical_team(season, TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]])
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071','1985-86':'0048500406','1984-85':'0048400406','1983-84':'0048300079','1982-83':'0048200043','1981-82':'0048100045','1980-81':'0048000053'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071','1985-86':'0048500406','1984-85':'0048400406','1983-84':'0048300079','1982-83':'0048200043','1981-82':'0048100045','1980-81':'0048000053','1979-80':'0047900048','1978-79':'0047800053','1977-78':'0047700051'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     title_proof = None
-    if season in ('1982-83','1981-82','1980-81'):
+    if season in ('1979-80','1978-79','1977-78'):
+        title_proof=json.loads((ROOT/'data/processed/title_game_verification_1977_1980.json').read_text())[season]
+        assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
+    elif season in ('1982-83','1981-82','1980-81'):
         title_proof=json.loads((ROOT/'data/processed/title_game_verification_1980_1983.json').read_text())[season]
         assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
     if season in ('1985-86','1984-85','1983-84'):
@@ -310,11 +335,11 @@ def complete(season, workers=6):
                          'observed_appearance_count':len(appearances[(r['team'],r['player_id'])]),
                          'source_sha256':boxes[gid].get('_source_sha256'),
                          'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
-    assert len(nba)==(10 if int(season[:4])<1988 else 15) and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05", "1998-99", "1987-88", "1982-83", "1980-81") else 10)
+    assert len(nba)==(10 if int(season[:4])<1988 else 15) and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05", "1998-99", "1987-88", "1982-83", "1980-81", "1979-80", "1977-78") else 10)
     if season == "2012-13":
         assert defense["tyson-chandler"] == defense["joakim-noah"] == 1
         assert sum(tier == 1 for tier in defense.values()) == 6
-    for tied_season, tier, names in [("1987-88", 2, ("mark-eaton", "patrick-ewing")), ("1998-99", 1, ("karl-malone", "scottie-pippen")), ("2005-06", 1, ("kobe-bryant", "jason-kidd")), ("2004-05", 2, ("jason-kidd", "dwyane-wade"))]:
+    for tied_season, tier, names in [("1979-80", 1, ("dennis-johnson", "don-buse")), ("1977-78", 2, ("artis-gilmore", "kareem-abdul-jabbar")), ("1987-88", 2, ("mark-eaton", "patrick-ewing")), ("1998-99", 1, ("karl-malone", "scottie-pippen")), ("2005-06", 1, ("kobe-bryant", "jason-kidd")), ("2004-05", 2, ("jason-kidd", "dwyane-wade"))]:
         if season == tied_season:
             assert all(defense[name] == tier for name in names)
             assert sum(value == tier for value in defense.values()) == 6
@@ -337,7 +362,7 @@ def complete(season, workers=6):
            'staged_sha256':hashlib.sha256(staged.read_bytes()).hexdigest(),'game_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
            'sources':{'game_dates':url,**HISTORY_URLS},
            'history_sha256':{name:hashlib.sha256((CACHE/f'{name}.html').read_bytes()).hexdigest() for name in HISTORY_URLS},'award_sources':{k:v.get('award_sources',{}) for k,v in awards.items()},
-           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley', **({'michael-ray-richardson':'micheal-ray-richardson'} if season == '1980-81' else {}), **({'benard-king':'bernard-king'} if season == '1984-85' else {}), **({'gary-payton-seattle-supersonics':'gary-payton'} if season == '1998-99' else {})}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
+           'honors_name_aliases':HONORS_NAME_ALIASES, 'honors_key_aliases':{'patrick-beverly':'patrick-beverley', **({'michael-ray-richardson':'micheal-ray-richardson'} if season in ('1980-81','1979-80') else {}), **({'benard-king':'bernard-king'} if season == '1984-85' else {}), **({'gary-payton-seattle-supersonics':'gary-payton'} if season == '1998-99' else {})}, 'official_all_nba':nba, 'official_all_defense':defense, 'official_award_winners':awards,
            'all_nba_records':sum(r['all_nba'] is not None for r in rows),'all_defense_records':sum(r['all_defense'] is not None for r in rows),
            'title_game_verification':title_proof,
            'champion_roster_source':finals_url, 'champion_roster':[{k:p[k] for k in ('personId','firstName','familyName','jerseyNum','played')} for p in champion_sides[0]['players']], 'champion_team':champion,'champion_records':sum(r['champion'] for r in rows),'jersey_evidence':evidence}
@@ -356,5 +381,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87','1985-86','1984-85','1983-84','1982-83','1981-82','1980-81']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87','1985-86','1984-85','1983-84','1982-83','1981-82','1980-81','1979-80','1978-79','1977-78']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)
