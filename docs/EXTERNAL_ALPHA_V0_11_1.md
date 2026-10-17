@@ -6,4 +6,10 @@ The finished popup offers View scorecard and Play Again. Escape also dismisses i
 
 New games use Batch 25. Extract the complete Windows or Mac artifact archive and run the launcher. Mac artifacts include an inner ZIP containing the app and instructions. These are unsigned alpha packages. Source users can run `python scripts/run_web.py`.
 
-Desktop build status and download links are recorded after the corresponding Actions jobs pass.
+All three desktop builds passed 133 Python tests, frontend checks, and packaged HTTP launch checks. Visual browser QA remains unverified.
+
+## Downloads
+
+- [Windows](https://github.com/andyb33/Hoopreel/actions/runs/38993611961/artifacts/12085154690)
+- [Intel Mac](https://github.com/andyb33/Hoopreel/actions/runs/38993612150/artifacts/12086042002)
+- [Apple Silicon Mac](https://github.com/andyb33/Hoopreel/actions/runs/38993612150/artifacts/12085644815)
