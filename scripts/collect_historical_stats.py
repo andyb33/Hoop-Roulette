@@ -35,6 +35,12 @@ def historical_team(season, team):
         return "BUF"
     if team == "LAC" and int(season[:4]) < 1984:
         return "SDC"
+    if team in ("BKN", "NJN") and int(season[:4]) == 1976:
+        return "NYN"
+    if team in ("SAC", "KCK") and int(season[:4]) < 1975:
+        return "KCO"
+    if team == "WAS" and int(season[:4]) == 1973:
+        return "CAP"
     if team == "SAC" and int(season[:4]) < 1985:
         return "KCK"
     return "WSB" if team == "WAS" and int(season[:4]) < 1997 else team
@@ -155,7 +161,7 @@ def collect(season):
         g=groups[(proof['team_id'],proof['player_id'])];official=proof['official_season_row']
         assert g['gp']==official['GP']
         for field,src in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]:assert g[field]==official[src]
-    rows, rate_evidence, total_evidence, eligibility_evidence = [], [], [], []
+    rows, rate_evidence, total_evidence, eligibility_evidence, team_guide_evidence = [], [], [], [], []
     for record in groups.values():
         gp = record["gp"]
         mpg = record["seconds"] / 60 / gp
@@ -184,6 +190,26 @@ def collect(season):
                 total_evidence.append(proof)
                 record=dict(record,gp=official['GP'],seconds=official['MIN']*60,**{f:official[c] for f,c in [('points','PTS'),('rebounds_total','REB'),('assists','AST'),('steals','STL'),('blocks','BLK')]})
                 gp=record['gp']
+        for proof in corrections.get('team_guide_total_overrides', []):
+            if (proof['player_id'],proof['team']) == (record['player_id'],record['team']):
+                official=proof['original_nba_official_row']; guide=proof['team_guide_totals']; ref=proof['independent_reference_row']
+                assert proof['season']==season and official['GP']==gp
+                identity=(season,record['player_id'],record['team'])
+                if identity == ('1976-77',77582,'ATL'):
+                    assert official['GP']==73 and guide['GP']==74 and proof['pdf_page']==68
+                    assert (guide['MIN'],guide['PTS'],guide['REB'],guide['AST'],guide['STL'],guide['BLK'])==(2068,820,596,82,41,82)
+                    assert all(guide[k]==official[k] for k in guide if k!='GP')
+                    assert proof['source'].startswith('https://atlantahawkspr.wordpress.com/')
+                elif identity == ('1973-74',78520,'POR'):
+                    assert official['GP']==guide['GP']==75 and official['BLK']==64 and guide['BLK']==63
+                    assert proof['pdf_page']==171 and proof['source'].startswith('https://www.ripcityresource.com/')
+                    assert all(guide[k]==official[k] for k in guide if k!='BLK')
+                else:
+                    raise AssertionError('Unreviewed historical team-guide correction')
+                assert len(proof['source_sha256'])==64 and guide['GP']==int(ref['G'])
+                assert all(guide[k]==int(ref[c]) for k,c in [('MIN','MP'),('PTS','PTS'),('REB','TRB'),('AST','AST'),('STL','STL'),('BLK','BLK')])
+                record=dict(record,gp=guide['GP'],seconds=guide['MIN']*60,points=guide['PTS'],rebounds_total=guide['REB'],assists=guide['AST'],steals=guide['STL'],blocks=guide['BLK']);gp=guide['GP']
+                team_guide_evidence.append(proof)
         rows.append({**{k: record[k] for k in ("season", "player_id", "player", "team", "gp")},
                      "mpg": rounded_rate(record["seconds"], 60 * gp), **{stat: rounded_rate(record[field], gp) for stat, field in
                      (("ppg", "points"), ("rpg", "rebounds_total"), ("apg", "assists"), ("spg", "steals"), ("bpg", "blocks"))}})
@@ -197,6 +223,7 @@ def collect(season):
     assert len(rate_evidence) == len(corrections.get('rate_overrides', []))
     assert len(total_evidence) == len(corrections.get('season_total_overrides', []))
     assert len(eligibility_evidence) == len(corrections.get('eligibility_source_overrides', []))
+    assert len(team_guide_evidence) == len(corrections.get('team_guide_total_overrides', []))
     rows.sort(key=lambda r: (r["team"], r["player"]))
     if not rows:
         raise ValueError("No eligible staging records")
@@ -213,6 +240,7 @@ def collect(season):
                 "source_corrections": corrections,
                 "display_rate_overrides": rate_evidence,
                 "season_total_overrides": total_evidence,
+                "team_guide_total_overrides": team_guide_evidence,
                 "eligibility_source_overrides": eligibility_evidence,
                 "eligibility": {"minimum_team_gp": 30, "minimum_team_mpg": 15},
                 "eligibility_precision": "Unrounded box-score minutes per team stint; explicitly scoped incomplete-log cases use official season totals corroborated by independent totals" if eligibility_evidence else "Unrounded box-score minutes per team stint",

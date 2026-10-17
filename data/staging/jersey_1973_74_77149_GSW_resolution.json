@@ -1,0 +1,18 @@
+{
+  "season": "1973-74",
+  "player_id": 77149,
+  "player": "George Johnson",
+  "team": "GSW",
+  "game_id": "0027300696",
+  "game_date": "1974-03-27",
+  "original_nba_jersey": "",
+  "resolved_jersey": 52,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "52 George Johnson",
+  "season_team_register": "10 Charles Johnson, 21 Butch Beard, 23 Jeff Mullins, 24 Rick Barry, 25 Jim Barnett, 31 Joe Ellis, 32 Cazzie Russell, 40 Derrek Dickey, 42 Nate Thurmond, 43 Clyde Lee, 52 George Johnson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

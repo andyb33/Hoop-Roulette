@@ -1,0 +1,18 @@
+{
+  "season": "1975-76",
+  "player_id": 77869,
+  "player": "Cliff Pondexter",
+  "team": "CHI",
+  "game_id": "0027500733",
+  "game_date": "1976-04-11",
+  "original_nba_jersey": "41-42",
+  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "alternatives": [
+    41,
+    42
+  ],
+  "sources": [
+    "https://apbr.org/nmbr7080.html"
+  ],
+  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+}

@@ -1,0 +1,19 @@
+{
+  "season": "1976-77",
+  "player_id": 77883,
+  "player": "Jim Price",
+  "team": "DEN",
+  "game_id": "0027600866",
+  "game_date": "1977-04-10",
+  "original_nba_jersey": "11-15",
+  "resolved_jersey": 15,
+  "status": "VERIFIED_DATED_LATE_SEASON_PHOTO",
+  "method": "Dated March 20, 1977 regular-season Getty photo caption; corroborated by April 22 playoff photo",
+  "source": "https://www.gettyimages.fi/detail/uutiskuva/denver-nuggets-center-dan-issel-reaches-for-a-rebound-during-uutiskuva/1326501963",
+  "corroborating_source": "https://www.gettyimages.fi/detail/uutiskuva/players-vie-for-a-rebound-during-an-nba-playoff-game-between-uutiskuva/1352680008",
+  "evidence_dates": [
+    "1977-03-20",
+    "1977-04-22"
+  ],
+  "reason": "March 20 caption identifies Dan Issel 44 and Jim Price 15. April 22 caption corroborates the same numbers after the regular season; alternative composite numbers remain preserved."
+}

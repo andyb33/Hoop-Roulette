@@ -1,0 +1,679 @@
+{
+  "scope": "NBA only, 1973-74 through 1979-80; no ABA seasons",
+  "stats_verified": true,
+  "honors_verified": true,
+  "entries": 1273,
+  "stat_comparisons": 8911,
+  "complete_seasons": [
+    "1973-74",
+    "1974-75",
+    "1978-79"
+  ],
+  "pending_jerseys": 8,
+  "enabled_in_default_pool": false,
+  "seasons": [
+    {
+      "season": "1973-74",
+      "entries": 138,
+      "stat_comparisons": 966,
+      "stats_verified": true,
+      "staged_sha256": "58590c7f6c75dc4e1d2883fd1067d48ccd2db10ac87ce72e8cdd16f265f259e2",
+      "regular_season_games": 697,
+      "teams": 17,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "rick-barry": 1,
+          "john-havlicek": 1,
+          "kareem-abdul-jabbar": 1,
+          "gail-goodrich": 1,
+          "walt-frazier": 1,
+          "elvin-hayes": 2,
+          "spencer-haywood": 2,
+          "bob-mcadoo": 2,
+          "dave-bing": 2,
+          "norm-van-lier": 2
+        },
+        "all_defense": {
+          "kareem-abdul-jabbar": 1,
+          "john-havlicek": 1,
+          "norm-van-lier": 1,
+          "dave-debusschere": 1,
+          "jerry-sloan": 1,
+          "walt-frazier": 1,
+          "don-chaney": 2,
+          "nate-thurmond": 2,
+          "elvin-hayes": 2,
+          "bob-love": 2,
+          "dick-van-arsdale": 2,
+          "jim-price": 2
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1973-74",
+          "player_key": "ernie-digregorio",
+          "player": "Ernie DiGregorio",
+          "award_team": "Buffalo Braves",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Ernie DiGregorio"
+          ]
+        },
+        {
+          "season": "1973-74",
+          "player_key": "kareem-abdul-jabbar",
+          "player": "Kareem Abdul-Jabbar",
+          "award_team": "Milwaukee Bucks",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Kareem Abdul-Jabbar"
+          ]
+        }
+      ],
+      "champion_team": "BOS",
+      "complete": true,
+      "pending_jerseys": []
+    },
+    {
+      "season": "1974-75",
+      "entries": 158,
+      "stat_comparisons": 1106,
+      "stats_verified": true,
+      "staged_sha256": "8e2cb4e83e8580b444863fdd7d3140c59daa745043a87afe8a5e3cc9f6290f90",
+      "regular_season_games": 738,
+      "teams": 18,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "rick-barry": 1,
+          "elvin-hayes": 1,
+          "bob-mcadoo": 1,
+          "nate-archibald": 1,
+          "walt-frazier": 1,
+          "john-havlicek": 2,
+          "spencer-haywood": 2,
+          "dave-cowens": 2,
+          "phil-chenier": 2,
+          "jo-jo-white": 2
+        },
+        "all_defense": {
+          "kareem-abdul-jabbar": 1,
+          "john-havlicek": 1,
+          "paul-silas": 1,
+          "walt-frazier": 1,
+          "jerry-sloan": 1,
+          "don-chaney": 2,
+          "dave-cowens": 2,
+          "elvin-hayes": 2,
+          "bob-love": 2,
+          "norm-van-lier": 2
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1974-75",
+          "player_key": "bob-mcadoo",
+          "player": "Bob McAdoo",
+          "award_team": "Buffalo Braves",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Bob McAdoo"
+          ]
+        },
+        {
+          "season": "1974-75",
+          "player_key": "jamaal-wilkes",
+          "player": "Jamaal Wilkes",
+          "award_team": "Golden State Warriors",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Jamaal Wilkes"
+          ]
+        }
+      ],
+      "champion_team": "GSW",
+      "complete": true,
+      "pending_jerseys": []
+    },
+    {
+      "season": "1975-76",
+      "entries": 152,
+      "stat_comparisons": 1064,
+      "stats_verified": true,
+      "staged_sha256": "f9a27843b73f675da88e4522e040ab9dd6119ef394a14eaaa5527dc2e6fe3a2d",
+      "regular_season_games": 738,
+      "teams": 18,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "rick-barry": 1,
+          "george-mcginnis": 1,
+          "kareem-abdul-jabbar": 1,
+          "pete-maravich": 1,
+          "nate-archibald": 1,
+          "john-havlicek": 2,
+          "elvin-hayes": 2,
+          "dave-cowens": 2,
+          "phil-smith": 2,
+          "randy-smith": 2
+        },
+        "all_defense": {
+          "dave-cowens": 1,
+          "john-havlicek": 1,
+          "paul-silas": 1,
+          "norm-van-lier": 1,
+          "slick-watts": 1,
+          "jim-brewer": 2,
+          "phil-smith": 2,
+          "jim-cleamons": 2,
+          "jamaal-wilkes": 2,
+          "kareem-abdul-jabbar": 2
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1975-76",
+          "player_key": "alvan-adams",
+          "player": "Alvan Adams",
+          "award_team": "Phoenix Suns",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Alvan Adams"
+          ]
+        },
+        {
+          "season": "1975-76",
+          "player_key": "kareem-abdul-jabbar",
+          "player": "Kareem Abdul-Jabbar",
+          "award_team": "Los Angeles Lakers",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Kareem Abdul-Jabbar"
+          ]
+        }
+      ],
+      "champion_team": "BOS",
+      "complete": false,
+      "pending_jerseys": [
+        {
+          "season": "1975-76",
+          "player_id": 77812,
+          "player": "Steve Patterson",
+          "team": "CHI",
+          "game_id": "0027500659",
+          "game_date": "1976-03-27",
+          "original_nba_jersey": "32-42",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            32,
+            42
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html"
+          ],
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+        },
+        {
+          "season": "1975-76",
+          "player_id": 77869,
+          "player": "Cliff Pondexter",
+          "team": "CHI",
+          "game_id": "0027500733",
+          "game_date": "1976-04-11",
+          "original_nba_jersey": "41-42",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            41,
+            42
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html"
+          ],
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+        },
+        {
+          "season": "1975-76",
+          "player_id": 78215,
+          "player": "Ricky Sobers",
+          "team": "PHX",
+          "game_id": "0027500731",
+          "game_date": "1976-04-10",
+          "original_nba_jersey": "4-40",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            4,
+            40
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html"
+          ],
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+        }
+      ]
+    },
+    {
+      "season": "1976-77",
+      "entries": 212,
+      "stat_comparisons": 1484,
+      "stats_verified": true,
+      "staged_sha256": "3762b2cd86d00d7aeb9d447c9b2daac4b7a3bb516451db5e79c73cb9237681ff",
+      "regular_season_games": 902,
+      "teams": 22,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "elvin-hayes": 1,
+          "david-thompson": 1,
+          "kareem-abdul-jabbar": 1,
+          "pete-maravich": 1,
+          "paul-westphal": 1,
+          "julius-erving": 2,
+          "george-mcginnis": 2,
+          "bill-walton": 2,
+          "george-gervin": 2,
+          "jo-jo-white": 2
+        },
+        "all_defense": {
+          "ec-coleman": 1,
+          "bobby-jones": 1,
+          "bill-walton": 1,
+          "norm-van-lier": 1,
+          "don-buse": 1,
+          "jim-brewer": 2,
+          "don-chaney": 2,
+          "brian-taylor": 2,
+          "jamaal-wilkes": 2,
+          "kareem-abdul-jabbar": 2
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1976-77",
+          "player_key": "adrian-dantley",
+          "player": "Adrian Dantley",
+          "award_team": "Buffalo Braves",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Adrian Dantley"
+          ]
+        },
+        {
+          "season": "1976-77",
+          "player_key": "kareem-abdul-jabbar",
+          "player": "Kareem Abdul-Jabbar",
+          "award_team": "Los Angeles Lakers",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Kareem Abdul-Jabbar"
+          ]
+        }
+      ],
+      "champion_team": "POR",
+      "complete": false,
+      "pending_jerseys": [
+        {
+          "season": "1976-77",
+          "player_id": 76356,
+          "player": "Fred Carter",
+          "team": "MIL",
+          "game_id": "0027600865",
+          "game_date": "1977-04-10",
+          "original_nba_jersey": "3-5",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            3,
+            5
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html"
+          ],
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+        },
+        {
+          "season": "1976-77",
+          "player_id": 77689,
+          "player": "Swen Nater",
+          "team": "MIL",
+          "game_id": "0027600855",
+          "game_date": "1977-04-08",
+          "original_nba_jersey": "31-35",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            31,
+            35
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html"
+          ],
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+        },
+        {
+          "season": "1976-77",
+          "player_id": 78157,
+          "player": "Ralph Simpson",
+          "team": "DET",
+          "game_id": "0027600864",
+          "game_date": "1977-04-10",
+          "original_nba_jersey": "10-32",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            10,
+            32
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html"
+          ],
+          "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+        }
+      ]
+    },
+    {
+      "season": "1977-78",
+      "entries": 207,
+      "stat_comparisons": 1449,
+      "stats_verified": true,
+      "staged_sha256": "784802c00e4b49827eac27477983bfd90928be4b9f172a2c8b29ad7951b71508",
+      "regular_season_games": 902,
+      "teams": 22,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "julius-erving": 1,
+          "truck-robinson": 1,
+          "bill-walton": 1,
+          "george-gervin": 1,
+          "david-thompson": 1,
+          "maurice-lucas": 2,
+          "walter-davis": 2,
+          "kareem-abdul-jabbar": 2,
+          "pete-maravich": 2,
+          "paul-westphal": 2
+        },
+        "all_defense": {
+          "lionel-hollins": 1,
+          "bobby-jones": 1,
+          "bill-walton": 1,
+          "maurice-lucas": 1,
+          "don-buse": 1,
+          "quinn-buckner": 2,
+          "ec-coleman": 2,
+          "bob-gross": 2,
+          "norm-van-lier": 2,
+          "artis-gilmore": 2,
+          "kareem-abdul-jabbar": 2
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1977-78",
+          "player_key": "bill-walton",
+          "player": "Bill Walton",
+          "award_team": "Portland Trail Blazers",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Bill Walton"
+          ]
+        },
+        {
+          "season": "1977-78",
+          "player_key": "walter-davis",
+          "player": "Walter Davis",
+          "award_team": "Phoenix Suns",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Walter Davis"
+          ]
+        }
+      ],
+      "champion_team": "WSB",
+      "complete": false,
+      "pending_jerseys": [
+        {
+          "season": "1977-78",
+          "player_id": 78473,
+          "player": "Slick Watts",
+          "team": "NOJ",
+          "game_id": "0027700845",
+          "game_date": "1978-04-01",
+          "original_nba_jersey": "00-14",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            "00",
+            14
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html",
+            "https://www.landofbasketball.com/nba_rosters/1977_1978_jazz_grs.htm"
+          ],
+          "reason": "NBA final-game roster and independent exact-season registers list both 00 and 14 without chronology. No dated late-season evidence found; do not infer final number from listing order."
+        }
+      ]
+    },
+    {
+      "season": "1978-79",
+      "entries": 209,
+      "stat_comparisons": 1463,
+      "stats_verified": true,
+      "staged_sha256": "dcfc88fffec451a61b6df0f9cf1b89875825d208966c1ceb4955975a818a965f",
+      "regular_season_games": 902,
+      "teams": 22,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "elvin-hayes": 1,
+          "marques-johnson": 1,
+          "moses-malone": 1,
+          "george-gervin": 1,
+          "paul-westphal": 1,
+          "bob-dandridge": 2,
+          "walter-davis": 2,
+          "kareem-abdul-jabbar": 2,
+          "phil-ford": 2,
+          "world-b-free": 2
+        },
+        "all_defense": {
+          "dennis-johnson": 1,
+          "bobby-jones": 1,
+          "kareem-abdul-jabbar": 1,
+          "bob-dandridge": 1,
+          "don-buse": 1,
+          "ml-carr": 2,
+          "lionel-hollins": 2,
+          "eddie-johnson": 2,
+          "maurice-lucas": 2,
+          "moses-malone": 2
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1978-79",
+          "player_key": "moses-malone",
+          "player": "Moses Malone",
+          "award_team": "Houston Rockets",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Moses Malone"
+          ]
+        },
+        {
+          "season": "1978-79",
+          "player_key": "phil-ford",
+          "player": "Phil Ford",
+          "award_team": "Kansas City Kings",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Phil Ford"
+          ]
+        }
+      ],
+      "champion_team": "SEA",
+      "complete": true,
+      "pending_jerseys": []
+    },
+    {
+      "season": "1979-80",
+      "entries": 197,
+      "stat_comparisons": 1379,
+      "stats_verified": true,
+      "staged_sha256": "0d74c9e86eb17e4cc483db77bc5fffeddd384fb218acf8762c5eca5f60938bf0",
+      "regular_season_games": 902,
+      "teams": 22,
+      "honors_verified": true,
+      "official_honors": {
+        "all_nba": {
+          "julius-erving": 1,
+          "larry-bird": 1,
+          "kareem-abdul-jabbar": 1,
+          "george-gervin": 1,
+          "paul-westphal": 1,
+          "dan-roundfield": 2,
+          "marques-johnson": 2,
+          "moses-malone": 2,
+          "dennis-johnson": 2,
+          "gus-williams": 2
+        },
+        "all_defense": {
+          "dennis-johnson": 1,
+          "bobby-jones": 1,
+          "kareem-abdul-jabbar": 1,
+          "dan-roundfield": 1,
+          "don-buse": 1,
+          "quinn-buckner": 2,
+          "dave-cowens": 2,
+          "eddie-johnson": 2,
+          "kermit-washington": 2,
+          "scott-wedman": 2,
+          "micheal-ray-richardson": 1
+        }
+      },
+      "official_award_winners": [
+        {
+          "season": "1979-80",
+          "player_key": "kareem-abdul-jabbar",
+          "player": "Kareem Abdul-Jabbar",
+          "award_team": "Los Angeles Lakers",
+          "mvp": true,
+          "roy": false,
+          "dpoy": null,
+          "award_sources": {
+            "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+          },
+          "source_names": [
+            "Kareem Abdul-Jabbar"
+          ]
+        },
+        {
+          "season": "1979-80",
+          "player_key": "larry-bird",
+          "player": "Larry Bird",
+          "award_team": "Boston Celtics",
+          "mvp": false,
+          "roy": true,
+          "dpoy": null,
+          "award_sources": {
+            "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+          },
+          "source_names": [
+            "Larry Bird"
+          ]
+        }
+      ],
+      "champion_team": "LAL",
+      "complete": false,
+      "pending_jerseys": [
+        {
+          "season": "1979-80",
+          "player_id": 76966,
+          "player": "Joey Hassett",
+          "team": "IND",
+          "game_id": "0027900899",
+          "game_date": "1980-03-30",
+          "original_nba_jersey": "10-11",
+          "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+          "alternatives": [
+            10,
+            11
+          ],
+          "sources": [
+            "https://apbr.org/nmbr7080.html",
+            "https://www.basketball-reference.com/leagues/NBA_1980_numbers.html",
+            "https://ak-static-int.nba.com/wp-content/uploads/sites/3/2016/10/2016-17-Media-Guide-Pacers.pdf"
+          ],
+          "reason": "NBA final-game roster has composite 10-11. APBR confirms both without chronology. Pacers media guide also lists 30. No dated late-season evidence found; do not choose a final number from listing order.",
+          "additional_media_guide_alternative": 30
+        }
+      ]
+    }
+  ],
+  "honors_sources": {
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "honors_source_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  }
+}

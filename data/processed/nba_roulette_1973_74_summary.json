@@ -1,0 +1,137 @@
+{
+  "season": "1973-74",
+  "completed_at": "2026-10-17T04:25:29.550567+00:00",
+  "passed": true,
+  "entries": 138,
+  "jerseys_verified": 138,
+  "unresolved": [],
+  "staged_sha256": "58590c7f6c75dc4e1d2883fd1067d48ccd2db10ac87ce72e8cdd16f265f259e2",
+  "game_sha256": "da68ba4821f286c966494dd0a49f23a64dda22b23de66511ad6c54fa1f4eb2a7",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1973-74&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "ernie-digregorio": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    },
+    "kareem-abdul-jabbar": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever",
+    "76753": "World B. Free",
+    "78510": "Jo Jo White"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 12,
+  "title_game_verification": {
+    "game_id": "0047300407",
+    "game_date": "1974-05-12",
+    "champion_team": "BOS",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41973",
+        "TEAM_ID": 1610612738,
+        "TEAM_ABBREVIATION": "BOS",
+        "TEAM_NAME": "Boston Celtics",
+        "GAME_ID": "0047300407",
+        "GAME_DATE": "1974-05-12",
+        "MATCHUP": "BOS @ MIL",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 40,
+        "FGA": 96,
+        "FG_PCT": 0.417,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 22,
+        "FTA": 25,
+        "FT_PCT": 0.88,
+        "OREB": 16,
+        "DREB": 31,
+        "REB": 47,
+        "AST": 27,
+        "STL": 11,
+        "BLK": 1,
+        "TOV": null,
+        "PF": 26,
+        "PTS": 102,
+        "PLUS_MINUS": 15,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41973",
+        "TEAM_ID": 1610612749,
+        "TEAM_ABBREVIATION": "MIL",
+        "TEAM_NAME": "Milwaukee Bucks",
+        "GAME_ID": "0047300407",
+        "GAME_DATE": "1974-05-12",
+        "MATCHUP": "MIL vs. BOS",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 36,
+        "FGA": 81,
+        "FG_PCT": 0.444,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 15,
+        "FTA": 26,
+        "FT_PCT": 0.577,
+        "OREB": 11,
+        "DREB": 31,
+        "REB": 42,
+        "AST": 23,
+        "STL": 2,
+        "BLK": 7,
+        "TOV": null,
+        "PF": 25,
+        "PTS": 87,
+        "PLUS_MINUS": -15,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1973-74&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "994ac73fcfb6cada5d645eec166ee382bc6e145c387c935cedb38d9a02d829da"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0047300407/box-score",
+  "champion_team": "BOS",
+  "champion_records": 6,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 6,
+    "BUF": 6,
+    "CAP": 8,
+    "CHI": 7,
+    "CLE": 7,
+    "DET": 9,
+    "GSW": 9,
+    "HOU": 9,
+    "KCO": 9,
+    "LAL": 8,
+    "MIL": 8,
+    "NYK": 8,
+    "PHI": 7,
+    "PHX": 10,
+    "POR": 8,
+    "SEA": 10
+  }
+}

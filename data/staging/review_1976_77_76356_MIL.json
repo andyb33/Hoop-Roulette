@@ -1,0 +1,18 @@
+{
+  "season": "1976-77",
+  "player_id": 76356,
+  "player": "Fred Carter",
+  "team": "MIL",
+  "game_id": "0027600865",
+  "game_date": "1977-04-10",
+  "original_nba_jersey": "3-5",
+  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "alternatives": [
+    3,
+    5
+  ],
+  "sources": [
+    "https://apbr.org/nmbr7080.html"
+  ],
+  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+}

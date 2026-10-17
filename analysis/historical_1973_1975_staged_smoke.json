@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "records": 296,
+  "seasons": 2,
+  "team_seasons": 35,
+  "complete_games": 20,
+  "spins_checked": 544,
+  "normal_seasons_seen": [
+    "1973-74",
+    "1974-75"
+  ],
+  "all_seasons_seen": [
+    "1972-73",
+    "1973-74",
+    "1974-75"
+  ],
+  "jackpot_only": [
+    "1972-73"
+  ],
+  "score_min": 123,
+  "score_max": 202,
+  "goat_pools": {
+    "award": 149,
+    "prehistoric": 15
+  }
+}

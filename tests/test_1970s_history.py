@@ -69,3 +69,77 @@ class SeventiesHistoryTests(unittest.TestCase):
         self.assertEqual(sum(bool(r['all_nba']) for r in rows), 10)
         self.assertEqual(sum(bool(r['all_defense']) for r in rows), 10)
         self.assertEqual(sum(r['dpoy'] for r in rows), 0)
+
+    def test_final_four_stats_and_historical_team_counts(self):
+        for season, count, teams, games in [('1976-77', 212, 22, 902), ('1975-76', 152, 18, 738),
+                                            ('1974-75', 158, 18, 738), ('1973-74', 138, 17, 697)]:
+            slug = season.replace('-', '_')
+            rows = read(f'data/staging/stats_{slug}.json')
+            report = read(f'data/staging/stats_{slug}_verification.json')
+            self.assertTrue(report['passed'] and report['eligibility_sets_match'])
+            self.assertEqual((len(rows), report['stat_comparisons']), (count, count * 7))
+            self.assertEqual(report['regular_season_games'], games)
+            self.assertEqual(len(report['schedule_evidence']['team_games']), teams)
+            self.assertEqual(set(report['schedule_evidence']['team_games'].values()), {82})
+            self.assertEqual(report['staged_sha256'], hashlib.sha256(
+                (ROOT / f'data/staging/stats_{slug}.json').read_bytes()).hexdigest())
+            codes = {r['team'] for r in rows}
+            self.assertEqual('CAP' in codes, season == '1973-74')
+            self.assertEqual('KCO' in codes, season in ('1973-74', '1974-75'))
+            self.assertEqual('NYN' in codes, season == '1976-77')
+            self.assertTrue(all(r['gp'] >= 30 for r in rows))
+
+    def test_team_guides_resolve_only_the_documented_conflicts(self):
+        for season, player, team, field, original, corrected in [
+                ('1976-77', 77582, 'ATL', 'GP', 73, 74), ('1973-74', 78520, 'POR', 'BLK', 64, 63)]:
+            slug = season.replace('-', '_')
+            manifest = read(f'data/staging/stats_{slug}_manifest.json')
+            proofs = manifest['team_guide_total_overrides']
+            self.assertEqual(len(proofs), 1)
+            proof = proofs[0]
+            self.assertEqual((proof['player_id'], proof['team']), (player, team))
+            self.assertEqual(proof['original_nba_official_row'][field], original)
+            self.assertEqual(proof['team_guide_totals'][field], corrected)
+            self.assertEqual(len(proof['source_sha256']), 64)
+            row = next(r for r in read(f'data/staging/stats_{slug}.json') if r['player_id'] == player)
+            self.assertEqual(row['gp'], proof['team_guide_totals']['GP'])
+            self.assertEqual(row['bpg'], 0.8 if field == 'BLK' else 1.1)
+            self.assertEqual(read(f'data/staging/stats_{slug}_verification.json')['team_guide_total_resolutions'], proofs)
+
+    def test_completed_1973_and_1974_preserve_every_stat_and_original_appearance(self):
+        for season, count, champion in [('1973-74', 138, 'BOS'), ('1974-75', 158, 'GSW')]:
+            slug = season.replace('-', '_')
+            rows = read(f'data/game/players_{slug}.json')
+            staged = read(f'data/staging/stats_{slug}.json')
+            audit = read(f'data/processed/completion_{slug}.json')
+            self.assertTrue(audit['passed'])
+            self.assertEqual(audit['unresolved'], [])
+            self.assertEqual((len(rows), audit['champion_team']), (count, champion))
+            self.assertEqual(len(audit['jersey_evidence']), count)
+            for row, original in zip(rows, staged):
+                self.assertEqual({k: row[k] for k in original}, original)
+            self.assertEqual(sum(bool(r['all_nba']) for r in rows), 10)
+            self.assertEqual(sum(bool(r['all_defense']) for r in rows), 12 if season == '1973-74' else 10)
+            self.assertEqual(sum(r['dpoy'] for r in rows), 0)
+            if season == '1973-74':
+                self.assertEqual(sum(r['all_defense'] == 1 for r in rows), 6)
+                self.assertEqual(sum(r['all_defense'] == 2 for r in rows), 6)
+                entry = next(p for p in audit['jersey_evidence'] if p['player_id'] == 76002)
+                self.assertEqual(entry['official_box_score_player']['played'], '0')
+                self.assertTrue(entry['verified_played'])
+                self.assertEqual(entry['appearance_resolution']['original_box_score_player']['statistics']['minutes'], '')
+                self.assertEqual(entry['appearance_resolution']['original_box_score_player']['statistics']['points'], 9)
+
+    def test_stage3_readiness_lists_every_pending_uniform_without_enabling_the_batch(self):
+        status = read('data/processed/stage3_readiness_1973_1980.json')
+        self.assertEqual((status['entries'], status['stat_comparisons']), (1273, 8911))
+        self.assertEqual(status['complete_seasons'], ['1973-74', '1974-75', '1978-79'])
+        self.assertEqual(status['pending_jerseys'], 8)
+        self.assertFalse(status['enabled_in_default_pool'])
+        self.assertEqual(len(status['seasons']), 7)
+        for season in status['seasons']:
+            self.assertTrue(season['stats_verified'] and season['honors_verified'])
+            for review in season['pending_jerseys']:
+                self.assertNotIn('resolved_jersey', review)
+                self.assertGreaterEqual(len(review['alternatives']), 2)
+        self.assertEqual(len({r.season for r in load_records()}), 46)

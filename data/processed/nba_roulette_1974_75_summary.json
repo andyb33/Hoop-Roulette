@@ -1,0 +1,139 @@
+{
+  "season": "1974-75",
+  "completed_at": "2026-10-17T04:20:40.756179+00:00",
+  "passed": true,
+  "entries": 158,
+  "jerseys_verified": 158,
+  "unresolved": [],
+  "staged_sha256": "8e2cb4e83e8580b444863fdd7d3140c59daa745043a87afe8a5e3cc9f6290f90",
+  "game_sha256": "f9209d2b35add905cc274d792189ae6a0532d59a5f1e25f157bb4d56e45ef74b",
+  "sources": {
+    "game_dates": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1974-75&SeasonType=Regular+Season&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "all_nba": "https://www.nba.com/news/history-all-nba-teams",
+    "all_defense": "https://www.nba.com/news/history-all-defensive-team",
+    "champions": "https://www.nba.com/news/history-nba-champions"
+  },
+  "history_sha256": {
+    "all_nba": "0697cb1e135100fc744be32e6c05a9c4592ad117c4521e4b351796e05955ddb5",
+    "all_defense": "ae988e766bc1192e17c5ff5d40909c8a41529c4bd5cf4bb82f24511ec7cdefcb",
+    "champions": "ed14850b4a14fd11973416754e158d5f4b0dc0b30349ca707dcfe8429da96d86"
+  },
+  "award_sources": {
+    "bob-mcadoo": {
+      "mvp": "https://www.nba.com/news/history-mvp-award-winners"
+    },
+    "jamaal-wilkes": {
+      "roy": "https://www.nba.com/news/history-rookie-of-the-year-winners"
+    }
+  },
+  "honors_name_aliases": {
+    "202710": "Jimmy Butler",
+    "77376": "Fat Lever",
+    "76753": "World B. Free",
+    "78510": "Jo Jo White"
+  },
+  "honors_key_aliases": {
+    "patrick-beverly": "patrick-beverley"
+  },
+  "all_nba_records": 10,
+  "all_defense_records": 10,
+  "title_game_verification": {
+    "game_id": "0047409404",
+    "game_date": "1975-05-25",
+    "champion_team": "GSW",
+    "official_final_game_rows": [
+      {
+        "SEASON_ID": "41974",
+        "TEAM_ID": 1610612744,
+        "TEAM_ABBREVIATION": "GOS",
+        "TEAM_NAME": "Golden State Warriors",
+        "GAME_ID": "0047409404",
+        "GAME_DATE": "1975-05-25",
+        "MATCHUP": "GOS @ WAS",
+        "WL": "W",
+        "MIN": 240,
+        "FGM": 44,
+        "FGA": 90,
+        "FG_PCT": 0.489,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 8,
+        "FTA": 18,
+        "FT_PCT": 0.444,
+        "OREB": 20,
+        "DREB": 32,
+        "REB": 52,
+        "AST": 20,
+        "STL": 15,
+        "BLK": 7,
+        "TOV": null,
+        "PF": 25,
+        "PTS": 96,
+        "PLUS_MINUS": 1,
+        "VIDEO_AVAILABLE": 0
+      },
+      {
+        "SEASON_ID": "41974",
+        "TEAM_ID": 1610612764,
+        "TEAM_ABBREVIATION": "WAS",
+        "TEAM_NAME": "Washington Bullets",
+        "GAME_ID": "0047409404",
+        "GAME_DATE": "1975-05-25",
+        "MATCHUP": "WAS vs. GOS",
+        "WL": "L",
+        "MIN": 240,
+        "FGM": 39,
+        "FGA": 83,
+        "FG_PCT": 0.47,
+        "FG3M": null,
+        "FG3A": null,
+        "FG3_PCT": null,
+        "FTM": 17,
+        "FTA": 23,
+        "FT_PCT": 0.739,
+        "OREB": 11,
+        "DREB": 26,
+        "REB": 37,
+        "AST": 28,
+        "STL": 13,
+        "BLK": 5,
+        "TOV": null,
+        "PF": 24,
+        "PTS": 95,
+        "PLUS_MINUS": -1,
+        "VIDEO_AVAILABLE": 0
+      }
+    ],
+    "source": "https://stats.nba.com/stats/leaguegamelog?LeagueID=00&Season=1974-75&SeasonType=Playoffs&PlayerOrTeam=T&Counter=0&Direction=ASC&Sorter=DATE&DateFrom=&DateTo=",
+    "source_sha256": "ef7cfd36677fb9d965a4554de18ec47eba13c3dc190b58e464d0989de35c6212",
+    "source_champion_team": "GOS"
+  },
+  "champion_roster_source": "https://www.nba.com/game/0047409404/box-score",
+  "champion_team": "GSW",
+  "champion_records": 8,
+  "eligibility": {
+    "minimum_team_gp": 30,
+    "minimum_team_mpg": 15
+  },
+  "eligible_records_by_team": {
+    "ATL": 9,
+    "BOS": 7,
+    "BUF": 10,
+    "CHI": 8,
+    "CLE": 9,
+    "DET": 8,
+    "GSW": 8,
+    "HOU": 10,
+    "KCO": 8,
+    "LAL": 12,
+    "MIL": 8,
+    "NOJ": 11,
+    "NYK": 7,
+    "PHI": 9,
+    "PHX": 9,
+    "POR": 9,
+    "SEA": 9,
+    "WSB": 7
+  }
+}

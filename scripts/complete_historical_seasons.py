@@ -15,7 +15,7 @@ from build_goat_datasets import player_key
 from collect_historical_stats import historical_team
 
 # NBA's box-score mirror uses Jimmy Butler III; the official honors list uses Jimmy Butler.
-HONORS_NAME_ALIASES = {202710: 'Jimmy Butler', 77376: 'Fat Lever', 76753: 'World B. Free'}
+HONORS_NAME_ALIASES = {202710: 'Jimmy Butler', 77376: 'Fat Lever', 76753: 'World B. Free', 78510: 'Jo Jo White'}
 
 def honors_key(row):
     return player_key(HONORS_NAME_ALIASES.get(row['player_id'], row['player']))
@@ -249,10 +249,13 @@ def complete(season, workers=6):
     champion = historical_team(season, TEAM_NAMES[parse_champions((CACHE/'champions.html').read_text(encoding='utf-8'))[season]])
     awards = {r['player_key']:r for r in json.loads((ROOT/'data/goat/award_winners_history.json').read_text(encoding='utf-8')) if r['season']==season}
     # Final title-game roster includes active players and DNPs, but excludes players traded away.
-    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071','1985-86':'0048500406','1984-85':'0048400406','1983-84':'0048300079','1982-83':'0048200043','1981-82':'0048100045','1980-81':'0048000053','1979-80':'0047900048','1978-79':'0047800053','1977-78':'0047700051'}[season]
+    finals_id = {'2022-23': '0042200405', '2021-22': '0042100406', '2020-21': '0042000406', '2019-20': '0041900406', '2018-19': '0041800406', '2017-18': '0041700404', '2016-17': '0041600405', '2015-16': '0041500407', '2014-15': '0041400406', '2013-14': '0041300405', '2012-13': '0041200407', '2011-12': '0041100405', '2010-11': '0041000406', '2009-10': '0040900407', '2008-09': '0040800405', '2007-08': '0040700406', '2006-07': '0040600404', '2005-06': '0040500406', '2004-05': '0040400407', '2003-04': '0040300405', '2002-03': '0040200406', '2001-02': '0040100404', '2000-01': '0040000087', '1999-00': '0049900088', '1998-99': '0049800087', '1997-98':'0049700088', '1996-97':'0049600088', '1995-96':'0049500068','1994-95':'0049400073','1993-94':'0049300077','1992-93':'0049200076','1991-92':'0049100073','1990-91':'0049000068','1989-90':'0048900072','1988-89':'0048800062','1987-88':'0048700080','1986-87':'0048600071','1985-86':'0048500406','1984-85':'0048400406','1983-84':'0048300079','1982-83':'0048200043','1981-82':'0048100045','1980-81':'0048000053','1979-80':'0047900048','1978-79':'0047800053','1977-78':'0047700051','1976-77':'0047600100','1975-76':'0047500406','1974-75':'0047409404','1973-74':'0047300407'}[season]
     finals_url = f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{finals_id}.json'
     title_proof = None
-    if season in ('1979-80','1978-79','1977-78'):
+    if season in ('1976-77','1975-76','1974-75','1973-74'):
+        title_proof=json.loads((ROOT/'data/processed/title_game_verification_1973_1977.json').read_text())[season]
+        assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
+    elif season in ('1979-80','1978-79','1977-78'):
         title_proof=json.loads((ROOT/'data/processed/title_game_verification_1977_1980.json').read_text())[season]
         assert title_proof['champion_team'] == champion and title_proof['game_id'] == finals_id
     elif season in ('1982-83','1981-82','1980-81'):
@@ -319,7 +322,18 @@ def complete(season, workers=6):
             assert (resolution['season'], resolution['player_id'], resolution['team'], resolution['game_id'], resolution['game_date'], resolution['original_nba_jersey']) == (season, r['player_id'], r['team'], gid, date, jersey)
             jersey = str(resolution['resolved_jersey'])
         assert jersey.isdigit() and 0 <= int(jersey) <= 99
-        assert p['played']=='1', (r['player'],gid,p['played'])
+        appearance_resolution=None
+        if p['played']!='1':
+            assert (season,r['player_id'],r['team'],gid)==('1973-74',76002,'HOU','0027300689')
+            appearance_resolution=json.loads((ROOT/'data/staging/played_1973_74_76002_HOU_resolution.json').read_text(encoding='utf-8'))
+            proof=appearance_resolution;log=proof['official_stint_game_log_rows'];ref=proof['independent_reference_row']
+            assert proof['original_box_score_player']==p and p['statistics']['minutes']=='' and p['statistics']['points']==9
+            assert len(log)==len({a['Game_ID'] for a in log})==r['gp']==int(ref['G'])==79
+            assert sum(a['PTS'] for a in log)==int(ref['PTS'])==865
+            last_log=max(log,key=lambda a:datetime.strptime(a['GAME_DATE'],'%b %d, %Y'))
+            assert last_log['Game_ID']==gid and last_log['PTS']==9 and last_log['FGM']==last_log['FTM']==3
+            assert proof['game_date']==date and proof['player_id']==r['player_id'] and proof['team']==r['team'] and proof['season']==season
+
         key = honors_key(r)
         award = awards.get(key,{})
         r.update(jersey=int(jersey), jersey_display=jersey, all_nba=nba.get(key), all_defense=defense.get(key), champion=r['team']==champion and r['player_id'] in champion_players,
@@ -331,11 +345,17 @@ def complete(season, workers=6):
                          'jersey_resolution':resolution,
                          'identity_resolution':identity_by_legacy.get(int(p['personId'])),
                          'season_total_resolution':total_overrides.get((r['team'],r['player_id'])),
+                         'team_guide_total_resolution':next((p for p in manifest.get('team_guide_total_overrides',[]) if (p['team'],p['player_id'])==(r['team'],r['player_id'])),None),
                          'final_appearance_resolution':final_resolutions.get((r['team'],r['player_id'])),
+                         'appearance_resolution':appearance_resolution,
+                         'verified_played':True,
                          'observed_appearance_count':len(appearances[(r['team'],r['player_id'])]),
                          'source_sha256':boxes[gid].get('_source_sha256'),
                          'source':boxes[gid].get('_source_url', f'https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{gid}.json')})
-    assert len(nba)==(10 if int(season[:4])<1988 else 15) and len(defense)==(11 if season in ("2012-13", "2005-06", "2004-05", "1998-99", "1987-88", "1982-83", "1980-81", "1979-80", "1977-78") else 10)
+    assert len(nba)==(10 if int(season[:4])<1988 else 15) and len(defense)==(12 if season == "1973-74" else 11 if season in ("2012-13", "2005-06", "2004-05", "1998-99", "1987-88", "1982-83", "1980-81", "1979-80", "1977-78") else 10)
+    if season == "1973-74":
+        assert sum(tier == 1 for tier in defense.values()) == 6
+        assert sum(tier == 2 for tier in defense.values()) == 6
     if season == "2012-13":
         assert defense["tyson-chandler"] == defense["joakim-noah"] == 1
         assert sum(tier == 1 for tier in defense.values()) == 6
@@ -381,5 +401,5 @@ def complete(season, workers=6):
     print(f'{season} complete: {len(rows)} records, no unresolved fields',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87','1985-86','1984-85','1983-84','1982-83','1981-82','1980-81','1979-80','1978-79','1977-78']);p.add_argument('--workers',type=int,default=6)
+    p=argparse.ArgumentParser();p.add_argument('--season',required=True,choices=['2022-23','2021-22','2020-21','2019-20','2018-19','2017-18','2016-17','2015-16','2014-15','2013-14','2012-13','2011-12','2010-11','2009-10','2008-09','2007-08','2006-07','2005-06','2004-05','2003-04','2002-03','2001-02','2000-01','1999-00','1998-99','1997-98','1996-97','1995-96','1994-95','1993-94','1992-93','1991-92','1990-91','1989-90','1988-89','1987-88','1986-87','1985-86','1984-85','1983-84','1982-83','1981-82','1980-81','1979-80','1978-79','1977-78','1976-77','1975-76','1974-75','1973-74']);p.add_argument('--workers',type=int,default=6)
     a=p.parse_args();complete(a.season,a.workers)

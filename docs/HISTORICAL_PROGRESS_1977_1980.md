@@ -34,4 +34,4 @@ Sources: [APBR uniform register](https://apbr.org/nmbr7080.html), [Pacers media 
 - Honor parsing supports the 1979–80 six-player All-Defensive first team and the 1977–78 six-player second team. World B. Free and Micheal Ray Richardson have explicit name aliases. DPOY is absent before its introduction.
 - Interrupted or concurrent API cache writes now use atomic replacement; invalid disposable JSON caches are fetched again.
 
-After these two jersey reviews close, rerun completion for 1979–80 and 1977–78, activate all three seasons together, update default-pool assertions, run the full tests and game simulations, and publish the data release. Four further seasons remain: 1976–77 through 1973–74.
+The final four seasons (1976–77 through 1973–74) have now passed their stats and honors checks too. See [the final-four report](HISTORICAL_PROGRESS_1973_1977.md) for the consolidated eight-case jersey review. After all eight close, rerun completion and activate all seven Stage 3 seasons together, update default-pool assertions, run the full tests and simulations, and publish the checkpoint. No seasons remain to collect within the agreed NBA scope.

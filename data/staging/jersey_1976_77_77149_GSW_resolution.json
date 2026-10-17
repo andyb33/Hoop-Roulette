@@ -1,0 +1,18 @@
+{
+  "season": "1976-77",
+  "player_id": 77149,
+  "player": "George Johnson",
+  "team": "GSW",
+  "game_id": "0027600439",
+  "game_date": "1977-01-16",
+  "original_nba_jersey": "",
+  "resolved_jersey": 52,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "52 George Johnson",
+  "season_team_register": "00 Robert Parish, 1 Gus Williams, 10 Charles Johnson, 11 Marshall Rogers, 15 Charles Dudley, 20 Phil Smith, 22 Sonny Parker, 40 Derrek Dickey, 41 Jamaal Wilkes, 42 Dwight Davis, 43 Larry McNeill, 44 Clifford Ray, 52 George Johnson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

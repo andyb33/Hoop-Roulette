@@ -1,0 +1,18 @@
+{
+  "season": "1976-77",
+  "player_id": 78302,
+  "player": "Roland Taylor",
+  "team": "DEN",
+  "game_id": "0027600866",
+  "game_date": "1977-04-10",
+  "original_nba_jersey": "",
+  "resolved_jersey": 21,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "21 Fatty Taylor",
+  "season_team_register": "10 Marvin Webster, 11 Chuck Williams, 12 Ted McClain, 13 Monte Towe, 15 Jim Price (#11), 20 Mack Calvin, 21 Fatty Taylor, 22 Gus Gerard, 24 Bobby Jones, 33 David Thompson, 35 Paul Silas, 40 Byron Beck, 42 Willie Wise, 44 Dan Issel (#25)",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

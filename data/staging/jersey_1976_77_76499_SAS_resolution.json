@@ -1,0 +1,18 @@
+{
+  "season": "1976-77",
+  "player_id": 76499,
+  "player": "Lou Dampier",
+  "team": "SAS",
+  "game_id": "0027600865",
+  "game_date": "1977-04-10",
+  "original_nba_jersey": "",
+  "resolved_jersey": 10,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "10 Louie Dampier",
+  "season_team_register": "5 Billy Paultz, 10 Louie Dampier, 12 Mike Gale, 13 James Silas, 14 Mike D'Antoni, 15 Henry Ward, 21 Louie Nelson, 22 George Karl, 24 Mack Calvin, 25 Coby Dietrick, 30 Allan Bristow, 35 Larry Kenon, 44 George Gervin, 53 Mark Olberding",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}

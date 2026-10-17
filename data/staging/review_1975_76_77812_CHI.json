@@ -1,0 +1,18 @@
+{
+  "season": "1975-76",
+  "player_id": 77812,
+  "player": "Steve Patterson",
+  "team": "CHI",
+  "game_id": "0027500659",
+  "game_date": "1976-03-27",
+  "original_nba_jersey": "32-42",
+  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "alternatives": [
+    32,
+    42
+  ],
+  "sources": [
+    "https://apbr.org/nmbr7080.html"
+  ],
+  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+}

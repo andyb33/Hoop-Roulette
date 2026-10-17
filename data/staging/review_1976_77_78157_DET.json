@@ -1,0 +1,18 @@
+{
+  "season": "1976-77",
+  "player_id": 78157,
+  "player": "Ralph Simpson",
+  "team": "DET",
+  "game_id": "0027600864",
+  "game_date": "1977-04-10",
+  "original_nba_jersey": "10-32",
+  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "alternatives": [
+    10,
+    32
+  ],
+  "sources": [
+    "https://apbr.org/nmbr7080.html"
+  ],
+  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+}

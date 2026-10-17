@@ -1,0 +1,18 @@
+{
+  "season": "1975-76",
+  "player_id": 78215,
+  "player": "Ricky Sobers",
+  "team": "PHX",
+  "game_id": "0027500731",
+  "game_date": "1976-04-10",
+  "original_nba_jersey": "4-40",
+  "status": "NEEDS_DATED_FINAL_UNIFORM_EVIDENCE",
+  "alternatives": [
+    4,
+    40
+  ],
+  "sources": [
+    "https://apbr.org/nmbr7080.html"
+  ],
+  "reason": "NBA final-game roster and independent uniform register list multiple numbers without chronology. No final number chosen; dated late-season evidence or a documented switch timeline is required."
+}

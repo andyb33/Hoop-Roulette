@@ -1,0 +1,18 @@
+{
+  "season": "1976-77",
+  "player_id": 77149,
+  "player": "George Johnson",
+  "team": "BUF",
+  "game_id": "0027600871",
+  "game_date": "1977-04-10",
+  "original_nba_jersey": "",
+  "resolved_jersey": 52,
+  "status": "VERIFIED_HISTORICAL_SEASON_REGISTER",
+  "method": "Independent APBR exact season/team uniform register; single-number entry",
+  "source": "https://apbr.org/nmbr7080.html",
+  "source_sha256": "73faf3d9c9bf52444611adb8319c69ce41da655300c6b7ff4d2ca7ddff34258e",
+  "source_format": "original_html",
+  "uniform_register_entry": "52 George Johnson",
+  "season_team_register": "5 Fred Foster, 9 Randy Smith, 10 Don Adams, 11 Bob McAdoo, 11 Chuck Williams, 12 Claude Terry, 14 Bird Averett, 15 Ernie DiGregorio, 20 Moses Malone, 21 Johnny Neumann, 22 Gus Gerard, 22 Clyde Mayes, 25 Jim Price, 34 John Shumate, 35 Zaid Abdul-Aziz, 40 John Gianelli, 44 Adrian Dantley, 52 Tom McMillen, 52 George Johnson",
+  "register_contributors": "Mel Bailey, Mark Estep, Bernie Ruehle, John Grasso and Robert Bradley"
+}
