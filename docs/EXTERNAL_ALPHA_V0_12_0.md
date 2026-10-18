@@ -8,4 +8,14 @@ New games use Batch 26. Extract the complete artifact archive and run the launch
 
 History belongs to the browser and launcher address on this device. Clearing site data or changing the port/browser can affect availability. Development games are excluded.
 
-Desktop build results and download links will be recorded in the checkpoint report after the builds finish.
+All three desktop builds passed; downloads are below.
+
+## Desktop downloads
+
+All three builds passed 142 Python tests, frontend checks and packaged HTTP startup checks asserting all 53 seasons / 13,442 entries. Built from commit `7c7510654bd19b6048a43b369f0fc2a754792e19`; later documentation-only commits do not change the packaged code or data.
+
+- [Windows](https://github.com/andyb33/Hoopreel/actions/runs/39098888467/artifacts/12126080991)
+- [Apple Silicon Mac](https://github.com/andyb33/Hoopreel/actions/runs/39098888465/artifacts/12125636832)
+- [Intel Mac](https://github.com/andyb33/Hoopreel/actions/runs/39098888465/artifacts/12125716607)
+
+Extract the complete artifact archive before running. Mac artifacts contain an inner ZIP with the app and instructions. Build jobs, artifact sizes and SHA-256 digests are preserved in `analysis/desktop_v0_12_0_builds.json`.
