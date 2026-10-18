@@ -1,4 +1,4 @@
-name: Build Hoopreel Mac alpha v0.11.1
+name: Build Hoopreel Mac alpha v0.12.0
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
       - name: Build Mac app
         run: |
           pyinstaller --noconfirm --clean --windowed --onedir \
-            --name Hoopreel-v0.11.1-Alpha \
+            --name Hoopreel-v0.12.0-Alpha \
             --icon web/static/app-icon.icns \
             --osx-bundle-identifier com.andyb33.hoopreel \
             --paths . \
@@ -55,14 +55,14 @@ jobs:
       - name: Smoke-test packaged app
         run: |
           set -euo pipefail
-          executable="dist/Hoopreel-v0.11.1-Alpha.app/Contents/MacOS/Hoopreel-v0.11.1-Alpha"
+          executable="dist/Hoopreel-v0.12.0-Alpha.app/Contents/MacOS/Hoopreel-v0.12.0-Alpha"
           "$executable" --no-open-browser --port 38117 &
           app_pid=$!
           trap 'kill "$app_pid" 2>/dev/null || true' EXIT
           ready=0
           for attempt in {1..40}; do
             if curl --fail --silent http://127.0.0.1:38117/api/state > /tmp/nba-roulette-state.json; then
-              python -c 'import json; s=json.load(open("/tmp/nba-roulette-state.json")); assert s["turn"] == 1 and s["turns_total"] == 14 and s["goat_enabled"]'
+              python -c 'import json; s=json.load(open("/tmp/nba-roulette-state.json")); assert s["turn"] == 1 and s["turns_total"] == 14 and s["goat_enabled"] and s["normal_pool"]["records"] == 13442 and s["normal_pool"]["seasons"] == 53 and s["normal_pool"]["first_season"] == "1973-74"'
               curl --fail --silent http://127.0.0.1:38117/ | grep -q 'reel-window'
               ready=1
               break
@@ -77,13 +77,13 @@ jobs:
 
       - name: Package app and instructions
         run: |
-          cp docs/EXTERNAL_ALPHA_V0_11_1.md dist/README.txt
+          cp docs/EXTERNAL_ALPHA_V0_12_0.md dist/README.txt
           cd dist
-          zip -q -r Hoopreel-v0.11.1-Alpha-Mac-${{ matrix.arch }}.zip Hoopreel-v0.11.1-Alpha.app README.txt
+          zip -q -r Hoopreel-v0.12.0-Alpha-Mac-${{ matrix.arch }}.zip Hoopreel-v0.12.0-Alpha.app README.txt
 
       - name: Upload Mac build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.11.1-Alpha-Mac-${{ matrix.arch }}
-          path: dist/Hoopreel-v0.11.1-Alpha-Mac-${{ matrix.arch }}.zip
+          name: Hoopreel-v0.12.0-Alpha-Mac-${{ matrix.arch }}
+          path: dist/Hoopreel-v0.12.0-Alpha-Mac-${{ matrix.arch }}.zip
           if-no-files-found: error

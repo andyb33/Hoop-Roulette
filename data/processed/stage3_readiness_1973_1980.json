@@ -15,7 +15,7 @@
   ],
   "pending_jerseys": 0,
   "policy_jersey_resolutions": 8,
-  "enabled_in_default_pool": false,
+  "enabled_in_default_pool": true,
   "seasons": [
     {
       "season": "1973-74",

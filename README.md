@@ -11,10 +11,10 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.11.1 includes the normal pool from 1980–81 through 2025–26.**
+**v0.12.0 includes the normal pool from 1973–74 through 2025–26.**
 Stage 3 stats and honors verification now reaches 1973–74: all seven seasons from 1973–74 through 1979–80 have passed. Three seasons are complete; eight final-jersey chronology cases remain across the other four. The seven-season batch stays outside the default pool. See [final four seasons and review list](docs/HISTORICAL_PROGRESS_1973_1977.md).
 
-All thirty Stage 2 seasons are complete and active. The final batch adds 1982–83, 1981–82 and 1980–81.
+All three historical stages are complete and active. The final checkpoint adds all seven seasons from 1973–74 through 1979–80.
 Normal eligibility remains 30 team GP / 15 team MPG. The Upper
 Bonus remains 120 → +35; GOAT pool eligibility is unchanged.
 
@@ -29,11 +29,11 @@ combined 1/1,296 chance. See [GOAT implementation](docs/GOAT_SPINS_V0_6.md).
 
 Run locally with `python scripts/run_web.py` and open http://127.0.0.1:8000.
 For local jackpot preview buttons, use `python scripts/run_web.py --dev-jackpots`.
-Development games are not logged. v0.11.1 adds faster contextual spins, a dismissible results popup, and browser-local score history. [Tester instructions](docs/EXTERNAL_ALPHA_V0_11_1.md). Desktop builds run from the updated packaging workflows.
+Development games are not logged. v0.12.0 completes the 53-season normal pool, retaining faster contextual spins, a dismissible results popup, and browser-local score history. [Tester instructions](docs/EXTERNAL_ALPHA_V0_12_0.md). Desktop builds run from the updated packaging workflows.
 
-The forty-six playable datasets from 1980–81 through 2025–26 contain:
+The forty-six playable datasets from 1973–74 through 2025–26 contain:
 
-- 12,169 eligible player-team records across forty-six seasons and 1,292 team-season combinations;
+- 13,442 eligible player-team records across fifty-three seasons and 1,433 team-season combinations;
 - eligibility of at least 30 games and 15.0 minutes per game for that team;
 - team-specific statistics for traded players;
 - final jersey number for each team stint;

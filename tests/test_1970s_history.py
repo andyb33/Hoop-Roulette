@@ -152,17 +152,17 @@ class SeventiesHistoryTests(unittest.TestCase):
                 self.assertEqual(entry['appearance_resolution']['original_box_score_player']['statistics']['minutes'], '')
                 self.assertEqual(entry['appearance_resolution']['original_box_score_player']['statistics']['points'], 9)
 
-    def test_stage3_readiness_lists_every_pending_uniform_without_enabling_the_batch(self):
+    def test_stage3_readiness_lists_every_pending_uniform_and_activates_the_batch(self):
         status = read('data/processed/stage3_readiness_1973_1980.json')
         self.assertEqual((status['entries'], status['stat_comparisons']), (1273, 8911))
         self.assertEqual(status['complete_seasons'], [f'{y}-{(y+1)%100:02}' for y in range(1973, 1980)])
         self.assertEqual(status['pending_jerseys'], 0)
         self.assertEqual(status['policy_jersey_resolutions'], 8)
-        self.assertFalse(status['enabled_in_default_pool'])
+        self.assertTrue(status['enabled_in_default_pool'])
         self.assertEqual(len(status['seasons']), 7)
         for season in status['seasons']:
             self.assertTrue(season['stats_verified'] and season['honors_verified'])
             for review in season['pending_jerseys']:
                 self.assertNotIn('resolved_jersey', review)
                 self.assertGreaterEqual(len(review['alternatives']), 2)
-        self.assertEqual(len({r.season for r in load_records()}), 46)
+        self.assertEqual(len({r.season for r in load_records()}), 53)

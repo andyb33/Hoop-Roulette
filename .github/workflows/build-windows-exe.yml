@@ -1,4 +1,4 @@
-name: Build Hoopreel Windows alpha v0.11.1
+name: Build Hoopreel Windows alpha v0.12.0
 
 on:
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
         shell: cmd
         run: >-
           pyinstaller --noconfirm --clean --onefile
-          --name Hoopreel-v0.11.1-Alpha
+          --name Hoopreel-v0.12.0-Alpha
           --icon web/static/app-icon.ico
           --paths "."
           --collect-submodules nba_roulette
@@ -50,7 +50,7 @@ jobs:
       - name: Smoke-test packaged launcher
         shell: pwsh
         run: |
-          $exe = Resolve-Path "dist/Hoopreel-v0.11.1-Alpha.exe"
+          $exe = Resolve-Path "dist/Hoopreel-v0.12.0-Alpha.exe"
           $process = Start-Process -FilePath $exe -ArgumentList "--no-open-browser", "--port", "38117" -PassThru
           try {
             $ready = $false
@@ -58,10 +58,10 @@ jobs:
               Start-Sleep -Milliseconds 500
               try {
                 $state = Invoke-RestMethod -Uri "http://127.0.0.1:38117/api/state"
-                if ($state.turn -eq 1 -and $state.turns_total -eq 14 -and $state.goat_enabled) {
+                if ($state.turn -eq 1 -and $state.turns_total -eq 14 -and $state.goat_enabled -and $state.normal_pool.records -eq 13442 -and $state.normal_pool.seasons -eq 53 -and $state.normal_pool.first_season -eq "1973-74") {
                   $page = Invoke-WebRequest -Uri "http://127.0.0.1:38117/" -UseBasicParsing
                   if ($page.Content -notmatch 'reel-window') {
-                    throw "Packaged launcher is missing the v0.11.1 roulette UI."
+                    throw "Packaged launcher is missing the v0.12.0 roulette UI."
                   }
                   $ready = $true
                   break
@@ -83,13 +83,13 @@ jobs:
 
       - name: Add tester instructions
         shell: pwsh
-        run: Copy-Item docs/EXTERNAL_ALPHA_V0_11_1.md dist/README.txt
+        run: Copy-Item docs/EXTERNAL_ALPHA_V0_12_0.md dist/README.txt
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.11.1-Alpha-Windows
+          name: Hoopreel-v0.12.0-Alpha-Windows
           path: |
-            dist/Hoopreel-v0.11.1-Alpha.exe
+            dist/Hoopreel-v0.12.0-Alpha.exe
             dist/README.txt
           if-no-files-found: error

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "normal_pool": {
+    "records": 13442,
+    "seasons": 53,
+    "first_season": "1973-74",
+    "last_season": "2025-26"
+  },
+  "first_spin_preview_seasons": 53,
+  "turns_total": 14,
+  "goat_enabled": true
+}

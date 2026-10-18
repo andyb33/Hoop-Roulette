@@ -1,3 +1,5 @@
+> v0.12.0 activation on 2026-10-18: all seven Stage 3 seasons are now in the default pool. Total: 53 seasons / 13,442 entries / 1,433 team-season combinations. All 142 Python tests, frontend checks, live HTTP checks and 100 complete games / 2,790 spin-preview checks passed. All 53 normal seasons appeared. Desktop workflows now target v0.12.0; see [the checkpoint report](CHECKPOINT_V0_12_0.md). Earlier preparation status below is retained as history.
+
 # Final four NBA seasons: 1973–74 through 1976–77
 
 All four seasons passed independent stats and schedule checks on 2026-10-17 under the fixed 30 team GP / 15 unrounded team MPG rule. Their 660 entries passed 4,620 comparisons. Honors and award winners also match the eligible records. ABA seasons are outside this NBA dataset scope.
