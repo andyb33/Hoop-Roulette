@@ -1,4 +1,4 @@
-name: Build Hoopreel Mac alpha v0.12.0
+name: Build Hoopreel Mac alpha v0.12.1
 
 on:
   workflow_dispatch:
@@ -12,14 +12,7 @@ permissions:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        include:
-          - runner: macos-latest
-            arch: Apple-Silicon
-          - runner: macos-15-intel
-            arch: Intel
-    runs-on: ${{ matrix.runner }}
+    runs-on: macos-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -28,6 +21,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Verify Apple Silicon runner
+        run: python -c 'import platform; assert platform.machine() == "arm64", platform.machine()'
 
       - name: Install packager
         run: python -m pip install --disable-pip-version-check pyinstaller==6.16.0
@@ -41,7 +37,8 @@ jobs:
       - name: Build Mac app
         run: |
           pyinstaller --noconfirm --clean --windowed --onedir \
-            --name Hoopreel-v0.12.0-Alpha \
+            --name Hoopreel-v0.12.1-Alpha \
+            --target-arch arm64 \
             --icon web/static/app-icon.icns \
             --osx-bundle-identifier com.andyb33.hoopreel \
             --paths . \
@@ -55,7 +52,7 @@ jobs:
       - name: Smoke-test packaged app
         run: |
           set -euo pipefail
-          executable="dist/Hoopreel-v0.12.0-Alpha.app/Contents/MacOS/Hoopreel-v0.12.0-Alpha"
+          executable="dist/Hoopreel-v0.12.1-Alpha.app/Contents/MacOS/Hoopreel-v0.12.1-Alpha"
           "$executable" --no-open-browser --port 38117 &
           app_pid=$!
           trap 'kill "$app_pid" 2>/dev/null || true' EXIT
@@ -63,7 +60,9 @@ jobs:
           for attempt in {1..40}; do
             if curl --fail --silent http://127.0.0.1:38117/api/state > /tmp/nba-roulette-state.json; then
               python -c 'import json; s=json.load(open("/tmp/nba-roulette-state.json")); assert s["turn"] == 1 and s["turns_total"] == 14 and s["goat_enabled"] and s["normal_pool"]["records"] == 13442 and s["normal_pool"]["seasons"] == 53 and s["normal_pool"]["first_season"] == "1973-74"'
-              curl --fail --silent http://127.0.0.1:38117/ | grep -q 'reel-window'
+              curl --fail --silent http://127.0.0.1:38117/ > /tmp/hoopreel-page.html
+              curl --fail --silent http://127.0.0.1:38117/app.js > /tmp/hoopreel-app.js
+              python -c 'from pathlib import Path; p=Path("/tmp/hoopreel-page.html").read_text(); j=Path("/tmp/hoopreel-app.js").read_text(); assert all(f"id=\"{key}\"" in p for key in ["skip-animation", "instant-spins", "clear-keeps", "bonus-remaining", "restart-confirm"]); assert "function skipAnimation()" in j and "function requestNewGame()" in j'
               ready=1
               break
             fi
@@ -77,13 +76,13 @@ jobs:
 
       - name: Package app and instructions
         run: |
-          cp docs/EXTERNAL_ALPHA_V0_12_0.md dist/README.txt
+          cp docs/EXTERNAL_ALPHA_V0_12_1.md dist/README.txt
           cd dist
-          zip -q -r Hoopreel-v0.12.0-Alpha-Mac-${{ matrix.arch }}.zip Hoopreel-v0.12.0-Alpha.app README.txt
+          zip -q -r Hoopreel-v0.12.1-Alpha-Mac-Apple-Silicon.zip Hoopreel-v0.12.1-Alpha.app README.txt
 
       - name: Upload Mac build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.12.0-Alpha-Mac-${{ matrix.arch }}
-          path: dist/Hoopreel-v0.12.0-Alpha-Mac-${{ matrix.arch }}.zip
+          name: Hoopreel-v0.12.1-Alpha-Mac-Apple-Silicon
+          path: dist/Hoopreel-v0.12.1-Alpha-Mac-Apple-Silicon.zip
           if-no-files-found: error
