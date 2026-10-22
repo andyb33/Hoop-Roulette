@@ -63,6 +63,11 @@
 
       <p class="draft-rule"><span class="draft-rule-mark" aria-hidden="true">*</span><span><strong>One pick per player.</strong> Scored players leave this draft; passed players can return.</span></p>
       <button id="spin" class="spin-button"><span class="spin-icon" aria-hidden="true">↻</span><span class="spin-copy">Spin</span><small id="spin-count">3 spins available</small></button>
+      <button id="skip-animation" class="secondary hidden" type="button" aria-label="Skip animation and reveal this spin's result">Skip animation</button>
+      <div class="spin-options">
+        <label><input id="instant-spins" type="checkbox"> Instant spins</label>
+        <button id="clear-keeps" class="secondary" type="button" disabled>Clear Keeps</button>
+      </div>
       <p id="message" class="message" role="status"></p>
       <div id="dev-jackpots" class="dev-jackpots hidden">
         <span>Development preview · games are not logged</span>
@@ -100,6 +105,7 @@
         </div>
       </div>
       <div class="bonus-track" aria-label="Upper bonus progress"><span id="bonus-progress"></span></div>
+      <p id="bonus-remaining" class="bonus-remaining" role="status">120 points to bonus</p>
       <div id="scorecard"></div>
       <div id="score-confirm" class="score-confirm hidden" aria-live="polite">
         <div><span>Selected play</span><strong id="selected-category">Choose a category</strong></div>
@@ -115,6 +121,13 @@
     <p id="final-best"></p>
     <button id="view-scorecard" class="secondary">View scorecard</button>
     <button id="play-again" class="spin-button">Play Again</button>
+  </dialog>
+
+  <dialog id="restart-confirm" aria-labelledby="restart-title">
+    <h2 id="restart-title">Start a new game?</h2>
+    <p>Your unfinished game will be replaced.</p>
+    <button id="cancel-restart" class="secondary" type="button" autofocus>Keep playing</button>
+    <button id="confirm-restart" class="secondary" type="button">Start new game</button>
   </dialog>
 
   <dialog id="score-history" aria-labelledby="history-title">

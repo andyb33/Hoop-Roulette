@@ -251,6 +251,11 @@ h1 span { color: var(--paper); font-weight: 400; }
 .spin-copy { font: 900 21px/1 var(--display); letter-spacing: .04em; }
 .spin-button small { font-size: 9px; letter-spacing: .08em; opacity: .8; }
 .secondary { padding: 11px 15px; color: var(--paper); background: transparent; border: 1px solid var(--line); text-transform: uppercase; font-size: 10px; letter-spacing: .1em; }
+.spin-options { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; }
+.spin-options label { display: flex; align-items: center; gap: 8px; color: var(--paper); font-size: 13px; cursor: pointer; }
+.spin-options input { accent-color: var(--orange); width: 18px; height: 18px; }
+.bonus-remaining { margin: 8px 0 16px; color: var(--muted); font-size: 12px; }
+#skip-animation { margin-top: 10px; width: 100%; }
 button:disabled { cursor: not-allowed; opacity: .48; }
 .message { min-height: 24px; padding-top: 8px; color: var(--red); text-align: center; font-size: 12px; }
 

@@ -13,9 +13,9 @@ function node(key) {
 }
 const storage = new Map();
 const context = vm.createContext({console, Date, Math, Number, Set, JSON, Promise,
-  document:{querySelector:node,querySelectorAll:()=>[],createElement:()=>({append(){}})},
+  document:{body:node('body'),querySelector:node,querySelectorAll:()=>[],createElement:()=>({append(){}})},
   localStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},
-  window:{matchMedia:()=>({matches:false}),setInterval:()=>1,clearInterval(){},setTimeout:f=>f()},
+  window:{matchMedia:()=>({matches:false}),setInterval:()=>1,clearInterval(){},setTimeout:f=>f(),clearTimeout(){}},
   fetch:()=>new Promise(()=>{})});
 vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
 (async()=>{
@@ -26,6 +26,79 @@ vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
     render(completed);
     if(document.querySelector('#finished').open || document.querySelector('#finished').openCount!==1)throw Error('Dismissed results reopened');
     scores={recent:[],best:0};
+    // Skip at each reel boundary, including repeated clicks and jackpot reveals.
+    const originalTimers = {...window};
+    for (const pool of ['normal','award']) for (let target=0;target<3;target++) {
+      const timers = new Map();
+      const intervals = new Set();
+      let timerId=0;
+      window.setTimeout=f=>{timers.set(++timerId,f);return timerId};
+      window.clearTimeout=id=>timers.delete(id);
+      window.setInterval=()=>{intervals.add(++timerId);return timerId};
+      window.clearInterval=id=>intervals.delete(id);
+      state.animation={skipped:false,finish:null};
+      const animation = animateReels({spins_used:1,player:{pool,season:'1980-81',team:'BOS',name:'Larry Bird'}});
+      for (let reel=0;reel<target;reel++) {
+        const finish=state.animation.finish;
+        if (!finish) throw Error('Missing active reel');
+        finish();
+        await Promise.resolve();
+      }
+      skipAnimation();skipAnimation();
+      await animation;
+      if (document.querySelector('#season-value').textContent!=='1980-81' ||
+          document.querySelector('#team-value').textContent!=='BOS' ||
+          document.querySelector('#player-value').textContent!=='Larry Bird') throw Error('Skip lost result');
+      if(intervals.size || state.animation.finish)throw Error('Skip left active reel');
+      // Any remaining landing timers must not overwrite the revealed result.
+      for(const callback of timers.values())callback();
+      if(document.querySelector('#player-value').textContent!=='Larry Bird')throw Error('Late timer overwrote result');
+    }
+    Object.assign(window, originalTimers);
+    state.animation=null;
+    skipAnimation(); // Safe outside a spin.
+    setInstantSpins(true);
+    if(!readInstantSpins() || !document.querySelector('#instant-spins').checked)throw Error('Preference not saved');
+    const priorTimeout=window.setTimeout;
+    window.setTimeout=()=>{throw Error('Instant spin scheduled animation')};
+    await animateReels({spins_used:1,player:{pool:'award',season:'1980-81',team:'BOS',name:'Larry Bird'}});
+    window.setTimeout=priorTimeout;
+    setInstantSpins(false);
+    if(readInstantSpins())throw Error('Preference not cleared');
+    const active={...completed,game_id:'active',complete:false,spins_used:1,rerolls_left:2,keeps_allowed:true};
+    render({...active,upper_total:119});
+    if(document.querySelector('#bonus-remaining').textContent!=='1 point to bonus')throw Error('Bonus singular');
+    render({...active,upper_total:120});
+    if(document.querySelector('#bonus-remaining').textContent!=='Upper bonus earned!')throw Error('Bonus earned');
+    render(active);
+    state.keeps.add('season');state.keeps.add('team');
+    render(active);
+    if(document.querySelector('#clear-keeps').disabled)throw Error('Clear disabled with keeps');
+    clearKeeps();
+    if(state.keeps.size || !document.querySelector('#clear-keeps').disabled)throw Error('Keeps not cleared');
+    state.keeps.add('season');setBusy(true);clearKeeps();
+    if(!state.keeps.size)throw Error('Cleared during busy state');
+    setBusy(false);state.keeps.clear();
+    let requests=0;
+    const originalRequest=request;
+    request=async()=>{requests++;return {...active,spins_used:0,categories:[]}};
+    requestNewGame();
+    if(requests || !document.querySelector('#restart-confirm').open)throw Error('Restart skipped warning');
+    document.querySelector('#restart-confirm').close();
+    if(state.game.game_id!=='active')throw Error('Cancel changed game');
+    await newGame();
+    if(requests!==1 || document.querySelector('#restart-confirm').open)throw Error('Confirmed restart failed');
+    state.game={...active,spins_used:0,categories:[{used:true}]};
+    requestNewGame();
+    if(requests!==1 || !document.querySelector('#restart-confirm').open)throw Error('Scored turn bypassed warning');
+    document.querySelector('#restart-confirm').close();
+    state.game={...active,spins_used:0};
+    await requestNewGame();
+    if(requests!==2)throw Error('Pristine game warned');
+    state.game=completed;
+    await requestNewGame();
+    if(requests!==3)throw Error('Completed game warned');
+    request=originalRequest;
     const calls=[];
     cycleReel = async (...args) => calls.push(args);
     await animateReels({spins_used:1,player:{pool:'normal',season:'1980-81',team:'BOS',name:'Larry Bird'},animation_choices:{season:['1980-81','2025-26'],team:['BOS'],player:['Larry Bird']}});
@@ -42,6 +115,10 @@ vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
     for(let i=0;i<55;i++)saveCompletedScore({...g,game_id:'game'+i,total_score:100});
     if(scores.recent.length!==50 || scores.best!==300)throw Error('Retention/best');
     localStorage.setItem=()=>{throw Error('Unavailable storage')};
+    setInstantSpins(true);
+    if(!instantSpins)throw Error('Preference failed without storage');
+    localStorage.getItem=()=>{throw Error('Unavailable storage')};
+    if(readInstantSpins())throw Error('Blocked storage default');
     saveCompletedScore({...g,game_id:'blocked'});
   })()`,context);
   assert.ok(storage.has('hoopreel.scores.v1'));

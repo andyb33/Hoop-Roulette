@@ -1,8 +1,21 @@
-const state = { game: null, keeps: new Set(), busy: false, selectedCategory: null, finishedShownId: null };
+const state = { game: null, keeps: new Set(), busy: false, selectedCategory: null, finishedShownId: null, animation: null };
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const INSTANT_STORAGE = "hoopreel.instantSpins.v1";
+function readInstantSpins() {
+  try { return localStorage.getItem(INSTANT_STORAGE) === "true"; }
+  catch (_) { return false; }
+}
+let instantSpins = readInstantSpins();
+$("#instant-spins").checked = instantSpins;
+function setInstantSpins(enabled) {
+  instantSpins = enabled;
+  $("#instant-spins").checked = enabled;
+  try { localStorage.setItem(INSTANT_STORAGE, String(enabled)); } catch (_) { /* Session preference still works. */ }
+  if (enabled) skipAnimation();
+}
 
 const CATEGORY_CODES = {
   all_nba_third: "NBA 3", all_nba_second: "NBA 2", all_nba_first: "NBA 1",
@@ -59,6 +72,10 @@ function render(game, { preserveReels = false } = {}) {
   $("#upper-score").textContent = game.upper_total;
   $("#bonus-score").textContent = game.bonus ? `+${game.bonus}` : "0";
   $("#bonus-progress").style.width = `${Math.min(100, (game.upper_total / game.upper_target) * 100)}%`;
+  const remaining = Math.max(0, game.upper_target - game.upper_total);
+  $("#bonus-remaining").textContent = remaining === 0
+    ? "Upper bonus earned!" : `${remaining} point${remaining === 1 ? "" : "s"} to bonus${game.complete ? " · game complete" : ""}`;
+  $("#clear-keeps").disabled = state.busy || game.complete || !game.keeps_allowed || game.rerolls_left === 0 || state.keeps.size === 0;
 
   const player = game.player;
   if (!game.keeps_allowed) state.keeps.clear();
@@ -138,10 +155,16 @@ function render(game, { preserveReels = false } = {}) {
   }
 }
 
+function skipAnimation() {
+  if (!state.animation) return;
+  state.animation.skipped = true;
+  state.animation.finish?.();
+}
+
 function cycleReel(name, finalValue, duration, choices = []) {
   const value = $(`#${name}-value`);
   const slot = value.closest(".slot");
-  if (state.keeps.has(name) || reducedMotion.matches) {
+  if (state.keeps.has(name) || reducedMotion.matches || instantSpins || state.animation?.skipped) {
     value.textContent = finalValue;
     return Promise.resolve();
   }
@@ -151,14 +174,25 @@ function cycleReel(name, finalValue, duration, choices = []) {
     value.textContent = choices[Math.floor(Math.random() * choices.length)];
   }, 62);
   return new Promise(resolve => {
-    window.setTimeout(() => {
+    const animation = state.animation;
+    let finished = false;
+    let timeout;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      window.clearTimeout(timeout);
       window.clearInterval(timer);
       value.textContent = finalValue;
       slot.classList.remove("spinning");
-      slot.classList.add("landed");
-      window.setTimeout(() => slot.classList.remove("landed"), 360);
+      if (!animation?.skipped) {
+        slot.classList.add("landed");
+        window.setTimeout(() => slot.classList.remove("landed"), 360);
+      }
+      if (animation) animation.finish = null;
       resolve();
-    }, duration);
+    };
+    if (animation) animation.finish = finish;
+    timeout = window.setTimeout(finish, duration);
   });
 }
 
@@ -188,7 +222,7 @@ async function animateReels(game) {
   $("#player-card").classList.remove("is-waiting");
   if (jackpot) {
     jackpotBanner(player.pool, false);
-    if (!reducedMotion.matches) {
+    if (!reducedMotion.matches && !instantSpins && !state.animation?.skipped) {
       $(".game-panel").classList.add("jackpot-hit");
       $("#jackpot-particles").replaceChildren(...Array.from({ length: 16 }, (_, i) => {
         const particle = document.createElement("i");
@@ -215,6 +249,8 @@ async function spin(forcePool = null) {
     if (forcePool) state.keeps.clear();
     const game = await request("/api/spin", { keeps: [...state.keeps], ...(forcePool ? { force_pool: forcePool } : {}) });
     $("#message").textContent = "";
+    state.animation = { skipped: false, finish: null };
+    $("#skip-animation").classList.toggle("hidden", reducedMotion.matches || instantSpins);
     await animateReels(game);
     setBusy(false);
     render(game);
@@ -222,6 +258,9 @@ async function spin(forcePool = null) {
     $("#message").textContent = error.message;
     setBusy(false);
     if (state.game) render(state.game);
+  } finally {
+    state.animation = null;
+    $("#skip-animation").classList.add("hidden");
   }
 }
 
@@ -247,6 +286,22 @@ async function score(category) {
   }
 }
 
+function requestNewGame() {
+  if (state.busy) return;
+  const game = state.game;
+  if (game && !game.complete && (game.spins_used > 0 || game.categories.some(category => category.used))) {
+    $("#restart-confirm").showModal();
+    return;
+  }
+  return newGame();
+}
+
+function clearKeeps() {
+  if (state.busy || !state.game || state.game.complete) return;
+  state.keeps.clear();
+  render(state.game);
+}
+
 async function newGame() {
   if (state.busy) return;
   setBusy(true);
@@ -255,6 +310,7 @@ async function newGame() {
     state.keeps.clear();
     state.selectedCategory = null;
     $("#finished").close();
+    $("#restart-confirm").close();
     setBusy(false);
     render(game);
   } catch (error) {
@@ -268,6 +324,8 @@ function setBusy(value) {
   document.body.classList.toggle("busy", value);
   $("#new-game").disabled = value;
   $("#play-again").disabled = value;
+  $("#confirm-restart").disabled = value;
+  $("#clear-keeps").disabled = value || !state.game || state.game.complete || !state.game.keeps_allowed || state.game.rerolls_left === 0 || state.keeps.size === 0;
 }
 
 $$(".slot").forEach(button => button.addEventListener("click", () => {
@@ -277,10 +335,15 @@ $$(".slot").forEach(button => button.addEventListener("click", () => {
   render(state.game);
 }));
 $("#spin").addEventListener("click", () => spin());
+$("#skip-animation").addEventListener("click", skipAnimation);
+$("#instant-spins").addEventListener("change", event => setInstantSpins(event.target.checked));
+$("#clear-keeps").addEventListener("click", clearKeeps);
 $$("[data-force]").forEach(button => button.addEventListener("click", () => spin(button.dataset.force)));
 $("#confirm-score").addEventListener("click", () => score(state.selectedCategory));
-$("#new-game").addEventListener("click", newGame);
-$("#play-again").addEventListener("click", newGame);
+$("#new-game").addEventListener("click", requestNewGame);
+$("#play-again").addEventListener("click", requestNewGame);
+$("#cancel-restart").addEventListener("click", () => $("#restart-confirm").close());
+$("#confirm-restart").addEventListener("click", newGame);
 
 
 const SCORE_STORAGE = "hoopreel.scores.v1";
