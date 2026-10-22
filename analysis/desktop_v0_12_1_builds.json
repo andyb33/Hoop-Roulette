@@ -1,0 +1,241 @@
+{
+  "version": "0.12.1",
+  "source_commit": "9a25fe2c2f9bc0ca71a30e6a005510acbc3a0f6d",
+  "mac_policy": "Apple Silicon arm64 only; Intel job removed",
+  "runs": [
+    {
+      "run_id": 39745738081,
+      "jobs": [
+        {
+          "id": 119713603628,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 39745738081,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Install packager",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check frontend behavior",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Build single-file launcher",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Smoke-test packaged launcher",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Add tester instructions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Upload Windows build",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 20
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 12411237688,
+          "name": "Hoopreel-v0.12.1-Alpha-Windows",
+          "size_in_bytes": 9574707,
+          "url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12411237688",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12411237688/zip",
+          "expired": false,
+          "created_at": "2026-10-22T08:11:00Z",
+          "expires_at": "2027-01-20T08:10:07Z",
+          "updated_at": "2026-10-22T08:11:00Z",
+          "digest": "sha256:883c8c07cc477142f11aafb7b96c63730ab904b701ab25f7c01ccf64646cbd72",
+          "workflow_run": {
+            "id": 39745738081,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "9a25fe2c2f9bc0ca71a30e6a005510acbc3a0f6d"
+          }
+        }
+      ]
+    },
+    {
+      "run_id": 39745738294,
+      "jobs": [
+        {
+          "id": 119713604392,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 39745738294,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Verify Apple Silicon runner",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Install packager",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Check frontend behavior",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Build Mac app",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Smoke-test packaged app",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Package app and instructions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Upload Mac build",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 22
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 12410139914,
+          "name": "Hoopreel-v0.12.1-Alpha-Mac-Apple-Silicon",
+          "size_in_bytes": 31952203,
+          "url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12410139914",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12410139914/zip",
+          "expired": false,
+          "created_at": "2026-10-22T08:10:42Z",
+          "expires_at": "2027-01-20T08:10:07Z",
+          "updated_at": "2026-10-22T08:10:42Z",
+          "digest": "sha256:84bae4a5a44ad644f2e560dca6678190e3a6bf05c124918875047fa015f62154",
+          "workflow_run": {
+            "id": 39745738294,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "9a25fe2c2f9bc0ca71a30e6a005510acbc3a0f6d"
+          }
+        }
+      ]
+    }
+  ]
+}
