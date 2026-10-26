@@ -103,7 +103,7 @@ def main() -> int:
                     if time.monotonic() > deadline:
                         raise RuntimeError("Game did not initialize in native window")
                     time.sleep(0.1)
-                report = window.evaluate_js("""(async () => {
+                window.evaluate_js("""window.__desktopQA = null; (async () => {
                   if (!instantSpins || scores.best !== 321) throw Error('Native save not loaded');
                   const pool = state.game.normal_pool;
                   if (pool.seasons !== 53 || pool.records !== 13442) throw Error('Incomplete pool');
@@ -120,7 +120,15 @@ def main() -> int:
                   await score(category.id);
                   setInstantSpins(false); await desktopPending;
                   return {seasons:pool.seasons, records:pool.records, spin:true, scoring:true, controls:true, native_storage:true};
-                })()""")
+                })().then(result => {window.__desktopQA = result;})
+                  .catch(error => {window.__desktopQA = {error:String(error)};});""")
+                report = None
+                deadline = time.monotonic() + 40
+                while report is None:
+                    report = window.evaluate_js("window.__desktopQA")
+                    if time.monotonic() > deadline:
+                        raise RuntimeError("Native gameplay check timed out")
+                    time.sleep(0.1)
                 assert report and report["records"] == 13442, report
                 assert DesktopStore(directory).read()["hoopreel.instantSpins.v1"] == "false"
                 result.update(report, success=True)

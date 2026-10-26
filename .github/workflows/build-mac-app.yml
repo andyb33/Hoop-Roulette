@@ -5,6 +5,8 @@ on:
   push:
     branches: [main]
     paths:
+      - "scripts/run_desktop.py"
+      - "scripts/check_desktop_build.py"
       - ".github/workflows/build-mac-app.yml"
 
 permissions:
