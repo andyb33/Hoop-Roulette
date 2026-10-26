@@ -155,20 +155,20 @@ def verify(season):
         archive_path=raw/"reference/original_totals_archive.csv"
         archive_path.parent.mkdir(parents=True,exist_ok=True)
         if not archive_path.exists():
-            with urlopen(Request(source["url"],headers={"User-Agent":"Hoopreel"}),timeout=45) as response:archive_path.write_bytes(response.read())
+            with urlopen(Request(source["url"],headers={"User-Agent":"Hoop Roulette"}),timeout=45) as response:archive_path.write_bytes(response.read())
         archive_sha256=hashlib.sha256(archive_path.read_bytes()).hexdigest()
         extract_reference_csv(archive_path,season,ref_path)
     if source.get("format") == "xlsx":
         workbook_path = raw / "reference/reference.xlsx"
         workbook_path.parent.mkdir(parents=True, exist_ok=True)
         if not workbook_path.exists():
-            with urlopen(Request(source["url"], headers={"User-Agent":"Hoopreel"}), timeout=45) as response:
+            with urlopen(Request(source["url"], headers={"User-Agent":"Hoop Roulette"}), timeout=45) as response:
                 workbook_path.write_bytes(response.read())
         workbook_sha256 = hashlib.sha256(workbook_path.read_bytes()).hexdigest()
         extract_reference_workbook(workbook_path, source["year"], ref_path)
     if not ref_path.exists():
         ref_path.parent.mkdir(parents=True, exist_ok=True)
-        with urlopen(Request(source["url"], headers={"User-Agent": "Hoopreel"}), timeout=30) as response:
+        with urlopen(Request(source["url"], headers={"User-Agent": "Hoop Roulette"}), timeout=30) as response:
             ref_path.write_bytes(response.read())
     try:
         reference_text = ref_path.read_bytes().decode("utf-8-sig", errors="strict")

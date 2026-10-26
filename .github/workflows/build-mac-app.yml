@@ -1,4 +1,4 @@
-name: Build Hoopreel Mac alpha v0.14.0
+name: Build Hoop Roulette Mac alpha v0.14.1
 
 on:
   workflow_dispatch:
@@ -39,10 +39,10 @@ jobs:
       - name: Build Mac app
         run: |
           pyinstaller --noconfirm --clean --windowed --onedir \
-            --name Hoopreel-v0.14.0-Alpha \
+            --name HoopRoulette-v0.14.1-Alpha \
             --target-arch arm64 \
             --icon web/static/app-icon.icns \
-            --osx-bundle-identifier com.andyb33.hoopreel \
+            --osx-bundle-identifier com.andyb33.hooproulette \
             --paths . \
             --collect-submodules nba_roulette \
             --collect-all webview \
@@ -54,19 +54,19 @@ jobs:
             scripts/run_desktop.py
 
       - name: Smoke-test native app window
-        run: python scripts/check_desktop_build.py dist/Hoopreel-v0.14.0-Alpha.app/Contents/MacOS/Hoopreel-v0.14.0-Alpha
+        run: python scripts/check_desktop_build.py dist/HoopRoulette-v0.14.1-Alpha.app/Contents/MacOS/HoopRoulette-v0.14.1-Alpha
 
       - name: Package app and instructions
         run: |
-          cp docs/EXTERNAL_ALPHA_V0_14_0.md dist/README.txt
+          cp docs/EXTERNAL_ALPHA_V0_14_1.md dist/README.txt
           cd dist
-          zip -q -r Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon.zip Hoopreel-v0.14.0-Alpha.app README.txt
+          zip -q -r HoopRoulette-v0.14.1-Alpha-Mac-Apple-Silicon.zip HoopRoulette-v0.14.1-Alpha.app README.txt
 
       - name: Upload Mac build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon
-          path: dist/Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon.zip
+          name: HoopRoulette-v0.14.1-Alpha-Mac-Apple-Silicon
+          path: dist/HoopRoulette-v0.14.1-Alpha-Mac-Apple-Silicon.zip
           if-no-files-found: error
 
       - name: Upload native window QA report

@@ -7,6 +7,7 @@ import sys
 import threading
 from pathlib import Path
 
+# Legacy names intentionally retained so the Hoop Roulette rebrand preserves saves.
 KEYS = {"hoopreel.scores.v1", "hoopreel.instantSpins.v1"}
 
 

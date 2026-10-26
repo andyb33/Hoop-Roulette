@@ -1,4 +1,4 @@
-"""Turn and scorecard state for a complete Hoopreel game."""
+"""Turn and scorecard state for a complete Hoop Roulette game."""
 
 from __future__ import annotations
 

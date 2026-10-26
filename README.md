@@ -1,17 +1,17 @@
-# Hoopreel
+# Hoop Roulette
 
 **Spin. Keep. Score.**
 
-[GitHub repository](https://github.com/andyb33/Hoopreel)
+[GitHub repository](https://github.com/andyb33/Hoop-Roulette)
 
-<img src="web/static/brand-mark.svg" alt="Hoopreel symbol" width="96">
+<img src="web/static/brand-mark.svg" alt="Hoop Roulette symbol" width="96">
 
-Hoopreel is a Yahtzee-inspired NBA strategy game built around historical
+Hoop Roulette is a Yahtzee-inspired NBA strategy game built around historical
 player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.14.0 desktop layout:** the approved side-by-side Classic/Accolades scorecard is now the working UI. The complete game canvas fits without scrolling; history uses game-by-game navigation. Windows and Apple Silicon Mac only. [Checkpoint and downloads](docs/CHECKPOINT_V0_14_0.md).
+**v0.14.1 Hoop Roulette rebrand:** the approved side-by-side Classic/Accolades scorecard is now the working UI. The complete game canvas fits without scrolling; history uses game-by-game navigation. Windows and Apple Silicon Mac only. [Checkpoint and downloads](docs/CHECKPOINT_V0_14_1.md).
 
 **v0.13.0 standalone desktop:** double-click the Windows `.exe` or Apple Silicon Mac `.app` to play in a dedicated window with all data bundled. No CMD window or browser tab. Desktop testing comes first; public web hosting is deferred. [Release and downloads](docs/CHECKPOINT_V0_13_0.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_13_0.md).
 
@@ -154,21 +154,9 @@ filled and checked state.
 
 ## Build the Windows or Mac alpha
 
-The GitHub Actions workflows build a Windows `.exe` and separate Apple Silicon
-and Intel Mac `.app` artifacts with the v0.5 screen and three-reel animation. They bundle the three
-game datasets and browser assets, select an available local port, and open the
-game automatically. Testers do not need Python or a command prompt.
+The GitHub Actions workflows build a standalone Windows `.exe` and an Apple Silicon Mac `.app`, with bundled game data and a dedicated native window. Intel builds are discontinued. Testers do not need Python or a command prompt. Run **Build Hoop Roulette Windows alpha v0.14.1** or **Build Hoop Roulette Mac alpha v0.14.1** from the Actions tab. See [tester instructions](docs/EXTERNAL_ALPHA_V0_14_1.md) and [current downloads](docs/CHECKPOINT_V0_14_1.md). Older packages retain their original names and remain historical releases.
 
-Run **Build Hoopreel Windows alpha v0.5** or **Build Hoopreel Mac alpha v0.5** from the Actions
-tab and send the resulting ZIP to testers. See
-[`docs/EXTERNAL_ALPHA_V0_5.md`](docs/EXTERNAL_ALPHA_V0_5.md) for the exact
-tester instructions. The previous v0.4 Windows workflow artifacts remain
-available in GitHub Actions history as legacy builds.
-
-Completed local games are automatically captured for **Playtest Batch 4 — v0.4
-External Alpha** in `playtest_logs/` as detailed JSONL plus a CSV summary. The
-folder is intentionally excluded from Git. Packaged Windows builds use the
-tester-facing Documents location described in the alpha instructions.
+Completed local games are captured in `playtest_logs/` during development, or Documents/Hoopreel/playtest_logs in packaged apps, with legacy NBA Roulette folders retained when already present. This folder is intentionally excluded from Git.
 
 ## Game design snapshot
 
@@ -177,3 +165,11 @@ reroll, players explicitly choose which slots to **keep**; all other slots are
 rerolled. The final player-team-season is assigned to an unused scorecard
 category. The initial game design uses 14 categories and up to three spins per
 turn.
+
+## Brand and rights
+
+The current product name is **Hoop Roulette**, with the tagline **Spin. Keep. Score.** Trademark clearance and registration are pending; no registered status is claimed. See [brand and rights notes](docs/BRAND_AND_RIGHTS.md).
+
+Hoop Roulette is an independent basketball fan project and is not affiliated with or endorsed by the NBA, its teams, or players. This statement does not replace any necessary permissions.
+
+Legacy `Hoopreel` save-directory and storage identifiers remain intentionally compatible so existing scores and preferences survive the rename. Historical release records retain their original names.

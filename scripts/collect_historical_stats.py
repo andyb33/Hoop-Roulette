@@ -100,7 +100,7 @@ def collect(season):
     if year <= 1995:
         url,primary_metadata=primary_game_log(season,raw)
     elif not raw.exists():
-        with urlopen(Request(url, headers={"User-Agent": "Hoopreel"}), timeout=45) as response:
+        with urlopen(Request(url, headers={"User-Agent": "Hoop Roulette"}), timeout=45) as response:
             raw.write_bytes(response.read())
     groups, games, seen, whole_minute_rows = {}, set(), set(), []
     with raw.open(encoding="utf-8-sig", newline="") as handle:

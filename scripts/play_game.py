@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Play one complete Hoopreel game in a terminal."""
+"""Play one complete Hoop Roulette game in a terminal."""
 
 from __future__ import annotations
 
@@ -52,7 +52,7 @@ def main() -> None:
     args = parser.parse_args()
     seed = args.seed if args.seed is not None else random.SystemRandom().randrange(1_000_000_000)
     game = GameState(RouletteEngine(load_records(), random.Random(seed)))
-    print(f"Hoopreel · seed {seed}")
+    print(f"Hoop Roulette · seed {seed}")
     print("Commands: keep [season] [team] [player] | reroll | score <number/name>")
 
     while not game.is_complete:

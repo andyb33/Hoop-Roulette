@@ -1,4 +1,4 @@
-"""Season-level awards and champion configuration for Hoopreel."""
+"""Season-level awards and champion configuration for Hoop Roulette."""
 
 SEASON_CONFIGS = {
     "2023-24": {

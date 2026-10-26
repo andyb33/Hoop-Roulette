@@ -47,7 +47,7 @@ def write_report(payload: dict, baselines: dict) -> None:
     strategic = payload["strategic"]
     policies = {**baselines["policies"], "strategic": strategic}
     lines = [
-        "# Hoopreel — Strategic Lock-Aware Simulation",
+        "# Hoop Roulette — Strategic Lock-Aware Simulation",
         "",
         "The Strategic policy is a transparent heuristic, not a claim of optimal play.",
         "It values each score against that category's expected replacement value, adds",

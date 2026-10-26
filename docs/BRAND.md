@@ -1,36 +1,25 @@
-# Hoopreel
+# Hoop Roulette
 
 **Tagline:** Spin. Keep. Score.
 
-Hoopreel is a basketball strategy game: spin Season → Team → Player, keep
-the reels you want, and turn the result into a 14-category scorecard.
+A basketball strategy game: spin Season → Team → Player, keep the reels you want, and build a fourteen-category scorecard.
 
 ## Identity
 
-- Write the name as **Hoopreel**, one word, with a capital H.
-- Use **HOOPREEL** in display treatments and the Hoop/reel split in the wordmark.
-- The symbol combines basketball seams with three reel apertures.
-- Orange `#ff641f` is the main action colour; navy `#07111f` is the background;
-  cream `#f4f0e6` is the main text colour. Gold marks qualifying accolades and
-  kept reels; green marks valuable statistical previews.
-- Keep the existing sports-broadcast typography and clear scorecard states.
+- Write **Hoop Roulette**, two words, with capital H and R.
+- Package filenames use `HoopRoulette` without spaces.
+- The original symbol combines basketball seams with three reel apertures.
+- Orange `#ff641f`, navy `#07111f`, cream `#f4f0e6`; gold for accolades and Keeps, green for valuable statistical previews.
+- The header highlights Roulette in orange. Keep the tagline and existing app icon.
 
-## Assets
+Accepted 2026-10-26. This replaces Hoopreel and reconnects the identity to the original NBA Roulette working title, without NBA in the product name. Roulette describes the spinning game mechanic; no wagering is implied.
 
-`web/static/brand-mark.svg` is the source symbol and browser favicon.
-`app-icon.png`, `app-icon.ico`, and `app-icon.icns` are app-icon exports.
+## Compatibility
 
-## Rename and compatibility
+Windows and Apple Silicon Mac only. Current binaries use `HoopRoulette-v0.14.1-Alpha`. Existing native saves, browser storage keys and log directories retain `Hoopreel` identifiers intentionally. No scores, logs or preferences are moved or deleted. `HOOP_ROULETTE_LOG_DIR` is preferred; `HOOPREEL_LOG_DIR` and `NBA_ROULETTE_LOG_DIR` remain accepted.
 
-Accepted 2026-10-01. Hoopreel replaces the working title NBA Roulette.
-Current screens, launch messages, downloads, and documentation use Hoopreel.
-Previous binaries and their matching legacy instructions retain the old name.
+The Python package `nba_roulette`, dataset filenames and historical evidence stay stable. The repository is [andyb33/Hoop-Roulette](https://github.com/andyb33/Hoop-Roulette).
 
-New installations save logs to `Documents/Hoopreel/playtest_logs`. If an old
-`Documents/NBA Roulette/playtest_logs` folder exists, the launcher continues
-there until a Hoopreel folder is created. No logs are moved or deleted.
-`HOOPREEL_LOG_DIR` is the preferred override; `NBA_ROULETTE_LOG_DIR` still works.
+## Assets and rights
 
-The repository is now [andyb33/Hoopreel](https://github.com/andyb33/Hoopreel).
-The Python package `nba_roulette`, dataset filenames, and playtest batch
-identifiers remain stable technical identifiers to preserve imports and evidence.
+`web/static/brand-mark.svg` is the source symbol; PNG, ICO and ICNS exports are the app icons. See [brand and rights review](BRAND_AND_RIGHTS.md). The chosen name is not yet cleared or registered. Do not use ® or imply NBA endorsement.

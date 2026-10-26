@@ -2,7 +2,7 @@
 window.checkDesktopLayout = () => {
   fitLayout();
   const errors = [];
-  const selectors = ['.app-shell', '.category', '.slot', '#spin', '#confirm-score', '#instant-spins', '#skip-animation', '#clear-keeps'];
+  const selectors = ['.brand-lockup', '.score-header', '.header-actions', '.app-shell', '.category', '.slot', '#spin', '#confirm-score', '#instant-spins', '#skip-animation', '#clear-keeps'];
   for (const selector of selectors) for (const element of document.querySelectorAll(selector)) {
     const r = element.getBoundingClientRect();
     if (r.left < -1 || r.top < -1 || r.right > innerWidth + 1 || r.bottom > innerHeight + 1)
@@ -12,6 +12,9 @@ window.checkDesktopLayout = () => {
     if (!panel.classList.contains('hidden') && panel.scrollHeight > panel.clientHeight + 2)
       errors.push(`${panel.className} has vertical overflow ${panel.scrollHeight}/${panel.clientHeight}`);
   }
+  const brand = document.querySelector('.brand-lockup').getBoundingClientRect();
+  const totals = document.querySelector('.score-header').getBoundingClientRect();
+  if (brand.right > totals.left) errors.push('Brand overlaps header scores');
   const columns = [...document.querySelectorAll('.score-section')];
   if (columns.length !== 2 || columns.some(column => column.querySelectorAll('.category').length !== 7))
     errors.push('Expected two columns with seven categories each');

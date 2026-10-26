@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the local Hoopreel browser prototype without external packages."""
+"""Run the local Hoop Roulette browser prototype without external packages."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ DEV_JACKPOTS = False
 
 def default_log_directory() -> Path:
     """Keep packaged playtest evidence outside PyInstaller's temporary folder."""
-    override = os.environ.get("HOOPREEL_LOG_DIR") or os.environ.get("NBA_ROULETTE_LOG_DIR")
+    override = os.environ.get("HOOP_ROULETTE_LOG_DIR") or os.environ.get("HOOPREEL_LOG_DIR") or os.environ.get("NBA_ROULETTE_LOG_DIR")
     if override:
         return Path(override).expanduser()
     if FROZEN:
@@ -53,8 +53,8 @@ def default_log_directory() -> Path:
 
 PLAYTEST_LOGGER = PlaytestBatchLogger(
     default_log_directory(),
-    "playtest_batch_29_v0_14_0_desktop_layout",
-    "Playtest Batch 29 - v0.14.0 Desktop Layout",
+    "playtest_batch_30_v0_14_1_hoop_roulette",
+    "Playtest Batch 30 - v0.14.1 Hoop Roulette",
     target=100,
 )
 SESSIONS: dict[str, BrowserGame] = {}
@@ -148,7 +148,7 @@ def main() -> None:
         "--open-browser",
         action=argparse.BooleanOptionalAction,
         default=FROZEN,
-        help="Open Hoopreel in the default browser after startup",
+        help="Open Hoop Roulette in the default browser after startup",
     )
     args = parser.parse_args()
     if args.dev_jackpots and (FROZEN or args.host not in ("127.0.0.1", "localhost", "::1")):
@@ -157,13 +157,13 @@ def main() -> None:
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     port = server.server_address[1]
     url = f"http://{args.host}:{port}"
-    print(f"Hoopreel running at {url}")
+    print(f"Hoop Roulette running at {url}")
     print(
         f"Playtest batch: {PLAYTEST_LOGGER.batch_name} "
         f"({PLAYTEST_LOGGER.completed_count()}/{PLAYTEST_LOGGER.target})"
     )
     print(f"Logs: {PLAYTEST_LOGGER.directory}")
-    print("Keep this window open while playing. Close it to stop Hoopreel.")
+    print("Keep this window open while playing. Close it to stop Hoop Roulette.")
     if args.open_browser:
         threading.Timer(0.6, webbrowser.open, args=(url,)).start()
     try:
@@ -183,7 +183,7 @@ if __name__ == "__main__":
         error_directory.mkdir(parents=True, exist_ok=True)
         error_path = error_directory / "launcher_error.txt"
         error_path.write_text(details, encoding="utf-8")
-        print("Hoopreel could not start.", file=sys.stderr)
+        print("Hoop Roulette could not start.", file=sys.stderr)
         print(f"Error details were saved to: {error_path}", file=sys.stderr)
         print(details, file=sys.stderr)
         if FROZEN and sys.stdin and sys.stdin.isatty():

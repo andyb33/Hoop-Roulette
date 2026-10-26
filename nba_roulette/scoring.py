@@ -1,4 +1,4 @@
-"""Hoopreel scorecard categories and deterministic score calculations."""
+"""Hoop Roulette scorecard categories and deterministic score calculations."""
 
 from __future__ import annotations
 

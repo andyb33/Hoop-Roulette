@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a validated Hoopreel player-team-season dataset from NBA Stats."""
+"""Build a validated Hoop Roulette player-team-season dataset from NBA Stats."""
 
 from __future__ import annotations
 

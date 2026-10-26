@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run reproducible Random and Greedy Hoopreel baselines."""
+"""Run reproducible Random and Greedy Hoop Roulette baselines."""
 
 from __future__ import annotations
 
@@ -50,7 +50,7 @@ def write_category_csv(summary: dict) -> None:
 
 def write_report(summary: dict) -> None:
     lines = [
-        "# Hoopreel — Random and Greedy Baselines",
+        "# Hoop Roulette — Random and Greedy Baselines",
         "",
         "This report establishes two reproducible, non-strategic full-game baselines",
         "before introducing lock-aware play.",

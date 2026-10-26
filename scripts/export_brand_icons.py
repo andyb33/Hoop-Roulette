@@ -1,4 +1,4 @@
-"""Export Hoopreel app icons from the brand mark's geometric construction.
+"""Export Hoop Roulette app icons from the brand mark's geometric construction.
 
 Requires Pillow for asset generation only; the game has no Pillow dependency.
 """

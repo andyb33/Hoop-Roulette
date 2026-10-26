@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hoopreel desktop window: bundled game, no external browser or console."""
+"""Hoop Roulette desktop window: bundled game, no external browser or console."""
 from __future__ import annotations
 
 import argparse
@@ -20,10 +20,10 @@ from nba_roulette.desktop import DesktopStore, app_directory
 def show_error(message: str) -> None:
     if sys.platform == "win32":
         import ctypes
-        ctypes.windll.user32.MessageBoxW(None, message, "Hoopreel could not start", 0x10)
+        ctypes.windll.user32.MessageBoxW(None, message, "Hoop Roulette could not start", 0x10)
     elif sys.platform == "darwin":
         import subprocess
-        subprocess.run(["osascript", "-e", 'on run argv\ndisplay alert "Hoopreel could not start" message (item 1 of argv)\nend run', message], check=False)
+        subprocess.run(["osascript", "-e", 'on run argv\ndisplay alert "Hoop Roulette could not start" message (item 1 of argv)\nend run', message], check=False)
 
 
 def main() -> int:
@@ -82,7 +82,7 @@ def main() -> int:
         server.desktop_origin = origin
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
-        window = webview.create_window("Hoopreel", origin + "/?desktop=1", width=1280, height=900,
+        window = webview.create_window("Hoop Roulette", origin + "/?desktop=1", width=1280, height=900,
                                        min_size=(900, 650), background_color="#07111f", text_select=True)
         loaded = threading.Event()
         window.events.loaded += loaded.set

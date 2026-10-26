@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produce the three-season Hoopreel distribution analysis and charts."""
+"""Produce the three-season Hoop Roulette distribution analysis and charts."""
 
 from __future__ import annotations
 
@@ -366,7 +366,7 @@ def write_report(summary: dict) -> None:
         "| Category | Two-season mean | Three-season mean | Change |\n"
         "|---|---:|---:|---:|\n" + "\n".join(comparison_rows)
     )
-    report = f"""# Hoopreel — Three-Season Distribution Report
+    report = f"""# Hoop Roulette — Three-Season Distribution Report
 
 - **Seasons:** 2023–24 through 2025–26
 - **Eligible player-team-season records:** {summary['scope']['records']}

@@ -53,7 +53,7 @@ def write_csv(payload: dict) -> None:
 
 def write_report(payload: dict) -> None:
     lines = [
-        "# Hoopreel — Upper Bonus Sensitivity",
+        "# Hoop Roulette — Upper Bonus Sensitivity",
         "",
         "This experiment varies only the heuristic value assigned to progress in each",
         "upper category. Roulette rules, locks, score values, seeds, and dataset remain",
