@@ -68,10 +68,10 @@ function categoryRow(category) {
     : category.unavailable ? "N/A this season · sacrifice for 0" : category.preview !== null ? "Available for this player" : "Spin to preview";
   const valueLabel = category.formula || (category.fixed_value ? `${category.fixed_value} pts` : "");
   const code = CATEGORY_CODES[category.id];
-  const badge = code ? `<i class="category-code" aria-hidden="true">${code}</i>` : "";
+  const badge = "";
   const status = category.used ? `<span class="category-status" aria-label="Scored">✓</span>` : "";
   const classes = [category.used && "used", qualifies && "qualified", elite && "elite", selected && "selected", scoredHighlight && "scored-highlight"].filter(Boolean).join(" ");
-  return `<button class="category ${classes}" data-category="${category.id}" ${category.used || category.preview === null ? "disabled" : ""}>
+  return `<button class="category ${classes}" data-category="${category.id}" aria-pressed="${selected}" ${category.used || category.preview === null ? "disabled" : ""}>
     ${badge}<span class="category-copy"><strong>${category.label} <em>${valueLabel}</em></strong><small>${detail}</small></span>
     <b>${!category.used && category.unavailable ? "N/A" : score ?? "—"}</b>${status}
   </button>`;
@@ -89,6 +89,10 @@ function render(game, { preserveReels = false } = {}) {
   $("#spin-label").textContent = game.spins_used ? `Spin ${game.spins_used} of ${game.spins_total}` : "Ready to spin";
   $("#total-score").textContent = game.total_score;
   $("#upper-score").textContent = game.upper_total;
+  $("#upper-target").textContent = game.upper_target;
+  $("#filled-count").textContent = `${game.categories.filter(c => c.used).length} / ${game.turns_total} filled`;
+  $(".bonus-track").setAttribute("aria-valuenow", Math.min(game.upper_total, game.upper_target));
+  $(".bonus-track").setAttribute("aria-valuemax", game.upper_target);
   $("#bonus-score").textContent = game.bonus ? `+${game.bonus}` : "0";
   $("#bonus-progress").style.width = `${Math.min(100, (game.upper_total / game.upper_target) * 100)}%`;
   const remaining = Math.max(0, game.upper_target - game.upper_total);
@@ -111,6 +115,7 @@ function render(game, { preserveReels = false } = {}) {
   }
 
   $("#player-card").classList.toggle("hidden", !player);
+  $("#player-empty").classList.toggle("hidden", !!player);
   if (player) {
     $("#player-context").textContent = `${player.season}  ·  ${player.team}`;
     $("#player-name").textContent = player.name;
@@ -124,16 +129,18 @@ function render(game, { preserveReels = false } = {}) {
       : `<p class="no-awards">No qualifying accolades</p>`;
     $("#historical-note").classList.toggle("hidden", !player.unavailable_awards.length);
     $("#historical-note").textContent = player.unavailable_awards.length
-      ? `${player.unavailable_awards.join(" · ")}: actual awards not introduced. First/Second-Team selections still count toward lower categories. N/A stats can be sacrificed for 0.` : "";
+      ? `${player.unavailable_awards.join(" · ")} not awarded this season. N/A stats may be scored for 0.` : "";
   }
 
   const grouped = game.categories.reduce((groups, item) => {
     (groups[item.section] ||= []).push(item);
     return groups;
   }, {});
-  $("#scorecard").innerHTML = ["Stats", "Accolades", "Joker"].map(section => `
-    <section class="score-section"><h3>${section}</h3>${(grouped[section] || []).map(categoryRow).join("")}</section>
+  const classic = [...(grouped.Stats || []), ...(grouped.Joker || [])];
+  $("#scorecard").innerHTML = [["Classic stats", classic], ["Accolades", grouped.Accolades || []]].map(([label, categories]) => `
+    <section class="score-section" aria-label="${label}"><h3>${label}<span>Points</span></h3>${categories.map(categoryRow).join("")}</section>
   `).join("");
+  $$(".category").forEach(button => { button.title = button.textContent.trim().replace(/\s+/g, " "); });
   $$(".category:not(:disabled)").forEach(button => button.addEventListener("click", () => selectCategory(button.dataset.category)));
 
   $$(".slot").forEach(button => {
@@ -155,10 +162,10 @@ function render(game, { preserveReels = false } = {}) {
     : "3 spins available";
 
   const selectedCategory = game.categories.find(category => category.id === state.selectedCategory);
-  $("#score-confirm").classList.toggle("hidden", !player);
+
   $("#selected-category").textContent = selectedCategory
     ? `${selectedCategory.label} · ${selectedCategory.preview} points`
-    : "Choose a scorecard category";
+    : game.complete ? "Game complete · your final scorecard" : player ? "Choose a scorecard category" : "Spin to find your first player";
   $("#confirm-score").disabled = !selectedCategory || state.busy;
   $("#confirm-score").textContent = selectedCategory ? (selectedCategory.unavailable ? "Sacrifice for 0" : `Score ${selectedCategory.preview} points`) : "Confirm score";
 
@@ -172,6 +179,7 @@ function render(game, { preserveReels = false } = {}) {
       $("#finished").showModal();
     }
   }
+  fitLayout();
 }
 
 function skipAnimation() {
@@ -269,7 +277,7 @@ async function spin(forcePool = null) {
     const game = await request("/api/spin", { keeps: [...state.keeps], ...(forcePool ? { force_pool: forcePool } : {}) });
     $("#message").textContent = "";
     state.animation = { skipped: false, finish: null };
-    $("#skip-animation").classList.toggle("hidden", reducedMotion.matches || instantSpins);
+    $("#skip-animation").disabled = reducedMotion.matches || instantSpins;
     await animateReels(game);
     setBusy(false);
     render(game);
@@ -279,7 +287,7 @@ async function spin(forcePool = null) {
     if (state.game) render(state.game);
   } finally {
     state.animation = null;
-    $("#skip-animation").classList.add("hidden");
+    $("#skip-animation").disabled = true;
   }
 }
 
@@ -387,32 +395,83 @@ function saveCompletedScore(game) {
   saveSetting(SCORE_STORAGE, JSON.stringify(scores));
   $("#final-best").textContent = `Personal best: ${scores.best}`;
 }
-function showScoreHistory() {
+let historyIndex = 0;
+function renderScoreHistory() {
   $("#history-best").textContent = `Personal best: ${scores.best}`;
   const list = $("#history-scores");
   list.replaceChildren();
-  for (const item of scores.recent) {
-    const detail = document.createElement("details");
-    const summary = document.createElement("summary");
-    summary.textContent = `${item.total} points · ${new Date(item.date).toLocaleString()}`;
-    detail.append(summary);
-    const breakdown = document.createElement("p");
-    breakdown.textContent = `Upper: ${item.upper} · Bonus: +${item.bonus}`;
-    detail.append(breakdown);
+  historyIndex = Math.max(0, Math.min(historyIndex, scores.recent.length - 1));
+  const item = scores.recent[historyIndex];
+  if (item) {
+    const summary = document.createElement("div");
+    summary.className = "history-summary";
+    const total = document.createElement("strong");
+    total.textContent = `${item.total} points`;
+    const info = document.createElement("p");
+    info.textContent = `${new Date(item.date).toLocaleString()} · Upper: ${item.upper} · Bonus: +${item.bonus}`;
+    summary.append(total, info);
+    list.append(summary);
+    const grid = document.createElement("div");
+    grid.className = "history-grid";
     for (const category of item.categories || []) {
-      const row = document.createElement("p");
+      const row = document.createElement("div");
+      row.className = "history-row";
+      const heading = document.createElement("div");
+      const label = document.createElement("span");
+      label.textContent = category.label;
+      const score = document.createElement("strong");
+      score.textContent = category.score;
+      heading.append(label, score);
       const pick = category.selection;
-      row.textContent = `${category.label}: ${category.score}${pick ? ` — ${pick.player} · ${pick.season} ${pick.team}` : ""}`;
-      detail.append(row);
+      const detail = document.createElement("p");
+      detail.textContent = pick ? `${pick.player} · ${pick.season} ${pick.team}` : "—";
+      detail.title = detail.textContent;
+      row.append(heading, detail);
+      grid.append(row);
     }
-    list.append(detail);
-  }
-  if (!scores.recent.length) list.textContent = "Finish a game to save your first score.";
-  $("#score-history").showModal();
+    list.append(grid);
+  } else list.textContent = "Finish a game to save your first score.";
+  $("#history-position").textContent = item ? `${historyIndex + 1} / ${scores.recent.length} games` : "No games yet";
+  $("#history-previous").disabled = historyIndex === 0;
+  $("#history-next").disabled = historyIndex >= scores.recent.length - 1;
+  if ($("#score-history").open) fitHistoryDialog();
 }
+function showScoreHistory() {
+  historyIndex = 0;
+  renderScoreHistory();
+  $("#score-history").showModal();
+  fitHistoryDialog();
+}
+function fitHistoryDialog() {
+  const dialog = $("#score-history");
+  const scale = Math.min(1, ((window.innerWidth || 1280) - 40) / 800,
+    ((window.innerHeight || 860) - 40) / (dialog.scrollHeight || 600));
+  dialog.style.setProperty("--dialog-scale", scale);
+}
+$("#history-previous").addEventListener("click", () => { historyIndex -= 1; renderScoreHistory(); });
+$("#history-next").addEventListener("click", () => { historyIndex += 1; renderScoreHistory(); });
 $("#view-scorecard").addEventListener("click", () => $("#finished").close());
 $("#show-history").addEventListener("click", showScoreHistory);
 $("#close-history").addEventListener("click", () => $("#score-history").close());
+
+function fitLayout() {
+  const shell = $(".app-shell");
+  const width = Math.max(1100, Math.min(1600, window.innerWidth || 1280));
+  let height = Math.max(800, Math.min(900, window.innerHeight || 860));
+  shell.style.width = `${width}px`;
+  shell.style.height = `${height}px`;
+  for (let pass = 0; pass < 2; pass++) {
+    const overflow = Math.max(0, ...$$(".game-panel, .score-panel, .score-section").map(panel => panel.scrollHeight - panel.clientHeight));
+    if (overflow < 1) break;
+    height += overflow + 4;
+    shell.style.height = `${height}px`;
+  }
+  const scale = Math.min(1, (window.innerWidth || width) / width, (window.innerHeight || height) / height);
+  shell.style.transform = `translate(-50%, -50%) scale(${scale})`;
+}
+window.addEventListener("resize", fitLayout);
+window.addEventListener("resize", () => { if ($("#score-history").open) fitHistoryDialog(); });
+fitLayout();
 
 async function initializeGame() {
   try {

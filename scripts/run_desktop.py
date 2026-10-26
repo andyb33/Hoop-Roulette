@@ -115,6 +115,21 @@ def main() -> int:
             return False
         window.events.closing += flush_on_close
 
+        def evaluate_async(code):
+            window.evaluate_js("window.__desktopQA = null; (async () => {" + code +
+                               "})().then(result => {window.__desktopQA = result;})"
+                               ".catch(error => {window.__desktopQA = {error:String(error)};});")
+            deadline = time.monotonic() + 60
+            while True:
+                report = window.evaluate_js("window.__desktopQA")
+                if report is not None:
+                    if report.get("error"):
+                        raise RuntimeError(report["error"])
+                    return report
+                if time.monotonic() > deadline:
+                    raise RuntimeError("Native gameplay check timed out")
+                time.sleep(0.1)
+
         def smoke():
             try:
                 if not loaded.wait(40):
@@ -124,12 +139,11 @@ def main() -> int:
                     if time.monotonic() > deadline:
                         raise RuntimeError("Game did not initialize in native window")
                     time.sleep(0.1)
-                window.evaluate_js("""window.__desktopQA = null; (async () => {
+                window.evaluate_js((ROOT / "scripts" / "desktop_layout_qa.js").read_text(encoding="utf-8"))
+                report = evaluate_async("""
                   if (!instantSpins || scores.best !== 321) throw Error('Native save not loaded');
                   const pool = state.game.normal_pool;
                   if (pool.seasons !== 53 || pool.records !== 13442) throw Error('Incomplete pool');
-                  for (const id of ['skip-animation','instant-spins','clear-keeps','bonus-remaining','restart-confirm'])
-                    if (!document.getElementById(id)) throw Error('Missing control: '+id);
                   await spin();
                   if (!state.game.player || state.game.spins_used !== 1) throw Error('Spin failed');
                   state.keeps.add('season'); render(state.game); clearKeeps();
@@ -137,22 +151,19 @@ def main() -> int:
                   requestNewGame();
                   if (!document.getElementById('restart-confirm').open) throw Error('Restart warning missing');
                   document.getElementById('restart-confirm').close();
-                  const category = state.game.categories.find(c => !c.used && c.preview !== null);
-                  await score(category.id);
-                  setInstantSpins(false); await desktopPending;
-                  return {seasons:pool.seasons, records:pool.records, spin:true, scoring:true, controls:true, native_storage:true};
-                })().then(result => {window.__desktopQA = result;})
-                  .catch(error => {window.__desktopQA = {error:String(error)};});""")
-                report = None
-                deadline = time.monotonic() + 40
-                while report is None:
-                    report = window.evaluate_js("window.__desktopQA")
-                    if time.monotonic() > deadline:
-                        raise RuntimeError("Native gameplay check timed out")
-                    time.sleep(0.1)
-                assert report and report.get("records") == 13442, report
+                  return {seasons:pool.seasons, records:pool.records, spin:true, controls:true, native_storage:true};
+                """)
+                if sys.platform == "darwin":
+                    import subprocess
+                    subprocess.run(["screencapture", "-x", str(args.smoke_test.resolve().with_name("desktop-layout.png"))], check=False)
+                report["default_layout"] = evaluate_async("return {checks: await window.exerciseDesktopLayout()};")
+                window.resize(900, 650)
+                time.sleep(0.6)
+                report["minimum_layout"] = evaluate_async("return {checks: await window.exerciseDesktopLayout()};")
+                evaluate_async("setInstantSpins(false); await desktopPending; return {saved:true};")
                 assert DesktopStore(directory).read()["hoopreel.instantSpins.v1"] == "false"
-                result.update(report, success=True)
+                assert len(json.loads(DesktopStore(directory).read()["hoopreel.scores.v1"])["recent"]) == 2
+                result.update(report, scoring=True, success=True)
             except Exception:
                 result["error"] = traceback.format_exc()
             finally:

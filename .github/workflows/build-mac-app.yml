@@ -1,4 +1,4 @@
-name: Build Hoopreel Mac alpha v0.13.0
+name: Build Hoopreel Mac alpha v0.14.0
 
 on:
   workflow_dispatch:
@@ -39,7 +39,7 @@ jobs:
       - name: Build Mac app
         run: |
           pyinstaller --noconfirm --clean --windowed --onedir \
-            --name Hoopreel-v0.13.0-Alpha \
+            --name Hoopreel-v0.14.0-Alpha \
             --target-arch arm64 \
             --icon web/static/app-icon.icns \
             --osx-bundle-identifier com.andyb33.hoopreel \
@@ -50,22 +50,23 @@ jobs:
             --add-data "data/goat/award_jackpot.json:data/goat" \
             --add-data "data/goat/prehistoric_jackpot.json:data/goat" \
             --add-data "web/static:web/static" \
+            --add-data "scripts/desktop_layout_qa.js:scripts" \
             scripts/run_desktop.py
 
       - name: Smoke-test native app window
-        run: python scripts/check_desktop_build.py dist/Hoopreel-v0.13.0-Alpha.app/Contents/MacOS/Hoopreel-v0.13.0-Alpha
+        run: python scripts/check_desktop_build.py dist/Hoopreel-v0.14.0-Alpha.app/Contents/MacOS/Hoopreel-v0.14.0-Alpha
 
       - name: Package app and instructions
         run: |
-          cp docs/EXTERNAL_ALPHA_V0_13_0.md dist/README.txt
+          cp docs/EXTERNAL_ALPHA_V0_14_0.md dist/README.txt
           cd dist
-          zip -q -r Hoopreel-v0.13.0-Alpha-Mac-Apple-Silicon.zip Hoopreel-v0.13.0-Alpha.app README.txt
+          zip -q -r Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon.zip Hoopreel-v0.14.0-Alpha.app README.txt
 
       - name: Upload Mac build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.13.0-Alpha-Mac-Apple-Silicon
-          path: dist/Hoopreel-v0.13.0-Alpha-Mac-Apple-Silicon.zip
+          name: Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon
+          path: dist/Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon.zip
           if-no-files-found: error
 
       - name: Upload native window QA report
@@ -73,5 +74,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: native-window-qa-Mac
-          path: desktop-smoke.json
+          path: |
+            desktop-smoke.json
+            desktop-layout.png
           if-no-files-found: warn

@@ -11,6 +11,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
+**v0.14.0 desktop layout:** the approved side-by-side Classic/Accolades scorecard is now the working UI. The complete game canvas fits without scrolling; history uses game-by-game navigation. Windows and Apple Silicon Mac only. [Checkpoint and downloads](docs/CHECKPOINT_V0_14_0.md).
+
 **v0.13.0 standalone desktop:** double-click the Windows `.exe` or Apple Silicon Mac `.app` to play in a dedicated window with all data bundled. No CMD window or browser tab. Desktop testing comes first; public web hosting is deferred. [Release and downloads](docs/CHECKPOINT_V0_13_0.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_13_0.md).
 
 **Previous v0.12.1 browser-launching desktop checkpoint:** Skip animation, remembered Instant spins, unfinished-game restart confirmation, bonus points remaining and Clear Keeps. New builds target Windows and Apple Silicon Mac only; Intel builds are discontinued. [Release and downloads](docs/CHECKPOINT_V0_12_1.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_12_1.md).

@@ -15,7 +15,7 @@ const storage = new Map();
 const context = vm.createContext({console, Date, Math, Number, Set, JSON, Promise, URLSearchParams,
   document:{body:node('body'),querySelector:node,querySelectorAll:()=>[],createElement:()=>({append(){}})},
   localStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},
-  window:{location:{search:''},matchMedia:()=>({matches:false}),setInterval:()=>1,clearInterval(){},setTimeout:f=>f(),clearTimeout(){}},
+  window:{addEventListener(){},location:{search:''},matchMedia:()=>({matches:false}),setInterval:()=>1,clearInterval(){},setTimeout:f=>f(),clearTimeout(){}},
   fetch:()=>new Promise(()=>{})});
 vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
 (async()=>{

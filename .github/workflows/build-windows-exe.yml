@@ -1,4 +1,4 @@
-name: Build Hoopreel Windows alpha v0.13.0
+name: Build Hoopreel Windows alpha v0.14.0
 
 on:
   workflow_dispatch:
@@ -39,7 +39,7 @@ jobs:
         shell: cmd
         run: >-
           pyinstaller --noconfirm --clean --onefile --windowed
-          --name Hoopreel-v0.13.0-Alpha
+          --name Hoopreel-v0.14.0-Alpha
           --icon web/static/app-icon.ico
           --paths "."
           --collect-submodules nba_roulette
@@ -48,21 +48,22 @@ jobs:
           --add-data "data/goat/award_jackpot.json;data/goat"
           --add-data "data/goat/prehistoric_jackpot.json;data/goat"
           --add-data "web/static;web/static"
+          --add-data "scripts/desktop_layout_qa.js;scripts"
           scripts/run_desktop.py
 
       - name: Smoke-test native app window
-        run: python scripts/check_desktop_build.py dist/Hoopreel-v0.13.0-Alpha.exe
+        run: python scripts/check_desktop_build.py dist/Hoopreel-v0.14.0-Alpha.exe
 
       - name: Add tester instructions
         shell: pwsh
-        run: Copy-Item docs/EXTERNAL_ALPHA_V0_13_0.md dist/README.txt
+        run: Copy-Item docs/EXTERNAL_ALPHA_V0_14_0.md dist/README.txt
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.13.0-Alpha-Windows
+          name: Hoopreel-v0.14.0-Alpha-Windows
           path: |
-            dist/Hoopreel-v0.13.0-Alpha.exe
+            dist/Hoopreel-v0.14.0-Alpha.exe
             dist/README.txt
           if-no-files-found: error
 
@@ -71,5 +72,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: native-window-qa-Windows
-          path: desktop-smoke.json
+          path: |
+            desktop-smoke.json
+            desktop-layout.png
           if-no-files-found: warn

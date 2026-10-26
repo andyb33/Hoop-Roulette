@@ -10,134 +10,57 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand-lockup">
-      <img class="brand-symbol" src="/brand-mark.svg" width="48" height="48" alt="">
-      <div>
-        <p class="eyebrow">SPIN. KEEP. SCORE.</p>
-        <h1>Hoop<span>reel</span></h1>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <img class="brand-symbol" src="/brand-mark.svg" width="38" height="38" alt="">
+        <div><h1>Hoop<span>reel</span></h1><p class="eyebrow">SPIN. KEEP. SCORE.</p></div>
       </div>
-    </div>
-    <div class="header-actions">
-      <div class="turn-chip"><span>Turn</span><strong id="header-turn">1 / 14</strong></div>
-      <button id="show-history" class="secondary">Scores</button>
-      <button id="new-game" class="secondary">New game</button>
-    </div>
-  </header>
-
-  <main class="layout">
-    <section class="game-panel">
-      <div class="progress-row">
-        <div>
-          <p class="stage-kicker">THE DRAW</p>
-          <h2>Build your next scoring play</h2>
+      <div class="score-header" aria-label="Game totals">
+        <div><span>Total score</span><strong id="total-score">0</strong></div>
+        <div><span>Upper score</span><strong><span id="upper-score">0</span><small> / <span id="upper-target">120</span></small></strong></div>
+        <div><span>Bonus</span><strong id="bonus-score">0</strong></div>
+      </div>
+      <div class="header-actions">
+        <div class="turn-chip"><span>Turn</span><strong id="header-turn">1 / 14</strong></div>
+        <button id="show-history" class="secondary">Scores</button>
+        <button id="new-game" class="secondary">New game</button>
+      </div>
+    </header>
+    <main class="layout">
+      <section class="score-panel" aria-label="Scorecard">
+        <div class="section-heading"><div><p class="stage-kicker">YOUR SCORECARD</p><h2>Find the best fit.</h2></div><span id="filled-count">0 / 14 filled</span></div>
+        <div class="bonus-row"><div class="bonus-track" role="progressbar" aria-label="Upper bonus progress" aria-valuemin="0" aria-valuemax="120" aria-valuenow="0"><span id="bonus-progress"></span></div><p id="bonus-remaining" class="bonus-remaining" role="status">120 points to bonus</p></div>
+        <div id="scorecard"></div>
+        <div id="score-confirm" class="score-confirm" aria-live="polite"><div><span>SELECTED PLAY</span><strong id="selected-category">Spin to find your first player</strong></div><button id="confirm-score" class="confirm-button" disabled>Confirm score</button></div>
+      </section>
+      <section class="game-panel" aria-label="The draw">
+        <div class="progress-row"><div><p class="stage-kicker">THE DRAW</p><h2 id="turn-label">Turn 1 of 14</h2></div><strong id="spin-label">Ready to spin</strong></div>
+        <div class="roulette" aria-label="Season, team, and player roulette">
+          <button class="slot" data-keep="season" disabled><span class="slot-header"><span class="slot-label">Season</span><span class="lock-glyph" aria-hidden="true"></span></span><span class="reel-window"><span class="reel-value" id="season-value">—</span></span><span class="keep-text">Keep season</span></button>
+          <button class="slot" data-keep="team" disabled><span class="slot-header"><span class="slot-label">Team</span><span class="lock-glyph" aria-hidden="true"></span></span><span class="reel-window"><span class="reel-value" id="team-value">—</span></span><span class="keep-text">Keep team</span></button>
+          <button class="slot player-slot" data-keep="player" disabled><span class="slot-header"><span class="slot-label">Player</span><span class="lock-glyph" aria-hidden="true"></span></span><span class="reel-window"><span class="reel-value" id="player-value">—</span></span><span class="keep-text">Keep player</span></button>
         </div>
-        <div class="spin-status">
-          <span id="turn-label">Turn 1 / 14</span>
-          <strong id="spin-label">Ready to spin</strong>
+        <div id="jackpot-banner" class="jackpot-banner hidden" role="status" aria-live="polite"><span id="jackpot-icon" aria-hidden="true"></span><div><small>GOAT SPIN</small><h2 id="jackpot-title"></h2><p id="jackpot-note"></p></div><div id="jackpot-particles" aria-hidden="true"></div></div>
+        <div id="player-empty" class="player-empty"><img src="/brand-mark.svg" alt="" width="54" height="54"><h2>Your next pick awaits.</h2><p>Spin a season, team and player.<br>Keep your best reels. Build your scorecard.</p></div>
+        <article id="player-card" class="player-card hidden">
+          <div class="player-heading"><div><p id="player-context" class="eyebrow"></p><h2 id="player-name"></h2></div><div id="jersey" class="jersey" aria-label="Jersey number"></div></div>
+          <div id="stats" class="stats"></div>
+          <div id="awards" class="awards" aria-label="Qualifying accolades"></div>
+          <p id="historical-note" class="historical-note hidden"></p>
+        </article>
+        <div class="spin-zone">
+          <button id="spin" class="spin-button" disabled><span class="spin-icon" aria-hidden="true">↻</span><span class="spin-copy">Spin the roulette</span><small id="spin-count">3 spins available</small></button>
+          <div class="spin-options"><label><input id="instant-spins" type="checkbox">Instant spins</label><button id="skip-animation" class="secondary" type="button" disabled>Skip animation</button><button id="clear-keeps" class="secondary" type="button" disabled>Clear Keeps</button></div>
+          <div id="dev-jackpots" class="dev-jackpots hidden"><span>Development preview · games are not logged</span><button data-force="award" class="secondary">Gold jackpot</button><button data-force="prehistoric" class="secondary">Prehistoric jackpot</button></div>
         </div>
-      </div>
-
-      <div id="jackpot-banner" class="jackpot-banner hidden" role="status" aria-live="polite">
-        <span id="jackpot-icon" aria-hidden="true"></span>
-        <div><small>GOAT SPIN</small><h2 id="jackpot-title"></h2><p id="jackpot-note"></p></div>
-        <div id="jackpot-particles" aria-hidden="true"></div>
-      </div>
-      <div class="roulette" aria-label="Season, team, and player roulette">
-        <button class="slot" data-keep="season" disabled>
-          <span class="slot-header"><span class="slot-label">Season</span><span class="lock-glyph" aria-hidden="true"></span></span>
-          <span class="reel-window"><span class="reel-value" id="season-value">—</span></span>
-          <span class="keep-text">Keep season</span>
-        </button>
-        <button class="slot" data-keep="team" disabled>
-          <span class="slot-header"><span class="slot-label">Team</span><span class="lock-glyph" aria-hidden="true"></span></span>
-          <span class="reel-window"><span class="reel-value" id="team-value">—</span></span>
-          <span class="keep-text">Keep team</span>
-        </button>
-        <button class="slot player-slot" data-keep="player" disabled>
-          <span class="slot-header"><span class="slot-label">Player</span><span class="lock-glyph" aria-hidden="true"></span></span>
-          <span class="reel-window"><span class="reel-value" id="player-value">—</span></span>
-          <span class="keep-text">Keep player</span>
-        </button>
-      </div>
-
-      <p class="draft-rule"><span class="draft-rule-mark" aria-hidden="true">*</span><span><strong>One pick per player.</strong> Scored players leave this draft; passed players can return.</span></p>
-      <button id="spin" class="spin-button"><span class="spin-icon" aria-hidden="true">↻</span><span class="spin-copy">Spin</span><small id="spin-count">3 spins available</small></button>
-      <button id="skip-animation" class="secondary hidden" type="button" aria-label="Skip animation and reveal this spin's result">Skip animation</button>
-      <div class="spin-options">
-        <label><input id="instant-spins" type="checkbox"> Instant spins</label>
-        <button id="clear-keeps" class="secondary" type="button" disabled>Clear Keeps</button>
-      </div>
-      <p id="message" class="message" role="status"></p>
-      <div id="dev-jackpots" class="dev-jackpots hidden">
-        <span>Development preview · games are not logged</span>
-        <button data-force="award" class="secondary">Preview gold jackpot</button>
-        <button data-force="prehistoric" class="secondary">Preview prehistoric jackpot</button>
-      </div>
-
-      <article id="player-card" class="player-card hidden">
-        <div class="player-heading">
-          <div>
-            <p id="player-context" class="eyebrow"></p>
-            <h2 id="player-name"></h2>
-          </div>
-          <div id="jersey" class="jersey" aria-label="Jersey number"></div>
-        </div>
-        <div id="stats" class="stats"></div>
-        <div id="awards" class="awards" aria-label="Qualifying accolades"></div>
-        <p id="historical-note" class="historical-note hidden"></p>
-      </article>
-    </section>
-
-    <aside class="score-panel">
-      <div class="score-header">
-        <div>
-          <span>Score</span>
-          <strong id="total-score">0</strong>
-        </div>
-        <div>
-          <span>Upper bonus</span>
-          <strong><span id="upper-score">0</span><small> / 120</small></strong>
-        </div>
-        <div>
-          <span>Bonus</span>
-          <strong id="bonus-score">0</strong>
-        </div>
-      </div>
-      <div class="bonus-track" aria-label="Upper bonus progress"><span id="bonus-progress"></span></div>
-      <p id="bonus-remaining" class="bonus-remaining" role="status">120 points to bonus</p>
-      <div id="scorecard"></div>
-      <div id="score-confirm" class="score-confirm hidden" aria-live="polite">
-        <div><span>Selected play</span><strong id="selected-category">Choose a category</strong></div>
-        <button id="confirm-score" class="confirm-button" disabled>Confirm score</button>
-      </div>
-    </aside>
-  </main>
-
-  <dialog id="finished" aria-labelledby="finished-title">
-    <p class="eyebrow">GAME COMPLETE</p>
-    <h2 id="finished-title">Final score: <span id="final-score"></span></h2>
-    <p id="final-breakdown"></p>
-    <p id="final-best"></p>
-    <button id="view-scorecard" class="secondary">View scorecard</button>
-    <button id="play-again" class="spin-button">Play Again</button>
-  </dialog>
-
-  <dialog id="restart-confirm" aria-labelledby="restart-title">
-    <h2 id="restart-title">Start a new game?</h2>
-    <p>Your unfinished game will be replaced.</p>
-    <button id="cancel-restart" class="secondary" type="button" autofocus>Keep playing</button>
-    <button id="confirm-restart" class="secondary" type="button">Start new game</button>
-  </dialog>
-
-  <dialog id="score-history" aria-labelledby="history-title">
-    <h2 id="history-title">Your scores</h2>
-    <p id="history-best"></p>
-    <p id="history-storage-note">Last 50 games · saved in this browser</p>
-    <div id="history-scores"></div>
-    <button id="close-history" class="secondary">Close</button>
-  </dialog>
-
+      </section>
+    </main>
+    <footer class="app-footer"><span class="draft-rule"><strong>One pick per player.</strong> Scored players leave this draft; passed players can return.</span><p id="message" class="message" role="status"></p></footer>
+  </div>
+  <dialog id="finished" aria-labelledby="finished-title"><p class="eyebrow">GAME COMPLETE</p><h2 id="finished-title">Final score: <span id="final-score"></span></h2><p id="final-breakdown"></p><p id="final-best"></p><div class="dialog-actions"><button id="view-scorecard" class="secondary">View scorecard</button><button id="play-again" class="confirm-button">Play Again</button></div></dialog>
+  <dialog id="restart-confirm" aria-labelledby="restart-title"><h2 id="restart-title">Start a new game?</h2><p>Your unfinished game will be replaced.</p><div class="dialog-actions"><button id="cancel-restart" class="secondary" type="button" autofocus>Keep playing</button><button id="confirm-restart" class="confirm-button" type="button">Start new game</button></div></dialog>
+  <dialog id="score-history" aria-labelledby="history-title"><div class="history-heading"><div><h2 id="history-title">Your scores</h2><p id="history-best"></p></div><button id="close-history" class="secondary">Close</button></div><p id="history-storage-note">Last 50 games · saved in this browser</p><div id="history-scores"></div><div class="history-navigation"><button id="history-previous" class="secondary">← Newer</button><span id="history-position" aria-live="polite"></span><button id="history-next" class="secondary">Older →</button></div></dialog>
   <script src="/app.js" defer></script>
 </body>
 </html>
