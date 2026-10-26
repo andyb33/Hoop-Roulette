@@ -8,4 +8,13 @@ All QOL controls from v0.12.1 are included. Data and scoring remain unchanged: 5
 
 The build workflows now test the actual native window: loading the complete pool, restoring native preferences, spinning, clearing Keeps, confirming the unfinished-game warning, scoring and saving settings. They also require the process to exit and its loopback server thread to stop. This is automated GUI behavior testing, not a human visual playtest.
 
-Build results and downloads will be appended after both packages pass.
+Both packages passed 146 Python tests, frontend checks and the actual native-window gameplay/storage/shutdown test. The test confirmed all 53 seasons / 13,442 entries and that the local service stops on exit. Built from `d504c20d629093f337787db48bc80da49d1532b8`. Job steps, artifact digests and native QA report artifacts are recorded in `analysis/desktop_v0_13_0_builds.json`.
+
+## Downloads
+
+- [Windows standalone executable](https://github.com/andyb33/Hoopreel/actions/runs/40261242464/artifacts/12624628389)
+- [Mac standalone app — Apple Silicon](https://github.com/andyb33/Hoopreel/actions/runs/40261242450/artifacts/12624633396)
+
+Fully extract the archive first. The Mac artifact contains an inner ZIP. GitHub sign-in may be required. Human visual playtesting is still needed.
+
+Earlier build attempts caught a JavaScript Promise test-handshake issue and a Windows close-event deadlock; both are fixed in the successful builds above. GitHub failure emails for earlier attempts do not describe these successful packages.
