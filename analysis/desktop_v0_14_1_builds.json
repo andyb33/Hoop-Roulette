@@ -1,0 +1,291 @@
+{
+  "version": "0.14.1",
+  "source_commit": "87370560939fe5a873315bc45c04b2f40f2d2bbe",
+  "tests": 146,
+  "runs": [
+    {
+      "run_id": 40319162889,
+      "jobs": [
+        {
+          "id": 121559370136,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 40319162889,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Verify Apple Silicon runner",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Install packager",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Check frontend behavior",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Build Mac app",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Smoke-test native app window",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Package app and instructions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Upload Mac build",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Upload native window QA report",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 12
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 24
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 25
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 12648691394,
+          "name": "HoopRoulette-v0.14.1-Alpha-Mac-Apple-Silicon",
+          "size_in_bytes": 37580468,
+          "url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12648691394",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12648691394/zip",
+          "expired": false,
+          "created_at": "2026-10-26T12:00:44Z",
+          "expires_at": "2027-01-24T11:59:48Z",
+          "updated_at": "2026-10-26T12:00:44Z",
+          "digest": "sha256:efb2ce43d836c2b41f87e7b56870219acb81d1855ecd6e622ab6bbcb6c03c847",
+          "workflow_run": {
+            "id": 40319162889,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "87370560939fe5a873315bc45c04b2f40f2d2bbe"
+          }
+        },
+        {
+          "id": 12647589695,
+          "name": "native-window-qa-Mac",
+          "size_in_bytes": 206600,
+          "url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12647589695",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12647589695/zip",
+          "expired": false,
+          "created_at": "2026-10-26T12:00:45Z",
+          "expires_at": "2027-01-24T11:59:48Z",
+          "updated_at": "2026-10-26T12:00:45Z",
+          "digest": "sha256:3a55c4c9d7b4fca612a8d3d5e86f620594e63a8494769045f9a484c4aa6ee249",
+          "workflow_run": {
+            "id": 40319162889,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "87370560939fe5a873315bc45c04b2f40f2d2bbe"
+          }
+        }
+      ]
+    },
+    {
+      "run_id": 40319162811,
+      "jobs": [
+        {
+          "id": 121559370255,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 40319162811,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Install packager",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check frontend behavior",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Build single-file launcher",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Smoke-test native app window",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Add tester instructions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Upload Windows build",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Upload native window QA report",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 22
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 12648895942,
+          "name": "native-window-qa-Windows",
+          "size_in_bytes": 621,
+          "url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12648895942",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12648895942/zip",
+          "expired": false,
+          "created_at": "2026-10-26T12:01:17Z",
+          "expires_at": "2027-01-24T11:59:48Z",
+          "updated_at": "2026-10-26T12:01:17Z",
+          "digest": "sha256:13bbd8c07a000694534ef5aa38dc5cb11ab58118385764142c701cad79d71744",
+          "workflow_run": {
+            "id": 40319162811,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "87370560939fe5a873315bc45c04b2f40f2d2bbe"
+          }
+        },
+        {
+          "id": 12648472091,
+          "name": "HoopRoulette-v0.14.1-Alpha-Windows",
+          "size_in_bytes": 13920590,
+          "url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12648472091",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoop-Roulette/actions/artifacts/12648472091/zip",
+          "expired": false,
+          "created_at": "2026-10-26T12:01:15Z",
+          "expires_at": "2027-01-24T11:59:48Z",
+          "updated_at": "2026-10-26T12:01:15Z",
+          "digest": "sha256:19a48882c401fcac499148aaf583a2f18b8be6f7d5db276dc3c45765ec149a12",
+          "workflow_run": {
+            "id": 40319162811,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "87370560939fe5a873315bc45c04b2f40f2d2bbe"
+          }
+        }
+      ]
+    }
+  ]
+}
