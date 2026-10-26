@@ -87,11 +87,32 @@ def main() -> int:
         loaded = threading.Event()
         window.events.loaded += loaded.set
 
+        close_ready = threading.Event()
+        close_requested = threading.Event()
+
         def flush_on_close():
-            try:
-                window.evaluate_js("desktopPending.then(() => true)")
-            except Exception:
-                pass
+            if close_ready.is_set():
+                return True
+            if close_requested.is_set():
+                return False
+            close_requested.set()
+
+            def finish_close():
+                # Closing events block the Windows UI thread. Evaluate from a
+                # worker after cancelling the first close, then close for real.
+                try:
+                    deadline = time.monotonic() + 5
+                    while window.evaluate_js("desktopPendingCount"):
+                        if time.monotonic() > deadline:
+                            break
+                        time.sleep(0.05)
+                except Exception:
+                    pass
+                close_ready.set()
+                window.destroy()
+
+            threading.Thread(target=finish_close, daemon=True).start()
+            return False
         window.events.closing += flush_on_close
 
         def smoke():
@@ -129,7 +150,7 @@ def main() -> int:
                     if time.monotonic() > deadline:
                         raise RuntimeError("Native gameplay check timed out")
                     time.sleep(0.1)
-                assert report and report["records"] == 13442, report
+                assert report and report.get("records") == 13442, report
                 assert DesktopStore(directory).read()["hoopreel.instantSpins.v1"] == "false"
                 result.update(report, success=True)
             except Exception:

@@ -6,6 +6,7 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const desktopMode = new URLSearchParams(window.location.search).get("desktop") === "1";
 let desktopSettings = null;
 let desktopPending = Promise.resolve();
+let desktopPendingCount = 0;
 function readSetting(key) {
   if (desktopSettings !== null) return desktopSettings[key] ?? null;
   return localStorage.getItem(key);
@@ -13,7 +14,9 @@ function readSetting(key) {
 function saveSetting(key, value) {
   if (desktopMode) {
     if (desktopSettings !== null) desktopSettings[key] = value;
-    desktopPending = desktopPending.catch(() => {}).then(() => request("/api/desktop-storage", {key, value}));
+    desktopPendingCount += 1;
+    desktopPending = desktopPending.catch(() => {}).then(() => request("/api/desktop-storage", {key, value}))
+      .finally(() => { desktopPendingCount -= 1; });
     desktopPending.catch(() => { $("#message").textContent = "Your app settings or scores could not be saved. Please check disk space and permissions."; });
   } else {
     try { localStorage.setItem(key, value); } catch (_) { /* Session state remains available. */ }

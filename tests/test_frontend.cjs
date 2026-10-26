@@ -138,6 +138,7 @@ vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
     await initializeGame();
     if(!instantSpins || scores.best!==321 || !state.game)throw Error('Desktop bootstrap failed');
     setInstantSpins(false);setInstantSpins(true);await desktopPending;
+    if(desktopPendingCount!==0)throw Error('Desktop save queue did not drain');
   })()`,desktopContext);
   assert.deepEqual(nativeWrites.map(p=>p.value), ['false','true']);
   console.log('Frontend animation and score-history checks passed');
