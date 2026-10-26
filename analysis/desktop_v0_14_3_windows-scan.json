@@ -1,0 +1,871 @@
+{
+  "target": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist",
+  "status": "no_threats_detected",
+  "scanned_at_utc": "2026-10-26T12:54:20.5476309Z",
+  "engine_version": "1.1.26090.9",
+  "signature_version": "1.461.140.0",
+  "signature_updated": "2026-10-21T14:58:25.0000000+00:00",
+  "exit_code": 0,
+  "files": [
+    {
+      "hash": "ED2080DEEF8513932A06B8970C858753894409C617F750D7CD39186434996569",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\HoopRoulette.exe"
+    },
+    {
+      "hash": "9334EDBD4E7F0336A3D84E8EE308A021A645BF2C45007E2721E4E5D929A07855",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\README.txt"
+    },
+    {
+      "hash": "C77DE90CAD749087A0C5DC5E19D78D24F6EF44E7E5AC19B8420CFC0CEA62395D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_asyncio.pyd"
+    },
+    {
+      "hash": "65F610646D10D5BABEA080E060D244B546EC52C54012E5E937DC72DCC2E2E7BC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_bz2.pyd"
+    },
+    {
+      "hash": "9AF5E4F68A41F26B726F2E9424F9D58A4F5666189F6A48BE95F406B257102AEC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_cffi_backend.cp312-win_amd64.pyd"
+    },
+    {
+      "hash": "0E56107A891100535F2DA79D85A5AE65FF1227B4765BD108F8593AC1A1110D81",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_ctypes.pyd"
+    },
+    {
+      "hash": "AEACFEAD2BEFCC0768063A037BB64BD32109AE09CB144E5F571B04DD7965DB9D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_decimal.pyd"
+    },
+    {
+      "hash": "5009A9A53C03EF8387443B5CF6CE08E5C3A79727466A0B931C5BBCA915BF89CA",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_elementtree.pyd"
+    },
+    {
+      "hash": "03D233DBACE599168EAFFEC823DE6ED7BEEC8C2A4EBFE9B8A3D8E042A59AF3BA",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_hashlib.pyd"
+    },
+    {
+      "hash": "E3DEECC1F59A3B811C608861DECD84DE1E8DF8BAFD5E2B39188861318C5A38CF",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_lzma.pyd"
+    },
+    {
+      "hash": "2C636DF7059CB0DD7E978DD735C7C5C8DDB09CF94754CF9E232296B96C5C545A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_multiprocessing.pyd"
+    },
+    {
+      "hash": "662126FF80C3A1B4CEDF74074029C12AE4743E6D3B37376E39AC70AACB7D4D3C",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_overlapped.pyd"
+    },
+    {
+      "hash": "48E76E0AD63F6932B4A77B5819F41C1E7595636CA8D9E824F0943A14B8BB5035",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_queue.pyd"
+    },
+    {
+      "hash": "3EFA4636CF9E350856F6927D67A4C2564BF9BD2758A00BBF17D3AECE5B60016D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_socket.pyd"
+    },
+    {
+      "hash": "0BC527D2DBC50009F43B2ED5D5982C4F63F4B647647FFA9EDA612DCDA80F6040",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_ssl.pyd"
+    },
+    {
+      "hash": "ACCE4F281D7FFB2DEC0997527FAF25B1DF62AD7BD3032C568DDCF65C90EDC867",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_uuid.pyd"
+    },
+    {
+      "hash": "A980F1E7A29842BD946863FC2693FBEB555A9DC0F9E1630DFED9A2FCDEF3ECE2",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\_wmi.pyd"
+    },
+    {
+      "hash": "88ACE577A9C51061CB7D1A36BABBBEFA48212FADC838FFDE98FDFFF60DE18386",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-console-l1-1-0.dll"
+    },
+    {
+      "hash": "1BD81DFD19204B44662510D9054852FB77C9F25C1088D647881C9B976CC16818",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-datetime-l1-1-0.dll"
+    },
+    {
+      "hash": "591358EB4D1531E9563EE0813E4301C552CE364C912CE684D16576EABF195DC3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-debug-l1-1-0.dll"
+    },
+    {
+      "hash": "D56CE7B1CD76108AD6C137326EC694A14C99D48C3D7B0ACE8C3FF4D9BCEE3CE8",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-errorhandling-l1-1-0.dll"
+    },
+    {
+      "hash": "91D249D7BC0E38EF6BCB17158B1FDC6DD8888DC086615C9B8B750B87E52A5FB3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-fibers-l1-1-0.dll"
+    },
+    {
+      "hash": "FC9D86CEC621383EAB636EBC87DDD3F5C19A3CB2A33D97BE112C051D0B275429",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-fibers-l1-1-1.dll"
+    },
+    {
+      "hash": "1CA895ABA4E7435563A6B43E85EBA67A0F8C74AA6A6A94D0FC48FA35535E2585",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-file-l1-1-0.dll"
+    },
+    {
+      "hash": "4CADBC0C39DA7C6722206FDCEBD670ABE5B8D261E7B041DD94F9397A89D1990D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-file-l1-2-0.dll"
+    },
+    {
+      "hash": "93C624B366BA16C643FC8933070A26F03B073AD0CF7F80173266D67536C61989",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-file-l2-1-0.dll"
+    },
+    {
+      "hash": "39095F59C41D76EC81BB2723D646FDE4C148E7CC3402F4980D2ADE95CB9C84F9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-handle-l1-1-0.dll"
+    },
+    {
+      "hash": "8F105771B236DBCB859DE271F0A6822CE1CB79C36988DD42C9E3F6F55C5F7EB9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-heap-l1-1-0.dll"
+    },
+    {
+      "hash": "53B25E753CA785BF8B695D89DDE5818A318890211DC992A89146F16658F0B606",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-interlocked-l1-1-0.dll"
+    },
+    {
+      "hash": "A9B13A1CD1B8C19B0C6B4AFCD5BB0DD29C0E2288231AC9E6DB8510094CE68BA6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-kernel32-legacy-l1-1-1.dll"
+    },
+    {
+      "hash": "7F39BA298B41E4963047341288CAB36B6A241835EE11BA4AD70F44DACD40906C",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-libraryloader-l1-1-0.dll"
+    },
+    {
+      "hash": "6EE44DD0D8510DC024C9F7C79B1B9FA88C987B26B6BEB6653DDD11751C34E5DC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-localization-l1-2-0.dll"
+    },
+    {
+      "hash": "0512A35316EC9180437F86696A84C5C06A7E4E82E050055A656E5BF9FCA206F9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-memory-l1-1-0.dll"
+    },
+    {
+      "hash": "C05F1FFFE3B5A2738EA54CE9485CCA026FB9635F982626FBA1E1DCC531897273",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-namedpipe-l1-1-0.dll"
+    },
+    {
+      "hash": "C4ECA98C3C67B6395D5B005B00AC1EB0318B86B23AA71035A44C2B1602BEFBA9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-processenvironment-l1-1-0.dll"
+    },
+    {
+      "hash": "5CCB89E93D67BC3288D4E84649C5346E66E15E3D7CD65D989DAF3F4CB584BE9A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-processthreads-l1-1-0.dll"
+    },
+    {
+      "hash": "4AD565A8BA3EF0EA8AB87221AD11F83EE0BC844CE236607958406663B407333E",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-processthreads-l1-1-1.dll"
+    },
+    {
+      "hash": "7809160932F44E59B021699F5BC68799EB7293EE1FA926D6FCCA3C3445302E61",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-profile-l1-1-0.dll"
+    },
+    {
+      "hash": "9DC1E91E71C7C054854BD1487CB4E6946D82C9F463430F1C4E8D1471005172B1",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-rtlsupport-l1-1-0.dll"
+    },
+    {
+      "hash": "60FC31D2A0C634412F529DBA76AF3B9BF991352877C6DAE528186D3935704CFD",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-string-l1-1-0.dll"
+    },
+    {
+      "hash": "3A72B4F29F39A265D32AD12F0CE15DBF60129C840E10D84D427829EDE45E78AD",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-synch-l1-1-0.dll"
+    },
+    {
+      "hash": "EFC1E4460984A73CF47A3DEF033AF1C8F3B1DBC1A56CD27781D3AACF3E3330CB",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-synch-l1-2-0.dll"
+    },
+    {
+      "hash": "B203D862DDEF1DD62BF623FC866C7F7A9C317C1C2AE30D1F52CB41F955B5698E",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-sysinfo-l1-1-0.dll"
+    },
+    {
+      "hash": "2703635D835396AFD0F138D7C73751AFE7E33A24F4225D08C1690B0A371932C0",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-sysinfo-l1-2-0.dll"
+    },
+    {
+      "hash": "33F4FDDC181066FCE06B2227BDED813F95E94ED1F3D785E982C6B6B56C510C57",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-timezone-l1-1-0.dll"
+    },
+    {
+      "hash": "6EDA016742A6171205A387A14B3C0B331841567740376F56768F8C151724207D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-core-util-l1-1-0.dll"
+    },
+    {
+      "hash": "B762061B688AAE679AFE788904D2C9970F74A7DAC98F3B42463D08F25E483D3F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-conio-l1-1-0.dll"
+    },
+    {
+      "hash": "EBB2AE5535A64F65DAEAB8235585114FC9DD2CF1A49F5852D446250B998B6AE4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-convert-l1-1-0.dll"
+    },
+    {
+      "hash": "17D63275D00BDD8670422B95BD264C532998E0A1B041079E54FCE4B6B7A55819",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-environment-l1-1-0.dll"
+    },
+    {
+      "hash": "9A9E2A65A281644E368D0F272B95BA5F6B445D1C35910D06056C5EBEB77402DB",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-filesystem-l1-1-0.dll"
+    },
+    {
+      "hash": "BAB9AC3EC83E380AE51E4295EF3BF2C738627812D3A49D1E713661ABBC8DC57A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-heap-l1-1-0.dll"
+    },
+    {
+      "hash": "BD14C67EA28E21D6257AD780A37122C9B5773F69E693F5DB6BFFAEE4D839526E",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-locale-l1-1-0.dll"
+    },
+    {
+      "hash": "606D66D82DB562EA7979179D06486A0F94D079941D26B80A1E2C49D29959DF6F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-math-l1-1-0.dll"
+    },
+    {
+      "hash": "F6156B1020380EC4F0E48577EBEDAAEF5FB1AB1F337D8B4E72E6A33A7567A9CC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-process-l1-1-0.dll"
+    },
+    {
+      "hash": "C5902934D026D7E15FBE9917D474F3322846A41A25E66F4B2B1F758801879F4B",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-runtime-l1-1-0.dll"
+    },
+    {
+      "hash": "A9C5A153D8C0286F9B41A2B1C65854AD9E6471B8755B7DE87BAE4470E60BCAB6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-stdio-l1-1-0.dll"
+    },
+    {
+      "hash": "25B8F83A7767211B11132775A0E27A45AA4EC8AB4E6572599F9C172AE3606B40",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-string-l1-1-0.dll"
+    },
+    {
+      "hash": "7C7F6393F06DE11750ADB09CC5698AE55CD9FB27B2E51E207286FEB1B5B2B156",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-time-l1-1-0.dll"
+    },
+    {
+      "hash": "D8BA5F17B9FFCBF3AEAF3FA1DA226832D2FA90F81ACCE0CD669464E76CE434AC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\api-ms-win-crt-utility-l1-1-0.dll"
+    },
+    {
+      "hash": "EC4D4CF34D9AB64A4E611463034680E11AC9ED93323A16821949110AB1C81623",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\base_library.zip"
+    },
+    {
+      "hash": "CCFFFDDCD3DEFB8D899026298AF9AF43BC186130F8483D77E97C93233D5F27D7",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\libcrypto-3.dll"
+    },
+    {
+      "hash": "EFF52743773EB550FCC6CE3EFC37C85724502233B6B002A35496D828BD7B280A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\libffi-8.dll"
+    },
+    {
+      "hash": "007142039F04D04E0ED607BDA53DE095E5BC6A8A10D26ECEDDE94EA7D2D7EEFE",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\libssl-3.dll"
+    },
+    {
+      "hash": "D615E193D1AFFCDBFE504E90D3621CBDCFF94BF72B79D899126534507FD6D27A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pyexpat.pyd"
+    },
+    {
+      "hash": "9A0E3435AAA680D868150F87AB3E388AD2EEBC22F87E036155C7B4EDA8CD2120",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\python312.dll"
+    },
+    {
+      "hash": "D4D7181B11DB0BD22A6CD5CDA6F8583D1F5C77615FD0A6CA33350619D6E0438A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\select.pyd"
+    },
+    {
+      "hash": "2E5FB14B7BF8540278F3614A12F0226E56A7CC9E64B81CBD976C6FCF2F71CBFB",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\ucrtbase.dll"
+    },
+    {
+      "hash": "208EE1CD3CBAD0828433CA7246B05BE2B1FF5569983D27D296C0B38888585488",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\unicodedata.pyd"
+    },
+    {
+      "hash": "6A99BC0128E0C7D6CBBF615FCC26909565E17D4CA3451B97F8987F9C6ACBC6C8",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\VCRUNTIME140_1.dll"
+    },
+    {
+      "hash": "052AD6A20D375957E82AA6A3C441EA548D89BE0981516CA7EB306E063D5027F4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\VCRUNTIME140.dll"
+    },
+    {
+      "hash": "07F62BCB1B70320F221FFB2CFC5CE6133815195F3E7CDB8D833222506188C2AC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll"
+    },
+    {
+      "hash": "3128381D133F4FF746ADD70100CFEF713CE2D78F2B12C02EC24EC453C5DFAB0D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll"
+    },
+    {
+      "hash": "DA68BA4821F286C966494DD0A49F23A64DDA22B23DE66511AD6C54FA1F4EB2A7",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1973_74.json"
+    },
+    {
+      "hash": "F9209D2B35ADD905CC274D792189AE6A0532D59A5F1E25F157BB4D56E45EF74B",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1974_75.json"
+    },
+    {
+      "hash": "6BA3A7681FE25262193E43544654292D2AF27C7E0AF5263F7573F52D4C5CC0AA",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1975_76.json"
+    },
+    {
+      "hash": "3230784F4FB2BA78AEAB7156C614125DAA24EE817835729F4211A034DC237C92",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1976_77.json"
+    },
+    {
+      "hash": "1D5FEBF8155C1EE9DDFA7152E2B9CEAFD04F2B34CAFA3A3CB0BF49A6E05678B0",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1977_78.json"
+    },
+    {
+      "hash": "9C215EDD7951008B67E15FB3B2D0D186A2B70F3F5698E86095864005859D2422",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1978_79.json"
+    },
+    {
+      "hash": "67F89576A0A4267ACF05C8A4EB646B5BC9B78B3A989C95497F4909DDF0B3B6F6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1979_80.json"
+    },
+    {
+      "hash": "D8A4C5ED96BC4F8BDBBD53B21F450735EC3EECC474B8B510040CD7B2DEBDF415",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1980_81.json"
+    },
+    {
+      "hash": "947BD5B559A5D323EEC163A3A20C86C59E5FBC27F68696C8D89A8C9864AF8AEC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1981_82.json"
+    },
+    {
+      "hash": "54CEF89C0F995DC63D3D8D430F27F8EE7DE48185F833178F4828546CA07958F5",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1982_83.json"
+    },
+    {
+      "hash": "F907071864CC6FD922284AA0435CEB48217FE6DDDED7829731A585AD14A2E94C",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1983_84.json"
+    },
+    {
+      "hash": "5177B134A455C3DC176AD51D0F3272285FAE8A4DE9C6FAE69B1555BBACEAACA6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1984_85.json"
+    },
+    {
+      "hash": "6B4E83515CF9F91E106C6BB07FFC07365363970677FAA9AEAFA23CB0294D0F93",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1985_86.json"
+    },
+    {
+      "hash": "D80A0617ACD39F871772A9E4C7BF64FE2C9644EF4DA311707E80BF7CED7B0975",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1986_87.json"
+    },
+    {
+      "hash": "48F0D8B23D6D93B9DA08B3B35760F910ED53CF0E7AC7D78E53B935C91DCE74C4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1987_88.json"
+    },
+    {
+      "hash": "A7AED57729038BD54F1F17C91A714A882B55AC28A1C4D3A8B9482A3448E492EA",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1988_89.json"
+    },
+    {
+      "hash": "B80250070D170968CF0D96D5578CA763223481588F2C5DA4E9C674C539834F04",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1989_90.json"
+    },
+    {
+      "hash": "108E519530717CEF865B23DFD713E51E87A1C4F8757A3AEB5A146C59CFF11AC4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1990_91.json"
+    },
+    {
+      "hash": "716899809BEF7DCDB81379AA9A9C57596663E46B59BD07E9A1DEB873C0F879F9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1991_92.json"
+    },
+    {
+      "hash": "AAB2AF5E47297EE52A81E5A4DB0A251BFA990607589B451C137171DA330D0A67",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1992_93.json"
+    },
+    {
+      "hash": "A3A738ABC4A5FC9CD62CFA3A932CDEFB82D56CC48FDBF9428F016CE302A3AC3F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1993_94.json"
+    },
+    {
+      "hash": "FB885941D260F964B123CBD14CC60CB04BB338A5A8FFA45BCF7B8BB7921B14AF",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1994_95.json"
+    },
+    {
+      "hash": "FF288393FBEC65612DB0AA0F35B93B149AF9C692BC7154DA6063CDFB8F20DFBC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1995_96.json"
+    },
+    {
+      "hash": "FF97AB3734879763640C5A1171D9739EC1F898DC08039ED24E88585445EDEA41",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1996_97.json"
+    },
+    {
+      "hash": "D22E382CDEE7CA5C4C0696774D0239C7E8B4AB153436A8C855D79929B42B28A3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1997_98.json"
+    },
+    {
+      "hash": "51AB88B52392B65E4A0DF74FA88AB755E2AC407E4D2393A19B03EE6777EBE1E4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1998_99.json"
+    },
+    {
+      "hash": "3EA8FCB02832B550B194F9C4EE0766CC8C3595F8006BC6516A3C5977F8D47A64",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_1999_00.json"
+    },
+    {
+      "hash": "A93F1A76B9DE8B1D2ABD98145C9D33E5969C2CDD2E32A925DC064F6B775ECB66",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2000_01.json"
+    },
+    {
+      "hash": "64EC1E083A5527842202980BDC15D64CC9C7659335E021F1923C9D2F6A673147",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2001_02.json"
+    },
+    {
+      "hash": "FB965F75053D40F8D356891317C6F43DF29D22FF1C8EC497FBE6E840772D8B66",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2002_03.json"
+    },
+    {
+      "hash": "FE34B78DC6D6824A40BAF0E8D006147F9E0888241E1582C07DD0BA50B3FB216E",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2003_04.json"
+    },
+    {
+      "hash": "F54956AA1035BE6A454DFF18F78C07FF5AD3D9C61C802380E253F1D304885F1C",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2004_05.json"
+    },
+    {
+      "hash": "910C6858E07670D8852497FE666310154ADAC63C3ACAAE6A179319B0B05146A6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2005_06.json"
+    },
+    {
+      "hash": "472354B11048CC58756C53152AF3391E381B5E52D0D54E16F1B1DD0A863A55D8",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2006_07.json"
+    },
+    {
+      "hash": "61BEDC3119A016C8C3EA08C9E53A2360B24488D28EFA37111F65BE3595102921",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2007_08.json"
+    },
+    {
+      "hash": "C55A4AB5B24C922F1680B4106E9368FE0E92AF0A915E4B487ED84CD0F1EB36EA",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2008_09.json"
+    },
+    {
+      "hash": "AD3CFCE190DD13D479F5D551FA977B1714F53F8BF1F6AF84D94D26E11A7D919B",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2009_10.json"
+    },
+    {
+      "hash": "40AD4F7A96E64A340D577D2110532EC2A47036A9FDBFBF49F1CCBC7650B01D09",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2010_11.json"
+    },
+    {
+      "hash": "C0755EA56627441C2D6D2563F576CA45B527ED8B13279674193C1EFA195A257E",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2011_12.json"
+    },
+    {
+      "hash": "AF4B03705A367B2EC7793A46DB85F0C8846BC204FEBA81FF537283AF1C8B10AF",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2012_13.json"
+    },
+    {
+      "hash": "B5E801FF15DE27F9B0D09E056FB415A1B14B149A5E87EEA955DE92AAFE8D1053",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2013_14.json"
+    },
+    {
+      "hash": "2D6E1E9C9209A61BD83656D75783A84B17327F1F8B6303688DEBD425C69220B3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2014_15.json"
+    },
+    {
+      "hash": "E42C7852692FF2CD3AA07727A329681848CDA606825E261A52C86FBA7B63C8B6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2015_16.json"
+    },
+    {
+      "hash": "9E277006761A40114105334CE6B184B291BC9E24CABA621EDD756DE86B1F40F3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2016_17.json"
+    },
+    {
+      "hash": "9E63173EF076D35271F29FD808EEDC4CF09D19D9F0316AA7C2A44BB40D70E315",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2017_18.json"
+    },
+    {
+      "hash": "90627D9B3714FF03F14EAA99BF3A1B8090167F028B2AF45945C57B05869E7AB8",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2018_19.json"
+    },
+    {
+      "hash": "0BB1437E927C79B6554A29AE31F495E84F3170A93E09627DD91FA41A68D47C83",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2019_20.json"
+    },
+    {
+      "hash": "99A5AC918DC888CCF8909D9ADC505B72B47F83979D35E446188D4B360F650FBD",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2020_21.json"
+    },
+    {
+      "hash": "0F5E96B62CDBFFBE5DB54E54B4E747433C4745D0DB83FC64D4AAF759B1FD3323",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2021_22.json"
+    },
+    {
+      "hash": "1AFC970CCA5C3CC2A3CDE99D5BE13401455C87C36B545173E1050D235F2A2968",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2022_23.json"
+    },
+    {
+      "hash": "F3FC46230A35DC3563AA0BD3D372F0A336BC2DCA392E40B23C5C83A0ADCE5403",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2023_24.json"
+    },
+    {
+      "hash": "BA69A2FFDDB7B1633FDD1B860A0130EF94491B417329EA8657356D1F69D6A627",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2024_25.json"
+    },
+    {
+      "hash": "EB5D3F16D543EBC50715683CFB2B2211E9C7F08EFF69DADB8C134D6CA85A806D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\game\\players_2025_26.json"
+    },
+    {
+      "hash": "66E8205F47E648AB2C10DAC22C03D498CEDDFB45A20A56C3E9ACC20E2BFC3C0F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\goat\\award_jackpot.json"
+    },
+    {
+      "hash": "CD08720B3AE026EB197697CE1F98C11905EC47FCDCEEE5E135ED9A4E17603DBE",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\data\\goat\\prehistoric_jackpot.json"
+    },
+    {
+      "hash": "1DF8757C717CDA3D84BA1059D6C0C8D728A64013AFCB2564F0EDB5FE4582053F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pythonnet\\runtime\\Python.Runtime.deps.json"
+    },
+    {
+      "hash": "2EBD4492E28442EF1F1AF587AFE5B3A090C2EBFA220758DED4F1450F2A27F13A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pythonnet\\runtime\\Python.Runtime.dll"
+    },
+    {
+      "hash": "E4F896B8C692F79C55A766C4269C74D0BB2149A7FCEF327C4EAF9FAFF8D28677",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pythonnet\\runtime\\Python.Runtime.xml"
+    },
+    {
+      "hash": "F4B0B8E4F0AF704F8A11FF469C43A04689BF75E2EC0B1A215163AC5DFE34287F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\entry_points.txt"
+    },
+    {
+      "hash": "CEEBAE7B8927A3227E5303CF5E0F1F7B34BB542AD7250AC03FBCDE36EC2F1508",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\INSTALLER"
+    },
+    {
+      "hash": "8E7F87B5E50B992BC44D9F1DC03FB5218F0B6DA5D6C4B9F21F93916BF44569C7",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\METADATA"
+    },
+    {
+      "hash": "2360F080C9266CE4780CE4AB8B2C4D6C7DCD39748A25E1F0B8DA3C1D8889E9F3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\RECORD"
+    },
+    {
+      "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\REQUESTED"
+    },
+    {
+      "hash": "7794A9695D720645A4DED6ABF95AC4397F9B04CF635CF955755369379150AF10",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\top_level.txt"
+    },
+    {
+      "hash": "69E6228A0D35958183CC1812F07C565CE837B95EB51BD8A33ACBA9FA4F68D6C9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\WHEEL"
+    },
+    {
+      "hash": "4A988DD3598832CD3653DE20DC33CB677D0FB53AB5551C879CA31280AE653675",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\pywebview-6.2.1.dist-info\\licenses\\LICENSE"
+    },
+    {
+      "hash": "57F5DC0AD9C142EC6377BED477584A06E47432323897C7206FFC2F6E31D8A067",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\scripts\\desktop_layout_qa.js"
+    },
+    {
+      "hash": "E6184CE10E266134FDCFA401E8F1A95005BCD4F18D16B62B757323E2833FE9A9",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER"
+    },
+    {
+      "hash": "A3E38B9EE4326289D4864704F30E299EE769E2309CE9F4A75F0DE1A50AD0A356",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA"
+    },
+    {
+      "hash": "52A6B8EE0DE15CF7FD99625F43B97CD2E3942AC86F16054EA90DE48E66F29355",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD"
+    },
+    {
+      "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED"
+    },
+    {
+      "hash": "08EDDF0FDCB29403625E4ACCA38A872D5FE6A972F6B02E4914A82DD725804FE0",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt"
+    },
+    {
+      "hash": "FF309DDCDD65EBD02BC724DBF2BCC4A0FF53A5B61792A44548D383E4EBB19D3B",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL"
+    },
+    {
+      "hash": "458502E12D97BBF64438606A20044AA85EB05FB0A8A807BB35DBEC253FD1FC04",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE"
+    },
+    {
+      "hash": "37FEDCFFBF73C4EB9F058F47677CB33203A436FF9390E4D38A8E01C9DAD28E0B",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt"
+    },
+    {
+      "hash": "49A54597B55226B9F6982A5D442E25FAC274386ED37D02938CC6EE47DF1A8ADF",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\app-icon.icns"
+    },
+    {
+      "hash": "BAA280528E35CB4C52851B77AEC8A9A6A4FC0505040F0614E7183ACF25FF24F4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\app-icon.ico"
+    },
+    {
+      "hash": "80F384CACDA8B07F9C0898EA312F9F098314D6E5FEAEBAB1334F002F6D27083A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\app-icon.png"
+    },
+    {
+      "hash": "41726B99A854BAE4648042999E3DEA73FDFEAF9D2621223E964098E34FF30F17",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\app.js"
+    },
+    {
+      "hash": "FD45CDB50C124BF8CEAA1298E04CC17D7AA3B328D2BC1A7CCDE313AFD06609C6",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\brand-mark.svg"
+    },
+    {
+      "hash": "C99BA1230C4A32F2C5365C89A84CFD71919105FC3D6A2E8922CBC7D4D899C219",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\index.html"
+    },
+    {
+      "hash": "E25D3F1E301F92F195618B4B0D9233567E3BA94C84B363BBCE22FA28154097E2",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\web\\static\\styles.css"
+    },
+    {
+      "hash": "53A631A579CE342FB45EFBE4EF024B28DEABB34F061BCF058FD818CE27AA7E80",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\__init__.py"
+    },
+    {
+      "hash": "41462C31D385085B195788F1583CFF83D60DBDB0A928210A41A9F301F63FC039",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\_version.py"
+    },
+    {
+      "hash": "B319289C54650E4FE92313F798837858C567DDEE39BC0CEF49056CA528ACC11F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\errors.py"
+    },
+    {
+      "hash": "8AF7DC603131E0AB3605CEB9D4545B749E052E0EB5AE9131A50B380E61F8BABC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\event.py"
+    },
+    {
+      "hash": "AC780F92DAE8761DD77C4D30306B2D899B7596E6B16875A9D280C7EC17F82FF0",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\guilib.py"
+    },
+    {
+      "hash": "E2C1BA12E560B95918536991EC08BA4F468012527F396C435DA27E8B5B902B28",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\http.py"
+    },
+    {
+      "hash": "310FEAF4C4A0A99C72EAE4C992E9745990EE24400169E1BC8A6B8FFD93EA96BE",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\localization.py"
+    },
+    {
+      "hash": "A37D9A6B24C84D9DF989C113D8F4516203C1EBA5F5F885FF6DD1C602186879E0",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\menu.py"
+    },
+    {
+      "hash": "1EDC757DF94F4CFC5902E93B7A6C1BA9C161747AB46334D747E9AF484A5BEAF5",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\models.py"
+    },
+    {
+      "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\py.typed"
+    },
+    {
+      "hash": "A6920538487256B022E726EBE87902CF60D6AA0C1471CC4BD9C979F8B6892479",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\screen.py"
+    },
+    {
+      "hash": "79A47B4B6EC17C8EA3C377C3C6D3600C04227208BB737C0FA839CFBE087B862D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\state.py"
+    },
+    {
+      "hash": "A652BD05BFB9A7A9521E8AB52F10425161FA6A84077A92CA5DCD255359B836A4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\util.py"
+    },
+    {
+      "hash": "00DE0B2155308A29E0AF42D3E5C40221CD1EA1FB30D2BE55A408AB1B314D5B03",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\window.py"
+    },
+    {
+      "hash": "515E69981EA8BA2EFEA32D473A9F9061854501475C18C33D863501ACA99E6FB5",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\dom\\__init__.py"
+    },
+    {
+      "hash": "D44075BD70B819FD3DE1FBBCCBE0CD66A1B02F6615FB7C6DCA682DC9CE73C814",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\dom\\classlist.py"
+    },
+    {
+      "hash": "9EB42C3FCF53D958A138CFDA2F0950310F1D81528EBCB70DD6BF9024E4865B26",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\dom\\dom.py"
+    },
+    {
+      "hash": "B131A7E777187A057EB79F3950AEDE5DEC6303AEE213B9CC7F58465717621837",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\dom\\element.py"
+    },
+    {
+      "hash": "D10E8BF78B1EC61BC09F4F2E0DEDBEB3EF0AF320BD6277E32DF2D0D9BADE8B03",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\dom\\event.py"
+    },
+    {
+      "hash": "0E70DD71A9D69E0CD9A4D5C9C25E65CE14EED66B849368CC9C3FE4409D54E4CE",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\dom\\propsdict.py"
+    },
+    {
+      "hash": "CB68B8BED427FA356AEA26376E497552F55D91329C093C026A65230D074E2B27",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\js\\api.js"
+    },
+    {
+      "hash": "ED14D0B594266DFE3834CC8565B44A8157420432AEEF4F733AB505BD6ED89B8A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\js\\customize.js"
+    },
+    {
+      "hash": "751443083DD1D2B2EF4142692F25BC4F6E04F8DE4D82C455C73473700F00C8CB",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\js\\finish.js"
+    },
+    {
+      "hash": "68EE87EC01563CBCAB77A57704A32F19B47436C9D5E254BFBA9675A51C132075",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\js\\state.js"
+    },
+    {
+      "hash": "70FAE2A8A8EBC790DC616AA7976074CEDD802275C173C90AD4BF3BD14163F9C4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\js\\lib\\dom_json.js"
+    },
+    {
+      "hash": "481A08F5337A770ACF49B38C2F58DD0C95F92BF9DBD92BF82B596836EA343AB5",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\js\\lib\\polyfill.js"
+    },
+    {
+      "hash": "8219A3135436C147F8EB02FB831E99596103EEBC18B6D7B794CA93F4C67018A2",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\Microsoft.Web.WebView2.Core.dll"
+    },
+    {
+      "hash": "C48F8D729DC531288D2C53A6241EFFE7922ED1B947850B2442008A945C098C48",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll"
+    },
+    {
+      "hash": "3F9D3EEEDA09CE58BADBD742A981A463C067C339C8B4E70B404C00EBB4EC73A3",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\pywebview-android.jar"
+    },
+    {
+      "hash": "F6A646470F0E1058224A52E8E2E217501DCA46939B30BFC9A5DD4DCDD43F088D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\WebBrowserInterop.x64.dll"
+    },
+    {
+      "hash": "4E527297FBEA7C5A0419F3A6AF307C2681787BEB0BF0EF3FEA849A7FD85A08DC",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\WebBrowserInterop.x86.dll"
+    },
+    {
+      "hash": "0937030EFC718F3DA77C5E0978FB5046E381D0BB7B01ACAAD31A535A1B588A33",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll"
+    },
+    {
+      "hash": "EB5335EDEAA6F2122C044E82AAB2351DC8C9B4E0FE5E578C71922FB61BE285E7",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll"
+    },
+    {
+      "hash": "04814B2C59314C6452D61B821A4A3A5C5F8E8577B55B985F6A7A4B59F8907EC5",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll"
+    },
+    {
+      "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\__init__.py"
+    },
+    {
+      "hash": "A9EA3E5E3F597D645D3E237DD43A6D553845160E86B26E3524FE212BD3EE56E4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\cef.py"
+    },
+    {
+      "hash": "27A5E95BE0816F0BBA7BED910EEDA11B92DE4598419A275F9346023E24BA27AF",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\cocoa.py"
+    },
+    {
+      "hash": "F3F9168ECB39F7447566112FD14C5EC55830EDDF02053EAFEF0D86FAC509A3A4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\edgechromium.py"
+    },
+    {
+      "hash": "27803C780847139CB6230AAE16EF2B9EED3F7944CA863F6A3F9751AA53EE648F",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\gtk.py"
+    },
+    {
+      "hash": "27EE660D6485D75245E65E7F0BE5B631B11D593023D40500A3B991EFF44B5328",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\mshtml.py"
+    },
+    {
+      "hash": "0D78B132BE416E9DF3C562645E958D1BE83E11E4518A19A861A2C573D4B0B61C",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\qt.py"
+    },
+    {
+      "hash": "C24DE9C92278C9D4E48E13045D47225B6D3D6629B0898F2530883A74A5E522E2",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\win32.py"
+    },
+    {
+      "hash": "E3962A59E74532D9266F08D1EFB086519877B2D322EA83900036F59794DB4B4D",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\winforms.py"
+    },
+    {
+      "hash": "E12C5CE7E96EE78BC5C6A81E5BEAE80A7BC74E2B99C8F18DF06B98447EA22766",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\__init__.py"
+    },
+    {
+      "hash": "29BF3FA9BE26B206E57B33C9C253AB88D4ECE7EF398D7BB7F4EBC227B8A39607",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\app.py"
+    },
+    {
+      "hash": "BCD3F7DB74594F98E62E384871B365C806F745B6DF0C44171FF752013274DA38",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\base.py"
+    },
+    {
+      "hash": "433969D3942F19F10CB73D467584E57BC87E01F61F7311A6C7BD6EC9ADFEE203",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\event.py"
+    },
+    {
+      "hash": "ADE3D200E0B23CE260A43B1208CE2B00EAF4D0D1D4834A042DAD16100ED61C92",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\__init__.py"
+    },
+    {
+      "hash": "003403DA223832FC31AB44CCF1B22CDCBB4301A71FE3279683D78068181D4DF1",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\app.py"
+    },
+    {
+      "hash": "E416B0D4ED6F8E318516679AD927DA7A01517674B4080FFD4E2D24F39E09AB26",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\content.py"
+    },
+    {
+      "hash": "0711D68118E2DEB19A7BC746816BDF7DFB0D71189A199D2DA748C3948D4ACEC4",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\net.py"
+    },
+    {
+      "hash": "124A6342D24A38B7DE7A6ACA39D0BB741108E4E2F8C3652DE1CB504D0A358547",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\os.py"
+    },
+    {
+      "hash": "FB02C0D3B2DC041132CF31CFE1F1EAD52B1F0BCAB5FC82726EAF8E8C375E3EF2",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\view.py"
+    },
+    {
+      "hash": "A7EE2C6D997D49A8EC90EB2AF8DFE6F48C5718A444494CA4EB3F732166E2A662",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jclass\\webkit.py"
+    },
+    {
+      "hash": "F564B500241AC452EA6383C394D639E44DCA59ADC2E7904D75E2BABEDCCFCC9A",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jinterface\\__init__.py"
+    },
+    {
+      "hash": "CC6D34094EFD7E161B8879C96F88DBAFFB182B76DF69A0BF454AB2748135A831",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jinterface\\pywebview.py"
+    },
+    {
+      "hash": "822BB2EA730F4CFFB3B0E09795E9A0E2ED03D9EB47E41642501752865C34D631",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jinterface\\view.py"
+    },
+    {
+      "hash": "58301B16344CFA9126C204BBDE84A20D1AD25710B62BECF59A6B20AC5DCB7E9E",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\platforms\\android\\jinterface\\webkit.py"
+    },
+    {
+      "hash": "F9CE19A3C9D018A026F3073F2C3B1CC4CB4AEF3AFF6216704670BD08CAEE5011",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\__pyinstaller\\__init__.py"
+    },
+    {
+      "hash": "D231EEC5173E6327B138D17E27D4D61333C88A5B51DE29144D4C1C8B916637BA",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\HoopRoulette\\_internal\\webview\\__pyinstaller\\hook-webview.py"
+    },
+    {
+      "hash": "F1E681DAD0B11026B2B1295F1E59B39AF887112E93671421F13D5936626C147C",
+      "path": "D:\\a\\Hoop-Roulette\\Hoop-Roulette\\dist\\installer\\HoopRoulette-v0.14.3-Setup.exe"
+    }
+  ]
+}
