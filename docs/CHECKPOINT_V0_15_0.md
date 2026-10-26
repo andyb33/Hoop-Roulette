@@ -12,4 +12,11 @@ The tester reported no frustrating behavior or new gameplay bugs, requested audi
 
 148 Python tests and frontend behavior checks pass locally. Native builds additionally exercise two full games at initial/minimum window sizes, preview geometry, score-history reset persistence, preservation of sound/Instant spins and shutdown. Windows retains the scanned per-user installer and Korean-path/marked-download regression; Mac targets Apple Silicon only. Sound uses original Web Audio tones, no external audio files. Sound defaults off. Actual audible quality still needs tester feedback.
 
-Build results and download links will be recorded after native verification.
+Both packages passed all native checks, including persistent history reset and preference preservation. The Mac screenshot was visually inspected and the new header, preview button and coverage footer fit the no-scroll canvas. Windows Defender reported no threats in payload and installer (engine 1.1.26090.9, signature 1.461.140.0 dated 2026-10-21). The marked-download installer/Korean-path regression passed. These checks do not guarantee Chrome acceptance or audible sound quality.
+
+## Downloads
+
+- [Windows installer](https://github.com/andyb33/Hoop-Roulette/actions/runs/40382116002/artifacts/12678918246)
+- [Apple Silicon Mac](https://github.com/andyb33/Hoop-Roulette/actions/runs/40382102386/artifacts/12679301242)
+
+Source: 934aea1679c59602c891c0fa650b559479171481. Native reports are preserved in analysis/desktop_v0_15_0_*. Existing saves upgrade without a reset; use Clear history only if you want to remove saved scorecards and personal best.

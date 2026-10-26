@@ -1,0 +1,307 @@
+{
+  "success": true,
+  "seasons": 53,
+  "records": 13442,
+  "spin": true,
+  "controls": true,
+  "native_storage": true,
+  "default_layout": {
+    "checks": [
+      {
+        "name": "current",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "long-name-awards-historical-note",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "prehistoric-jackpot",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-points",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-rebounds",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-assists",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-steals",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-blocks",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-games_played",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_nba_third",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_nba_second",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_nba_first",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-champion",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_defense_second",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_defense_first",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-major_award",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "selected-jersey",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      },
+      {
+        "name": "completed-scorecard",
+        "success": true,
+        "errors": [],
+        "width": 1024,
+        "height": 646,
+        "categories": 14
+      }
+    ]
+  },
+  "minimum_layout": {
+    "checks": [
+      {
+        "name": "current",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "long-name-awards-historical-note",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "prehistoric-jackpot",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-points",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-rebounds",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-assists",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-steals",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-blocks",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-games_played",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_nba_third",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_nba_second",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_nba_first",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-champion",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_defense_second",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-all_defense_first",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-major_award",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "selected-jersey",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      },
+      {
+        "name": "completed-scorecard",
+        "success": true,
+        "errors": [],
+        "width": 900,
+        "height": 622,
+        "categories": 14
+      }
+    ]
+  },
+  "scoring": true,
+  "history_reset": true,
+  "server_stopped": true
+}
