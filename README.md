@@ -11,7 +11,9 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
-**v0.12.1 desktop QOL update:** Skip animation, remembered Instant spins, unfinished-game restart confirmation, bonus points remaining and Clear Keeps. New builds target Windows and Apple Silicon Mac only; Intel builds are discontinued. [Release and downloads](docs/CHECKPOINT_V0_12_1.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_12_1.md).
+**v0.13.0 standalone desktop:** double-click the Windows `.exe` or Apple Silicon Mac `.app` to play in a dedicated window with all data bundled. No CMD window or browser tab. Desktop testing comes first; public web hosting is deferred. [Release and downloads](docs/CHECKPOINT_V0_13_0.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_13_0.md).
+
+**Previous v0.12.1 browser-launching desktop checkpoint:** Skip animation, remembered Instant spins, unfinished-game restart confirmation, bonus points remaining and Clear Keeps. New builds target Windows and Apple Silicon Mac only; Intel builds are discontinued. [Release and downloads](docs/CHECKPOINT_V0_12_1.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_12_1.md).
 
 **v0.12.0 includes the normal pool from 1973–74 through 2025–26.**
 Stage 3 stats and honors verification now reaches 1973–74: all seven seasons from 1973–74 through 1979–80 have passed. Three seasons are complete; eight final-jersey chronology cases remain across the other four. The seven-season batch stays outside the default pool. See [final four seasons and review list](docs/HISTORICAL_PROGRESS_1973_1977.md).

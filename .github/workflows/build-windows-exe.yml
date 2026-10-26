@@ -1,4 +1,4 @@
-name: Build Hoopreel Windows alpha v0.12.1
+name: Build Hoopreel Windows alpha v0.13.0
 
 on:
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install packager
-        run: python -m pip install --disable-pip-version-check pyinstaller==6.16.0
+        run: python -m pip install --disable-pip-version-check pyinstaller==6.16.0 pywebview==6.2.1
 
       - name: Run tests
         run: python -m unittest discover -v
@@ -36,66 +36,38 @@ jobs:
       - name: Build single-file launcher
         shell: cmd
         run: >-
-          pyinstaller --noconfirm --clean --onefile
-          --name Hoopreel-v0.12.1-Alpha
+          pyinstaller --noconfirm --clean --onefile --windowed
+          --name Hoopreel-v0.13.0-Alpha
           --icon web/static/app-icon.ico
           --paths "."
           --collect-submodules nba_roulette
+          --collect-all webview
           --add-data "data/game;data/game"
           --add-data "data/goat/award_jackpot.json;data/goat"
           --add-data "data/goat/prehistoric_jackpot.json;data/goat"
           --add-data "web/static;web/static"
-          scripts/run_web.py
+          scripts/run_desktop.py
 
-      - name: Smoke-test packaged launcher
-        shell: pwsh
-        run: |
-          $exe = Resolve-Path "dist/Hoopreel-v0.12.1-Alpha.exe"
-          $process = Start-Process -FilePath $exe -ArgumentList "--no-open-browser", "--port", "38117" -PassThru
-          try {
-            $ready = $false
-            for ($attempt = 0; $attempt -lt 30; $attempt++) {
-              Start-Sleep -Milliseconds 500
-              try {
-                $state = Invoke-RestMethod -Uri "http://127.0.0.1:38117/api/state"
-                if ($state.turn -eq 1 -and $state.turns_total -eq 14 -and $state.goat_enabled -and $state.normal_pool.records -eq 13442 -and $state.normal_pool.seasons -eq 53 -and $state.normal_pool.first_season -eq "1973-74") {
-                  $page = Invoke-WebRequest -Uri "http://127.0.0.1:38117/" -UseBasicParsing
-                  $script = Invoke-WebRequest -Uri "http://127.0.0.1:38117/app.js" -UseBasicParsing
-                  foreach ($control in @("skip-animation", "instant-spins", "clear-keeps", "bonus-remaining", "restart-confirm")) {
-                    if ($page.Content -notmatch ('id="' + $control + '"')) {
-                      throw "Packaged launcher is missing QOL control: $control"
-                    }
-                  }
-                  if ($script.Content -notmatch 'function skipAnimation\(\)' -or $script.Content -notmatch 'function requestNewGame\(\)' -or $page.Content -notmatch 'reel-window') {
-                    throw "Packaged launcher is missing the v0.12.1 roulette UI."
-                  }
-                  $ready = $true
-                  break
-                }
-              } catch {
-                if ($process.HasExited) {
-                  throw "Packaged launcher exited before serving the game. Exit code: $($process.ExitCode)"
-                }
-              }
-            }
-            if (-not $ready) {
-              throw "Packaged launcher did not become ready within 15 seconds."
-            }
-          } finally {
-            if (-not $process.HasExited) {
-              Stop-Process -Id $process.Id -Force
-            }
-          }
+      - name: Smoke-test native app window
+        run: python scripts/check_desktop_build.py dist/Hoopreel-v0.13.0-Alpha.exe
 
       - name: Add tester instructions
         shell: pwsh
-        run: Copy-Item docs/EXTERNAL_ALPHA_V0_12_1.md dist/README.txt
+        run: Copy-Item docs/EXTERNAL_ALPHA_V0_13_0.md dist/README.txt
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v4
         with:
-          name: Hoopreel-v0.12.1-Alpha-Windows
+          name: Hoopreel-v0.13.0-Alpha-Windows
           path: |
-            dist/Hoopreel-v0.12.1-Alpha.exe
+            dist/Hoopreel-v0.13.0-Alpha.exe
             dist/README.txt
           if-no-files-found: error
+
+      - name: Upload native window QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-window-qa-Windows
+          path: desktop-smoke.json
+          if-no-files-found: warn

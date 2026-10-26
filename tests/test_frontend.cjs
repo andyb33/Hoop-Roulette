@@ -12,10 +12,10 @@ function node(key) {
   return nodes.get(key);
 }
 const storage = new Map();
-const context = vm.createContext({console, Date, Math, Number, Set, JSON, Promise,
+const context = vm.createContext({console, Date, Math, Number, Set, JSON, Promise, URLSearchParams,
   document:{body:node('body'),querySelector:node,querySelectorAll:()=>[],createElement:()=>({append(){}})},
   localStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},
-  window:{matchMedia:()=>({matches:false}),setInterval:()=>1,clearInterval(){},setTimeout:f=>f(),clearTimeout(){}},
+  window:{location:{search:''},matchMedia:()=>({matches:false}),setInterval:()=>1,clearInterval(){},setTimeout:f=>f(),clearTimeout(){}},
   fetch:()=>new Promise(()=>{})});
 vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
 (async()=>{
@@ -122,5 +122,23 @@ vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
     saveCompletedScore({...g,game_id:'blocked'});
   })()`,context);
   assert.ok(storage.has('hoopreel.scores.v1'));
+  const nativeData = {'hoopreel.instantSpins.v1':'true','hoopreel.scores.v1':JSON.stringify({best:321,recent:[]})};
+  const nativeWrites = [];
+  const desktopContext = vm.createContext({...context,
+    window:{...context.window,location:{search:'?desktop=1'}},
+    fetch:async(path, options)=>({ok:true,json:async()=>{
+      if(path==='/api/desktop-storage') {
+        if(options.method==='POST') {const p=JSON.parse(options.body);nativeWrites.push(p);nativeData[p.key]=p.value;return {saved:true};}
+        return {...nativeData};
+      }
+      return {game_id:'native',complete:false,total_score:0,upper_total:0,upper_target:120,bonus:0,categories:[],player:null,keeps_allowed:false,spins_used:0,spins_total:3,rerolls_left:0,turn:1,turns_total:14};
+    }})});
+  vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),desktopContext);
+  await vm.runInContext(`(async()=>{
+    await initializeGame();
+    if(!instantSpins || scores.best!==321 || !state.game)throw Error('Desktop bootstrap failed');
+    setInstantSpins(false);setInstantSpins(true);await desktopPending;
+  })()`,desktopContext);
+  assert.deepEqual(nativeWrites.map(p=>p.value), ['false','true']);
   console.log('Frontend animation and score-history checks passed');
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -3,9 +3,25 @@ const state = { game: null, keeps: new Set(), busy: false, selectedCategory: nul
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const desktopMode = new URLSearchParams(window.location.search).get("desktop") === "1";
+let desktopSettings = null;
+let desktopPending = Promise.resolve();
+function readSetting(key) {
+  if (desktopSettings !== null) return desktopSettings[key] ?? null;
+  return localStorage.getItem(key);
+}
+function saveSetting(key, value) {
+  if (desktopMode) {
+    if (desktopSettings !== null) desktopSettings[key] = value;
+    desktopPending = desktopPending.catch(() => {}).then(() => request("/api/desktop-storage", {key, value}));
+    desktopPending.catch(() => { $("#message").textContent = "Your app settings or scores could not be saved. Please check disk space and permissions."; });
+  } else {
+    try { localStorage.setItem(key, value); } catch (_) { /* Session state remains available. */ }
+  }
+}
 const INSTANT_STORAGE = "hoopreel.instantSpins.v1";
 function readInstantSpins() {
-  try { return localStorage.getItem(INSTANT_STORAGE) === "true"; }
+  try { return readSetting(INSTANT_STORAGE) === "true"; }
   catch (_) { return false; }
 }
 let instantSpins = readInstantSpins();
@@ -13,7 +29,7 @@ $("#instant-spins").checked = instantSpins;
 function setInstantSpins(enabled) {
   instantSpins = enabled;
   $("#instant-spins").checked = enabled;
-  try { localStorage.setItem(INSTANT_STORAGE, String(enabled)); } catch (_) { /* Session preference still works. */ }
+  saveSetting(INSTANT_STORAGE, String(enabled));
   if (enabled) skipAnimation();
 }
 
@@ -349,7 +365,7 @@ $("#confirm-restart").addEventListener("click", newGame);
 const SCORE_STORAGE = "hoopreel.scores.v1";
 function readScores() {
   try {
-    const data = JSON.parse(localStorage.getItem(SCORE_STORAGE) || "null");
+    const data = JSON.parse(readSetting(SCORE_STORAGE) || "null");
     if (data && Array.isArray(data.recent) && Number.isFinite(data.best)) {
       data.recent = data.recent.filter(item => item && typeof item.id === "string" && Number.isFinite(item.total)).slice(0, 50);
       return data;
@@ -365,7 +381,7 @@ function saveCompletedScore(game) {
     upper: game.upper_total, bonus: game.bonus,
     categories: game.categories.map(c => ({ label: c.label, score: c.score, selection: c.selection })) });
   scores.recent = scores.recent.slice(0, 50);
-  try { localStorage.setItem(SCORE_STORAGE, JSON.stringify(scores)); } catch (_) { /* Keep this session's scores. */ }
+  saveSetting(SCORE_STORAGE, JSON.stringify(scores));
   $("#final-best").textContent = `Personal best: ${scores.best}`;
 }
 function showScoreHistory() {
@@ -395,4 +411,16 @@ $("#view-scorecard").addEventListener("click", () => $("#finished").close());
 $("#show-history").addEventListener("click", showScoreHistory);
 $("#close-history").addEventListener("click", () => $("#score-history").close());
 
-request("/api/state").then(render).catch(error => { $("#message").textContent = error.message; });
+async function initializeGame() {
+  try {
+    if (desktopMode) {
+      desktopSettings = await request("/api/desktop-storage");
+      instantSpins = readInstantSpins();
+      $("#instant-spins").checked = instantSpins;
+      scores = readScores();
+      $("#history-storage-note").textContent = "Last 50 games · saved on this device";
+    }
+    render(await request("/api/state"));
+  } catch (error) { $("#message").textContent = error.message; }
+}
+initializeGame();
