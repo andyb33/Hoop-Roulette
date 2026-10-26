@@ -1,4 +1,4 @@
-name: Build Hoop Roulette Windows alpha v0.14.1
+name: Build Hoop Roulette Windows alpha v0.14.2
 
 on:
   workflow_dispatch:
@@ -7,6 +7,7 @@ on:
     paths:
       - "scripts/run_desktop.py"
       - "scripts/check_desktop_build.py"
+      - "scripts/scan_windows_package.ps1"
       - ".github/workflows/build-windows-exe.yml"
 
 permissions:
@@ -27,7 +28,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install packager
-        run: python -m pip install --disable-pip-version-check pyinstaller==6.16.0 pywebview==6.2.1
+        run: python -m pip install --disable-pip-version-check pyinstaller==6.22.3 pywebview==6.2.1
 
       - name: Run tests
         run: python -m unittest discover -v
@@ -35,11 +36,11 @@ jobs:
       - name: Check frontend behavior
         run: node tests/test_frontend.cjs
 
-      - name: Build single-file launcher
+      - name: Build portable app folder
         shell: cmd
         run: >-
-          pyinstaller --noconfirm --clean --onefile --windowed
-          --name HoopRoulette-v0.14.1-Alpha
+          pyinstaller --noconfirm --clean --onedir --windowed --noupx
+          --name HoopRoulette-v0.14.2-Alpha
           --icon web/static/app-icon.ico
           --paths "."
           --collect-submodules nba_roulette
@@ -51,20 +52,24 @@ jobs:
           --add-data "scripts/desktop_layout_qa.js;scripts"
           scripts/run_desktop.py
 
+      - name: Scan portable app with Microsoft Defender
+        shell: pwsh
+        run: ./scripts/scan_windows_package.ps1 -PackagePath dist/HoopRoulette-v0.14.2-Alpha
+
       - name: Smoke-test native app window
-        run: python scripts/check_desktop_build.py dist/HoopRoulette-v0.14.1-Alpha.exe
+        run: python scripts/check_desktop_build.py dist/HoopRoulette-v0.14.2-Alpha/HoopRoulette-v0.14.2-Alpha.exe
 
       - name: Add tester instructions
         shell: pwsh
-        run: Copy-Item docs/EXTERNAL_ALPHA_V0_14_1.md dist/README.txt
+        run: Copy-Item docs/EXTERNAL_ALPHA_V0_14_2_WINDOWS.md dist/HoopRoulette-v0.14.2-Alpha/README.txt
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v4
         with:
-          name: HoopRoulette-v0.14.1-Alpha-Windows
+          name: HoopRoulette-v0.14.2-Alpha-Windows-Portable
           path: |
-            dist/HoopRoulette-v0.14.1-Alpha.exe
-            dist/README.txt
+            dist/HoopRoulette-v0.14.2-Alpha/
+            dist/HoopRoulette-v0.14.2-Alpha/README.txt
           if-no-files-found: error
 
       - name: Upload native window QA report
@@ -73,6 +78,8 @@ jobs:
         with:
           name: native-window-qa-Windows
           path: |
+            windows-scan.json
+            windows-scan.txt
             desktop-smoke.json
             desktop-layout.png
           if-no-files-found: warn
