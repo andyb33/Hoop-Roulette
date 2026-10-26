@@ -1,14 +1,14 @@
 [Setup]
 AppId=HoopRoulette.Desktop
 AppName=Hoop Roulette
-AppVersion=0.14.3
+AppVersion=0.15.0
 DefaultDirName={localappdata}\Programs\Hoop Roulette
 DefaultGroupName=Hoop Roulette
 PrivilegesRequired=lowest
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 OutputDir=..\dist\installer
-OutputBaseFilename=HoopRoulette-v0.14.3-Setup
+OutputBaseFilename=HoopRoulette-v0.15.0-Setup
 SetupIconFile=..\web\static\app-icon.ico
 UninstallDisplayIcon={app}\HoopRoulette.exe
 Compression=lzma2

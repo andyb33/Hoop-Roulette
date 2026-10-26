@@ -19,10 +19,12 @@
       <div class="score-header" aria-label="Game totals">
         <div><span>Total score</span><strong id="total-score">0</strong></div>
         <div><span>Upper score</span><strong><span id="upper-score">0</span><small> / <span id="upper-target">120</span></small></strong></div>
+        <div><span>Personal best</span><strong id="header-best">0</strong></div>
         <div><span>Bonus</span><strong id="bonus-score">0</strong></div>
       </div>
       <div class="header-actions">
         <div class="turn-chip"><span>Turn</span><strong id="header-turn">1 / 14</strong></div>
+        <button id="sound-toggle" class="secondary" aria-pressed="false">Sound off</button>
         <button id="show-history" class="secondary">Scores</button>
         <button id="new-game" class="secondary">New game</button>
       </div>
@@ -50,17 +52,20 @@
           <p id="historical-note" class="historical-note hidden"></p>
         </article>
         <div class="spin-zone">
+          <button id="show-preview" class="secondary preview-trigger" disabled>Keep Team + Player to preview seasons</button>
           <button id="spin" class="spin-button" disabled><span class="spin-icon" aria-hidden="true">↻</span><span class="spin-copy">Spin the roulette</span><small id="spin-count">3 spins available</small></button>
           <div class="spin-options"><label><input id="instant-spins" type="checkbox">Instant spins</label><button id="skip-animation" class="secondary" type="button" disabled>Skip animation</button><button id="clear-keeps" class="secondary" type="button" disabled>Clear Keeps</button></div>
           <div id="dev-jackpots" class="dev-jackpots hidden"><span>Development preview · games are not logged</span><button data-force="award" class="secondary">Gold jackpot</button><button data-force="prehistoric" class="secondary">Prehistoric jackpot</button></div>
         </div>
       </section>
     </main>
-    <footer class="app-footer"><span class="draft-rule"><strong>One pick per player.</strong> Scored players leave this draft; passed players can return.</span><p id="message" class="message" role="status"></p></footer>
+    <footer class="app-footer"><span id="season-coverage" class="season-coverage"></span><span class="draft-rule"><strong>One pick per player.</strong> Scored players leave this draft; passed players can return.</span><p id="message" class="message" role="status"></p></footer>
   </div>
   <dialog id="finished" aria-labelledby="finished-title"><p class="eyebrow">GAME COMPLETE</p><h2 id="finished-title">Final score: <span id="final-score"></span></h2><p id="final-breakdown"></p><p id="final-best"></p><div class="dialog-actions"><button id="view-scorecard" class="secondary">View scorecard</button><button id="play-again" class="confirm-button">Play Again</button></div></dialog>
   <dialog id="restart-confirm" aria-labelledby="restart-title"><h2 id="restart-title">Start a new game?</h2><p>Your unfinished game will be replaced.</p><div class="dialog-actions"><button id="cancel-restart" class="secondary" type="button" autofocus>Keep playing</button><button id="confirm-restart" class="confirm-button" type="button">Start new game</button></div></dialog>
-  <dialog id="score-history" aria-labelledby="history-title"><div class="history-heading"><div><h2 id="history-title">Your scores</h2><p id="history-best"></p></div><button id="close-history" class="secondary">Close</button></div><p id="history-storage-note">Last 50 games · saved in this browser</p><div id="history-scores"></div><div class="history-navigation"><button id="history-previous" class="secondary">← Newer</button><span id="history-position" aria-live="polite"></span><button id="history-next" class="secondary">Older →</button></div></dialog>
+  <dialog id="score-history" aria-labelledby="history-title"><div class="history-heading"><div><h2 id="history-title">Your scores</h2><p id="history-best"></p></div><button id="close-history" class="secondary">Close</button></div><button id="clear-history" class="secondary">Clear history</button><p id="history-storage-note">Last 50 games · saved in this browser</p><div id="history-scores"></div><div class="history-navigation"><button id="history-previous" class="secondary">← Newer</button><span id="history-position" aria-live="polite"></span><button id="history-next" class="secondary">Older →</button></div></dialog>
+  <dialog id="clear-history-confirm" aria-labelledby="clear-history-title"><h2 id="clear-history-title">Clear saved scores?</h2><p>This permanently removes saved scorecards and your personal best on this device. Your current game, sound/animation preferences and playtest log files are kept.</p><p id="clear-history-error" role="status"></p><div class="dialog-actions"><button id="cancel-clear-history" class="secondary" autofocus>Cancel</button><button id="confirm-clear-history" class="confirm-button">Clear saved scores</button></div></dialog>
+  <dialog id="reroll-preview" aria-labelledby="preview-title"><div class="history-heading"><h2 id="preview-title">Reroll possibilities</h2><button id="close-preview" class="secondary">Close</button></div><p id="preview-summary"></p><h3 id="preview-season"></h3><div id="preview-categories" class="preview-grid"></div><div class="history-navigation"><button id="preview-previous" class="secondary">← Earlier</button><span id="preview-position"></span><button id="preview-next" class="secondary">Later →</button></div><p class="preview-note">Only unused categories are shown. Every listed season is equally likely; the next result remains random.</p></dialog>
   <script src="/app.js" defer></script>
 </body>
 </html>

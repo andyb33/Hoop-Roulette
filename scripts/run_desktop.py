@@ -163,7 +163,12 @@ def main() -> int:
                 evaluate_async("setInstantSpins(false); await desktopPending; return {saved:true};")
                 assert DesktopStore(directory).read()["hoopreel.instantSpins.v1"] == "false"
                 assert len(json.loads(DesktopStore(directory).read()["hoopreel.scores.v1"])["recent"]) == 2
-                result.update(report, scoring=True, success=True)
+                evaluate_async("saveSetting(SOUND_STORAGE, 'true'); await desktopPending; await clearScoreHistory(); await desktopPending; render(state.game); return {cleared:scores.recent.length === 0 && scores.best === 0};")
+                saved = DesktopStore(directory).read()
+                assert json.loads(saved["hoopreel.scores.v1"]) == {"recent": [], "best": 0}
+                assert saved["hoopreel.instantSpins.v1"] == "false"
+                assert saved["hooproulette.sound.v1"] == "true"
+                result.update(report, scoring=True, history_reset=True, success=True)
             except Exception:
                 result["error"] = traceback.format_exc()
             finally:

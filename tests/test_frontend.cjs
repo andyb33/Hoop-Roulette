@@ -26,6 +26,15 @@ vm.runInContext(fs.readFileSync('web/static/app.js','utf8'),context);
     render(completed);
     if(document.querySelector('#finished').open || document.querySelector('#finished').openCount!==1)throw Error('Dismissed results reopened');
     scores={recent:[],best:0};
+    setInstantSpins(true);
+    scores={recent:[{id:'old',total:100}],best:100};
+    state.game=completed;
+    await clearScoreHistory();
+    if(scores.best!==0 || scores.recent.length || !readInstantSpins())throw Error('Clear history changed preferences or retained scores');
+    render(completed);
+    if(scores.recent.length)throw Error('Cleared completed game was saved again');
+    scores={recent:[],best:0}; clearedCompletedId=null;
+    setInstantSpins(false);
     // Skip at each reel boundary, including repeated clicks and jackpot reveals.
     const originalTimers = {...window};
     for (const pool of ['normal','award']) for (let target=0;target<3;target++) {

@@ -2,7 +2,7 @@
 window.checkDesktopLayout = () => {
   fitLayout();
   const errors = [];
-  const selectors = ['.brand-lockup', '.score-header', '.header-actions', '.app-shell', '.category', '.slot', '#spin', '#confirm-score', '#instant-spins', '#skip-animation', '#clear-keeps'];
+  const selectors = ['.brand-lockup', '.score-header', '.header-actions', '.app-shell', '.category', '.slot', '#spin', '#confirm-score', '#instant-spins', '#skip-animation', '#clear-keeps', '#show-preview'];
   for (const selector of selectors) for (const element of document.querySelectorAll(selector)) {
     const r = element.getBoundingClientRect();
     if (r.left < -1 || r.top < -1 || r.right > innerWidth + 1 || r.bottom > innerHeight + 1)
@@ -37,6 +37,14 @@ window.exerciseDesktopLayout = async () => {
     if (!report.success) throw Error(name+': '+report.errors.join('; '));
   };
   check('current');
+  state.keeps = new Set(['team','player']); render(state.game);
+  if (canPreview()) {
+    renderPreview(); document.getElementById('reroll-preview').showModal();
+    const d = document.getElementById('reroll-preview');
+    if (d.scrollHeight > d.clientHeight + 2) throw Error('Reroll preview requires scrolling');
+    d.close();
+  }
+  clearKeeps();
   const original = state.game;
   const sample = original.player;
   if (sample) {

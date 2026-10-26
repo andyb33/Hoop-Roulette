@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$installer = (Resolve-Path 'dist/installer/HoopRoulette-v0.14.3-Setup.exe').Path
+$installer = (Resolve-Path 'dist/installer/HoopRoulette-v0.15.0-Setup.exe').Path
 # Reproduce an Internet download without clearing or weakening its security policy.
 Set-Content -LiteralPath $installer -Stream Zone.Identifier -Value "[ZoneTransfer]`r`nZoneId=3"
 $destination = Join-Path $env:RUNNER_TEMP '사용자 테스트\Hoop Roulette'

@@ -100,6 +100,12 @@ function render(game, { preserveReels = false } = {}) {
     ? "Upper bonus earned!" : `${remaining} point${remaining === 1 ? "" : "s"} to bonus${game.complete ? " · game complete" : ""}`;
   $("#clear-keeps").disabled = state.busy || game.complete || !game.keeps_allowed || game.rerolls_left === 0 || state.keeps.size === 0;
 
+  $("#header-best").textContent = scores.best;
+  if (game.normal_pool) {
+    const pool = game.normal_pool;
+    $("#season-coverage").textContent = `${pool.seasons} seasons · ${pool.first_season}–${pool.last_season}${game.goat_enabled ? " · Earlier legends in Prehistoric Jackpots" : ""}`;
+  }
+  updatePreviewButton();
   const player = game.player;
   if (!game.keeps_allowed) state.keeps.clear();
   const jackpot = player && player.pool !== "normal";
@@ -173,7 +179,6 @@ function render(game, { preserveReels = false } = {}) {
     $("#final-score").textContent = game.total_score;
     $("#final-breakdown").textContent = `Upper: ${game.upper_total} · Bonus: +${game.bonus}`;
     saveCompletedScore(game);
-    $("#final-best").textContent = `Personal best: ${scores.best}`;
     if (state.finishedShownId !== game.game_id) {
       state.finishedShownId = game.game_id;
       $("#finished").showModal();
@@ -211,6 +216,7 @@ function cycleReel(name, finalValue, duration, choices = []) {
       window.clearInterval(timer);
       value.textContent = finalValue;
       slot.classList.remove("spinning");
+      playSound("stop");
       if (!animation?.skipped) {
         slot.classList.add("landed");
         window.setTimeout(() => slot.classList.remove("landed"), 360);
@@ -274,11 +280,13 @@ async function spin(forcePool = null) {
   state.selectedCategory = null;
   try {
     if (forcePool) state.keeps.clear();
+    unlockAudio();
     const game = await request("/api/spin", { keeps: [...state.keeps], ...(forcePool ? { force_pool: forcePool } : {}) });
     $("#message").textContent = "";
     state.animation = { skipped: false, finish: null };
     $("#skip-animation").disabled = reducedMotion.matches || instantSpins;
     await animateReels(game);
+    playSound(game.player?.pool !== "normal" ? "jackpot" : "reveal");
     setBusy(false);
     render(game);
   } catch (error) {
@@ -302,6 +310,8 @@ async function score(category) {
   setBusy(true);
   try {
     const game = await request("/api/score", { category });
+    playSound("score");
+    if (!reducedMotion.matches) { $(".score-panel").classList.add("scored"); window.setTimeout(() => $(".score-panel").classList.remove("scored"), 500); }
     state.keeps.clear();
     state.selectedCategory = null;
     setBusy(false);
@@ -357,6 +367,7 @@ function setBusy(value) {
 
 $$(".slot").forEach(button => button.addEventListener("click", () => {
   if (state.busy) return;
+  playSound("keep");
   const keep = button.dataset.keep;
   state.keeps.has(keep) ? state.keeps.delete(keep) : state.keeps.add(keep);
   render(state.game);
@@ -385,15 +396,21 @@ function readScores() {
   return { recent: [], best: 0 };
 }
 let scores = readScores();
+let clearedCompletedId = null;
 function saveCompletedScore(game) {
-  if (game.dev_jackpots || scores.recent.some(item => item.id === game.game_id)) return;
+  if (game.game_id === clearedCompletedId || game.dev_jackpots || scores.recent.some(item => item.id === game.game_id)) return;
+  const newBest = game.total_score > scores.best;
   scores.best = Math.max(scores.best, game.total_score);
+  $("#finished").classList.toggle("new-record", newBest);
+  $("#header-best").classList.toggle("record-hit", newBest);
+  $("#header-best").textContent = scores.best;
+  if (newBest) playSound("record");
   scores.recent.unshift({ id: game.game_id, date: new Date().toISOString(), total: game.total_score,
     upper: game.upper_total, bonus: game.bonus,
     categories: game.categories.map(c => ({ label: c.label, score: c.score, selection: c.selection })) });
   scores.recent = scores.recent.slice(0, 50);
   saveSetting(SCORE_STORAGE, JSON.stringify(scores));
-  $("#final-best").textContent = `Personal best: ${scores.best}`;
+  $("#final-best").textContent = `${newBest ? "New personal best! " : "Personal best: "}${scores.best}`;
 }
 let historyIndex = 0;
 function renderScoreHistory() {
@@ -473,6 +490,100 @@ window.addEventListener("resize", fitLayout);
 window.addEventListener("resize", () => { if ($("#score-history").open) fitHistoryDialog(); });
 fitLayout();
 
+const SOUND_STORAGE = "hooproulette.sound.v1";
+let soundEnabled = false;
+try { soundEnabled = readSetting(SOUND_STORAGE) === "true"; } catch (_) {}
+let audioContext = null;
+function renderSoundToggle() {
+  $("#sound-toggle").textContent = soundEnabled ? "Sound on" : "Sound off";
+  $("#sound-toggle").setAttribute("aria-pressed", String(soundEnabled));
+}
+function unlockAudio() {
+  if (!soundEnabled) return;
+  try {
+    const Context = window.AudioContext || window.webkitAudioContext;
+    if (!Context) return;
+    if (!audioContext) audioContext = new Context();
+    audioContext.resume()?.catch(() => {});
+  } catch (_) { /* Sound is optional; gameplay stays available. */ }
+}
+function playSound(kind) {
+  if (!soundEnabled) return;
+  unlockAudio();
+  if (!audioContext) return;
+  try {
+    const notes = {keep:[420],stop:[240],reveal:[360,480],score:[520,660],record:[523,659,784,1047],jackpot:[392,523,659,784,1047]}[kind] || [360];
+    notes.forEach((hz, i) => {
+      const oscillator = audioContext.createOscillator(), gain = audioContext.createGain();
+      const start = audioContext.currentTime + i * .085;
+      oscillator.type = "sine"; oscillator.frequency.value = hz;
+      gain.gain.setValueAtTime(0, start); gain.gain.linearRampToValueAtTime(.045, start + .008);
+      gain.gain.exponentialRampToValueAtTime(.0001, start + .12);
+      oscillator.connect(gain); gain.connect(audioContext.destination);
+      oscillator.start(start); oscillator.stop(start + .13);
+      oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); };
+    });
+  } catch (_) {}
+}
+renderSoundToggle();
+$("#sound-toggle").addEventListener("click", () => {
+  soundEnabled = !soundEnabled; saveSetting(SOUND_STORAGE, String(soundEnabled));
+  renderSoundToggle(); if (soundEnabled) playSound("keep"); else audioContext?.suspend()?.catch(() => {});
+});
+let previewIndex = 0;
+function canPreview() {
+  return !state.busy && state.game?.rerolls_left > 0 && state.game?.keeps_allowed && state.keeps.size === 2 && state.keeps.has("team") && state.keeps.has("player");
+}
+function updatePreviewButton() {
+  $("#show-preview").disabled = !canPreview();
+  $("#show-preview").textContent = canPreview() ? `Reroll possibilities · ${(state.game.reroll_preview || []).length} season(s)` : "Keep Team + Player to preview seasons";
+}
+function renderPreview() {
+  const rows = state.game?.reroll_preview || [];
+  previewIndex = Math.max(0, Math.min(previewIndex, rows.length - 1));
+  const row = rows[previewIndex];
+  const points = rows.flatMap(r => r.categories.filter(c => c.id === "points").map(c => c.score));
+  $("#preview-title").textContent = `${state.game.player.name} · ${state.game.player.team}`;
+  $("#preview-summary").textContent = rows.length ? `${rows.length} eligible season(s)${points.length ? ` · Points score range: ${Math.min(...points)}–${Math.max(...points)}` : ""}${rows.length === 1 && row.same_season ? " · No alternative season; this result will repeat" : " · Current season excluded"}` : "No eligible seasons.";
+  $("#preview-season").textContent = row?.season || "—";
+  const grid = $("#preview-categories"); grid.replaceChildren();
+  for (const category of row?.categories || []) {
+    const item = document.createElement("div"); item.className = "preview-item" + (category.section === "Accolades" && category.score > 0 ? " qualifies" : "");
+    const label = document.createElement("span"), value = document.createElement("strong");
+    label.textContent = category.label; value.textContent = category.available ? `${category.score} pts` : "N/A · 0 pts";
+    item.append(label,value); grid.append(item);
+  }
+  $("#preview-position").textContent = `${previewIndex + 1} / ${rows.length}`;
+  $("#preview-previous").disabled = previewIndex === 0;
+  $("#preview-next").disabled = previewIndex >= rows.length - 1;
+}
+$("#show-preview").addEventListener("click", () => { if (!canPreview()) return; previewIndex = 0; renderPreview(); $("#reroll-preview").showModal(); });
+$("#close-preview").addEventListener("click", () => $("#reroll-preview").close());
+$("#preview-previous").addEventListener("click", () => { previewIndex--; renderPreview(); });
+$("#preview-next").addEventListener("click", () => { previewIndex++; renderPreview(); });
+$("#clear-history").addEventListener("click", () => { $("#clear-history-error").textContent = ""; $("#clear-history-confirm").showModal(); });
+$("#cancel-clear-history").addEventListener("click", () => $("#clear-history-confirm").close());
+async function clearScoreHistory() {
+  const empty = {recent:[],best:0};
+  $("#confirm-clear-history").disabled = true;
+  try {
+    if (desktopMode) {
+      await desktopPending;
+      const previous = desktopSettings[SCORE_STORAGE];
+      saveSetting(SCORE_STORAGE, JSON.stringify(empty));
+      try { await desktopPending; } catch (error) { desktopSettings[SCORE_STORAGE] = previous; throw error; }
+    } else localStorage.setItem(SCORE_STORAGE, JSON.stringify(empty));
+    scores = empty; historyIndex = 0;
+    clearedCompletedId = state.game?.complete ? state.game.game_id : null;
+    $("#header-best").textContent = "0"; $("#header-best").classList.remove("record-hit");
+    $("#final-best").textContent = "Personal best: 0";
+    $("#finished").classList.remove("new-record");
+    renderScoreHistory(); $("#clear-history-confirm").close();
+  } catch (_) { $("#clear-history-error").textContent = "Could not clear saved scores. Please try again."; }
+  finally { $("#confirm-clear-history").disabled = false; }
+}
+$("#confirm-clear-history").addEventListener("click", clearScoreHistory);
+
 async function initializeGame() {
   try {
     if (desktopMode) {
@@ -480,6 +591,8 @@ async function initializeGame() {
       instantSpins = readInstantSpins();
       $("#instant-spins").checked = instantSpins;
       scores = readScores();
+      soundEnabled = readSetting(SOUND_STORAGE) === "true";
+      renderSoundToggle();
       $("#history-storage-note").textContent = "Last 50 games · saved on this device";
     }
     render(await request("/api/state"));

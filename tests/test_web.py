@@ -101,6 +101,31 @@ class BrowserGameTests(unittest.TestCase):
         self.assertEqual(set(result['animation_choices']['season']),{r.season for r in eligible})
         self.assertEqual(set(result['animation_choices']['player']),{r.player for r in eligible if r.season==current.season and r.team==current.team})
 
+    def test_reroll_preview_matches_legal_outcomes_without_consuming_randomness(self):
+        from nba_roulette.models import Lock
+        browser = BrowserGame(pool(), seed=7)
+        browser.spin()
+        rng = browser.game.roulette.rng.getstate()
+        current = browser.game.turn.current
+        expected = browser.game.roulette.valid_outcomes(current, (Lock.TEAM, Lock.PLAYER))
+        preview = browser.state()["reroll_preview"]
+        self.assertEqual([r["season"] for r in preview], sorted(r.season for r in expected))
+        self.assertEqual(browser.game.roulette.rng.getstate(), rng)
+        browser.game.scorecard[Category.POINTS] = 10
+        self.assertTrue(all(c["id"] != "points" for r in browser._reroll_preview() for c in r["categories"]))
+
+    def test_preview_excludes_current_year_when_alternative_exists_and_reports_fallback(self):
+        from nba_roulette.game import TurnState
+        rows = (make_record("2000-01", "BOS", 1), make_record("2001-02", "BOS", 1), make_record("2000-01", "LAL", 2))
+        browser = BrowserGame(rows, seed=1)
+        browser.game.turn = TurnState(rows[0])
+        self.assertEqual([r["season"] for r in browser._reroll_preview()], ["2001-02"])
+        single = BrowserGame((rows[0], rows[2]), seed=1)
+        single.game.turn = TurnState(rows[0])
+        self.assertTrue(single._reroll_preview()[0]["same_season"])
+        single.game.turn.spins_used = 3
+        self.assertEqual(single._reroll_preview(), [])
+
 
 if __name__ == "__main__":
     unittest.main()

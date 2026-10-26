@@ -12,7 +12,7 @@ from .game import GameState, MAX_SPINS_PER_TURN
 from .models import Lock, PlayerTeamSeason
 from .playtest import PlaytestBatchLogger
 from .roulette import RouletteEngine
-from .scoring import Category, UPPER_BONUS_THRESHOLD, UPPER_CATEGORIES, category_available
+from .scoring import Category, UPPER_BONUS_THRESHOLD, UPPER_CATEGORIES, category_available, category_score
 
 
 CATEGORY_LABELS = {
@@ -189,6 +189,7 @@ class BrowserGame:
             "spins_total": MAX_SPINS_PER_TURN,
             "rerolls_left": MAX_SPINS_PER_TURN - turn.spins_used if turn else 0,
             "player": self._player(turn.current) if turn else None,
+            "reroll_preview": self._reroll_preview(),
             "categories": [
                 {
                     "id": category.value,
@@ -204,6 +205,18 @@ class BrowserGame:
                 for category in Category
             ],
         }
+
+    def _reroll_preview(self) -> list[dict]:
+        turn = self.game.turn
+        if not turn or turn.current.pool != "normal" or turn.spins_used >= MAX_SPINS_PER_TURN:
+            return []
+        outcomes = self.game.roulette.valid_outcomes(turn.current, (Lock.TEAM, Lock.PLAYER))
+        return [{"season": row.season, "same_season": row.season == turn.current.season,
+                 "categories": [{"id": c.value, "label": CATEGORY_LABELS[c],
+                                 "section": self._section(c), "score": category_score(row, c),
+                                 "available": category_available(row, c)}
+                                for c in Category if c not in self.game.scorecard]}
+                for row in sorted(outcomes, key=lambda r: r.season)]
 
     def _playtest_status(self) -> dict | None:
         if not self.logger or self.dev_jackpots:
