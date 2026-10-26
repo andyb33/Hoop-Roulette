@@ -11,6 +11,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
+**Windows v0.14.2 portable rebuild:** [download and scan results](docs/CHECKPOINT_V0_14_2_WINDOWS.md). Extract all files and keep `_internal` beside the EXE. Microsoft Defender reported no threats; native GUI tests passed. Chrome acceptance remains to be tested. Mac remains v0.14.1.
+
 **v0.14.1 Hoop Roulette rebrand:** the approved side-by-side Classic/Accolades scorecard is now the working UI. The complete game canvas fits without scrolling; history uses game-by-game navigation. Windows and Apple Silicon Mac only. [Checkpoint and downloads](docs/CHECKPOINT_V0_14_1.md).
 
 **v0.13.0 standalone desktop:** double-click the Windows `.exe` or Apple Silicon Mac `.app` to play in a dedicated window with all data bundled. No CMD window or browser tab. Desktop testing comes first; public web hosting is deferred. [Release and downloads](docs/CHECKPOINT_V0_13_0.md) · [Tester instructions](docs/EXTERNAL_ALPHA_V0_13_0.md).
