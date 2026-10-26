@@ -1,0 +1,292 @@
+{
+  "version": "0.14.0",
+  "source_commit": "7106d8698c5ded265e852e29ccfaf48ba67290dc",
+  "tests": 146,
+  "full_games_per_platform": 2,
+  "runs": [
+    {
+      "run_id": 40315524737,
+      "jobs": [
+        {
+          "id": 121547043405,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 40315524737,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Verify Apple Silicon runner",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Install packager",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Check frontend behavior",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Build Mac app",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Smoke-test native app window",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Package app and instructions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Upload Mac build",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Upload native window QA report",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 12
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 24
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 25
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 12646697014,
+          "name": "native-window-qa-Mac",
+          "size_in_bytes": 207384,
+          "url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12646697014",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12646697014/zip",
+          "expired": false,
+          "created_at": "2026-10-26T11:31:29Z",
+          "expires_at": "2027-01-24T11:30:05Z",
+          "updated_at": "2026-10-26T11:31:29Z",
+          "digest": "sha256:2baa951a58391dc10b552c78480a8e88a0b7a8fa51081c25223e2c1eb05d30fe",
+          "workflow_run": {
+            "id": 40315524737,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "7106d8698c5ded265e852e29ccfaf48ba67290dc"
+          }
+        },
+        {
+          "id": 12645604121,
+          "name": "Hoopreel-v0.14.0-Alpha-Mac-Apple-Silicon",
+          "size_in_bytes": 37579563,
+          "url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12645604121",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12645604121/zip",
+          "expired": false,
+          "created_at": "2026-10-26T11:31:27Z",
+          "expires_at": "2027-01-24T11:30:05Z",
+          "updated_at": "2026-10-26T11:31:27Z",
+          "digest": "sha256:f4481a212452c8fc99f0e41b983de149e62a4b04169783d6cae33146f3881cd6",
+          "workflow_run": {
+            "id": 40315524737,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "7106d8698c5ded265e852e29ccfaf48ba67290dc"
+          }
+        }
+      ]
+    },
+    {
+      "run_id": 40315524709,
+      "jobs": [
+        {
+          "id": 121547043258,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 40315524709,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Install packager",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check frontend behavior",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Build single-file launcher",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Smoke-test native app window",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Add tester instructions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Upload Windows build",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Upload native window QA report",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 22
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 12647200735,
+          "name": "Hoopreel-v0.14.0-Alpha-Windows",
+          "size_in_bytes": 13920920,
+          "url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12647200735",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12647200735/zip",
+          "expired": false,
+          "created_at": "2026-10-26T11:31:18Z",
+          "expires_at": "2027-01-24T11:30:05Z",
+          "updated_at": "2026-10-26T11:31:18Z",
+          "digest": "sha256:eb591c9943f1f7dd131e8b0c7dbb49fcda3b3213a72ca2e911b28f1eeda1b48e",
+          "workflow_run": {
+            "id": 40315524709,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "7106d8698c5ded265e852e29ccfaf48ba67290dc"
+          }
+        },
+        {
+          "id": 12646108736,
+          "name": "native-window-qa-Windows",
+          "size_in_bytes": 621,
+          "url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12646108736",
+          "archive_download_url": "https://api.github.com/repos/andyb33/Hoopreel/actions/artifacts/12646108736/zip",
+          "expired": false,
+          "created_at": "2026-10-26T11:31:19Z",
+          "expires_at": "2027-01-24T11:30:05Z",
+          "updated_at": "2026-10-26T11:31:19Z",
+          "digest": "sha256:2851b890c41cc2e63a8f9db49d1780fd37318f789d7c420c1e8294b97a48eb9f",
+          "workflow_run": {
+            "id": 40315524709,
+            "repository_id": 1372694861,
+            "head_repository_id": 1372694861,
+            "head_branch": "main",
+            "head_sha": "7106d8698c5ded265e852e29ccfaf48ba67290dc"
+          }
+        }
+      ]
+    }
+  ]
+}
