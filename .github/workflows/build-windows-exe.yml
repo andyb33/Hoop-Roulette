@@ -1,4 +1,4 @@
-name: Build Hoop Roulette Windows alpha v0.14.2
+name: Build Hoop Roulette Windows alpha v0.14.3
 
 on:
   workflow_dispatch:
@@ -8,6 +8,8 @@ on:
       - "scripts/run_desktop.py"
       - "scripts/check_desktop_build.py"
       - "scripts/scan_windows_package.ps1"
+      - "scripts/check_windows_installer.ps1"
+      - "packaging/windows.iss"
       - ".github/workflows/build-windows-exe.yml"
 
 permissions:
@@ -36,11 +38,11 @@ jobs:
       - name: Check frontend behavior
         run: node tests/test_frontend.cjs
 
-      - name: Build portable app folder
+      - name: Build app payload
         shell: cmd
         run: >-
           pyinstaller --noconfirm --clean --onedir --windowed --noupx
-          --name HoopRoulette-v0.14.2-Alpha
+          --name HoopRoulette
           --icon web/static/app-icon.ico
           --paths "."
           --collect-submodules nba_roulette
@@ -52,24 +54,34 @@ jobs:
           --add-data "scripts/desktop_layout_qa.js;scripts"
           scripts/run_desktop.py
 
-      - name: Scan portable app with Microsoft Defender
+      - name: Add instructions
         shell: pwsh
-        run: ./scripts/scan_windows_package.ps1 -PackagePath dist/HoopRoulette-v0.14.2-Alpha
+        run: Copy-Item docs/EXTERNAL_ALPHA_V0_14_3_WINDOWS.md dist/HoopRoulette/README.txt
 
-      - name: Smoke-test native app window
-        run: python scripts/check_desktop_build.py dist/HoopRoulette-v0.14.2-Alpha/HoopRoulette-v0.14.2-Alpha.exe
-
-      - name: Add tester instructions
+      - name: Compile installer
         shell: pwsh
-        run: Copy-Item docs/EXTERNAL_ALPHA_V0_14_2_WINDOWS.md dist/HoopRoulette-v0.14.2-Alpha/README.txt
+        run: |
+          $compiler = "${env:ProgramFiles(x86)}/Inno Setup 6/ISCC.exe"
+          if (-not (Test-Path $compiler)) {
+            choco install innosetup --yes --no-progress
+            if ($LASTEXITCODE -ne 0) { throw 'Inno Setup install failed' }
+          }
+          & $compiler packaging/windows.iss
+          if ($LASTEXITCODE -ne 0) { throw 'Installer compilation failed' }
 
-      - name: Upload Windows build
+      - name: Scan payload and installer with Microsoft Defender
+        shell: pwsh
+        run: ./scripts/scan_windows_package.ps1 -PackagePath dist
+
+      - name: Test marked-download installer in Korean path
+        shell: pwsh
+        run: ./scripts/check_windows_installer.ps1
+
+      - name: Upload Windows installer
         uses: actions/upload-artifact@v4
         with:
-          name: HoopRoulette-v0.14.2-Alpha-Windows-Portable
-          path: |
-            dist/HoopRoulette-v0.14.2-Alpha/
-            dist/HoopRoulette-v0.14.2-Alpha/README.txt
+          name: HoopRoulette-v0.14.3-Windows-Installer
+          path: dist/installer/HoopRoulette-v0.14.3-Setup.exe
           if-no-files-found: error
 
       - name: Upload native window QA report
@@ -78,6 +90,8 @@ jobs:
         with:
           name: native-window-qa-Windows
           path: |
+            installer-test.json
+            installer-test.log
             windows-scan.json
             windows-scan.txt
             desktop-smoke.json
