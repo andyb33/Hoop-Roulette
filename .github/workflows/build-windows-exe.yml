@@ -18,6 +18,7 @@ permissions:
 jobs:
   build:
     runs-on: windows-latest
+    timeout-minutes: 10
     env:
       PYTHONUTF8: "1"
     steps:
@@ -74,6 +75,7 @@ jobs:
         run: ./scripts/scan_windows_package.ps1 -PackagePath dist
 
       - name: Test marked-download installer in Korean path
+        timeout-minutes: 5
         shell: pwsh
         run: ./scripts/check_windows_installer.ps1
 

@@ -5,8 +5,11 @@ Set-Content -LiteralPath $installer -Stream Zone.Identifier -Value "[ZoneTransfe
 $destination = Join-Path $env:RUNNER_TEMP '사용자 테스트\Hoop Roulette'
 $report = [ordered]@{ installer_marked_as_download = $true; destination = $destination; success = $false }
 try {
-    $process = Start-Process -FilePath $installer -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-', "/DIR=`"$destination`"", '/LOG=installer-test.log') -Wait -PassThru
-    if ($process.ExitCode -ne 0) { throw "Installer exited with $($process.ExitCode)" }
+    $env:HOOP_INSTALLER_TEST_EXE = $installer
+    $env:HOOP_INSTALLER_TEST_DIR = $destination
+    # Invoke the installer's documented silent CLI directly, not a shell dialog.
+    python -c 'import os, subprocess; subprocess.run([os.environ["HOOP_INSTALLER_TEST_EXE"], "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-", "/DIR=" + os.environ["HOOP_INSTALLER_TEST_DIR"], "/LOG=installer-test.log"], timeout=90, check=True)'
+    if ($LASTEXITCODE -ne 0) { throw 'Installer command failed or timed out; inspect installer-test.log' }
     $blocked = @(Get-ChildItem $destination -Recurse -Filter *.dll | ForEach-Object { Get-Item -LiteralPath $_.FullName -Stream Zone.Identifier -ErrorAction SilentlyContinue })
     $report.installed_dlls_with_download_mark = $blocked.Count
     if ($blocked.Count -ne 0) { throw 'Installed DLLs still have Internet download marks' }
