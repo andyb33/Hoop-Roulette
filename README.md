@@ -11,6 +11,8 @@ player-team-season statistics, accolades, games played, and jersey numbers.
 
 ## Current status
 
+**v0.16.0 web alpha:** [private browser game](https://hoop-roulette-web.bouncykiwi13.chatgpt.site) with desktop layout and phone Draw/Scorecard tabs. Browser-local games/saves, refresh recovery and manual playtest export. [Build and validation notes](docs/WEB_ALPHA_V0_16_0.md). Desktop releases remain unchanged.
+
 **v0.15.0 desktop polish:** visible personal best, season coverage, optional sound/effects, Team + Player season previews and confirmed Clear history. Existing saves stay compatible; new games use Batch 31. [Downloads and verification](docs/CHECKPOINT_V0_15_0.md).
 
 **Windows v0.14.3 installer:** [download and verification](docs/CHECKPOINT_V0_14_3_WINDOWS.md). Replaces the portable build that encountered downloaded-DLL restrictions. Extract the ZIP, run Setup, then open Hoop Roulette from Start. Defender and installed native GUI tests passed, including a marked-installer/Korean-path check. Tester confirmation remains pending. Mac remains v0.14.1.

@@ -1,0 +1,29 @@
+name: Check browser rules and build
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'browser/**'
+      - 'scripts/build_browser.py'
+      - 'nba_roulette/**'
+      - 'data/game/**'
+      - 'data/goat/**'
+      - '.github/workflows/check-browser.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -q
+      - run: python -m scripts.build_browser browser/dist
+      - run: node --check browser/app.js
+      - run: node browser/test-engine.cjs
